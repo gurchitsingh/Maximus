@@ -1,0 +1,40 @@
+{
+  "fonts": [
+    {
+      "family": "Figtree",
+      "designer": "Erik Kennedy",
+      "weights": [500, 600, 700, 800, 900],
+      "license": "OFL-1.1",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+      "source_url": "https://fonts.google.com/specimen/Figtree",
+      "license_asset": "assets/fonts/Figtree/OFL.txt"
+    },
+    {
+      "family": "Cinzel",
+      "designer": "Natanael Gama",
+      "weights": [700],
+      "license": "OFL-1.1",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+      "source_url": "https://fonts.google.com/specimen/Cinzel",
+      "license_asset": "assets/fonts/Cinzel/OFL.txt"
+    },
+    {
+      "family": "Caveat Brush",
+      "designer": "Impallari Type",
+      "weights": [400],
+      "license": "OFL-1.1",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+      "source_url": "https://fonts.google.com/specimen/Caveat+Brush",
+      "license_asset": "assets/fonts/CaveatBrush/OFL.txt"
+    },
+    {
+      "family": "Big Shoulders Stencil Display",
+      "designer": "Patric King",
+      "weights": [900],
+      "license": "OFL-1.1",
+      "license_url": "https://openfontlicense.org/open-font-license-official-text/",
+      "source_url": "https://fonts.google.com/specimen/Big+Shoulders+Stencil",
+      "license_asset": "assets/fonts/BigShouldersStencil/OFL.txt"
+    }
+  ]
+}
