@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://maximus.example/schemas/catalogue.schema.json",
+  "title": "Catalogue: GET /v1/catalogue",
+  "$comment": "Light list of every served title. Each item is a TitleDetail without lessons, images, quiz, feed_facts, person and sources. CONTRACTS.md 3.2.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "catalogue_version", "generated_at", "featured_id", "people_row_label",
+    "onboarding_leader_ids", "groups", "titles", "images"
+  ],
+  "properties": {
+    "catalogue_version": { "type": "string", "pattern": "^[0-9a-f]{16}$" },
+    "generated_at": { "$ref": "common.schema.json#/$defs/datetime" },
+    "featured_id": {
+      "oneOf": [{ "$ref": "common.schema.json#/$defs/slug" }, { "type": "null" }]
+    },
+    "people_row_label": { "type": "string", "minLength": 1, "maxLength": 40 },
+    "onboarding_leader_ids": {
+      "type": "array",
+      "maxItems": 12,
+      "uniqueItems": true,
+      "items": { "$ref": "common.schema.json#/$defs/slug" }
+    },
+    "groups": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["key", "label", "people", "order"],
+        "properties": {
+          "key": { "$ref": "common.schema.json#/$defs/group" },
+          "label": { "type": "string", "minLength": 1, "maxLength": 40 },
+          "people": { "type": "boolean" },
+          "order": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "titles": { "type": "array", "items": { "$ref": "#/$defs/catalogue_item" } },
+    "images": {
+      "$comment": "Only images referenced by poster_image_id or hero_image_id of the items.",
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/image" }
+    }
+  },
+  "$defs": {
+    "catalogue_item": {
+      "type": "object",
+      "allOf": [{ "$ref": "title.schema.json#/$defs/summary_properties" }],
+      "required": [
+        "id", "kind", "name", "subtitle", "poster_lines", "group", "era", "region",
+        "period_start", "period_end", "themes", "bg", "tint", "lettering",
+        "poster_image_id", "hero_image_id", "brief", "reading_minutes", "lesson_count",
+        "quiz_count", "linked_title_ids", "rank", "status", "content_version", "updated_at"
+      ],
+      "unevaluatedProperties": false
+    }
+  }
+}

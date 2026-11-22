@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://maximus.example/schemas/reserved.schema.json",
+  "title": "RESERVED, not built in V1",
+  "$comment": "Placeholders for V2 (docs/FUTURE_FEATURES.md). No endpoints, tables, screens or sample data in V1. Names, id patterns and status enums are reserved so V2 is additive. CONTRACTS.md section 12.",
+  "$defs": {
+    "perspective_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*\\.p[0-9]{2,3}$" },
+    "event_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*\\.e[0-9]{2,3}$" },
+    "scenario_id": { "$ref": "common.schema.json#/$defs/slug" },
+    "node_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*\\.n[0-9]{2,3}$" },
+    "ending_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*\\.x[0-9]{2,3}$" },
+    "perspective": {
+      "$comment": "RESERVED. Perspective mode: one lens on one country and period inside a topic title.",
+      "type": "object",
+      "required": ["id", "title_id", "country", "period_start", "period_end", "lens", "status", "content_version"],
+      "properties": {
+        "id": { "$ref": "#/$defs/perspective_id" },
+        "title_id": { "$ref": "common.schema.json#/$defs/slug" },
+        "country": { "type": "string" },
+        "region": { "$ref": "common.schema.json#/$defs/region" },
+        "period_start": { "$ref": "common.schema.json#/$defs/year" },
+        "period_end": { "$ref": "common.schema.json#/$defs/year" },
+        "lens": { "enum": ["authority", "middle", "poor"] },
+        "snapshot": { "type": "string" },
+        "daily_life": { "type": "array", "items": { "type": "string" } },
+        "problems": { "type": "array", "items": { "type": "object" } },
+        "wants": { "type": "array", "items": { "type": "string" } },
+        "fears": { "type": "array", "items": { "type": "string" } },
+        "event_view": { "type": "array", "items": { "type": "object" } },
+        "options": { "type": "array", "items": { "type": "string" } },
+        "voices": { "type": "array", "items": { "type": "object" } },
+        "source_ids": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/source_id" } },
+        "status": { "$ref": "common.schema.json#/$defs/content_status" },
+        "content_version": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "event": {
+      "$comment": "RESERVED. Shared event so Compare can line lenses up.",
+      "type": "object",
+      "required": ["id", "title_id", "name"],
+      "properties": {
+        "id": { "$ref": "#/$defs/event_id" },
+        "title_id": { "$ref": "common.schema.json#/$defs/slug" },
+        "name": { "type": "string" },
+        "date_display": { "type": "string" },
+        "summary": { "type": "string" }
+      }
+    },
+    "scenario": {
+      "$comment": "RESERVED. Think Like a Leader game scenario, linked to a leader title.",
+      "type": "object",
+      "required": ["id", "title_id", "setting", "role", "meters_init", "status", "content_version"],
+      "properties": {
+        "id": { "$ref": "#/$defs/scenario_id" },
+        "title_id": { "$ref": "common.schema.json#/$defs/slug" },
+        "setting": { "type": "string" },
+        "year_display": { "type": "string" },
+        "role": { "type": "string" },
+        "intro": { "type": "string" },
+        "meters_init": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "trust": { "type": "integer" },
+            "army": { "type": "integer" },
+            "treasury": { "type": "integer" },
+            "stability": { "type": "integer" },
+            "legacy": { "type": "integer" }
+          }
+        },
+        "start_node_id": { "$ref": "#/$defs/node_id" },
+        "source_ids": { "type": "array", "items": { "$ref": "common.schema.json#/$defs/source_id" } },
+        "status": { "$ref": "common.schema.json#/$defs/content_status" },
+        "content_version": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "node": {
+      "$comment": "RESERVED. One situation or consequence card; choices carry meter deltas and flags.",
+      "type": "object",
+      "required": ["id", "scenario_id", "type", "text"],
+      "properties": {
+        "id": { "$ref": "#/$defs/node_id" },
+        "scenario_id": { "$ref": "#/$defs/scenario_id" },
+        "type": { "enum": ["situation", "consequence", "end"] },
+        "text": { "type": "string" },
+        "choices": { "type": "array", "items": { "type": "object" } }
+      }
+    },
+    "ending": {
+      "$comment": "RESERVED. Result card with style label and case study.",
+      "type": "object",
+      "required": ["id", "scenario_id", "style_label", "text"],
+      "properties": {
+        "id": { "$ref": "#/$defs/ending_id" },
+        "scenario_id": { "$ref": "#/$defs/scenario_id" },
+        "conditions": { "type": "object" },
+        "style_label": { "type": "string" },
+        "text": { "type": "string" },
+        "case_study_title_id": { "$ref": "common.schema.json#/$defs/slug" }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://maximus.example/schemas/chat-response.schema.json",
+  "title": "Chat reply (HTTP 200): POST /v1/titles/{id}/chat",
+  "$comment": "Non-streaming. Resting, cap and rate limits are errors (error.schema.json), not 200s. CONTRACTS.md section 4.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["kind", "text", "lesson_refs", "remaining_today"],
+  "properties": {
+    "kind": { "enum": ["answer", "out_of_scope"] },
+    "text": { "type": "string", "minLength": 1, "maxLength": 1200 },
+    "lesson_refs": {
+      "type": "array",
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["lesson_id", "index"],
+        "properties": {
+          "lesson_id": { "$ref": "common.schema.json#/$defs/lesson_id" },
+          "index": { "type": "integer", "minimum": 1 }
+        }
+      }
+    },
+    "remaining_today": { "type": "integer", "minimum": 0 }
+  },
+  "if": { "properties": { "kind": { "const": "out_of_scope" } } },
+  "then": { "properties": { "lesson_refs": { "maxItems": 0 } } }
+}

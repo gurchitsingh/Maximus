@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://maximus.example/schemas/title-import.schema.json",
+  "title": "Title import file: backend/data/titles/<id>.json",
+  "$comment": "Same shape as TitleDetail. Computed fields (counts, minutes, content_version, updated_at) may be left out; the importer fills them. CONTRACTS.md section 9.",
+  "type": "object",
+  "allOf": [
+    { "$ref": "title.schema.json#/$defs/summary_properties" },
+    { "$ref": "title.schema.json#/$defs/detail_properties" },
+    { "$ref": "title.schema.json#/$defs/kind_rules" }
+  ],
+  "required": [
+    "id", "kind", "name", "poster_lines", "group", "era", "region", "themes",
+    "bg", "tint", "lettering", "brief", "status",
+    "lessons", "images", "quiz", "feed_facts", "person", "sources"
+  ],
+  "unevaluatedProperties": false
+}

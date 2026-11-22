@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://maximus.example/schemas/feed.schema.json",
+  "title": "Feed batch: GET /v1/feed",
+  "$comment": "Random served facts from the requested titles, round-robin across title_ids. Personal weighting happens on the device. CONTRACTS.md 3.4 and 7.2.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["generated_at", "seed", "facts", "images"],
+  "properties": {
+    "generated_at": { "$ref": "common.schema.json#/$defs/datetime" },
+    "seed": { "type": ["integer", "null"] },
+    "facts": {
+      "type": "array",
+      "maxItems": 50,
+      "items": { "$ref": "title.schema.json#/$defs/feed_fact" }
+    },
+    "images": {
+      "$comment": "Images referenced by facts[].image_id.",
+      "type": "array",
+      "items": { "$ref": "common.schema.json#/$defs/image" }
+    }
+  }
+}

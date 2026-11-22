@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://maximus.example/schemas/on-this-day.schema.json",
+  "title": "On This Day: GET /v1/on-this-day",
+  "$comment": "The only live content. Fetched from Wikipedia by the server, cached 24 h per date. CONTRACTS.md 2.7.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["date", "fetched_at", "stale", "items", "source"],
+  "properties": {
+    "date": { "type": "string", "pattern": "^(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$" },
+    "fetched_at": { "$ref": "common.schema.json#/$defs/datetime" },
+    "stale": { "type": "boolean" },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["year", "text", "page_title", "page_url", "linked_title_id"],
+        "properties": {
+          "year": { "$ref": "common.schema.json#/$defs/year" },
+          "text": { "type": "string", "minLength": 1, "maxLength": 400 },
+          "page_title": { "type": "string", "minLength": 1, "maxLength": 200 },
+          "page_url": { "type": "string", "format": "uri", "pattern": "^https://" },
+          "linked_title_id": {
+            "oneOf": [{ "$ref": "common.schema.json#/$defs/slug" }, { "type": "null" }]
+          }
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "url", "license"],
+      "properties": {
+        "name": { "const": "Wikipedia" },
+        "url": { "type": "string", "format": "uri" },
+        "license": { "const": "CC BY-SA 4.0" }
+      }
+    }
+  }
+}

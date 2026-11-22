@@ -1,0 +1,254 @@
+{
+  "catalogue_version": "0faba921620bfb7f",
+  "generated_at": "2026-11-22T00:00:00Z",
+  "featured_id": "roman-history",
+  "people_row_label": "Think Like...",
+  "onboarding_leader_ids": [
+    "shivaji-maharaj"
+  ],
+  "groups": [
+    {
+      "key": "ancient-medieval",
+      "label": "Ancient and medieval",
+      "people": false,
+      "order": 0
+    },
+    {
+      "key": "india",
+      "label": "India",
+      "people": false,
+      "order": 1
+    },
+    {
+      "key": "revolutions-empires",
+      "label": "Revolutions and empires",
+      "people": false,
+      "order": 2
+    },
+    {
+      "key": "wars-space",
+      "label": "Wars and space",
+      "people": false,
+      "order": 3
+    },
+    {
+      "key": "money-crashes",
+      "label": "Money and crashes",
+      "people": false,
+      "order": 4
+    },
+    {
+      "key": "leaders-ancient",
+      "label": "Ancient world",
+      "people": true,
+      "order": 5
+    },
+    {
+      "key": "leaders-rome",
+      "label": "Rome",
+      "people": true,
+      "order": 6
+    },
+    {
+      "key": "leaders-medieval",
+      "label": "Medieval world",
+      "people": true,
+      "order": 7
+    },
+    {
+      "key": "leaders-europe",
+      "label": "Europe",
+      "people": true,
+      "order": 8
+    },
+    {
+      "key": "leaders-india",
+      "label": "Indian subcontinent",
+      "people": true,
+      "order": 9
+    },
+    {
+      "key": "leaders-africa",
+      "label": "Africa",
+      "people": true,
+      "order": 10
+    },
+    {
+      "key": "thinkers",
+      "label": "Thinkers",
+      "people": true,
+      "order": 11
+    }
+  ],
+  "titles": [
+    {
+      "id": "roman-history",
+      "kind": "topic",
+      "name": "Roman history",
+      "subtitle": "753 BCE to 476 CE",
+      "poster_lines": [
+        "ROMAN",
+        "HISTORY"
+      ],
+      "group": "ancient-medieval",
+      "era": "ancient",
+      "region": "europe",
+      "period_start": -753,
+      "period_end": 476,
+      "themes": [
+        "empire",
+        "war",
+        "politics",
+        "law"
+      ],
+      "bg": "#2B0E0C",
+      "tint": "#E8553A",
+      "lettering": "roman",
+      "poster_image_id": null,
+      "hero_image_id": "roman-history.i01",
+      "brief": "SAMPLE · From a village on seven hills to the biggest empire of the ancient world.",
+      "reading_minutes": 14,
+      "lesson_count": 6,
+      "quiz_count": 10,
+      "linked_title_ids": [
+        "romulus",
+        "julius-caesar",
+        "augustus"
+      ],
+      "rank": 1,
+      "status": "draft",
+      "content_version": 1,
+      "updated_at": "2026-11-22T00:00:00Z"
+    },
+    {
+      "id": "shivaji-maharaj",
+      "kind": "leader",
+      "name": "Chhatrapati Shivaji Maharaj",
+      "subtitle": "Maratha · Early modern",
+      "poster_lines": [
+        "SHIVAJI",
+        "MAHARAJ"
+      ],
+      "group": "leaders-india",
+      "era": "early-modern",
+      "region": "asia",
+      "period_start": 1630,
+      "period_end": 1680,
+      "themes": [
+        "war",
+        "leadership",
+        "strategy",
+        "independence"
+      ],
+      "bg": "#3A1F0C",
+      "tint": "#F08A24",
+      "lettering": "carved",
+      "poster_image_id": "shivaji-maharaj.i01",
+      "hero_image_id": null,
+      "brief": "SAMPLE · Built an independent Maratha kingdom from hill forts while facing far larger empires.",
+      "reading_minutes": 1,
+      "lesson_count": 1,
+      "quiz_count": 0,
+      "linked_title_ids": [
+        "maratha-empire"
+      ],
+      "rank": 5,
+      "status": "draft",
+      "content_version": 1,
+      "updated_at": "2026-11-22T00:00:00Z"
+    },
+    {
+      "id": "chanakya",
+      "kind": "thinker",
+      "name": "Chanakya",
+      "subtitle": "Maurya India · Ancient",
+      "poster_lines": [
+        "CHANAKYA"
+      ],
+      "group": "thinkers",
+      "era": "ancient",
+      "region": "asia",
+      "period_start": -375,
+      "period_end": -283,
+      "themes": [
+        "ideas",
+        "politics",
+        "strategy",
+        "economy"
+      ],
+      "bg": "#1E2A3A",
+      "tint": "#E8C547",
+      "lettering": "carved",
+      "poster_image_id": "chanakya.i01",
+      "hero_image_id": null,
+      "brief": "SAMPLE · The teacher and adviser behind the first Maurya emperor, linked to a hard-headed guide to running a state.",
+      "reading_minutes": 1,
+      "lesson_count": 1,
+      "quiz_count": 0,
+      "linked_title_ids": [
+        "ancient-india",
+        "chandragupta-maurya"
+      ],
+      "rank": 6,
+      "status": "draft",
+      "content_version": 1,
+      "updated_at": "2026-11-22T00:00:00Z"
+    }
+  ],
+  "images": [
+    {
+      "id": "chanakya.i01",
+      "title_id": "chanakya",
+      "url": "https://example.org/sample/media/chanakya/portrait.png",
+      "width": 800,
+      "height": 1200,
+      "alt": "SAMPLE placeholder: flat illustrated portrait of an ancient Indian teacher holding a palm-leaf manuscript.",
+      "kind": "portrait",
+      "author": "Maximus (SAMPLE placeholder)",
+      "license": "OWN",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": null,
+      "credit_line": "Illustration made for Maximus (SAMPLE placeholder)",
+      "modified": false,
+      "focal_x": 0.5,
+      "focal_y": 0.3
+    },
+    {
+      "id": "roman-history.i01",
+      "title_id": "roman-history",
+      "url": "https://example.org/sample/media/roman-history/forum.jpg",
+      "width": 1600,
+      "height": 1067,
+      "alt": "SAMPLE placeholder: ruins of the Roman Forum with columns and temple remains.",
+      "kind": "photo",
+      "author": "SAMPLE placeholder (not a real file)",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_page_url": "https://example.org/sample/commons/roman-forum",
+      "credit_line": "SAMPLE placeholder · CC BY-SA 4.0 · cropped",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.6
+    },
+    {
+      "id": "shivaji-maharaj.i01",
+      "title_id": "shivaji-maharaj",
+      "url": "https://example.org/sample/media/shivaji-maharaj/portrait.png",
+      "width": 800,
+      "height": 1200,
+      "alt": "SAMPLE placeholder: flat illustrated portrait of Shivaji in a turban, head and shoulders.",
+      "kind": "portrait",
+      "author": "Maximus (SAMPLE placeholder)",
+      "license": "OWN",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": null,
+      "credit_line": "Illustration made for Maximus (SAMPLE placeholder)",
+      "modified": false,
+      "focal_x": 0.5,
+      "focal_y": 0.3
+    }
+  ]
+}

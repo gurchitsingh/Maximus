@@ -1,0 +1,468 @@
+{
+  "$comment": "Match % test vectors (CONTRACTS.md section 6). Fixture titles, not the real catalogue. raw is rounded to 4 decimals: compare with tolerance 1e-4. Checked by tools/validate_samples.py.",
+  "titles": [
+    {
+      "id": "roman-history",
+      "name": "Roman history",
+      "kind": "topic",
+      "group": "ancient-medieval",
+      "era": "ancient",
+      "region": "europe",
+      "themes": [
+        "empire",
+        "war",
+        "politics",
+        "law"
+      ],
+      "rank": 1,
+      "lesson_count": 6,
+      "linked_title_ids": [
+        "julius-caesar"
+      ]
+    },
+    {
+      "id": "ancient-greece",
+      "name": "Ancient Greece",
+      "kind": "topic",
+      "group": "ancient-medieval",
+      "era": "ancient",
+      "region": "europe",
+      "themes": [
+        "ideas",
+        "politics",
+        "war",
+        "culture"
+      ],
+      "rank": 2,
+      "lesson_count": 7,
+      "linked_title_ids": []
+    },
+    {
+      "id": "ancient-egypt",
+      "name": "Ancient Egypt",
+      "kind": "topic",
+      "group": "ancient-medieval",
+      "era": "ancient",
+      "region": "middle-east-africa",
+      "themes": [
+        "empire",
+        "religion",
+        "culture"
+      ],
+      "rank": 3,
+      "lesson_count": 9,
+      "linked_title_ids": []
+    },
+    {
+      "id": "maratha-empire",
+      "name": "Maratha Empire",
+      "kind": "topic",
+      "group": "india",
+      "era": "early-modern",
+      "region": "asia",
+      "themes": [
+        "empire",
+        "war",
+        "independence"
+      ],
+      "rank": 11,
+      "lesson_count": 6,
+      "linked_title_ids": [
+        "shivaji-maharaj"
+      ]
+    },
+    {
+      "id": "ww2",
+      "name": "WW2",
+      "kind": "topic",
+      "group": "wars-space",
+      "era": "modern",
+      "region": "global",
+      "themes": [
+        "war",
+        "politics",
+        "strategy"
+      ],
+      "rank": 23,
+      "lesson_count": 9,
+      "linked_title_ids": []
+    },
+    {
+      "id": "shivaji-maharaj",
+      "name": "Chhatrapati Shivaji Maharaj",
+      "kind": "leader",
+      "group": "leaders-india",
+      "era": "early-modern",
+      "region": "asia",
+      "themes": [
+        "war",
+        "leadership",
+        "strategy",
+        "independence"
+      ],
+      "rank": 133,
+      "lesson_count": 4,
+      "linked_title_ids": [
+        "maratha-empire"
+      ]
+    },
+    {
+      "id": "chanakya",
+      "name": "Chanakya",
+      "kind": "thinker",
+      "group": "thinkers",
+      "era": "ancient",
+      "region": "asia",
+      "themes": [
+        "ideas",
+        "politics",
+        "strategy",
+        "economy"
+      ],
+      "rank": 146,
+      "lesson_count": 6,
+      "linked_title_ids": [
+        "ancient-india",
+        "chandragupta-maurya"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "name": "ex0 cold start: no signals, so no badges and rank order",
+      "signals": {},
+      "badges": false,
+      "expected": [
+        {
+          "id": "roman-history",
+          "raw": null,
+          "pct": null,
+          "reason": null
+        },
+        {
+          "id": "ancient-greece",
+          "raw": null,
+          "pct": null,
+          "reason": null
+        },
+        {
+          "id": "ancient-egypt",
+          "raw": null,
+          "pct": null,
+          "reason": null
+        },
+        {
+          "id": "maratha-empire",
+          "raw": null,
+          "pct": null,
+          "reason": null
+        },
+        {
+          "id": "ww2",
+          "raw": null,
+          "pct": null,
+          "reason": null
+        },
+        {
+          "id": "shivaji-maharaj",
+          "raw": null,
+          "pct": null,
+          "reason": null
+        },
+        {
+          "id": "chanakya",
+          "raw": null,
+          "pct": null,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "ex1 two topic picks (Rome, Greece): tie broken by rank",
+      "signals": {
+        "topic_picks": [
+          "roman-history",
+          "ancient-greece"
+        ]
+      },
+      "badges": true,
+      "expected": [
+        {
+          "id": "roman-history",
+          "raw": 4.6667,
+          "pct": 76,
+          "reason": "because you picked Ancient Greece"
+        },
+        {
+          "id": "ancient-greece",
+          "raw": 4.6667,
+          "pct": 76,
+          "reason": "because you picked Roman history"
+        },
+        {
+          "id": "ancient-egypt",
+          "raw": 1.8,
+          "pct": 65,
+          "reason": "because you picked Roman history"
+        },
+        {
+          "id": "chanakya",
+          "raw": 1.3182,
+          "pct": 62,
+          "reason": "because you picked Ancient Greece"
+        },
+        {
+          "id": "ww2",
+          "raw": 1.0909,
+          "pct": 61,
+          "reason": "because you picked Roman history"
+        },
+        {
+          "id": "maratha-empire",
+          "raw": 0.7955,
+          "pct": 58,
+          "reason": "because you picked Roman history"
+        },
+        {
+          "id": "shivaji-maharaj",
+          "raw": 0.4615,
+          "pct": 55,
+          "reason": "because you picked Roman history"
+        }
+      ]
+    },
+    {
+      "name": "ex2 ex1 plus leader pick Shivaji (+3 on him, +2 on linked Maratha Empire)",
+      "signals": {
+        "topic_picks": [
+          "roman-history",
+          "ancient-greece"
+        ],
+        "leader_picks": [
+          "shivaji-maharaj"
+        ]
+      },
+      "badges": true,
+      "expected": [
+        {
+          "id": "roman-history",
+          "raw": 5.2611,
+          "pct": 78,
+          "reason": "because you picked Ancient Greece"
+        },
+        {
+          "id": "ancient-greece",
+          "raw": 5.0641,
+          "pct": 77,
+          "reason": "because you picked Roman history"
+        },
+        {
+          "id": "shivaji-maharaj",
+          "raw": 4.3504,
+          "pct": 76,
+          "reason": "because you picked Roman history"
+        },
+        {
+          "id": "maratha-empire",
+          "raw": 4.1288,
+          "pct": 75,
+          "reason": "because you chose Chhatrapati Shivaji Maharaj"
+        },
+        {
+          "id": "chanakya",
+          "raw": 1.9848,
+          "pct": 66,
+          "reason": "because you picked Ancient Greece"
+        },
+        {
+          "id": "ancient-egypt",
+          "raw": 1.9818,
+          "pct": 66,
+          "reason": "because you picked Roman history"
+        },
+        {
+          "id": "ww2",
+          "raw": 1.8182,
+          "pct": 65,
+          "reason": "because you picked Roman history"
+        }
+      ]
+    },
+    {
+      "name": "ex3 ex1 plus ratings: WW2 up, Egypt down, Rome okay",
+      "signals": {
+        "topic_picks": [
+          "roman-history",
+          "ancient-greece"
+        ],
+        "ratings": {
+          "ww2": 1,
+          "ancient-egypt": -1,
+          "roman-history": 0
+        }
+      },
+      "badges": true,
+      "expected": [
+        {
+          "id": "ww2",
+          "raw": 5.0909,
+          "pct": 77,
+          "reason": "because you picked Roman history"
+        },
+        {
+          "id": "roman-history",
+          "raw": 4.1939,
+          "pct": 75,
+          "reason": "because you picked Ancient Greece"
+        },
+        {
+          "id": "ancient-greece",
+          "raw": 4.1939,
+          "pct": 75,
+          "reason": "because you picked Roman history"
+        },
+        {
+          "id": "chanakya",
+          "raw": 1.7121,
+          "pct": 65,
+          "reason": "because you picked Ancient Greece"
+        },
+        {
+          "id": "shivaji-maharaj",
+          "raw": 1.1888,
+          "pct": 61,
+          "reason": "because you liked WW2"
+        },
+        {
+          "id": "maratha-empire",
+          "raw": 0.7955,
+          "pct": 58,
+          "reason": "because you picked Roman history"
+        },
+        {
+          "id": "ancient-egypt",
+          "raw": -2.2,
+          "pct": 40,
+          "reason": null
+        }
+      ]
+    },
+    {
+      "name": "ex4 study list Chanakya, 3 of 6 lessons read, 5 WW2 facts liked or saved (cap 4), 1 Rome fact disliked",
+      "signals": {
+        "study_list": [
+          "chanakya"
+        ],
+        "lessons_completed": {
+          "chanakya": 3
+        },
+        "feed": {
+          "ww2": {
+            "liked_or_saved": 5
+          },
+          "roman-history": {
+            "disliked": 1
+          }
+        }
+      },
+      "badges": true,
+      "expected": [
+        {
+          "id": "chanakya",
+          "raw": 3.2803,
+          "pct": 72,
+          "reason": "because you liked facts about WW2"
+        },
+        {
+          "id": "ww2",
+          "raw": 2.4545,
+          "pct": 69,
+          "reason": "because you added Chanakya"
+        },
+        {
+          "id": "ancient-greece",
+          "raw": 0.904,
+          "pct": 59,
+          "reason": "because you added Chanakya"
+        },
+        {
+          "id": "shivaji-maharaj",
+          "raw": 0.8252,
+          "pct": 58,
+          "reason": "because you added Chanakya"
+        },
+        {
+          "id": "roman-history",
+          "raw": 0.3636,
+          "pct": 54,
+          "reason": "because you added Chanakya"
+        },
+        {
+          "id": "maratha-empire",
+          "raw": 0.3409,
+          "pct": 54,
+          "reason": "because you added Chanakya"
+        },
+        {
+          "id": "ancient-egypt",
+          "raw": 0.1,
+          "pct": 51,
+          "reason": "because you added Chanakya"
+        }
+      ]
+    },
+    {
+      "name": "ex5 one thumbs down (Rome) only: everything below 50, floor 40, no reasons",
+      "signals": {
+        "ratings": {
+          "roman-history": -1
+        }
+      },
+      "badges": true,
+      "expected": [
+        {
+          "id": "shivaji-maharaj",
+          "raw": -0.3077,
+          "pct": 47,
+          "reason": null
+        },
+        {
+          "id": "chanakya",
+          "raw": -0.6667,
+          "pct": 43,
+          "reason": null
+        },
+        {
+          "id": "maratha-empire",
+          "raw": -0.7273,
+          "pct": 42,
+          "reason": null
+        },
+        {
+          "id": "ww2",
+          "raw": -0.7273,
+          "pct": 42,
+          "reason": null
+        },
+        {
+          "id": "ancient-egypt",
+          "raw": -1.2,
+          "pct": 40,
+          "reason": null
+        },
+        {
+          "id": "ancient-greece",
+          "raw": -2.2222,
+          "pct": 40,
+          "reason": null
+        },
+        {
+          "id": "roman-history",
+          "raw": -4.0,
+          "pct": 40,
+          "reason": null
+        }
+      ]
+    }
+  ]
+}

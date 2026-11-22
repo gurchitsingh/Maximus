@@ -1,0 +1,74 @@
+[
+  {
+    "error": {
+      "code": "bad_request",
+      "message": "Request body is not valid JSON.",
+      "retry_after_s": null,
+      "details": { "reason": "invalid_json" }
+    }
+  },
+  {
+    "error": {
+      "code": "validation_error",
+      "message": "Request failed validation.",
+      "retry_after_s": null,
+      "details": { "fields": [{ "loc": "query.limit", "msg": "must be between 1 and 50" }] }
+    }
+  },
+  {
+    "error": {
+      "code": "not_found",
+      "message": "No such endpoint.",
+      "retry_after_s": null,
+      "details": null
+    }
+  },
+  {
+    "error": {
+      "code": "title_not_found",
+      "message": "No served title with id 'napoleon-bonaparte'.",
+      "retry_after_s": null,
+      "details": { "title_id": "napoleon-bonaparte" }
+    }
+  },
+  {
+    "error": {
+      "code": "rate_limited",
+      "message": "Too many requests. Slow down.",
+      "retry_after_s": 20,
+      "details": { "scope": "install" }
+    }
+  },
+  {
+    "error": {
+      "code": "chat_daily_cap",
+      "message": "Daily chat limit reached for this install.",
+      "retry_after_s": 30600,
+      "details": { "cap": 20 }
+    }
+  },
+  {
+    "error": {
+      "code": "chat_resting",
+      "message": "All chat providers are unavailable.",
+      "retry_after_s": 300,
+      "details": { "reason": "providers_down" }
+    }
+  },
+  {
+    "error": {
+      "code": "upstream_unavailable",
+      "message": "On This Day could not be loaded from Wikipedia and no cached copy exists.",
+      "retry_after_s": 600,
+      "details": { "upstream": "wikipedia" }
+    }
+  },
+  {
+    "error": {
+      "code": "internal_error",
+      "message": "Unexpected server error.",
+      "retry_after_s": null,
+      "details": null
+    }
+  }
+]

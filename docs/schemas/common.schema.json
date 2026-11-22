@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://maximus.example/schemas/common.schema.json",
+  "title": "Shared definitions",
+  "$comment": "Referenced by every other schema. See docs/CONTRACTS.md section 2.",
+  "$defs": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "maxLength": 64
+    },
+    "lesson_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*\\.l[0-9]{2,3}$" },
+    "quiz_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*\\.q[0-9]{3}$" },
+    "fact_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*\\.f[0-9]{3}$" },
+    "image_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*\\.i[0-9]{2,3}$" },
+    "source_id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*\\.s[0-9]{2,3}$" },
+    "image_ref": {
+      "oneOf": [{ "$ref": "#/$defs/image_id" }, { "type": "null" }]
+    },
+    "lesson_ref": {
+      "oneOf": [{ "$ref": "#/$defs/lesson_id" }, { "type": "null" }]
+    },
+    "hex_color": { "type": "string", "pattern": "^#[0-9A-F]{6}$" },
+    "datetime": { "type": "string", "format": "date-time", "pattern": "Z$" },
+    "year": {
+      "$comment": "Astronomical-free: negative = BCE, positive = CE, no year 0.",
+      "type": "integer",
+      "minimum": -5000,
+      "maximum": 2100,
+      "not": { "const": 0 }
+    },
+    "year_or_null": {
+      "oneOf": [{ "$ref": "#/$defs/year" }, { "type": "null" }]
+    },
+    "kind": { "enum": ["topic", "leader", "thinker"] },
+    "content_status": { "enum": ["draft", "reviewed", "published"] },
+    "item_status": { "enum": ["needs_check", "reviewed"] },
+    "group": {
+      "enum": [
+        "ancient-medieval",
+        "india",
+        "revolutions-empires",
+        "wars-space",
+        "money-crashes",
+        "leaders-ancient",
+        "leaders-rome",
+        "leaders-medieval",
+        "leaders-europe",
+        "leaders-india",
+        "leaders-africa",
+        "thinkers"
+      ]
+    },
+    "era": { "enum": ["ancient", "medieval", "early-modern", "modern"] },
+    "region": { "enum": ["europe", "middle-east-africa", "asia", "americas", "global"] },
+    "lettering": { "enum": ["roman", "brush", "stencil", "carved"] },
+    "theme": {
+      "enum": [
+        "war",
+        "politics",
+        "empire",
+        "religion",
+        "ideas",
+        "economy",
+        "science-tech",
+        "revolution",
+        "culture",
+        "exploration",
+        "leadership",
+        "strategy",
+        "law",
+        "independence",
+        "disease",
+        "trade",
+        "society"
+      ]
+    },
+    "license": { "enum": ["PD", "CC0", "CC BY", "CC BY-SA", "OWN"] },
+    "image": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title_id",
+        "url",
+        "width",
+        "height",
+        "alt",
+        "kind",
+        "author",
+        "license",
+        "license_version",
+        "license_url",
+        "source_page_url",
+        "credit_line",
+        "modified",
+        "focal_x",
+        "focal_y"
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/image_id" },
+        "title_id": { "$ref": "#/$defs/slug" },
+        "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 },
+        "alt": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "kind": { "enum": ["art", "photo", "painting", "map", "portrait", "other"] },
+        "author": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "license": { "$ref": "#/$defs/license" },
+        "license_version": { "type": ["string", "null"], "pattern": "^[0-9]\\.[0-9]$" },
+        "license_url": { "type": ["string", "null"], "format": "uri" },
+        "source_page_url": { "type": ["string", "null"], "format": "uri" },
+        "credit_line": { "type": "string", "minLength": 1, "maxLength": 300 },
+        "modified": { "type": "boolean" },
+        "focal_x": { "type": "number", "minimum": 0, "maximum": 1 },
+        "focal_y": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "license": { "enum": ["CC BY", "CC BY-SA"] } } },
+          "then": {
+            "properties": {
+              "license_version": { "type": "string" },
+              "license_url": { "type": "string" },
+              "source_page_url": { "type": "string" }
+            }
+          }
+        },
+        {
+          "if": { "properties": { "license": { "enum": ["PD", "CC0"] } } },
+          "then": { "properties": { "source_page_url": { "type": "string" } } }
+        }
+      ]
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "url", "publisher", "role", "license", "confidence"],
+      "properties": {
+        "id": { "$ref": "#/$defs/source_id" },
+        "title": { "type": "string", "minLength": 1, "maxLength": 200 },
+        "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+        "publisher": { "type": ["string", "null"], "maxLength": 120 },
+        "role": {
+          "$comment": "text = our lesson text is adapted from it (licence applies). citation = backs a claim (confidence applies).",
+          "enum": ["text", "citation"]
+        },
+        "license": { "type": ["string", "null"], "maxLength": 40 },
+        "confidence": { "enum": ["high", "medium", "low", null] }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "role": { "const": "text" } } },
+          "then": { "properties": { "license": { "type": "string" } } }
+        },
+        {
+          "if": { "properties": { "role": { "const": "citation" } } },
+          "then": { "properties": { "confidence": { "enum": ["high", "medium", "low"] } } }
+        }
+      ]
+    }
+  }
+}

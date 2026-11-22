@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://maximus.example/schemas/health.schema.json",
+  "title": "Health: GET /healthz (not versioned)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["status", "version"],
+  "properties": {
+    "status": { "const": "ok" },
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" }
+  }
+}

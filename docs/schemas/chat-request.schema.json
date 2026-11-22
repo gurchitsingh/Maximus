@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://maximus.example/schemas/chat-request.schema.json",
+  "title": "Chat request: POST /v1/titles/{id}/chat",
+  "$comment": "CONTRACTS.md section 4. History is untrusted client text, like the message.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["install_id", "message", "history"],
+  "properties": {
+    "install_id": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "message": { "type": "string", "minLength": 1, "maxLength": 500 },
+    "history": {
+      "type": "array",
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["role", "text"],
+        "properties": {
+          "role": { "enum": ["user", "assistant"] },
+          "text": { "type": "string", "minLength": 1, "maxLength": 1200 }
+        }
+      }
+    }
+  }
+}
