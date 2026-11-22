@@ -712,3 +712,15 @@ Each item: what conflicts, and a recommended default.
 22. **Library rows.** v3 rows: For you, Ancient, Revolutions, Wars, India and Empire. FLOW rows: For you, Ancient and medieval, India, Revolutions and empires, Wars and space, Money and crashes, Because you liked X, Think Like... **Default:** FLOW rows (they match TOPICS.md groups), styled as v3 rows.
 23. **App name** is still open (BRIEF). The design uses "Maximus" in the lockup and "New to Maximus?". Keep it as a single string constant.
 24. **Retired assets in the bundle.** `_ds` Classical tokens (Cormorant/Lora, 4 px radii, outlined buttons) and DESIGN.md's "Inter" and "engraved M roundel" are superseded by v3 (Figtree, disc logo). Do not use them.
+
+
+## 12. Owner decisions (2026-11-22) - these override section 11 defaults
+
+1. **Accounts:** dropped. No sign-in or create-account screens in v1. Splash goes to onboarding (first run) or Home.
+2. **Onboarding:** v3 order without sign-in: Pick topics, Favourite leader, First matches, Theme. Guess the year and Mystery card are built later as polish (specified above, not in v1 scope).
+3. **Text size:** Settings only, not onboarding.
+4. **Catalogue:** TOPICS.md is the source of truth (28 topics, 40 leaders, 11 thinkers). Design data is visual reference only. Topics without artwork use a tinted gradient poster with title lettering until illustrations are generated.
+5. **Think Like...:** person row (portrait posters) and person sheet are NOT designed yet. Run Prompt 2b in Claude Design first; S5 waits for that output. Until then S4/S5 build everything else.
+6. Items 6 to 24 of section 11: use the stated defaults. Item 22: use FLOW library rows. Item 15: App values win.
+7. **Repo is PUBLIC (owner's choice).** Never commit .env, API keys, or personal data; keys live only in backend/.env (gitignored) and the host's secret store.
+8. **Future features** (perspective mode, Think Like a Leader game) are NOT in v1. See docs/FUTURE_FEATURES.md. Reserve placeholder data models only (CONTRACTS.md).
