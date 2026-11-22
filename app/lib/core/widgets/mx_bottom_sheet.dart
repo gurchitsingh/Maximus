@@ -33,6 +33,36 @@ Future<T?> showMxBottomSheet<T>({
   );
 }
 
+/// The same sheet as a router page, for routes like `/sheet/:titleId`
+/// (CONTRACTS 8.3: a modal sheet page on the root navigator).
+class MxSheetPage<T> extends Page<T> {
+  const MxSheetPage({
+    super.key,
+    super.name,
+    super.arguments,
+    super.restorationId,
+    required this.builder,
+    this.banner,
+  });
+
+  final WidgetBuilder builder;
+  final Widget? banner;
+
+  @override
+  Route<T> createRoute(BuildContext context) => ModalBottomSheetRoute<T>(
+    settings: this,
+    isScrollControlled: true,
+    useSafeArea: true,
+    backgroundColor: Colors.transparent,
+    modalBarrierColor: MxFixed.sheetBackdrop,
+    elevation: 0,
+    sheetAnimationStyle: MxMotion.reduced(context)
+        ? AnimationStyle.noAnimation
+        : null,
+    builder: (ctx) => MxSheetFrame(banner: banner, child: builder(ctx)),
+  );
+}
+
 /// The visual frame of a sheet. Separate so the gallery can show it inline.
 class MxSheetFrame extends StatelessWidget {
   const MxSheetFrame({super.key, required this.child, this.banner});

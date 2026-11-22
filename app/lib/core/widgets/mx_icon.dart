@@ -30,6 +30,9 @@ enum MxIcons {
   chevronRight('<path d="M9 5l7 7-7 7"/>'),
   arrowRight('<path d="M5 12h14M13 6l6 6-6 6"/>'),
   play('<path d="M7 4.5v15l12.5-7.5z"/>', filled: true),
+
+  /// Not in the bundle (11.14: playing shows pause). Two filled bars.
+  pause('<path d="M6.5 4.5h4v15h-4zM13.5 4.5h4v15h-4z"/>', filled: true),
   check('<path d="M5 12.5l4.5 4.5L19 7"/>'),
   x('<path d="M6 6l12 12M18 6L6 18"/>'),
   plus('<path d="M12 5v14M5 12h14"/>'),
