@@ -56,7 +56,7 @@ def title_detail(t: Title, serve_drafts: bool) -> dict:
         feed_facts=[{k: getattr(f, k) for k in ["id", "title_id", "lesson_id", "text", "image_id", "status",
                                                 "review_note"]} for f in facts],
         person=t.person,
-        sources=[{k: getattr(s, k) for k in ["id", "title_id", "title", "url", "publisher", "role", "license",
+        sources=[{k: getattr(s, k) for k in ["id", "title", "url", "publisher", "role", "license",
                                              "confidence"]} for s in t.sources],
     )
     return d
