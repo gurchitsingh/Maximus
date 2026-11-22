@@ -131,3 +131,24 @@ Non-obvious choices behind `docs/CONTRACTS.md`. Three lines each: the decision, 
 - **Decision:** Git stores text files with LF and checks them out per platform; binaries are auto-detected.
 - **Why:** On Windows with `core.autocrlf=true`, files written by different tools showed whole-file CRLF diffs.
 - **Gave up:** Nothing. The index was already LF, so renormalising changed no content.
+
+## D27. Downscaled Commons images say "resized" in the credit line
+- **Decision:** The ingest stores Commons thumbnails 1600 px wide (SVG rendered to PNG). Such images get `modified: true` and the credit suffix `· resized`; `· cropped` stays for crops.
+- **Why:** CONTRACTS 2.3 counts resizing as a modification, and "cropped" would be untrue for a plain resize.
+- **Gave up:** Storing originals (often 5 to 30 MB, too heavy for phones).
+
+## D28. Lessons come from curated page leads, not whole articles
+- **Decision:** `ingest/seed.json` lists, per title, a chronological series of Wikipedia pages; each entry becomes one lesson from the page lead plus, optionally, one section shortened to whole sentences (`max_words`). Leaving `sections` out still splits a whole article on its section boundaries.
+- **Why:** Leads are Wikipedia's own summaries (about 150 to 550 words), so lessons land near 400 words, read in order and need little trimming. Whole articles (Ancient Rome is about 15,000 words) would make 30+ lessons.
+- **Gave up:** Covering every detail of each article; titles are shortened adaptations (the attribution says "Shortened").
+
+## D29. Seed beats Wikidata; Wikidata never blocks a run
+- **Decision:** Period, subtitle, brief and hero come from the seed when given, else Wikidata (P580/P571/P569, P582/P576/P570, P18), else the article. Differences between seed and Wikidata are printed as warnings. A Wikidata failure (it often answers `maxlag`) becomes a warning.
+- **Why:** Editorial values are checked by a person; Wikidata only fills gaps and flags disagreements.
+- **Gave up:** Fully automatic periods.
+
+## D30. Re-ingesting a title keeps what other tools own
+- **Decision:** `ingest.cli wiki` rewrites lessons, images and `role: text` sources, keeps `quiz`, `feed_facts`, `person`, `role: citation` sources and the poster image, and reuses source ids by URL and image ids by Commons page. It refuses to overwrite a `reviewed` or `published` file without `--force`. Media file names carry a hash of the source URL.
+- **Why:** S13 merges quiz/feed into the same file; ids must stay stable (P1); a changed picture must never hide behind an old file name or app cache entry.
+- **Gave up:** Nothing in V1.
+

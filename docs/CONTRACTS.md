@@ -133,7 +133,7 @@ Inline, inside any text line: `*italic*` and `**bold**` only. Not allowed (the v
 | `license_version` | `"4.0"` | yes | Required for CC BY and CC BY-SA |
 | `license_url` | URI | yes | Required for CC BY and CC BY-SA |
 | `source_page_url` | URI | yes | Commons file page. Required for every licence except `OWN` |
-| `credit_line` | string 1..300 | no | Shown under the image: `{author} · {licence} · Wikimedia Commons`, plus `· cropped` when modified |
+| `credit_line` | string 1..300 | no | Shown under the image: `{author} · {licence} · Wikimedia Commons`, plus `· cropped` when cropped or `· resized` when we store a smaller copy (S11: Commons thumbnails 1600 px wide; SVG rendered to PNG) |
 | `modified` | bool | no | We cropped, resized or recoloured it (CC requires saying so) |
 | `focal_x`, `focal_y` | 0..1 | no | Crop centre for posters, tiles, banners and feed cards |
 
@@ -626,9 +626,9 @@ Topic routes share a ShellRoute with the topic bar (Lessons, Chat, Quiz). Sign-i
 
 | Step | Tool | Output |
 |---|---|---|
-| 1 Seed list | TOPICS.md → `backend/ingest/seed.json` (S11): id, kind, group, Wikipedia page(s) | |
+| 1 Seed list | TOPICS.md → `backend/ingest/seed.json` (S11): the editorial title fields + `pages[]`; each entry names a page and the sections that make one lesson (usually the page lead, optionally one section shortened with `max_words`), so a title reads as a chronological sequence. Format in `ingest/build.py` | |
 | 2 Topic text | S11 ingest: Wikipedia Action/REST API → clean → split on section boundaries into lessons of about 400 words (200 to 600) → `role: text` sources (licence `CC BY-SA 4.0`) | `data/titles/<id>.json`, `draft` |
-| 3 Images | S11 ingest: Commons `imageinfo` + `extmetadata`; accept only PD, CC0, CC BY, CC BY-SA; copy to our storage; fill every image field (2.3). Our own art: licence `OWN` | in the title file |
+| 3 Images | S11 ingest: the images each picked section shows on Wikipedia (and Wikidata P18 or the seed's `hero_image` as hero) → Commons `imageinfo` + `extmetadata`; accept only PD, CC0, CC BY, CC BY-SA; reject non-free, trademarked, too small (<500 px), files not on Commons, CC files with no author and files with no English caption for `alt`; copy to our storage (`backend/media/<title>/<iNN>-<url hash>.<ext>`, URL base `MEDIA_BASE_URL`); fill every image field (2.3). Our own art: licence `OWN` | in the title file |
 | 4 People text | Perplexity research (claim, source URL, confidence) → Claude drafts the person fields with `role: citation` sources | person block, `draft` |
 | 5 Quiz + feed | Gemini from stored lessons only: `data/drafts/<id>.quiz.json` = `{"quiz": [...]}`, `<id>.feed.json` = `{"feed_facts": [...]}`; items in the 2.5 / 2.6 shape **without** `id`, `title_id`, `status`, `review_note`. The S13 merge tool assigns the next free ids, sets `needs_check` and checks `lesson_id` | merged into the title file |
 | 6 Review | Owner, in chat or NotebookLM | statuses flipped, `review_note`s |
@@ -679,12 +679,12 @@ Python schema checks must install `jsonschema[format-nongpl]` (as `tools/require
 | Area | Rule |
 |---|---|
 | Public repo | Never commit `.env`, keys, tokens, keystores (`*.jks`, `key.properties`) or personal data. `.gitignore` covers them. Before each commit, `git diff --cached` shows no secret. Optional: a gitleaks pre-commit hook |
-| Env | `backend/.env` (gitignored) holds every secret; `.env.example` lists names only, empty values. Names: `DATABASE_URL`, `SERVE_DRAFTS`, `OPENROUTER_API_KEY`, `OPENROUTER_MODEL`, `GEMINI_API_KEY`, `GEMINI_MODEL`, `CHAT_DAILY_CAP`, `CHAT_GLOBAL_DAILY_CAP`, `CHAT_PROVIDER_TIMEOUT_S`, `CHAT_CONTEXT_CHARS`, `INSTALL_ID_SALT`, `WIKI_USER_AGENT`, `CORS_ORIGINS`. Production: the host's secret store |
+| Env | `backend/.env` (gitignored) holds every secret; `.env.example` lists names only, empty values. Names: `DATABASE_URL`, `SERVE_DRAFTS`, `OPENROUTER_API_KEY`, `OPENROUTER_MODEL`, `GEMINI_API_KEY`, `GEMINI_MODEL`, `CHAT_DAILY_CAP`, `CHAT_GLOBAL_DAILY_CAP`, `CHAT_PROVIDER_TIMEOUT_S`, `CHAT_CONTEXT_CHARS`, `INSTALL_ID_SALT`, `WIKI_USER_AGENT`, `CORS_ORIGINS`, `MEDIA_BASE_URL` (S11, not a secret). Production: the host's secret store |
 | App | Holds no keys. Only the API base URL is compiled in. Cleartext HTTP only in debug builds (debug-only `network_security_config` for `10.0.2.2`) |
 | Server data | No accounts, no IP addresses stored (rate limiting is in memory), no chat text stored or logged, chat usage only as salted hashes kept 2 days. No analytics SDKs in V1 |
 | Install id | UUID v4 from `Random.secure` on first launch; stored in drift `settings`; sent only in chat requests; never shown; replaced on "Clear my data" |
 | Chat abuse | Size limits, burst limits, per-install and global daily caps, injection guard and fail-closed output check (section 4) |
-| Wikimedia | Descriptive `WIKI_USER_AGENT` with the public repo URL as contact (no personal email), ≤3 concurrent requests, everything cached |
+| Wikimedia | Descriptive `WIKI_USER_AGENT` with the public repo URL as contact (no personal email), ≤3 concurrent requests, everything cached. S11 ingest: one request at a time, ≥0.5 s apart (default 1 s), `maxlag=5`, honours `Retry-After`, disk cache in `backend/.cache/` (gitignored); pytest never touches the network |
 | CC BY-SA | Attribution with link and licence on every lesson and image, "shortened"/"modified" stated, a full Credits screen, and our adapted lesson text is shared under CC BY-SA 4.0 too (ShareAlike notice in Credits) |
 | OFL fonts | Ship each `OFL.txt`, register it with Flutter's `LicenseRegistry`, never sell or rename the fonts |
 
@@ -740,3 +740,4 @@ Still open from BRIEF and not blocking S4 or S10: app name (keep one string cons
 | APP_DETAILS.md, CONTENT_SOURCES.md | Not edited. "20 titles" there is superseded by TOPICS.md (28 + 51); CONTENT_SOURCES' YAML quiz bank → JSON in the title file | TOPICS.md is the catalogue |
 | `llm/gemini.md` (Plan folder, outside the repo) | Updated 2026-11-22: output files go to `backend/data/drafts/`, items carry no ids or status (the merge tool assigns ids and sets `needs_check`) | Section 9.2 step 5 |
 | README.md | `/healthz` will return `{"status":"ok","version":"0.1.0"}` once S10 lands | health.schema.json |
+| CONTRACTS 2.3, 9.2, 11 (S11) | Credit suffix `· resized`; seed format; image rules and media file names; `MEDIA_BASE_URL`; ingest etiquette | Needed to build the ingest; DECISIONS D27 to D30 |
