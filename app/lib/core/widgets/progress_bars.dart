@@ -90,9 +90,14 @@ class LessonSegments extends StatelessWidget {
     required this.count,
     required this.current,
     required this.tint,
+    this.done,
   });
 
   final int count;
+
+  /// 1-based indices of completed lessons. Null = every lesson before the
+  /// current one counts as done (the design's linear reading).
+  final Set<int>? done;
 
   /// 1-based current lesson.
   final int current;
@@ -111,7 +116,9 @@ class LessonSegments extends StatelessWidget {
                 height: 6,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(MxRadius.bar),
-                  color: i < current ? tint : (i > current ? track : null),
+                  color: i == current
+                      ? null
+                      : ((done?.contains(i) ?? i < current) ? tint : track),
                   gradient: i == current
                       ? LinearGradient(
                           colors: [tint, tint, track, track],

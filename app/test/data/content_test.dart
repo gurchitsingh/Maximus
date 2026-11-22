@@ -183,6 +183,20 @@ void main() {
       expect(p.resumeLesson(lessons).index, 4);
     });
 
+    test('finishing the last lesson wraps to the first unread one', () {
+      final p = TitleProgress(
+        titleId: 'roman-history',
+        lessonCount: 6,
+        rows: [
+          row(6, done: true, t: 9),
+          row(2, done: true, t: 5),
+          row(1, done: true),
+        ],
+      );
+      expect(p.resumeIndex, 3);
+      expect(p.label, 'Lesson 3 of 6');
+    });
+
     test('an opened, unfinished lesson is resumed itself', () {
       final p = TitleProgress(
         titleId: 'roman-history',
@@ -218,7 +232,7 @@ void main() {
         ],
       );
       expect(p.completed, 0);
-      expect(p.resumeIndex, 2); // clamped into 1..lessonCount
+      expect(p.resumeIndex, 1); // first unread lesson that still exists
     });
   });
 

@@ -247,6 +247,7 @@ Future<void> showImageDetails(BuildContext context, ContentImage image) {
   ].join(' ');
   return showMxBottomSheet<void>(
     context: context,
+    useRootNavigator: true,
     builder: (ctx) {
       final c = ctx.mx;
       Widget row(String label, String value) => Padding(

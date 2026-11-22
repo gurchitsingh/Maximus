@@ -67,10 +67,21 @@ class TitleProgress {
   int? get resumeIndex {
     if (rows.isEmpty) return null;
     final last = rows.first;
-    final i = last.completedAt != null && last.lessonIndex < lessonCount
-        ? last.lessonIndex + 1
-        : last.lessonIndex;
-    return i.clamp(1, lessonCount < 1 ? 1 : lessonCount);
+    final top = lessonCount < 1 ? 1 : lessonCount;
+    if (last.completedAt == null) return last.lessonIndex.clamp(1, top);
+    // Last opened is done: the next unread lesson after it, wrapping to the
+    // first unread one; when all are read, stay on the last opened.
+    final done = {
+      for (final r in rows)
+        if (r.completedAt != null) r.lessonIndex,
+    };
+    for (var i = last.lessonIndex + 1; i <= lessonCount; i++) {
+      if (!done.contains(i)) return i;
+    }
+    for (var i = 1; i < last.lessonIndex && i <= lessonCount; i++) {
+      if (!done.contains(i)) return i;
+    }
+    return last.lessonIndex.clamp(1, top);
   }
 
   /// "Lesson 4 of 8" or "Not started".

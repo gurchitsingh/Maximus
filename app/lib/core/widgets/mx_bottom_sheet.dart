@@ -12,6 +12,9 @@ Future<T?> showMxBottomSheet<T>({
 
   /// Overrides the route theme (the gallery previews other themes).
   ThemeData? theme,
+
+  /// Cover the whole screen, including a shell's bottom bar.
+  bool useRootNavigator = false,
 }) {
   final reduced = MxMotion.reduced(context);
   Widget frame(BuildContext ctx) =>
@@ -20,6 +23,7 @@ Future<T?> showMxBottomSheet<T>({
     context: context,
     isScrollControlled: true,
     useSafeArea: true,
+    useRootNavigator: useRootNavigator,
     backgroundColor: Colors.transparent,
     barrierColor: MxFixed.sheetBackdrop,
     elevation: 0,

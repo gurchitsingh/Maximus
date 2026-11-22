@@ -210,7 +210,15 @@ class _ReaderBody extends ConsumerWidget {
         ),
         Padding(
           padding: const EdgeInsets.fromLTRB(20, 0, 20, 10),
-          child: LessonSegments(count: n, current: lesson.index, tint: tint),
+          child: LessonSegments(
+            count: n,
+            current: lesson.index,
+            tint: tint,
+            done: {
+              for (final r in ref.watch(titleProgressProvider(t.id)).rows)
+                if (r.completedAt != null) r.lessonIndex,
+            },
+          ),
         ),
         Expanded(
           child: SingleChildScrollView(
@@ -275,6 +283,7 @@ Future<void> showLessonsList(
   final router = GoRouter.of(context);
   return showMxBottomSheet<void>(
     context: context,
+    useRootNavigator: true,
     // The sheet watches progress itself: it is on screen, so never paused.
     builder: (ctx) => Consumer(
       builder: (ctx, ref, _) {
