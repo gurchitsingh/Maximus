@@ -1,0 +1,38 @@
+{
+  "featured_id": "roman-history",
+  "people_row_label": "Think Like...",
+  "onboarding_leader_ids": [
+    "julius-caesar",
+    "cleopatra-vii",
+    "alexander-the-great",
+    "ashoka",
+    "genghis-khan",
+    "elizabeth-i",
+    "napoleon-bonaparte",
+    "shivaji-maharaj",
+    "augustus",
+    "saladin",
+    "mansa-musa",
+    "rani-lakshmibai"
+  ],
+  "group_labels": {
+    "ancient-medieval": "Ancient and medieval",
+    "india": "India",
+    "revolutions-empires": "Revolutions and empires",
+    "wars-space": "Wars and space",
+    "money-crashes": "Money and crashes",
+    "leaders-ancient": "Ancient world",
+    "leaders-rome": "Rome",
+    "leaders-medieval": "Medieval world",
+    "leaders-europe": "Europe",
+    "leaders-india": "Indian subcontinent",
+    "leaders-africa": "Africa",
+    "thinkers": "Thinkers"
+  },
+  "notices": [
+    "Lesson text is adapted from Wikipedia (shortened and edited) and shared under the Creative Commons Attribution-ShareAlike 4.0 licence: https://creativecommons.org/licenses/by-sa/4.0/",
+    "Images come from Wikimedia Commons and keep their own licences, listed below. \"Modified\" means we cropped or resized the image.",
+    "Illustrations marked \"Made for Maximus\" were created for this app.",
+    "On This Day is loaded live from Wikipedia and is available under CC BY-SA 4.0."
+  ]
+}
