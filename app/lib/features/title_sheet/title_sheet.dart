@@ -56,6 +56,13 @@ class TitleSheet extends ConsumerWidget {
     };
     final repo = ref.read(userStateRepositoryProvider);
     final tint = hexColor(t.tint);
+    // Owner rule (S6 follow-up): Start until a lesson is marked read, then
+    // Continue; Read again once every lesson is read.
+    final progress = ref.watch(titleProgressProvider(titleId));
+    final finished = progress.finished;
+    final startLabel = finished
+        ? 'Read again'
+        : (progress.completed > 0 ? 'Continue' : 'Start');
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -102,11 +109,17 @@ class TitleSheet extends ConsumerWidget {
         ),
         const SizedBox(height: 16),
         TintButton(
-          label: added ? 'Continue' : 'Start',
+          label: startLabel,
           tint: tint,
           onPressed: t.lessonCount == 0
               ? null
-              : () => openReader(context, ref, titleId, closeSheetFirst: true),
+              : () => openReader(
+                  context,
+                  ref,
+                  titleId,
+                  closeSheetFirst: true,
+                  fromStart: finished,
+                ),
         ),
         const SizedBox(height: 12),
         AccentOutlineButton(

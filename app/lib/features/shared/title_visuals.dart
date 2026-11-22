@@ -66,15 +66,18 @@ Future<void> openReader(
   WidgetRef ref,
   String titleId, {
   bool closeSheetFirst = false,
+
+  /// "Read again": open lesson 1 instead of the resume lesson.
+  bool fromStart = false,
 }) async {
   final router = GoRouter.of(context);
   final messenger = ScaffoldMessenger.maybeOf(context);
   try {
     final detail = await ref.read(titleDetailProvider(titleId).future);
     if (detail.lessons.isEmpty) return;
-    final lesson = ref
-        .read(titleProgressProvider(titleId))
-        .resumeLesson(detail.lessons);
+    final lesson = fromStart
+        ? detail.lessons.first
+        : ref.read(titleProgressProvider(titleId)).resumeLesson(detail.lessons);
     if (closeSheetFirst && router.canPop()) router.pop();
     router.push(
       AppRoute.reader.location({'titleId': titleId, 'lessonId': lesson.id}),

@@ -3,6 +3,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:material_ui/material_ui.dart';
+import 'package:maximus/core/widgets/widgets.dart';
 import 'package:maximus/data/providers.dart';
 
 import '../app_harness.dart';
@@ -45,7 +46,8 @@ void main() {
 
     await tapAndSettle(tester, find.text('Add to study list'));
     expect(find.text('Added to study list'), findsOneWidget);
-    expect(find.text('Continue'), findsOneWidget);
+    // Adding alone does not change Start (it needs a lesson marked read).
+    expect(find.text('Start'), findsWidgets);
     final rows = await AppHarness.run(tester, h.db.select(h.db.studyList).get);
     expect(rows.single.titleId, 'roman-history');
 
@@ -206,5 +208,55 @@ void main() {
     expect(s['text_size'], 'large');
     expect(s['voice_speed'], '1.2');
     await h.dispose(tester);
+  });
+
+  testWidgets('sheet button: Start, Continue after a read lesson, Read again', (
+    tester,
+  ) async {
+    usePixel8(tester);
+    final h = await AppHarness.pump(tester);
+    Future<void> complete(int i) => AppHarness.run(
+      tester,
+      () => h.db.userStateDao.completeLesson(
+        titleId: 'roman-history',
+        lessonId: 'roman-history.l0$i',
+        lessonIndex: i,
+      ),
+    );
+    final sheetButton = find.descendant(
+      of: find.byType(TintButton),
+      matching: find.byType(Text),
+    );
+    String label() => (tester.widget<Text>(sheetButton.last)).data!;
+
+    await tapAndSettle(tester, find.text('Library'));
+    await tapAndSettle(tester, find.bySemanticsLabel('ROMAN HISTORY').first);
+    expect(label(), 'Start');
+
+    // Opened but not finished is still Start.
+    await AppHarness.run(
+      tester,
+      () => h.db.userStateDao.openLesson(
+        titleId: 'roman-history',
+        lessonId: 'roman-history.l01',
+        lessonIndex: 1,
+      ),
+    );
+    await AppHarness.settle(tester);
+    expect(label(), 'Start');
+
+    await complete(1);
+    await AppHarness.settle(tester);
+    expect(label(), 'Continue');
+
+    for (var i = 2; i <= 6; i++) {
+      await complete(i);
+    }
+    await AppHarness.settle(tester);
+    expect(label(), 'Read again');
+
+    // Read again opens lesson 1.
+    await tapAndSettle(tester, find.text('Read again'));
+    expect(find.text('Lesson 1 of 6'), findsOneWidget);
   });
 }
