@@ -60,6 +60,7 @@ class AnswerOption extends StatelessWidget {
       side: BorderSide(color: border, width: 2),
     );
     return Semantics(
+      container: true,
       button: true,
       label: word == null ? label : '$label, $word',
       excludeSemantics: true,
@@ -145,6 +146,7 @@ class SettingsRow extends StatelessWidget {
     final c = context.mx;
     final side = BorderSide(color: c.divider);
     return Semantics(
+      container: true,
       button: onTap != null,
       child: InkWell(
         onTap: onTap,
@@ -164,16 +166,22 @@ class SettingsRow extends StatelessWidget {
                       : MxText.listRow.copyWith(color: c.text),
                 ),
               ),
-              if (value != null)
+              if (value != null) ...[
+                const SizedBox(width: 12),
+                // Align fills the slot so the value sits flush right.
                 Flexible(
-                  child: Text(
-                    value!,
-                    textAlign: TextAlign.right,
-                    style: destructive
-                        ? MxText.sub.copyWith(color: c.textMuted)
-                        : MxText.listValue.copyWith(color: c.textMuted),
+                  child: Align(
+                    alignment: Alignment.centerRight,
+                    child: Text(
+                      value!,
+                      textAlign: TextAlign.right,
+                      style: destructive
+                          ? MxText.sub.copyWith(color: c.textMuted)
+                          : MxText.listValue.copyWith(color: c.textMuted),
+                    ),
                   ),
                 ),
+              ],
               if (showArrow)
                 MxIcon(MxIcons.arrowRight, size: 20, color: c.textMuted),
             ],

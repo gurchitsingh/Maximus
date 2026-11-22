@@ -85,7 +85,13 @@ class MxSheetFrame extends StatelessWidget {
                     ),
                   ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 18, 20, 22),
+                  // Keep the last button clear of the gesture bar.
+                  padding: EdgeInsets.fromLTRB(
+                    20,
+                    18,
+                    20,
+                    22 + MediaQuery.paddingOf(context).bottom,
+                  ),
                   child: child,
                 ),
               ],

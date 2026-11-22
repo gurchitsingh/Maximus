@@ -86,6 +86,7 @@ class _NavButton extends StatelessWidget {
     final c = context.mx;
     final color = active ? c.accentText : c.textMuted;
     return Semantics(
+      container: true,
       button: true,
       selected: active,
       label: item.label,

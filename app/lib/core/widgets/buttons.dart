@@ -93,6 +93,8 @@ class _MxPressableState extends State<MxPressable> {
     }
 
     return Semantics(
+      // Own node, so TalkBack never merges a button with its neighbours.
+      container: true,
       button: true,
       enabled: enabled,
       selected: widget.selected,
