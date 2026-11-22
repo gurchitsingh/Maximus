@@ -16,11 +16,22 @@ dependencies:
   cached_network_image: ^4.0.7
   # Draws the custom icon paths and logo from DESIGN_SPEC 10.1 and 10.4 exactly.
   flutter_svg: ^2.5.0
+  drift: ^2.35.4
+  path_provider: ^2.1.6
+  path: ^1.9.1
+  flutter_tts: ^4.2.5
+  drift_flutter: ^0.3.1
+  meta: ^1.19.0
+  json_annotation: ^4.12.0
+  url_launcher: ^6.3.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  drift_dev: ^2.35.3
+  build_runner: ^2.17.1
+  json_serializable: ^6.15.2
 
 flutter:
   uses-material-design: true
@@ -31,6 +42,9 @@ flutter:
     - assets/fonts/CaveatBrush/OFL.txt
     - assets/fonts/BigShouldersStencil/OFL.txt
     - assets/credits/fonts.json
+    # Copies of backend/data/samples and docs/examples (CONTRACTS 8.1) until
+    # S12 wires the API. test/data/dev_assets_test.dart keeps them in sync.
+    - assets/dev/
 
   # All fonts are SIL OFL 1.1, bundled so the app works offline (DESIGN_SPEC 2.1).
   # Licence texts are registered with LicenseRegistry in lib/core/theme/font_licenses.dart.

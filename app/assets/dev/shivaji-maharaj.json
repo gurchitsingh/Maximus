@@ -1,0 +1,170 @@
+{
+  "id": "shivaji-maharaj",
+  "kind": "leader",
+  "name": "Chhatrapati Shivaji Maharaj",
+  "subtitle": "Maratha · Early modern",
+  "poster_lines": ["SHIVAJI", "MAHARAJ"],
+  "group": "leaders-india",
+  "era": "early-modern",
+  "region": "asia",
+  "period_start": 1630,
+  "period_end": 1680,
+  "themes": ["war", "leadership", "strategy", "independence"],
+  "bg": "#3A1F0C",
+  "tint": "#F08A24",
+  "lettering": "carved",
+  "poster_image_id": "shivaji-maharaj.i01",
+  "hero_image_id": null,
+  "brief": "SAMPLE · Built an independent Maratha kingdom from hill forts while facing far larger empires.",
+  "reading_minutes": 1,
+  "lesson_count": 1,
+  "quiz_count": 0,
+  "linked_title_ids": ["maratha-empire"],
+  "rank": 5,
+  "status": "draft",
+  "content_version": 1,
+  "updated_at": "2026-11-22T00:00:00Z",
+  "lessons": [
+    {
+      "id": "shivaji-maharaj.l01",
+      "title_id": "shivaji-maharaj",
+      "index": 1,
+      "heading": "Who was Shivaji?",
+      "body": "*SAMPLE text for testing. Not reviewed.*\n\nShivaji Bhonsle was born in the hill fort of Shivneri, in western India, around 1630. His father served the Sultanate of Bijapur, one of the powers that ruled the Deccan. In his teens Shivaji began taking hill forts near Pune, slowly building a territory of his own.\n\nOver the next thirty years he fought Bijapur, the Mughal Empire and others, often with small, fast forces that knew the hills well. He also built forts along the coast and a navy to protect trade.\n\nIn 1674 he was crowned at Raigad fort and took the title Chhatrapati. He ran his state with a council of eight ministers, the Ashta Pradhan. He died in 1680, leaving a kingdom that grew into the Maratha Empire.\n\n- Born: about 1630, Shivneri fort\n- Crowned: 1674, Raigad\n- Died: 1680",
+      "reading_minutes": 1,
+      "image_ids": ["shivaji-maharaj.i01"],
+      "read_aloud_text": null,
+      "source_ids": ["shivaji-maharaj.s01", "shivaji-maharaj.s02"]
+    }
+  ],
+  "images": [
+    {
+      "id": "shivaji-maharaj.i01",
+      "title_id": "shivaji-maharaj",
+      "url": "https://example.org/sample/media/shivaji-maharaj/portrait.png",
+      "width": 800,
+      "height": 1200,
+      "alt": "SAMPLE placeholder: flat illustrated portrait of Shivaji in a turban, head and shoulders.",
+      "kind": "portrait",
+      "author": "Maximus (SAMPLE placeholder)",
+      "license": "OWN",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": null,
+      "credit_line": "Illustration made for Maximus (SAMPLE placeholder)",
+      "modified": false,
+      "focal_x": 0.5,
+      "focal_y": 0.3
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [
+    {
+      "id": "shivaji-maharaj.f001",
+      "title_id": "shivaji-maharaj",
+      "lesson_id": "shivaji-maharaj.l01",
+      "text": "SAMPLE: Shivaji built a navy and sea forts at a time when most land powers in India paid little attention to the sea.",
+      "image_id": "shivaji-maharaj.i01",
+      "status": "needs_check",
+      "review_note": null
+    },
+    {
+      "id": "shivaji-maharaj.f002",
+      "title_id": "shivaji-maharaj",
+      "lesson_id": "shivaji-maharaj.l01",
+      "text": "SAMPLE: In 1674 Shivaji was crowned at Raigad fort and took the title Chhatrapati.",
+      "image_id": null,
+      "status": "needs_check",
+      "review_note": null
+    }
+  ],
+  "person": {
+    "role": "King (Chhatrapati) and founder of the Maratha state",
+    "born": { "year": 1630, "display": "c. 1630 (date debated)" },
+    "died": { "year": 1680, "display": "3 April 1680" },
+    "region": "Deccan, western India",
+    "headline": "SAMPLE · Turned a few hill forts into a kingdom that stood up to the Mughal Empire.",
+    "traits": [
+      {
+        "name": "Patient planner",
+        "text": "SAMPLE · Took and strengthened hill forts one at a time instead of risking everything on one battle.",
+        "source_ids": ["shivaji-maharaj.s01", "shivaji-maharaj.s02"]
+      },
+      {
+        "name": "Fast and mobile",
+        "text": "SAMPLE · Used small, quick forces that knew the hills, striking where enemies were weakest.",
+        "source_ids": ["shivaji-maharaj.s01", "shivaji-maharaj.s02"]
+      },
+      {
+        "name": "Builder of institutions",
+        "text": "SAMPLE · Set up a council of ministers and a regular way to collect revenue, so the state did not rest on him alone.",
+        "source_ids": ["shivaji-maharaj.s01", "shivaji-maharaj.s02"]
+      },
+      {
+        "name": "Sea-minded",
+        "text": "SAMPLE · Built coastal forts and a navy when most land powers in India paid little attention to the sea.",
+        "source_ids": ["shivaji-maharaj.s01", "shivaji-maharaj.s02"]
+      }
+    ],
+    "changes": [
+      {
+        "text": "SAMPLE · Created the Ashta Pradhan, a council of eight ministers with clear jobs.",
+        "source_ids": ["shivaji-maharaj.s01"]
+      },
+      {
+        "text": "SAMPLE · Built a navy and sea forts such as Sindhudurg on the Konkan coast.",
+        "source_ids": ["shivaji-maharaj.s01"]
+      },
+      {
+        "text": "SAMPLE · Founded the state that later grew into the Maratha Empire.",
+        "source_ids": ["shivaji-maharaj.s01", "shivaji-maharaj.s02"]
+      }
+    ],
+    "odds_beaten": [
+      {
+        "event": "Pratapgad",
+        "year_display": "1659",
+        "why_impossible": "SAMPLE · Bijapur sent a large army under its general Afzal Khan to crush the young ruler.",
+        "outcome": "SAMPLE · Shivaji killed Afzal Khan at a meeting near Pratapgad fort, and his forces routed the army.",
+        "outcome_kind": "won",
+        "source_ids": ["shivaji-maharaj.s01", "shivaji-maharaj.s02"]
+      },
+      {
+        "event": "Escape from Agra",
+        "year_display": "1666",
+        "why_impossible": "SAMPLE · He was held under guard at the Mughal court, far from his own lands.",
+        "outcome": "SAMPLE · He escaped, by tradition hidden in baskets of sweets, and went home to rebuild his power.",
+        "outcome_kind": "survived",
+        "source_ids": ["shivaji-maharaj.s01"]
+      }
+    ],
+    "core_ideas": [],
+    "use_today": [
+      {
+        "text": "SAMPLE · Fight on ground where your strengths count. A small team that moves fast and knows the terrain can beat a bigger one.",
+        "source_ids": ["shivaji-maharaj.s01", "shivaji-maharaj.s02"]
+      }
+    ],
+    "legend_note": null
+  },
+  "sources": [
+    {
+      "id": "shivaji-maharaj.s01",
+      "title": "SAMPLE link only: Shivaji (Wikipedia). Claims here are not checked against it yet.",
+      "url": "https://en.wikipedia.org/wiki/Shivaji",
+      "publisher": "Wikipedia",
+      "role": "citation",
+      "license": null,
+      "confidence": "low"
+    },
+    {
+      "id": "shivaji-maharaj.s02",
+      "title": "SAMPLE link only: Maratha Empire (Wikipedia). Claims here are not checked against it yet.",
+      "url": "https://en.wikipedia.org/wiki/Maratha_Empire",
+      "publisher": "Wikipedia",
+      "role": "citation",
+      "license": null,
+      "confidence": "low"
+    }
+  ]
+}

@@ -1,5 +1,6 @@
-// Settings placeholder: only the theme and text size controls (S4 hooks).
-// The full screen (voice, clear my data, about, credits) is S9.
+// Settings: theme and text size (persisted in drift from S6) and voice
+// speed for read-aloud. The full screen (voice, clear my data, about,
+// credits) is S9.
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -10,6 +11,7 @@ import '../../core/theme/theme_controller.dart';
 import '../../core/theme/tokens.dart';
 import '../../core/theme/typography.dart';
 import '../../core/widgets/widgets.dart';
+import '../../data/providers.dart';
 
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
@@ -52,6 +54,22 @@ class SettingsScreen extends ConsumerWidget {
                     child: Text(
                       'Sample: Octavian won the civil war and was given the name Augustus.',
                       style: reading.paragraph.copyWith(color: c.text),
+                    ),
+                  ),
+                  _Group(
+                    label: 'Voice speed',
+                    child: SegmentedChoice<String>(
+                      options: const ['0.8', '1.0', '1.2'],
+                      value:
+                          ref
+                              .watch(settingsMapProvider)
+                              .value?['voice_speed'] ??
+                          '1.0',
+                      labelOf: (v) => v == '1.0' ? '1x' : '${v}x',
+                      onChanged: (v) => ref
+                          .read(databaseProvider)
+                          .settingsDao
+                          .write('voice_speed', v),
                     ),
                   ),
                   Padding(

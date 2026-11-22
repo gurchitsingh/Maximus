@@ -12,6 +12,9 @@ Future<T?> showMxBottomSheet<T>({
 
   /// Overrides the route theme (the gallery previews other themes).
   ThemeData? theme,
+
+  /// Cover the whole screen, including a shell's bottom bar.
+  bool useRootNavigator = false,
 }) {
   final reduced = MxMotion.reduced(context);
   Widget frame(BuildContext ctx) =>
@@ -20,6 +23,7 @@ Future<T?> showMxBottomSheet<T>({
     context: context,
     isScrollControlled: true,
     useSafeArea: true,
+    useRootNavigator: useRootNavigator,
     backgroundColor: Colors.transparent,
     barrierColor: MxFixed.sheetBackdrop,
     elevation: 0,
@@ -30,6 +34,36 @@ Future<T?> showMxBottomSheet<T>({
             data: theme,
             child: Builder(builder: frame),
           ),
+  );
+}
+
+/// The same sheet as a router page, for routes like `/sheet/:titleId`
+/// (CONTRACTS 8.3: a modal sheet page on the root navigator).
+class MxSheetPage<T> extends Page<T> {
+  const MxSheetPage({
+    super.key,
+    super.name,
+    super.arguments,
+    super.restorationId,
+    required this.builder,
+    this.banner,
+  });
+
+  final WidgetBuilder builder;
+  final Widget? banner;
+
+  @override
+  Route<T> createRoute(BuildContext context) => ModalBottomSheetRoute<T>(
+    settings: this,
+    isScrollControlled: true,
+    useSafeArea: true,
+    backgroundColor: Colors.transparent,
+    modalBarrierColor: MxFixed.sheetBackdrop,
+    elevation: 0,
+    sheetAnimationStyle: MxMotion.reduced(context)
+        ? AnimationStyle.noAnimation
+        : null,
+    builder: (ctx) => MxSheetFrame(banner: banner, child: builder(ctx)),
   );
 }
 

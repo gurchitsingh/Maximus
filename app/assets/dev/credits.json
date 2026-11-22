@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-11-22T00:00:00Z",
+  "notices": [
+    "Lesson text is adapted from Wikipedia (shortened and edited) and shared under the Creative Commons Attribution-ShareAlike 4.0 licence: https://creativecommons.org/licenses/by-sa/4.0/",
+    "Images come from Wikimedia Commons and keep their own licences, listed below. \"Modified\" means we cropped or resized the image.",
+    "Illustrations marked \"Made for Maximus\" were created for this app.",
+    "On This Day is loaded live from Wikipedia and is available under CC BY-SA 4.0."
+  ],
+  "text_sources": [
+    {
+      "title_id": "roman-history",
+      "title_name": "Roman history",
+      "name": "SAMPLE link only: Ancient Rome (Wikipedia). This sample text was not taken from it.",
+      "url": "https://en.wikipedia.org/wiki/Ancient_Rome",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title_id": "roman-history",
+      "title_name": "Roman history",
+      "name": "SAMPLE link only: Roman Republic (Wikipedia). This sample text was not taken from it.",
+      "url": "https://en.wikipedia.org/wiki/Roman_Republic",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title_id": "roman-history",
+      "title_name": "Roman history",
+      "name": "SAMPLE link only: Punic Wars (Wikipedia). This sample text was not taken from it.",
+      "url": "https://en.wikipedia.org/wiki/Punic_Wars",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title_id": "roman-history",
+      "title_name": "Roman history",
+      "name": "SAMPLE link only: Fall of the Western Roman Empire (Wikipedia). This sample text was not taken from it.",
+      "url": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "images": [
+    {
+      "image_id": "roman-history.i01",
+      "title_id": "roman-history",
+      "title_name": "Roman history",
+      "credit_line": "SAMPLE placeholder · CC BY-SA 4.0 · cropped",
+      "license": "CC BY-SA",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_page_url": "https://example.org/sample/commons/roman-forum",
+      "modified": true
+    },
+    {
+      "image_id": "roman-history.i02",
+      "title_id": "roman-history",
+      "title_name": "Roman history",
+      "credit_line": "SAMPLE placeholder · Public domain",
+      "license": "PD",
+      "license_url": null,
+      "source_page_url": "https://example.org/sample/commons/hannibal-route",
+      "modified": false
+    },
+    {
+      "image_id": "roman-history.i03",
+      "title_id": "roman-history",
+      "title_name": "Roman history",
+      "credit_line": "SAMPLE placeholder · CC BY 2.0",
+      "license": "CC BY",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "source_page_url": "https://example.org/sample/commons/colosseum",
+      "modified": false
+    },
+    {
+      "image_id": "roman-history.i04",
+      "title_id": "roman-history",
+      "title_name": "Roman history",
+      "credit_line": "SAMPLE placeholder · CC0 1.0",
+      "license": "CC0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_page_url": "https://example.org/sample/commons/aqueduct",
+      "modified": false
+    },
+    {
+      "image_id": "shivaji-maharaj.i01",
+      "title_id": "shivaji-maharaj",
+      "title_name": "Chhatrapati Shivaji Maharaj",
+      "credit_line": "Illustration made for Maximus (SAMPLE placeholder)",
+      "license": "OWN",
+      "license_url": null,
+      "source_page_url": null,
+      "modified": false
+    },
+    {
+      "image_id": "chanakya.i01",
+      "title_id": "chanakya",
+      "title_name": "Chanakya",
+      "credit_line": "Illustration made for Maximus (SAMPLE placeholder)",
+      "license": "OWN",
+      "license_url": null,
+      "source_page_url": null,
+      "modified": false
+    }
+  ]
+}

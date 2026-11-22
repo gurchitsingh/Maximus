@@ -10,7 +10,13 @@
 include: package:flutter_lints/flutter.yaml
 
 analyzer:
+  # S6: a `?? const []` fallback silently made a loop variable dynamic and
+  # skipped an extension method at runtime. These make that an error.
+  language:
+    strict-inference: true
+    strict-raw-types: true
   exclude:
+    - "**/*.g.dart"
     - build/**
     - android/**
 

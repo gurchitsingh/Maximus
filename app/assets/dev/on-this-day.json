@@ -1,0 +1,33 @@
+{
+  "date": "11-21",
+  "fetched_at": "2026-11-21T06:00:00Z",
+  "stale": false,
+  "items": [
+    {
+      "year": 1783,
+      "text": "SAMPLE: In Paris, Pilâtre de Rozier and the Marquis d'Arlandes made the first untethered hot-air balloon flight.",
+      "page_title": "Jean-François Pilâtre de Rozier",
+      "page_url": "https://en.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Pil%C3%A2tre_de_Rozier",
+      "linked_title_id": null
+    },
+    {
+      "year": 1877,
+      "text": "SAMPLE: Thomas Edison announced the phonograph, a machine that could record sound and play it back.",
+      "page_title": "Phonograph",
+      "page_url": "https://en.wikipedia.org/wiki/Phonograph",
+      "linked_title_id": null
+    },
+    {
+      "year": -44,
+      "text": "SAMPLE fixture, not a real On This Day entry: an item whose page is a text source of a library title, so the tap-through to the title sheet can be tested.",
+      "page_title": "Roman Republic",
+      "page_url": "https://en.wikipedia.org/wiki/Roman_Republic",
+      "linked_title_id": "roman-history"
+    }
+  ],
+  "source": {
+    "name": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Wikipedia:Selected_anniversaries/November_21",
+    "license": "CC BY-SA 4.0"
+  }
+}

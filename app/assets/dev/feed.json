@@ -1,0 +1,98 @@
+{
+  "generated_at": "2026-11-22T00:00:00Z",
+  "seed": 42,
+  "facts": [
+    {
+      "id": "roman-history.f004",
+      "title_id": "roman-history",
+      "lesson_id": "roman-history.l03",
+      "text": "SAMPLE: Rome had almost no navy when it first fought Carthage, so it built whole fleets and fought sea battles like land battles.",
+      "image_id": null,
+      "status": "needs_check",
+      "review_note": null
+    },
+    {
+      "id": "shivaji-maharaj.f002",
+      "title_id": "shivaji-maharaj",
+      "lesson_id": "shivaji-maharaj.l01",
+      "text": "SAMPLE: In 1674 Shivaji was crowned at Raigad fort and took the title Chhatrapati.",
+      "image_id": null,
+      "status": "needs_check",
+      "review_note": null
+    },
+    {
+      "id": "chanakya.f002",
+      "title_id": "chanakya",
+      "lesson_id": "chanakya.l01",
+      "text": "SAMPLE: Chanakya's circle-of-states idea says your neighbour is a likely rival and your neighbour's neighbour a likely friend.",
+      "image_id": null,
+      "status": "needs_check",
+      "review_note": null
+    },
+    {
+      "id": "roman-history.f005",
+      "title_id": "roman-history",
+      "lesson_id": "roman-history.l04",
+      "text": "SAMPLE: Crossing the small river Rubicon with his army made Julius Caesar a traitor in 49 BCE. He won the war that followed.",
+      "image_id": null,
+      "status": "needs_check",
+      "review_note": null
+    },
+    {
+      "id": "shivaji-maharaj.f001",
+      "title_id": "shivaji-maharaj",
+      "lesson_id": "shivaji-maharaj.l01",
+      "text": "SAMPLE: Shivaji built a navy and sea forts at a time when most land powers in India paid little attention to the sea.",
+      "image_id": "shivaji-maharaj.i01",
+      "status": "needs_check",
+      "review_note": null
+    },
+    {
+      "id": "chanakya.f001",
+      "title_id": "chanakya",
+      "lesson_id": "chanakya.l01",
+      "text": "SAMPLE: The Arthashastra, linked to Chanakya, covers taxes, spies, law and war in one practical guide to running a state.",
+      "image_id": "chanakya.i01",
+      "status": "needs_check",
+      "review_note": null
+    }
+  ],
+  "images": [
+    {
+      "id": "chanakya.i01",
+      "title_id": "chanakya",
+      "url": "https://example.org/sample/media/chanakya/portrait.png",
+      "width": 800,
+      "height": 1200,
+      "alt": "SAMPLE placeholder: flat illustrated portrait of an ancient Indian teacher holding a palm-leaf manuscript.",
+      "kind": "portrait",
+      "author": "Maximus (SAMPLE placeholder)",
+      "license": "OWN",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": null,
+      "credit_line": "Illustration made for Maximus (SAMPLE placeholder)",
+      "modified": false,
+      "focal_x": 0.5,
+      "focal_y": 0.3
+    },
+    {
+      "id": "shivaji-maharaj.i01",
+      "title_id": "shivaji-maharaj",
+      "url": "https://example.org/sample/media/shivaji-maharaj/portrait.png",
+      "width": 800,
+      "height": 1200,
+      "alt": "SAMPLE placeholder: flat illustrated portrait of Shivaji in a turban, head and shoulders.",
+      "kind": "portrait",
+      "author": "Maximus (SAMPLE placeholder)",
+      "license": "OWN",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": null,
+      "credit_line": "Illustration made for Maximus (SAMPLE placeholder)",
+      "modified": false,
+      "focal_x": 0.5,
+      "focal_y": 0.3
+    }
+  ]
+}

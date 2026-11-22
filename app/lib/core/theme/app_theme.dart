@@ -96,6 +96,8 @@ abstract final class MxTheme {
       snackBarTheme: SnackBarThemeData(
         backgroundColor: c.surfaceRaised,
         contentTextStyle: MxText.body.copyWith(color: c.text),
+        // S6: the default action colour was unreadable on surfaceRaised.
+        actionTextColor: c.accentText,
         behavior: SnackBarBehavior.floating,
       ),
       extensions: [
