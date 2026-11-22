@@ -9,8 +9,13 @@ Future<T?> showMxBottomSheet<T>({
   required BuildContext context,
   required WidgetBuilder builder,
   Widget? banner,
+
+  /// Overrides the route theme (the gallery previews other themes).
+  ThemeData? theme,
 }) {
   final reduced = MxMotion.reduced(context);
+  Widget frame(BuildContext ctx) =>
+      MxSheetFrame(banner: banner, child: builder(ctx));
   return showModalBottomSheet<T>(
     context: context,
     isScrollControlled: true,
@@ -19,7 +24,9 @@ Future<T?> showMxBottomSheet<T>({
     barrierColor: MxFixed.sheetBackdrop,
     elevation: 0,
     sheetAnimationStyle: reduced ? AnimationStyle.noAnimation : null,
-    builder: (ctx) => MxSheetFrame(banner: banner, child: builder(ctx)),
+    builder: (ctx) => theme == null
+        ? frame(ctx)
+        : Theme(data: theme, child: Builder(builder: frame)),
   );
 }
 
