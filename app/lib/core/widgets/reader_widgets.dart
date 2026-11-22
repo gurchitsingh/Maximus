@@ -1,6 +1,7 @@
 // Reader pieces: read-aloud bar (DESIGN_SPEC 7.22) and the finish
 // celebration overlay with confetti (7.21, motion 6).
 import 'dart:math' as math;
+import 'dart:ui' show ImageFilter;
 
 import 'package:material_ui/material_ui.dart';
 
@@ -145,6 +146,14 @@ class CelebrationOverlay extends StatelessWidget {
       child: Stack(
         fit: StackFit.expand,
         children: [
+          // The 0.78 backdrop alone lets lesson text show through the copy;
+          // a light blur keeps the spec colour and makes it readable.
+          IgnorePointer(
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 6, sigmaY: 6),
+              child: const SizedBox.expand(),
+            ),
+          ),
           if (!MxMotion.reduced(context))
             IgnorePointer(child: Confetti(extra: tint)),
           SafeArea(

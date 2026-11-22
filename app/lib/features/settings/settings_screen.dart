@@ -49,6 +49,13 @@ class SettingsScreen extends ConsumerWidget {
                       onChanged: ctrl.setTextSize,
                     ),
                   ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(20, 12, 20, 4),
+                    child: Text(
+                      'Sample: Octavian won the civil war and was given the name Augustus.',
+                      style: reading.paragraph.copyWith(color: c.text),
+                    ),
+                  ),
                   _Group(
                     label: 'Voice speed',
                     child: SegmentedChoice<String>(
@@ -63,13 +70,6 @@ class SettingsScreen extends ConsumerWidget {
                           .read(databaseProvider)
                           .settingsDao
                           .write('voice_speed', v),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 12, 20, 4),
-                    child: Text(
-                      'Sample: Octavian won the civil war and was given the name Augustus.',
-                      style: reading.paragraph.copyWith(color: c.text),
                     ),
                   ),
                   Padding(
