@@ -1,0 +1,678 @@
+{
+  "id": "space-history",
+  "kind": "topic",
+  "name": "Space history",
+  "subtitle": "From rockets to space stations",
+  "poster_lines": [
+    "SPACE",
+    "HISTORY"
+  ],
+  "group": "wars-space",
+  "era": "modern",
+  "region": "global",
+  "period_start": 1944,
+  "period_end": null,
+  "themes": [
+    "science-tech",
+    "exploration",
+    "politics"
+  ],
+  "bg": "#0E1A33",
+  "tint": "#F2C14E",
+  "lettering": "stencil",
+  "poster_image_id": null,
+  "hero_image_id": "space-history.i01",
+  "brief": "Rockets, satellites, Moon landings and the stations that circle Earth today.",
+  "linked_title_ids": [
+    "cold-war",
+    "ww2"
+  ],
+  "rank": 25,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "space-history.l01",
+      "title_id": "space-history",
+      "index": 1,
+      "heading": "Dreams of space",
+      "body": "Spaceflight began in the 20th century following theoretical and practical breakthroughs by Konstantin Tsiolkovsky, Robert H. Goddard, and Hermann Oberth, each of whom published works proposing rockets as the means for spaceflight. The first successful large-scale rocket programs were initiated in Nazi Germany by Wernher von Braun. The Soviet Union took the lead in the early post-war Space Race, launching the first satellite, the first animal, the first human and the first woman into orbit. The United States landed the first men on the Moon in 1969. Through the late 20th century, France, the United Kingdom, Japan, and China were also working on projects to reach space.\n\nFollowing the end of the Space Race, spaceflight has been characterized by greater international cooperation, cheaper access to low Earth orbit and an expansion of commercial ventures. Interplanetary probes have visited all of the planets in the Solar System, and humans have remained in orbit for long periods aboard space stations such as Mir and the International Space Station (ISS). Most recently, China has emerged as the third nation with the capability to launch independent crewed missions, while operators in the commercial sector have developed reusable booster systems and craft launched from airborne platforms. In 2020, SpaceX became the first commercial operator to successfully launch a crewed mission to the ISS with Crew Dragon Demo-2.\n\n## Rocket pioneers\n\nAt the beginning of the 20th century, there was a burst of scientific investigation into interplanetary travel, inspired by authors of science fiction such as Jules Verne (From the Earth to the Moon, Around the Moon) and H.G. Wells (The First Men in the Moon, The War of the Worlds).\n\nThe first realistic proposal for spaceflight was \"Issledovanie Mirovikh Prostranstv Reaktivnimi Priborami\", or \"The Exploration of Cosmic Space by Means of Reaction Devices\" by Konstantin Tsiolkovsky, published in 1903.\n\n![](space-history.i03)\n\nSpaceflight became an engineering possibility with the work of Robert H. Goddard's publication in 1919 of his paper \"A Method of Reaching Extreme Altitudes\", where his application of the de Laval nozzle to liquid fuel rockets gave sufficient power for interplanetary travel to become possible. This paper was highly influential on Hermann Oberth and Wernher von Braun, later key players in spaceflight.\n\nIn 1929, the Slovene officer Hermann Noordung was the first to imagine a complete space station in his book The Problem of Space Travel.\n\nThe first rocket to reach space was the German V-2 rocket MW 18014, on a vertical test flight in June 1944 during World War II. After the war ended, the research and development branch of the (British) Ordinance Office organised Operation Backfire which, in October 1945, assembled enough V-2 missiles and supporting components to enable the launch of three (possibly four, depending on source consulted) of them from a site near Cuxhaven in northern Germany. Although these launches were inclined and the rockets did not achieve the altitude necessary to be regarded as sub-orbital spaceflight, the Backfire report remains the most extensive technical documentation of the rocket, including all support procedures, tailored vehicles and fuel composition.\n\nSubsequently, the British Interplanetary Society proposed an enlarged man-carrying version of the V-2 called Megaroc. The plan, written in 1946, envisaged a three-year development programme culminating in the launch of test pilot Eric Brown on a sub-orbital mission in 1949.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "space-history.i02",
+        "space-history.i03"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "space-history.s01"
+      ]
+    },
+    {
+      "id": "space-history.l02",
+      "title_id": "space-history",
+      "index": 2,
+      "heading": "The first rocket into space",
+      "body": "The V-2 rocket, with the development name Aggregat-4 (A4), was the world's first practical, modern ballistic missile and suborbital launch vehicle. The missile, powered by a liquid-propellant rocket engine, was developed during the Second World War in Nazi Germany as a \"vengeance weapon\" and assigned to attack Allied cities as retaliation for the Allied bombings of German cities. After an altitude of 100 km was selected to define the edge of space, the V-2 rocket also became retroactively the first artificial object to travel into space with the vertical launch of MW 18014 on 20 June 1944.\n\nResearch of military use of long-range rockets began when the graduate studies of Wernher von Braun were noticed by the Wehrmacht. A series of prototypes culminated in the A4, which went to war as the V-2. Beginning in September 1944, more than 3,000 V-2s were launched by the Wehrmacht against Allied targets, first London and later Antwerp and Liège. According to a 2011 BBC documentary, the attacks from V-2s resulted in the deaths of an estimated 9,000 civilians and military personnel, while a further 12,000 laborers and concentration camp prisoners died as a result of their forced participation in the production of the weapons.\n\nThe rockets traveled at supersonic speeds, impacted without audible warning, and proved unstoppable. No countermeasures existed except for misdirection and attacks on launch sites and manufacturing facilities. However, postwar and historical assessments found they had little material or strategic impact on the war, despite the great cost of the program.\n\nTeams from the Allied forces—the United States, the United Kingdom, France and the Soviet Union—raced to procure the Germans' missile technology. Through Operation Paperclip and Operation Osoaviakhim, captured hardware and manufacturing facilities, the V-2 was very influential on later ballistic missile and spaceflight development.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "space-history.i04"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "space-history.s02"
+      ]
+    },
+    {
+      "id": "space-history.l03",
+      "title_id": "space-history",
+      "index": 3,
+      "heading": "Sputnik",
+      "body": "Sputnik 1, often referred to as simply Sputnik, was the first artificial Earth satellite. It was launched into an elliptical low Earth orbit by the Soviet Union on 4 October 1957 as part of the Soviet space program. It sent a radio signal back to Earth for three weeks before its three silver-zinc batteries became depleted. Aerodynamic drag caused it to fall back into the atmosphere on 4 January 1958.\n\nIt was a polished metal sphere 58 cm (23 in) in diameter with four external radio antennas to broadcast radio pulses. Its radio signal was easily detectable by amateur radio operators, and the 65° orbital inclination made its flight path cover virtually the entire inhabited Earth.\n\nThe satellite's success was unanticipated by the United States. This precipitated the American Sputnik crisis and triggered the start of the Space Race. The launch was the beginning of a new era of political, military, technological, and scientific developments. The word sputnik is Russian for satellite when interpreted in an astronomical context; its other meanings are spouse or travelling companion.\n\nTracking and studying Sputnik 1 from Earth provided scientists with valuable information. The density of the upper atmosphere could be deduced from its drag on the orbit, and the propagation of its radio signals gave data about the ionosphere.\n\nSputnik 1 was launched during the International Geophysical Year from Site No.1/5, at the 5th Tyuratam range, in Kazakh SSR (now known as the Baikonur Cosmodrome). The satellite travelled at a peak speed of about 8 km/s (18,000 mph), taking 96.20 minutes to complete each orbit. It transmitted on 20.005 and 40.002 MHz, which were monitored by radio operators throughout the world. The signals continued for 22 days until the transmitter batteries depleted on 26 October 1957. On 4 January 1958, after three months in orbit, Sputnik 1 burned up while reentering Earth's atmosphere, having completed 1,440 orbits of the Earth, and travelling a distance of approximately 70,000,000 km (43,000,000 mi).",
+      "reading_minutes": 2,
+      "image_ids": [
+        "space-history.i05"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "space-history.s03"
+      ]
+    },
+    {
+      "id": "space-history.l04",
+      "title_id": "space-history",
+      "index": 4,
+      "heading": "The first person in space",
+      "body": "Vostok 1 was the first spaceflight of the Vostok programme and the first human orbital spaceflight in history. The Vostok 3KA space capsule was launched from Baikonur Cosmodrome on 12 April 1961, with Soviet cosmonaut Yuri Gagarin aboard, making him the first human to reach orbital velocity around the Earth and to complete a full orbit around the Earth.\n\nThe orbital spaceflight consisted of a single orbit around the Earth that reached a maximum altitude of 327 kilometers (203 miles; 177 nautical miles) and a minimum of 181 kilometers (112 miles; 98 nautical miles). The flight took 108 minutes from launch to landing. Gagarin parachuted to the ground separately from his capsule after ejecting at 7 km (23,000 ft) altitude.\n\n## Yuri Gagarin\n\nThe Vostok 1 capsule was designed to carry a single cosmonaut. Yuri Gagarin was chosen as the prime pilot of Vostok 1, with Gherman Titov and Grigori Nelyubov as backups. These assignments were formally made on April 8, four days before the mission, but Gagarin had been a favourite among the cosmonaut candidates for at least several months.\n\nThe final decision of who would fly the mission relied heavily on the opinion of the head of cosmonaut training, Nikolai Kamanin. In an April 5 diary entry, Kamanin wrote that he was still undecided between Gagarin and Titov. \"The only thing that keeps me from picking [Titov] is the need to have the stronger person for the one day flight.\" Kamanin was referring to the second mission, Vostok 2, compared to the relatively short single-orbit mission of Vostok 1. When Gagarin and Titov were informed of the decision during a meeting on April 9, Gagarin was very happy, and Titov was disappointed. On 10 April, this meeting was reenacted in front of television cameras, so there would be official footage of the event. This included an acceptance speech by Gagarin. As an indication of the level of secrecy involved, one of the other cosmonaut candidates, Alexei Leonov, later recalled that he did not know who was chosen for the mission until after the spaceflight had begun.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "space-history.s04"
+      ]
+    },
+    {
+      "id": "space-history.l05",
+      "title_id": "space-history",
+      "index": 5,
+      "heading": "The Space Race",
+      "body": "The Space Race was a 20th-century competition between the Cold War rivals, the United States and the Soviet Union, to achieve superior spaceflight capability. It had its origins in the ballistic missile-based nuclear arms race between the two nations that followed World War II and the onset of the Cold War. The technological advantage demonstrated by spaceflight achievement was seen as necessary for national security, particularly in regard to intercontinental ballistic missile and satellite reconnaissance capability, but also became part of the cultural symbolism and ideology of the time. The Space Race brought pioneering launches of artificial satellites, robotic landers to the Moon, Venus, and Mars, and human spaceflight in low Earth orbit and ultimately to the Moon.\n\n![](space-history.i01)\n\nPublic interest in space travel originated in the 1951 publication of a Soviet youth magazine and was promptly picked up by US magazines. The competition began on July 29, 1955, when the United States announced its intent to launch artificial satellites for the International Geophysical Year. Five days later, the Soviet Union responded by declaring they would also launch a satellite \"in the near future\". The launching of satellites was enabled by developments in ballistic missile capabilities since the end of World War II. The competition gained Western public attention with the \"Sputnik crisis\", when the USSR achieved the first successful satellite launch, Sputnik 1, on October 4, 1957. It gained momentum when the USSR sent the first human, Yuri Gagarin, into space with the orbital flight of Vostok 1 on April 12, 1961. These were followed by a string of other firsts achieved by the Soviets over the next few years.\n\n![](space-history.i07)\n\nGagarin's flight led US president John F. Kennedy to raise the stakes on May 25, 1961, by asking the US Congress to commit to the goal of \"landing a man on the Moon and returning him safely to the Earth\" before the end of the decade. Both countries began developing super heavy-lift launch vehicles, with the US successfully deploying the Saturn V, which was large enough to send a three-person orbiter and two-person lander to the Moon. Kennedy's Moon landing goal was achieved in July 1969, with the flight of Apollo 11. The USSR continued to pursue crewed lunar programs to launch and land on the Moon before the US with its N1 rocket but did not succeed, and eventually canceled it to concentrate on Salyut, the first space station program, and the first landings on Venus and on Mars. Meanwhile, the US landed five more Apollo crews on the Moon, and continued exploration of other extraterrestrial bodies robotically.\n\nA period of détente followed with the April 1972 agreement on a cooperative Apollo–Soyuz Test Project (ASTP), resulting in the July 1975 rendezvous in Earth orbit of a US astronaut crew with a Soviet cosmonaut crew and joint development of an international docking standard APAS-75. Being considered as the final act of the Space Race by many observers, the competition was however only gradually replaced with cooperation. The collapse of the Soviet Union eventually allowed the US and the newly reconstituted Russian Federation to end their Cold War competition also in space, by agreeing in 1993 on the Shuttle–Mir and International Space Station programs.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "space-history.i06",
+        "space-history.i01",
+        "space-history.i07"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "space-history.s05"
+      ]
+    },
+    {
+      "id": "space-history.l06",
+      "title_id": "space-history",
+      "index": 6,
+      "heading": "Apollo 11",
+      "body": "Apollo 11 (July 16–24, 1969) was the American spaceflight that first landed humans on the Moon, and the fifth crewed mission of NASA's Apollo program. The mission was crewed by Commander Neil Armstrong, Command Module Pilot Michael Collins, and Lunar Module Pilot Edwin \"Buzz\" Aldrin, all of whom were on their second and final spaceflight.\n\nLaunched atop a Saturn V rocket from Kennedy Space Center in Florida on July 16 at 13:32 UTC, the Apollo spacecraft consisted of three parts: the command module (CM), which housed the three astronauts and was the only part to return to Earth; the service module (SM), which provided propulsion, electrical power, oxygen, and water to the command module; and the Lunar Module (LM), which had two stages—a descent stage with a large engine and fuel tanks for landing on the Moon, and a lighter ascent stage containing a cabin for two astronauts and a small engine to return them to lunar orbit. After a three-day transit, Armstrong and Aldrin descended to the surface aboard the LM Eagle, landing in the Sea of Tranquility (Mare Tranquillitatis) on July 20 at 20:17 UTC while Collins remained in lunar orbit aboard the CM Columbia. Armstrong became the first human to walk on the Moon approximately six hours after landing, followed by Aldrin nineteen minutes later. Together they spent around two and a half hours walking on the surface, planting an American flag, speaking with President Richard Nixon who was in the White House, deploying scientific instruments, and collecting 21.5 kg (47.5 lb) of lunar material. After more than 21 hours on the surface, they rejoined Collins in lunar orbit, and the crew returned safely to Earth on July 24, splashing down in the Pacific Ocean.\n\n![](space-history.i08)\n\nApollo 11 was the culmination of the Space Race, a geopolitical competition between the United States and the Soviet Union rooted in Cold War rivalry. It fulfilled a national goal set by President John F. Kennedy in May 1961, who had challenged the United States to land a man on the Moon and return him safely before the end of the decade. The program overcame a severe setback with the fatal Apollo 1 launchpad fire in January 1967 and drew on technologies developed through the preceding Mercury and Gemini programs. The Soviet Union, despite early leads in spaceflight, was unable to match the Saturn V rocket, and its uncrewed lunar probe Luna 15 crashed on the Moon on July 21, while Neil Armstrong and Buzz Aldrin were still on the lunar surface.\n\nArmstrong's moonwalk was broadcast live to an estimated 600 million viewers, roughly one-fifth of the world's population, making it among the most-watched television events in history. Stepping onto the lunar surface, Armstrong declared: \"That's one small step for man, one giant leap for mankind.\" Lunar samples returned by the mission led to the identification of three previously unrecognized minerals, and scientific instruments deployed on the surface continued returning data for years afterwards. The crew were honoured with ticker-tape parades, a world goodwill tour, and the Presidential Medal of Freedom. The command module Columbia is preserved at the National Air and Space Museum in Washington, D.C., while the descent stage of Eagle remains on the lunar surface.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "space-history.i01",
+        "space-history.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "space-history.s06"
+      ]
+    },
+    {
+      "id": "space-history.l07",
+      "title_id": "space-history",
+      "index": 7,
+      "heading": "Voyager",
+      "body": "The Voyager program is an American scientific program that employs two interstellar probes, Voyager 1 and Voyager 2. They were launched in 1977 to take advantage of a favorable planetary alignment to explore the two gas giants Jupiter and Saturn and potentially also the ice giants, Uranus and Neptune—to fly near them while collecting data for transmission back to Earth. After Voyager 1 successfully completed its flyby of Saturn and its moon Titan, it was decided that Voyager 2 would continue on its pre-planned trajectory to fly by Uranus and Neptune.\n\nAfter the planetary flybys were complete, decisions were made to keep the probes in operation to explore interstellar space and the outer regions of the Solar System. On 25 August 2012, data from Voyager 1 indicated that it had entered interstellar space. On 5 November 2019, data from Voyager 2 indicated that it also had entered interstellar space. On 4 November 2019, scientists reported that on 5 November 2018, the Voyager 2 probe had officially reached the interstellar medium (ISM), a region of outer space beyond the influence of the solar wind, as did Voyager 1 in 2012. In August 2018, NASA confirmed, based on results by the New Horizons spacecraft, the existence of a \"hydrogen wall\" at the outer edges of the Solar System that was first detected in 1992 by the two Voyager spacecraft.\n\nAs of 2026, both Voyagers are still in operation beyond the outer boundary of the heliosphere in interstellar space. As of 2024, Voyager 1 was moving with a velocity of 61,000 kilometers per hour (38,000 mph), or 17 km/s, (10.5 miles/second) relative to the Sun, and was 24.5 billion kilometers (164 AU) from the Sun. At the same time, Voyager 2 was moving with a velocity of 55,000 kilometers per hour (34,000 mph), or 15 km/s, relative to the Sun, and was 20.4 billion kilometers (136 AU) from the Sun.\n\n![](space-history.i10)\n\nThe two Voyagers are the only human-made objects to date that have passed into interstellar space — a record they will hold until at least the 2040s — and Voyager 1 is the farthest human-made object from Earth.\n\n## The Pale Blue Dot\n\nPale Blue Dot is a photograph of Earth taken on February 14, 1990, by the Voyager 1 space probe from a distance of approximately 6 billion kilometers (3.7 billion miles, 40.5 AU), as part of that day's Family Portrait series of images of the Solar System.\n\nThe Voyager program's discoveries during the primary phase of its mission, including new close-up color photos of the major planets, were regularly documented by print and electronic media outlets. Among the best-known of these is an image of the Earth as a Pale Blue Dot, taken in 1990 by Voyager 1, and popularized by Carl Sagan,\n\nConsider again that dot. That's here. That's home. That's us....The Earth is a very small stage in a vast cosmic arena.... To my mind, there is perhaps no better demonstration of the folly of human conceits than this distant image of our tiny world. To me, it underscores our responsibility to deal more kindly and compassionately with one another and to preserve and cherish that pale blue dot, the only home we've ever known.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "space-history.i09",
+        "space-history.i10"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "space-history.s07"
+      ]
+    },
+    {
+      "id": "space-history.l08",
+      "title_id": "space-history",
+      "index": 8,
+      "heading": "The Space Shuttle",
+      "body": "The Space Shuttle program was the fourth human spaceflight program carried out by the U.S. National Aeronautics and Space Administration (NASA), which accomplished routine transportation for Earth-to-orbit crew and cargo from 1981 to 2011. Its official program name was carried over from the 1969 plan for the Space Transportation System (STS) of reusable spacecraft. Only the shuttle and supporting rockets were funded for development; a proposed nuclear lunar shuttle in the plan was canceled in 1972. It flew 135 missions and carried 355 astronauts from 16 countries, many on multiple trips.\n\nThe Space Shuttle, composed of an orbiter launched with two reusable solid rocket boosters and a disposable external fuel tank, carried up to eight astronauts and up to 50,000 lb (23,000 kg) of payload into low Earth orbit (LEO). When its mission was complete, the orbiter would reenter the Earth's atmosphere and land like a glider at either the Kennedy Space Center or Edwards Air Force Base.\n\nThe Shuttle is the only winged crewed spacecraft to have achieved orbit and landing, and the first reusable crewed space vehicle that made multiple flights into orbit. Its missions involved carrying large payloads to various orbits including the International Space Station (ISS), providing crew rotation for the space station, and performing service missions on the Hubble Space Telescope. The orbiter also recovered satellites and other payloads (e.g., from the ISS) from orbit and returned them to Earth, though its use in this capacity was rare. Each vehicle was designed with a projected lifespan of 100 launches, or 10 years' operational life. Original selling points on the shuttles were over 150 launches over a 15-year operational span with a 'launch per month' expected at the peak of the program, but extensive delays in the development of the International Space Station never created such a peak demand for frequent flights.\n\n## Challenger and Columbia\n\nIn the course of 135 missions flown, two orbiters were destroyed, with loss of crew totalling 14 astronauts:\n\n![](space-history.i12)\n\nColumbia – lost approximately 16 minutes before its expected landing, STS-107, February 1, 2003\n\nThere was also one abort-to-orbit and some fatal accidents on the ground during launch preparations.\n\n## STS-51-L (Challenger, 1986)\n\nClose-up video footage of Challenger during its final launch on January 28, 1986, clearly shows that the problems began due to an O-ring failure on the right solid rocket booster (SRB). The hot plume of gas leaking from the failed joint caused the collapse of the external tank, which then resulted in the orbiter's disintegration due to high aerodynamic stress. The accident resulted in the loss of all seven astronauts on board. Endeavour (OV-105) was built to replace Challenger (using structural spare parts originally intended for the other orbiters) and delivered in May 1991; it was first launched a year later.\n\nAfter the loss of Challenger, NASA grounded the Space Shuttle program for over two years, making numerous safety changes recommended by the Rogers Commission Report, which included a redesign of the SRB joint that failed in the Challenger accident. Other safety changes included a new escape system for use when the orbiter was in controlled flight, improved landing gear tires and brakes, and the reintroduction of pressure suits for Shuttle astronauts (these had been discontinued after STS-4; astronauts wore only coveralls and oxygen helmets from that point on until the Challenger accident). The Shuttle program continued in September 1988 with the launch of Discovery on STS-26.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "space-history.i11",
+        "space-history.i12"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "space-history.s08"
+      ]
+    },
+    {
+      "id": "space-history.l09",
+      "title_id": "space-history",
+      "index": 9,
+      "heading": "Hubble",
+      "body": "The Hubble Space Telescope (HST or Hubble) is a space telescope that was launched into low Earth orbit in 1990 on STS-31 and remains in operation. It is regarded as one of the largest and most versatile space telescopes, renowned as a vital research tool and as a public relations boon for astronomy. The Hubble Space Telescope is named after astronomer Edwin Hubble and is one of NASA's Great Observatories. The Space Telescope Science Institute (STScI) selects Hubble's targets and processes the resulting data, while the Goddard Space Flight Center (GSFC) controls the spacecraft.\n\nHubble features a 2.4 m (7 ft 10 in) mirror, and its five main instruments observe in the ultraviolet, visible, and near-infrared regions of the electromagnetic spectrum. Hubble's orbit outside the distortion of Earth's atmosphere allows it to capture extremely high-resolution images with substantially lower background light than ground-based telescopes. It has recorded some of the most detailed visible light images, such as the Gigapixels of Andromeda, which allows a view into deep space. Many Hubble observations have led to breakthroughs in astrophysics, such as determining the rate of expansion of the universe. The Hubble Space Telescope was funded and built in the 1970s by NASA with contributions from the European Space Agency. Its intended launch was in 1983, but the project was beset by technical delays, budget problems, and the 1986 Challenger disaster.\n\nHubble was launched on STS-31 in 1990, but its main mirror had been ground incorrectly, resulting in spherical aberration that compromised the telescope's capabilities. The optics were corrected to their intended quality by a servicing mission, STS-61, in 1993. Hubble is the only telescope designed to be maintained in space by astronauts. Five Space Shuttle missions repaired, upgraded, and replaced systems on the telescope, including all five of the main instruments. The fifth mission was initially canceled on safety grounds following the Columbia disaster (2003), but after NASA administrator Michael D. Griffin approved it, the servicing mission was completed in 2009. Hubble completed 30 years of operation in April 2020 and is predicted to last until 2030 to 2040. NASA issued a Request for Information on October 29, 2026 - \"to verify reasonableness and feasibility\" for extending the scientific life of HST until its proposed replacement, Habitable Worlds Observatory (HWO) is possibly operational in the 2040s.\n\nHubble is the visible light telescope in NASA's Great Observatories program; other parts of the spectrum are covered by the Compton Gamma Ray Observatory, the Chandra X-ray Observatory, and the Spitzer Space Telescope (which covers the infrared bands). The mid-IR-to-visible band successors to the Hubble telescope are the James Webb Space Telescope (JWST), which was launched on December 25, 2021, and the Nancy Grace Roman Space Telescope which was launched on August 30, 2026.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "space-history.i13"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "space-history.s09"
+      ]
+    },
+    {
+      "id": "space-history.l10",
+      "title_id": "space-history",
+      "index": 10,
+      "heading": "Mir",
+      "body": "Mir was a space station operated in low Earth orbit from 1986 to 2001, first by the Soviet Union and later by the Russian Federation. Mir was the first modular space station and was assembled in orbit from 1986 to 1996. At the time it was the largest artificial satellite in orbit, only being succeeded by the International Space Station (ISS) after Mir's deorbiting in 2001. The station served as a microgravity research laboratory in which crews conducted experiments in biology, human biology, physics, astronomy, meteorology, and spacecraft systems with a goal of developing technologies required for permanent occupation of space.\n\nMir was the first continuously inhabited long-term research station in orbit and previously held the record for the longest continuous human presence in space at 3,644 days, until it was surpassed by the ISS in 2010. It holds the record for the longest single human spaceflight, Valeri Polyakov, who spent 437 days on the station from 1994 until 1995. Mir's typical crew size was 3, though larger short-term crews made an appearance, peaking at ten during STS-71. Occupied for twelve and a half years out of its fifteen-year lifespan, 105 cosmonauts and astronauts from 12 different nations visited the station, and conducted 80 spacewalks.\n\n![](space-history.i15)\n\nMir was the next stage of the Soviet space programme's station development, following the success of six crewed single-module stations under the Salyut programme; its inaugural flight, Soyuz T-15, also conducted the only station-to-station trip, docking with Salyut 7 during its mission. Consisting of seven pressurised modules and several unpressurised components, its initial Core Module was launched in 1986. Proton rockets launched all components, except the Docking Module, which was installed by the Space Shuttle on STS-74. Power was provided by several photovoltaic arrays attached directly to the modules. The station was maintained at an orbit between 296 and 421 km (184 and 262 mi) altitude, completing 15.7 orbits per day at an inclination of 51.6°.\n\nInitially, the station was operated by NPO Energia with subcontracting to KB Salyut. Following the dissolution of the Soviet Union, Mir was operated by the Russian Federal Space Agency (RKA). Most of the station's occupants were Soviet/Russian; through international collaborations such as the Interkosmos, Euromir and Shuttle–Mir programmes, the station was made accessible to space travellers from several Asian, European and North American nations. Mir was deorbited in March 2001 after funding was cut off. The cost of the Mir programme was estimated by former RKA General Director Yuri Koptev in 2001 as $4.2 billion over its lifetime (including development, assembly and orbital operation). As of 2026, five of the ten longest human spaceflights ever were aboard Mir.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "space-history.i14",
+        "space-history.i15"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "space-history.s10"
+      ]
+    },
+    {
+      "id": "space-history.l11",
+      "title_id": "space-history",
+      "index": 11,
+      "heading": "The International Space Station",
+      "body": "The International Space Station (ISS) is a space station in low Earth orbit (LEO). It is the product of the International Space Station program and is operated by five partner space agencies: NASA (United States), Roscosmos (Russia), ESA (Europe), JAXA (Japan), and CSA (Canada). It is the first space station built, maintained and crewed through international cooperation and the largest human spacecraft ever constructed. It is an orbital research station, where scientific experiments in microgravity are conducted and the space environment is studied. Since 2 November 2000, it has hosted the longest continuous human presence in space. Alongside China's Tiangong, it is one of two currently operational space stations.\n\nThe station orbits between 51.64° north and south, at about 400 kilometres (250 miles) above Earth, below the Van Allen radiation belts and most space debris. Its orbit takes it at 7.67 km/s (27,600 km/h; 17,200 mph) roughly every 93 minutes around Earth, 15.5 times a day. Measuring 109 m (358 ft) (with solar arrays) by 73 m (239 ft), it is as large as a full-sized football or soccer field, and has a pressurised internal volume of 1,005 m3 (35,491 ft3), comparable to a Boeing 747 airliner.\n\n![](space-history.i17)\n\nThe station is a modular space station divided into two main sections: the Russian Orbital Segment (ROS), developed by Roscosmos, and the US Orbital Segment (USOS), built by NASA, ESA, JAXA, and CSA. The Integrated Truss Structure connects the station's vast system of solar panels and radiators to its 16 major pressurized modules. These modules support scientific research, crew habitation, storage, spacecraft control, and airlock operations. The ISS has eight docking and berthing ports for visiting spacecraft. In total, the station consists of 43 different modules and elements. Crews visit via the Soyuz and Crew Dragon spacecraft, and previously the Space Shuttle. Cargo supply craft include Progress, Cargo Dragon, Cygnus, Automated Transfer Vehicle, and HTV-X.\n\nThe ISS is the political product of the development of international cooperation in space throughout the space age. The station combines two previously planned crewed Earth-orbiting stations: the United States' Space Station Freedom and the Soviet Union's Mir-2. The first ISS module was launched in 1998, with major components delivered by Proton, Soyuz and Space Shuttle launch vehicles. Long-term occupancy began with the arrival of the Expedition 1 crew on 2 November 2000. Since then, the ISS has remained continuously inhabited for 26 years and 20 days, the longest continuous human presence in space. As of August 2025, 290 individuals from 26 countries had visited the station.\n\nFuture plans for the ISS include the addition of at least one module, the Payload Power Thermal Module by Axiom Space, forming the commercial segment of the station. The station is expected to remain operational until the end of 2030, by which parts of it are to be used for Axiom Station and the Russian Orbital Station. After this the ISS is planned to be de-orbited using the US Deorbit Vehicle, but critique of this plan and the proposal of parking the station at a more stable higher orbit has gathered congressional support as of 2026.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "space-history.i16",
+        "space-history.i17"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "space-history.s11"
+      ]
+    },
+    {
+      "id": "space-history.l12",
+      "title_id": "space-history",
+      "index": 12,
+      "heading": "Private companies",
+      "body": "Private spaceflight is any spaceflight development that is not conducted by a government agency, such as NASA or ESA.\n\nDuring the early decades of the Space Age, the government space agencies of the Soviet Union and United States pioneered space technology in collaboration with affiliated design bureaus in the USSR and private companies in the US. They entirely funded both the development of new spaceflight technologies and the operational costs of spaceflight. Following a similar model of space technology development, the European Space Agency was formed in 1975. Arianespace, born out of ESA's independent spaceflight efforts, became the world's first commercial launch service provider in the early 1980s. Subsequently, large defense contractors began to develop and operate space launch systems, which were derived from government rockets.\n\n![](space-history.i19)\n\nIn the United States, the FAA has created a new certification called Commercial Astronaut, a new occupation.\n\nIn the 2000s, entrepreneurs began designing—and by the 2010s, deploying—space systems competitive to the governmental systems of the early decades of the space age. These new offerings have brought about significant market competition in space launch services after 2010 that had not been present previously, principally through the reduction of the cost of space launch and the availability of more space launch capacity.\n\nPrivate spaceflight accomplishments to date include flying suborbital spaceplanes (SpaceShipOne and SpaceShipTwo), launching orbital rockets, flying two orbital expandable test modules (Genesis I and II). On the opposite, launching astronauts to the International Space Station and certain satellite launches are performed on behalf of and financed by government agencies.\n\nPlanned private spaceflights beyond Earth orbit include personal spaceflights around the Moon. Two private orbital habitat prototypes are already in Earth orbit, with larger versions to follow. Planned private spaceflights beyond Earth orbit include solar sailing prototypes (LightSail-3).",
+      "reading_minutes": 2,
+      "image_ids": [
+        "space-history.i18",
+        "space-history.i19"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "space-history.s12"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "space-history.i01",
+      "title_id": "space-history",
+      "url": "http://10.0.2.2:8000/media/space-history/i01-c80dd238b2.jpg",
+      "width": 1600,
+      "height": 1619,
+      "alt": "Astronaut Buzz Aldrin standing on the Moon during Apollo 11 in July 1969, with Neil Armstrong reflected in his visor.",
+      "kind": "photo",
+      "author": "Neil A. Armstrong",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:A_Man_on_the_Moon,_AS11-40-5903_(cropped).jpg",
+      "credit_line": "Neil A. Armstrong · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "space-history.i02",
+      "title_id": "space-history",
+      "url": "http://10.0.2.2:8000/media/space-history/i02-53cf0ab667.jpg",
+      "width": 1600,
+      "height": 2216,
+      "alt": "Description of a space station in Hermann Noordung's The Problem of Space Travel (1929)",
+      "kind": "other",
+      "author": "Herman Potočnik",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Noordung_space_station.jpg",
+      "credit_line": "Herman Potočnik · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "space-history.i03",
+      "title_id": "space-history",
+      "url": "http://10.0.2.2:8000/media/space-history/i03-d3fde1f7a4.jpg",
+      "width": 1600,
+      "height": 2091,
+      "alt": "The German V-2 rocket, co-designed by Wernher von Braun, became the first man-made object to reach space.",
+      "kind": "other",
+      "author": "Bundesarchiv, Bild 141-1880 / CC-BY-SA 3.0",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_141-1880,_Peenem%C3%BCnde,_Start_einer_V2.jpg",
+      "credit_line": "Bundesarchiv, Bild 141-1880 / CC-BY-SA 3.0 · CC BY-SA 3.0 DE · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "space-history.i04",
+      "title_id": "space-history",
+      "url": "http://10.0.2.2:8000/media/space-history/i04-1307fa3a0f.jpg",
+      "width": 1600,
+      "height": 2523,
+      "alt": "Peenemünde Museum replica of V-2",
+      "kind": "other",
+      "author": "AElfwine",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Fus%C3%A9e_V2_(cropped).jpg",
+      "credit_line": "AElfwine · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "space-history.i05",
+      "title_id": "space-history",
+      "url": "http://10.0.2.2:8000/media/space-history/i05-35b06d1dda.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Replica of Sputnik 1 in the Museum of Space and Missile Technology (Saint-Petersburg)",
+      "kind": "other",
+      "author": "Andrew Butko",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B5%D1%80%D0%B2%D1%8B%D0%B9_%D0%B2_%D0%BC%D0%B8%D1%80%D0%B5_%D0%B8%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9_%D1%81%D0%BF%D1%83%D1%82%D0%BD%D0%B8%D0%BA_%D0%97%D0%B5%D0%BC%D0%BB%D0%B8.jpg",
+      "credit_line": "Andrew Butko · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "space-history.i06",
+      "title_id": "space-history",
+      "url": "http://10.0.2.2:8000/media/space-history/i06-4a2285a1be.jpg",
+      "width": 1600,
+      "height": 1310,
+      "alt": "A replica of Sputnik 1 on display",
+      "kind": "other",
+      "author": "NSSDC, NASA",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Sputnik_asm.jpg",
+      "credit_line": "NSSDC, NASA · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "space-history.i07",
+      "title_id": "space-history",
+      "url": "http://10.0.2.2:8000/media/space-history/i07-29b85b5818.jpg",
+      "width": 1600,
+      "height": 1280,
+      "alt": "The Apollo–Soyuz Test Project crew. From left to right: Deke Slayton, Thomas Stafford, Vance Brand, Alexey Leonov and Valeri Kubasov.",
+      "kind": "portrait",
+      "author": "NASA",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Portrait_of_ASTP_crews.jpg",
+      "credit_line": "NASA · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.35
+    },
+    {
+      "id": "space-history.i08",
+      "title_id": "space-history",
+      "url": "http://10.0.2.2:8000/media/space-history/i08-b8503199b4.jpg",
+      "width": 1600,
+      "height": 1257,
+      "alt": "The Apollo 11 lunar landing mission crew, pictured from left to right, Neil A. Armstrong, commander; Michael Collins, command module pilot; and Edwin E. Aldrin Jr., lunar module pilot.",
+      "kind": "photo",
+      "author": "NASA",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Apollo_11_Crew.jpg",
+      "credit_line": "NASA · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "space-history.i09",
+      "title_id": "space-history",
+      "url": "http://10.0.2.2:8000/media/space-history/i09-ccd779cb27.jpg",
+      "width": 1600,
+      "height": 1967,
+      "alt": "A poster of the planets and moons visited during the Voyager program.",
+      "kind": "painting",
+      "author": "Don Davis",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Voyager_probes_with_the_outer_worlds.jpg",
+      "credit_line": "Don Davis · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "space-history.i10",
+      "title_id": "space-history",
+      "url": "http://10.0.2.2:8000/media/space-history/i10-4d6c91ca15.png",
+      "width": 1600,
+      "height": 2169,
+      "alt": "Seen from 6 billion kilometers (3.7 billion miles), Earth appears as a Pale Blue Dot (the blueish-white speck approximately halfway down the light band to the right).",
+      "kind": "portrait",
+      "author": "Voyager 1",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Pale_Blue_Dot.png",
+      "credit_line": "Voyager 1 · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.35
+    },
+    {
+      "id": "space-history.i11",
+      "title_id": "space-history",
+      "url": "http://10.0.2.2:8000/media/space-history/i11-048fe0cd09.jpg",
+      "width": 1600,
+      "height": 1296,
+      "alt": "In 1986, Challenger disintegrated one minute and 13 seconds after liftoff.",
+      "kind": "photo",
+      "author": "Kennedy Space Center",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Challenger_explosion.jpg",
+      "credit_line": "Kennedy Space Center · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "space-history.i12",
+      "title_id": "space-history",
+      "url": "http://10.0.2.2:8000/media/space-history/i12-e53a564e89.jpg",
+      "width": 1600,
+      "height": 1060,
+      "alt": "Space Shuttle Discovery as it approaches the International Space Station during STS-114 on July 28, 2005. This was the Shuttle's \"return to flight\" mission after the Columbia disaster",
+      "kind": "photo",
+      "author": "NASA",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Thermal_protection_system_inspections_from_ISS_-_Shuttle_nose.jpg",
+      "credit_line": "NASA · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "space-history.i13",
+      "title_id": "space-history",
+      "url": "http://10.0.2.2:8000/media/space-history/i13-f18b784d6f.jpg",
+      "width": 1600,
+      "height": 1062,
+      "alt": "The Hubble Space Telescope during STS-125",
+      "kind": "photo",
+      "author": "NASA",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Hubble_2009_close-up_2.jpg",
+      "credit_line": "NASA · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "space-history.i14",
+      "title_id": "space-history",
+      "url": "http://10.0.2.2:8000/media/space-history/i14-492eb74831.jpg",
+      "width": 1600,
+      "height": 1559,
+      "alt": "Mir seen from Space Shuttle Endeavour during STS-89 (28 January 1998)",
+      "kind": "other",
+      "author": "NASA",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Mir_Space_Station_viewed_from_Endeavour_during_STS-89.jpg",
+      "credit_line": "NASA · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "space-history.i15",
+      "title_id": "space-history",
+      "url": "http://10.0.2.2:8000/media/space-history/i15-e2e089cba3.png",
+      "width": 1600,
+      "height": 1760,
+      "alt": "Station elements as of May 1996",
+      "kind": "other",
+      "author": "Orionist",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Mir_diagram.svg",
+      "credit_line": "Orionist · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "space-history.i16",
+      "title_id": "space-history",
+      "url": "http://10.0.2.2:8000/media/space-history/i16-9618332bd3.jpg",
+      "width": 1600,
+      "height": 1063,
+      "alt": "Obverse view in November 2021",
+      "kind": "art",
+      "author": "NASA",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:The_station_pictured_from_the_SpaceX_Crew_Dragon_5.jpg",
+      "credit_line": "NASA · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "space-history.i17",
+      "title_id": "space-history",
+      "url": "http://10.0.2.2:8000/media/space-history/i17-3244f678b9.png",
+      "width": 1600,
+      "height": 1000,
+      "alt": "Station elements as of 2023(exploded view with the names of elements coloured by country)",
+      "kind": "other",
+      "author": "NASA",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Iss-blowout-updated-view-2023-300.png",
+      "credit_line": "NASA · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "space-history.i18",
+      "title_id": "space-history",
+      "url": "http://10.0.2.2:8000/media/space-history/i18-3aa56dfbd5.png",
+      "width": 1600,
+      "height": 1131,
+      "alt": "Space missions conducted between 1957 and 2020, divided into state and private runs",
+      "kind": "photo",
+      "author": "Federicogajo",
+      "license": "CC0",
+      "license_version": null,
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Space_missions_conducted_between_1957_and_2020.svg",
+      "credit_line": "Federicogajo · CC0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "space-history.i19",
+      "title_id": "space-history",
+      "url": "http://10.0.2.2:8000/media/space-history/i19-6083c07680.jpg",
+      "width": 1600,
+      "height": 996,
+      "alt": "A juxtaposition of private (left) and public (right) spaceflight.",
+      "kind": "photo",
+      "author": "Joel Kowsky",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:NASA%E2%80%99s_SLS_and_SpaceX%E2%80%99s_Falcon_9_at_Launch_Complex_39A_%26_39B_(NHQ202204060003).jpg",
+      "credit_line": "Joel Kowsky · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "space-history.s01",
+      "title": "History of spaceflight (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/History_of_spaceflight",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "space-history.s02",
+      "title": "V-2 rocket (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/V-2_rocket",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "space-history.s03",
+      "title": "Sputnik 1 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sputnik_1",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "space-history.s04",
+      "title": "Vostok 1 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vostok_1",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "space-history.s05",
+      "title": "Space Race (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Space_Race",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "space-history.s06",
+      "title": "Apollo 11 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Apollo_11",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "space-history.s07",
+      "title": "Voyager program (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Voyager_program",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "space-history.s08",
+      "title": "Space Shuttle program (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Space_Shuttle_program",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "space-history.s09",
+      "title": "Hubble Space Telescope (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "space-history.s10",
+      "title": "Mir (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mir",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "space-history.s11",
+      "title": "International Space Station (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/International_Space_Station",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "space-history.s12",
+      "title": "Private spaceflight (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Private_spaceflight",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 
 Checks (CONTRACTS.md section 10):
   1. backend/data/samples/*.json     title + title-import schemas, referential rules
+     backend/data/titles/*.json      title-import schema, referential rules, no SAMPLE marker (S11)
   2. docs/examples/*.json            their API schema, and that the derived payloads (catalogue,
                                      feed, credits, chat) match what the contract rules build from the samples
   3. docs/examples/match-cases.json  the match % reference (CONTRACTS.md section 6)
@@ -24,6 +25,7 @@ from referencing import Registry, Resource
 ROOT = Path(__file__).resolve().parent.parent
 SCHEMAS = ROOT / "docs" / "schemas"
 SAMPLES = ROOT / "backend" / "data" / "samples"
+TITLES = ROOT / "backend" / "data" / "titles"
 EXAMPLES = ROOT / "docs" / "examples"
 BASE = "https://maximus.example/schemas/"
 TITLE_SAMPLES = ["roman-history.json", "shivaji-maharaj.json", "chanakya.json"]
@@ -225,7 +227,9 @@ def words(body):
     return len(re.sub(r"[*#>\-]", " ", "\n".join(lines)).split())
 
 
-def title_checks(t):
+def title_checks(t, sample=True):
+    """Referential rules. sample=True: a SAMPLE title (markers required, computed fields present).
+    sample=False: a real title file in backend/data/titles (markers forbidden, computed fields optional)."""
     errs, tid = [], t["id"]
     ids = [x["id"] for k in ("lessons", "images", "quiz", "feed_facts", "sources") for x in t[k]]
     if len(ids) != len(set(ids)):
@@ -261,7 +265,7 @@ def title_checks(t):
         want = max(1, math.ceil(words(l["body"]) / 200))
         if l["reading_minutes"] != want:
             errs.append(f"{l['id']}: reading_minutes {l['reading_minutes']} != {want} ({words(l['body'])} words)")
-        if "SAMPLE" not in l["body"]:
+        if sample and "SAMPLE" not in l["body"]:
             errs.append(f"{l['id']}: not marked SAMPLE")
     for x in t["quiz"] + t["feed_facts"]:
         if x["lesson_id"] and x["lesson_id"] not in les:
@@ -269,9 +273,12 @@ def title_checks(t):
     for f in t["feed_facts"]:
         if f["image_id"] and f["image_id"] not in img:
             errs.append(f"{f['id']}: missing image {f['image_id']}")
-    if t["lesson_count"] != len(t["lessons"]) or t["quiz_count"] != len(t["quiz"]):
-        errs.append("lesson_count or quiz_count wrong")
-    if t["reading_minutes"] != sum(l["reading_minutes"] for l in t["lessons"]):
+    # computed fields: always in samples, optional in import files (CONTRACTS 9.2)
+    if "lesson_count" in t and t["lesson_count"] != len(t["lessons"]):
+        errs.append("lesson_count wrong")
+    if "quiz_count" in t and t["quiz_count"] != len(t["quiz"]):
+        errs.append("quiz_count wrong")
+    if "reading_minutes" in t and t["reading_minutes"] != sum(l["reading_minutes"] for l in t["lessons"]):
         errs.append(f"title reading_minutes != {sum(l['reading_minutes'] for l in t['lessons'])}")
     p = t["person"]
     if p:
@@ -282,6 +289,8 @@ def title_checks(t):
                     errs.append(f"person claim: missing source {s}")
         if tid in LEGEND_IDS and not p["legend_note"]:
             errs.append("legend title without legend_note")
+    if not sample:  # real titles can never carry the marker (publish gate G9)
+        return errs + (["contains the SAMPLE marker"] if "SAMPLE" in json.dumps(t, ensure_ascii=False) else [])
     marked = [t["brief"]] + [q["prompt"] for q in t["quiz"]] + [f["text"] for f in t["feed_facts"]]
     if p:
         marked.append(p["headline"])
@@ -415,6 +424,14 @@ def main():
         errs += schema_errors(doc, "title-import.schema.json", reg)
         errs += title_checks(doc)
         failed |= report(name, errs)
+
+    # real title files (S11 ingest drafts, later reviewed/published): import schema + referential rules
+    for path in sorted(TITLES.glob("*.json")):
+        doc = load(path)
+        errs = schema_errors(doc, "title-import.schema.json", reg)
+        if not errs:
+            errs = title_checks(doc, sample=False)
+        failed |= report("titles/" + path.name, errs)
 
     if not EXAMPLES.is_dir():
         print("SKIP docs/examples/ (not created yet; once it exists every example file is required)")

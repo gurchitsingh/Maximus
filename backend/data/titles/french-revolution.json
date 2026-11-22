@@ -1,0 +1,648 @@
+{
+  "id": "french-revolution",
+  "kind": "topic",
+  "name": "French Revolution",
+  "subtitle": "1789 to 1799",
+  "poster_lines": [
+    "The French",
+    "Revolution"
+  ],
+  "group": "revolutions-empires",
+  "era": "early-modern",
+  "region": "europe",
+  "period_start": 1789,
+  "period_end": 1799,
+  "themes": [
+    "revolution",
+    "politics",
+    "society",
+    "ideas"
+  ],
+  "bg": "#E9D9B2",
+  "tint": "#6C8CFF",
+  "lettering": "brush",
+  "poster_image_id": null,
+  "hero_image_id": "french-revolution.i01",
+  "brief": "A king falls, a republic rises, and the guillotine gets busy.",
+  "linked_title_ids": [
+    "napoleon",
+    "napoleon-bonaparte"
+  ],
+  "rank": 17,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "french-revolution.l01",
+      "title_id": "french-revolution",
+      "index": 1,
+      "heading": "The revolution in brief",
+      "body": "The French Revolution was a period resulting in the political and societal changes in France that began with the Estates General of 1789 and ended with the Coup of 18 Brumaire on 9 November 1799. Many of the revolution's ideas are considered fundamental principles of liberal democracy, and its values remain central to modern French political discourse. It was caused by a combination of social, political, and economic factors which the existing regime proved unable to manage.\n\nFinancial crisis and widespread social distress led to the convocation of the Estates General in May 1789, its first meeting since February 1614. The representatives of the Third Estate broke away and re-constituted themselves as a National Assembly in June. The Storming of the Bastille in Paris on 14 July led to a series of radical measures by the Assembly, including the abolition of feudalism, state control over the Catholic Church in France, and issuing the Declaration of the Rights of Man and of the Citizen.\n\nThe next three years were dominated by a struggle for political control. King Louis XVI's attempted flight to Varennes in June 1791 further discredited the French monarchy, and military defeats after the outbreak of the French Revolutionary Wars in April 1792 led to the insurrection of 10 August 1792. As a result, the monarchy was replaced by the French First Republic in September, followed by the execution of Louis XVI himself in January 1793.\n\nAfter another revolt in June 1793, the constitution was suspended, and political power passed from the National Convention to the Committee of Public Safety, dominated by radical Jacobins led by Maximilien Robespierre. About 16,000 people were sentenced by the Revolutionary Tribunal and executed in the Reign of Terror, which ended in July 1794 with the Thermidorian Reaction. Weakened by external threats and internal opposition, the Committee of Public Safety was replaced in November 1795 by the Directory. Its instability ended in 1799 with the coup of 18 Brumaire and the establishment of the Consulate, with Napoleon Bonaparte as First Consul.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "french-revolution.i01"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "french-revolution.s01"
+      ]
+    },
+    {
+      "id": "french-revolution.l02",
+      "title_id": "french-revolution",
+      "index": 2,
+      "heading": "Why France exploded",
+      "body": "There is significant disagreement among historians of the French Revolution as to its causes. Usually, they acknowledge the presence of several interlinked factors, but vary in the weight they attribute to each one. These factors include cultural changes, normally associated with the Enlightenment; social change and financial and economic difficulties; and the political actions of the involved parties. For centuries, French society was divided into three estates or orders.\n\nThe first estate, the highest class, consisted of the clergy.\n\nThe second estate consisted of the nobility.\n\nThe third estate consisted of the commoners. It included businessmen, merchants, court officials, lawyers, peasants, landless labourers and servants.\n\n![](french-revolution.i02)\n\nThe first two estates together consisted of 2% of the population, whereas the third estate was the remaining 98%. All of the many types of taxes were paid by the third estate. The society was based on the old French maxim \"The nobles fight; the clergy pray, and the people pay\".\n\nBeyond these relatively established facts about the social conditions surrounding the French Revolution, there is significant dissent among historians. Marxist historians, such as Lefebvre and Soboul, see the social tensions described here as the main cause of the revolution, as the Estates-General allowed them to manifest into tangible political action; the bourgeoisie and the lower classes were grouped into the third estate, allowing them to jointly oppose the establishment. Others see these social issues as important, but less so than the Enlightenment or the financial crisis; François Furet is a prominent proponent of the former, Simon Schama of the latter.\n\n## A bankrupt crown\n\nThe financial crisis of the French crown played a role in creating the social background to the Revolution, generating widespread anger at the court, and (arguably most importantly) forcing Louis XVI to call the Estates-General. The court was deeply in debt, which, in conjunction with a poor financial system, created a crisis.\n\nIn order to service the debt, given that the Crown could find no more willing lenders, Louis attempted to call upon the nobility via an Assembly of Notables. However, the nobility refused to help—their power and influence had been steadily reduced since the reign of Louis XIV—and hence Louis was forced to rely upon the Estates-General. This meant that the discontented Third Estate (damaged by poor policy and low standards of living) were given the opportunity to air their grievances, and when they did not receive the desired response, the Revolution proper began; they denied the authority of the King and set up their own government.\n\n## Harvest failures\n\nA majority of French citizens relied on agriculture to survive and increase wealth. Twenty out of twenty-six million citizens relied on agriculture in some way to support their jobs. In the peasant class there were two groups, those that owned land and those that bought land for cultivation.Agriculture accounted for around 75% of all domestic production, dominating the French economy. With outdated production methods, farming remained labour-intensive and increasingly susceptible to crop diseases. The increasing fluctuation of harvest production in the late 1760s had further plunged villages into uncertainty. The lack of diversification of jobs and distinction between agricultural and industrial workers foreshadowed the catastrophic impact that harvest failures would equally have in big cities, with even jobs like construction being largely dependent on migrant workers who brought their earnings back to small villages.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "french-revolution.i01",
+        "french-revolution.i02"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "french-revolution.s02"
+      ]
+    },
+    {
+      "id": "french-revolution.l03",
+      "title_id": "french-revolution",
+      "index": 3,
+      "heading": "The Estates General",
+      "body": "The Estates General of 1789 was a general assembly representing the French estates of the realm: the clergy (First Estate), the nobility (Second Estate), and the commoners (Third Estate). Summoned by King Louis XVI, it opened on 5 May 1789 at Versailles, marking the first such meeting since 1614. The assembly was a desperate attempt to resolve a catastrophic fiscal crisis. Previous attempts at structural reform, including a universal land tax, had been blocked by the Assembly of Notables and the Parlements. These bodies claimed that only the Estates General possessed the authority to approve new taxes. The Estates General ultimately failed due to a fundamental deadlock over voting procedures. The First and Second Estates sought to vote by estate to preserve their tax exemptions and political dominance. Conversely, the Third Estate demanded voting by head to reflect their numerical majority. This procedural dispute paralyzed the body for six weeks, preventing any progress on the financial crisis. The failure became definitive when the Third Estate broke away to declare itself the National Assembly on 17 June 1789.\n\n## From Estates General to National Assembly\n\nThe deputies expressed disappointment, feeling that the Crown was treating them just like their predecessors of 1614, ignoring the very nature of the mandate they had received from their electors. Necker found himself in a difficult position; his attempt to maintain a neutral stance ultimately backfired. By failing to take a firm side, he alienated the nobility and clergy while simultaneously frustrating the Third Estate, which had previously viewed him as their primary advocate. Consequently, his motives became a subject of suspicion for all parties involved.\n\nParalysed with no guidelines or a work plan, the First and Second Estates proceeded to the Chambre du Clergé and the Chambre de la Noblesse respectively whilst the Third Estate, due to its size, remained where it was. This physical separation mirrored a political divide; on 6 May, the Second Estate voted 188 to 46 to refuse to join the Third Estate for a common verification of credentials. Influenced by delegates from Dauphiné and Brittany, the Third Estate refused to organize as a separate order. Instead, they began to call themselves the Commons (les communes), asserting that they represented the French nation as a whole. The stalemate continued until 12 June, when the Third Estate formally invited the upper orders to join them. Following a motion by the Abbé Sieyès on 17 June, the deputies voted 491 to 89 to adopt the title National Assembly.\n\nThey also proclaimed that the interpretation and presentation of the general will would be its responsibility. They confirmed that the power to consent to taxation would also belong to it, thereby provisionally approving existing taxes. They then invited the other orders to join them but made it clear that they intended to conduct the nation's affairs with or without them.\n\nLouis had no intention of approving them. The Dauphin had died on June 4, and the king had withdrawn to Marly, where the queen and royal princes instructed him.",
+      "reading_minutes": 3,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "french-revolution.s03"
+      ]
+    },
+    {
+      "id": "french-revolution.l04",
+      "title_id": "french-revolution",
+      "index": 4,
+      "heading": "The fall of the Bastille",
+      "body": "The Storming of the Bastille, also known as Fall of the Bastille, which occurred in Paris, France, on 14 July 1789, was an act of political violence by revolutionary insurgents who attempted to storm and seize control of the medieval armoury, fortress, and political prison known as the Bastille. After four hours of fighting and 94 deaths, the insurgents were able to enter the Bastille. The governor of the Bastille, Bernard-René Jourdan de Launay, and several members of the Garrison were killed after surrendering. At the time, the Bastille represented royal authority in the centre of Paris. The prison contained only seven inmates at the time of its storming and was already scheduled for demolition but was seen by the revolutionaries as a symbol of the monarchy's abuse of power. Its fall was the flashpoint of the French Revolution.\n\n![](french-revolution.i03)\n\nIn France, 14 July is a national holiday called Fête nationale française which commemorates both the anniversary of the storming of the Bastille and the Fête de la Fédération which occurred on its first anniversary in 1790. In English this holiday is commonly referred to as Bastille Day.\n\n## The attack on 14 July\n\nOn the morning of 13 July, Paris was in a state of alarm. The partisans of the Third Estate in France, now under the control of the Bourgeois Militia of Paris (soon to become Revolutionary France's National Guard), had earlier stormed the Hôtel des Invalides without meeting significant opposition. Their intention had been to gather the weapons held there (29,000 to 32,000 muskets, but without powder or shot). The commandant at the Invalides had in the previous few days taken the precaution of transferring 250 barrels of gunpowder to the Bastille for safer storage.\n\n![](french-revolution.i04)\n\nAt this point, the Bastille was nearly empty, housing only seven prisoners: four forgers arrested under warrants issued by the Grand Châtelet court; James F.X. Whyte, an Irish born \"lunatic\" suspected of spying and imprisoned at the request of his family; Auguste-Claude Tavernier, who had tried to assassinate Louis XV 30 years before; and one \"deviant\" aristocrat suspected of murder, the Comte de Solages, imprisoned by his father using a lettre de cachet. A previous prisoner the Marquis de Sade had been transferred out ten days earlier, after shouting to passers-by that the prisoners were being massacred. The high cost of maintaining a garrisoned medieval fortress, for what was seen as having a limited purpose, had led to a decision being made shortly before the disturbances began to replace it with an open public space. Amid the tensions of July 1789, the building remained as a symbol of royal tyranny.\n\nAn analysis in 2013 of the Bastille's dimensions showed that it did not tower over the neighbourhood as depicted in some paintings, but was a comparable height to other buildings in the neighbourhood. The regular garrison consisted of 82 invalides (veteran soldiers no longer suitable for service in the field). It had however been reinforced on 7 July by 32 grenadiers of the Swiss Salis-Samade Regiment from the regular troops on the Champ de Mars. The walls mounted 18 eight-pound guns and 12 smaller pieces.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "french-revolution.i01",
+        "french-revolution.i03",
+        "french-revolution.i04"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "french-revolution.s04"
+      ]
+    },
+    {
+      "id": "french-revolution.l05",
+      "title_id": "french-revolution",
+      "index": 5,
+      "heading": "The rights of man",
+      "body": "The Declaration of the Rights of Man and of the Citizen, set by France's National Constituent Assembly in 1789, is a human and civil rights document from the French Revolution; the French title can be translated in the modern era as \"Declaration of Human and Civil Rights\". Inspired by Enlightenment philosophers, the declaration was a core statement of the values of the French Revolution and had a significant impact on the development of popular conceptions of individual liberty and democracy in Europe and worldwide.\n\nThe declaration was initially drafted by Marquis de Lafayette with assistance from Thomas Jefferson, but the majority of the final draft came from Abbé Sieyès. Influenced by the doctrine of natural right, human rights are held to be universal: valid at all times and in every place. It became the basis for a nation of free individuals protected equally by the law. It is included at the beginning of the constitutions of both the French Fourth Republic (1946) and French Fifth Republic (1958) and is considered valid as constitutional law.\n\n![](french-revolution.i06)\n\n## Where the ideas came from\n\nThe concepts in the declaration come from the philosophical and political duties of the Enlightenment, such as individualism, the social contract as theorized by the Genevan philosopher Jean-Jacques Rousseau, and the separation of powers espoused by the Baron de Montesquieu. As can be seen in the texts, the French declaration was heavily influenced by the political philosophy of the Enlightenment and principles of human rights, as was the U.S. Declaration of Independence which preceded it (4 July 1776).\n\nThese principles were widely shared throughout European society, rather than confined to a small elite as in the past. This took different forms, such as 'English coffeehouse culture', and extended to areas colonised by Europeans, particularly British North America. Contacts between diverse groups in Edinburgh, Geneva, Boston, Amsterdam, Paris, London, or Vienna were much greater than often appreciated.\n\nTransnational elites who shared ideas and styles were not new; what changed was their extent and the numbers involved. Under Louis XIV, Versailles was the centre of French culture, fashion and political power. Improvements in education and literacy over the course of the 18th century meant larger audiences for newspapers and journals, with Masonic lodges, coffee houses and reading clubs providing areas where people could debate and discuss ideas. The emergence of this \"public sphere\" led to Paris replacing Versailles as the cultural and intellectual centre, leaving the Court isolated and less able to influence opinion.\n\nAssisted by Jefferson, then American diplomat to France, Lafayette prepared a draft which echoed some of the provisions of the U.S. declaration. However, there was no consensus on the role of the Crown, and until this question was settled it was impossible to create political institutions. When presented to the legislative committee on 11 July 1789, it was rejected by pragmatists such as Jean Joseph Mounier, President of the Assembly, who feared creating expectations that could not be satisfied.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "french-revolution.i05",
+        "french-revolution.i06"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "french-revolution.s05"
+      ]
+    },
+    {
+      "id": "french-revolution.l06",
+      "title_id": "french-revolution",
+      "index": 6,
+      "heading": "The women's march",
+      "body": "The Women's March on Versailles, also known as the Black March, the October Days, or simply the March on Versailles, was one of the earliest and most significant events of the French Revolution. The march began among women in the marketplaces of Paris who, on the morning of 5 October 1789, were rioting over the high price of bread. The unrest quickly became intertwined with the activities of revolutionaries seeking liberal political reforms and a constitutional monarchy for France. The market women and their allies ultimately grew into a crowd of thousands. Encouraged by revolutionary agitators, they ransacked the city armory for weapons and marched on the Palace of Versailles. The crowd besieged the palace and, in a dramatic and violent confrontation, they successfully pressed their demands upon King Louis XVI. The very next day, the crowd forced the king and his family to return with them to Paris. Over the next few weeks, most of the French assembly also relocated to the capital.\n\n![](french-revolution.i08)\n\nThese events ended the king's independence and heralded a new balance of power that would ultimately displace the established, privileged orders of the French nobility in favor of the common people, collectively known as the Third Estate. By bringing together people representing the sources of the Revolution in their largest numbers yet, the march on Versailles proved to be a defining moment of the Revolution.\n\n![](french-revolution.i09)\n\n## Inside the palace\n\nThe crowd traveled the distance from Paris to Versailles in about six hours. Among their makeshift weaponry they dragged along several cannons taken from the Hôtel de Ville. Boisterous and energetic, they recruited (or impressed into service) more and more followers as they surged out of Paris in the autumn rain. In their poissard slang, they chattered about bringing the king back home. They spoke less affectionately of the queen, Marie Antoinette, and many called for her death.\n\n## Occupation of the assembly\n\nWhen the crowd reached Versailles, it was met by another group that had assembled from the surrounding area. Members of the assembly greeted the marchers and invited Maillard into their hall, where he fulminated about the Flanders Regiment and the people's need for bread. As he spoke, the restless Parisians came pouring into the Assembly and sank exhausted on the deputies' benches. Hungry, fatigued, and bedraggled from the rain, they seemed to confirm that the siege was a simple demand for food. The unprotected deputies had no choice but to receive the marchers, who shouted down most of the speakers and demanded to hear from the popular reformist deputy Mirabeau. The great orator declined this chance to speak but nonetheless mingled familiarly with the market women, even sitting for some time with one of them upon his knee. A few other deputies welcomed the marchers warmly, including Maximilien Robespierre who was at that time a relatively obscure political figure. Robespierre spoke strong words of support for the women and their plight; his intervention helped to soften the crowd's hostility towards the assembly.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "french-revolution.i07",
+        "french-revolution.i08",
+        "french-revolution.i09"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "french-revolution.s06"
+      ]
+    },
+    {
+      "id": "french-revolution.l07",
+      "title_id": "french-revolution",
+      "index": 7,
+      "heading": "The king runs",
+      "body": "The Flight to Varennes during the night of 20–21 June 1791 was a significant event in the French Revolution in which the French royal family—comprising Louis XVI, Marie Antoinette, the Dauphin Louis Charles, Marie-Thérèse, Madame Royale, and Madame Élisabeth—unsuccessfully attempted to leave Paris for Montmédy, along with loyal members of their retinue. The King hoped to regain his freedom there, with the protection of royalist troops, as the Revolution was intensifying and the threat to the royal family's safety grew. They reached the small town of Varennes-en-Argonne, where they were stopped and arrested after being recognised at their earlier stop in Sainte-Menehould.\n\nThis incident was a turning point after which Parisian hostility towards the monarchy, as well as towards the King and Queen as individuals, became much more pronounced. The King's attempted flight provoked charges of treason that ultimately led to his execution in 1793. The flight failed due to a series of misadventures, delays, misinterpretations, and poor judgements. The King's decisions and indecision on a number of matters, including the means and timing of the journey, allowed seemingly small matters to escalate.\n\nThe King's flight was traumatic for Paris, inciting reactions. The realisation that the King had effectually repudiated the Revolutionary reforms made up to that point came as a shock to people who had seen him as genuinely supporting the Revolution. Republicanism quickly evolved from being merely a subject of coffee-house debate to the dominant ideal of Revolutionary leaders.\n\nThe King's brother, the comte de Provence, also fled on the same night, by a different route. He successfully escaped, and spent the French Revolution in exile, later returning as King Louis XVIII.\n\n![](french-revolution.i11)\n\n## The end of the monarchy\n\nThe King's failed escape attempt alarmed many other European monarchs, who feared that Revolutionary fervor would spread to their own countries and result in instability outside France. Relations between France and its neighbours, already strained because of the Revolution, deteriorated even further with some foreign ministries calling for war against the revolutionary government.\n\nThe outbreak of the war with Austria in April 1792 and the publication of a manifesto by the Duke of Brunswick threatened the destruction of Paris if the safety of the royal family was again endangered. Upon hearing this, Parisian radicals stormed the Tuileries Palace on 10 August 1792.\n\nThis attack led in turn to the suspension of the King's powers by the Legislative Assembly and the proclamation of the French First Republic on 21 September. In November, evidence of Louis XVI's secret dealings with the deceased Revolutionary politician, Honoré de Mirabeau, and of his counter-revolutionary intrigues with foreigners was found in a secret iron chest, the armoire de fer, in the Tuileries. It was now no longer possible to pretend that the reforms of the French Revolution had been made with the consent of the King. Some Republicans called for his deposition, others for his trial for treason and intended defection to the enemies of Revolutionary France. On 3 December, it was decided that Louis XVI, who together with his family had been imprisoned since August, should be brought to trial for treason. He appeared twice, on 11 and 23 December, before the National Convention.\n\nConvicted, Louis XVI was guillotined on 21 January 1793. Marie Antoinette was also convicted of treason, and guillotined on 16 October. The king's son, Louis XVII, died in 1795 at the age of ten.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "french-revolution.i10",
+        "french-revolution.i11"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "french-revolution.s07"
+      ]
+    },
+    {
+      "id": "french-revolution.l08",
+      "title_id": "french-revolution",
+      "index": 8,
+      "heading": "The king is executed",
+      "body": "Louis XVI, the deposed king of France, was publicly executed on 21 January 1793, during the French Revolution at the Place de la Révolution in Paris. At Louis XVI's trial four days prior, the National Convention had convicted Louis of high treason in a near-unanimous vote; while no one voted \"not guilty\", several deputies abstained. Ultimately, they condemned Louis to death by a simple majority of one vote. The execution by guillotine was performed by Charles-Henri Sanson, the high executioner of the French First Republic (and previous royal executioner under Louis XVI's reign).\n\nOften viewed as a turning point in both French and European history, the execution garnered differing reactions around the world. To some, Louis's death at the hands of his former subjects symbolized the end of an unbroken thousand-year period of monarchy in France and the true beginning of democracy within the nation, although Louis would not be the last king of France with the Bourbon Restoration by 1814. Others (even some who had supported major political reform) condemned the execution as an act of senseless bloodshed and saw it as a sign that France had devolved into a state of violent, amoral chaos.\n\n![](french-revolution.i13)\n\nLouis's death emboldened revolutionaries throughout the country, who continued to alter French political and social structure radically over the next several years. Nine months after Louis's death, his wife Marie Antoinette, formerly queen of France, met her own death at the guillotine at the same location in Paris.\n\n## 21 January 1793\n\nLouis exited the carriage and was received by the executioner Charles-Henri Sanson, and then took off his frock coat and cravat. After initially refusing to permit Sanson and his assistants to bind his hands together, the former king was ultimately convinced by Edgeworth, and his own handkerchief was used instead of rope. The executioner's men then cut his hair and opened his shirt's collar. Accompanied by drum rolls, Louis climbed the stairs of the scaffold and joined Sanson and his four assistants on the platform.\n\nAfter walking to the edge of the scaffold, Louis signaled to the drummers to stop and proclaimed his innocence to the crowd and expressed his concern for the future of France. He would have continued but a drum roll was ordered by Santerre, and the resulting noise made his final words difficult to understand. The order has also been attributed to others, including Santerre's aide-de-camp Dugazon, maréchal de camp Beaufranchet d'Ayat, and the drummer Pierrard. The executioners fastened Louis to the guillotine's bench (bascule), positioning his neck beneath the device's yoke (lunette) to hold it in place. At 10:22 a.m., the device was activated and the blade swiftly decapitated him. One of Sanson's assistants grabbed his severed head out of the receptacle into which it fell and exhibited it to the cheering crowd. Some of the spectators shouted \"Long live the Nation!\", \"Long live the Republic!\", and \"Long live Liberty!\", and gun salutes were fired while a few danced the farandole.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "french-revolution.i12",
+        "french-revolution.i13"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "french-revolution.s08"
+      ]
+    },
+    {
+      "id": "french-revolution.l09",
+      "title_id": "french-revolution",
+      "index": 9,
+      "heading": "The Terror",
+      "body": "The Reign of Terror was a period of the French Revolution when, following the creation of the First Republic, a series of massacres and numerous public executions took place in response to the Federalist revolts, revolutionary fervour, anticlerical sentiment, and accusations of treason by the Committee of Public Safety. While terror was never formally instituted as a legal policy by the convention, it was more often employed as a concept.\n\nHistorians disagree when exactly the \"Terror\" began. Some consider it to have begun in 1793, often giving the date as 5 September or 10 March, when the Revolutionary Tribunal came into existence. Others cite the earlier September Massacres in 1792, or even July 1789 when the first killing of the revolution occurred. Will Durant stated that \"strictly, it should be dated from the Law of Suspects, 17 September 1793, to the execution of Maximilien Robespierre, 28 July 1794.\"\n\n![](french-revolution.i15)\n\nThe Terror concluded with the fall of Robespierre and his alleged allies in July 1794, in what is known as the Thermidorian Reaction. By then, 16,594 official death sentences had been dispensed throughout France since June 1793, of which 2,639 were in Paris alone. In addition, an estimated ten- to twenty thousand people were executed without trial or died awaiting trial in prison.\n\n## Inside the Terror\n\nOn 10 March 1793, the National Convention set up the Revolutionary Tribunal. Among those charged by the tribunal, initially, about half of those arrested were acquitted, but the number dropped to about a quarter after the enactment of the Law of 22 Prairial on 10 June 1794. In March, rebellion broke out in the Vendée in response to mass conscription, which developed into a civil war. Discontent in the Vendée lasted—according to some accounts—until after the Terror.\n\nOn 6 April 1793, the National Convention established the Committee of Public Safety, which gradually became the de facto war-time government of France. The Committee oversaw the Reign of Terror. \"During the Reign of Terror, at least 300,000 suspects were arrested; 17,000 were officially executed, and perhaps 10,000 died in prison or without trial.\"\n\n![](french-revolution.i16)\n\nOn 2 June, the Parisian Sans-culottes surrounded the National Convention, calling for administrative and political purges, a fixed low price for bread, and a limitation of the electoral franchise to sans-culottes alone. With the backing of the national guard, they persuaded the convention to arrest 29 Girondist leaders. In reaction to the imprisonment of the Girondin deputies, some 13 departments started the Federalist revolts against the convention, which were ultimately crushed.\n\nOn 24 June, the convention adopted the first republican constitution of France, the French Constitution of 1793. It was ratified by public referendum, but never put into force. On 13 July, the assassination of Jean-Paul Marat—a Jacobin leader and journalist—resulted in a further increase in Jacobin political influence. Georges Danton, the leader of the August 1792 uprising against the king, was removed from the Committee of Public Safety on 10 July. On 27 July, Robespierre became part of the Committee of Public Safety.\n\nThe young men shall fight; the married man shall forge arms and transport provisions; the women shall make tents and clothes and shall serve in the hospitals; the children shall pick rags to lint [for bandages]; the old men shall betake themselves to the public square in order to arouse the courage of the warriors and preach hatred of kings and the unity of the Republic.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "french-revolution.i14",
+        "french-revolution.i15",
+        "french-revolution.i16"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "french-revolution.s09"
+      ]
+    },
+    {
+      "id": "french-revolution.l10",
+      "title_id": "french-revolution",
+      "index": 10,
+      "heading": "Robespierre falls",
+      "body": "In the historiography of the French Revolution, the Thermidorian Reaction is the common term for the period between the ousting of Maximilien Robespierre and politically-aligned deputies on 9 Thermidor II, or 27 July 1794, and the inauguration of the French Directory on 2 November 1795.\n\nThe Thermidorian Reaction was named after the month in which the coup took place and was the latter part of the National Convention's rule of France. It was marked by the end of the Reign of Terror, decentralization of executive powers from the Committee of Public Safety, and a turn from the radical Jacobin policies of the Montagnard Convention to more moderate positions.\n\nEconomic and general populism, dechristianization, and harsh wartime measures were largely abandoned, as the members of the convention, disillusioned and frightened of the centralized government of the Terror, preferred a more stable political order that would have the approval of the plurality. The reaction included the First White Terror, in which the left was violently suppressed; the Jacobin Club was disbanded; the sans-culottes were dispersed; and Montagnard ideology was renounced.\n\n## After Robespierre\n\nThe events of 9 Thermidor proved a watershed in the revolutionary process. The Thermidorian regime that followed proved to be an unpopular one, facing many rebellions after its execution of Robespierre and his allies, along with 70 members of the Paris Commune, the largest mass execution to have ever taken place in Paris. This led to a very fragile situation in France.\n\nThe hostility toward Robespierre did not vanish with his execution. Instead, the people decided to blame those who were involved with Robespierre in any way, namely the many members of the Jacobin Club, their supporters, and individuals suspected of being past revolutionaries. The massacre of these groups became known as the White Terror, and was partially carried out by the Muscadin, a group of dandyish street fighters organized by the new government.\n\nOften, members of these targeted groups were the victims of prison massacres or put on trial without due process, which were overall similar conditions to those provided to the counter-revolutionaries during the Reign of Terror. At the same time, its economic policies paved the way for rampant inflation. Ultimately, power devolved to the hands of the Directory, an executive of five men who assumed power in France in November 1795, in year IV of the French Revolutionary calendar.\n\nThe Thermidorian regime excluded the remaining Montagnards from power, even those who had joined in conspiring against Robespierre and Saint-Just. The White Terror of 1795 resulted in numerous imprisonments and several hundred executions, almost exclusively of people on the political left. These numbers, while significant, were considerably smaller than those associated with the previous Reign of Terror, which killed over 40,000. Many executions took place without a trial.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "french-revolution.i17"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "french-revolution.s10"
+      ]
+    },
+    {
+      "id": "french-revolution.l11",
+      "title_id": "french-revolution",
+      "index": 11,
+      "heading": "The Directory",
+      "body": "The Directory (also called Directorate; French: le Directoire) was the system of government established by the French Constitution of\n\n1795. It takes its name from the committee of five men vested with executive power. The Directory governed the French First Republic from 26 October 1795 (4 Brumaire an IV) until 9 November 1799, when it was overthrown by Napoleon Bonaparte in the Coup of 18 Brumaire and replaced by the Consulate.\n\nThe Directory was continually at war with foreign coalitions, including Britain, Austria, Prussia, the Kingdom of Naples, Russia and the Ottoman Empire. It annexed Belgium and the left bank of the Rhine, while Bonaparte conquered a large part of Italy. The Directory established 29 short-lived sister republics in Italy, Switzerland and the Netherlands. The conquered cities and states were required to send France huge amounts of money, as well as art treasures, which were used to fill the new Louvre museum in Paris. An army led by Bonaparte tried to conquer Egypt and marched as far as Saint-Jean-d'Acre in Syria. The Directory defeated a resurgence of the War in the Vendée, the royalist-led civil war in the Vendée region, but failed in its venture to support the Irish Rebellion of 1798 and create an Irish Republic.\n\nThe French economy was in continual crisis during the Directory. At the beginning, the treasury was empty; the paper money, the assignat, had fallen to a fraction of its value, and prices soared. The Directory stopped printing assignats and restored the value of the money, but this caused a new crisis; prices and wages fell, and economic activity slowed to a standstill.\n\nIn its first two years, the Directory concentrated on ending the excesses of the Jacobin Reign of Terror; mass executions stopped, and measures taken against exiled priests and royalists were relaxed. The Jacobin political club was closed on 12 November 1794 and the government crushed an armed uprising planned by the Jacobins and an early socialist revolutionary, François-Noël Babeuf, known as \"Gracchus Babeuf\". But after the discovery of a royalist conspiracy including a prominent general, Jean-Charles Pichegru, the Jacobins took charge of the new Councils and hardened the measures against the Church and émigrés. They took two additional seats in the Directory, hopelessly dividing it.\n\nIn 1799, after several defeats, French victories in the Netherlands and Switzerland restored the French military position, but the Directory had lost all the political factions' support, including some of its Directors. Bonaparte returned from Egypt in October, and was engaged by Abbé Sieyès and others to carry out a parliamentary coup d'état on 9–10 November 1799. The coup abolished the Directory and replaced it with the French Consulate led by Bonaparte.\n\n## Napoleon takes power\n\nThe Coup of 18 Brumaire brought Napoleon Bonaparte to power as First Consul of the French First Republic. In the view of most historians, it ended the French Revolution and would soon lead to the coronation of Napoleon as Emperor of the French. This bloodless coup d'état overthrew the Directory, replacing it with the French Consulate. This occurred on 9 November 1799, which was 18 Brumaire, Year VIII, under the short-lived French Republican calendar system.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "french-revolution.i18"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "french-revolution.s11",
+        "french-revolution.s12"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "french-revolution.i01",
+      "title_id": "french-revolution",
+      "url": "http://10.0.2.2:8000/media/french-revolution/i01-dd911a032a.jpg",
+      "width": 1600,
+      "height": 1262,
+      "alt": "The Storming of the Bastille, 14 July 1789",
+      "kind": "other",
+      "author": "Unidentified painter",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Anonymous_-_Prise_de_la_Bastille.jpg",
+      "credit_line": "Unidentified painter · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "french-revolution.i02",
+      "title_id": "french-revolution",
+      "url": "http://10.0.2.2:8000/media/french-revolution/i02-a305278918.jpg",
+      "width": 1600,
+      "height": 2915,
+      "alt": "Le Traité de la Policeby Nicolas de La Mare (1707): under the Ancien Régime, the police regulated price, quality and supply of bread.",
+      "kind": "other",
+      "author": "Nicolas de La Mare",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Trait%C3%A9_de_la_Police_par_Nicolas_de_La_Mare.jpg",
+      "credit_line": "Nicolas de La Mare · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "french-revolution.i03",
+      "title_id": "french-revolution",
+      "url": "http://10.0.2.2:8000/media/french-revolution/i03-811123a431.png",
+      "width": 1600,
+      "height": 1042,
+      "alt": "Location within present-day Paris, France",
+      "kind": "map",
+      "author": "Eric Gaba+Xfigpower",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Paris_department_location_map_2.svg",
+      "credit_line": "Eric Gaba+Xfigpower · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "french-revolution.i04",
+      "title_id": "french-revolution",
+      "url": "http://10.0.2.2:8000/media/french-revolution/i04-4527eb94e9.jpg",
+      "width": 1600,
+      "height": 1271,
+      "alt": "An eyewitness painting of the siege of the Bastille by Claude Cholat",
+      "kind": "painting",
+      "author": "Claude Cholat",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Siege_of_the_Bastille_(Claude_Cholat).jpg",
+      "credit_line": "Claude Cholat · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "french-revolution.i05",
+      "title_id": "french-revolution",
+      "url": "http://10.0.2.2:8000/media/french-revolution/i05-2a0a2c3eb8.jpg",
+      "width": 1600,
+      "height": 2028,
+      "alt": "Declaration of the Rights of Man and of the Citizen, a portrait by Jean-Jacques-François Le Barbier",
+      "kind": "portrait",
+      "author": "Unknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Declaration_of_the_Rights_of_Man_and_of_the_Citizen_in_1789.jpg",
+      "credit_line": "Unknown author · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.35
+    },
+    {
+      "id": "french-revolution.i06",
+      "title_id": "french-revolution",
+      "url": "http://10.0.2.2:8000/media/french-revolution/i06-8ca15650f9.jpg",
+      "width": 1600,
+      "height": 2015,
+      "alt": "Print of the 17 articles of the Declaration of the Rights of Man and of the Citizen in 1789 (Musée de la Révolution française)",
+      "kind": "other",
+      "author": "Milky",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:D%C3%A9claration_des_droits_de_l%27Homme_-_Mus%C3%A9e_de_la_R%C3%A9volution_fran%C3%A7aise.jpg",
+      "credit_line": "Milky · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "french-revolution.i07",
+      "title_id": "french-revolution",
+      "url": "http://10.0.2.2:8000/media/french-revolution/i07-4fa5d00c09.jpg",
+      "width": 1600,
+      "height": 1121,
+      "alt": "A contemporary illustration of the Women's March on Versailles, 5 October 1789",
+      "kind": "painting",
+      "author": "Unknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:A_Versailles,_%C3%A0_Versailles_5_octobre_1789_-_Restoration.jpg",
+      "credit_line": "Unknown author · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "french-revolution.i08",
+      "title_id": "french-revolution",
+      "url": "http://10.0.2.2:8000/media/french-revolution/i08-17d83b0507.jpg",
+      "width": 1600,
+      "height": 1175,
+      "alt": "Map of Versailles in 1789",
+      "kind": "map",
+      "author": "William Robert Shepherd",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Map_of_Versailles_in_1789_by_William_R_Shepherd_(died_1934).jpg",
+      "credit_line": "William Robert Shepherd · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "french-revolution.i09",
+      "title_id": "french-revolution",
+      "url": "http://10.0.2.2:8000/media/french-revolution/i09-fd602e3c45.jpg",
+      "width": 1600,
+      "height": 2549,
+      "alt": "The king's bedchamber at the Palace of Versailles",
+      "kind": "other",
+      "author": "Carolus at Dutch Wikipedia",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bed_Lodewijk_XIV.jpg",
+      "credit_line": "Carolus at Dutch Wikipedia · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "french-revolution.i10",
+      "title_id": "french-revolution",
+      "url": "http://10.0.2.2:8000/media/french-revolution/i10-5a0ae17f9d.jpg",
+      "width": 1600,
+      "height": 595,
+      "alt": "The route from the Tuileries Palace to Varennes-en-Argonne (approximate distance 250 km)",
+      "kind": "map",
+      "author": "J. F. Horrabin (Illustrator)",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Map_to_illustrate_the_Flight_to_Varennes,_H._G._Wells%27_Outline_of_History,_page_461.jpg",
+      "credit_line": "J. F. Horrabin (Illustrator) · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "french-revolution.i11",
+      "title_id": "french-revolution",
+      "url": "http://10.0.2.2:8000/media/french-revolution/i11-904f545564.jpg",
+      "width": 1600,
+      "height": 1159,
+      "alt": "Louis XVI and his family, dressed as bourgeois, arrested in Varennes. Painting by Thomas Falcon Marshall (1854)",
+      "kind": "painting",
+      "author": "Thomas Falcon Marshall",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Arrest_of_Louis_XVI_and_his_Family,_Varennes,_1791.jpg",
+      "credit_line": "Thomas Falcon Marshall · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "french-revolution.i12",
+      "title_id": "french-revolution",
+      "url": "http://10.0.2.2:8000/media/french-revolution/i12-af2eae994b.jpg",
+      "width": 1600,
+      "height": 957,
+      "alt": "Execution of Louis XVI in the Place de la Concorde, facing the empty pedestal where the statue of his grandfather Louis XV previously stood",
+      "kind": "art",
+      "author": "Isidore Stanislas Helman / After Charles Monnet",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Execution_of_Louis_XVI.jpg",
+      "credit_line": "Isidore Stanislas Helman / After Charles Monnet · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "french-revolution.i13",
+      "title_id": "french-revolution",
+      "url": "http://10.0.2.2:8000/media/french-revolution/i13-3e16b00479.png",
+      "width": 1600,
+      "height": 1038,
+      "alt": "Execution of Louis XVI in a contemporary German engraving",
+      "kind": "painting",
+      "author": "Georg Heinrich Sieveking",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Hinrichtung_Ludwig_des_XVI.png",
+      "credit_line": "Georg Heinrich Sieveking · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "french-revolution.i14",
+      "title_id": "french-revolution",
+      "url": "http://10.0.2.2:8000/media/french-revolution/i14-3190510821.jpg",
+      "width": 1600,
+      "height": 941,
+      "alt": "Nine émigrés are executed by guillotine, 1793",
+      "kind": "other",
+      "author": "Unknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Octobre_1793,_supplice_de_9_%C3%A9migr%C3%A9s.jpg",
+      "credit_line": "Unknown author · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "french-revolution.i15",
+      "title_id": "french-revolution",
+      "url": "http://10.0.2.2:8000/media/french-revolution/i15-aecdcb4712.jpg",
+      "width": 1600,
+      "height": 1600,
+      "alt": "Historical caricature of the Reign of Terror.",
+      "kind": "painting",
+      "author": "artistes non identifiés XVIIIe siècle",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Epouvantail_pour_les_ennemis_de_la_France_Fleisch.jpg",
+      "credit_line": "artistes non identifiés XVIIIe siècle · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "french-revolution.i16",
+      "title_id": "french-revolution",
+      "url": "http://10.0.2.2:8000/media/french-revolution/i16-802020d685.jpg",
+      "width": 1600,
+      "height": 2166,
+      "alt": "Bertrand Barère by Jean-Louis Laneuville.",
+      "kind": "other",
+      "author": "Jean-Louis Laneuville",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Barere.jpg",
+      "credit_line": "Jean-Louis Laneuville · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "french-revolution.i17",
+      "title_id": "french-revolution",
+      "url": "http://10.0.2.2:8000/media/french-revolution/i17-973b17e220.jpg",
+      "width": 1600,
+      "height": 1386,
+      "alt": "Closing of the Jacobin Club by Louis Legendre, in the early morning of 28 July 1794. Four days later it was reopened by him.",
+      "kind": "other",
+      "author": "Claude-Nicolas Malapeau / After Jean Duplessis-Bertaux",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Cl%C3%B4ture_de_la_salle_des_Jacobins_1794.jpg",
+      "credit_line": "Claude-Nicolas Malapeau / After Jean Duplessis-Bertaux · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "french-revolution.i18",
+      "title_id": "french-revolution",
+      "url": "http://10.0.2.2:8000/media/french-revolution/i18-084c39b1f0.jpg",
+      "width": 1600,
+      "height": 1705,
+      "alt": "Bonaparte at the Council of Five Hundred at Saint-Cloud by François Bouchot",
+      "kind": "other",
+      "author": "François Bouchot",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bouchot_-_Le_general_Bonaparte_au_Conseil_des_Cinq-Cents.jpg",
+      "credit_line": "François Bouchot · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "french-revolution.s01",
+      "title": "French Revolution (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Revolution",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "french-revolution.s02",
+      "title": "Causes of the French Revolution (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Causes_of_the_French_Revolution",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "french-revolution.s03",
+      "title": "Estates General of 1789 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Estates_General_of_1789",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "french-revolution.s04",
+      "title": "Storming of the Bastille (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Storming_of_the_Bastille",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "french-revolution.s05",
+      "title": "Declaration of the Rights of Man and of the Citizen (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Declaration_of_the_Rights_of_Man_and_of_the_Citizen",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "french-revolution.s06",
+      "title": "Women's March on Versailles (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Women%27s_March_on_Versailles",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "french-revolution.s07",
+      "title": "Flight to Varennes (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Flight_to_Varennes",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "french-revolution.s08",
+      "title": "Execution of Louis XVI (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Execution_of_Louis_XVI",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "french-revolution.s09",
+      "title": "Reign of Terror (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Reign_of_Terror",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "french-revolution.s10",
+      "title": "Thermidorian Reaction (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Thermidorian_Reaction",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "french-revolution.s11",
+      "title": "French Directory (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_Directory",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "french-revolution.s12",
+      "title": "Coup of 18 Brumaire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Coup_of_18_Brumaire",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}

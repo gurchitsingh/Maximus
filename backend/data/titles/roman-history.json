@@ -1,0 +1,375 @@
+{
+  "id": "roman-history",
+  "kind": "topic",
+  "name": "Roman history",
+  "subtitle": "753 BCE to 476 CE",
+  "poster_lines": [
+    "ROMAN",
+    "HISTORY"
+  ],
+  "group": "ancient-medieval",
+  "era": "ancient",
+  "region": "europe",
+  "period_start": -753,
+  "period_end": 476,
+  "themes": [
+    "empire",
+    "war",
+    "politics",
+    "law"
+  ],
+  "bg": "#2B0E0C",
+  "tint": "#E8553A",
+  "lettering": "roman",
+  "poster_image_id": null,
+  "hero_image_id": "roman-history.i01",
+  "brief": "From a village on seven hills to the biggest empire of the ancient world.",
+  "linked_title_ids": [
+    "romulus",
+    "julius-caesar",
+    "augustus"
+  ],
+  "rank": 1,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "roman-history.l01",
+      "title_id": "roman-history",
+      "index": 1,
+      "heading": "Kings and legends",
+      "body": "The Roman Kingdom, also known as the Roman monarchy and the regal period of ancient Rome, was the earliest period of Roman history, when the city and its territory were ruled by kings. According to tradition, the Roman Kingdom began with the city's founding c. 753 BC, with settlements around the Palatine Hill along the river Tiber in central Italy, and ended with the overthrow of the kings and the establishment of the Roman Republic c. 509 BC.\n\nLittle is certain about the kingdom's history as no records and few inscriptions from the time of the kings have survived. The accounts of this period written during the Republic and the Empire are thought largely to be based on oral tradition and debated as to their historicity.\n\n## Where the city began\n\nThe site of the founding of the Roman Kingdom (and eventual Republic and Empire) included a ford where one could cross the river Tiber in central Italy. The Palatine Hill and hills surrounding it provided easily defensible positions in the wide fertile plain surrounding them. Each of these features contributed to the success of the city.\n\nThe traditional version of Roman history, which has come down principally through Livy (59 BC – AD 17), Plutarch (before 50 – after AD 120), and Dionysius of Halicarnassus (c. 60 BC – after 7 BC), recounts that a series of seven kings ruled the settlement in Rome's first centuries. The traditional chronology, as codified by Varro (116 – 27 BC) and Fabius Pictor (c. 270 – c. 200 BC), allows 243 years for their combined reigns, an average of almost 35 years. Since the work of Barthold Georg Niebuhr, modern scholarship has generally discounted this schema. The Gauls destroyed many of Rome's historical records when they sacked the city after the Battle of the Allia in 390 BC (according to Varro; according to Polybius, the battle occurred in 387 or 386), and what remained eventually fell prey to time or to theft. With no contemporary records of the kingdom surviving, all accounts of the Roman kings must be carefully questioned.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "roman-history.i02"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "roman-history.s01"
+      ]
+    },
+    {
+      "id": "roman-history.l02",
+      "title_id": "roman-history",
+      "index": 2,
+      "heading": "The Republic",
+      "body": "The Roman Republic was the era of classical Roman civilisation beginning with the overthrow of the Roman Kingdom (traditionally dated to 509 BC) and ending in 27 BC with the establishment of the Roman Empire following the War of Actium. During this period, Rome's control expanded from the city's immediate surroundings to hegemony over the entire Mediterranean world.\n\n![](roman-history.i04)\n\nRoman society at the time was primarily a cultural mix of Latin and Etruscan societies, as well as of Sabine, Oscan, and Greek cultural elements, which is especially visible in the ancient Roman religion and its pantheon. Its political organisation developed at around the same time as direct democracy in ancient Greece, with collective and annual magistracies, overseen by a senate. There were annual elections, but the republican system was an elective oligarchy, not a true democracy, with a number of powerful families largely monopolising the senior magistracies. Roman institutions underwent considerable changes throughout the Republic to adapt to difficulties such as the creation of promagistracies to rule its conquered provinces and, after the Social War during the late Republic, the inclusion of peninsular Italians as citizens and senators.\n\n![](roman-history.i05)\n\nUnlike the Pax Romana of the Roman Empire, republican Rome was in a state of near-perpetual war. Its first enemies were its Latin and Etruscan neighbours, as well as the Gauls, who sacked Rome around 387 BC. After the Gallic sack, Rome conquered most of the Italian peninsula in a century and became one of the Mediterranean great powers. Its greatest strategic rival was Carthage, against which it waged three wars. Rome defeated Carthage at the Battle of Zama in 202 BC and in the following decades became the dominant power in the ancient Mediterranean world. It then embarked on a long series of difficult conquests, defeating Philip V and Perseus of Macedon, Antiochus III of the Seleucid Empire, the Lusitanian Viriathus, the Numidian Jugurtha, the Pontic king Mithridates VI, Vercingetorix of the Arverni tribe of Gaul, and the Egyptian queen Cleopatra.\n\nAt home, during the Conflict of the Orders, the patricians, the closed oligarchic elite, came into conflict with the more numerous plebs; this was resolved peacefully, with the plebs achieving political equality by the 4th century BC. The late Republic, from 133 BC onward, saw substantial domestic strife, often anachronistically seen as a conflict between optimates and populares, referring to conservative and reformist politicians, respectively. The Social War between Rome and its Italian allies over citizenship and Roman hegemony in Italy greatly expanded the scope of civil violence. Mass slavery also contributed to three Servile Wars. Political violence at home coupled with powerful semi-autonomous generals led to civil wars that broke the Republic. The first involved Marius and Sulla. After a generation, the Republic fell into civil war again in 49 BC between Julius Caesar and Pompey. Despite his victory and appointment as dictator for life, Caesar was assassinated in 44 BC. Caesar's heir Octavian and lieutenant Mark Antony defeated Caesar's assassins in 42 BC, but they split, eventually resulting in Antony's defeat alongside his ally and lover Cleopatra at the Battle of Actium in 31 BC. Octavian, the victor, then became the dominant force in Roman politics; Octavian's receipt of the title Augustus from the Senate in 27 BC is often seen to mark the end of the Republic and the beginning of the Roman Empire.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "roman-history.i03",
+        "roman-history.i04",
+        "roman-history.i05"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "roman-history.s02"
+      ]
+    },
+    {
+      "id": "roman-history.l03",
+      "title_id": "roman-history",
+      "index": 3,
+      "heading": "Rome against Carthage",
+      "body": "The Punic Wars were a series of wars fought between the Roman Republic and the Carthaginian Empire during the period 264 to 146 BC. Three such wars took place, involving a total of forty-three years of warfare on both land and sea across the western Mediterranean region, and a four-year-long revolt against Carthage.\n\nThe First Punic War broke out on the Mediterranean island of Sicily in 264 BC as a result of Rome's expansionary policy coming into conflict with Carthage's proprietary approach to the island. At the start of the war Carthage was the dominant power in the western Mediterranean, with an extensive maritime empire, while Rome was a rapidly expanding power in Italy, with a strong army but no navy. The fighting took place primarily on Sicily and its surrounding waters, as well as in North Africa, Corsica and Sardinia. It lasted twenty-three years, until 241 BC, when the Carthaginians were defeated. By the terms of the peace treaty Carthage paid large reparations and Sicily was annexed as the first Roman province. The end of the war sparked a major but eventually unsuccessful revolt within Carthaginian territory known as the Mercenary War.\n\nThe Second Punic War began in 218 BC and witnessed the Carthaginian general Hannibal's crossing of the Alps and invasion of mainland Italy. This expedition enjoyed considerable early success and campaigned in Italy for fourteen years before the survivors withdrew. There was also extensive fighting in Iberia (modern Spain and Portugal), Sicily, Sardinia and North Africa. The successful Roman invasion of the Carthaginian homeland in Africa in 204 BC led to Hannibal's recall. He was defeated in the battle of Zama in 202 BC and Carthage sued for peace. A treaty was agreed in 201 BC which stripped Carthage of its overseas territories and some of its African ones, imposed a large indemnity, severely restricted the size of its armed forces and prohibited Carthage from waging war without Rome's express permission. This caused Carthage to cease to be a military threat to Rome.\n\nIn 151 BC Carthage attempted to defend itself against Numidian encroachments; Rome used this as a justification to declare war in 149 BC, starting the Third Punic War. This conflict was fought entirely on Carthaginian territory in what is now Tunisia and centred on the siege of Carthage. In 146 BC the Romans stormed the city of Carthage, sacked it, slaughtered or enslaved its population and completely demolished the city. The Carthaginian territories were taken over as the Roman province of Africa. The ruins of the city lie east of modern Tunis on the North African coast.",
+      "reading_minutes": 3,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "roman-history.s03"
+      ]
+    },
+    {
+      "id": "roman-history.l04",
+      "title_id": "roman-history",
+      "index": 4,
+      "heading": "The Republic breaks down",
+      "body": "The crisis of the Roman Republic was an extended period of political instability and social unrest from about c. 133 BC to 30 BC that culminated in the demise of the Roman Republic and the advent of the Roman Empire.\n\nThe crisis was rooted in deep structural tensions—chief among them the breakdown of the political code known as the mos maiorum, widening inequality among wealth and land, and class conflict between the traditional aristocracy (optimates) and those who sought power by championing the cause of the common people (the populares). These factors were compounded over time as leaders like Marius, Sulla, Pompey, and Julius Caesar established armies personally devoted to them rather than the state.\n\nTraditionally, the expansion of citizenship (with all its rights, privileges, and duties) was viewed negatively by the contemporary Sallust, the modern Edward Gibbon, and others of their respective schools, both ancient and modern, because it caused internal dissension, disputes with Rome's Italian allies, slave revolts, and riots. However, other scholars have argued that because the Republic was conceived as a res publica – the essential thing of the people – the poor and disenfranchised cannot be blamed for trying to redress their legitimate and legal grievances.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "roman-history.s04"
+      ]
+    },
+    {
+      "id": "roman-history.l05",
+      "title_id": "roman-history",
+      "index": 5,
+      "heading": "The Empire",
+      "body": "The Roman Empire was a state that dominated the Mediterranean sea and much of Europe, Western Asia, and North Africa during the classical period. The Roman Republic had previously conquered most of these territories, which later came under permanent single-person rule following Octavian's rise to power and the establishment of the Augustan Principate in 27 BC. By the late 3rd century AD, the empire had been divided many times. The Western Roman Empire collapsed in 476 AD, whereas the Eastern Roman Empire (also known as the Byzantine Empire) persisted until the fall of Constantinople in 1453.\n\nBy 100 BC, the city of Rome had expanded its rule from the Italian peninsula to most of the Mediterranean and beyond. However, it was severely destabilised by civil wars and political conflicts, which culminated in the victory of Octavian over Mark Antony and Cleopatra at the Battle of Actium in 31 BC, and the subsequent conquest of the Ptolemaic Kingdom in Egypt. In 27 BC, the Roman Senate granted Octavian overarching military power (imperium) and the new title of Augustus, marking his accession as the first Roman emperor. The vast Roman territories were organized into senatorial provinces, governed by proconsuls who were appointed by lot annually, and imperial provinces, which belonged to the emperor but were governed by legates.\n\nThe first two centuries of the Empire saw unprecedented stability and prosperity known as the Pax Romana (lit. 'Roman Peace'). Rome reached its greatest territorial extent under Trajan (r. 98–117 AD), but increasing trouble and decline began under Commodus (r. 180–192). In the 3rd century, the Empire underwent a 50-year crisis that threatened its existence due to civil war, plagues and barbarian invasions. The Gallic and Palmyrene empires broke away and a series of short-lived emperors led the Empire, which was later reunified under Aurelian (r. 270–275). The civil wars ended with the victory of Diocletian (r. 284–305), who set up two different imperial courts in the Greek East and Latin West. Constantine the Great (r. 306–337), the first Christian emperor, moved the imperial seat from Rome to Byzantium in 330, and renamed it Constantinople. The Migration Period, involving large invasions by Germanic peoples and the Huns, led to the decline of the Western Roman Empire. With the fall of Ravenna to the Germanic Herulians and the deposition of Romulus Augustus in 476 by Odoacer, the Western Empire finally collapsed. The Byzantine (Eastern Roman) Empire survived for another millennium with Constantinople as its sole capital, until the city's fall in 1453.\n\nDue to the Empire's extent and endurance, its institutions and culture had a lasting influence on the development of language, religion, art, architecture, literature, philosophy, law, and forms of government across its territories. The rediscovery of classical science and technology (which formed the basis for Islamic science) in medieval Europe contributed to the Scientific Renaissance and Scientific Revolution. Rome's republican institutions have influenced the Italian city-state republics of the medieval period, the early United States, and modern democratic republics.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "roman-history.i06"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "roman-history.s05"
+      ]
+    },
+    {
+      "id": "roman-history.l06",
+      "title_id": "roman-history",
+      "index": 6,
+      "heading": "The Roman peace",
+      "body": "The Pax Romana is a roughly 200-year-long period of ancient Rome that is identified as a golden age of increased and sustained Roman imperialism, prosperous stability, hegemonic power, regional expansion, and relative peace and order, although it still featured a number of internal revolts and external wars, including the Roman–Persian wars. Traditionally, the onset is understood to be the ascent of Augustus, who also founded the Roman principate, in 27 BC. Conversely, the end of the era is considered as 180 AD with the death of Marcus Aurelius, the last of the \"Five Good Emperors\".\n\nIt was during this period that the Roman Empire achieved its greatest territorial extent under Trajan in 117. Additionally, the Roman Empire's population is estimated to have peaked at 70 million people during the Pax Romana, accounting for 33% of the world's population. Following the Pax Romana, and according to Cassius Dio, the tyrannical reign of Commodus, later followed by the Year of the Five Emperors and the Crisis of the Third Century, marked Rome's descent \"from a kingdom of gold to one of iron and rust\".\n\n## Two centuries of peace\n\nThe Pax Romana, spanning from 27 BC to AD 180, stands as one of the longest enduring periods of peace in history. However, Walter Goffart wrote: \"The volume of the Cambridge Ancient History for the years AD 70–192 is called 'The Imperial Peace', but peace is not what one finds in its pages\". On the other hand, Arthur M. Eckstein writes that the period must be viewed in contrast to the much more frequent warfare in the 3rd and 4th centuries BC under the Roman Republic.\n\nEckstein also notes that the initial Pax Romana appeared during the Republic, and that its temporal span varied upon geographical region as well: \"Although the standard textbook dates for the Pax Romana, the famous 'Roman Peace' in the Mediterranean, are 31 BC to AD 250, the fact is that the Roman Peace was emerging in large regions of the Mediterranean at a much earlier date: Sicily after 210 [BC], the Italian Peninsula after 200 [BC]; the Po Valley after 190 [BC]; most of the Iberian Peninsula after 133 [BC]; North Africa after 100 [BC]; and for ever longer stretches of time in the Greek East.\" Thomas F. Madden explained the dating of 27 BC as avoiding the civil wars of the 1st century BC. The true origins of Pax Romana for him are in the 2nd century BC, after Rome had eliminated all of its serious military rivals and brought an unprecedented peace and prosperity to the lands of their empire. Tim Cornell argued that Pax Romana in the sense of the absence of major inter-state wars began in the Second century BC. Over the course of the last two centuries of the Republic, the character and frequency of these wars declined. Almost continuous warfare in the Fourth and Third centuries BC became sporadic and punctuated by long periods of peace.\n\nThe first known record of the term Pax Romana appears in a writing by Seneca the Younger in AD 55. The concept was highly influential, and the subject of theories and attempts to copy it in subsequent ages.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "roman-history.i07"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "roman-history.s06"
+      ]
+    },
+    {
+      "id": "roman-history.l07",
+      "title_id": "roman-history",
+      "index": 7,
+      "heading": "The Third Century crisis",
+      "body": "The Crisis of the Third Century, also known as the Military Anarchy or the Imperial Crisis, was a period in Roman history during which the Roman Empire nearly collapsed under the combined pressure of repeated foreign invasions, civil wars and economic disintegration. At the height of the crisis, the Roman state split into three distinct and competing polities. The period is usually dated between the death of Severus Alexander (235) and accession of Diocletian (284). The crisis resulted in such profound changes that it marks the transition between the historical periods of classical antiquity and late antiquity.\n\nThe crisis began in 235 with the assassination of Emperor Severus Alexander by his own troops. During the following years, the empire saw barbarian invasions and migrations into Roman territory, civil wars, peasant rebellions and political instability, with multiple usurpers competing for power. This led to the debasement of currency and a breakdown in both trade networks and economic productivity, with the Plague of Cyprian contributing to the disorder. Roman armies became more reliant over time on the growing influence of the barbarian mercenaries known as foederati. Roman commanders in the field, although nominally loyal to the state, became increasingly independent of Rome's central authority.\n\nDuring the crisis, there were at least 26 claimants to the title of emperor, mostly prominent Roman generals, who assumed imperial power over all or part of the empire. The same number of men became accepted by the Roman Senate as emperor during this period and so became legitimate emperors. By 268, the empire had split into three competing states: the Gallic Empire (including the Roman provinces of Gaul, Britannia and, briefly, Hispania); the Palmyrene Empire (including the eastern provinces of Syria Palaestina and Aegyptus); and, between them, the Italian-centered Roman Empire proper.\n\nThe reign of Aurelian (270–275) marked a turning point in the crisis period. Aurelian successfully reunited the empire by defeating the two breakaway states, and carried out a series of monetary reforms which helped restore some measure of stability to the Roman economy. The crisis is said to have ended with Diocletian's final victory against Carinus in 285 and his restructuring of the Roman imperial government, economy and military.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "roman-history.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "roman-history.s07"
+      ]
+    },
+    {
+      "id": "roman-history.l08",
+      "title_id": "roman-history",
+      "index": 8,
+      "heading": "The fall of the West",
+      "body": "The fall of the Western Roman Empire, also called the fall of the Roman Empire or the fall of Rome, was the loss of central political control in the Western Roman Empire, a process in which the Empire failed to enforce its rule, and its vast territory was divided among several successor polities. The Roman Empire lost the strengths that had allowed it to exercise effective control over its Western provinces; modern historians posit factors including the effectiveness and numbers of the army, the health and numbers of the Roman population, the strength of the economy, the competence of the emperors, the internal struggles for power, the religious changes of the period, and the efficiency of the civil administration. Increasing pressure from invading peoples outside Roman culture also contributed greatly to the collapse. Climatic changes and both endemic and epidemic diseases drove many of these immediate factors. The reasons for the collapse are major subjects of the historiography of the ancient world and they inform much modern discourse on state failure.\n\nIn 376, a large migration of Goths and other non-Roman people, fleeing from the Huns, entered the Empire. Roman forces were unable to exterminate, expel or subjugate them (as was their normal practice). In 395, after winning two destructive civil wars, Theodosius I died. He left a collapsing field army, and the Empire divided between the warring ministers of his two incapable sons. Goths and other non-Romans became a force that could challenge either part of the Empire. Further barbarian groups crossed the Rhine and other frontiers. The armed forces of the Western Empire became few and ineffective, and despite brief recoveries under able leaders, central rule was never again effectively consolidated.\n\nBy 476, the position of Western Roman Emperor wielded negligible military, political, or financial power, and had no effective control over the scattered Western domains that could still be described as Roman. Barbarian kingdoms had established their own power in much of the area of the Western Empire. In 476, the Germanic barbarian king Odoacer deposed the last emperor of the Western Roman Empire in Italy, Romulus Augustulus, and the Senate sent the imperial insignia to the Eastern Roman emperor Zeno.\n\nWhile its legitimacy lasted for centuries longer and its cultural influence remains, the Western Empire never had the strength to rise again. The Eastern Roman, or Byzantine, Empire, survived and remained for centuries an effective power of the Eastern Mediterranean, although it lessened in strength. While the loss of political unity and military control is universally acknowledged, the fall of Rome is not the only unifying concept for these events; the period described as late antiquity emphasizes the cultural continuities throughout and beyond the political collapse.",
+      "reading_minutes": 3,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "roman-history.s08"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "roman-history.i01",
+      "title_id": "roman-history",
+      "url": "http://10.0.2.2:8000/media/roman-history/i01-299d323495.jpg",
+      "width": 1600,
+      "height": 1121,
+      "alt": "The Colosseum in Rome, the great stone amphitheatre finished in 80 CE, seen from outside.",
+      "kind": "other",
+      "author": "FeaturedPics",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Colosseo_2020.jpg",
+      "credit_line": "FeaturedPics · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "roman-history.i02",
+      "title_id": "roman-history",
+      "url": "http://10.0.2.2:8000/media/roman-history/i02-38beb0333e.jpg",
+      "width": 1600,
+      "height": 4048,
+      "alt": "Shards of terracotta decorative plaques, sixth century BC (Roman Kingdom and Etruscan period), found in the Roman Forum, now in the Diocletian Baths Museum, Rome",
+      "kind": "other",
+      "author": "Ursus",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:135_Regia_tessons_etrusques.JPG",
+      "credit_line": "Ursus · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "roman-history.i03",
+      "title_id": "roman-history",
+      "url": "http://10.0.2.2:8000/media/roman-history/i03-7e2f655a28.png",
+      "width": 1600,
+      "height": 918,
+      "alt": "Territory of the Roman republic in 44 BC. Map based on territory depicted in Hammond's 8 x 11 Map of Roman Dominions 44 BC (1906). Coastlines from the Ancient World Mapping Center shape files.",
+      "kind": "map",
+      "author": "Ifly6",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Roman_republic,_territory_44_BC.svg",
+      "credit_line": "Ifly6 · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "roman-history.i04",
+      "title_id": "roman-history",
+      "url": "http://10.0.2.2:8000/media/roman-history/i04-b7254853ba.png",
+      "width": 1600,
+      "height": 918,
+      "alt": "Territory of the Roman republic in 60 BC. Map is based on the Ancient World Mapping Center shape files for the Roman empire's extent in 60 BC. Map tiles from Consortium of Ancient World Mappers.",
+      "kind": "map",
+      "author": "Ifly6",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Roman_republic,_territory_60_BC.svg",
+      "credit_line": "Ifly6 · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "roman-history.i05",
+      "title_id": "roman-history",
+      "url": "http://10.0.2.2:8000/media/roman-history/i05-1f99f6c2da.png",
+      "width": 1600,
+      "height": 947,
+      "alt": "A map of the western Mediterranean showing the extent of the territories held by the region's three main powers in 150 BC",
+      "kind": "map",
+      "author": "Goran tek-en",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Western_Mediterranean_territory,_150_BC.svg",
+      "credit_line": "Goran tek-en · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "roman-history.i06",
+      "title_id": "roman-history",
+      "url": "http://10.0.2.2:8000/media/roman-history/i06-ddddf31a6a.png",
+      "width": 1600,
+      "height": 1019,
+      "alt": "The Roman Empire (red) and its clients (pink) in 117 AD during the reign of emperor Trajan.",
+      "kind": "other",
+      "author": "Tataryn",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Roman_Empire_Trajan_117AD.png",
+      "credit_line": "Tataryn · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "roman-history.i07",
+      "title_id": "roman-history",
+      "url": "http://10.0.2.2:8000/media/roman-history/i07-331c3a6b21.jpg",
+      "width": 1600,
+      "height": 1109,
+      "alt": "Extent of the Roman Empire under Augustus. Yellow represents the extent of the Republic in 31 BC, while green represents gradually conquered territories under the reign of Augustus, and pink areas…",
+      "kind": "map",
+      "author": "Cristiano64",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Impero_romano_sotto_Ottaviano_Augusto_30aC_-_6dC.jpg",
+      "credit_line": "Cristiano64 · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "roman-history.i08",
+      "title_id": "roman-history",
+      "url": "http://10.0.2.2:8000/media/roman-history/i08-075657352a.png",
+      "width": 1600,
+      "height": 947,
+      "alt": "Map of the Roman Empire around the year of the consulship of Aurelianus and Bassus (271 AD), with the break away Gallic Empire in the West and the Palmyrene Empire in the East.",
+      "kind": "map",
+      "author": "Blank map of South Europe and North Africa.svg: historicair 23:27, 8 August 2007 (UTC)",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Map_of_Ancient_Rome_271_AD.svg",
+      "credit_line": "Blank map of South Europe and North Africa.svg: historicair 23:27, 8 August 2007 (UTC) · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "roman-history.s01",
+      "title": "Roman Kingdom (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Roman_Kingdom",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "roman-history.s02",
+      "title": "Roman Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Roman_Republic",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "roman-history.s03",
+      "title": "Punic Wars (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Punic_Wars",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "roman-history.s04",
+      "title": "Crisis of the Roman Republic (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Crisis_of_the_Roman_Republic",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "roman-history.s05",
+      "title": "Roman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Roman_Empire",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "roman-history.s06",
+      "title": "Pax Romana (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pax_Romana",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "roman-history.s07",
+      "title": "Crisis of the Third Century (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Crisis_of_the_Third_Century",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "roman-history.s08",
+      "title": "Fall of the Western Roman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fall_of_the_Western_Roman_Empire",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}
