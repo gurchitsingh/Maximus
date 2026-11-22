@@ -26,19 +26,24 @@ enum AppRoute {
   final String path;
 }
 
-/// Debug-only start location, e.g.
-/// `flutter run --dart-define=MX_START=/dev/gallery`.
+/// Debug-only start route by name, e.g.
+/// `flutter run --dart-define=MX_START=gallery`. A name, not a path, because
+/// Git Bash rewrites '/dev/...' arguments into Windows paths.
 const _startOverride = String.fromEnvironment('MX_START');
+
+String? _startPath() {
+  if (!kDebugMode || _startOverride.isEmpty) return null;
+  for (final r in AppRoute.values) {
+    if (r.name == _startOverride) return r.path;
+  }
+  return null;
+}
 
 final _rootKey = GlobalKey<NavigatorState>(debugLabel: 'root');
 
 GoRouter buildRouter({String? initialLocation}) => GoRouter(
   navigatorKey: _rootKey,
-  initialLocation:
-      initialLocation ??
-      (kDebugMode && _startOverride.isNotEmpty
-          ? _startOverride
-          : AppRoute.home.path),
+  initialLocation: initialLocation ?? _startPath() ?? AppRoute.home.path,
   redirect: (context, state) {
     final path = state.uri.path;
     // Splash and onboarding are S5; until then '/' goes straight to Home.

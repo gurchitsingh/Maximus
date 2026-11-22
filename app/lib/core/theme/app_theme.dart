@@ -1,10 +1,21 @@
 // ThemeData for dark, light and sepia, built only from tokens.
+import 'package:flutter/services.dart';
 import 'package:material_ui/material_ui.dart';
 
 import 'tokens.dart';
 import 'typography.dart';
 
 abstract final class MxTheme {
+  /// Status and navigation bar styling for a theme (icons readable on bg).
+  static SystemUiOverlayStyle systemOverlay(MxThemeVariant variant) =>
+      (variant.brightness == Brightness.dark
+              ? SystemUiOverlayStyle.light
+              : SystemUiOverlayStyle.dark)
+          .copyWith(
+            statusBarColor: Colors.transparent,
+            systemNavigationBarColor: MxColors.of(variant).surface,
+          );
+
   static ThemeData build(
     MxThemeVariant variant, {
     MxTextSize textSize = MxTextSize.medium,
@@ -27,7 +38,8 @@ abstract final class MxTheme {
     );
 
     // Material roles mapped to the closest App style, for incidental widgets.
-    TextStyle t(TextStyle s, [Color? color]) => s.copyWith(color: color ?? c.text);
+    TextStyle t(TextStyle s, [Color? color]) =>
+        s.copyWith(color: color ?? c.text);
     final textTheme = TextTheme(
       displayLarge: t(MxText.scoreXL),
       displayMedium: t(MxText.display),
@@ -86,7 +98,10 @@ abstract final class MxTheme {
         contentTextStyle: MxText.body.copyWith(color: c.text),
         behavior: SnackBarBehavior.floating,
       ),
-      extensions: [c, MxReading(size: textSize)],
+      extensions: [
+        c,
+        MxReading(size: textSize),
+      ],
     );
   }
 }

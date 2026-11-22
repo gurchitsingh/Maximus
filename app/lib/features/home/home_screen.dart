@@ -37,7 +37,9 @@ class HomeScreen extends StatelessWidget {
               onPressed: () => context.push(AppRoute.settings.path),
             ),
           ),
-          const Expanded(child: PlaceholderBody(title: 'Home', session: 'S5')),
+          const Expanded(
+            child: PlaceholderBody(title: 'Home', session: 'S5'),
+          ),
         ],
       ),
     );

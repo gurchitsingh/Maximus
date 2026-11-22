@@ -40,19 +40,23 @@ class MatchBadge extends StatelessWidget {
           color: MxFixed.badgeBg,
           borderRadius: BorderRadius.circular(h / 2),
         ),
-        alignment: Alignment.center,
-        child: TweenAnimationBuilder<double>(
-          tween: Tween(begin: 0, end: percent.toDouble()),
-          duration: reduced ? Duration.zero : MxMotion.matchCountUp,
-          curve: Curves.easeOut,
-          builder: (context, v, _) => Text(
-            label(v.round()),
-            maxLines: 1,
-            textScaler: TextScaler.noScaling,
-            style: MxText.buttonS.copyWith(
-              fontSize: font,
-              color: MxFixed.accentBright,
-              fontFeatures: const [FontFeature.tabularFigures()],
+        // Center with widthFactor 1 hugs the text; Container.alignment would
+        // stretch the badge to the full width when the parent is bounded.
+        child: Center(
+          widthFactor: 1,
+          child: TweenAnimationBuilder<double>(
+            tween: Tween(begin: 0, end: percent.toDouble()),
+            duration: reduced ? Duration.zero : MxMotion.matchCountUp,
+            curve: Curves.easeOut,
+            builder: (context, v, _) => Text(
+              label(v.round()),
+              maxLines: 1,
+              textScaler: TextScaler.noScaling,
+              style: MxText.buttonS.copyWith(
+                fontSize: font,
+                color: MxFixed.accentBright,
+                fontFeatures: const [FontFeature.tabularFigures()],
+              ),
             ),
           ),
         ),

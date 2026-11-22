@@ -98,7 +98,9 @@ class _NavButton extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             AnimatedContainer(
-              duration: MxMotion.reduced(context) ? Duration.zero : MxMotion.fade,
+              duration: MxMotion.reduced(context)
+                  ? Duration.zero
+                  : MxMotion.fade,
               width: 56,
               height: 30,
               decoration: BoxDecoration(

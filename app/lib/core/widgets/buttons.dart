@@ -104,8 +104,15 @@ class _MxPressableState extends State<MxPressable> {
   }
 }
 
-Widget _labelRow(String label, TextStyle style, MxIcons? icon, double iconSize,
-    Color color, {bool trailingIcon = false, double gap = 8}) {
+Widget _labelRow(
+  String label,
+  TextStyle style,
+  MxIcons? icon,
+  double iconSize,
+  Color color, {
+  bool trailingIcon = false,
+  double gap = 8,
+}) {
   final text = Text(label, style: style.copyWith(color: color), maxLines: 1);
   if (icon == null) return text;
   final i = MxIcon(icon, size: iconSize, color: color);
@@ -481,7 +488,11 @@ class CircleIconButton extends StatelessWidget {
         fill: c.accent,
         semanticLabel: label,
         child: Center(
-          child: MxIcon(icon, size: diameter >= 52 ? 22 : 20, color: c.onAccent),
+          child: MxIcon(
+            icon,
+            size: diameter >= 52 ? 22 : 20,
+            color: c.onAccent,
+          ),
         ),
       ),
     );

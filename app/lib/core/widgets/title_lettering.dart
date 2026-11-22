@@ -162,8 +162,7 @@ class SheetLettering extends StatelessWidget {
         height: 1.05,
       ),
     };
-    final upper =
-        kind == MxLettering.stencil || kind == MxLettering.carved;
+    final upper = kind == MxLettering.stencil || kind == MxLettering.carved;
     return Semantics(
       header: true,
       label: lines.join(' '),

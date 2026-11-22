@@ -26,7 +26,10 @@ Future<T?> showMxBottomSheet<T>({
     sheetAnimationStyle: reduced ? AnimationStyle.noAnimation : null,
     builder: (ctx) => theme == null
         ? frame(ctx)
-        : Theme(data: theme, child: Builder(builder: frame)),
+        : Theme(
+            data: theme,
+            child: Builder(builder: frame),
+          ),
   );
 }
 

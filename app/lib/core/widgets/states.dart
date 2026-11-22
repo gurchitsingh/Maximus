@@ -84,7 +84,8 @@ class PosterRowSkeleton extends StatelessWidget {
           physics: const NeverScrollableScrollPhysics(),
           padding: const EdgeInsets.symmetric(horizontal: MxSpace.gutter),
           itemCount: count,
-          separatorBuilder: (_, _) => const SizedBox(width: MxSpace.posterRowGap),
+          separatorBuilder: (_, _) =>
+              const SizedBox(width: MxSpace.posterRowGap),
           itemBuilder: (_, _) => Skeleton(
             width: posterWidth,
             height: posterWidth * 1.5,
@@ -273,10 +274,7 @@ class OfflineBanner extends StatelessWidget {
             MxIcon(MxIcons.wifiOff, size: 18, color: c.text),
             const SizedBox(width: 10),
             Expanded(
-              child: Text(
-                message,
-                style: MxText.hint.copyWith(color: c.text),
-              ),
+              child: Text(message, style: MxText.hint.copyWith(color: c.text)),
             ),
           ],
         ),

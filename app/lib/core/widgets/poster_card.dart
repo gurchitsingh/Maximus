@@ -77,7 +77,11 @@ class PosterCard extends StatelessWidget {
                   gradient: LinearGradient(
                     begin: Alignment.bottomCenter,
                     end: Alignment.topCenter,
-                    colors: [MxFixed.scrimA(0.9), MxFixed.scrimA(0.9), MxFixed.scrimA(0)],
+                    colors: [
+                      MxFixed.scrimA(0.9),
+                      MxFixed.scrimA(0.9),
+                      MxFixed.scrimA(0),
+                    ],
                     stops: const [0, 0.22, 1],
                   ),
                 ),
@@ -106,6 +110,15 @@ class PosterCard extends StatelessWidget {
     final label = matchPercent == null
         ? data.semanticLabel
         : '${data.semanticLabel}, $matchPercent% match';
+    // Display-only posters must not take the disabled (0.4 opacity) path.
+    if (onTap == null) {
+      return Semantics(
+        image: true,
+        label: label,
+        excludeSemantics: true,
+        child: card,
+      );
+    }
     return MxPressable(
       onPressed: onTap,
       borderRadius: radius,
@@ -155,7 +168,11 @@ class TintedGradient extends StatelessWidget {
         gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [Color.lerp(bg, tint, 0.28)!, bg, Color.lerp(bg, Colors.black, 0.35)!],
+          colors: [
+            Color.lerp(bg, tint, 0.28)!,
+            bg,
+            Color.lerp(bg, Colors.black, 0.35)!,
+          ],
           stops: const [0, 0.55, 1],
         ),
       ),

@@ -187,7 +187,9 @@ abstract final class MxFixed {
   static const sheetBackdrop = Color(0x9E000000); // 0.62
   static const celebrationBackdrop = Color(0xC70A0805); // 0.78
   static const ring = Color(0xFFC8933A);
-  static const inkOnTint = Color(0xFF1A1208); // 11.17: one ink for all tint buttons
+  static const inkOnTint = Color(
+    0xFF1A1208,
+  ); // 11.17: one ink for all tint buttons
   static const splashBg = Color(0xFF0F0D0A);
   static const heroTitle = Color(0xFFFBE2AE);
   static const heroShadow = Color(0xFF1E0D05);

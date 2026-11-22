@@ -1,6 +1,7 @@
 // Hidden widget gallery (CONTRACTS 8.3 /dev/gallery, debug builds only).
 // Shows every shared widget in dark, light or sepia, picked at the top,
 // independent of the app theme.
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:material_ui/material_ui.dart';
 
@@ -32,23 +33,26 @@ class _GalleryScreenState extends ConsumerState<GalleryScreen> {
           final c = context.mx;
           return Scaffold(
             backgroundColor: c.bg,
-            body: SafeArea(
-              bottom: false,
-              child: Column(
-                children: [
-                  const MxPushedTopBar(title: 'Widget gallery'),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 0, 20, 12),
-                    child: SegmentedChoice<MxThemeVariant>(
-                      options: MxThemeVariant.values,
-                      value: _variant,
-                      labelOf: (v) => v.label,
-                      onChanged: (v) => setState(() => _variant = v),
+            body: AnnotatedRegion<SystemUiOverlayStyle>(
+              value: MxTheme.systemOverlay(_variant),
+              child: SafeArea(
+                bottom: false,
+                child: Column(
+                  children: [
+                    const MxPushedTopBar(title: 'Widget gallery'),
+                    Padding(
+                      padding: const EdgeInsets.fromLTRB(20, 0, 20, 12),
+                      child: SegmentedChoice<MxThemeVariant>(
+                        options: MxThemeVariant.values,
+                        value: _variant,
+                        labelOf: (v) => v.label,
+                        onChanged: (v) => setState(() => _variant = v),
+                      ),
                     ),
-                  ),
-                  Divider(color: c.divider),
-                  Expanded(child: _GalleryBody(theme: theme)),
-                ],
+                    Divider(color: c.divider),
+                    Expanded(child: _GalleryBody(theme: theme)),
+                  ],
+                ),
               ),
             ),
           );
@@ -151,7 +155,10 @@ class _GalleryBodyState extends State<_GalleryBody> {
               const SizedBox(height: 10),
               const PrimaryButton(label: 'Pick 2 more', onPressed: null),
               const SizedBox(height: 10),
-              SecondaryButton(label: 'Review lessons you missed', onPressed: () {}),
+              SecondaryButton(
+                label: 'Review lessons you missed',
+                onPressed: () {},
+              ),
               const SizedBox(height: 10),
               AccentOutlineButton.studyList(
                 added: _added,
@@ -196,8 +203,16 @@ class _GalleryBodyState extends State<_GalleryBody> {
               const SizedBox(height: 10),
               Row(
                 children: [
-                  MxIconButton(icon: MxIcons.chevronLeft, label: 'Back', onPressed: () {}),
-                  MxIconButton(icon: MxIcons.settings, label: 'Settings', onPressed: () {}),
+                  MxIconButton(
+                    icon: MxIcons.chevronLeft,
+                    label: 'Back',
+                    onPressed: () {},
+                  ),
+                  MxIconButton(
+                    icon: MxIcons.settings,
+                    label: 'Settings',
+                    onPressed: () {},
+                  ),
                   MxIconButton(
                     icon: MxIcons.x,
                     label: 'Remove',
@@ -206,7 +221,11 @@ class _GalleryBodyState extends State<_GalleryBody> {
                     onPressed: () {},
                   ),
                   const SizedBox(width: 8),
-                  CircleIconButton(icon: MxIcons.play, label: 'Listen', onPressed: () {}),
+                  CircleIconButton(
+                    icon: MxIcons.play,
+                    label: 'Listen',
+                    onPressed: () {},
+                  ),
                   const SizedBox(width: 8),
                   CircleIconButton(
                     icon: MxIcons.send,
@@ -224,7 +243,7 @@ class _GalleryBodyState extends State<_GalleryBody> {
           child: ClipRRect(
             borderRadius: BorderRadius.circular(MxRadius.resume),
             child: SizedBox(
-              height: 200,
+              height: 270,
               child: Stack(
                 fit: StackFit.expand,
                 children: [
@@ -247,7 +266,11 @@ class _GalleryBodyState extends State<_GalleryBody> {
                           onPressed: () {},
                         ),
                         const SizedBox(height: 8),
-                        PillCta(label: 'Start', tint: roman.tint, onPressed: () {}),
+                        PillCta(
+                          label: 'Start',
+                          tint: roman.tint,
+                          onPressed: () {},
+                        ),
                         const SizedBox(height: 8),
                         PillCta(
                           label: 'Go deeper',
@@ -266,10 +289,15 @@ class _GalleryBodyState extends State<_GalleryBody> {
                           icon: MxIcons.bookmark,
                           label: 'Save',
                           active: _feedSaved,
-                          onPressed: () => setState(() => _feedSaved = !_feedSaved),
+                          onPressed: () =>
+                              setState(() => _feedSaved = !_feedSaved),
                         ),
                         const SizedBox(height: 8),
-                        FeedActionButton(icon: MxIcons.thumbsUp, label: 'Like', onPressed: () {}),
+                        FeedActionButton(
+                          icon: MxIcons.thumbsUp,
+                          label: 'Like',
+                          onPressed: () {},
+                        ),
                       ],
                     ),
                   ),
@@ -316,7 +344,10 @@ class _GalleryBodyState extends State<_GalleryBody> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SuggestionChipRow(
-                labels: const ['Why did the Republic fall?', 'Who was Augustus?'],
+                labels: const [
+                  'Why did the Republic fall?',
+                  'Who was Augustus?',
+                ],
                 onSelected: (_) {},
               ),
               const SuggestionChipRow(
@@ -329,7 +360,10 @@ class _GalleryBodyState extends State<_GalleryBody> {
                   children: [
                     SourceChip(label: 'From lesson 4', onPressed: () {}),
                     const SizedBox(width: 8),
-                    TopicTag(label: 'World War II', tint: GallerySamples.ww2.tint),
+                    TopicTag(
+                      label: 'World War II',
+                      tint: GallerySamples.ww2.tint,
+                    ),
                   ],
                 ),
               ),
@@ -379,20 +413,25 @@ class _GalleryBodyState extends State<_GalleryBody> {
         _Section(
           'Tabs: main nav and topic bar',
           padded: false,
-          child: Column(
-            children: [
-              MxNavBar(
-                items: MxNavItem.mainTabs,
-                currentIndex: _mainTab,
-                onSelected: (i) => setState(() => _mainTab = i),
-              ),
-              const SizedBox(height: 12),
-              MxNavBar(
-                items: MxNavItem.topicTabs,
-                currentIndex: _topicTab,
-                onSelected: (i) => setState(() => _topicTab = i),
-              ),
-            ],
+          // Not at the screen bottom here, so drop the gesture-bar inset.
+          child: MediaQuery.removePadding(
+            context: context,
+            removeBottom: true,
+            child: Column(
+              children: [
+                MxNavBar(
+                  items: MxNavItem.mainTabs,
+                  currentIndex: _mainTab,
+                  onSelected: (i) => setState(() => _mainTab = i),
+                ),
+                const SizedBox(height: 12),
+                MxNavBar(
+                  items: MxNavItem.topicTabs,
+                  currentIndex: _topicTab,
+                  onSelected: (i) => setState(() => _topicTab = i),
+                ),
+              ],
+            ),
           ),
         ),
         _Section(
@@ -441,7 +480,11 @@ class _GalleryBodyState extends State<_GalleryBody> {
           'Answer options',
           child: Column(
             children: [
-              for (final (i, label) in const ['Athens', 'Carthage', 'Sparta'].indexed) ...[
+              for (final (i, label) in const [
+                'Athens',
+                'Carthage',
+                'Sparta',
+              ].indexed) ...[
                 AnswerOption(
                   label: label,
                   state: _picked == null
@@ -449,12 +492,16 @@ class _GalleryBodyState extends State<_GalleryBody> {
                       : i == 1
                       ? AnswerState.right
                       : (i == _picked ? AnswerState.wrong : AnswerState.idle),
-                  onPressed: _picked == null ? () => setState(() => _picked = i) : null,
+                  onPressed: _picked == null
+                      ? () => setState(() => _picked = i)
+                      : null,
                 ),
                 const SizedBox(height: 10),
               ],
               if (_picked != null) ...[
-                const ExplanationBox('Carthage, in North Africa, was destroyed in 146 BCE.'),
+                const ExplanationBox(
+                  'Carthage, in North Africa, was destroyed in 146 BCE.',
+                ),
                 const SizedBox(height: 10),
                 SecondaryButton(
                   label: 'Reset',
@@ -470,9 +517,13 @@ class _GalleryBodyState extends State<_GalleryBody> {
             children: [
               Row(
                 children: [
-                  Expanded(child: ScoreTile(score: '5/6', topic: 'Roman history')),
+                  Expanded(
+                    child: ScoreTile(score: '5/6', topic: 'Roman history'),
+                  ),
                   SizedBox(width: 10),
-                  Expanded(child: ScoreTile(score: '4/6', topic: 'Ancient Greece')),
+                  Expanded(
+                    child: ScoreTile(score: '4/6', topic: 'Ancient Greece'),
+                  ),
                 ],
               ),
               SizedBox(height: 12),
@@ -490,14 +541,23 @@ class _GalleryBodyState extends State<_GalleryBody> {
           'Settings rows and input',
           child: Column(
             children: [
-              SettingsRow(label: 'Voice', value: 'Device default', onTap: () {}),
+              SettingsRow(
+                label: 'Voice',
+                value: 'Device default',
+                onTap: () {},
+              ),
               SettingsRow(
                 label: 'Clear my data',
                 value: 'Topics, scores, settings',
                 destructive: true,
                 onTap: () {},
               ),
-              SettingsRow(label: 'Credits', showArrow: true, isLast: true, onTap: () {}),
+              SettingsRow(
+                label: 'Credits',
+                showArrow: true,
+                isLast: true,
+                onTap: () {},
+              ),
               const SizedBox(height: 16),
               const MxTextField(hint: 'Email'),
               const SizedBox(height: 12),
@@ -592,7 +652,10 @@ class _SampleSheetBodyState extends State<_SampleSheetBody> {
             style: MxText.bodyL.copyWith(color: c.text),
           ),
           const SizedBox(height: 12),
-          Text('8 lessons · 48 min', style: MxText.meta.copyWith(color: c.textMuted)),
+          Text(
+            '8 lessons · 48 min',
+            style: MxText.meta.copyWith(color: c.textMuted),
+          ),
           const SizedBox(height: 12),
           RatingButtons(
             value: _rating,

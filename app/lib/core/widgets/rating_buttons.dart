@@ -54,7 +54,9 @@ class RatingButtons extends StatelessWidget {
           const SizedBox(width: 14),
           Expanded(
             child: AnimatedSwitcher(
-              duration: MxMotion.reduced(context) ? Duration.zero : MxMotion.fade,
+              duration: MxMotion.reduced(context)
+                  ? Duration.zero
+                  : MxMotion.fade,
               child: Text(
                 value?.note ?? Rating.unratedNote,
                 key: ValueKey(value),

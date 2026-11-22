@@ -120,11 +120,13 @@ class TopicTag extends StatelessWidget {
         color: MxFixed.topicTagBg,
         borderRadius: BorderRadius.circular(MxRadius.navPill),
       ),
-      alignment: Alignment.center,
-      child: Text(
-        label,
-        style: MxText.feedback.copyWith(color: tint),
-        maxLines: 1,
+      child: Center(
+        widthFactor: 1,
+        child: Text(
+          label,
+          style: MxText.feedback.copyWith(color: tint),
+          maxLines: 1,
+        ),
       ),
     );
   }

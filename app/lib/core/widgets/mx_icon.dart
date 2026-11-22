@@ -5,9 +5,7 @@ import 'package:material_ui/material_ui.dart';
 
 enum MxIcons {
   home('<path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"/>'),
-  library(
-    '<path d="M4 4h7v7H4z M13 4h7v7h-7z M4 13h7v7H4z M13 13h7v7h-7z"/>',
-  ),
+  library('<path d="M4 4h7v7H4z M13 4h7v7h-7z M4 13h7v7H4z M13 13h7v7h-7z"/>'),
   feed(
     '<path d="M8.5 3h7A2.5 2.5 0 0 1 18 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 6 18.5v-13A2.5 2.5 0 0 1 8.5 3z M10.5 9.5v5l4-2.5z"/>',
   ),

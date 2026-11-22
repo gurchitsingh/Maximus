@@ -32,7 +32,10 @@ class MxProgressBar extends StatelessWidget {
       value: '${(value.clamp(0, 1) * 100).round()}%',
       child: Container(
         height: h,
-        decoration: BoxDecoration(color: track ?? c.surfaceRaised, borderRadius: r),
+        decoration: BoxDecoration(
+          color: track ?? c.surfaceRaised,
+          borderRadius: r,
+        ),
         alignment: Alignment.centerLeft,
         child: FractionallySizedBox(
           widthFactor: value.clamp(0, 1).toDouble(),

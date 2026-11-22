@@ -32,24 +32,29 @@ class AnswerOption extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final c = context.mx;
-    final (Color bg, Color border, Color? fg, MxIcons? icon, String? word) =
-        switch (state) {
-          AnswerState.idle => (c.surface, c.divider, null, null, null),
-          AnswerState.right => (
-            c.successContainer,
-            c.success,
-            c.success,
-            MxIcons.check,
-            'Right',
-          ),
-          AnswerState.wrong => (
-            c.errorContainer,
-            c.error,
-            c.error,
-            MxIcons.x,
-            wrongWord,
-          ),
-        };
+    final (
+      Color bg,
+      Color border,
+      Color? fg,
+      MxIcons? icon,
+      String? word,
+    ) = switch (state) {
+      AnswerState.idle => (c.surface, c.divider, null, null, null),
+      AnswerState.right => (
+        c.successContainer,
+        c.success,
+        c.success,
+        MxIcons.check,
+        'Right',
+      ),
+      AnswerState.wrong => (
+        c.errorContainer,
+        c.error,
+        c.error,
+        MxIcons.x,
+        wrongWord,
+      ),
+    };
     final shape = RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(MxRadius.option),
       side: BorderSide(color: border, width: 2),
@@ -169,7 +174,8 @@ class SettingsRow extends StatelessWidget {
                         : MxText.listValue.copyWith(color: c.textMuted),
                   ),
                 ),
-              if (showArrow) MxIcon(MxIcons.arrowRight, size: 20, color: c.textMuted),
+              if (showArrow)
+                MxIcon(MxIcons.arrowRight, size: 20, color: c.textMuted),
             ],
           ),
         ),

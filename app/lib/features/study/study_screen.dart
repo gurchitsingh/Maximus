@@ -13,7 +13,9 @@ class StudyScreen extends StatelessWidget {
       child: Column(
         children: [
           MxTabTopBar(title: 'Study list'),
-          Expanded(child: PlaceholderBody(title: 'Study list', session: 'S6')),
+          Expanded(
+            child: PlaceholderBody(title: 'Study list', session: 'S6'),
+          ),
         ],
       ),
     );
