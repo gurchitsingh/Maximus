@@ -724,3 +724,9 @@ Each item: what conflicts, and a recommended default.
 6. Items 6 to 24 of section 11: use the stated defaults. Item 22: use FLOW library rows. Item 15: App values win.
 7. **Repo is PUBLIC (owner's choice).** Never commit .env, API keys, or personal data; keys live only in backend/.env (gitignored) and the host's secret store.
 8. **Future features** (perspective mode, Think Like a Leader game) are NOT in v1. See docs/FUTURE_FEATURES.md. Reserve placeholder data models only (CONTRACTS.md).
+
+## 13. S4 additions (2026-11-22)
+
+1. **Sepia theme** (owner request; not in the design bundle). Same roles as light on a warmer paper: bg `#F1E4C9`, surface `#F8EEDB`, surfaceRaised `#E6D5B5`, text `#2B2116`, textMuted `#63523D`, accent `#C8933A`, accentText `#7E520B`, accentContainer `rgba(200,147,58,0.25)`, onAccent `#1A1208`, success `#1D6B3E`, error `#A33427` (containers at 0.12 / 0.10), divider 16% of text. Every text role is at least 4.5:1 on bg and surface (unit-tested). Code: `app/lib/core/theme/tokens.dart`.
+2. **11.21 resolved:** Google Fonts still publishes "Big Shoulders Stencil Display"; the 900 static cut is bundled under that family name.
+3. **11.11 applied:** Settings uses a gear icon drawn in the 10.4 style (`MxIcons.settings`).
