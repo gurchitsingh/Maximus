@@ -708,7 +708,9 @@ Rules carried over: perspectives and scenarios use the same `status` and `conten
 
 ## 13. Open questions for the owner (recommended default in bold)
 
-| # | Question | Default if you say nothing |
+**Status 2026-11-22: owner accepted all defaults below (Q1 to Q10).** Reopen any of them by editing this table and DECISIONS.md.
+
+| # | Question | Default (accepted) |
 |---|---|---|
 | Q1 | Napoleon is both topic #18 and a leader, and ids must differ. | **Topic `napoleon` ("Napoleon"), leader `napoleon-bonaparte` ("Napoleon Bonaparte").** |
 | Q2 | The Think Like... row in the Library: one row for all 51 people, or one row per people group (Ancient world, Rome, ...)? | **One row until Claude Design Prompt 2b lands**; the catalogue already carries per-group labels, so either layout needs no API change. |
@@ -736,5 +738,5 @@ Still open from BRIEF and not blocking S4 or S10: app name (keep one string cons
 | FRONTEND.md | Structure: theme in `lib/core/theme` (not `app/`); drift tables per 5.1 (`chat_usage` dropped, the server owns caps; `titles_cache`/`lessons_cache` → `cached_titles` + `cached_docs`); content cached on first open, not only when added to the study list; `shared_preferences` dropped; match % formula → CONTRACTS 6 (40 to 99, not 0 to 100); "accent colour" → `bg` + `tint` + lettering | S4 prompt puts theme in core/; offline rule P3 |
 | FLOW.md | Not edited. Its onboarding (Guess the year, Mystery card, text size) and the Roman-mark splash are superseded by DESIGN_SPEC 12 | DESIGN_SPEC 12 wins |
 | APP_DETAILS.md, CONTENT_SOURCES.md | Not edited. "20 titles" there is superseded by TOPICS.md (28 + 51); CONTENT_SOURCES' YAML quiz bank → JSON in the title file | TOPICS.md is the catalogue |
-| `llm/gemini.md` (Plan folder) | Should be updated: output files go to `backend/data/drafts/`, items carry no `needs_check` flag (the merge tool sets `status`) | Section 9.2 step 5 |
+| `llm/gemini.md` (Plan folder, outside the repo) | Updated 2026-11-22: output files go to `backend/data/drafts/`, items carry no ids or status (the merge tool assigns ids and sets `needs_check`) | Section 9.2 step 5 |
 | README.md | `/healthz` will return `{"status":"ok","version":"0.1.0"}` once S10 lands | health.schema.json |
