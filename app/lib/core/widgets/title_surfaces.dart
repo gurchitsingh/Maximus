@@ -308,11 +308,7 @@ class StudyRow extends StatelessWidget {
 /// One poster item of a row.
 @immutable
 class PosterItem {
-  const PosterItem({
-    required this.id,
-    required this.data,
-    this.matchPercent,
-  });
+  const PosterItem({required this.id, required this.data, this.matchPercent});
 
   final String id;
   final PosterData data;

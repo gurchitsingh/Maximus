@@ -103,6 +103,16 @@ class UserStateDao extends DatabaseAccessor<AppDatabase>
         .write(LessonProgressCompanion(completedAt: Value(_now)));
   });
 
+  /// Completed lesson ids of a title, read now (not from a paused stream).
+  Future<Set<String>> completedLessonIds(String titleId) async {
+    final rows =
+        await (select(lessonProgress)..where(
+              (t) => t.titleId.equals(titleId) & t.completedAt.isNotNull(),
+            ))
+            .get();
+    return {for (final r in rows) r.lessonId};
+  }
+
   // ---- read-only for match % (written by S5 and S8) ----
 
   Stream<List<InterestRow>> watchInterests() => (select(

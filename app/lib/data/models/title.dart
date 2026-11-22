@@ -91,7 +91,7 @@ class TitleDetail {
 
   factory TitleDetail.fromJson(Map<String, dynamic> json) {
     List<T> list<T>(String k, T Function(Map<String, dynamic>) f) => [
-      for (final x in (json[k] as List? ?? const []))
+      for (final x in (json[k] as List? ?? const <Object?>[]))
         f(x as Map<String, dynamic>),
     ];
     final lessons = list('lessons', Lesson.fromJson)

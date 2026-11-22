@@ -76,14 +76,16 @@ final settingsMapProvider = StreamProvider<Map<String, String>>(
 /// Study list ids, for quick "is it added" checks.
 final studyIdsProvider = Provider<Set<String>>(
   (ref) => {
-    for (final r in ref.watch(studyListProvider).value ?? const []) r.titleId,
+    for (final r
+        in ref.watch(studyListProvider).value ?? const <StudyItemRow>[])
+      r.titleId,
   },
 );
 
 /// title id -> -1 | 0 | 1.
 final ratingMapProvider = Provider<Map<String, int>>(
   (ref) => {
-    for (final r in ref.watch(ratingsProvider).value ?? const [])
+    for (final r in ref.watch(ratingsProvider).value ?? const <RatingRow>[])
       r.titleId: r.value,
   },
 );
@@ -94,7 +96,7 @@ final titleProgressProvider = Provider.family<TitleProgress, String>((ref, id) {
   return TitleProgress(
     titleId: id,
     lessonCount: count,
-    rows: ref.watch(progressProvider).value ?? const [],
+    rows: ref.watch(progressProvider).value ?? const <LessonProgressRow>[],
   );
 });
 
@@ -116,9 +118,10 @@ extension TitleSummaryMatch on TitleSummary {
 
 /// The signals of 6.1, gathered from the drift tables.
 final matchSignalsProvider = Provider<MatchSignals>((ref) {
-  final interests = ref.watch(interestsProvider).value ?? const [];
-  final progress = ref.watch(progressProvider).value ?? const [];
-  final feed = ref.watch(feedStateProvider).value ?? const [];
+  final interests = ref.watch(interestsProvider).value ?? const <InterestRow>[];
+  final progress =
+      ref.watch(progressProvider).value ?? const <LessonProgressRow>[];
+  final feed = ref.watch(feedStateProvider).value ?? const <FeedStateRow>[];
 
   final completed = <String, int>{};
   for (final p in progress) {
@@ -142,7 +145,9 @@ final matchSignalsProvider = Provider<MatchSignals>((ref) {
     ],
     ratings: ref.watch(ratingMapProvider),
     studyList: [
-      for (final r in ref.watch(studyListProvider).value ?? const []) r.titleId,
+      for (final r
+          in ref.watch(studyListProvider).value ?? const <StudyItemRow>[])
+        r.titleId,
     ],
     lessonsCompleted: completed,
     feed: {
@@ -154,7 +159,8 @@ final matchSignalsProvider = Provider<MatchSignals>((ref) {
 
 final matchTitlesProvider = Provider<List<MatchTitle>>(
   (ref) => [
-    for (final t in ref.watch(catalogueProvider).value?.titles ?? const [])
+    for (final t
+        in ref.watch(catalogueProvider).value?.titles ?? const <TitleSummary>[])
       t.toMatchTitle(),
   ],
 );

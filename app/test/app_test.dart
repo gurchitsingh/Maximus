@@ -1,11 +1,11 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:material_ui/material_ui.dart';
-import 'package:maximus/app/app.dart';
 import 'package:maximus/core/gallery/gallery_screen.dart';
 import 'package:maximus/core/theme/theme_controller.dart';
 import 'package:maximus/core/theme/tokens.dart';
 
+import 'app_harness.dart';
 import 'helpers.dart';
 
 void main() {
@@ -13,26 +13,25 @@ void main() {
     tester,
   ) async {
     usePixel8(tester);
-    await tester.pumpWidget(const ProviderScope(child: MaximusApp()));
-    await tester.pumpAndSettle();
+    await AppHarness.pump(tester);
     expect(find.text('Home'), findsWidgets);
 
     await tester.tap(find.text('Library'));
-    await tester.pumpAndSettle();
-    expect(find.textContaining('built in S5'), findsOneWidget);
+    await AppHarness.settle(tester);
+    expect(find.text('FEATURED'), findsOneWidget);
 
     await tester.tap(find.text('Study'));
-    await tester.pumpAndSettle();
+    await AppHarness.settle(tester);
     expect(find.text('Study list'), findsWidgets);
 
     await tester.tap(find.text('Home'));
-    await tester.pumpAndSettle();
+    await AppHarness.settle(tester);
     await tester.tap(find.bySemanticsLabel('Settings'));
-    await tester.pumpAndSettle();
+    await AppHarness.settle(tester);
     expect(find.text('THEME'), findsOneWidget);
 
     await tester.tap(find.text('Sepia'));
-    await tester.pumpAndSettle();
+    await AppHarness.settle(tester);
     final ctx = tester.element(find.text('THEME'));
     expect(Theme.of(ctx).extension<MxColors>(), MxColors.sepia);
     final container = ProviderScope.containerOf(ctx);

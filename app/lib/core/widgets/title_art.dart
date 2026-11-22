@@ -50,7 +50,11 @@ class TitleArt extends StatelessWidget {
     art = ColoredBox(color: data.bg, child: art);
     return data.alt == null
         ? ExcludeSemantics(child: art)
-        : Semantics(image: true, label: data.alt, child: ExcludeSemantics(child: art));
+        : Semantics(
+            image: true,
+            label: data.alt,
+            child: ExcludeSemantics(child: art),
+          );
   }
 }
 
