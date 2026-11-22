@@ -2,7 +2,7 @@
 
 FastAPI + SQLAlchemy + SQLite (Alembic migrations). Serves the 3 sample titles from `data/samples/`.
 The API contract is `docs/CONTRACTS.md` (authoritative); responses are tested against `docs/schemas/`.
-Real titles live in `data/titles/` (S11 Wikipedia ingest). Chat (S14) is not built yet.
+Real titles live in `data/titles/` (S11 Wikipedia ingest). Chat proxy: S14, see Chat below.
 
 ## Run (Windows, PowerShell, from `backend/`)
 
@@ -49,7 +49,7 @@ Get-ChildItem data\titles\*.json | % { .venv\Scripts\python -m ingest.cli import
 `/v1/on-this-day?date=MM-DD` (live from Wikipedia, cached 24 h), `/v1/credits`, `/v1/fonts`.
 ETag + `If-None-Match` (304) on catalogue, titles, credits, fonts, on-this-day. Errors always use
 `{"error": {"code", "message", "retry_after_s", "details"}}`.
-`POST /v1/titles/{id}/chat` is not here yet (404 `not_found` until S14).
+`POST /v1/titles/{id}/chat`: see Chat below.
 
 Production serves only `status: published` titles (and reviewed quiz/facts). `SERVE_DRAFTS=true` serves everything.
 
@@ -60,6 +60,33 @@ Production serves only `status: published` titles (and reviewed quiz/facts). `SE
 ..\tools\.venv\Scripts\python ..\tools\validate_samples.py   # from the repo root: contracts, samples, examples
 ```
 
+## Chat (S14, CONTRACTS 4)
+
+`POST /v1/titles/{id}/chat` with `{"install_id", "message", "history"}` returns one whole JSON reply
+`{"kind": "answer"|"out_of_scope", "text", "lesson_refs", "remaining_today"}` (not streamed). Answers come only
+from the open title's stored text; anything the output check cannot trust becomes "I only know about {name}.".
+
+- Code: `app/routers/chat.py` (route), `app/services/chat/` (`providers.py` OpenRouter then Gemini behind a small
+  `Provider` protocol, `prompt.py` context + system prompt with a per-process canary, `guard.py` injection
+  pre-filter + fail-closed output check, `usage.py` daily caps, `service.py` the 10-step pipeline).
+- Caps: `CHAT_DAILY_CAP` (20 per install) → 429 `chat_daily_cap`; `CHAT_GLOBAL_DAILY_CAP` (200 server-wide) → 503
+  `chat_resting`; both reset at 00:00 UTC. Burst: 6/min per install, 20/min per IP → 429 `rate_limited`.
+  Every provider failing → 503 `chat_resting` (`providers_down`, retry 300 s). Only 200 replies are counted.
+- Counts live in the `chat_usage` table (migration `0002`; run `alembic upgrade head` on an existing dev DB),
+  as `sha256(INSTALL_ID_SALT + install_id)`, kept for today and yesterday. Message text, history and replies
+  are never stored or logged.
+- History turns that match the injection pre-filter are dropped before the provider call (the message itself
+  gets the refusal).
+
+Manual check with real keys (put them in `backend/.env`, never commit it), server running:
+
+```powershell
+$b = @{install_id="3f1c9a52-7b4e-4d2a-9c61-0e8b5a7d2f10"; message="Why did the Republic fall?"; history=@()} | ConvertTo-Json
+Invoke-RestMethod -Method Post -Uri http://127.0.0.1:8000/v1/titles/roman-history/chat -ContentType application/json -Body $b
+```
+
 ## Secrets
 
-None are needed for v0. `backend/.env` is gitignored; only `.env.example` (names, no values) is committed.
+`backend/.env` is gitignored; only `.env.example` (names, no values) is committed. Chat needs
+`OPENROUTER_API_KEY` and/or `GEMINI_API_KEY` (a provider without a key is skipped; with neither, chat answers
+503 `chat_resting`). Set `INSTALL_ID_SALT` to a random string in production.
