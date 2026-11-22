@@ -1,4 +1,4 @@
-"""All /v1 GET endpoints and /healthz (CONTRACTS 3.1). Chat arrives in S14."""
+"""All /v1 GET endpoints and /healthz (CONTRACTS 3.1). Chat (POST) lives in routers/chat.py (S14)."""
 import random
 import re
 from datetime import datetime, timezone
@@ -10,6 +10,7 @@ from sqlalchemy.orm import Session
 from app import __version__
 from app.db import get_db
 from app.errors import ApiError
+from app.routers.chat import router as chat_router
 from app.services import otd, store
 from app.services.etag import etag_response
 
@@ -17,6 +18,7 @@ DATE_RE = r"^(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$"
 SLUG_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 
 v1 = APIRouter(prefix="/v1")
+v1.include_router(chat_router)
 health = APIRouter()
 
 

@@ -125,3 +125,6 @@ class IngestRun(Base):
     finished_at: Mapped[str | None] = mapped_column(String)
     status: Mapped[str] = mapped_column(String)
     notes: Mapped[str | None] = mapped_column(Text)
+
+
+from app.models.chat_usage import ChatUsage  # noqa: E402,F401  (S14, migration 0002)
