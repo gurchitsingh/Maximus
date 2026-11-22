@@ -2,6 +2,7 @@
 import json
 from pathlib import Path
 
+import httpx
 import pytest
 from fastapi.testclient import TestClient
 from jsonschema import Draft202012Validator, FormatChecker
@@ -39,6 +40,15 @@ def schema_errors(doc, ref: str) -> list[str]:
 
 def example(name: str):
     return json.loads((EXAMPLES / name).read_text("utf-8"))
+
+
+@pytest.fixture(autouse=True)
+def no_network(monkeypatch):
+    """No test may reach Wikimedia or anything else: real HTTP transports fail loudly.
+    Tests use httpx.MockTransport (tests/wiki_fake.py) or patch the fetch function."""
+    def refuse(self, request):
+        raise RuntimeError(f"network disabled in tests: {request.url}")
+    monkeypatch.setattr(httpx.HTTPTransport, "handle_request", refuse)
 
 
 @pytest.fixture
