@@ -1,0 +1,403 @@
+{
+  "$comment": "S11 seed list (CONTRACTS 9.2 step 1). Editorial fields + the Wikipedia pages and sections each title's lessons come from. Lessons follow `pages` order; a page lead uses `heading`. Colours and lettering from DESIGN_SPEC 8.1 (space-history has no stand-in there: owner to confirm). Run: python -m ingest.cli wiki <id>",
+  "titles": [
+    {
+      "id": "roman-history",
+      "kind": "topic",
+      "name": "Roman history",
+      "subtitle": "753 BCE to 476 CE",
+      "poster_lines": [
+        "ROMAN",
+        "HISTORY"
+      ],
+      "group": "ancient-medieval",
+      "era": "ancient",
+      "region": "europe",
+      "period_start": -753,
+      "period_end": 476,
+      "themes": [
+        "empire",
+        "war",
+        "politics",
+        "law"
+      ],
+      "bg": "#2B0E0C",
+      "tint": "#E8553A",
+      "lettering": "roman",
+      "brief": "From a village on seven hills to the biggest empire of the ancient world.",
+      "linked_title_ids": [
+        "romulus",
+        "julius-caesar",
+        "augustus"
+      ],
+      "rank": 1,
+      "wikidata": "Q1747689",
+      "hero_image": "Colosseo 2020.jpg",
+      "hero_alt": "The Colosseum in Rome, the great stone amphitheatre finished in 80 CE, seen from outside.",
+      "pages": [
+        {
+          "page": "Roman Kingdom",
+          "sections": [
+            "lead",
+            {
+              "name": "Origin",
+              "heading": "Where the city began"
+            }
+          ],
+          "heading": "Kings and legends"
+        },
+        {
+          "page": "Roman Republic",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Republic"
+        },
+        {
+          "page": "Punic Wars",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Rome against Carthage"
+        },
+        {
+          "page": "Crisis of the Roman Republic",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Republic breaks down"
+        },
+        {
+          "page": "Roman Empire",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Empire"
+        },
+        {
+          "page": "Pax Romana",
+          "sections": [
+            "lead",
+            {
+              "name": "Overview",
+              "max_words": 350,
+              "heading": "Two centuries of peace"
+            }
+          ],
+          "heading": "The Roman peace"
+        },
+        {
+          "page": "Crisis of the Third Century",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Third Century crisis"
+        },
+        {
+          "page": "Fall of the Western Roman Empire",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The fall of the West"
+        }
+      ]
+    },
+    {
+      "id": "french-revolution",
+      "kind": "topic",
+      "name": "French Revolution",
+      "subtitle": "1789 to 1799",
+      "poster_lines": [
+        "The French",
+        "Revolution"
+      ],
+      "group": "revolutions-empires",
+      "era": "early-modern",
+      "region": "europe",
+      "period_start": 1789,
+      "period_end": 1799,
+      "themes": [
+        "revolution",
+        "politics",
+        "society",
+        "ideas"
+      ],
+      "bg": "#E9D9B2",
+      "tint": "#6C8CFF",
+      "lettering": "brush",
+      "brief": "A king falls, a republic rises, and the guillotine gets busy.",
+      "linked_title_ids": [
+        "napoleon",
+        "napoleon-bonaparte"
+      ],
+      "rank": 17,
+      "wikidata": "Q6534",
+      "hero_image": "Anonymous - Prise de la Bastille.jpg",
+      "pages": [
+        {
+          "page": "French Revolution",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The revolution in brief"
+        },
+        {
+          "page": "Causes of the French Revolution",
+          "sections": [
+            "lead",
+            {
+              "name": "Financial crisis",
+              "max_words": 300,
+              "heading": "A bankrupt crown"
+            }
+          ],
+          "heading": "Why France exploded"
+        },
+        {
+          "page": "Estates General of 1789",
+          "sections": [
+            "lead",
+            {
+              "name": "Proceedings and dissolution",
+              "max_words": 350,
+              "heading": "From Estates General to National Assembly"
+            }
+          ],
+          "heading": "The Estates General"
+        },
+        {
+          "page": "Storming of the Bastille",
+          "sections": [
+            "lead",
+            {
+              "name": "Attack",
+              "max_words": 350,
+              "heading": "The attack on 14 July"
+            }
+          ],
+          "heading": "The fall of the Bastille"
+        },
+        {
+          "page": "Declaration of the Rights of Man and of the Citizen",
+          "sections": [
+            "lead",
+            {
+              "name": "Background",
+              "max_words": 350,
+              "heading": "Where the ideas came from"
+            }
+          ],
+          "heading": "The rights of man"
+        },
+        {
+          "page": "Women's March on Versailles",
+          "sections": [
+            "lead",
+            {
+              "name": "Siege of the palace",
+              "max_words": 300,
+              "heading": "Inside the palace"
+            }
+          ],
+          "heading": "The women's march"
+        },
+        {
+          "page": "Flight to Varennes",
+          "sections": [
+            "lead",
+            {
+              "name": "Abolition of the monarchy",
+              "heading": "The end of the monarchy"
+            }
+          ],
+          "heading": "The king runs"
+        },
+        {
+          "page": "Execution of Louis XVI",
+          "sections": [
+            "lead",
+            {
+              "name": "Execution",
+              "heading": "21 January 1793"
+            }
+          ],
+          "heading": "The king is executed"
+        },
+        {
+          "page": "Reign of Terror",
+          "sections": [
+            "lead",
+            {
+              "name": "Major events",
+              "max_words": 350,
+              "heading": "Inside the Terror"
+            }
+          ],
+          "heading": "The Terror"
+        },
+        {
+          "page": "Thermidorian Reaction",
+          "sections": [
+            "lead",
+            {
+              "name": "Reaction",
+              "max_words": 300,
+              "heading": "After Robespierre"
+            }
+          ],
+          "heading": "Robespierre falls"
+        },
+        {
+          "page": "French Directory",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Directory"
+        },
+        {
+          "page": "Coup of 18 Brumaire",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Napoleon takes power"
+        }
+      ]
+    },
+    {
+      "id": "space-history",
+      "kind": "topic",
+      "name": "Space history",
+      "subtitle": "From rockets to space stations",
+      "poster_lines": [
+        "SPACE",
+        "HISTORY"
+      ],
+      "group": "wars-space",
+      "era": "modern",
+      "region": "global",
+      "period_start": 1944,
+      "period_end": null,
+      "themes": [
+        "science-tech",
+        "exploration",
+        "politics"
+      ],
+      "bg": "#0E1A33",
+      "tint": "#F2C14E",
+      "lettering": "stencil",
+      "brief": "Rockets, satellites, Moon landings and the stations that circle Earth today.",
+      "linked_title_ids": [
+        "cold-war",
+        "ww2"
+      ],
+      "rank": 25,
+      "wikidata": "Q1516939",
+      "hero_image": "A Man on the Moon, AS11-40-5903 (cropped).jpg",
+      "hero_alt": "Astronaut Buzz Aldrin standing on the Moon during Apollo 11 in July 1969, with Neil Armstrong reflected in his visor.",
+      "pages": [
+        {
+          "page": "History of spaceflight",
+          "sections": [
+            "lead",
+            {
+              "name": "Background",
+              "max_words": 350,
+              "heading": "Rocket pioneers"
+            }
+          ],
+          "heading": "Dreams of space"
+        },
+        {
+          "page": "V-2 rocket",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The first rocket into space"
+        },
+        {
+          "page": "Sputnik 1",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Sputnik"
+        },
+        {
+          "page": "Vostok 1",
+          "sections": [
+            "lead",
+            {
+              "name": "Pilot",
+              "heading": "Yuri Gagarin"
+            }
+          ],
+          "heading": "The first person in space"
+        },
+        {
+          "page": "Space Race",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Space Race"
+        },
+        {
+          "page": "Apollo 11",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Apollo 11"
+        },
+        {
+          "page": "Voyager program",
+          "sections": [
+            "lead",
+            {
+              "name": "Pale Blue Dot",
+              "heading": "The Pale Blue Dot"
+            }
+          ],
+          "heading": "Voyager"
+        },
+        {
+          "page": "Space Shuttle program",
+          "sections": [
+            "lead",
+            {
+              "name": "Disasters",
+              "max_words": 280,
+              "heading": "Challenger and Columbia"
+            }
+          ],
+          "heading": "The Space Shuttle"
+        },
+        {
+          "page": "Hubble Space Telescope",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Hubble"
+        },
+        {
+          "page": "Mir",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Mir"
+        },
+        {
+          "page": "International Space Station",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The International Space Station"
+        },
+        {
+          "page": "Private spaceflight",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Private companies"
+        }
+      ]
+    }
+  ]
+}
