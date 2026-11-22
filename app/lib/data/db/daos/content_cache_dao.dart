@@ -1,7 +1,6 @@
 import 'package:drift/drift.dart';
 
 import '../app_database.dart';
-import '../tables/cache_tables.dart';
 
 part 'content_cache_dao.g.dart';
 
@@ -29,9 +28,8 @@ class ContentCacheDao extends DatabaseAccessor<AppDatabase>
     ),
   );
 
-  Future<CachedDocRow?> doc(String key) => (select(
-    cachedDocs,
-  )..where((t) => t.key.equals(key))).getSingleOrNull();
+  Future<CachedDocRow?> doc(String key) =>
+      (select(cachedDocs)..where((t) => t.key.equals(key))).getSingleOrNull();
 
   Future<void> putDoc(String key, String payload, {String? etag}) =>
       into(cachedDocs).insertOnConflictUpdate(

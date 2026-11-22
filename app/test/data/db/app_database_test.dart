@@ -91,10 +91,10 @@ void main() {
       await dao.setRating('chanakya', -1);
       await dao.setRating('roman-history', 0);
       var rows = await dao.watchRatings().first;
-      expect({for (final r in rows) r.titleId: r.value}, {
-        'roman-history': 0,
-        'chanakya': -1,
-      });
+      expect(
+        {for (final r in rows) r.titleId: r.value},
+        {'roman-history': 0, 'chanakya': -1},
+      );
       expect(rows.first.titleId, 'roman-history');
       await dao.setRating('roman-history', null);
       rows = await dao.watchRatings().first;
@@ -154,40 +154,48 @@ void main() {
       lessonId: 'roman-history.l01',
       lessonIndex: 1,
     );
-    await db.into(db.interests).insert(
-      InterestsCompanion.insert(
-        titleId: 'roman-history',
-        kind: 'topic_pick',
-        position: 0,
-        pickedAt: now,
-      ),
-    );
-    await db.into(db.quizResults).insert(
-      QuizResultsCompanion.insert(
-        titleId: 'roman-history',
-        score: 4,
-        total: 6,
-        questionIds: '[]',
-        wrongIds: '[]',
-        contentVersion: 1,
-        takenAt: now,
-      ),
-    );
-    await db.into(db.quizSeen).insert(
-      QuizSeenCompanion.insert(
-        questionId: 'roman-history.q001',
-        titleId: 'roman-history',
-        seenAt: now,
-      ),
-    );
-    await db.into(db.feedState).insert(
-      FeedStateCompanion.insert(
-        factId: 'roman-history.f001',
-        titleId: 'roman-history',
-        updatedAt: now,
-        saved: const Value(true),
-      ),
-    );
+    await db
+        .into(db.interests)
+        .insert(
+          InterestsCompanion.insert(
+            titleId: 'roman-history',
+            kind: 'topic_pick',
+            position: 0,
+            pickedAt: now,
+          ),
+        );
+    await db
+        .into(db.quizResults)
+        .insert(
+          QuizResultsCompanion.insert(
+            titleId: 'roman-history',
+            score: 4,
+            total: 6,
+            questionIds: '[]',
+            wrongIds: '[]',
+            contentVersion: 1,
+            takenAt: now,
+          ),
+        );
+    await db
+        .into(db.quizSeen)
+        .insert(
+          QuizSeenCompanion.insert(
+            questionId: 'roman-history.q001',
+            titleId: 'roman-history',
+            seenAt: now,
+          ),
+        );
+    await db
+        .into(db.feedState)
+        .insert(
+          FeedStateCompanion.insert(
+            factId: 'roman-history.f001',
+            titleId: 'roman-history',
+            updatedAt: now,
+            saved: const Value(true),
+          ),
+        );
     await db.contentCacheDao.putTitle(
       titleId: 'roman-history',
       payload: '{}',

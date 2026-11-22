@@ -3,31 +3,28 @@ import 'dart:math';
 import 'package:drift/drift.dart';
 
 import '../app_database.dart';
-import '../tables/user_tables.dart';
+import '../../../core/theme/theme_controller.dart';
 
 part 'settings_dao.g.dart';
 
 @DriftAccessor(tables: [Settings])
 class SettingsDao extends DatabaseAccessor<AppDatabase>
-    with _$SettingsDaoMixin {
+    with _$SettingsDaoMixin
+    implements SettingsWriter {
   SettingsDao(super.db);
 
   /// Inserts every missing default, and an install id if there is none.
   /// Existing values are kept.
   Future<void> seedDefaults() async {
     await batch((b) {
-      b.insertAll(
-        settings,
-        [
-          for (final e in SettingKeys.defaults.entries)
-            SettingsCompanion.insert(key: e.key, value: e.value),
-          SettingsCompanion.insert(
-            key: SettingKeys.installId,
-            value: newInstallId(),
-          ),
-        ],
-        mode: InsertMode.insertOrIgnore,
-      );
+      b.insertAll(settings, [
+        for (final e in SettingKeys.defaults.entries)
+          SettingsCompanion.insert(key: e.key, value: e.value),
+        SettingsCompanion.insert(
+          key: SettingKeys.installId,
+          value: newInstallId(),
+        ),
+      ], mode: InsertMode.insertOrIgnore);
     });
   }
 
@@ -36,18 +33,18 @@ class SettingsDao extends DatabaseAccessor<AppDatabase>
     return {for (final r in rows) r.key: r.value};
   }
 
-  Stream<Map<String, String>> watchAll() => select(
-    settings,
-  ).watch().map((rows) => {for (final r in rows) r.key: r.value});
+  Stream<Map<String, String>> watchAll() =>
+      select(settings)
+          .watch()
+          .map((rows) => {for (final r in rows) r.key: r.value});
 
-  Future<String?> read(String key) async =>
-      (await (select(settings)..where((t) => t.key.equals(key)))
-              .getSingleOrNull())
-          ?.value;
-
-  Future<void> write(String key, String value) => into(
+  Future<String?> read(String key) async => (await (select(
     settings,
-  ).insertOnConflictUpdate(SettingsCompanion.insert(key: key, value: value));
+  )..where((t) => t.key.equals(key))).getSingleOrNull())?.value;
+
+  @override
+  Future<void> write(String key, String value) => into(settings)
+      .insertOnConflictUpdate(SettingsCompanion.insert(key: key, value: value));
 }
 
 /// UUID v4 from `Random.secure` (CONTRACTS 11), lowercase.

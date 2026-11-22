@@ -9,7 +9,8 @@ import 'package:maximus/domain/match/match_scores.dart';
 
 MatchSignals _signals(Map<String, dynamic> j) {
   final feed = <String, FeedCounts>{};
-  for (final e in ((j['feed'] ?? <String, dynamic>{}) as Map<String, dynamic>).entries) {
+  for (final e
+      in ((j['feed'] ?? <String, dynamic>{}) as Map<String, dynamic>).entries) {
     final f = e.value as Map<String, dynamic>;
     feed[e.key] = FeedCounts(
       likedOrSaved: (f['liked_or_saved'] ?? 0) as int,
@@ -20,14 +21,17 @@ MatchSignals _signals(Map<String, dynamic> j) {
     topicPicks: [...?(j['topic_picks'] as List?)?.cast<String>()],
     leaderPicks: [...?(j['leader_picks'] as List?)?.cast<String>()],
     ratings: {
-      for (final e in ((j['ratings'] ?? <String, dynamic>{}) as Map<String, dynamic>).entries)
+      for (final e
+          in ((j['ratings'] ?? <String, dynamic>{}) as Map<String, dynamic>)
+              .entries)
         e.key: e.value as int,
     },
     studyList: [...?(j['study_list'] as List?)?.cast<String>()],
     lessonsCompleted: {
       for (final e
           in ((j['lessons_completed'] ?? <String, dynamic>{})
-              as Map<String, dynamic>).entries)
+                  as Map<String, dynamic>)
+              .entries)
         e.key: e.value as int,
     },
     feed: feed,
@@ -79,8 +83,11 @@ void main() {
         if (e['raw'] == null) {
           expect(r.raw, isNull, reason: '$id raw');
         } else {
-          expect(r.raw, closeTo((e['raw'] as num).toDouble(), 1e-4),
-              reason: '$id raw');
+          expect(
+            r.raw,
+            closeTo((e['raw'] as num).toDouble(), 1e-4),
+            reason: '$id raw',
+          );
         }
         expect(r.pct, e['pct'], reason: '$id pct');
         expect(r.reason, e['reason'], reason: '$id reason');
@@ -129,10 +136,7 @@ void main() {
     });
 
     test('byId gives the same rows as the ordered list', () {
-      final r = matchScores(
-        titles,
-        const MatchSignals(topicPicks: ['ww2']),
-      );
+      final r = matchScores(titles, const MatchSignals(topicPicks: ['ww2']));
       expect(r.byId['ww2'], same(r.rows.firstWhere((x) => x.id == 'ww2')));
       expect(r.pctOf('ww2'), r.byId['ww2']!.pct);
       expect(r.pctOf('missing'), isNull);

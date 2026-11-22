@@ -271,30 +271,32 @@ String _reason(
   Map<String, MatchTitle> byId,
   double Function(String, String) j,
 ) {
-  final cands = [
-    for (final e in w.entries)
-      if (e.key != t && e.value > 0 && j(t, e.key) > 0)
-        (id: e.key, contrib: e.value * j(t, e.key)),
-  ]..sort((a, b) {
-      if (a.contrib != b.contrib) return b.contrib.compareTo(a.contrib);
-      final ra = byId[a.id]!.rank, rb = byId[b.id]!.rank;
-      if (ra != rb) return ra.compareTo(rb);
-      return a.id.compareTo(b.id);
-    });
+  final cands =
+      [
+        for (final e in w.entries)
+          if (e.key != t && e.value > 0 && j(t, e.key) > 0)
+            (id: e.key, contrib: e.value * j(t, e.key)),
+      ]..sort((a, b) {
+        if (a.contrib != b.contrib) return b.contrib.compareTo(a.contrib);
+        final ra = byId[a.id]!.rank, rb = byId[b.id]!.rank;
+        if (ra != rb) return ra.compareTo(rb);
+        return a.id.compareTo(b.id);
+      });
 
   for (final c in cands) {
-    final positive = [
-      for (final s in signals)
-        if (s.titleId == c.id &&
-            s.weight > 0 &&
-            s.kind.reasonPrefix != null &&
-            s.subjectId != t)
-          s,
-    ]..sort((a, b) {
-        if (a.weight != b.weight) return b.weight.compareTo(a.weight);
-        if (a.kind != b.kind) return a.kind.index.compareTo(b.kind.index);
-        return a.subjectId.compareTo(b.subjectId);
-      });
+    final positive =
+        [
+          for (final s in signals)
+            if (s.titleId == c.id &&
+                s.weight > 0 &&
+                s.kind.reasonPrefix != null &&
+                s.subjectId != t)
+              s,
+        ]..sort((a, b) {
+          if (a.weight != b.weight) return b.weight.compareTo(a.weight);
+          if (a.kind != b.kind) return a.kind.index.compareTo(b.kind.index);
+          return a.subjectId.compareTo(b.subjectId);
+        });
     if (positive.isNotEmpty) {
       final s = positive.first;
       return '${s.kind.reasonPrefix} ${byId[s.subjectId]!.name}';

@@ -1,0 +1,169 @@
+{
+  "id": "chanakya",
+  "kind": "thinker",
+  "name": "Chanakya",
+  "subtitle": "Maurya India · Ancient",
+  "poster_lines": ["CHANAKYA"],
+  "group": "thinkers",
+  "era": "ancient",
+  "region": "asia",
+  "period_start": -375,
+  "period_end": -283,
+  "themes": ["ideas", "politics", "strategy", "economy"],
+  "bg": "#1E2A3A",
+  "tint": "#E8C547",
+  "lettering": "carved",
+  "poster_image_id": "chanakya.i01",
+  "hero_image_id": null,
+  "brief": "SAMPLE · The teacher and adviser behind the first Maurya emperor, linked to a hard-headed guide to running a state.",
+  "reading_minutes": 1,
+  "lesson_count": 1,
+  "quiz_count": 0,
+  "linked_title_ids": ["ancient-india", "chandragupta-maurya"],
+  "rank": 6,
+  "status": "draft",
+  "content_version": 1,
+  "updated_at": "2026-11-22T00:00:00Z",
+  "lessons": [
+    {
+      "id": "chanakya.l01",
+      "title_id": "chanakya",
+      "index": 1,
+      "heading": "Who was Chanakya?",
+      "body": "*SAMPLE text for testing. Not reviewed.*\n\nChanakya, also known as Kautilya or Vishnugupta, is remembered as a teacher and royal adviser in ancient India, in the 4th century BCE. Tradition says he taught at Taxila and helped a young Chandragupta Maurya overthrow the Nanda dynasty of Magadha, founding the Maurya Empire around 322 BCE.\n\nHis name is attached to the *Arthashastra*, a long Sanskrit work on running a state. It covers taxes, law, the duties of a king, spies, diplomacy and war, in a practical and often blunt way.\n\n## History and legend\n\nMuch of what we know about Chanakya comes from stories written down centuries later, and they do not always agree. Historians also debate when the Arthashastra was written and whether one person wrote all of it. In this title, traditional stories are labelled as tradition.\n\n- Lived: about 375 to 283 BCE (traditional dates)\n- Known for: the Arthashastra and advising Chandragupta Maurya",
+      "reading_minutes": 1,
+      "image_ids": ["chanakya.i01"],
+      "read_aloud_text": null,
+      "source_ids": ["chanakya.s01", "chanakya.s02"]
+    }
+  ],
+  "images": [
+    {
+      "id": "chanakya.i01",
+      "title_id": "chanakya",
+      "url": "https://example.org/sample/media/chanakya/portrait.png",
+      "width": 800,
+      "height": 1200,
+      "alt": "SAMPLE placeholder: flat illustrated portrait of an ancient Indian teacher holding a palm-leaf manuscript.",
+      "kind": "portrait",
+      "author": "Maximus (SAMPLE placeholder)",
+      "license": "OWN",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": null,
+      "credit_line": "Illustration made for Maximus (SAMPLE placeholder)",
+      "modified": false,
+      "focal_x": 0.5,
+      "focal_y": 0.3
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [
+    {
+      "id": "chanakya.f001",
+      "title_id": "chanakya",
+      "lesson_id": "chanakya.l01",
+      "text": "SAMPLE: The Arthashastra, linked to Chanakya, covers taxes, spies, law and war in one practical guide to running a state.",
+      "image_id": "chanakya.i01",
+      "status": "needs_check",
+      "review_note": null
+    },
+    {
+      "id": "chanakya.f002",
+      "title_id": "chanakya",
+      "lesson_id": "chanakya.l01",
+      "text": "SAMPLE: Chanakya's circle-of-states idea says your neighbour is a likely rival and your neighbour's neighbour a likely friend.",
+      "image_id": null,
+      "status": "needs_check",
+      "review_note": null
+    }
+  ],
+  "person": {
+    "role": "Teacher, royal adviser and traditional author of the Arthashastra",
+    "born": { "year": -375, "display": "c. 375 BCE (traditional)" },
+    "died": { "year": -283, "display": "c. 283 BCE (traditional)" },
+    "region": "Magadha and Taxila, ancient India",
+    "headline": "SAMPLE · Planned the rise of a new empire and wrote down, without sentiment, how states keep power.",
+    "traits": [
+      {
+        "name": "Long-range planner",
+        "text": "SAMPLE · Tradition credits him with preparing Chandragupta for years before the move against the Nandas.",
+        "source_ids": ["chanakya.s01", "chanakya.s02"]
+      },
+      {
+        "name": "Realist about power",
+        "text": "SAMPLE · The Arthashastra judges a policy by its results for the state, not by how it looks.",
+        "source_ids": ["chanakya.s02", "chanakya.s03"]
+      },
+      {
+        "name": "Teacher first",
+        "text": "SAMPLE · Remembered above all as a teacher who shaped a future ruler.",
+        "source_ids": ["chanakya.s01", "chanakya.s02"]
+      }
+    ],
+    "changes": [
+      {
+        "text": "SAMPLE · Helped found the Maurya Empire, by the traditional account.",
+        "source_ids": ["chanakya.s01"]
+      },
+      {
+        "text": "SAMPLE · Linked to the Arthashastra, one of the oldest surviving works on statecraft and economics.",
+        "source_ids": ["chanakya.s02"]
+      }
+    ],
+    "odds_beaten": [],
+    "core_ideas": [
+      {
+        "name": "People's welfare first",
+        "text": "SAMPLE · A ruler's success is measured by the well-being and safety of the people.",
+        "source_ids": ["chanakya.s02", "chanakya.s03"]
+      },
+      {
+        "name": "Circle of states",
+        "text": "SAMPLE · The mandala idea: your neighbour is a likely rival, and your neighbour's neighbour a likely friend.",
+        "source_ids": ["chanakya.s02", "chanakya.s03"]
+      },
+      {
+        "name": "Treasury and information",
+        "text": "SAMPLE · A full treasury and good information keep a state strong.",
+        "source_ids": ["chanakya.s02", "chanakya.s03"]
+      }
+    ],
+    "use_today": [
+      {
+        "text": "SAMPLE · Before a big move, map who is around you: rivals, likely allies and those who will stay out of it.",
+        "source_ids": ["chanakya.s02", "chanakya.s03"]
+      }
+    ],
+    "legend_note": "SAMPLE · Chanakya's life story mixes history and later tradition. The dates are traditional, and scholars debate whether he wrote the whole Arthashastra."
+  },
+  "sources": [
+    {
+      "id": "chanakya.s01",
+      "title": "SAMPLE link only: Chanakya (Wikipedia). Claims here are not checked against it yet.",
+      "url": "https://en.wikipedia.org/wiki/Chanakya",
+      "publisher": "Wikipedia",
+      "role": "citation",
+      "license": null,
+      "confidence": "low"
+    },
+    {
+      "id": "chanakya.s02",
+      "title": "SAMPLE link only: Arthashastra (Wikipedia). Claims here are not checked against it yet.",
+      "url": "https://en.wikipedia.org/wiki/Arthashastra",
+      "publisher": "Wikipedia",
+      "role": "citation",
+      "license": null,
+      "confidence": "low"
+    },
+    {
+      "id": "chanakya.s03",
+      "title": "SAMPLE link only: Mandala (political model) (Wikipedia). Claims here are not checked against it yet.",
+      "url": "https://en.wikipedia.org/wiki/Mandala_(political_model)",
+      "publisher": "Wikipedia",
+      "role": "citation",
+      "license": null,
+      "confidence": "low"
+    }
+  ]
+}

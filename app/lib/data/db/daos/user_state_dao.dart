@@ -1,7 +1,6 @@
 import 'package:drift/drift.dart';
 
 import '../app_database.dart';
-import '../tables/user_tables.dart';
 
 part 'user_state_dao.g.dart';
 
@@ -99,17 +98,16 @@ class UserStateDao extends DatabaseAccessor<AppDatabase>
       lessonId: lessonId,
       lessonIndex: lessonIndex,
     );
-    await (update(lessonProgress)..where(
-          (t) => t.lessonId.equals(lessonId) & t.completedAt.isNull(),
-        ))
+    await (update(lessonProgress)
+          ..where((t) => t.lessonId.equals(lessonId) & t.completedAt.isNull()))
         .write(LessonProgressCompanion(completedAt: Value(_now)));
   });
 
   // ---- read-only for match % (written by S5 and S8) ----
 
-  Stream<List<InterestRow>> watchInterests() =>
-      (select(interests)..orderBy([(t) => OrderingTerm.asc(t.position)]))
-          .watch();
+  Stream<List<InterestRow>> watchInterests() => (select(
+    interests,
+  )..orderBy([(t) => OrderingTerm.asc(t.position)])).watch();
 
   Stream<List<FeedStateRow>> watchFeedState() => select(feedState).watch();
 }
