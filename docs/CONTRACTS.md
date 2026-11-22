@@ -553,7 +553,7 @@ app/
   drift_schemas/                 drift schema snapshots (5.2)
   test/                          mirrors lib/; contract tests read ../docs/examples and ../backend/data/samples
 ```
-Design tokens live only in `lib/core/theme/`. Per-title colours (`bg`, `tint`) are data from the payload, never theme constants. Packages: `flutter_riverpod`, `go_router`, `drift` + `sqlite3_flutter_libs`, `dio`, `cached_network_image`, `flutter_tts`, `json_annotation`/`json_serializable`, `uuid` (or `Random.secure`), `confetti`; dev: `build_runner`, `drift_dev`. No `shared_preferences` (settings live in drift).
+Design tokens live only in `lib/core/theme/`. Per-title colours (`bg`, `tint`) are data from the payload, never theme constants. Packages: `flutter_riverpod`, `go_router`, `drift` + `sqlite3_flutter_libs`, `dio`, `cached_network_image`, `flutter_tts`, `json_annotation`/`json_serializable`, `uuid` (or `Random.secure`), `confetti`, `url_launcher` (attribution and credit links, accepted 2026-11-22); dev: `build_runner`, `drift_dev`. No `shared_preferences` (settings live in drift).
 
 ### 8.2 Backend (`backend/`)
 

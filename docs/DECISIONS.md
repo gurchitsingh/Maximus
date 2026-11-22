@@ -152,3 +152,8 @@ Non-obvious choices behind `docs/CONTRACTS.md`. Three lines each: the decision, 
 - **Why:** S13 merges quiz/feed into the same file; ids must stay stable (P1); a changed picture must never hide behind an old file name or app cache entry.
 - **Gave up:** Nothing in V1.
 
+
+## D31. Chat proxy (S14) implementation decisions (2026-11-22)
+- **Decision:** (a) 2026-11-22: counters use the CONTRACTS 2.10 `chat_usage` table (new, migration 0002); the global cap is `SUM(count)` for the UTC day, with no second table. (b) 2026-11-22: `.env.example` keeps its pre-existing non-secret values and adds the chat names empty; empty env values fall back to the `config.py` defaults (`env_ignore_empty`). (c) 2026-11-22: history turns that match the injection pre-filter are dropped, not refused; the message itself gets the refusal. (d) 2026-11-22: `chat_usage` rows older than yesterday are purged on the first chat of each UTC day per process, not at startup. (e) 2026-11-22: caps are check-then-count; a race of 1 over the cap is accepted by the owner. (f) 2026-11-22: production must refuse to start with an empty `INSTALL_ID_SALT` (to build in the hosting step); model ids stay env defaults and the owner verifies them in the manual check.
+- **Why:** Keeps the schema change to one new table, keeps local and test runs working without secrets, and avoids a second source of truth for the global cap.
+- **Gave up:** Exact cap enforcement under concurrent requests (over by at most 1).

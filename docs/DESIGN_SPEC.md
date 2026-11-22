@@ -730,3 +730,17 @@ Each item: what conflicts, and a recommended default.
 1. **Sepia theme** (owner request; not in the design bundle). Same roles as light on a warmer paper: bg `#F1E4C9`, surface `#F8EEDB`, surfaceRaised `#E6D5B5`, text `#2B2116`, textMuted `#63523D`, accent `#C8933A`, accentText `#7E520B`, accentContainer `rgba(200,147,58,0.25)`, onAccent `#1A1208`, success `#1D6B3E`, error `#A33427` (containers at 0.12 / 0.10), divider 16% of text. Every text role is at least 4.5:1 on bg and surface (unit-tested). Code: `app/lib/core/theme/tokens.dart`.
 2. **11.21 resolved:** Google Fonts still publishes "Big Shoulders Stencil Display"; the 900 static cut is bundled under that family name.
 3. **11.11 applied:** Settings uses a gear icon drawn in the 10.4 style (`MxIcons.settings`).
+
+## 14. S6 additions (2026-11-22)
+
+1. **Lessons list (11.7):** a bottom sheet from the reader header book button or a second tap on the active Lessons tab: title, "N of M read", one 60 dp row per lesson (number circle, or accent circle with tick when read; heading; minutes; current lesson in accentText); tap opens that lesson. Reader sheets cover the topic bar.
+2. **Image credits (11.7):** every lesson image has its credit_line in caption style under it (48 dp target); tap opens an "Image credit" sheet (alt, author, licence + version, "Cropped or resized for the app." when modified, buttons "Open the source page" and "Read the licence"). Under each lesson: "Text adapted from {source title}, {licence}. Shortened." linking to the source (url_launcher).
+3. **Read aloud (11.14):** playing swaps play for a pause icon (`MxIcons.pause`, two filled bars) and the label for "Reading aloud". Meta "About N min · 1x speed" assumes about 150 spoken words a minute at the chosen speed.
+4. **Finishing:** the celebration shows only when every lesson of the title is read; finishing the last lesson with others unread shows the snackbar "Lesson done. N lessons are still unread." with action "Open it". Under 6 quiz questions the celebration has no "Take the quiz" and its outline button reads "Done". A 6 px blur sits behind the 0.78 backdrop so the copy stays readable over lesson text.
+5. **Tint as text (11.9):** tint-coloured text on bg is lightened or darkened in HSL steps until 4.5:1 (`readableTint`, `app/lib/core/util/colors.dart`); art, bars and buttons keep the raw tint. Closes the S4 open item.
+6. **Reader segments** show real completion (read = tint, current = half tint, unread = surfaceRaised), not just "before the current lesson".
+7. **Resume target** (Home resume card, Study rows, sheet Continue): the next unread lesson after the last one opened, wrapping to the first unread one; when all are read, the last opened.
+8. **Title sheet button:** "Start" until a lesson is read, then "Continue", "Read again" (lesson 1) when all are read (owner decision, replaces "Continue if added").
+9. **Study list (11.12):** row tap opens the reader at the resume lesson; X and swipe left remove, with an "Undo" snackbar. Titles gone from the catalogue show "No longer available" and stay removable.
+10. **Placeholder images:** sample image URLs on example.org/example.com are not fetched; the tinted gradient shows (credit lines still show).
+11. **Settings:** VOICE SPEED (0.8x, 1x, 1.2x) under TEXT SIZE (the text-size sample sits directly under TEXT SIZE); theme, text size and voice speed persist in the drift settings table. Snackbar action colour is accentText.
