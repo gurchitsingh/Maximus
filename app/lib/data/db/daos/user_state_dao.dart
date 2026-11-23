@@ -120,4 +120,79 @@ class UserStateDao extends DatabaseAccessor<AppDatabase>
   )..orderBy([(t) => OrderingTerm.asc(t.position)])).watch();
 
   Stream<List<FeedStateRow>> watchFeedState() => select(feedState).watch();
+
+  // ---- feed reactions (S8, CONTRACTS 7.2) ----
+
+  Future<FeedStateRow?> _feedRow(String factId) => (select(
+    feedState,
+  )..where((t) => t.factId.equals(factId))).getSingleOrNull();
+
+  Future<void> _putFeedRow({
+    required String factId,
+    required String titleId,
+    required bool saved,
+    required int reaction,
+    required DateTime? seenAt,
+  }) => into(feedState).insertOnConflictUpdate(
+    FeedStateCompanion.insert(
+      factId: factId,
+      titleId: titleId,
+      saved: Value(saved),
+      reaction: Value(reaction),
+      seenAt: Value(seenAt),
+      updatedAt: _now,
+    ),
+  );
+
+  /// Save button: flips `saved`, keeps the reaction and seen mark.
+  Future<void> toggleFactSaved({
+    required String factId,
+    required String titleId,
+  }) => transaction(() async {
+    final row = await _feedRow(factId);
+    await _putFeedRow(
+      factId: factId,
+      titleId: titleId,
+      saved: !(row?.saved ?? false),
+      reaction: row?.reaction ?? 0,
+      seenAt: row?.seenAt,
+    );
+  });
+
+  /// Like ([value] 1) or Dislike (-1): they replace each other, and tapping
+  /// the active one again sets 0. Returns the new reaction.
+  Future<int> toggleFactReaction({
+    required String factId,
+    required String titleId,
+    required int value,
+  }) {
+    assert(value == 1 || value == -1);
+    return transaction(() async {
+      final row = await _feedRow(factId);
+      final next = row?.reaction == value ? 0 : value;
+      await _putFeedRow(
+        factId: factId,
+        titleId: titleId,
+        saved: row?.saved ?? false,
+        reaction: next,
+        seenAt: row?.seenAt,
+      );
+      return next;
+    });
+  }
+
+  /// The card has been on screen for 1 s.
+  Future<void> markFactSeen({
+    required String factId,
+    required String titleId,
+  }) => transaction(() async {
+    final row = await _feedRow(factId);
+    await _putFeedRow(
+      factId: factId,
+      titleId: titleId,
+      saved: row?.saved ?? false,
+      reaction: row?.reaction ?? 0,
+      seenAt: _now,
+    );
+  });
 }
