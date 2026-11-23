@@ -97,6 +97,21 @@ void main() {
     expect(parseVoices(null), isEmpty);
   });
 
+  test('parseVoices hides network voices and caps 3 per locale', () {
+    final v = parseVoices([
+      for (final n in ['a', 'b', 'c', 'd', 'e'])
+        {'name': 'en-us-x-$n-local', 'locale': 'en-US'},
+      {'name': 'en-us-x-net-network', 'locale': 'en-US'},
+      {'name': 'en-gb-x-a', 'locale': 'en-GB', 'network_required': '1'},
+      {'name': 'en-gb-x-b', 'locale': 'en-GB', 'network_required': '0'},
+    ]);
+    expect(
+      [for (final x in v) x.label],
+      ['English (UK) 1', 'English (US) 1', 'English (US) 2', 'English (US) 3'],
+    );
+    expect(v.map((x) => x.name), isNot(contains('en-gb-x-a')));
+  });
+
   test('voiceRowValue falls back to Device default', () {
     expect(voiceRowValue('', FakeVoices.voices), 'Device default');
     expect(voiceRowValue('gone', FakeVoices.voices), 'Device default');

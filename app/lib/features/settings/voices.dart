@@ -31,8 +31,18 @@ const _localeNames = {
   'en-SG': 'English (Singapore)',
 };
 
+/// Most voices shown per locale.
+const maxVoicesPerLocale = 3;
+
+bool _needsNetwork(Map<Object?, Object?> v, String name) {
+  final flag = '${v['network_required'] ?? v['networkRequired'] ?? ''}';
+  return flag == '1' ||
+      flag.toLowerCase() == 'true' ||
+      name.contains('network');
+}
+
 /// English voices only (the lessons are English), grouped by locale and
-/// numbered within it, because engine ids like `en-us-x-sfg-local` mean
+/// numbered within it, offline voices only, at most 3 per locale, because engine ids like `en-us-x-sfg-local` mean
 /// nothing to a reader.
 List<TtsVoice> parseVoices(Object? raw) {
   if (raw is! List) return const [];
@@ -42,6 +52,7 @@ List<TtsVoice> parseVoices(Object? raw) {
     final name = '${v['name'] ?? ''}';
     final locale = '${v['locale'] ?? ''}'.replaceAll('_', '-');
     if (name.isEmpty || !locale.toLowerCase().startsWith('en')) continue;
+    if (_needsNetwork(v, name)) continue; // offline-first app
     found[name] = locale;
   }
   final names = found.keys.toList()
@@ -52,13 +63,14 @@ List<TtsVoice> parseVoices(Object? raw) {
   final counts = <String, int>{};
   return [
     for (final n in names)
-      TtsVoice(
-        name: n,
-        locale: found[n]!,
-        label:
-            '${_localeNames[found[n]] ?? found[n]} '
-            '${counts.update(found[n]!, (c) => c + 1, ifAbsent: () => 1)}',
-      ),
+      if ((counts[found[n]] ?? 0) < maxVoicesPerLocale)
+        TtsVoice(
+          name: n,
+          locale: found[n]!,
+          label:
+              '${_localeNames[found[n]] ?? found[n]} '
+              '${counts.update(found[n]!, (c) => c + 1, ifAbsent: () => 1)}',
+        ),
   ];
 }
 
