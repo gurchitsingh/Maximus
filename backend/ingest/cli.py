@@ -1,11 +1,24 @@
 """Content CLI. Run from backend/:
     python -m ingest.cli wiki <id> [<id> ...] | --all   Wikipedia + Wikidata + Commons -> data/titles/<id>.json (draft)
     python -m ingest.cli check <id | file.json>          publish gate G1 to G10 (CONTRACTS 9.3); exit 1 if it fails
+    python -m ingest.cli merge <id> | --all              Gemini drafts (data/drafts/<id>.quiz.json, .feed.json) -> new
+                                                         needs_check items in data/titles/<id>.json (see ingest/merge.py)
+    python -m ingest.cli people <id> [--research FILE]   person block from data/drafts/<id>.person.json (Claude's draft
+                                                         of Perplexity research) -> title file + citation sources
+    python -m ingest.cli report [<id> ...] [--all]       what still needs your review per title + gate result
+    python -m ingest.cli review <id> [--approve q001 q003-q009 | --reject f002 | --approve-all] [--note TEXT]
+                                                         no action = print the items to check; --title-reviewed marks
+                                                         the whole title reviewed (draft -> reviewed)
+    python -m ingest.cli publish <id> [--import]         reviewed -> published; refused unless the whole gate passes
     python -m ingest.cli import <file.json>              load one title file (refused if invalid, or published
                                                          and failing the gate)
     python -m ingest.cli seed-samples                    load data/samples/*.json
 `wiki` options: --no-download (skip copying images to backend/media), --refresh (ignore the HTTP cache),
 --delay SECONDS between requests (default 1.0), --force (overwrite a title that is already reviewed/published).
+`people` options: --research research/people-<batch>.md (cited URLs must appear in it), --replace (overwrite an
+existing person block), --dry-run, --titles DIR, --drafts DIR.
+`merge` options: --dry-run (report only), --skip-invalid (merge the good items, list the bad ones; default is all or
+nothing), --titles DIR, --drafts DIR. Exit 0 ok, 1 problems in the drafts or title, 2 cannot start (no drafts, no title).
 """
 import argparse
 import json
@@ -14,13 +27,15 @@ from pathlib import Path
 
 from app.config import BACKEND_DIR, settings
 from app.db import SessionLocal
-from ingest import gate
+from ingest import gate, merge, people, review
 from ingest.build import SeedError, build
 from ingest.client import WikiClient
 from ingest.import_title import ImportRefused, import_file
+from ingest.titlefile import UsageError, load_title
 
 SEED = Path(__file__).resolve().parent / "seed.json"
 TITLES_DIR = BACKEND_DIR / "data" / "titles"
+DRAFTS_DIR = BACKEND_DIR / "data" / "drafts"
 
 
 def make_client(args) -> WikiClient:
@@ -104,6 +119,102 @@ def cmd_check(args) -> int:
     return 0 if rep.ok else 1
 
 
+def cmd_merge(args) -> int:
+    titles, drafts = Path(args.titles), Path(args.drafts)
+    if args.all == bool(args.ids):
+        print("give one or more title ids, or --all (not both)")
+        return 2
+    if args.all:
+        ids = sorted(p.name[:-len(".json")] for p in titles.glob("*.json")
+                     if any((drafts / f"{p.stem}.{k}.json").is_file() for k in ("quiz", "feed")))
+        if not ids:
+            print(f"no drafts in {drafts} for any title in {titles}")
+            return 2
+    else:
+        ids = args.ids
+    worst = 0
+    for tid in ids:
+        try:
+            res = merge.merge_title(tid, titles, drafts, dry_run=args.dry_run, skip_invalid=args.skip_invalid)
+        except merge.MergeUsage as e:
+            print(f"{tid}: {e}")
+            worst = max(worst, 2)
+            continue
+        print(merge.format_report(res))
+        worst = max(worst, 0 if res.ok else 1)
+    return worst
+
+
+def cmd_people(args) -> int:
+    try:
+        res = people.import_person(args.id, Path(args.titles), Path(args.drafts),
+                                   research=Path(args.research) if args.research else None,
+                                   replace=args.replace, dry_run=args.dry_run)
+    except UsageError as e:
+        print(f"{args.id}: {e}")
+        return 2
+    print(people.format_report(res))
+    return 0 if res.ok else 1
+
+
+def _title_ids(args, titles: Path) -> list[str] | None:
+    if args.all == bool(args.ids):
+        print("give one or more title ids, or --all (not both)")
+        return None
+    return sorted(p.stem for p in titles.glob("*.json")) if args.all else args.ids
+
+
+def cmd_report(args) -> int:
+    ids = _title_ids(args, Path(args.titles))
+    if ids is None:
+        return 2
+    code = 0
+    for tid in ids:
+        try:
+            _, title = load_title(tid, Path(args.titles))
+        except UsageError as e:
+            print(f"{tid}: {e}")
+            code = 2
+            continue
+        print(review.format_report(review.build_report(title), items=not args.brief))
+    return code
+
+
+def cmd_review(args) -> int:
+    titles = Path(args.titles)
+    try:
+        if args.title_reviewed:
+            res = review.mark_title_reviewed(args.id, titles)
+            print(f"{args.id}: {res.message}")
+            print("\n".join("   " + p for p in res.problems))
+            return 0 if res.ok else 1
+        if not (args.approve or args.reject or args.approve_all):
+            _, title = load_title(args.id, titles)
+            print(review.review_sheet(title, args.kind, args.lesson, args.lesson_text))
+            return 0
+        res = review.review_items(args.id, titles, approve=args.approve or (), reject=args.reject or (),
+                                  approve_all=args.approve_all, kind=args.kind, note=args.note, dry_run=args.dry_run)
+    except UsageError as e:
+        print(f"{args.id}: {e}")
+        return 2
+    print(review.format_review(res))
+    return 0 if res.ok else 1
+
+
+def cmd_publish(args) -> int:
+    titles = Path(args.titles)
+    try:
+        res = review.publish_title(args.id, titles, dry_run=args.dry_run)
+    except UsageError as e:
+        print(f"{args.id}: {e}")
+        return 2
+    print(f"{args.id}: {res.message}")
+    print("\n".join("   " + p for p in res.problems))
+    if res.ok and args.do_import and not args.dry_run:
+        return cmd_import([titles / f"{args.id}.json"])
+    return 0 if res.ok else 1
+
+
 def cmd_import(files: list[Path]) -> int:
     failed = 0
     with SessionLocal() as db:
@@ -127,6 +238,42 @@ def main(argv=None) -> int:
     sub.add_parser("seed-samples")
     sub.add_parser("import").add_argument("file", type=Path)
     sub.add_parser("check").add_argument("target")
+    pp = sub.add_parser("people")
+    pp.add_argument("id")
+    pp.add_argument("--research")
+    pp.add_argument("--replace", action="store_true")
+    pp.add_argument("--dry-run", action="store_true")
+    pp.add_argument("--titles", default=str(TITLES_DIR))
+    pp.add_argument("--drafts", default=str(DRAFTS_DIR))
+    r = sub.add_parser("report")
+    r.add_argument("ids", nargs="*")
+    r.add_argument("--all", action="store_true")
+    r.add_argument("--brief", action="store_true")
+    r.add_argument("--titles", default=str(TITLES_DIR))
+    v = sub.add_parser("review")
+    v.add_argument("id")
+    v.add_argument("--approve", nargs="+", metavar="ID")
+    v.add_argument("--reject", nargs="+", metavar="ID")
+    v.add_argument("--approve-all", action="store_true")
+    v.add_argument("--kind", choices=["quiz", "feed"])
+    v.add_argument("--lesson", help="only items from this lesson (l03 or the full id), when printing")
+    v.add_argument("--lesson-text", action="store_true", help="print the lesson body above its items")
+    v.add_argument("--note")
+    v.add_argument("--dry-run", action="store_true")
+    v.add_argument("--title-reviewed", action="store_true")
+    v.add_argument("--titles", default=str(TITLES_DIR))
+    u = sub.add_parser("publish")
+    u.add_argument("id")
+    u.add_argument("--dry-run", action="store_true")
+    u.add_argument("--import", dest="do_import", action="store_true", help="also load it into the database")
+    u.add_argument("--titles", default=str(TITLES_DIR))
+    m = sub.add_parser("merge")
+    m.add_argument("ids", nargs="*")
+    m.add_argument("--all", action="store_true")
+    m.add_argument("--titles", default=str(TITLES_DIR))
+    m.add_argument("--drafts", default=str(DRAFTS_DIR))
+    m.add_argument("--dry-run", action="store_true")
+    m.add_argument("--skip-invalid", action="store_true")
     w = sub.add_parser("wiki")
     w.add_argument("ids", nargs="*")
     w.add_argument("--all", action="store_true")
@@ -141,6 +288,16 @@ def main(argv=None) -> int:
         return cmd_wiki(args)
     if args.cmd == "check":
         return cmd_check(args)
+    if args.cmd == "merge":
+        return cmd_merge(args)
+    if args.cmd == "people":
+        return cmd_people(args)
+    if args.cmd == "report":
+        return cmd_report(args)
+    if args.cmd == "review":
+        return cmd_review(args)
+    if args.cmd == "publish":
+        return cmd_publish(args)
     files = sorted((BACKEND_DIR / "data" / "samples").glob("*.json")) if args.cmd == "seed-samples" else [args.file]
     return cmd_import(files)
 
