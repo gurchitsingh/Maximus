@@ -1,11 +1,15 @@
 """Content CLI. Run from backend/:
     python -m ingest.cli wiki <id> [<id> ...] | --all   Wikipedia + Wikidata + Commons -> data/titles/<id>.json (draft)
     python -m ingest.cli check <id | file.json>          publish gate G1 to G10 (CONTRACTS 9.3); exit 1 if it fails
+    python -m ingest.cli merge <id> | --all              Gemini drafts (data/drafts/<id>.quiz.json, .feed.json) -> new
+                                                         needs_check items in data/titles/<id>.json (see ingest/merge.py)
     python -m ingest.cli import <file.json>              load one title file (refused if invalid, or published
                                                          and failing the gate)
     python -m ingest.cli seed-samples                    load data/samples/*.json
 `wiki` options: --no-download (skip copying images to backend/media), --refresh (ignore the HTTP cache),
 --delay SECONDS between requests (default 1.0), --force (overwrite a title that is already reviewed/published).
+`merge` options: --dry-run (report only), --skip-invalid (merge the good items, list the bad ones; default is all or
+nothing), --titles DIR, --drafts DIR. Exit 0 ok, 1 problems in the drafts or title, 2 cannot start (no drafts, no title).
 """
 import argparse
 import json
@@ -14,13 +18,14 @@ from pathlib import Path
 
 from app.config import BACKEND_DIR, settings
 from app.db import SessionLocal
-from ingest import gate
+from ingest import gate, merge
 from ingest.build import SeedError, build
 from ingest.client import WikiClient
 from ingest.import_title import ImportRefused, import_file
 
 SEED = Path(__file__).resolve().parent / "seed.json"
 TITLES_DIR = BACKEND_DIR / "data" / "titles"
+DRAFTS_DIR = BACKEND_DIR / "data" / "drafts"
 
 
 def make_client(args) -> WikiClient:
@@ -104,6 +109,32 @@ def cmd_check(args) -> int:
     return 0 if rep.ok else 1
 
 
+def cmd_merge(args) -> int:
+    titles, drafts = Path(args.titles), Path(args.drafts)
+    if args.all == bool(args.ids):
+        print("give one or more title ids, or --all (not both)")
+        return 2
+    if args.all:
+        ids = sorted(p.name[:-len(".json")] for p in titles.glob("*.json")
+                     if any((drafts / f"{p.stem}.{k}.json").is_file() for k in ("quiz", "feed")))
+        if not ids:
+            print(f"no drafts in {drafts} for any title in {titles}")
+            return 2
+    else:
+        ids = args.ids
+    worst = 0
+    for tid in ids:
+        try:
+            res = merge.merge_title(tid, titles, drafts, dry_run=args.dry_run, skip_invalid=args.skip_invalid)
+        except merge.MergeUsage as e:
+            print(f"{tid}: {e}")
+            worst = max(worst, 2)
+            continue
+        print(merge.format_report(res))
+        worst = max(worst, 0 if res.ok else 1)
+    return worst
+
+
 def cmd_import(files: list[Path]) -> int:
     failed = 0
     with SessionLocal() as db:
@@ -127,6 +158,13 @@ def main(argv=None) -> int:
     sub.add_parser("seed-samples")
     sub.add_parser("import").add_argument("file", type=Path)
     sub.add_parser("check").add_argument("target")
+    m = sub.add_parser("merge")
+    m.add_argument("ids", nargs="*")
+    m.add_argument("--all", action="store_true")
+    m.add_argument("--titles", default=str(TITLES_DIR))
+    m.add_argument("--drafts", default=str(DRAFTS_DIR))
+    m.add_argument("--dry-run", action="store_true")
+    m.add_argument("--skip-invalid", action="store_true")
     w = sub.add_parser("wiki")
     w.add_argument("ids", nargs="*")
     w.add_argument("--all", action="store_true")
@@ -141,6 +179,8 @@ def main(argv=None) -> int:
         return cmd_wiki(args)
     if args.cmd == "check":
         return cmd_check(args)
+    if args.cmd == "merge":
+        return cmd_merge(args)
     files = sorted((BACKEND_DIR / "data" / "samples").glob("*.json")) if args.cmd == "seed-samples" else [args.file]
     return cmd_import(files)
 

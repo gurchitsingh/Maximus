@@ -43,6 +43,27 @@ Get-ChildItem data\titles\*.json | % { .venv\Scripts\python -m ingest.cli import
 - `import` refuses any file failing G1 (schema + references), and a `status: published` file failing any gate
   rule. Quiz and feed drafts from Gemini go to `data/drafts/` and are merged by the S13 tool.
 
+### Merging Gemini quiz and feed drafts (S13)
+
+```
+python -m ingest.cli merge roman-history            # or several ids, or --all
+python -m ingest.cli merge roman-history --dry-run  # report only
+python -m ingest.cli merge roman-history --skip-invalid
+```
+
+Reads `data/drafts/<id>.quiz.json` (`{"quiz": [...]}`) and `<id>.feed.json` (`{"feed_facts": [...]}`), either
+one may be missing. Each item is checked against `docs/schemas` and against the title (`lesson_id` is one of its
+lessons, options distinct ignoring case, feed `image_id` is one of its images). Passing items are appended to
+`data/titles/<id>.json` with the next free ids and `status: needs_check`. Rules:
+- Existing items are never changed, moved or removed, so reviewed items stay as they are.
+- A draft item may not carry `id`, `title_id`, `status` or `review_note`; the tool sets them.
+- All or nothing: one bad item means nothing is written and every problem is listed (`quiz #12 ("..."): options: ...`).
+  `--skip-invalid` merges the good ones and lists the bad ones.
+- Safe to re-run: an item whose prompt or text already exists (ignoring case and punctuation) is skipped.
+- Exit 0 ok, 1 problems in the drafts or title, 2 cannot start (no drafts, no title file).
+
+After a merge, flip items to `reviewed` by hand in the title file; production serves only `reviewed` items.
+
 ## Endpoints
 
 `GET /healthz`, `/v1/catalogue`, `/v1/titles/{id}`, `/v1/feed?title_ids=a,b&limit=20&seed=1`,
