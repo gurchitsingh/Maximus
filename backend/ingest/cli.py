@@ -3,6 +3,8 @@
     python -m ingest.cli check <id | file.json>          publish gate G1 to G10 (CONTRACTS 9.3); exit 1 if it fails
     python -m ingest.cli merge <id> | --all              Gemini drafts (data/drafts/<id>.quiz.json, .feed.json) -> new
                                                          needs_check items in data/titles/<id>.json (see ingest/merge.py)
+    python -m ingest.cli people <id> [--research FILE]   person block from data/drafts/<id>.person.json (Claude's draft
+                                                         of Perplexity research) -> title file + citation sources
     python -m ingest.cli report [<id> ...] [--all]       what still needs your review per title + gate result
     python -m ingest.cli review <id> [--approve q001 q003-q009 | --reject f002 | --approve-all] [--note TEXT]
                                                          no action = print the items to check; --title-reviewed marks
@@ -13,6 +15,8 @@
     python -m ingest.cli seed-samples                    load data/samples/*.json
 `wiki` options: --no-download (skip copying images to backend/media), --refresh (ignore the HTTP cache),
 --delay SECONDS between requests (default 1.0), --force (overwrite a title that is already reviewed/published).
+`people` options: --research research/people-<batch>.md (cited URLs must appear in it), --replace (overwrite an
+existing person block), --dry-run, --titles DIR, --drafts DIR.
 `merge` options: --dry-run (report only), --skip-invalid (merge the good items, list the bad ones; default is all or
 nothing), --titles DIR, --drafts DIR. Exit 0 ok, 1 problems in the drafts or title, 2 cannot start (no drafts, no title).
 """
@@ -23,7 +27,7 @@ from pathlib import Path
 
 from app.config import BACKEND_DIR, settings
 from app.db import SessionLocal
-from ingest import gate, merge, review
+from ingest import gate, merge, people, review
 from ingest.build import SeedError, build
 from ingest.client import WikiClient
 from ingest.import_title import ImportRefused, import_file
@@ -141,6 +145,18 @@ def cmd_merge(args) -> int:
     return worst
 
 
+def cmd_people(args) -> int:
+    try:
+        res = people.import_person(args.id, Path(args.titles), Path(args.drafts),
+                                   research=Path(args.research) if args.research else None,
+                                   replace=args.replace, dry_run=args.dry_run)
+    except UsageError as e:
+        print(f"{args.id}: {e}")
+        return 2
+    print(people.format_report(res))
+    return 0 if res.ok else 1
+
+
 def _title_ids(args, titles: Path) -> list[str] | None:
     if args.all == bool(args.ids):
         print("give one or more title ids, or --all (not both)")
@@ -222,6 +238,13 @@ def main(argv=None) -> int:
     sub.add_parser("seed-samples")
     sub.add_parser("import").add_argument("file", type=Path)
     sub.add_parser("check").add_argument("target")
+    pp = sub.add_parser("people")
+    pp.add_argument("id")
+    pp.add_argument("--research")
+    pp.add_argument("--replace", action="store_true")
+    pp.add_argument("--dry-run", action="store_true")
+    pp.add_argument("--titles", default=str(TITLES_DIR))
+    pp.add_argument("--drafts", default=str(DRAFTS_DIR))
     r = sub.add_parser("report")
     r.add_argument("ids", nargs="*")
     r.add_argument("--all", action="store_true")
@@ -267,6 +290,8 @@ def main(argv=None) -> int:
         return cmd_check(args)
     if args.cmd == "merge":
         return cmd_merge(args)
+    if args.cmd == "people":
+        return cmd_people(args)
     if args.cmd == "report":
         return cmd_report(args)
     if args.cmd == "review":

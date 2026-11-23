@@ -68,6 +68,45 @@ lessons, options distinct ignoring case, feed `image_id` is one of its images). 
 
 After a merge, flip items to `reviewed` by hand in the title file; production serves only `reviewed` items.
 
+### Review and publish one title (S13)
+
+```
+python -m ingest.cli report roman-history           # what still needs review + publish gate result + next step
+python -m ingest.cli review roman-history           # print the items to check (add --lesson l03 --lesson-text)
+python -m ingest.cli review roman-history --approve q001-q012 f001 --note "checked against l02"
+python -m ingest.cli review roman-history --reject q013 --note "answer is wrong"
+python -m ingest.cli review roman-history --approve-all [--kind quiz|feed]
+python -m ingest.cli review roman-history --title-reviewed    # draft -> reviewed, after you read the whole title
+python -m ingest.cli publish roman-history [--import]         # reviewed -> published; --import also loads the DB
+```
+
+- `report` lists every `needs_check` item and runs the whole publish gate (G1 to G10); `--all` for every title,
+  `--brief` for counts only.
+- `review --approve` sets `reviewed` (ids like `q012`, `f003`, full ids, or ranges `q001-q010`); one unknown id
+  stops the call and nothing is written. `--reject` removes a `needs_check` item and logs it in
+  `data/rejected/<id>.json`, so merge never adds it back and its id is not reused. Reviewed (served) items are
+  edited by hand.
+- `publish` refuses unless the title is `reviewed` and the gate passes (G1 to G9); on a refusal the file is
+  not touched. Items still `needs_check` do not block it, they are just not served (G10), and publish says how many.
+- Typical order: `merge` -> `report` -> `review` ... -> `review --title-reviewed` -> `publish --import`.
+
+### People text (leaders and thinkers)
+
+```
+python -m ingest.cli people chanakya --research research/people-1.md    # --replace, --dry-run
+```
+
+Reads `data/drafts/<id>.person.json` = `{"person": {...}}`: the CONTRACTS 2.4 person fields, where every claim
+lists `sources` (`url`, `title`, optional `publisher`, `confidence` high/medium/low) instead of `source_ids`.
+`died`, `odds_beaten`, `core_ideas` and `legend_note` may be left out. Claude writes this file from Perplexity's
+`claim | source URL | confidence` tables (llm/perplexity.md). The tool turns each distinct URL into one
+`role: citation` source (`<id>.sNN`, reused when the URL is already cited), assigns `source_ids`, checks the block
+against the schema and the title against G1, and writes `person` plus the new sources into the title file. With
+`--research`, every cited URL must appear in that file and no source may claim more confidence than the research
+gave. Claims with fewer than 2 distinct sources, only low-confidence sources, or a missing `legend_note` import
+with a warning and are stopped by `publish` (G7, G8). The title file must already exist (kind leader or thinker);
+a `draft` title is overwritten on re-run, `reviewed` or `published` needs `--replace`.
+
 ## Endpoints
 
 `GET /healthz`, `/v1/catalogue`, `/v1/titles/{id}`, `/v1/feed?title_ids=a,b&limit=20&seed=1`,
