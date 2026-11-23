@@ -51,9 +51,8 @@ void main() {
   });
   tearDown(() => db.close());
 
-  Future<FeedStateRow> row(String id) => (db.select(
-    db.feedState,
-  )..where((t) => t.factId.equals(id))).getSingle();
+  Future<FeedStateRow> row(String id) =>
+      (db.select(db.feedState)..where((t) => t.factId.equals(id))).getSingle();
 
   group('feed_state', () {
     const f = 'roman-history.f001', t = 'roman-history';
@@ -71,18 +70,12 @@ void main() {
 
     test('like and dislike replace each other; a re-tap clears', () async {
       final dao = db.userStateDao;
-      expect(
-        await dao.toggleFactReaction(factId: f, titleId: t, value: 1),
-        1,
-      );
+      expect(await dao.toggleFactReaction(factId: f, titleId: t, value: 1), 1);
       expect(
         await dao.toggleFactReaction(factId: f, titleId: t, value: -1),
         -1,
       );
-      expect(
-        await dao.toggleFactReaction(factId: f, titleId: t, value: -1),
-        0,
-      );
+      expect(await dao.toggleFactReaction(factId: f, titleId: t, value: -1), 0);
       expect((await row(f)).reaction, 0);
     });
 

@@ -47,9 +47,7 @@ class OnThisDayRepository {
   }
 
   OnThisDay? _usable(String body, String mmdd) {
-    final parsed = OnThisDay.fromJson(
-      jsonDecode(body) as Map<String, dynamic>,
-    );
+    final parsed = OnThisDay.fromJson(jsonDecode(body) as Map<String, dynamic>);
     return parsed.date == mmdd && parsed.items.isNotEmpty ? parsed : null;
   }
 }

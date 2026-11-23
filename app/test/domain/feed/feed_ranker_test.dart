@@ -40,7 +40,11 @@ void main() {
       var high = 0;
       for (var seed = 0; seed < 2000; seed++) {
         final deck = FeedDeck(random: Random(seed))
-          ..setPool(own: [own('a', 1), own('b', 1)], tries: const [], current: 0);
+          ..setPool(
+            own: [own('a', 1), own('b', 1)],
+            tries: const [],
+            current: 0,
+          );
         final first = deck.deal((id) => id == 'a' ? 99 : 40)!;
         if (first.titleId == 'a') high++;
       }
@@ -131,21 +135,13 @@ void main() {
 
     test('facts seen earlier come after unseen ones', () {
       final deck = FeedDeck(random: Random(4), seen: {'a.f1'})
-        ..setPool(
-          own: [own('a', 1), own('b', 1)],
-          tries: const [],
-          current: 0,
-        );
+        ..setPool(own: [own('a', 1), own('b', 1)], tries: const [], current: 0);
       expect(deck.deal(noPct)!.factId, 'b.f1');
     });
 
     test('when all are seen the cycle repeats', () {
       final deck = FeedDeck(random: Random(6), seen: {'a.f1', 'b.f1'})
-        ..setPool(
-          own: [own('a', 1), own('b', 1)],
-          tries: const [],
-          current: 0,
-        );
+        ..setPool(own: [own('a', 1), own('b', 1)], tries: const [], current: 0);
       final cards = dealAll(deck, 6);
       expect(cards, hasLength(6));
       for (var i = 1; i < cards.length; i++) {
@@ -183,11 +179,7 @@ void main() {
 
     test('a removed title leaves the deck', () {
       final deck = FeedDeck(random: Random(8))
-        ..setPool(
-          own: [own('a', 1), own('b', 1)],
-          tries: const [],
-          current: 0,
-        );
+        ..setPool(own: [own('a', 1), own('b', 1)], tries: const [], current: 0);
       dealAll(deck, 2);
       final survivor = deck.cards.first.titleId == 'a' ? 'a' : 'b';
       final index = deck.setPool(
@@ -209,11 +201,7 @@ void main() {
 
     test('an own fact wins over the same fact in the try pool', () {
       final deck = FeedDeck(random: Random(8))
-        ..setPool(
-          own: [own('t', 1)],
-          tries: [tryCard('t', 1)],
-          current: 0,
-        );
+        ..setPool(own: [own('t', 1)], tries: [tryCard('t', 1)], current: 0);
       expect(deck.deal(noPct)!.isTry, isFalse);
       expect(deck.deal(noPct), isNull);
     });

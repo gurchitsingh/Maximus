@@ -24,8 +24,7 @@ class OnThisDayItem {
   final String? linkedTitleId;
 
   /// `1783 · Phonograph`, or `44 BCE · Roman Republic`.
-  String get titleLine =>
-      '${year < 0 ? '${-year} BCE' : '$year'} · $pageTitle';
+  String get titleLine => '${year < 0 ? '${-year} BCE' : '$year'} · $pageTitle';
 }
 
 @immutable

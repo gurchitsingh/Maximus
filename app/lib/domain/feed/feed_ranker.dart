@@ -67,10 +67,8 @@ class FeedDeck {
   /// Dealt cards in page order. A fact can return in a later cycle.
   final List<FeedCandidate> cards = [];
 
-  List<FeedCandidate> get _live => [
-    ..._own,
-    ..._tries,
-  ].where((c) => !_disliked.contains(c.factId)).toList();
+  List<FeedCandidate> get _live =>
+      [..._own, ..._tries].where((c) => !_disliked.contains(c.factId)).toList();
 
   bool get hasCandidates => _live.isNotEmpty;
 
@@ -92,7 +90,9 @@ class FeedDeck {
       for (final c in tries)
         if (!ownIds.contains(c.factId)) c,
     ];
-    final byId = {for (final c in [..._tries, ..._own]) c.factId: c};
+    final byId = {
+      for (final c in [..._tries, ..._own]) c.factId: c,
+    };
 
     final head = cards.take(current + 1).toList();
     for (final c in cards.skip(current + 1)) {

@@ -15,9 +15,9 @@ class DevFeedSource implements FeedSource, OnThisDaySource {
   /// titles, at most [limit] facts, only the images those facts use.
   @override
   Future<String> feedJson(List<String> titleIds, {int limit = 10}) async {
-    final json =
-        jsonDecode(await bundle.loadString('assets/dev/feed.json', cache: false))
-            as Map<String, dynamic>;
+    final json = jsonDecode(
+      await bundle.loadString('assets/dev/feed.json', cache: false),
+    ) as Map<String, dynamic>;
     final wanted = titleIds.toSet();
     final facts = (json['facts'] as List)
         .cast<Map<String, dynamic>>()
