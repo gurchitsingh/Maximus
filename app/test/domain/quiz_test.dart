@@ -133,6 +133,13 @@ void main() {
     }
   });
 
+  test('only a perfect or near-perfect score celebrates', () {
+    expect(
+      [for (var s = 0; s <= 6; s++) celebratesQuizScore(s)],
+      [false, false, false, false, false, true, true],
+    );
+  });
+
   group('bestScores', () {
     QuizScoreEntry e(int id, String title, int score) =>
         QuizScoreEntry(id: id, titleId: title, score: score, total: 6);

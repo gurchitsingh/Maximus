@@ -7,6 +7,7 @@ import 'package:material_ui/material_ui.dart';
 import '../../app/router.dart';
 import '../../core/theme/tokens.dart';
 import '../../core/theme/typography.dart';
+import '../../core/util/colors.dart';
 import '../../core/widgets/widgets.dart';
 import '../../data/db/app_database.dart';
 import '../../data/models/title.dart';
@@ -112,7 +113,13 @@ class _QuizResultScreenState extends ConsumerState<QuizResultScreen> {
       for (final id in r.shownIds)
         if (byId[id] != null) byId[id]!,
     ];
-    return SingleChildScrollView(
+    // Only on arrival from "See result", so reopening a result never replays
+    // it. Reduced motion skips it.
+    final celebrate =
+        widget.attemptId != null &&
+        celebratesQuizScore(r.score) &&
+        !MxMotion.reduced(context);
+    final content = SingleChildScrollView(
       padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -145,6 +152,14 @@ class _QuizResultScreenState extends ConsumerState<QuizResultScreen> {
           ],
         ],
       ),
+    );
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        content,
+        if (celebrate)
+          IgnorePointer(child: Confetti(extra: hexColor(d.summary.tint))),
+      ],
     );
   }
 }

@@ -110,6 +110,7 @@ void main() {
 
     expect(find.text('5 out of 6'), findsOneWidget);
     expect(find.text('Ave! Very nicely done.'), findsOneWidget);
+    expect(find.byType(Confetti), findsOneWidget);
     expect(find.byType(QuizReviewRow), findsNWidgets(6));
     expect(find.text('Review lessons you missed'), findsOneWidget);
 
@@ -143,6 +144,7 @@ void main() {
     final shown = await _play(tester, d, rightCount: 3);
     expect(find.text('3 out of 6'), findsOneWidget);
     expect(find.text('Good going. A few to revisit.'), findsOneWidget);
+    expect(find.byType(Confetti), findsNothing);
 
     await _tap(tester, find.text('Review lessons you missed'));
     final lesson = d.lesson(shown[3].lessonId!)!;
@@ -159,6 +161,7 @@ void main() {
     final d = await _detail(tester);
     final first = await _play(tester, d, rightCount: 6);
     expect(find.text('6 out of 6'), findsOneWidget);
+    expect(find.byType(Confetti), findsOneWidget);
     expect(find.text('Review lessons you missed'), findsNothing);
 
     await _tap(tester, find.text('Try 6 new questions'));
@@ -169,11 +172,42 @@ void main() {
     expect(second.take(4).toSet(), unseen);
     expect(find.text('0 out of 6'), findsOneWidget);
     expect(find.text('A start. The lessons will help.'), findsOneWidget);
+    expect(find.byType(Confetti), findsNothing);
 
     // Home keeps the best attempt.
     await _tap(tester, find.bySemanticsLabel('Back'));
     expect(find.text('6/6', skipOffstage: false), findsOneWidget);
     expect(find.text('0/6', skipOffstage: false), findsNothing);
+    await h.dispose(tester);
+  });
+
+  testWidgets('reopening a high score does not replay the confetti', (
+    tester,
+  ) async {
+    usePixel8(tester);
+    final h = await AppHarness.pump(tester);
+    await _openQuiz(tester);
+    await _play(tester, await _detail(tester), rightCount: 6);
+    expect(find.byType(Confetti), findsOneWidget);
+
+    GoRouter.of(tester.element(find.text('6 out of 6')))
+        .pushReplacement(AppRoute.quizResult.location({'titleId': _roman}));
+    await AppHarness.settle(tester);
+    expect(find.text('6 out of 6'), findsOneWidget);
+    expect(find.byType(Confetti), findsNothing);
+    await h.dispose(tester);
+  });
+
+  testWidgets('reduced motion skips the confetti', (tester) async {
+    usePixel8(tester);
+    tester.platformDispatcher.accessibilityFeaturesTestValue =
+        const FakeAccessibilityFeatures(disableAnimations: true);
+    addTearDown(tester.platformDispatcher.clearAccessibilityFeaturesTestValue);
+    final h = await AppHarness.pump(tester);
+    await _openQuiz(tester);
+    await _play(tester, await _detail(tester), rightCount: 6);
+    expect(find.text('6 out of 6'), findsOneWidget);
+    expect(find.byType(Confetti), findsNothing);
     await h.dispose(tester);
   });
 

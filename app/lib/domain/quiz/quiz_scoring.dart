@@ -45,6 +45,9 @@ String quizResultMessage(int score) => switch (score) {
   _ => 'A start. The lessons will help.',
 };
 
+/// A perfect or near-perfect score gets one gentle confetti (owner, S7).
+bool celebratesQuizScore(int score) => score >= 5;
+
 @immutable
 class QuizScoreEntry {
   const QuizScoreEntry({
