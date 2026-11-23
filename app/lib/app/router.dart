@@ -9,6 +9,7 @@ import 'package:material_ui/material_ui.dart';
 import '../core/gallery/gallery_screen.dart';
 import '../core/theme/tokens.dart';
 import '../core/widgets/mx_bottom_sheet.dart';
+import '../features/credits/credits_screen.dart';
 import '../features/feed/feed_screen.dart';
 import '../features/home/home_screen.dart';
 import '../features/library/library_screen.dart';
@@ -31,6 +32,7 @@ enum AppRoute {
   quiz('/title/:titleId/quiz'),
   quizResult('/title/:titleId/quiz/result'),
   settings('/settings'),
+  credits('/settings/credits'),
   gallery('/dev/gallery');
 
   const AppRoute(this.path);
@@ -178,6 +180,12 @@ GoRouter buildRouter({String? initialLocation}) {
         name: AppRoute.settings.name,
         parentNavigatorKey: rootKey,
         builder: (_, _) => const SettingsScreen(),
+      ),
+      GoRoute(
+        path: AppRoute.credits.path,
+        name: AppRoute.credits.name,
+        parentNavigatorKey: rootKey,
+        builder: (_, _) => const CreditsScreen(),
       ),
       GoRoute(
         path: AppRoute.gallery.path,

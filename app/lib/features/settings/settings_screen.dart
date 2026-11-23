@@ -1,6 +1,5 @@
-// Settings: theme and text size (persisted in drift from S6) and voice
-// speed for read-aloud. The full screen (voice, clear my data, about,
-// credits) is S9.
+// Settings (DESIGN_SPEC 9 4.1): theme, text size, voice speed, then the
+// list: Voice, Clear my data, About, Credits.
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -11,7 +10,12 @@ import '../../core/theme/theme_controller.dart';
 import '../../core/theme/tokens.dart';
 import '../../core/theme/typography.dart';
 import '../../core/widgets/widgets.dart';
+import '../../data/db/tables/user_tables.dart' show SettingKeys;
 import '../../data/providers.dart';
+import 'about_sheet.dart';
+import 'clear_data.dart';
+import 'voice_sheet.dart';
+import 'voices.dart';
 
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
@@ -21,6 +25,7 @@ class SettingsScreen extends ConsumerWidget {
     final settings = ref.watch(themeSettingsProvider);
     final ctrl = ref.read(themeSettingsProvider.notifier);
     final c = context.mx;
+    final stored = ref.watch(settingsMapProvider).value ?? const {};
     final reading = Theme.of(context).extension<MxReading>()!;
     return Scaffold(
       body: SafeArea(
@@ -60,11 +65,7 @@ class SettingsScreen extends ConsumerWidget {
                     label: 'Voice speed',
                     child: SegmentedChoice<String>(
                       options: const ['0.8', '1.0', '1.2'],
-                      value:
-                          ref
-                              .watch(settingsMapProvider)
-                              .value?['voice_speed'] ??
-                          '1.0',
+                      value: stored[SettingKeys.voiceSpeed] ?? '1.0',
                       labelOf: (v) => v == '1.0' ? '1x' : '${v}x',
                       onChanged: (v) => ref
                           .read(databaseProvider)
@@ -77,10 +78,30 @@ class SettingsScreen extends ConsumerWidget {
                     child: Column(
                       children: [
                         SettingsRow(
-                          label: 'Licences',
+                          label: 'Voice',
+                          value: voiceRowValue(
+                            stored[SettingKeys.voiceName] ?? '',
+                            ref.watch(ttsVoicesProvider).value ?? const [],
+                          ),
+                          showArrow: true,
+                          onTap: () => showVoiceSheet(context),
+                        ),
+                        SettingsRow(
+                          label: 'Clear my data',
+                          value: 'Topics, scores, settings',
+                          destructive: true,
+                          onTap: () => clearMyDataFlow(context, ref),
+                        ),
+                        SettingsRow(
+                          label: 'About',
+                          value: 'Version 1.0',
+                          onTap: () => showAboutSheet(context),
+                        ),
+                        SettingsRow(
+                          label: 'Credits',
                           showArrow: true,
                           isLast: !kDebugMode,
-                          onTap: () => showLicensePage(context: context),
+                          onTap: () => context.push(AppRoute.credits.path),
                         ),
                         if (kDebugMode)
                           SettingsRow(
