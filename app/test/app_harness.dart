@@ -6,6 +6,7 @@ import 'dart:io';
 
 import 'package:drift/native.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_riverpod/misc.dart' show Override;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:maximus/app/app.dart';
@@ -54,7 +55,11 @@ class AppHarness {
   final AppDatabase db;
   final FakeTts tts;
 
-  static Future<AppHarness> pump(WidgetTester tester, {AppDatabase? db}) async {
+  static Future<AppHarness> pump(
+    WidgetTester tester, {
+    AppDatabase? db,
+    List<Override> overrides = const [],
+  }) async {
     driftRuntimeOptions.dontWarnAboutMultipleDatabases = true;
     final h = AppHarness._(
       db ?? AppDatabase(NativeDatabase.memory()),
@@ -71,6 +76,7 @@ class AppHarness {
             ThemeSettings.fromStored(stored),
           ),
           settingsWriterProvider.overrideWithValue(h.db.settingsDao),
+          ...overrides,
         ],
         child: const MaximusApp(),
       ),
