@@ -1,5 +1,6 @@
 // On This Day card (DESIGN_SPEC 7.16, 11.19; CONTRACTS 2.7). It lives on
-// Home: S9 places `const OnThisDayCard()` there. No data = nothing rendered.
+// Home, which adds `const OnThisDayCard()` once S12 brings live data.
+// No data = nothing rendered.
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:material_ui/material_ui.dart';
