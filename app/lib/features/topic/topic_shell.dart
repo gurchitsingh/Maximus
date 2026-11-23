@@ -83,7 +83,7 @@ class TopicShell extends ConsumerWidget {
   }
 }
 
-/// Chat (S15) and Quiz (S7) are not built yet: same header, placeholder body.
+/// Chat (S15) is not built yet: same header, placeholder body.
 class TopicPlaceholder extends ConsumerWidget {
   const TopicPlaceholder({
     super.key,
