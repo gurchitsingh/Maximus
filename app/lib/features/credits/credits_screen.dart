@@ -67,10 +67,9 @@ class _CreditsList extends StatelessWidget {
           ]),
         section('Fonts', [
           for (var i = 0; i < data.fonts.length; i++)
-            SettingsRow(
+            _CreditRow(
               label: data.fonts[i].family,
-              value: '${data.fonts[i].designer} · ${data.fonts[i].license}',
-              showArrow: true,
+              detail: '${data.fonts[i].designer} · ${data.fonts[i].license}',
               isLast: i == data.fonts.length - 1,
               onTap: () => openExternal(data.fonts[i].licenseUrl),
             ),
@@ -87,9 +86,8 @@ class _CreditsList extends StatelessWidget {
           for (final t in content.titles)
             _titleSection(section, content, t.id, t.name),
         section('Licences', [
-          SettingsRow(
+          _CreditRow(
             label: 'Open-source licences',
-            showArrow: true,
             isLast: true,
             onTap: () => showLicensePage(context: context),
           ),
@@ -114,18 +112,16 @@ class _CreditsList extends StatelessWidget {
     ];
     final rows = <Widget>[
       for (var i = 0; i < texts.length; i++)
-        SettingsRow(
+        _CreditRow(
           label: texts[i].name,
-          value: texts[i].license,
-          showArrow: true,
+          detail: texts[i].license,
           isLast: images.isEmpty && i == texts.length - 1,
           onTap: () => openExternal(texts[i].url),
         ),
       for (var i = 0; i < images.length; i++)
-        SettingsRow(
+        _CreditRow(
           label: images[i].creditLine,
-          value: images[i].modified ? 'Modified' : null,
-          showArrow: images[i].sourcePageUrl != null,
+          detail: images[i].modified ? 'Modified' : null,
           isLast: i == images.length - 1,
           onTap: images[i].sourcePageUrl == null
               ? null
@@ -133,5 +129,74 @@ class _CreditsList extends StatelessWidget {
         ),
     ];
     return section(name, rows);
+  }
+}
+
+/// A 7.20 style row that grows with long names: label, then the licence or
+/// author in muted text, arrow when it opens a page.
+class _CreditRow extends StatelessWidget {
+  const _CreditRow({
+    required this.label,
+    this.detail,
+    this.isLast = false,
+    this.onTap,
+  });
+
+  final String label;
+  final String? detail;
+  final bool isLast;
+  final VoidCallback? onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = context.mx;
+    final side = BorderSide(color: c.divider);
+    return Semantics(
+      container: true,
+      button: onTap != null,
+      child: InkWell(
+        onTap: onTap,
+        overlayColor: WidgetStatePropertyAll(c.text.withValues(alpha: 0.08)),
+        child: Container(
+          constraints: const BoxConstraints(minHeight: 60),
+          padding: const EdgeInsets.symmetric(vertical: 12),
+          decoration: BoxDecoration(
+            border: Border(top: side, bottom: isLast ? side : BorderSide.none),
+          ),
+          child: Row(
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      label,
+                      style: MxText.listRow.copyWith(
+                        color: c.text,
+                        height: 1.3,
+                      ),
+                    ),
+                    if (detail != null) ...[
+                      const SizedBox(height: 2),
+                      Text(
+                        detail!,
+                        style: MxText.listValue.copyWith(
+                          color: c.textMuted,
+                          height: 1.3,
+                        ),
+                      ),
+                    ],
+                  ],
+                ),
+              ),
+              if (onTap != null) ...[
+                const SizedBox(width: 12),
+                MxIcon(MxIcons.arrowRight, size: 20, color: c.textMuted),
+              ],
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
