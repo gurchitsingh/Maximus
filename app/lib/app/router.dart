@@ -1,5 +1,5 @@
 // go_router config (CONTRACTS 8.3). S6 adds the title sheet, the reader and
-// the topic shell (chat and quiz are placeholders until S15 and S7).
+// the topic shell (chat is a placeholder until S15). S7 adds the quiz.
 // Onboarding and splash arrive in S5.
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -12,6 +12,8 @@ import '../core/widgets/mx_bottom_sheet.dart';
 import '../features/feed/feed_screen.dart';
 import '../features/home/home_screen.dart';
 import '../features/library/library_screen.dart';
+import '../features/quiz/quiz_result_screen.dart';
+import '../features/quiz/quiz_screen.dart';
 import '../features/reader/reader_screen.dart';
 import '../features/settings/settings_screen.dart';
 import '../features/study/study_screen.dart';
@@ -152,11 +154,7 @@ GoRouter buildRouter({String? initialLocation}) {
             name: AppRoute.quiz.name,
             pageBuilder: (_, state) => _fadePage(
               state,
-              TopicPlaceholder(
-                titleId: state.pathParameters['titleId']!,
-                subtitle: 'Quiz',
-                session: 'S7',
-              ),
+              QuizScreen(titleId: state.pathParameters['titleId']!),
             ),
           ),
           GoRoute(
@@ -164,10 +162,11 @@ GoRouter buildRouter({String? initialLocation}) {
             name: AppRoute.quizResult.name,
             pageBuilder: (_, state) => _fadePage(
               state,
-              TopicPlaceholder(
+              QuizResultScreen(
                 titleId: state.pathParameters['titleId']!,
-                subtitle: 'Quiz',
-                session: 'S7',
+                attemptId: int.tryParse(
+                  state.uri.queryParameters['attempt'] ?? '',
+                ),
               ),
             ),
           ),

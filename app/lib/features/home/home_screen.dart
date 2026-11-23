@@ -1,6 +1,6 @@
 // Home (DESIGN_SPEC 9.2.1, 9.2.2; FLOW 3): resume card, study rows, For you,
-// quiz scores. On this day stays hidden until S12 brings live data (11.19);
-// quiz score tiles fill in S7. S9 finishes the dashboard.
+// quiz scores. On this day stays hidden until S12 brings live data (11.19).
+// S9 finishes the dashboard.
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -12,6 +12,7 @@ import '../../core/widgets/widgets.dart';
 import '../../data/db/app_database.dart';
 import '../../data/providers.dart';
 import '../../domain/match/rows.dart';
+import '../quiz/quiz_scores.dart';
 import '../shared/title_visuals.dart';
 
 /// Greeting by local time of day (DESIGN_SPEC 11.19).
@@ -125,7 +126,7 @@ class _HomeBody extends ConsumerWidget {
         const SizedBox(height: MxSpace.headingToContent),
         const Padding(
           padding: EdgeInsets.symmetric(horizontal: 20),
-          child: EmptyScores(),
+          child: QuizScores(),
         ),
       ],
     );
