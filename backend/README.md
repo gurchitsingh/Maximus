@@ -60,6 +60,10 @@ lessons, options distinct ignoring case, feed `image_id` is one of its images). 
 - All or nothing: one bad item means nothing is written and every problem is listed (`quiz #12 ("..."): options: ...`).
   `--skip-invalid` merges the good ones and lists the bad ones.
 - Safe to re-run: an item whose prompt or text already exists (ignoring case and punctuation) is skipped.
+- `lesson_id` is required in a draft item: `null` is an error here (the Gemini brief says every item names its
+  lesson), although the stored schema allows null.
+- Merging into a `reviewed` or `published` title is fine: new items are `needs_check`, so they are not served.
+- Draft files (`data/drafts/*.json`) are working files and are gitignored; only `README.txt` stays in git.
 - Exit 0 ok, 1 problems in the drafts or title, 2 cannot start (no drafts, no title file).
 
 After a merge, flip items to `reviewed` by hand in the title file; production serves only `reviewed` items.

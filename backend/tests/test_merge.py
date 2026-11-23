@@ -388,3 +388,14 @@ def test_every_problem_of_one_item_is_listed_together(dirs):
     put(dirs[1], "quiz", [q(1, status="reviewed", lesson_id="roman-history.l99", options=["a", "a", "c", "d"])])
     msg = "\n".join(run(dirs).errors)
     assert all(w in msg for w in ("status", "lesson_id", "options"))
+
+
+def test_rejected_items_do_not_come_back_and_their_ids_are_not_reused(dirs, base):
+    rej = dirs[0].parent / "rejected"
+    rej.mkdir()
+    gone = {"id": "roman-history.q030", "prompt": "Rejected one?"}
+    (rej / "roman-history.json").write_text(json.dumps([{"kind": "quiz", "item": gone, "note": "wrong"}]), "utf-8")
+    put(dirs[1], "quiz", [q(1, prompt="rejected ONE"), q(2)])
+    res = run(dirs)
+    assert res.ok and len(res.quiz_added) == 1 and "rejected" in "\n".join(res.skipped)
+    assert res.quiz_added[0]["id"] == "roman-history.q031"

@@ -11,19 +11,18 @@ Guarantees
   options are distinct ignoring case, image_id (feed) is an image of this title.
 - All or nothing: one bad item stops the merge and nothing is written, unless `skip_invalid` is set (the good
   items are merged and the bad ones listed). The whole title must still pass G1 (gate.g1_errors) before it is saved.
+- Items rejected in review (data/rejected/<id>.json) are not added again and their ids are not reused.
 - Idempotent: an item whose prompt / text matches an existing item (ignoring case and punctuation) is skipped, so
   running the same drafts twice adds nothing.
 - The file is replaced atomically (temp file, then rename).
 """
 import json
-import os
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
 from ingest import gate
-
-SLUG = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
+from ingest.titlefile import UsageError, load_rejected, load_title, valid_before, write_json
 QUIZ_QUESTION = "title.schema.json#/$defs/quiz_question"
 FEED_FACT = "title.schema.json#/$defs/feed_fact"
 SERVER_FIELDS = ("id", "title_id", "status", "review_note")  # set by this tool, never by the draft
@@ -44,8 +43,7 @@ KINDS = {
 }
 
 
-class MergeUsage(ValueError):
-    """The merge cannot even start (bad id, missing file): CLI exit 2."""
+MergeUsage = UsageError  # kept for callers and tests that import it from here
 
 
 @dataclass
@@ -139,42 +137,25 @@ def _next_number(items: list[dict], letter: str) -> int:
     return max(nums, default=0) + 1
 
 
-def _write(path: Path, data: dict):
-    tmp = path.with_name(path.name + ".tmp")
-    with open(tmp, "w", encoding="utf-8", newline="\n") as f:
-        f.write(json.dumps(data, ensure_ascii=False, indent=2) + "\n")
-    os.replace(tmp, path)
-
-
 def merge_title(title_id: str, titles_dir: Path, drafts_dir: Path, *, dry_run: bool = False,
                 skip_invalid: bool = False) -> MergeResult:
     """Merge the drafts of one title. Raises MergeUsage when it cannot start; otherwise returns a MergeResult
     (check `.ok`). Nothing is written unless `.ok` and not `dry_run`."""
-    if not SLUG.match(title_id or ""):
-        raise MergeUsage(f"{title_id!r} is not a title id (lower-case slug such as roman-history)")
-    path = Path(titles_dir) / f"{title_id}.json"
-    if not path.is_file():
-        raise MergeUsage(f"no title file for {title_id}: {path}")
-    try:
-        title = json.loads(path.read_text("utf-8-sig"))
-    except json.JSONDecodeError as e:
-        raise MergeUsage(f"{path.name} is not valid JSON: {e.msg} (line {e.lineno}, column {e.colno})")
-    if not isinstance(title, dict) or title.get("id") != title_id:
-        raise MergeUsage(f"{path.name} has id {title.get('id') if isinstance(title, dict) else None!r}, "
-                         f"expected {title_id!r}")
+    path, title = load_title(title_id, titles_dir)
     files = {k: Path(drafts_dir) / f"{title_id}.{s['file']}.json" for k, s in KINDS.items()}
     if not any(p.is_file() for p in files.values()):
         raise MergeUsage(f"no drafts for {title_id}: expected {files['quiz'].name} and/or {files['feed_facts'].name} "
                          f"in {drafts_dir}")
 
     res = MergeResult(title_id, dry_run=dry_run, path=path)
-    before = gate.g1_errors(title)
+    before = valid_before(title, path)
     if before:
-        res.errors += [f"{path.name} is not valid before the merge (fix it first): {e}" for e in before]
+        res.errors += before
         return res
 
     lessons = {l["id"] for l in title["lessons"]}
     images = {i["id"] for i in title["images"]}
+    rejected = load_rejected(title_id, titles_dir)
     added: dict[str, list[dict]] = {k: [] for k in KINDS}
     problems: list[str] = []
     for kind, spec in KINDS.items():
@@ -183,7 +164,9 @@ def merge_title(title_id: str, titles_dir: Path, drafts_dir: Path, *, dry_run: b
             continue
         existing = title[kind]
         known = {_norm(x[spec["text"]]): x["id"] for x in existing}
-        number = _next_number(existing, spec["id_letter"])
+        gone = [r["item"] for r in rejected if r["kind"] == kind]  # rejected in review (ingest/review.py)
+        gone_text = {_norm(x[spec["text"]]): x["id"] for x in gone}
+        number = _next_number(existing + gone, spec["id_letter"])
         for n, raw in enumerate(items, 1):
             where = f"{spec['label']} #{n}{_snippet(raw, kind)}"
             item, probs = _item_problems(kind, raw, title_id, lessons, images)
@@ -191,6 +174,9 @@ def merge_title(title_id: str, titles_dir: Path, drafts_dir: Path, *, dry_run: b
                 problems += [f"{where}: {p}" for p in probs]
                 continue
             key = _norm(item[spec["text"]])
+            if key in gone_text:
+                res.skipped.append(f"{where}: skipped, you rejected this in review ({gone_text[key]})")
+                continue
             if key in known:
                 res.skipped.append(f"{where}: skipped, duplicate of {known[key]}")
                 continue
@@ -226,7 +212,7 @@ def merge_title(title_id: str, titles_dir: Path, drafts_dir: Path, *, dry_run: b
                        "feed_facts": sum(f["status"] == "needs_check" for f in merged["feed_facts"])}
     res.warnings = _warnings(merged, added)
     if not dry_run and (res.quiz_added or res.feed_added):
-        _write(path, merged)
+        write_json(path, merged)
         res.written = True
     return res
 
