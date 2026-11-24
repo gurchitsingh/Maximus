@@ -1,0 +1,10 @@
+<h1>Choose a new password</h1>
+<p>Use 10 to 128 characters. A few ordinary words strung together work well.</p>
+$error
+<form method="post" action="/reset-password">
+  <input type="hidden" name="token" value="$token">
+  <label for="new_password">New password</label>
+  <input id="new_password" name="new_password" type="password" autocomplete="new-password" required minlength="10" maxlength="128">
+  <button type="submit">Save the new password</button>
+</form>
+<p class="muted">Saving signs you out on every device; sign in again in the app with the new password.</p>

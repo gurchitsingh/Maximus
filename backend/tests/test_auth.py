@@ -27,10 +27,10 @@ def no_ip_limit(monkeypatch):
 
 @pytest.fixture
 def at(monkeypatch):
-    """Move the server clock: at(seconds) shifts tokens.utcnow forward."""
-    real = tokens.utcnow
+    """Freeze the server clock; at(seconds) moves it forward from the frozen start."""
+    base = tokens.utcnow()
     shift = {"s": 0}
-    monkeypatch.setattr(tokens, "utcnow", lambda: real() + timedelta(seconds=shift["s"]))
+    monkeypatch.setattr(tokens, "utcnow", lambda: base + timedelta(seconds=shift["s"]))
 
     def move(seconds):
         shift["s"] = seconds

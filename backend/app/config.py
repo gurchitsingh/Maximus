@@ -61,6 +61,7 @@ class Settings(BaseSettings):
     jwt_secret: str = ""
     google_client_id: str = ""           # the web OAuth client id; not a secret
     app_base_url: str = "http://127.0.0.1:8000"  # email links and the web pages
+    contact_email: str = ""              # shown on /privacy; empty = "see the Play Store listing"
 
     # Email (CONTRACTS 14.5): console (dev: printed to the log), resend (HTTPS API) or smtp
     email_provider: str = "console"

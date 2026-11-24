@@ -8,6 +8,7 @@ from app import __version__
 from app.config import check_startup, settings
 from app.errors import ApiError, error_response, install_handlers
 from app.routers.v1 import health, v1
+from app.routers.web import web
 from app.services.ratelimit import RateLimiter
 
 check_startup(settings)  # production refuses to start without JWT_SECRET, INSTALL_ID_SALT, Postgres
@@ -34,6 +35,7 @@ if origins:
 
 app.include_router(health)
 app.include_router(v1)
+app.include_router(web)  # /privacy, /account/delete, email-link pages (CONTRACTS 17)
 
 media = Path(settings.media_dir)
 if media.is_dir():  # dev image store (gitignored); /media/{path}
