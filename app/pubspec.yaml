@@ -44,6 +44,7 @@ flutter:
     - assets/fonts/CaveatBrush/OFL.txt
     - assets/fonts/BigShouldersStencil/OFL.txt
     - assets/credits/fonts.json
+    - assets/facts/facts.json
     # Copies of backend/data/samples and docs/examples (CONTRACTS 8.1) until
     # S12 wires the API. test/data/dev_assets_test.dart keeps them in sync.
     - assets/dev/

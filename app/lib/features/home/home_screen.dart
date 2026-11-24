@@ -11,6 +11,7 @@ import '../../core/widgets/widgets.dart';
 import '../../data/db/app_database.dart';
 import '../../data/providers.dart';
 import '../../domain/match/rows.dart';
+import '../factday/fact_of_the_day_card.dart';
 import '../on_this_day/on_this_day_card.dart';
 import '../quiz/quiz_scores.dart';
 import '../shared/catalogue_states.dart';
@@ -122,6 +123,7 @@ class _HomeBody extends ConsumerWidget {
           padding: EdgeInsets.symmetric(horizontal: 20),
           child: QuizScores(),
         ),
+        const FactOfTheDayCard(),
         const Padding(
           padding: EdgeInsets.fromLTRB(20, MxSpace.sectionGap, 20, 0),
           child: OnThisDayCard(),
