@@ -1,0 +1,375 @@
+{
+  "id": "green-revolution",
+  "kind": "topic",
+  "name": "Green Revolution in India",
+  "subtitle": "1960s onward",
+  "poster_lines": [
+    "GREEN",
+    "REVOLUTION"
+  ],
+  "group": "india",
+  "era": "modern",
+  "region": "asia",
+  "period_start": 1960,
+  "period_end": null,
+  "themes": [
+    "science-tech",
+    "economy",
+    "society"
+  ],
+  "bg": "#1E3A1E",
+  "tint": "#E8C547",
+  "lettering": "brush",
+  "poster_image_id": null,
+  "hero_image_id": "green-revolution.i01",
+  "brief": "High-yield seeds, new farming and how India stopped fearing famine.",
+  "linked_title_ids": [],
+  "rank": 14,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "green-revolution.l01",
+      "title_id": "green-revolution",
+      "index": 1,
+      "heading": "The Bengal famine",
+      "body": "The Bengal famine of 1943 was a famine during World War II in the Bengal Province and Orissa Province of British India. An estimated 800,000–3.8 million people died, in the Bengal region (present-day Bangladesh and West Bengal), from starvation, malaria and other diseases aggravated by malnutrition, population displacement, unsanitary conditions, poor British wartime policies, and lack of health care. Millions were impoverished as the crisis overwhelmed large segments of the economy and catastrophically disrupted the social fabric. Eventually, families disintegrated; men sold their small farms and left home to look for work or to join the British Indian Army, and women and children became homeless migrants, often travelling to Calcutta or other large cities in search of organised relief.\n\nBengal's economy had been predominantly agrarian at that time, with between half and three-quarters of the rural poor subsisting in a \"semi-starved condition\". Stagnant agricultural productivity and a stable land base were unable to cope with a rapidly increasing population, resulting in both long-term decline in per capita availability of rice and growing numbers of the land-poor and landless labourers. A high proportion laboured beneath a chronic and spiralling cycle of debt that ended in debt bondage and the loss of their landholdings due to land grabbing.\n\nThe financing of military escalation led to wartime inflation. Many workers received monetary wages rather than payment in kind with a portion of the harvest. When prices rose sharply, their wages failed to follow suit; this drop in real wages left them less able to purchase food. During the Japanese occupation of Burma, many rice imports were lost as the region's market supplies and transport systems were disrupted by British \"denial policies\" for rice and boats (by some critiques considered a \"scorched earth\" response to the occupation). The British also implemented inflation policies during the war aimed at making more resources available for Allied troops. These policies, along with other economic measures, created the \"forced transferences of purchasing power\" to the military from ordinary people, reducing their food consumption. The Bengal Chamber of Commerce (composed mainly of British-owned firms), with the approval of the Government of Bengal, devised a Foodstuffs Scheme to provide preferential distribution of goods and services to workers in high-priority roles such as armed forces, war industries, civil servants and other \"priority classes\", to prevent them from leaving their positions. These factors were compounded by restricted access to grain: domestic sources were constrained by emergency inter-provincial trade barriers, while aid from Churchill's war cabinet was limited, ostensibly due to a wartime shortage of shipping. More proximate causes included large-scale natural disasters in south-western Bengal (a cyclone, tidal waves and flooding, and rice crop disease). The relative impact of each of these factors on the death toll is a matter of debate.\n\nThe provincial government never formally declared a state of famine, and its humanitarian aid was ineffective through the worst months of the crisis. It attempted to fix the price of rice paddy through price controls which resulted in a black market which encouraged sellers to withhold stocks, leading to hyperinflation from speculation and hoarding after controls were abandoned.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "green-revolution.i02"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "green-revolution.s01"
+      ]
+    },
+    {
+      "id": "green-revolution.l02",
+      "title_id": "green-revolution",
+      "index": 2,
+      "heading": "The Green Revolution",
+      "body": "The Green Revolution, or the Third Agricultural Revolution, was a period during which technology transfer initiatives resulted in a significant increase in crop yields. These changes in agriculture initially emerged in developed countries in the early 20th century and subsequently spread globally until the late 1980s. In the late 1980s, farmers began incorporating new technologies, including high-yielding varieties of cereals, particularly dwarf wheat and rice, and the widespread use of chemical fertilizers (to produce their high yields, the new seeds require far more fertilizer than traditional varieties), pesticides, and controlled irrigation.\n\nAt the same time, newer methods of cultivation, including mechanization, were adopted, often as a package of practices to replace traditional agricultural technology. This was often in conjunction with loans conditional on policy changes being made by the developing nations adopting them, such as privatizing fertilizer manufacture and distribution.\n\nBoth the Ford Foundation and the Rockefeller Foundation were heavily involved in its initial development in Mexico. A key leader was agricultural scientist Norman Borlaug, the \"Father of the Green Revolution\", who received the Nobel Peace Prize in 1970. He is credited with saving over a billion people from starvation. Another important scientific figure was Yuan Longping, whose work on hybrid rice varieties is credited with saving at least as many lives. The basic approach was the development of high-yielding varieties of cereal grains, expansion of irrigation infrastructure, modernization of management techniques, distribution of hybridized seeds, synthetic fertilizers, and pesticides to farmers. As crops began to reach the maximum improvement possible through selective breeding, genetic modification technologies were developed to allow for continued efforts.\n\nStudies show that the Green Revolution contributed to widespread eradication of poverty, averted hunger for millions, raised incomes, limited the increase of greenhouse gas emissions, reduced land use for agriculture, and contributed to declines in infant mortality.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "green-revolution.i03"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "green-revolution.s02"
+      ]
+    },
+    {
+      "id": "green-revolution.l03",
+      "title_id": "green-revolution",
+      "index": 3,
+      "heading": "Norman Borlaug",
+      "body": "Norman Ernest Borlaug (March 25, 1914 – September 12, 2009) was an American agronomist who led initiatives worldwide that contributed to the extensive increases in agricultural production termed the Green Revolution. Borlaug was awarded multiple honors for his work, including the Nobel Peace Prize, the Presidential Medal of Freedom, and the Congressional Gold Medal, one of only seven people to have received all three awards.\n\nBorlaug received his B.S. in forestry in 1937 and PhD in plant pathology and genetics from the University of Minnesota in 1942. He took up an agricultural research position with CIMMYT in Mexico, where he developed semi-dwarf, high-yield, disease-resistant wheat varieties. During the mid-20th century, Borlaug led the introduction of these high-yielding varieties combined with modern agricultural production techniques to Mexico, Pakistan, and India. As a result, Mexico became a net exporter of wheat by 1963. Between 1965 and 1970, wheat yields nearly doubled in Pakistan and India, greatly improving the food security in those nations.\n\n![](green-revolution.i05)\n\nBorlaug is often called \"the father of the Green Revolution\", and is credited with saving over a billion people worldwide from starvation. According to Jan Douglas, executive assistant to the president of the World Food Prize Foundation, the source of this number is Gregg Easterbrook's 1997 article \"Forgotten Benefactor of Humanity.\" The article states that the \"form of agriculture that Borlaug preaches may have prevented a billion deaths\". Dennis T. Avery also estimated that the number of lives saved by Borlaug's efforts to be one billion. In 2009, Josette Sheeran, then the Executive Director of the World Food Programme, stated that Borlaug \"saved more lives than any man in human history\". He was awarded the 1970 Nobel Peace Prize in recognition of his contributions to world peace through increasing food supply.\n\n![](green-revolution.i06)\n\nLater in his life, he helped apply these methods of increasing food production in Asia and Africa. He was also an accomplished wrestler in college and a pioneer of wrestling in the United States, being inducted into the National Wrestling Hall of Fame for his contributions.\n\n## India's Green Revolution\n\nThe Green Revolution in India was a period that began in the 1960s during which agriculture in India was converted into a modern industrial system by the adoption of technology, such as the use of high-yielding varieties of crops, and fertilisers. Mainly led by agricultural scientist M. S. Swaminathan in India, this period was part of the larger Green Revolution endeavour initiated by Norman Borlaug, which leveraged agricultural research and technology to increase agricultural productivity in the developing world. Varieties or strains of crops can be selected by breeding for various useful characteristics such as disease resistance, response to fertilisers, product quality and high yields.\n\nUnder the premiership of Indira Gandhi, the Green Revolution within India commenced in 1968, leading to an increase in food grain production, especially in Punjab, Haryana, and Western Uttar Pradesh. Major milestones in this undertaking were the development of high-yielding varieties of wheat, and rust-resistant strains of wheat.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "green-revolution.i04",
+        "green-revolution.i05",
+        "green-revolution.i06"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "green-revolution.s03",
+        "green-revolution.s04"
+      ]
+    },
+    {
+      "id": "green-revolution.l04",
+      "title_id": "green-revolution",
+      "index": 4,
+      "heading": "M. S. Swaminathan",
+      "body": "Mankombu Sambasivan Swaminathan (7 August 1925 – 28 September 2023) was an Indian geneticist and plant breeder, administrator and humanitarian who was a global leader of the green revolution. He has been called the main architect of the green revolution in India for his leadership and role in introducing and further developing high-yielding varieties of wheat and rice.\n\nSwaminathan's collaborative scientific efforts with Norman Borlaug, spearheading a mass movement with farmers and other scientists and backed by public policies, saved India and Pakistan from certain famine-like conditions in the 1960s. His leadership as director general of the International Rice Research Institute (IRRI) in the Philippines was instrumental in his being awarded the first World Food Prize in 1987, recognized as one of the highest honours in the field of agriculture. The United Nations Environment Programme has called him \"the Father of Economic Ecology\".\n\n![](green-revolution.i08)\n\nHe was recently conferred the Bharat Ratna, the highest civilian award of the Republic of India, in 2024.\n\nSwaminathan contributed basic research related to potato, wheat, and rice, in areas such as cytogenetics, ionizing radiation, and radiosensitivity. He was a president of the Pugwash Conferences and the International Union for Conservation of Nature. In 1999, he was one of three Indians, along with Gandhi and Tagore, on Time's list of the 20 most influential Asian people of the 20th century. Swaminathan received numerous awards and honours, including the Shanti Swarup Bhatnagar Award, the Ramon Magsaysay Award, and the Albert Einstein World Science Award. Swaminathan chaired the National Commission on Farmers in 2004, which recommended far-reaching ways to improve India's farming system. He was the founder of an eponymous research foundation. He coined the term \"Evergreen Revolution\" in 1990 to describe his vision of \"productivity in perpetuity without associated ecological harm\". He was nominated to the Parliament of India for one term between 2007 and 2013. During his tenure he put forward a bill for the recognition of women farmers in India.\n\n## The White Revolution\n\nThe White Revolution, or Operation Flood, launched on 13 January 1970, was the world's largest dairy development programme and a landmark project of India's NDDB. It transformed India from a milk-deficient nation into the world's largest milk producer, surpassing the United States in 1998 with about 22.29 percent of global output in 2018. Within 30 years, it doubled the milk available per person in India and made dairy farming India's largest self-sustainable rural employment generator. The programme was launched to help farmers direct their own development and to give them control of the resources they create.\n\nVerghese Kurien, was named the Chairman of NDDB by Prime Minister Lal Bahadur Shastri. Kurien thrust the programme towards success and has since been recognised as its architect. The making of skimmed milk powder out of buffalo milk, termed the Anand Pattern Experiment at Amul, was also instrumental to the program's success; this was made possible by Harichand Megha Dalaya, alongside Kurien. It allowed Amul to compete successfully with cow milk-based suppliers such as Nestlé.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "green-revolution.i07",
+        "green-revolution.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "green-revolution.s05",
+        "green-revolution.s06"
+      ]
+    },
+    {
+      "id": "green-revolution.l05",
+      "title_id": "green-revolution",
+      "index": 5,
+      "heading": "The ration system",
+      "body": "The Public Distribution System (PDS) is a food security system that was established by the Government of India under the Ministry of Consumer Affairs, Food and Public Distribution to distribute food and non-food items to India's poor at subsidised rates. Major commodities distributed include staple food grains, such as wheat, rice, sugar and essential fuels like kerosene, through a network of fair price shops (also known as ration shops) established in several states across the country. Food Corporation of India, a government-owned corporation, procures and maintains the PDS.\n\nAs of June 2022, India has the largest stock of grain in the world besides China, the government spends ₹750 billion. Food is procured from the net food surplus states, mainly from the smaller but richer states of Haryana and Punjab, which provide 70-90% of wheat & 28-44% of rice of India's PDS, which is then redistributed to other net negative producer states which produce less than they consume. Distribution of food grains to poor people throughout the country is managed by state governments. As of 2011 there were 5.51 Lakh Fair Price Shops (FPS) across India. Under the PDS scheme, each family below the poverty line is eligible for 35 kg of rice or wheat every month, while a household above the poverty line is entitled to 15 kg of foodgrain on a monthly basis, redeemable with a card. However, there are concerns about the efficiency of the distribution process.\n\nIn coverage and public expenditure, it is considered to be the most important food security network. However, the food grains supplied by the ration shops are enough to meet the consumption needs of the poor. In the 1980s and 1990s, the PDS was criticised for its urban bias and its failure to serve the poorer sections of the population effectively. The Targeted PDS is expensive and until the early 2000s, there was a lot of corruption (i.e., people did not get all of what they were entitled to).",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "green-revolution.s07"
+      ]
+    },
+    {
+      "id": "green-revolution.l06",
+      "title_id": "green-revolution",
+      "index": 6,
+      "heading": "Minimum support prices",
+      "body": "The minimum support price (MSP) is the minimum price for select crops raised in kharif and rabi seasons that the Government of India considers as remunerative for farmers and hence deserves support. This is different from procurement price and issue price. It is generally announced before the sowing/planting season. It is approved by the government and aims to safeguard the farmer to a minimum profit for the harvest while at the same time increasing food security in the country. MSP was initially an incentive for farmers to adopt technology with an aim of increasing the productivity of agricultural land in the 1960s, however in the 2000s it is seen as a market intervention and farmer income scheme. The effectiveness of such a price policy has varied widely between states and commodities. Awareness among farmers of the existence of an MSP is poor at 23%, while awareness of MSP procurement agencies is also poor with only about 20–25% of wheat and paddy produce being sold at MSP.\n\nThe Indian government sets the price for about two dozen commodities twice a year. MSP is fixed on the recommendations of the Commission for Agricultural Costs and Prices (CACP), an apex advisory body for pricing policy under the Ministry of Agriculture. CACP in turn recommends the pricing according to a diverse range of factors including national requirements, available resources, farmer wages, cost of living and product competitiveness. However, not all recommendations of CACP are adopted, sometimes, there can be significant difference with the price approved by the government. Food Corporation of India (FCI) and the National Agricultural Co-operative Marketing Federation (NAFED) are involved in implementing the MSP at the state level. While providing a support price to farmers, MSP also supports the public distribution system which provides subsided food.\n\n## Storing the grain\n\nThe Food Corporation of India (FCI) is a Central Government agency under the Ministry of Consumer Affairs, Food and Public Distribution, formed by the enactment of Food Corporation Act, 1964. Its top official is designated as Chairman and Managing Director, who is a central government civil servant of the IAS cadre. The corporation was set up in 1965 with its initial headquarters at Chennai. Later this was moved to New Delhi. It also has regional centers in state capitals.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "green-revolution.i09"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "green-revolution.s08",
+        "green-revolution.s09"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "green-revolution.i01",
+      "title_id": "green-revolution",
+      "url": "http://10.0.2.2:8000/media/green-revolution/i01-3deafb43c8.jpg",
+      "width": 1600,
+      "height": 1197,
+      "alt": "Bengali famine 1943",
+      "kind": "photo",
+      "author": "Unknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bengal_famine_1943_photo.jpg",
+      "credit_line": "Unknown author · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "green-revolution.i02",
+      "title_id": "green-revolution",
+      "url": "http://10.0.2.2:8000/media/green-revolution/i02-9df3fc19e7.jpg",
+      "width": 1600,
+      "height": 979,
+      "alt": "From the photo spread in The Statesman on 22 August 1943 showing famine conditions in Calcutta. These photographs made world headlines and spurred government action.",
+      "kind": "photo",
+      "author": "The Statesman, Calcutta, India",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Dead_or_dying_children_on_a_Calcutta_street_(the_Statesman_22_August_1943).jpg",
+      "credit_line": "The Statesman, Calcutta, India · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "green-revolution.i03",
+      "title_id": "green-revolution",
+      "url": "http://10.0.2.2:8000/media/green-revolution/i03-06655ca178.png",
+      "width": 1600,
+      "height": 1129,
+      "alt": "Change in cereal production, yield, land use and population, World",
+      "kind": "other",
+      "author": "Hannah Ritchie",
+      "license": "CC BY",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Index-of-cereal-production-yield-and-land-use_World.svg",
+      "credit_line": "Hannah Ritchie · CC BY 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "green-revolution.i04",
+      "title_id": "green-revolution",
+      "url": "http://10.0.2.2:8000/media/green-revolution/i04-01e765112e.jpg",
+      "width": 1600,
+      "height": 2267,
+      "alt": "Borlaug in 2004",
+      "kind": "other",
+      "author": "Ben Zinner, USAID",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Norman_Borlaug,_2004_(cropped).jpg",
+      "credit_line": "Ben Zinner, USAID · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "green-revolution.i05",
+      "title_id": "green-revolution",
+      "url": "http://10.0.2.2:8000/media/green-revolution/i05-9e30f5c602.jpg",
+      "width": 1600,
+      "height": 1070,
+      "alt": "The state of Punjab led India's Green Revolution and earned the distinction of being the \"breadbasket of India.\"",
+      "kind": "other",
+      "author": "Sanyam Bahga",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Punjab_Monsoon.jpg",
+      "credit_line": "Sanyam Bahga · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "green-revolution.i06",
+      "title_id": "green-revolution",
+      "url": "http://10.0.2.2:8000/media/green-revolution/i06-d6b1c8465c.png",
+      "width": 1600,
+      "height": 1129,
+      "alt": "Change in cereal production, yield, land use and population, India",
+      "kind": "other",
+      "author": "Hannah Ritchie",
+      "license": "CC BY",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Index-of-cereal-production-yield-and-land-use_India.svg",
+      "credit_line": "Hannah Ritchie · CC BY 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "green-revolution.i07",
+      "title_id": "green-revolution",
+      "url": "http://10.0.2.2:8000/media/green-revolution/i07-a04c2155b6.jpg",
+      "width": 1600,
+      "height": 2409,
+      "alt": "Swaminathan in 2013",
+      "kind": "photo",
+      "author": "Biswarup Ganguly",
+      "license": "CC BY",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Monkombu_Sambasivan_Swaminathan_-_Kolkata_2013-01-07_2674.JPG",
+      "credit_line": "Biswarup Ganguly · CC BY 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "green-revolution.i08",
+      "title_id": "green-revolution",
+      "url": "http://10.0.2.2:8000/media/green-revolution/i08-93f0bbe139.jpg",
+      "width": 1600,
+      "height": 2400,
+      "alt": "The Amul trinity (left to right): Verghese Kurien, Tribhuvandas Kishibhai Patel, and Harichand Megha Dalaya",
+      "kind": "other",
+      "author": "Personal photos of Mr Sanjay & Mrs Mona NAIK and of Mrs Akanksha NAIK & Mr Bernard ADAM (direct family of Harichand Megha DALAYA) Erma79",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:2_The-Amul-trinity_Kurien_Shri-TK-Patel_HM_Dalaya.jpg",
+      "credit_line": "Personal photos of Mr Sanjay & Mrs Mona NAIK and of Mrs Akanksha NAIK & Mr Bernard ADAM (direct family of Harichand Megha DALAYA) Erma79 · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "green-revolution.i09",
+      "title_id": "green-revolution",
+      "url": "http://10.0.2.2:8000/media/green-revolution/i09-173175265b.png",
+      "width": 1600,
+      "height": 533,
+      "alt": "Parent agency - Ministry of Consumer Affairs",
+      "kind": "other",
+      "author": "Ministry of Consumer Affairs, Food, and Public Distribution, Government of India",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ministry_of_Consumer_Affairs,_Food_and_Public_Distribution.png",
+      "credit_line": "Ministry of Consumer Affairs, Food, and Public Distribution, Government of India · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "green-revolution.s01",
+      "title": "Bengal famine of 1943 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bengal_famine_of_1943",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "green-revolution.s02",
+      "title": "Green Revolution (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Green_Revolution",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "green-revolution.s03",
+      "title": "Norman Borlaug (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Norman_Borlaug",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "green-revolution.s04",
+      "title": "Green Revolution in India (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Green_Revolution_in_India",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "green-revolution.s05",
+      "title": "M. S. Swaminathan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/M._S._Swaminathan",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "green-revolution.s06",
+      "title": "White revolution (India) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/White_revolution_(India)",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "green-revolution.s07",
+      "title": "Public Distribution System (India) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Public_Distribution_System_(India)",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "green-revolution.s08",
+      "title": "Minimum support price (India) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Minimum_support_price_(India)",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "green-revolution.s09",
+      "title": "Food Corporation of India (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Food_Corporation_of_India",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}

@@ -1285,11 +1285,11 @@
           "heading": "Maharaja Ranjit Singh"
         },
         {
-          "page": "Anglo-Sikh war",
+          "page": "Second Anglo-Sikh War",
           "sections": [
             "lead"
           ],
-          "heading": "The Anglo-Sikh wars"
+          "heading": "The Sikh Empire falls"
         }
       ]
     },
@@ -1387,11 +1387,11 @@
           "heading": "Mahadaji Shinde"
         },
         {
-          "page": "Anglo-Maratha Wars",
+          "page": "Third Anglo-Maratha War",
           "sections": [
             "lead"
           ],
-          "heading": "The Anglo-Maratha wars"
+          "heading": "The end of Maratha power"
         }
       ]
     },
@@ -1538,7 +1538,8 @@
           "sections": [
             "lead"
           ],
-          "heading": "The Rebellion of 1857"
+          "heading": "The Rebellion of 1857",
+          "max_words": 550
         },
         {
           "page": "Indian National Congress",
@@ -1643,7 +1644,8 @@
           "sections": [
             "lead"
           ],
-          "heading": "The Bengal famine"
+          "heading": "The Bengal famine",
+          "max_words": 550
         },
         {
           "page": "Green Revolution",
@@ -2078,7 +2080,8 @@
           "sections": [
             "lead"
           ],
-          "heading": "The fate of the Romanovs"
+          "heading": "The fate of the Romanovs",
+          "max_words": 550
         },
         {
           "page": "Treaty on the Creation of the Union of Soviet Socialist Republics",
@@ -2222,7 +2225,8 @@
           "sections": [
             "lead"
           ],
-          "heading": "A nation at war with itself"
+          "heading": "A nation at war with itself",
+          "max_words": 550
         },
         {
           "page": "Origins of the American Civil War",
@@ -2351,7 +2355,8 @@
           "sections": [
             "lead"
           ],
-          "heading": "The Schlieffen Plan"
+          "heading": "The Schlieffen Plan",
+          "max_words": 550
         },
         {
           "page": "Trench warfare",
@@ -2389,7 +2394,7 @@
           "heading": "The Zimmermann telegram"
         },
         {
-          "page": "Spring offensive",
+          "page": "German spring offensive",
           "sections": [
             "lead"
           ],
@@ -2446,7 +2451,8 @@
           "sections": [
             "lead"
           ],
-          "heading": "The world at war"
+          "heading": "The world at war",
+          "max_words": 550
         },
         {
           "page": "Causes of World War II",
@@ -2474,7 +2480,8 @@
           "sections": [
             "lead"
           ],
-          "heading": "Operation Barbarossa"
+          "heading": "Operation Barbarossa",
+          "max_words": 550
         },
         {
           "page": "Attack on Pearl Harbor",
@@ -2597,7 +2604,8 @@
           "sections": [
             "lead"
           ],
-          "heading": "The Cuban Missile Crisis"
+          "heading": "The Cuban Missile Crisis",
+          "max_words": 550
         },
         {
           "page": "Vietnam War",
@@ -2667,7 +2675,8 @@
           "sections": [
             "lead"
           ],
-          "heading": "A decade of hardship"
+          "heading": "A decade of hardship",
+          "max_words": 550
         },
         {
           "page": "Wall Street crash of 1929",

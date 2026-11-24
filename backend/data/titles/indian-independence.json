@@ -1,0 +1,499 @@
+{
+  "id": "indian-independence",
+  "kind": "topic",
+  "name": "Indian independence movement",
+  "subtitle": "1857 to 1947",
+  "poster_lines": [
+    "Indian",
+    "Independence"
+  ],
+  "group": "india",
+  "era": "modern",
+  "region": "asia",
+  "period_start": 1857,
+  "period_end": 1947,
+  "themes": [
+    "independence",
+    "politics",
+    "leadership",
+    "society"
+  ],
+  "bg": "#F08A24",
+  "tint": "#2B8A4A",
+  "lettering": "brush",
+  "poster_image_id": null,
+  "hero_image_id": "indian-independence.i01",
+  "brief": "Marches, boycotts and the end of British rule in 1947.",
+  "linked_title_ids": [
+    "rani-lakshmibai"
+  ],
+  "rank": 13,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "indian-independence.l01",
+      "title_id": "indian-independence",
+      "index": 1,
+      "heading": "The long road to freedom",
+      "body": "The Indian independence movement was a series of political efforts from the mid-1880s to 1947 that took place in the Indian subcontinent with the aim of ending British colonial rule.\n\nThe first nationalistic movement took root when the Indian National Congress (INC) was formed in 1885. Prominent moderate leaders of the INC worked on demands such as greater economic rights for Indians and the right to appear for Indian Civil Service exams in British India.\n\nThe first half of the 20th century saw a progressively radical approach towards self-rule. This began with protests against the Partition of Bengal (1905), which exposed the limits of the moderate leaders' reformist agenda, and evolved into the Non-cooperation Movement (1919–1922), which demanded non-cooperation with colonial authorities. Momentum grew steadily through the Civil Disobedience Movement (1929–1931) that called for active disobedience to the colonial government, and culminated in the Quit India Movement (1942), which categorically demanded the end of British colonial presence in India, ultimately resulted in the transfer of power in 1947.\n\nThe stages of the independence struggle in the 1920s were characterised by the leadership of Mahatma Gandhi and Congress's adoption of his policy of non-violence and civil disobedience. Some of the leading followers of Gandhi's ideology were Pandit Motilal Nehru, Sarojini Naidu, Jawaharlal Nehru, Vallabhbhai Patel, Abdul Ghaffar Khan, and Maulana Azad. Intellectuals such as Rabindranath Tagore, and Subramania Bharati, spread patriotic awareness. Female leaders such as Sarojini Naidu, Vijaya Lakshmi Pandit, Pritilata Waddedar, and Kasturba Gandhi promoted the emancipation of Indian women and their participation in the freedom struggle.\n\nA few leaders adopted a more violent approach, which grew in popularity following the passage of Rowlatt Act that permitted indefinite detention without trial. The Act sparked protests across India, particularly in the Punjab Province, where these demonstrations were violently suppressed in the Jallianwala Bagh massacre.\n\nThe Indian independence movement was in constant ideological evolution. Essentially anti-colonial, it was supplemented by visions of independent economic development alongside a secular, democratic, republican, and civil-libertarian political structure. After the 1930s, the movement took on a strong socialist orientation. It culminated in the Indian Independence Act 1947, which ended Crown suzerainty and partitioned British India into the Dominion of India and the Dominion of Pakistan. On 26 January 1950, the Constitution of India came into effect, establishing the Republic of India, while the partitioned territories evolved into the independent nations of Pakistan and, later, Bangladesh.",
+      "reading_minutes": 3,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "indian-independence.s01"
+      ]
+    },
+    {
+      "id": "indian-independence.l02",
+      "title_id": "indian-independence",
+      "index": 2,
+      "heading": "The Rebellion of 1857",
+      "body": "The Indian Rebellion of 1857 was a major uprising in India in 1857–58 against the rule of the British East India Company, which functioned as a sovereign power on behalf of the British Crown. The rebellion began on 10 May 1857 as a mutiny of sepoys of the company's garrison in Meerut, a town 40 miles (64 km) northeast of Delhi. It then erupted into other mutinies and civilian rebellions, chiefly in the upper Gangetic plain and central India, though incidents of revolt also occurred farther north and east. The rebellion posed a military threat to British power in that region, and was contained only with the rebels' defeat in Gwalior on 20 June 1858. On 1 November 1858, the British granted amnesty to all rebels not involved in murder, though they did not declare the hostilities to have formally ended until 8 July 1859.\n\nThe name of the revolt is contested, and it is variously described as the Sepoy Mutiny, the Indian Mutiny, the Great Rebellion, the Revolt of 1857, the Indian Insurrection, and the First War of Independence.\n\nThe Indian rebellion was fed by resentments born of diverse perceptions, including invasive British-style social reforms, harsh land taxes, summary treatment of some rich landowners and princes, and scepticism about British claims that their rule offered material improvement to the Indian economy. Many Indians rose against the British; however, many also fought for the British, and the majority remained seemingly compliant to British rule. Violence, which sometimes betrayed exceptional cruelty, was inflicted on both sides: on British officers and civilians, including women and children, by the rebels, and on the rebels and their supporters, including sometimes entire villages, by British reprisals; the cities of Delhi and Lucknow were laid waste in the fighting and the British retaliation.\n\nAfter the outbreak of the mutiny in Meerut, the rebels quickly reached Delhi, whose 81-year-old Mughal ruler, Bahadur Shah Zafar, was declared the Emperor of Hindustan. Soon, the rebels had captured large tracts of the North-Western Provinces and Awadh (Oudh). The East India Company's response came rapidly as well. With help from reinforcements, Kanpur was retaken by mid-July 1857, and Delhi by the end of September. However, it then took the remainder of 1857 and the better part of 1858 for the rebellion to be suppressed in Jhansi, Lucknow, and especially the Awadh countryside. Other regions of Company-controlled India— the Bengal Presidency, the Bombay Presidency, and the Madras Presidency—remained largely calm. In the Punjab, the Sikh princes crucially helped the British by providing both soldiers and support. The large princely states, Hyderabad, Mysore, Travancore, and Kashmir, as well as the smaller ones of Rajputana, did not join the rebellion, serving the British, in Governor-General Lord Canning's words, as \"breakwaters in a storm\".\n\nIn some regions, most notably in Awadh, the rebellion took on the attributes of a patriotic revolt against British oppression. However, the rebel leaders proclaimed no articles of faith that presaged a new political system. Even so, the rebellion proved to be an important watershed in Indian and British Empire history.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "indian-independence.i02"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "indian-independence.s02"
+      ]
+    },
+    {
+      "id": "indian-independence.l03",
+      "title_id": "indian-independence",
+      "index": 3,
+      "heading": "The Congress is founded",
+      "body": "The Indian National Congress (INC), also known as the Congress Party, or simply the Congress, is a political party in India with widespread roots. Founded on 28 December 1885, it was the first modern nationalist movement to emerge in the non-European British Empire. From the late 19th century, and especially after 1920, under the leadership of Mahatma Gandhi, the Congress became the principal leader of the Indian independence movement. The Congress led India to independence from the United Kingdom, and significantly influenced other anti-colonial nationalist movements in the British Empire.\n\nThe INC is a \"big tent\" party that has been described as sitting in the centre of the Indian political spectrum. The party held its first session in 1885 in Bombay where W.C. Bonnerjee presided over it. After Indian independence in 1947, Congress emerged as a catch-all, Indian nationalist and secular party, dominating Indian politics for the next 50 years. The party's first prime minister, Jawaharlal Nehru, led the Congress to support socialist policies by creating the Planning Commission, introducing Five-Year Plans, implementing a mixed economy, and establishing a secular state. After Nehru's death and the short tenure of Lal Bahadur Shastri, Indira Gandhi became the leader of the party. In the 17 general elections since independence, it has won an outright majority on seven occasions and has led the ruling coalition a further three times, heading the central government for more than 54 years. There have been six prime ministers from the Congress party, the first being Jawaharlal Nehru (1947–1964), and the most recent being Manmohan Singh (2004–2014). Since the 1990s, the Bharatiya Janata Party has emerged as the main rival of the Congress in both national and regional politics.\n\nIn 1969, the party suffered a major split, with a faction led by Indira Gandhi leaving to form the Congress (R), with the remainder becoming the Congress (O). The Congress (R) became the dominant faction, winning the 1971 general election by a huge margin. From 1975 to 1977, Indira Gandhi declared a state of emergency in India, resulting in widespread oppression and abuses of power. Another split in the party occurred in 1979, leading to the creation of the Congress (I), which was recognised as the Congress by the Election Commission in 1981. Under Rajiv Gandhi's leadership, the party won a massive victory in the 1984 general elections, nevertheless losing the election held in 1989 to the National Front. The Congress then returned to power under P. V. Narasimha Rao, who moved the party towards an economically liberal agenda, a sharp break from previous leaders. However, it lost the 1996 general election and was replaced in government by the National Front. After a record eight years out of office, the Congress-led coalition known as the United Progressive Alliance (UPA) under Manmohan Singh formed a government after the 2004 general elections. Subsequently, the UPA again formed the government after winning the 2009 general elections, and Singh became the first prime minister since Indira Gandhi in 1971 to be re-elected after completing a full five-year term. However, under the leadership of Rahul Gandhi in the 2014 general election, the Congress suffered a heavy defeat, winning only 44 seats of the 543-member Lok Sabha (the lower house of the Parliament of India). In the 2019 general election, the party failed to make any substantial gains and won 52 seats, failing to form the official opposition yet again. In the 2024 general election, the party performed better-than-expected, and won 99 seats, forming the official opposition with their highest seat count in a decade.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "indian-independence.i03"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "indian-independence.s03"
+      ]
+    },
+    {
+      "id": "indian-independence.l04",
+      "title_id": "indian-independence",
+      "index": 4,
+      "heading": "The Congress is founded (continued)",
+      "body": "On social issues, it advocates secular policies that encourage equal opportunity, right to health, right to education, civil liberty, and support social market economy, and a strong welfare state. Being a centrist party, its policies predominantly reflected balanced positions including secularism, egalitarianism, and social stratification. The INC supports contemporary economic reforms such as liberalisation, privatisation and globalisation. A total of 61 people have served as the president of the INC since its formation. Sonia Gandhi is the longest-serving president of the party, having held office for over twenty years from 1998 to 2017 and again from 2019 to 2022 (as interim). Mallikarjun Kharge is the current party president. The district party is the smallest functional unit of Congress. There is also a Pradesh Congress Committee (PCC), present at the state level in every state. Together, the delegates from the districts and PCCs form the All India Congress Committee (AICC). The party is additionally structured into various committees and segments including the Working Committee (CWC), Seva Dal, Indian Youth Congress (IYC), Indian National Trade Union Congress (INTUC), and National Students' Union of India (NSUI). The party holds the annual plenary sessions, at which senior Congress figures promote party policy.\n\n## Bengal is divided\n\nThe Partition of Bengal in 1905, also known as the First Partition of Bengal, was a territorial reorganization of the Bengal Presidency in British India, implemented by the authorities of the British Raj. Announced on 16 October 1905 by Lord Curzon, then Viceroy of India, the reorganization separated the largely Muslim eastern areas from the largely Hindu western areas, creating West Bengal for Hindus and East Bengal for Muslims. The reorganization was undone a mere six years later.\n\nThe Partition was undertaken primarily for administration purposes but in fact was treated as a divide and rule policy and further agitated people, who perceived that it was a deliberate attempt to divide the Bengal Presidency on religious grounds, with a Muslim majority in the east and a Hindu majority in the west, thereby weakening the nationalist cause. The Hindus of West Bengal, who dominated Bengal's business and rural life, complained that the division would make them a minority in a province that would incorporate the province of Bihar and Orissa. Hindus were outraged at this \"divide and rule\" policy, even though Curzon stressed it would produce administrative efficiency. The partition animated the Muslims to form their own national organization along communal lines. To appease Bengali sentiment and in response to the Swadeshi movement's riots in protest against the policy, Bengal was reunited by the British government in 1911.\n\nThe Bengal Presidency encompassed Bengal, Bihar, parts of present-day Chhattisgarh, Orissa, and Assam. With a population of 78.5 million, it was British India's largest province. For decades British officials had maintained that the huge size created difficulties for effective management and had caused neglect of the poorer eastern region. The idea of the partition had been brought up only for administrative reasons. Therefore, Curzon planned to split Orissa and Bihar and join fifteen eastern districts of Bengal with Assam. The eastern province held a population of 31 million, most of which was Muslim, with its centre at Dhaka. Curzon pointed out that he thought of the new province as Muslim. Lord Curzon's intention was to divide Bengalis, but not specifically Hindus from Muslims. The western districts formed the other province with Orissa and Bihar. The union of western Bengal with Orissa and Bihar reduced the speakers of the Bengali language to a minority. Muslims, led by the Nawab Sallimullah of Dhaka, supported the partition, and Hindus opposed it.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "indian-independence.i04"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "indian-independence.s03",
+        "indian-independence.s04"
+      ]
+    },
+    {
+      "id": "indian-independence.l05",
+      "title_id": "indian-independence",
+      "index": 5,
+      "heading": "Swadeshi",
+      "body": "The Swadeshi movement was a self-sufficiency movement that was part of the Indian independence movement and contributed to the development of Indian nationalism.\n\nAfter the British government's decision for the partition of Bengal was made public in December 1903, discontent among Indians grew. In response the Swadeshi movement was formally initiated at the Calcutta Town Hall on 7 August 1905 to curb foreign goods by relying on domestic production. Mahatma Gandhi described it as the soul of swaraj (self-rule). The movement grew after rich Indians donated money and land to Khadi and Gramodyog societies, which started cloth production in every household. It also included other village industries so as to make villages self-sufficient and self-reliant.\n\nThe Indian National Congress used this movement in its struggle for independence. On 15 August 1947, a hand-spun Khadi tricolor Ashoka Chakra Indian flag was unfurled at Princess Park near India Gate, New Delhi by Jawaharlal Nehru.\n\nThe British Raj's decision to partition Bengal was made in December 1903. The official reason was that Bengal, with a population of 78 million, was too large to be administered; the real reason, however, was that it was the centre of a revolt, and British officials could not control the protests, which they thought would spread throughout India. The Viceroy of India, George Curzon, 1st Marquess Curzon of Kedleston, presided over the 1905 partition of Bengal. In his 2004 book The Lion and the Tiger: The Rise and Fall of the British Raj, 1600–1947, Denis Judd wrote:\n\nCurzon had hoped... to bind India permanently to the Raj. Ironically, his partition of Bengal, and the bitter controversy that followed, did much to revitalize Congress. Curzon, typically, had dismissed the Congress in 1900 as 'tottering to its fall'. But he left India with Congress more active and effective than at any time in its history.\n\nBengal was divided by religion: the western half would be primarily Hindu, and the eastern half would be primarily Muslim. This divide-and-conquer strategy sparked the Swadeshi movement. The British reunited Bengal in 1911 and shifted the capital to New Delhi. The Swadeshi movement took on a new meaning after the reunification of Bengal.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "indian-independence.i05"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "indian-independence.s05"
+      ]
+    },
+    {
+      "id": "indian-independence.l06",
+      "title_id": "indian-independence",
+      "index": 6,
+      "heading": "Jallianwala Bagh",
+      "body": "The Jallianwala Bagh massacre, also known as the Amritsar massacre, took place on 13 April 1919. A large crowd had gathered at the Jallianwala Bagh in Amritsar, Punjab, British India, during the annual Baisakhi fair to protest against the Rowlatt Act and the arrest of pro-Indian independence activists Saifuddin Kitchlew and Satyapal. In response to the public gathering, Brigadier-General Reginald Dyer surrounded the people with Gurkhas of Nepalese origin and Sikh infantrymen of the British Indian Army.\n\nThe Jallianwala Bagh could only be exited on one side, as its other three sides were enclosed by buildings. After blocking the exit with his troops, Dyer ordered them to shoot at the crowd, continuing to fire even as the protestors tried to flee. The troops kept on firing until their ammunition was low and they were ordered to stop. Estimates of those killed vary from 379 to 1,500 or more people; over 1,200 others were injured, of whom 192 sustained serious injury. Britain has never formally apologised for the massacre, but expressed deep \"regret\" in 2019.\n\n![](indian-independence.i07)\n\nThe massacre caused a re-evaluation by the Imperial British military of its role when confronted with civilians to use \"minimal force whenever possible\" (although the British Army was not directly involved in the massacre; the British Indian Army was a separate organisation). However, in the light of later British military actions during the Mau Mau rebellion in the Kenya Colony, historian Huw Bennett has pointed out that this new policy was not always followed. The army was retrained with less violent tactics for crowd control.\n\nThe level of casual brutality and the lack of any accountability stunned the entire nation, resulting in a wrenching loss of faith of the general Indian public in the intentions of the United Kingdom. The attack was condemned by the Secretary of State for War, Winston Churchill, as \"unutterably monstrous\", and in the UK House of Commons debate on 8 July 1920 Members of Parliament voted 247 to 37 against Dyer. The ineffective inquiry, together with the initial accolades for Dyer, fuelled great widespread anger against the British among the Indian populace, leading to the non-cooperation movement of 1920–22.\n\n## Non-cooperation\n\nNon-cooperation movement (1919–1922), during the Indian independence movement, led by Mahatma Gandhi against British rule",
+      "reading_minutes": 2,
+      "image_ids": [
+        "indian-independence.i06",
+        "indian-independence.i07"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "indian-independence.s06",
+        "indian-independence.s07"
+      ]
+    },
+    {
+      "id": "indian-independence.l07",
+      "title_id": "indian-independence",
+      "index": 7,
+      "heading": "The Salt March",
+      "body": "The Salt March, also known as the Salt Satyagraha, Dandi March, and the Dandi Satyagraha, was an act of nonviolent civil disobedience in colonial India, led by Mahatma Gandhi. The 24 day march (padayatra) lasted from 12 March 1930 to 6 April 1930 as a direct action campaign of tax resistance and nonviolent protest against the British salt monopoly. Another reason for this march was that the Civil Disobedience Movement needed a strong inauguration that would inspire more people to follow Gandhi's example. Gandhi started this march with 78 of his trusted volunteers. The march spanned 387 kilometres (240 mi), from Sabarmati Ashram to Dandi, which was called Navsari at that time (now in the state of Gujarat). Growing numbers of Indians joined them along the way. When Gandhi broke the British Raj salt laws at 8:30 am on 6 April 1930, it sparked large-scale acts of civil disobedience against the salt laws by millions of Indians.\n\nAfter making the salt by evaporation at Dandi, Gandhi continued southward along the coast, making salt and addressing meetings on the way. The Congress Party planned to stage a satyagraha at the Dharasana Salt Works, 40 km (25 mi) south of Dandi. However, Gandhi was arrested on the midnight of 4–5 May 1930, just days before the planned action at Dharasana. The Dandi March and the ensuing Dharasana Satyagraha drew worldwide attention to the Indian independence movement through extensive newspaper and newsreel coverage. The satyagraha against the salt tax continued for almost a year, ending with Gandhi's release from jail and negotiations with Viceroy Lord Irwin at the Second Round Table Conference. Although over 60,000 Indians were jailed as a result of the Salt Satyagraha, the British did not make immediate major concessions.\n\nThe Salt Satyagraha campaign was based upon Gandhi's principles of non-violent protest called satyagraha, which he loosely translated as \"truth-force\". Literally, it is derived from the Sanskrit words satya, \"truth\", and agraha, \"insistence\". In early 1920 the Indian National Congress chose satyagraha as their main tactic for winning Indian sovereignty and self-rule from British rule and appointed Gandhi to organise the campaign. Gandhi chose the 1882 British Salt Act as the first target of satyagraha. The Salt March to Dandi, and the beating by the colonial police of hundreds of nonviolent protesters in Dharasana, which received worldwide news coverage, demonstrated the effective use of civil disobedience as a technique for fighting against social and political injustice. The satyagraha teachings of Gandhi and the March to Dandi had a significant influence on American activists Martin Luther King Jr., James Bevel, and others during the Civil Rights Movement for civil rights for African Americans and other minority groups in the 1960s. The march was the most significant organised challenge to British authority since the non-cooperation movement of 1920–22, and directly followed the Purna Swaraj declaration of sovereignty and self-rule by the Indian National Congress on 26 January 1930 by celebrating Independence Day. It gained worldwide attention which gave impetus to the Indian independence movement and started the nationwide Civil Disobedience Movement which continued until 1934 in Gujarat.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "indian-independence.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "indian-independence.s08"
+      ]
+    },
+    {
+      "id": "indian-independence.l08",
+      "title_id": "indian-independence",
+      "index": 8,
+      "heading": "Quit India",
+      "body": "The Quit India Movement was a political campaign launched at the Bombay session of the All India Congress Committee by Mahatma Gandhi on 8 August 1942, during World War II, demanding an end to British rule in India. After Britain failed to secure Indian support for the British war effort with the Cripps Mission, Gandhi made a call to Do or Die in his Quit India speech delivered in Bombay on 8 August 1942 at the Gowalia Tank Maidan. Viceroy Linlithgow described the movement as \"by far the most serious rebellion since 1857\".\n\nThe All India Congress Committee launched a mass protest demanding what Gandhi called \"An Orderly British Withdrawal\" from India. Even though it was at war, Britain was prepared to act. Almost the entire leadership of the Indian National Congress was imprisoned without trial within hours of Gandhi's speech. Most spent the rest of the war in prison and out of contact with the masses. The British had the support of the Viceroy's Council, of the All India Muslim League, the Hindu Mahasabha, the princely states, the Indian Imperial Police, the British Indian Army, and the Indian Civil Service. Many Indian businessmen profiting from heavy wartime spending did not support the Quit India Movement. The major outside support came from the Americans, as President Franklin D. Roosevelt pressured Prime Minister Winston Churchill to give in to some of the Indian demands.\n\nThe movement included anti-British boycotts and rejection of transactions involving the colonial government. Various violent incidents took place around the country against British rule, and the colonial government arrested tens of thousands of leaders, keeping them imprisoned until 1945. Ultimately, the British realised that India was ungovernable in the long run, and the issue for the postwar era became how to exit gracefully and peacefully. The movement ended in 1945 with the release of all jailed nationalists. Prominent independence activists who died during the movement include Mukunda Kakati, Matangini Hazra, Kanaklata Barua, Kushal Konwar, Bhogeswari Phukanani and others. In 1992, the Reserve Bank of India issued a 1 rupee commemorative coin to mark the Golden Jubilee of the Quit India Movement.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "indian-independence.i09"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "indian-independence.s09"
+      ]
+    },
+    {
+      "id": "indian-independence.l09",
+      "title_id": "indian-independence",
+      "index": 9,
+      "heading": "The Indian National Army",
+      "body": "The Indian National Army (INA, sometimes Second INA; Azad Hind Fauj; lit. 'Free Indian Army') was a Japanese-allied and -supported armed force constituted in Southeast Asia during World War II and led by Indian anti-colonial nationalist Subhas Chandra Bose. It consisted primarily of British Indian Army POWs taken by Japan. Indian civilians in the region were also enlisted, with around 18,000 joining. The INA aimed to liberate India from British rule. After winning Japanese assent for its goal, the INA furnished support to the Japanese Army. The Japanese and INA forces invaded India from Rangoon in 1944, and Bose's nominal Provisional Government of Azad Hind declared war on Britain. Losses inflicted by the British in the Battle of Imphal in Manipur caused the invasion to be halted. A long and exhausting withdrawal, accompanied by a lack of supplies, malnutrition, and death, ensued, some victorious soldiers in the Indian Army not taking INA battlefield surrender kindly. The remaining INA was driven down the Malay Peninsula and surrendered to Allied forces in August 1945.\n\nMajor Iwaichi Fujiwara and Captain Mohan Singh had founded an earlier incarnation of the INA in 1942. However, Mohan Singh refused to align with the Japanese, leading to his arrest and the First INA's disbandment. After Subhas Chandra Bose arrived in Southeast Asia from Nazi Germany in May 1943, he refounded the INA with significant recruitment from Indian civilian communities in Malaya and Singapore.\n\nSubhas Bose had both drive and charisma—promoting Indian slogans, such as \"Jai Hind,\" which became highly popular—and the INA under Bose was a model of diversity by region, ethnicity, religion, and gender. Bose's impassioned speeches may have been a factor in the POWs and civilians joining the INA. Bitterness at their discriminatory treatment by the British, and a sense of abandonment by the British after the Fall of Singapore may have been factors. The thousands of Indian POWs and civilians who did not join being shipped to distant Japanese labour camps may have been another factor. Around 12,000 POWs and 100,000 Indian civilians were used as forced labourers by the Japanese. The INA followed Japanese military strategy but had its own military law and police. Although the INA has been described as a collaborationist force, its battlefield performance was poor, and its formation did not constitute a legitimate mutiny. The INA did not oppose Japanese Fascism, nor protest Japanese war crimes, such as sexual slavery, that occurred amongst its midst.\n\nAfter the INA's initial formation in 1942, there was concern in the British Indian Army that further Indian troops would defect. This led to a reporting ban and a propaganda campaign called \"Jiffs\" to preserve the loyalty of the Sepoy. The British Raj, never seriously threatened by the INA, charged 300 INA officers with treason in the INA trials, but eventually backtracked in the face of opposition by the Indian National Congress. These trials became a galvanising point in the Indian Independence movement for the Congress. A number of people associated with the INA during the war later went on to hold important roles in public life in India as well as in other countries in Southeast Asia, most notably Lakshmi Sehgal in India, and John Thivy and Janaki Athinahappan in Malaya.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "indian-independence.i10"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "indian-independence.s10"
+      ]
+    },
+    {
+      "id": "indian-independence.l10",
+      "title_id": "indian-independence",
+      "index": 10,
+      "heading": "Partition",
+      "body": "The partition of India in 1947 was the division of British India into two independent dominion states, the Union of India and Dominion of Pakistan. The Union of India is today the Republic of India, and the Dominion of Pakistan is the Islamic Republic of Pakistan and the People's Republic of Bangladesh. The partition involved the division of two provinces, Bengal and the Punjab, based on district-wide non-Muslim (mostly Hindu and Sikh) or Muslim majorities. It also involved the division of the British Indian Army, the Royal Indian Navy, the Indian Civil Service, the railways, and the central treasury, between the two new dominions. The partition was set forth in the Indian Independence Act 1947 and resulted in the end of the British Raj, or Crown rule in India. The two self-governing countries of India and Pakistan legally came into existence at midnight on 14–15 August 1947.\n\nWith the partition of British India and withdrawal of the British from the Indian subcontinent, the Indian Independence Act provided that the princely states were released from their subsidiary alliances and other obligations to the British, while the British withdrew from their obligations to the states, leaving the rulers to decide whether to accede to India or Pakistan or to remain independent outside both. Sardar Patel said in a speech in January 1948, \"On the lapse of Paramountcy, every Indian State became a separate independent entity.\" The political integration of the princely states into the two new dominions was begun by many accessions in August 1947, but mostly it followed on later. Critically, the rulers of the states of Hyderabad, Jammu and Kashmir, and others, chose independence.\n\nThe partition displaced between 12 and 20 million people along religious lines, creating overwhelming refugee crises associated with the mass migration and population transfer that occurred across the newly constituted dominions; there was large-scale violence, with disputed estimates of the loss of life before, at the time of, or following the partition. As of 2009, the estimates still varied between two hundred thousand and two million. The violent nature of the partition created an atmosphere of hostility and suspicion between India and Pakistan that plagues Indo-Pakistani relations to the present.\n\nThe term partition of India does not cover the earlier separations of Burma (now Myanmar) and Ceylon (now Sri Lanka) from the administration of British India. It does not cover the incorporation of the enclaves of French India into India during the period 1947–1954, or the annexation of Goa and other districts of Portuguese India by India in 1961. Other contemporaneous political entities in the region in 1947, such as Sikkim, Bhutan, Nepal, and the Maldives, were unaffected by the partition.\n\nThe secession of Bangladesh from Pakistan in 1971 was a later partition of Pakistan, and not of India.\n\n## Independence\n\nThe Indian Independence Act 1947 (10 & 11 Geo. 6. c. 30) is an act of the Parliament of the United Kingdom that partitioned British India into the two new independent dominions of India and Pakistan. On 15 July 1947 the House of Commons voted for the bill and the House of Lords gave its consent on the next day. The act received Royal Assent on 18 July 1947 and thus India and Pakistan (the later including modern-day Bangladesh) came into being on 15 August.\n\nThe legislature representatives of the Indian National Congress, the Muslim League, and the Sikh community came to an agreement with Lord Mountbatten, then Viceroy and Governor-General of India, on what has come to be known as the 3 June Plan or Mountbatten Plan.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "indian-independence.i11"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "indian-independence.s11",
+        "indian-independence.s12"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "indian-independence.i01",
+      "title_id": "indian-independence",
+      "url": "http://10.0.2.2:8000/media/indian-independence/i01-c64816c200.jpg",
+      "width": 1600,
+      "height": 1380,
+      "alt": "The interior of the Secundra Bagh, several months after its storming during the second relief of Lucknow. Albumen silver print by Felice Beato, 1858",
+      "kind": "art",
+      "author": "Felice Beato",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:The_Indian_Mutiny_1857-1859_Q69824.jpg",
+      "credit_line": "Felice Beato · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "indian-independence.i02",
+      "title_id": "indian-independence",
+      "url": "http://10.0.2.2:8000/media/indian-independence/i02-9e96cd9ad2.jpg",
+      "width": 1600,
+      "height": 1345,
+      "alt": "Map, \"North India: The Mutiny 1857-9\" from \"The Cambridge Modern History Atlas\". Cambridge University Press; London. 1912. Editors were Sir Adolphus William Ward (†1924), G.W.",
+      "kind": "map",
+      "author": "Unknown authorUnknown author Cambridge University Press; Stanford's Geogl. Estabt..",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Indian_Rebellion_of_1857.jpg",
+      "credit_line": "Unknown authorUnknown author Cambridge University Press; Stanford's Geogl. Estabt.. · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "indian-independence.i03",
+      "title_id": "indian-independence",
+      "url": "http://10.0.2.2:8000/media/indian-independence/i03-7002754df3.png",
+      "width": 1600,
+      "height": 1422,
+      "alt": "Election Symbol of Indian National Congress",
+      "kind": "other",
+      "author": "Furfur",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Hand_INC.svg",
+      "credit_line": "Furfur · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "indian-independence.i04",
+      "title_id": "indian-independence",
+      "url": "http://10.0.2.2:8000/media/indian-independence/i04-98adea3fb8.jpg",
+      "width": 1600,
+      "height": 1255,
+      "alt": "Map showing the modern day nation of Bangladesh and Indian states of Bihar, Jharkhand, Orissa, Assam, Meghalaya, Arunachal Pradesh and parts of Nagaland and Manipur within the Bengal Presidency…",
+      "kind": "map",
+      "author": "W. H. Allen and Co.",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Pope1880BengalPres2.jpg",
+      "credit_line": "W. H. Allen and Co. · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "indian-independence.i05",
+      "title_id": "indian-independence",
+      "url": "http://10.0.2.2:8000/media/indian-independence/i05-19bdc75853.jpg",
+      "width": 1600,
+      "height": 1409,
+      "alt": "Popular 1930s poster depicting Gandhi using a charkha to spin cotton and weave cloth, captioned \"Concentrate on Charkha and Swadeshi\"",
+      "kind": "other",
+      "author": "Unknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Concentrate_on_Charkha_and_Swadeshi_bazaar_art.jpg",
+      "credit_line": "Unknown author · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "indian-independence.i06",
+      "title_id": "indian-independence",
+      "url": "http://10.0.2.2:8000/media/indian-independence/i06-f1c1a3ace0.jpg",
+      "width": 1600,
+      "height": 2133,
+      "alt": "Martyrs' memorial in Jallianwala Bagh",
+      "kind": "other",
+      "author": "Sukanta Pal",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Jallianwala_Bagh_in_Day_light.JPG",
+      "credit_line": "Sukanta Pal · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "indian-independence.i07",
+      "title_id": "indian-independence",
+      "url": "http://10.0.2.2:8000/media/indian-independence/i07-72b703344d.png",
+      "width": 1600,
+      "height": 1775,
+      "alt": "Location of Amritsar in Punjab",
+      "kind": "map",
+      "author": "NordNordWest",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:India_Punjab_location_map.svg",
+      "credit_line": "NordNordWest · CC BY-SA 3.0 DE · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "indian-independence.i08",
+      "title_id": "indian-independence",
+      "url": "http://10.0.2.2:8000/media/indian-independence/i08-65d70cff7e.jpg",
+      "width": 1600,
+      "height": 1075,
+      "alt": "Gandhi leading the famous 1930 Salt March, a notable example of satyagraha.",
+      "kind": "other",
+      "author": "Yann (talk)",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Marche_sel.jpg",
+      "credit_line": "Yann (talk) · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "indian-independence.i09",
+      "title_id": "indian-independence",
+      "url": "http://10.0.2.2:8000/media/indian-independence/i09-92dd0ef8fd.png",
+      "width": 1600,
+      "height": 1598,
+      "alt": "First: Gandhi discusses the movement with Nehru Second: Procession at Bangalore by Indian National Congress Third: Another Procession at Bangalore by Indian National Congress.",
+      "kind": "other",
+      "author": "Unknown author",
+      "license": "CC0",
+      "license_version": null,
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Quit_india_Movement_Collage.png",
+      "credit_line": "Unknown author · CC0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "indian-independence.i10",
+      "title_id": "indian-independence",
+      "url": "http://10.0.2.2:8000/media/indian-independence/i10-4aa028f282.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "The INA Martyrs' Memorial Complex in Moirang, Manipur, where in April 1944 the Second Indian National Army opened its first headquarters on Indian soil.",
+      "kind": "other",
+      "author": "PP Yoonus",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:INA_Memorial,_Moirang,_Manipur_(16).jpeg",
+      "credit_line": "PP Yoonus · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "indian-independence.i11",
+      "title_id": "indian-independence",
+      "url": "http://10.0.2.2:8000/media/indian-independence/i11-ce96a3f9d6.jpg",
+      "width": 1600,
+      "height": 1294,
+      "alt": "The prevailing religions of the British Indian Empire based on the Census of India, 1901",
+      "kind": "map",
+      "author": "John George Bartholomew",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Brit_IndianEmpireReligions3.jpg",
+      "credit_line": "John George Bartholomew · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "indian-independence.s01",
+      "title": "Indian independence movement (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Indian_independence_movement",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "indian-independence.s02",
+      "title": "Indian Rebellion of 1857 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Indian_Rebellion_of_1857",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "indian-independence.s03",
+      "title": "Indian National Congress (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Indian_National_Congress",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "indian-independence.s04",
+      "title": "Partition of Bengal (1905) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Partition_of_Bengal_(1905)",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "indian-independence.s05",
+      "title": "Swadeshi movement (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Swadeshi_movement",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "indian-independence.s06",
+      "title": "Jallianwala Bagh massacre (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jallianwala_Bagh_massacre",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "indian-independence.s07",
+      "title": "Non-cooperation movement (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Non-cooperation_movement",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "indian-independence.s08",
+      "title": "Salt March (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Salt_March",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "indian-independence.s09",
+      "title": "Quit India Movement (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Quit_India_Movement",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "indian-independence.s10",
+      "title": "Indian National Army (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Indian_National_Army",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "indian-independence.s11",
+      "title": "Partition of India (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Partition_of_India",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "indian-independence.s12",
+      "title": "Indian Independence Act 1947 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Indian_Independence_Act_1947",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}

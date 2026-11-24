@@ -1,0 +1,734 @@
+{
+  "id": "ww2",
+  "kind": "topic",
+  "name": "WW2",
+  "subtitle": "1939 to 1945",
+  "poster_lines": [
+    "WORLD",
+    "WAR II"
+  ],
+  "group": "wars-space",
+  "era": "modern",
+  "region": "global",
+  "period_start": 1939,
+  "period_end": 1945,
+  "themes": [
+    "war",
+    "politics",
+    "science-tech",
+    "leadership"
+  ],
+  "bg": "#1B261F",
+  "tint": "#B8C25A",
+  "lettering": "stencil",
+  "poster_image_id": null,
+  "hero_image_id": "ww2.i01",
+  "brief": "Six years, dozens of countries, and a changed world.",
+  "linked_title_ids": [
+    "ww1",
+    "cold-war"
+  ],
+  "rank": 23,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "ww2.l01",
+      "title_id": "ww2",
+      "index": 1,
+      "heading": "The world at war",
+      "body": "World War II, or the Second World War (1 September 1939 – 2 September 1945), was a global conflict between two coalitions: the Allies and the Axis powers. Nearly all of the world's countries were involved, with many engaging in total war on an unprecedented scale. World War II was the deadliest conflict in history, causing the deaths of 60 to 75 million people, a majority of whom were civilians. Millions died as a result of massacres, starvation, disease and genocides. After the Allied victory, Germany, Austria, Japan and Korea were occupied, and German and Japanese leaders were tried for war crimes.\n\n![](ww2.i03)\n\nThe causes of World War II included unresolved tensions in the aftermath of World War I and the rise of fascism in Europe and militarism in Japan. Key events preceding the war included Japan's invasion of Manchuria in 1931, the Spanish Civil War, the outbreak of the Second Sino-Japanese War in 1937, and Germany's annexations of Austria and the Sudetenland.\n\n![](ww2.i04)\n\nWorld War II began on 1 September 1939, when Nazi Germany, under Adolf Hitler, invaded Poland, after which the United Kingdom and France declared war on Germany. Poland was also invaded by the Soviet Union in mid-September, and was partitioned between the two states under the Molotov–Ribbentrop Pact. In 1940, the Soviet Union annexed the Baltic states and parts of Finland and Romania, while Germany conquered Norway, Denmark, Belgium, Luxembourg and the Netherlands. After the fall of France in June 1940, the war continued to be fought primarily by Germany, now assisted by Fascist Italy, against the British Empire and British Commonwealth, with fighting in the Balkans, Mediterranean, Middle East, East Africa, the aerial Battle of Britain, the Blitz and the naval Battle of the Atlantic. By mid-1941, Yugoslavia and Greece had also been defeated by Axis countries. In June 1941, Germany invaded the Soviet Union, opening the Eastern Front.\n\nIn December 1941, Japan attacked American and British territories in Asia and the Pacific, including Pearl Harbor in Hawaii, leading the United States to enter the war against the Axis. Japan conquered much of coastal China and Southeast Asia, but its advances in the Pacific were halted in June 1942 at the Battle of Midway. In early 1943, Axis forces were defeated in North Africa and at Stalingrad in the Soviet Union. An Allied invasion of Italy in July resulted in the fall of its fascist regime and Allied offensives in the Pacific and the Soviet Union forced the Axis to retreat on all fronts. In 1944, the Western Allies invaded France at Normandy, opening a new front, and the Soviet Union advanced into Central Europe. Japan also suffered major setbacks, including the crippling of its navy by the United States, the loss of key Western Pacific islands and defeats in Burma. The war in Europe concluded with the liberation of German-occupied territories and an invasion of Germany itself, which culminated in the fall of Berlin and Germany's unconditional surrender on 8 May 1945. On 6 and 9 August, the US dropped atomic bombs on Hiroshima and Nagasaki, followed by a Soviet invasion of Japanese-occupied Manchuria. Japan announced its unconditional surrender on 15 August and signed a surrender document on 2 September 1945.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ww2.i02",
+        "ww2.i03",
+        "ww2.i04"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww2.s01"
+      ]
+    },
+    {
+      "id": "ww2.l02",
+      "title_id": "ww2",
+      "index": 2,
+      "heading": "How it began",
+      "body": "The causes of World War II have been given considerable attention by historians. The immediate precipitating event was the invasion of Poland by Nazi Germany on September 1, 1939, the subsequent declarations of war on Germany made by Britain and France. The secret protocol of the Molotov-Ribbentrop Pact of August 1939 helped make the invasion of Poland possible by establishing German and Soviet spheres of influence in Eastern Europe and providing for the division of Poland; the Soviet Union invaded eastern Poland on September 17. Many other prior events have been suggested as ultimate causes. Primary themes in historical analysis of the war's origins include the political takeover of Germany in 1933 by Adolf Hitler and the Nazi Party; Japanese militarism against China, which led to the Japanese invasion of Manchuria and the Second Sino-Japanese War; Italian aggression against Ethiopia, which led to the Second Italo-Ethiopian War; or military uprising in Spain, which led to the Spanish Civil War.\n\nDuring the interwar period, deep anger arose in the Weimar Republic over the conditions of the 1919 Treaty of Versailles, which punished Germany for its role in World War I with heavy financial reparations and severe limitations on its military that were intended to prevent it from becoming a military power again. The demilitarisation of the Rhineland, the prohibition of German unification with Austria, and the loss of its overseas colonies and some 12% of its pre-war land area and population all provoked strong currents of revanchism in German politics.\n\n![](ww2.i06)\n\nDuring the worldwide economic crisis of the Great Depression in the 1930s, many people lost faith in liberal democracy and countries across the world turned to authoritarian regimes. In Germany, resentment over the terms of the Treaty of Versailles was intensified by the instability of the German political system, which splintered into a large number of parties and made it increasingly difficult to form lasting governing coalitions. The most successful political aspirant to emerge from the situation was Adolf Hitler, the leader of the Nazi Party. The Nazis took totalitarian power in Germany from 1933 and demanded the undoing of the Versailles provisions. Their ambitious and aggressive domestic and foreign policies reflected their ideologies of antisemitism, unification of all Germans, the acquisition of \"living space\" (Lebensraum) for agrarian settlers, the elimination of Bolshevism and the hegemony of an \"Aryan\"/\"Nordic\" master race over \"subhumans\" (Untermenschen) such as Jews and Slavs. Other factors leading to the war included the aggression by Fascist Italy against Ethiopia, militarism in Imperial Japan against China, and Nationalists fighting against Republicans for control of Spain.\n\nAt first, the aggressive moves met with only feeble and ineffectual policies of appeasement from the other major world powers. The League of Nations proved helpless, especially regarding China and Ethiopia. A decisive proximate event was the 1938 Munich Conference, which formally approved Germany's annexation of the Sudetenland from Czechoslovakia. Hitler promised it was his last territorial claim, nevertheless in early 1939, he became even more aggressive, and European governments finally realized that appeasement would not guarantee peace but by then it was too late.\n\nBritain and France rejected diplomatic efforts to form a military alliance with the Soviet Union, and Hitler instead offered Stalin a better deal in the Molotov–Ribbentrop Pact of August 1939. An alliance formed by Germany, Italy, and Japan from the Tripartite Pact signed in 1940 led to the establishment of the Axis powers.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ww2.i05",
+        "ww2.i06"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww2.s02"
+      ]
+    },
+    {
+      "id": "ww2.l03",
+      "title_id": "ww2",
+      "index": 3,
+      "heading": "The invasion of Poland",
+      "body": "The invasion of Poland, also known as the September Campaign, Polish Campaign, and Polish Defensive War of 1939 (1 September – 6 October 1939), was a joint attack on the Republic of Poland by Nazi Germany, the Slovak Republic, and the Soviet Union, which marked the beginning of World War II. The invasion began on 1 September 1939 when Germany marched into Poland, preceded by the Danzig crisis and by the Molotov–Ribbentrop Pact between Germany and the Soviet Union, which was signed one week before and approved by the Supreme Soviet of the Soviet Union one day before the invasion. On 17 September the Soviet Union invaded as well, acting on a secret protocol of the pact, which assigned parts of Poland to them. The campaign ended on 6 October with Germany and the Soviet Union dividing the whole of Poland under the terms of the German–Soviet Frontier Treaty.\n\nThe aim of the invasion was to disestablish Poland as a sovereign country, with its citizens destined for extermination. German and Slovak forces invaded Poland from the north, south, and west the morning after the Gleiwitz incident. As the Wehrmacht advanced, Polish forces withdrew from their forward bases of operation close to the Germany–Poland border to more established defense lines to the east. After the mid-September Polish defeat in the Battle of the Bzura, the Germans gained an undisputed advantage. Polish forces then withdrew to the southeast where they prepared for a long defence of the Romanian Bridgehead and awaited expected support and relief from France and the United Kingdom. On 3 September, based on their alliance agreements with Poland, the United Kingdom and France declared war on Germany; in the end their aid to Poland was very limited. France invaded a small part of Germany in the Saar Offensive, and the Polish army was effectively defeated even before the British Expeditionary Force could be transported to continental Europe.\n\nOn 17 September, the Soviet Red Army invaded Eastern Poland, the territory beyond the Curzon Line that fell into the Soviet \"sphere of influence\" according to the secret protocol of the Molotov–Ribbentrop Pact; this rendered the Polish plan of defence obsolete. Facing a second front, the Polish government concluded the defence of the Romanian Bridgehead was no longer feasible and ordered an emergency evacuation of all troops to neutral Romania. On 6 October, following the Polish defeat at the Battle of Kock, German and Soviet forces gained full control over Poland. The success of the invasion marked the end of the Second Polish Republic, though Poland never formally surrendered.\n\nOn 8 October, after an initial period of military administration, Germany directly annexed western Poland and the former Free City of Danzig and placed the remaining block of territory under the administration of the newly established General Government. The Soviet Union incorporated its newly acquired areas into its constituent Byelorussian and Ukrainian republics, and immediately started a campaign of Sovietization. In the aftermath of the invasion, a collective of underground resistance organizations formed the Polish Underground State within the territory of the former Polish state. Many of the military exiles who escaped Poland joined the Polish Armed Forces in the West, an armed force loyal to the Polish government-in-exile.",
+      "reading_minutes": 3,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww2.s03"
+      ]
+    },
+    {
+      "id": "ww2.l04",
+      "title_id": "ww2",
+      "index": 4,
+      "heading": "The Battle of Britain",
+      "body": "The Battle of Britain was a military campaign of the Second World War, in which the Royal Air Force (RAF) and the Fleet Air Arm (FAA) of the Royal Navy defended the United Kingdom against large-scale attacks by Nazi Germany's air force, the Luftwaffe. It was the first major military campaign fought entirely by air forces. It takes its name from the speech given by Prime Minister Winston Churchill to the House of Commons on 18 June 1940: \"What General Weygand called the 'Battle of France' is over. I expect that the Battle of Britain is about to begin.\"\n\n![](ww2.i08)\n\nThe Germans had rapidly overwhelmed France and the Low Countries in the Battle of France, leaving Britain to face the threat of invasion by sea. The German high command recognised the difficulties of a seaborne attack while the Royal Navy controlled the English Channel and the North Sea. The primary objective of the German forces was to compel Britain to agree to a negotiated peace settlement.\n\nThe British officially recognise the battle's duration as being from 10 July until 31 October 1940, which overlaps the period of large-scale night attacks known as the Blitz, that lasted from 7 September 1940 to 11 May 1941. German historians do not follow this subdivision and regard the battle as a single campaign lasting from July 1940 to May 1941, including the Blitz.\n\n![](ww2.i09)\n\nIn July 1940, the air and sea blockade began, with the Luftwaffe mainly targeting coastal-shipping convoys, as well as ports and shipping centres such as Portsmouth. On 16 July, Hitler ordered the preparation of Operation Sea Lion as a potential amphibious and airborne assault on Britain, to follow once the Luftwaffe had air superiority over the Channel. On 1 August, the Luftwaffe was directed to achieve air superiority over the RAF, with the aim of incapacitating RAF Fighter Command; 12 days later, it shifted the attacks to RAF airfields and infrastructure. As the battle progressed, the Luftwaffe also targeted factories involved in aircraft production and strategic infrastructure. Eventually, it employed terror bombing on areas of political significance and on civilians. In September, RAF Bomber Command night raids disrupted the German preparation of converted barges, and the Luftwaffe's failure to overwhelm the RAF forced Hitler to postpone and eventually cancel Operation Sea Lion. The Luftwaffe proved unable to sustain daylight raids, but their continued night-bombing operations on Britain became known as the Blitz.\n\nGermany's failure to destroy Britain's air defences and force it out of the conflict was the first major German defeat in the Second World War.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ww2.i07",
+        "ww2.i08",
+        "ww2.i09"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww2.s04"
+      ]
+    },
+    {
+      "id": "ww2.l05",
+      "title_id": "ww2",
+      "index": 5,
+      "heading": "Operation Barbarossa",
+      "body": "Operation Barbarossa was the invasion of the Soviet Union by Nazi Germany and several of its European Axis allies starting on Sunday, 22 June 1941, during World War II. More than 3.8 million Axis troops invaded the western Soviet Union along a 2,900-kilometer (1,800 mi) front, with the main goal of capturing territory up to a line between Arkhangelsk and Astrakhan, known as the A–A line. The attack became the largest and costliest military offensive in human history, with around 10 million combatants taking part in the opening phase and over 8 million casualties by the end of the operation on 5 December 1941. It marked a major escalation of World War II, opened the Eastern Front—the largest and deadliest land war in history—and brought the Soviet Union into the Allied powers.\n\nThe operation, code-named after the Holy Roman Emperor Frederick Barbarossa (\"red beard\"), put into action Nazi Germany's ideological goals of eradicating communism and conquering the western Soviet Union to repopulate it with Germans under Generalplan Ost, which planned for the removal of the native Slavic peoples by mass deportation to Siberia, Germanisation, enslavement, and genocide. The material targets of the invasion were the agricultural and mineral resources of territories such as Ukraine and Byelorussia and oil fields in the Caucasus. The Axis eventually captured five million Soviet Red Army troops on the Eastern Front and deliberately starved to death or otherwise killed 3.3 million prisoners of war, as well as millions of civilians. Mass shootings and gassing operations, carried out by German paramilitary death squads and collaborators, murdered over a million Soviet Jews as part of the Holocaust.\n\nIn the two years leading up to the invasion, Nazi Germany and the Soviet Union signed political and economic pacts for strategic purposes. Following the Soviet occupation of Bessarabia and Northern Bukovina in July 1940, the German High Command began planning an invasion of the country, which was approved by Adolf Hitler in December. In early 1941, Soviet leader Joseph Stalin, despite receiving intelligence about an imminent attack, did not order a mobilization of the Red Army, fearing that it might provoke Germany. As a result, Soviet forces were largely caught unprepared when the invasion began, with many units positioned poorly and understrength.\n\nThe invasion began on 22 June 1941 with a massive ground and air assault. The main part of Army Group South invaded from occupied Poland on 22 June, and on 2 July was joined by a combination of German and Romanian forces attacking from Romania. Kiev was captured on 19 September, which was followed by the captures of Kharkov on 24 October and Rostov-on-Don on 20 November, by which time most of Crimea had been captured and Sevastopol put under siege. Army Group North overran the Baltic lands, and on 8 September 1941 began a siege of Leningrad with Finnish forces that ultimately lasted until 1944. Army Group Centre, the strongest of the three groups, captured Smolensk in late July 1941 before beginning a drive on Moscow on 2 October. Facing logistical problems with supply, slowed by muddy terrain, not fully outfitted for Russia's brutal winter, and coping with determined Soviet resistance, Army Group Centre's offensive stalled at the city's outskirts by 5 December, at which point the Soviets began a major counteroffensive.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ww2.i10"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww2.s05"
+      ]
+    },
+    {
+      "id": "ww2.l06",
+      "title_id": "ww2",
+      "index": 6,
+      "heading": "Pearl Harbor",
+      "body": "On December 7, 1941, the Empire of Japan launched a surprise military attack on the US Pacific Fleet at its naval base at Pearl Harbor in Oahu, Hawaii. At the time, the US was a neutral country in World War II. The air raid on Pearl Harbor, which was launched from aircraft carriers, prompted the US to declare war on Japan the next day. The Japanese military leadership referred to the attack as the Hawaii Operation and Operation AI, and as Operation Z during its planning.\n\n![](ww2.i12)\n\nThe attack on Pearl Harbor was preceded by months of negotiations between the US and Japan over the future of the Pacific. Japanese demands included that the US end its sanctions against Japan, cease aiding China in the Second Sino-Japanese War, and allow Japan access to the resources of the Dutch East Indies. Japan dispatched its naval attack group on November 26, 1941, just before receiving the Hull note, which stated the US desire that Japan withdraw from China and French Indochina. Isoroku Yamamoto, commander of the Japanese Combined Fleet, planned the attack as a pre-emptive strike on the Pacific Fleet–which had been based at Pearl Harbor since 1940–in order to prevent it from interfering with Japan's planned actions in Southeast Asia. Yamamoto hoped that the strike would enable Japan to make rapid territorial gains and negotiate peace. In addition to Pearl Harbor, over seven hours Japan launched coordinated attacks on the US-held Philippines, Guam, and Wake Island, as well as on the British Empire in Malaya, Singapore, and Hong Kong.\n\n![](ww2.i13)\n\nThe attacking force, commanded by Chūichi Nagumo, launched its attack at 7:48 a.m. Hawaiian time (6:18 p.m. GMT) on December 7, 1941. The base was struck by 353 fighters, level and dive bombers, and torpedo bombers in two waves launched from six aircraft carriers. Of the eight US battleships present, all were damaged and four were sunk. All but the USS Arizona and the USS Utah were later refloated, and six were returned to service during the war. The Japanese also sank or damaged three cruisers, three destroyers, an anti-aircraft training ship, and a minelayer. More than 180 US aircraft were destroyed. A total of 2,403 Americans were killed and 1,178 others were wounded. Japanese losses totaled 29 aircraft, five midget submarines, and 130 personnel. The three US carriers assigned to Pearl Harbor were at sea at the time, and important base installations, including its oil storage and naval repair facilities, were not attacked.\n\nJapan declared war on the US and the British Empire later that day (December 8 in Tokyo), but the declarations were not delivered until the next day. On December 8, both the United Kingdom and the US declared war on Japan. On December 11, though they had no formal obligation to do so under the Tripartite Pact with Japan, Germany and Italy each declared war on the United States, which responded by declaring war on Germany and Italy. While there were historical precedents for the unannounced military action by Japan, the lack of a formal warning and perception that the attack had been unprovoked led US president Franklin D. Roosevelt to famously label December 7, 1941, \"a date which will live in infamy\". The attack remains the deadliest non-pathological disaster to ever happen in Hawaii, and for nearly 60 years, was the deadliest foreign attack on the US until the September 11 attacks in 2001.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ww2.i11",
+        "ww2.i12",
+        "ww2.i13"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww2.s06"
+      ]
+    },
+    {
+      "id": "ww2.l07",
+      "title_id": "ww2",
+      "index": 7,
+      "heading": "Stalingrad",
+      "body": "The Battle of Stalingrad was a major battle on the Eastern Front of World War II in which Nazi Germany and its Axis allies fought the Soviet Union for control of the city of Stalingrad (now Volgograd) in southern Russia. Marked by intense close-quarters combat and heavy civilian losses during aerial bombardment, the battle is considered the largest and deadliest urban battle in military history and the deadliest battle in World War II. By the end of the fighting, the German 6th Army had been destroyed, the 4th Panzer Army had suffered severe losses, and Army Group B was routed. The defeat ended Germany’s 1942 summer offensive and passed the strategic initiative on the Eastern Front to the Soviet Union. The Soviet victory at Stalingrad is generally regarded as the pivotal turning point of the European theatre of the war.\n\nBoth sides placed great strategic importance on the city of Stalingrad, as it was one of the largest industrial centres of the Soviet Union and an important transport hub on the Volga River. After more than a year of intense fighting along a vast front, Germany's fuel supplies had dwindled, creating a strategic need to advance into the Caucasus to capture the Soviet oil fields. Controlling Stalingrad would provide a supply route for this campaign while preventing Soviet shipments along the Volga. The city also held significant symbolic importance because it bore the name of Joseph Stalin, the Soviet supreme leader.\n\n![](ww2.i15)\n\nThe German military first clashed with the Red Army's Stalingrad Front on the distant approaches to the city on 17 July. On 23 August, the 6th Army and elements of the 4th Panzer Army launched their offensive with support from intensive bombing raids by the Luftwaffe, which reduced much of the city to rubble.\n\n![](ww2.i16)\n\nAs German forces advanced into the city, the battle degenerated into house-to-house fighting, which escalated drastically as both sides continued pouring in reinforcements. By mid-November, the Germans, at great cost, had pushed the Soviet defenders back into narrow zones along the Volga's west bank. However, winter set in and conditions became particularly brutal, with temperatures often dropping tens of degrees below freezing, and the fighting bogged down into brutal trench warfare.\n\nOn 19 November, the Red Army launched Operation Uranus, a two-pronged counterattack targeting the Romanian armies protecting the 6th Army's flanks. The Axis flanks were overrun and the 6th Army was encircled. Hitler, who exercised daily command from the Wolf's Lair, was determined to hold the city for Germany at all costs and forbade the 6th Army to try a breakout; instead, attempts were made to supply it by air and to break the encirclement from outside. The Soviets managed to prevent the Germans from making enough airdrops to their trapped armies, but heavy fighting continued for another two months. On 2 February 1943, the 6th Army, having exhausted its ammunition and food, finally capitulated, making it the first of Hitler's field armies to surrender.\n\nIn post-Soviet Russia, the legacy of the Red Army's victory at Stalingrad is commemorated among the Days of Military Honour of the Great Patriotic War. It is also well known in many other countries that belonged to the Allied powers, and has thus become ingrained in popular culture.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ww2.i14",
+        "ww2.i15",
+        "ww2.i16"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww2.s07"
+      ]
+    },
+    {
+      "id": "ww2.l08",
+      "title_id": "ww2",
+      "index": 8,
+      "heading": "Midway",
+      "body": "The Battle of Midway was a major naval battle in the Pacific Theater of World War II that took place on 4–7 June 1942, six months after Japan's attack on Pearl Harbor and one month after the Battle of the Coral Sea. The Japanese Combined Fleet under the command of Isoroku Yamamoto suffered a decisive defeat by two carrier strike groups of the U.S. Pacific Fleet near Midway Atoll, about 1,300 mi (1,100 nmi; 2,100 km) northwest of Oahu. Yamamoto had intended to capture Midway and lure out and destroy the U.S. Pacific Fleet, especially the aircraft carriers which had escaped damage at Pearl Harbor.\n\nBefore the battle, Japan desired to extend its Pacific defense perimeter, especially after the Doolittle air raid by US carrier based aircraft on Tokyo in April 1942, and to clear the seas for attacks on Midway, Fiji, Samoa, and Hawaii. A related Japanese attack on the Aleutian Islands began one day earlier, on 3 June. The Japanese strike force at Midway, known as the Kidō Butai, was commanded by Chuichi Nagumo. Yamamoto's plan for the operation, which depended on precise timing and coordination, was undermined by its wide dispersal of forces, which left the rest of the fleet unable to support the Kidō Butai effectively.\n\nOn 4 June, the Japanese began bombing Midway and prepared to wait for the Pacific Fleet to arrive from Pearl Harbor to defend the island. Unknown to Yamamoto, U.S. code breakers had determined the date and location of his planned attack, enabling the Americans to prepare their own ambush; Chester Nimitz, commander of the Pacific Fleet, had sent a large force under Frank Jack Fletcher to the Midway area before the Japanese had arrived. Land-based planes from Midway and carrier-based planes from the U.S. fleet surprised and attacked Nagumo's force at the precise time that his carriers were rearming and refueling: the carrier Akagi was immolated by a single direct hit which exploded among the armed and fueled aircraft. All four Japanese fleet carriers present at the battle—Akagi, Kaga, Sōryū, and Hiryū—were sunk, as was the heavy cruiser Mikuma. Japan also lost 3,000 men, including many well-trained and difficult-to-replace pilots. The U.S. lost the carrier Yorktown and the destroyer Hammann, while the carriers Enterprise and Hornet (under the command of Raymond Spruance during the battle) survived the fighting without damage.\n\nThe Battle of Midway, along with the Guadalcanal campaign, is widely considered a turning point in the Pacific War. After Midway and the attrition of the Solomon Islands campaign, Japan's ability to replace its losses in materiel and trained men rapidly became insufficient, while the Americans' massive industrial and training capabilities increased over time. Historian John Keegan called the battle \"the most stunning and decisive blow in the history of naval warfare\", while historian Craig Symonds called it \"one of the most consequential naval engagements in world history, ranking alongside Salamis, Trafalgar, and Tsushima Strait, as both tactically decisive and strategically influential.\"",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ww2.i17"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww2.s08"
+      ]
+    },
+    {
+      "id": "ww2.l09",
+      "title_id": "ww2",
+      "index": 9,
+      "heading": "The Holocaust",
+      "body": "The Holocaust, known in Hebrew as the Shoah, was the genocide of European Jews during World War II. From 1941 to 1945, Nazi Germany and its collaborators systematically murdered around six million Jews across German-occupied Europe, approximately two-thirds of Europe's Jewish population. The murders were committed primarily through mass shootings across Eastern Europe and poison gas chambers in extermination camps, chiefly Auschwitz-Birkenau, Treblinka, Belzec, Sobibor, Chełmno and Majdanek death camps in occupied Poland. Concurrent Nazi persecutions killed millions of other non-Jewish civilians and prisoners of war (POWs); the term Holocaust is sometimes used to include the murder and persecution of non-Jewish groups, such as the Romani and Soviet POWs.\n\nThe Nazis developed their ideology based on racism and pursuit of \"living space\", and seized power in early 1933. Meant to force all German Jews to emigrate, regardless of means, the regime passed anti-Jewish laws, encouraged violence, and orchestrated a nationwide pogrom known as Kristallnacht in November 1938. After Germany's invasion of Poland in September 1939, occupation authorities began to establish ghettos to segregate Jews. Following the June 1941 invasion of the Soviet Union, 1.5 to 2 million Jews were murdered by German forces and local collaborators. The Nazis first targeted Jewish Red Army POWs and male civilians, but quickly escalated to murdering Jewish women and children.\n\nBy early 1942, following the Wannsee Conference presided by Reinhard Heydrich, the Nazis' Final Solution was implemented to murder all Jews in Europe. Some historians note that Adolf Hitler frequently communicated major policy decisions verbally to Heinrich Himmler rather than through written directives. Victims were deported to extermination camps where those who had survived the trip were gassed, while others were sent to forced labor camps where many died from starvation, abuse, exhaustion, or being used as test subjects in experiments. Property belonging to murdered Jews was redistributed to the German occupiers and other non-Jews. The murder rate was most intense during Operation Reinhard from March 1942 to November 1943. Although the majority of Holocaust victims died in 1942, the mass murders continued until the end of the war in 1945.\n\nMany Jewish survivors emigrated from Europe after the war. Relatively few Holocaust perpetrators faced criminal trials. Billions of dollars in reparations have been paid, although falling short of the losses suffered by the European Jews. The Holocaust has also been commemorated in museums, memorials, and culture. It is considered to be the single deadliest genocide in human history, and has become central to Western historical consciousness as a symbol of the ultimate human evil.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ww2.i18"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww2.s09"
+      ]
+    },
+    {
+      "id": "ww2.l10",
+      "title_id": "ww2",
+      "index": 10,
+      "heading": "D-Day",
+      "body": "The Normandy landings were the landing operations and associated airborne operations on 6 June 1944 of the Allied invasion of Normandy in Operation Overlord during the Second World War. Codenamed Operation Neptune and often referred to as D-Day (after the military term), it is the largest seaborne invasion in history. The operation began the liberation of France and the rest of Western Europe, and laid the foundations for the Allied victory on the Western Front.\n\nPlanning for the operation began in 1943. In the months leading up to the invasion, the Allies conducted a substantial military deception, codenamed Operation Bodyguard, to mislead the Germans as to the date and location of the main Allied landings. The weather on the day selected for D-Day was not ideal, and the operation had to be delayed 24 hours; a further postponement would have meant a delay of at least two weeks, as the planners had requirements for the phase of the moon, the tides, and time of day that meant only a few days each month were deemed suitable. German leader Adolf Hitler placed Field Marshal Erwin Rommel in command of German forces and developing fortifications along the Atlantic Wall in anticipation of an invasion. US president Franklin D. Roosevelt placed Major General Dwight D. Eisenhower in command of Allied forces.\n\nThe invasion began shortly after midnight on the morning of 6 June with extensive aerial and naval bombardment as well as an airborne assault—the landing of 24,000 American, British, and Canadian airborne troops. The early morning aerial assault was soon followed by Allied amphibious landings on the coast of France c. 06:30. The target 80-kilometre (50 mi) stretch of the Normandy coast was divided into five sectors: Utah, Omaha, Gold, Juno, and Sword. Strong winds blew the landing craft east of their intended positions, particularly at Utah and Omaha.\n\nThe troops landed under heavy fire from gun emplacements overlooking the beaches, and the shore was mined and covered with obstacles such as wooden stakes, metal tripods, and barbed wire, making the work of the beach-clearing teams difficult and dangerous. The highest number of casualties was at Omaha, with its high cliffs. At Gold, Juno, and Sword, several fortified towns were cleared in house-to-house fighting, and two major gun emplacements at Gold were disabled using specialised tanks.\n\nThe Allies were able to establish beachheads at each of the five landing sites on the first day, but Carentan, Saint-Lô, and Bayeux remained in German hands. Caen, a major objective, was not captured until 21 July. Only two of the beaches (Juno and Gold) were linked on the first day, and all five beachheads were not connected until 12 June. German casualties on D-Day have been estimated at 4,000 to 9,000 men. Allied casualties were at least 10,000, with 4,414 confirmed dead.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ww2.i19"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww2.s10"
+      ]
+    },
+    {
+      "id": "ww2.l11",
+      "title_id": "ww2",
+      "index": 11,
+      "heading": "Hiroshima and Nagasaki",
+      "body": "On 6 and 9 August 1945, the United States detonated two atomic bombs over the Japanese cities of Hiroshima and Nagasaki, respectively, during the final days of World War II. The aerial bombings killed 150,000 to 246,000 people, most of whom were civilians, and remain the first and only uses of nuclear weapons in an armed conflict.\n\nIn the final year of World War II, the Allies prepared for a costly invasion of the Japanese mainland. This undertaking was preceded by a conventional bombing and firebombing campaign that devastated 64 Japanese cities, including an operation on Tokyo. The war in Europe concluded when Germany surrendered on 8 May 1945, and the Allies turned their full attention to the Pacific War. By July 1945, the Allies' Manhattan Project had produced two types of atomic bombs: \"Little Boy\", an enriched uranium gun-type fission weapon, and \"Fat Man\", a plutonium implosion-type nuclear weapon. The 509th Composite Group of the U.S. Army Air Forces was trained and equipped with the specialized Silverplate version of the Boeing B-29 Superfortress, and deployed to Tinian in the Mariana Islands. The Allies called for the unconditional surrender of the Imperial Japanese Armed Forces in the Potsdam Declaration on 26 July 1945, the alternative being \"prompt and utter destruction\". The Japanese government ignored the ultimatum. Japan announced its surrender to the Allies on 15 August, six days after the bombing of Nagasaki and the Soviet Union's declaration of war against Japan and invasion of Manchuria. The Japanese government signed an instrument of surrender on 2 September, ending the war.\n\nThe consent of the United Kingdom was obtained for the bombing, as was required by the Quebec Agreement, and orders were issued on 25 July by General Thomas T. Handy, the acting chief of staff of the U.S. Army, for atomic bombs to be used on Hiroshima, Kokura, Niigata, and Nagasaki. These targets were chosen because they were large urban areas that also held significant military facilities. On 6 August, a Little Boy was dropped on Hiroshima. Three days later, a Fat Man was dropped on Nagasaki. Over the next two to four months, the effects of the atomic bombings killed 90,000 to 166,000 people in Hiroshima and 60,000 to 80,000 people in Nagasaki; roughly half the deaths occurred on the first day. For months afterward, many people continued to die from the effects of burns, radiation sickness, and other injuries, compounded by illness and malnutrition. Despite Hiroshima's sizable military garrison, estimated at 24,000 troops, some 90% of the dead were civilians.\n\nScholars have extensively studied the effects of the bombings on the social and political character of subsequent world history and popular culture, and there is still much debate concerning the ethical and legal justification for the bombings as well as their ramifications of geopolitics especially with the context of the Cold War. Supporters argue that the atomic bombings were necessary to bring an end to the war with minimal casualties and ultimately prevented a greater loss of life on both sides, and also assert that the demonstration of atomic weaponry created the Long Peace in the interest of preventing a nuclear war. Conversely, critics argue that the bombings were unnecessary for the war's end and were a war crime, raising moral and ethical implications, and also assert that future use of atomic weaponry is more likely than anticipated and could lead to a nuclear holocaust.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ww2.i20"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww2.s11"
+      ]
+    },
+    {
+      "id": "ww2.l12",
+      "title_id": "ww2",
+      "index": 12,
+      "heading": "The war ends",
+      "body": "The surrender of the Empire of Japan in World War II was announced by Emperor Hirohito on 15 August and formally signed on 2 September 1945, ending the war. By the end of July 1945, the Imperial Japanese Navy (IJN) was incapable of conducting major operations and an Allied invasion of Japan was imminent. Together with the United Kingdom and China, the United States called for the unconditional surrender of Japan in the Potsdam Declaration on 26 July 1945—the alternative being \"prompt and utter destruction\".\n\nWhile publicly stating their intent to fight on to the bitter end, Japan's leaders (the Supreme Council for the Direction of the War, also known as the \"Big Six\") were privately making entreaties to the publicly neutral Soviet Union to mediate peace on terms more favorable to the Japanese. While maintaining a sufficient level of diplomatic engagement with the Japanese to give them the impression they might be willing to mediate, the Soviets were covertly preparing to attack Japanese forces in Manchuria and Korea (in addition to South Sakhalin and the Kuril Islands) in fulfillment of promises they had secretly made to the US and the UK at the Tehran and Yalta Conferences.\n\n![](ww2.i22)\n\nOn 6 August 1945, at 8:15 am local time, the United States detonated an atomic bomb over the Japanese city of Hiroshima. Sixteen hours later, American president Harry S. Truman called again for Japan's surrender, warning them to \"expect a rain of ruin from the air, the like of which has never been seen on this earth.\" Late on 8 August 1945, in accordance with the Yalta agreements, but in violation of the Soviet–Japanese Neutrality Pact, the Soviet Union declared war on Japan, and soon after midnight on 9 August 1945, the Soviet Union invaded the Japanese puppet state of Manchuria. Hours later, the U.S. dropped a second atomic bomb on the Japanese city of Nagasaki.\n\nEmperor Hirohito subsequently ordered the Supreme Council for the Direction of the War to accept the terms the Allies had set down in the Potsdam Declaration. After several more days of behind-the-scenes negotiations and a failed coup d'état by hardliners in the Japanese military, Emperor Hirohito gave a recorded radio address across the Empire on 15 August announcing the surrender of Japan to the Allies.\n\nOn 28 August, the occupation of Japan began, led by the Supreme Commander for the Allied Powers. The formal surrender ceremony was held on 2 September, aboard the U.S. Navy battleship USS Missouri, at which officials from the Japanese government signed the Japanese Instrument of Surrender, ending hostilities with the Allies. Allied civilians and military personnel alike celebrated V-J Day, the end of the war in the Pacific; however, isolated soldiers and other personnel from Japan's forces scattered throughout Asia and the Pacific refused to surrender for months and years afterwards, some into the 1970s. The role of the atomic bombings in Japan's unconditional surrender, and the ethics of the two attacks, is debated. The state of war formally ended when the Treaty of San Francisco came into force on 28 April 1952. Four years later, Japan and the Soviet Union signed the Soviet–Japanese Joint Declaration of 1956, formally ending their state of war.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ww2.i21",
+        "ww2.i22"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww2.s12"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "ww2.i01",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i01-d0b645e7a8.png",
+      "width": 1600,
+      "height": 1909,
+      "alt": "Top left: Battle of Wanjialing Top right: First Battle of El Alamein Middle left: Battle of Stalingrad over Eastern Front winter 1943-1944 Bottom left: Wilhelm Keitel signing German Instrument of…",
+      "kind": "other",
+      "author": "User:Staberinde",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.PNG",
+      "credit_line": "User:Staberinde · CC BY-SA 3.0 DE · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i02",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i02-dce698ccfa.jpg",
+      "width": 1600,
+      "height": 1091,
+      "alt": "For documentary purposes the German Federal Archive often retained the original image captions, which may be erroneous, biased, obsolete or politically extreme.",
+      "kind": "other",
+      "author": "Bundesarchiv, Bild 101I-646-5188-17 / Opitz / CC-BY-SA 3.0",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_101I-646-5188-17,_Flugzeuge_Junkers_Ju_87.jpg",
+      "credit_line": "Bundesarchiv, Bild 101I-646-5188-17 / Opitz / CC-BY-SA 3.0 · CC BY-SA 3.0 DE · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i03",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i03-df00bcab2f.jpg",
+      "width": 1600,
+      "height": 1612,
+      "alt": "Matilda tanks on the move outside the perimeter of Tobruk, Libya, 18 November 1941. Matilda tanks on the move outside the perimeter of Tobruk, 18 November 1941.",
+      "kind": "other",
+      "author": "Keating G (Capt), No 1 Army Film & Photographic Unit",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Matilda_tanks_on_the_move_outside_the_perimeter_of_Tobruk,_Libya,_18_November_1941._E6600.jpg",
+      "credit_line": "Keating G (Capt), No 1 Army Film & Photographic Unit · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i04",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i04-4ef57deccb.jpg",
+      "width": 1600,
+      "height": 1912,
+      "alt": "Mushroom cloud above Nagasaki after atomic bombing on August 9, 1945. Taken from the north west.",
+      "kind": "other",
+      "author": "Charles Levy",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Nagasakibomb.jpg",
+      "credit_line": "Charles Levy · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i05",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i05-a13ca6657b.jpg",
+      "width": 1600,
+      "height": 1038,
+      "alt": "During the Battle of Westerplatte, the German battleship Schleswig-Holstein attacks Westerplatte at the start of the war, September 1, 1939",
+      "kind": "photo",
+      "author": "Unknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Schleswig_Holstein_firing_Westerplatte_September_1939.jpg",
+      "credit_line": "Unknown author · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i06",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i06-033c58068d.jpg",
+      "width": 1600,
+      "height": 1279,
+      "alt": "The destroyer USS Shaw explodes during the attack on Pearl Harbor, December 7, 1941",
+      "kind": "photo",
+      "author": "Unknown navy photographer",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:USS_SHAW_exploding_Pearl_Harbor_Nara_80-G-16871_2.jpg",
+      "credit_line": "Unknown navy photographer · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i07",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i07-f26fbd921d.jpg",
+      "width": 1600,
+      "height": 1074,
+      "alt": "A Royal Air Force Supermarine Spitfire trails smoke after attacking a German Heinkel He 111H/P bomber during the Battle of Britain.",
+      "kind": "other",
+      "author": "Australian armed forces",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Spitfire_and_He_111_during_Battle_of_Britain_1940.jpg",
+      "credit_line": "Australian armed forces · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i08",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i08-f2723fc4ca.jpg",
+      "width": 1600,
+      "height": 1581,
+      "alt": "Operations: A German Luftwaffe Heinkel He 111 bomber flying over Wapping, London at the start of the Luftwaffe's evening raids of 7 September 1940.",
+      "kind": "photo",
+      "author": "German Air Force photographer",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Heinkel_He_111_over_Wapping,_East_London.jpg",
+      "credit_line": "German Air Force photographer · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i09",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i09-5c93e9266f.jpg",
+      "width": 1600,
+      "height": 1316,
+      "alt": "German Heinkel He 111s which went into service in 1937. Some 6000 Heinkel He 111s were built but were found to be a poor match for Hurricanes and Spitfires during the Battle of Britain.",
+      "kind": "other",
+      "author": "Unknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Heinkel_He_111_during_the_Battle_of_Britain.jpg",
+      "credit_line": "Unknown author · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i10",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i10-4da291888b.jpg",
+      "width": 1600,
+      "height": 2133,
+      "alt": "German soldiers advance through northern Russia. German flamethrower crew burns down a house in the background. German Panzer IV stuck in the snow with white camouflage paint.",
+      "kind": "photo",
+      "author": "Bundesarchiv, Bild 146-1974-099-19 / Kempe / CC-BY-SA 3.0 Samaryi Guraryi / Самарий Гурарий Ustinov / Александр Устинов Bundesarchiv, Bild 101I-209-0090-28 / Zoll / CC-BY-SA 3.0",
+      "license": "CC0",
+      "license_version": null,
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Operation_Barbarossa_collage.jpg",
+      "credit_line": "Bundesarchiv, Bild 146-1974-099-19 / Kempe / CC-BY-SA 3.0 Samaryi Guraryi / Самарий Гурарий Ustinov / Александр Устинов Bundesarchiv, Bild 101I-209-0090-28 / Zoll / CC-BY-SA 3.0 · CC0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i11",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i11-d6785f0f6f.jpg",
+      "width": 1600,
+      "height": 1135,
+      "alt": "Photograph taken from a Japanese plane during the torpedo attack on ships moored on both sides of Ford Island shortly after the beginning of the Pearl Harbor attack.",
+      "kind": "photo",
+      "author": "Imperial Japanese Navy",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Attack_on_Pearl_Harbor_Japanese_planes_view.jpg",
+      "credit_line": "Imperial Japanese Navy · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i12",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i12-26a5efa903.png",
+      "width": 1600,
+      "height": 1038,
+      "alt": "Location within Hawaii",
+      "kind": "map",
+      "author": "NordNordWest",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:USA_Hawaii_location_map.svg",
+      "credit_line": "NordNordWest · CC BY-SA 3.0 DE · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i13",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i13-951e4ad655.png",
+      "width": 1600,
+      "height": 1456,
+      "alt": "Location map of Pacific Ocean. Projection: Lambert azimuthal equal-area projection.",
+      "kind": "map",
+      "author": "Tentotwo",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Pacific_Ocean_laea_location_map.svg",
+      "credit_line": "Tentotwo · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i14",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i14-75f0010781.jpg",
+      "width": 1600,
+      "height": 1051,
+      "alt": "For documentary purposes the German Federal Archive often retained the original image captions, which may be erroneous, biased, obsolete or politically extreme.",
+      "kind": "other",
+      "author": "Bundesarchiv, Bild 183-R90142 / CC-BY-SA 3.0",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-R90142,_Russland,_Kesselschlacht_Stalingrad.jpg",
+      "credit_line": "Bundesarchiv, Bild 183-R90142 / CC-BY-SA 3.0 · CC BY-SA 3.0 DE · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i15",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i15-dec2fa6183.jpg",
+      "width": 1600,
+      "height": 1215,
+      "alt": "Voronezh Front. Column of Axis prisoners of war: Germans, Italians, Hungarians",
+      "kind": "other",
+      "author": "Леонид Великжанин",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Disfatta.jpg",
+      "credit_line": "Леонид Великжанин · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i16",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i16-a450666c3c.jpg",
+      "width": 1600,
+      "height": 986,
+      "alt": "For documentary purposes the German Federal Archive often retained the original image captions, which may be erroneous, biased, obsolete or politically extreme.",
+      "kind": "other",
+      "author": "Bundesarchiv, Bild 183-E0406-0022-001 / CC-BY-SA 3.0",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-E0406-0022-001,_Russland,_Kesselschlacht_Stalingrad.jpg",
+      "credit_line": "Bundesarchiv, Bild 183-E0406-0022-001 / CC-BY-SA 3.0 · CC BY-SA 3.0 DE · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i17",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i17-e4f97b5492.jpg",
+      "width": 1600,
+      "height": 1263,
+      "alt": "USS Yorktown (CV-5) is hit on the port side, amidships, by a Japanese Type 91 aerial torpedo during the mid-afternoon attack by planes from the carrier Hiryu, in the Battle of Midway, on 4 June…",
+      "kind": "other",
+      "author": "USN, photographed from USS Pensacola (CA-24)",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:USS_Yorktown_(CV-5)_is_hit_by_a_torpedo_on_4_June_1942.jpg",
+      "credit_line": "USN, photographed from USS Pensacola (CA-24) · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i18",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i18-fb03b014c8.jpg",
+      "width": 1600,
+      "height": 1071,
+      "alt": "Jews arriving at Auschwitz II in German-occupied Poland, May 1944. Most were selected for execution in gas chambers.",
+      "kind": "photo",
+      "author": "Bernhard Walter",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Selection_on_the_ramp_at_Auschwitz-Birkenau,_1944_(Auschwitz_Album)_1b.jpg",
+      "credit_line": "Bernhard Walter · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i19",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i19-6b7de11c19.jpg",
+      "width": 1600,
+      "height": 1288,
+      "alt": "A LCVP (Landing Craft, Vehicle, Personnel) from the U.S. Coast Guard-manned USS Samuel Chase disembarks troops of Company A, 16th Infantry, 1st Infantry Division (the Big Red One) wading onto the Fox…",
+      "kind": "other",
+      "author": "Chief Photographer's Mate (CPHoM) Robert F. Sargent",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Into_the_Jaws_of_Death_23-0455M_edit.jpg",
+      "credit_line": "Chief Photographer's Mate (CPHoM) Robert F. Sargent · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i20",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i20-fe0e398c2b.jpg",
+      "width": 1600,
+      "height": 949,
+      "alt": "Atomic bomb mushroom clouds over Hiroshima (left) and Nagasaki (right)",
+      "kind": "photo",
+      "author": "George R. Caron / Charles Levy",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Atomic_bombing_of_Japan.jpg",
+      "credit_line": "George R. Caron / Charles Levy · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i21",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i21-cb529d8d26.jpg",
+      "width": 1600,
+      "height": 1281,
+      "alt": "Japanese foreign affairs minister Mamoru Shigemitsu signs the Japanese Instrument of Surrender on board USS Missouri, 2 September 1945",
+      "kind": "other",
+      "author": "Army Signal Corps photographer LT. Stephen E. Korpanty; restored by Adam Cuerden",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Mamoru_Shigemitsu_signs_the_Instrument_of_Surrender,_officially_ending_the_Second_World_War.jpg",
+      "credit_line": "Army Signal Corps photographer LT. Stephen E. Korpanty; restored by Adam Cuerden · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww2.i22",
+      "title_id": "ww2",
+      "url": "http://10.0.2.2:8000/media/ww2/i22-9973a63c9e.jpg",
+      "width": 1600,
+      "height": 1254,
+      "alt": "Representatives of the Empire of Japan stand aboard USS Missouri prior to signing of the Instrument of Surrender",
+      "kind": "photo",
+      "author": "Army Signal Corps",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Surrender_of_Japan_-_USS_Missouri_(restored).jpg",
+      "credit_line": "Army Signal Corps · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "ww2.s01",
+      "title": "World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/World_War_II",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww2.s02",
+      "title": "Causes of World War II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Causes_of_World_War_II",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww2.s03",
+      "title": "Invasion of Poland (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Invasion_of_Poland",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww2.s04",
+      "title": "Battle of Britain (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Britain",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww2.s05",
+      "title": "Operation Barbarossa (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Operation_Barbarossa",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww2.s06",
+      "title": "Attack on Pearl Harbor (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww2.s07",
+      "title": "Battle of Stalingrad (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Stalingrad",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww2.s08",
+      "title": "Battle of Midway (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Midway",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww2.s09",
+      "title": "The Holocaust (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/The_Holocaust",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww2.s10",
+      "title": "Normandy landings (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Normandy_landings",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww2.s11",
+      "title": "Atomic bombings of Hiroshima and Nagasaki (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww2.s12",
+      "title": "Surrender of Japan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Surrender_of_Japan",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}
