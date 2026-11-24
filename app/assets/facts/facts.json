@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "note": "SAMPLE facts for development only. The owner replaces this list with about 100 reviewed facts (CONTRACTS 20). Only append new facts at the end.",
+  "facts": [
+    {"id": "fd001", "title_id": "roman-history", "text": "SAMPLE: Roman concrete set underwater. Some harbours built two thousand years ago are still standing."},
+    {"id": "fd002", "title_id": "ancient-egypt", "text": "SAMPLE: Cleopatra lived closer in time to the Moon landing than to the building of the Great Pyramid."},
+    {"id": "fd003", "title_id": "vikings", "text": "SAMPLE: Viking ships sat low in the water, so raiders could row far up shallow rivers."},
+    {"id": "fd004", "title_id": "ww1", "text": "SAMPLE: In the Christmas Truce of 1914, soldiers on both sides left their trenches and met in no man's land."},
+    {"id": "fd005", "title_id": "renaissance", "text": "SAMPLE: Leonardo da Vinci wrote his notebooks in mirror writing, from right to left."},
+    {"id": "fd006", "title_id": "mongol-empire", "text": "SAMPLE: At its peak the Mongol Empire covered roughly a sixth of the world's land."},
+    {"id": "fd007", "title_id": "space-history", "text": "SAMPLE: Sputnik 1 launched in 1957 and orbited Earth for about three months before falling back."},
+    {"id": "fd008", "title_id": "french-revolution", "text": "SAMPLE: During the French Revolution, France adopted a ten-day week and ten-hour days. Neither lasted long."},
+    {"id": "fd009", "title_id": "ancient-greece", "text": "SAMPLE: The first modern Olympic Games were held in Athens in 1896, after a gap of about 1,500 years."},
+    {"id": "fd010", "title_id": "industrial-revolution", "text": "SAMPLE: The Stockton and Darlington Railway opened in 1825, the first public railway to use steam locomotives."},
+    {"id": "fd011", "title_id": "cold-war", "text": "SAMPLE: In 1962 a Soviet officer, Vasili Arkhipov, refused to agree to a nuclear torpedo launch."},
+    {"id": "fd012", "title_id": "great-depression", "text": "SAMPLE: The Dow Jones took until 1954 to climb back to its September 1929 peak."}
+  ]
+}
