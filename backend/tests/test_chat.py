@@ -8,7 +8,7 @@ import pytest
 
 from app import main
 from app.config import BACKEND_DIR, settings
-from app.models import ChatUsage
+from app.models import ChatInstallUsage as ChatUsage
 from app.routers.chat import get_providers
 from app.services.chat import prompt, service, usage
 from app.services.chat.guard import check_output, cut_to_limit, looks_like_injection
@@ -628,7 +628,7 @@ def test_migration_0002_creates_only_chat_usage(tmp_path):
     cfg.set_main_option("sqlalchemy.url", url)
     command.upgrade(cfg, "0001")
     before = set(inspect(create_engine(url)).get_table_names())
-    command.upgrade(cfg, "head")
+    command.upgrade(cfg, "0002")
     insp = inspect(create_engine(url))
     assert set(insp.get_table_names()) - before == {"chat_usage"}
     assert insp.get_pk_constraint("chat_usage")["constrained_columns"] == ["day", "install_hash"]

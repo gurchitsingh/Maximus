@@ -1,5 +1,11 @@
-"""Test fixtures: a fresh SQLite file per test, seeded from backend/data/samples, no network."""
+"""Test fixtures: a fresh database per test, seeded from backend/data/samples, no network.
+
+SQLite (a temp file per test) by default. Set TEST_DATABASE_URL=postgresql://... to run the same suite on
+Postgres (CI does, CONTRACTS 18): tables are created once and emptied before each test.
+"""
 import json
+import os
+os.environ["ENVIRONMENT"] = "development"  # a developer's .env must not switch the suite to production checks
 from pathlib import Path
 
 import httpx
@@ -7,6 +13,7 @@ import pytest
 from fastapi.testclient import TestClient
 from jsonschema import Draft202012Validator, FormatChecker
 from referencing import Registry, Resource
+from sqlalchemy import text
 from sqlalchemy.orm import sessionmaker
 
 from app import main
@@ -51,8 +58,28 @@ def no_network(monkeypatch):
     monkeypatch.setattr(httpx.HTTPTransport, "handle_request", refuse)
 
 
+TEST_DATABASE_URL = os.environ.get("TEST_DATABASE_URL", "")
+_pg_engine = None
+
+
+def _postgres_engine():
+    global _pg_engine
+    if _pg_engine is None:
+        _pg_engine = make_engine(TEST_DATABASE_URL, pool_size=2)
+        Base.metadata.drop_all(_pg_engine)
+        Base.metadata.create_all(_pg_engine)
+    return _pg_engine
+
+
 @pytest.fixture
 def session_factory(tmp_path):
+    if TEST_DATABASE_URL:
+        engine = _postgres_engine()
+        with engine.begin() as conn:
+            names = ", ".join(t.name for t in Base.metadata.sorted_tables)
+            conn.execute(text(f"TRUNCATE {names} RESTART IDENTITY CASCADE"))
+        yield sessionmaker(bind=engine, expire_on_commit=False)
+        return
     engine = make_engine(f"sqlite:///{(tmp_path / 'test.db').as_posix()}")
     Base.metadata.create_all(engine)
     yield sessionmaker(bind=engine, expire_on_commit=False)

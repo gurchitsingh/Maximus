@@ -9,7 +9,7 @@ from sqlalchemy import delete, func, select
 from sqlalchemy.orm import Session
 
 from app.config import settings
-from app.models import ChatUsage
+from app.models import ChatInstallUsage as ChatUsage
 
 
 def utcnow() -> datetime:  # tests patch this
