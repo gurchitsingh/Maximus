@@ -1,9 +1,10 @@
-// Library (DESIGN_SPEC 9.2.3, 7.4; CONTRACTS 3.2 row order): Featured hero,
-// For you, one row per topic group, Because you liked X, the people row.
+// Library (DESIGN_SPEC 9.2.3, 7.4, 15.3; CONTRACTS 3.2 row order, 19): Featured
+// hero, Your study list, For you, one row per topic group, Because you liked X, the people row.
 // The people row uses plain posters until Claude Design Prompt 2b (Q2).
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:material_ui/material_ui.dart';
 
+import '../../core/theme/tokens.dart';
 import '../../core/widgets/widgets.dart';
 import '../../data/models/catalogue.dart';
 import '../../data/models/title.dart';
@@ -13,12 +14,30 @@ import '../../domain/match/match_scores.dart';
 import '../../domain/match/rows.dart';
 import '../shared/catalogue_states.dart';
 import '../shared/title_visuals.dart';
+import 'study_section.dart';
 
-class LibraryScreen extends ConsumerWidget {
+class LibraryScreen extends ConsumerStatefulWidget {
   const LibraryScreen({super.key});
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  ConsumerState<LibraryScreen> createState() => _LibraryScreenState();
+}
+
+class _LibraryScreenState extends ConsumerState<LibraryScreen> {
+  final _forYouKey = GlobalKey();
+
+  void _browse() {
+    final ctx = _forYouKey.currentContext;
+    if (ctx == null) return;
+    Scrollable.ensureVisible(
+      ctx,
+      duration: MxMotion.fade,
+      curve: Curves.easeOut,
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
     final catalogue = ref.watch(catalogueProvider);
     final c = catalogue.value;
     if (c == null) {
@@ -65,7 +84,9 @@ class LibraryScreen extends ConsumerWidget {
           )
         else
           SizedBox(height: MediaQuery.paddingOf(context).top),
+        StudySection(catalogue: c, onBrowse: _browse),
         PosterRow(
+          key: _forYouKey,
           title: 'For you',
           items: [
             for (final id in forYouIds(match, studyIds)) item(c.title(id)!),

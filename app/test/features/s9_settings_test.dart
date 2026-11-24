@@ -258,7 +258,7 @@ void main() {
       isNotNull,
     );
     // Back at the start route (Home until S5 adds the splash).
-    expect(find.text('Settings'), findsNothing);
+    expect(find.text('THEME'), findsNothing);
     await h.dispose(tester);
   });
 

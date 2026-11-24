@@ -1,5 +1,5 @@
 // Bottom navigation and topic bar (DESIGN_SPEC 7.8). One widget, two item
-// sets: main tabs (Home, Library, Feed, Study) and topic tabs (Lessons,
+// sets: main tabs (Home, Library, Feed, Settings) and topic tabs (Lessons,
 // Chat, Quiz).
 import 'package:material_ui/material_ui.dart';
 
@@ -17,7 +17,7 @@ class MxNavItem {
     MxNavItem(MxIcons.home, 'Home'),
     MxNavItem(MxIcons.library, 'Library'),
     MxNavItem(MxIcons.feed, 'Feed'),
-    MxNavItem(MxIcons.bookmark, 'Study'),
+    MxNavItem(MxIcons.settings, 'Settings'),
   ];
 
   static const topicTabs = [
