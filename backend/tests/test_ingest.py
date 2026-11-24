@@ -86,6 +86,20 @@ def test_long_section_splits_within_range_and_never_mid_paragraph():
     assert [it for p in parts for it in p] == items  # nothing lost, order kept
 
 
+def test_short_tail_merges_into_previous_chunk_when_two_chunks():
+    items = [("p", para(590, "a")), ("p", para(100, "b"))]  # tail < MIN_WORDS, fits MAX_WORDS + 100 merged
+    parts = chunk(items)
+    assert len(parts) == 1
+    assert parts[0] == items
+
+
+def test_short_tail_merge_keeps_earlier_chunks_when_three_chunks():
+    items = [("p", para(590, "a")), ("p", para(590, "b")), ("p", para(100, "c"))]
+    parts = chunk(items)
+    assert len(parts) == 2
+    assert [it for p in parts for it in p] == items  # nothing lost or duplicated, order kept
+
+
 def test_split_prefers_subheading_boundaries():
     items = [("p", para(320, "a")), ("sub", "Part two"), ("p", para(320, "b"))]
     parts = chunk(items)

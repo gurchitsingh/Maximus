@@ -77,7 +77,8 @@ def chunk(items: list) -> list[list]:
         chunks.append(cur)
     if len(chunks) > 1 and item_words(chunks[-1]) < MIN_WORDS and \
             item_words(chunks[-2]) + item_words(chunks[-1]) <= MAX_WORDS + 100:
-        chunks[-2] += chunks.pop()
+        tail = chunks.pop()  # pop first: `chunks[-2] += chunks.pop()` stores at the index after the list shrank
+        chunks[-1] += tail
     return chunks
 
 
