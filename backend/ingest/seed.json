@@ -398,6 +398,2557 @@
           "heading": "Private companies"
         }
       ]
+    },
+    {
+      "id": "ancient-greece",
+      "kind": "topic",
+      "name": "Ancient Greece",
+      "subtitle": "c. 800 to 146 BCE",
+      "poster_lines": [
+        "ANCIENT",
+        "GREECE"
+      ],
+      "group": "ancient-medieval",
+      "era": "ancient",
+      "region": "europe",
+      "period_start": -800,
+      "period_end": -146,
+      "themes": [
+        "politics",
+        "ideas",
+        "war",
+        "culture"
+      ],
+      "bg": "#1E3A5F",
+      "tint": "#6FB1E0",
+      "lettering": "roman",
+      "brief": "City-states, philosophers, and the first democracy.",
+      "linked_title_ids": [
+        "alexander-the-great",
+        "socrates",
+        "plato",
+        "aristotle"
+      ],
+      "rank": 2,
+      "pages": [
+        {
+          "page": "Minoan civilization",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Minoans"
+        },
+        {
+          "page": "Mycenaean Greece",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Mycenaeans"
+        },
+        {
+          "page": "Archaic Greece",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Archaic age"
+        },
+        {
+          "page": "Athenian democracy",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Democracy in Athens"
+        },
+        {
+          "page": "Greco-Persian Wars",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Greeks against Persia"
+        },
+        {
+          "page": "Classical Greece",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Classical age"
+        },
+        {
+          "page": "Peloponnesian War",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Athens against Sparta"
+        },
+        {
+          "page": "Alexander the Great",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Alexander the Great"
+        },
+        {
+          "page": "Hellenistic period",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Hellenistic world"
+        },
+        {
+          "page": "Battle of Corinth (146 BC)",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Rome takes Greece"
+        }
+      ]
+    },
+    {
+      "id": "ancient-egypt",
+      "kind": "topic",
+      "name": "Ancient Egypt",
+      "subtitle": "c. 3100 to 30 BCE",
+      "poster_lines": [
+        "ANCIENT",
+        "EGYPT"
+      ],
+      "group": "ancient-medieval",
+      "era": "ancient",
+      "region": "middle-east-africa",
+      "period_start": -3100,
+      "period_end": -30,
+      "themes": [
+        "empire",
+        "religion",
+        "culture",
+        "politics"
+      ],
+      "bg": "#F0B35A",
+      "tint": "#E8A33D",
+      "lettering": "carved",
+      "brief": "Pharaohs, pyramids and 3,000 years of one river.",
+      "linked_title_ids": [
+        "cleopatra-vii"
+      ],
+      "rank": 3,
+      "pages": [
+        {
+          "page": "Ancient Egypt",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The land of the Nile"
+        },
+        {
+          "page": "Early Dynastic Period of Egypt",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The first kings"
+        },
+        {
+          "page": "Old Kingdom of Egypt",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The age of the pyramids"
+        },
+        {
+          "page": "Great Pyramid of Giza",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Great Pyramid"
+        },
+        {
+          "page": "Middle Kingdom of Egypt",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Middle Kingdom"
+        },
+        {
+          "page": "New Kingdom of Egypt",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The New Kingdom"
+        },
+        {
+          "page": "Akhenaten",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The heretic pharaoh"
+        },
+        {
+          "page": "Tutankhamun",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Tutankhamun"
+        },
+        {
+          "page": "Ramesses II",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Ramesses the Great"
+        },
+        {
+          "page": "Ptolemaic Kingdom",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Ptolemies"
+        },
+        {
+          "page": "Cleopatra",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Cleopatra"
+        }
+      ]
+    },
+    {
+      "id": "ancient-india",
+      "kind": "topic",
+      "name": "Ancient India",
+      "subtitle": "c. 322 BCE to 550 CE",
+      "poster_lines": [
+        "ANCIENT",
+        "INDIA"
+      ],
+      "group": "ancient-medieval",
+      "era": "ancient",
+      "region": "asia",
+      "period_start": -322,
+      "period_end": 550,
+      "themes": [
+        "empire",
+        "politics",
+        "culture",
+        "science-tech"
+      ],
+      "bg": "#8A3B12",
+      "tint": "#F2A64A",
+      "lettering": "carved",
+      "brief": "Cities on the Indus, empires on the Ganges.",
+      "linked_title_ids": [
+        "chandragupta-maurya",
+        "ashoka"
+      ],
+      "rank": 4,
+      "pages": [
+        {
+          "page": "Maurya Empire",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Maurya Empire"
+        },
+        {
+          "page": "Chandragupta Maurya",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Chandragupta Maurya"
+        },
+        {
+          "page": "Arthashastra",
+          "sections": [
+            "lead"
+          ],
+          "heading": "A handbook of statecraft"
+        },
+        {
+          "page": "Ashoka",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Ashoka"
+        },
+        {
+          "page": "Kalinga War",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Kalinga War"
+        },
+        {
+          "page": "Gupta Empire",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Gupta Empire"
+        },
+        {
+          "page": "Chandragupta II",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Chandragupta II"
+        },
+        {
+          "page": "Aryabhata",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Aryabhata"
+        }
+      ]
+    },
+    {
+      "id": "vikings",
+      "kind": "topic",
+      "name": "Vikings",
+      "subtitle": "c. 793 to 1066",
+      "poster_lines": [
+        "The",
+        "Vikings"
+      ],
+      "group": "ancient-medieval",
+      "era": "medieval",
+      "region": "europe",
+      "period_start": 793,
+      "period_end": 1066,
+      "themes": [
+        "war",
+        "exploration",
+        "trade",
+        "culture"
+      ],
+      "bg": "#12303A",
+      "tint": "#7FC3D1",
+      "lettering": "brush",
+      "brief": "Raiders, traders and explorers from the north.",
+      "linked_title_ids": [],
+      "rank": 5,
+      "pages": [
+        {
+          "page": "Viking Age",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Viking Age"
+        },
+        {
+          "page": "Sack of Lindisfarne",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The raid on Lindisfarne"
+        },
+        {
+          "page": "Longship",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Longships"
+        },
+        {
+          "page": "Viking expansion",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Raiders spread out"
+        },
+        {
+          "page": "Danelaw",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Danelaw"
+        },
+        {
+          "page": "Varangians",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Varangians"
+        },
+        {
+          "page": "Leif Erikson",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Leif Erikson"
+        },
+        {
+          "page": "L'Anse aux Meadows",
+          "sections": [
+            "lead"
+          ],
+          "heading": "A Viking camp in Canada"
+        },
+        {
+          "page": "Rollo",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Rollo and Normandy"
+        },
+        {
+          "page": "Battle of Stamford Bridge",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Stamford Bridge"
+        }
+      ]
+    },
+    {
+      "id": "mongol-empire",
+      "kind": "topic",
+      "name": "Mongol Empire",
+      "subtitle": "1206 to 1368",
+      "poster_lines": [
+        "The Mongol",
+        "Empire"
+      ],
+      "group": "ancient-medieval",
+      "era": "medieval",
+      "region": "asia",
+      "period_start": 1206,
+      "period_end": 1368,
+      "themes": [
+        "empire",
+        "war",
+        "leadership",
+        "trade"
+      ],
+      "bg": "#D9A441",
+      "tint": "#B5481F",
+      "lettering": "brush",
+      "brief": "Horse archers who built the largest land empire in history.",
+      "linked_title_ids": [
+        "genghis-khan"
+      ],
+      "rank": 6,
+      "pages": [
+        {
+          "page": "Mongol Empire",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The largest land empire"
+        },
+        {
+          "page": "Genghis Khan",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Genghis Khan"
+        },
+        {
+          "page": "Mongol invasion of Europe",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Mongols in Europe"
+        },
+        {
+          "page": "Siege of Baghdad",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The fall of Baghdad"
+        },
+        {
+          "page": "Battle of Ain Jalut",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Mongols are stopped"
+        },
+        {
+          "page": "Kublai Khan",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Kublai Khan"
+        },
+        {
+          "page": "Yuan dynasty",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Mongols rule China"
+        },
+        {
+          "page": "Mongol invasions of Japan",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The storms that saved Japan"
+        },
+        {
+          "page": "Pax Mongolica",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Mongol peace"
+        }
+      ]
+    },
+    {
+      "id": "renaissance",
+      "kind": "topic",
+      "name": "Renaissance",
+      "subtitle": "c. 1300 to 1600",
+      "poster_lines": [
+        "THE",
+        "RENAISSANCE"
+      ],
+      "group": "ancient-medieval",
+      "era": "early-modern",
+      "region": "europe",
+      "period_start": 1300,
+      "period_end": 1600,
+      "themes": [
+        "culture",
+        "ideas",
+        "science-tech",
+        "politics"
+      ],
+      "bg": "#6B2D2D",
+      "tint": "#E8B27A",
+      "lettering": "roman",
+      "brief": "Art, science and big ideas reborn in Italy.",
+      "linked_title_ids": [],
+      "rank": 7,
+      "pages": [
+        {
+          "page": "Renaissance",
+          "sections": [
+            "lead"
+          ],
+          "heading": "A rebirth of ideas"
+        },
+        {
+          "page": "Italian Renaissance",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Italy leads the way"
+        },
+        {
+          "page": "Renaissance humanism",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Humanism"
+        },
+        {
+          "page": "House of Medici",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Medici bankers"
+        },
+        {
+          "page": "Leonardo da Vinci",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Leonardo da Vinci"
+        },
+        {
+          "page": "Michelangelo",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Michelangelo"
+        },
+        {
+          "page": "Johannes Gutenberg",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Gutenberg and the press"
+        },
+        {
+          "page": "Northern Renaissance",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Renaissance goes north"
+        },
+        {
+          "page": "Galileo Galilei",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Galileo"
+        }
+      ]
+    },
+    {
+      "id": "ottoman-empire",
+      "kind": "topic",
+      "name": "Ottoman Empire",
+      "subtitle": "c. 1299 to 1922",
+      "poster_lines": [
+        "OTTOMAN",
+        "EMPIRE"
+      ],
+      "group": "ancient-medieval",
+      "era": "early-modern",
+      "region": "middle-east-africa",
+      "period_start": 1299,
+      "period_end": 1922,
+      "themes": [
+        "empire",
+        "war",
+        "religion",
+        "politics"
+      ],
+      "bg": "#0F4C4A",
+      "tint": "#F2C14E",
+      "lettering": "carved",
+      "brief": "Six centuries of sultans, from Istanbul to the Balkans.",
+      "linked_title_ids": [
+        "mehmed-ii"
+      ],
+      "rank": 8,
+      "pages": [
+        {
+          "page": "Ottoman Empire",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Six centuries of sultans"
+        },
+        {
+          "page": "Osman I",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Osman I"
+        },
+        {
+          "page": "Fall of Constantinople",
+          "sections": [
+            "lead"
+          ],
+          "heading": "1453: Constantinople falls"
+        },
+        {
+          "page": "Selim I",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Selim the Grim"
+        },
+        {
+          "page": "Suleiman the Magnificent",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Suleiman the Magnificent"
+        },
+        {
+          "page": "Janissary",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Janissaries"
+        },
+        {
+          "page": "Tanzimat",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Tanzimat reforms"
+        },
+        {
+          "page": "Young Turk Revolution",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Young Turks"
+        },
+        {
+          "page": "Dissolution of the Ottoman Empire",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The empire ends"
+        },
+        {
+          "page": "Abolition of the Ottoman sultanate",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The last sultan"
+        }
+      ]
+    },
+    {
+      "id": "black-death",
+      "kind": "topic",
+      "name": "Black Death and the Great Plagues",
+      "subtitle": "1347 onward",
+      "poster_lines": [
+        "BLACK",
+        "DEATH"
+      ],
+      "group": "ancient-medieval",
+      "era": "medieval",
+      "region": "europe",
+      "period_start": 1347,
+      "period_end": null,
+      "themes": [
+        "disease",
+        "society",
+        "economy"
+      ],
+      "bg": "#1C1C24",
+      "tint": "#C0C8A0",
+      "lettering": "brush",
+      "brief": "The pandemic that killed a third of Europe, and the plagues that followed, up to London in 1665.",
+      "linked_title_ids": [],
+      "rank": 9,
+      "pages": [
+        {
+          "page": "Black Death",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Black Death"
+        },
+        {
+          "page": "Yersinia pestis",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The germ behind plague"
+        },
+        {
+          "page": "Black Death in England",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Plague in England"
+        },
+        {
+          "page": "Peasants' Revolt",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Peasants' Revolt"
+        },
+        {
+          "page": "Quarantine",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Inventing quarantine"
+        },
+        {
+          "page": "Plague doctor",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Plague doctors"
+        },
+        {
+          "page": "Great Plague of London",
+          "sections": [
+            "lead"
+          ],
+          "heading": "London, 1665"
+        },
+        {
+          "page": "Great Plague of Marseille",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Marseille, 1720"
+        },
+        {
+          "page": "Third plague pandemic",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The third pandemic"
+        }
+      ]
+    },
+    {
+      "id": "sikh-history",
+      "kind": "topic",
+      "name": "Sikh history",
+      "subtitle": "1469 to 1849",
+      "poster_lines": [
+        "SIKH",
+        "HISTORY"
+      ],
+      "group": "india",
+      "era": "early-modern",
+      "region": "asia",
+      "period_start": 1469,
+      "period_end": 1849,
+      "themes": [
+        "religion",
+        "war",
+        "leadership",
+        "politics"
+      ],
+      "bg": "#0F2A5A",
+      "tint": "#F2A64A",
+      "lettering": "roman",
+      "brief": "From Guru Nanak's message to the Khalsa and the Sikh Empire.",
+      "linked_title_ids": [
+        "guru-gobind-singh-ji",
+        "ranjit-singh"
+      ],
+      "rank": 10,
+      "pages": [
+        {
+          "page": "Sikhism",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Sikh faith"
+        },
+        {
+          "page": "Guru Nanak",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Guru Nanak"
+        },
+        {
+          "page": "Sikh gurus",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The ten Gurus"
+        },
+        {
+          "page": "Guru Arjan",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Guru Arjan"
+        },
+        {
+          "page": "Golden Temple",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Golden Temple"
+        },
+        {
+          "page": "Guru Gobind Singh",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Guru Gobind Singh"
+        },
+        {
+          "page": "Khalsa",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Khalsa"
+        },
+        {
+          "page": "Banda Singh Bahadur",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Banda Singh Bahadur"
+        },
+        {
+          "page": "Sikh Confederacy",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Misls"
+        },
+        {
+          "page": "Sikh Empire",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Sikh Empire"
+        },
+        {
+          "page": "Ranjit Singh",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Maharaja Ranjit Singh"
+        },
+        {
+          "page": "Anglo-Sikh war",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Anglo-Sikh wars"
+        }
+      ]
+    },
+    {
+      "id": "maratha-empire",
+      "kind": "topic",
+      "name": "Maratha Empire",
+      "subtitle": "1674 to 1818",
+      "poster_lines": [
+        "MARATHA",
+        "EMPIRE"
+      ],
+      "group": "india",
+      "era": "early-modern",
+      "region": "asia",
+      "period_start": 1674,
+      "period_end": 1818,
+      "themes": [
+        "empire",
+        "war",
+        "leadership",
+        "politics"
+      ],
+      "bg": "#7A2E12",
+      "tint": "#F2A64A",
+      "lettering": "brush",
+      "brief": "From Shivaji's hill forts to a power that spanned much of India.",
+      "linked_title_ids": [
+        "chhatrapati-shivaji-maharaj",
+        "ahilyabai-holkar"
+      ],
+      "rank": 11,
+      "pages": [
+        {
+          "page": "Maratha Empire",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Maratha Empire"
+        },
+        {
+          "page": "Shivaji",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Shivaji"
+        },
+        {
+          "page": "Battle of Pratapgarh",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Pratapgad"
+        },
+        {
+          "page": "Treaty of Purandar",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Treaty of Purandar"
+        },
+        {
+          "page": "Sambhaji",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Sambhaji"
+        },
+        {
+          "page": "Peshwa",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Peshwas"
+        },
+        {
+          "page": "Bajirao I",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Bajirao I"
+        },
+        {
+          "page": "Third Battle of Panipat",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Panipat, 1761"
+        },
+        {
+          "page": "Mahadaji Shinde",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Mahadaji Shinde"
+        },
+        {
+          "page": "Anglo-Maratha Wars",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Anglo-Maratha wars"
+        }
+      ]
+    },
+    {
+      "id": "rajput-history",
+      "kind": "topic",
+      "name": "Rajput history",
+      "subtitle": "Warrior clans of north India",
+      "poster_lines": [
+        "RAJPUT",
+        "HISTORY"
+      ],
+      "group": "india",
+      "era": "medieval",
+      "region": "asia",
+      "period_start": null,
+      "period_end": null,
+      "themes": [
+        "war",
+        "politics",
+        "culture",
+        "leadership"
+      ],
+      "bg": "#6B1F2A",
+      "tint": "#E8C547",
+      "lettering": "carved",
+      "brief": "Warrior clans, hill forts and fierce last stands in Rajasthan.",
+      "linked_title_ids": [
+        "prithviraj-chauhan",
+        "maharana-pratap"
+      ],
+      "rank": 12,
+      "pages": [
+        {
+          "page": "Rajput",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Who the Rajputs were"
+        },
+        {
+          "page": "Rajputana",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Rajputana"
+        },
+        {
+          "page": "Prithviraj Chauhan",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Prithviraj Chauhan"
+        },
+        {
+          "page": "Battle of Tarain",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The battles of Tarain"
+        },
+        {
+          "page": "Kingdom of Mewar",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Mewar"
+        },
+        {
+          "page": "Rana Sanga",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Rana Sanga"
+        },
+        {
+          "page": "Battle of Khanwa",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Khanwa"
+        },
+        {
+          "page": "Maharana Pratap",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Maharana Pratap"
+        },
+        {
+          "page": "Battle of Haldighati",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Haldighati"
+        },
+        {
+          "page": "Jauhar",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Jauhar"
+        }
+      ]
+    },
+    {
+      "id": "indian-independence",
+      "kind": "topic",
+      "name": "Indian independence movement",
+      "subtitle": "1857 to 1947",
+      "poster_lines": [
+        "Indian",
+        "Independence"
+      ],
+      "group": "india",
+      "era": "modern",
+      "region": "asia",
+      "period_start": 1857,
+      "period_end": 1947,
+      "themes": [
+        "independence",
+        "politics",
+        "leadership",
+        "society"
+      ],
+      "bg": "#F08A24",
+      "tint": "#2B8A4A",
+      "lettering": "brush",
+      "brief": "Marches, boycotts and the end of British rule in 1947.",
+      "linked_title_ids": [
+        "rani-lakshmibai"
+      ],
+      "rank": 13,
+      "pages": [
+        {
+          "page": "Indian independence movement",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The long road to freedom"
+        },
+        {
+          "page": "Indian Rebellion of 1857",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Rebellion of 1857"
+        },
+        {
+          "page": "Indian National Congress",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Congress is founded"
+        },
+        {
+          "page": "Partition of Bengal (1905)",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Bengal is divided"
+        },
+        {
+          "page": "Swadeshi movement",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Swadeshi"
+        },
+        {
+          "page": "Jallianwala Bagh massacre",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Jallianwala Bagh"
+        },
+        {
+          "page": "Non-cooperation movement",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Non-cooperation"
+        },
+        {
+          "page": "Salt March",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Salt March"
+        },
+        {
+          "page": "Quit India Movement",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Quit India"
+        },
+        {
+          "page": "Indian National Army",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Indian National Army"
+        },
+        {
+          "page": "Partition of India",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Partition"
+        },
+        {
+          "page": "Indian Independence Act 1947",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Independence"
+        }
+      ]
+    },
+    {
+      "id": "green-revolution",
+      "kind": "topic",
+      "name": "Green Revolution in India",
+      "subtitle": "1960s onward",
+      "poster_lines": [
+        "GREEN",
+        "REVOLUTION"
+      ],
+      "group": "india",
+      "era": "modern",
+      "region": "asia",
+      "period_start": 1960,
+      "period_end": null,
+      "themes": [
+        "science-tech",
+        "economy",
+        "society"
+      ],
+      "bg": "#1E3A1E",
+      "tint": "#E8C547",
+      "lettering": "brush",
+      "brief": "High-yield seeds, new farming and how India stopped fearing famine.",
+      "linked_title_ids": [],
+      "rank": 14,
+      "pages": [
+        {
+          "page": "Bengal famine of 1943",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Bengal famine"
+        },
+        {
+          "page": "Green Revolution",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Green Revolution"
+        },
+        {
+          "page": "Norman Borlaug",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Norman Borlaug"
+        },
+        {
+          "page": "Green Revolution in India",
+          "sections": [
+            "lead"
+          ],
+          "heading": "India's Green Revolution"
+        },
+        {
+          "page": "M. S. Swaminathan",
+          "sections": [
+            "lead"
+          ],
+          "heading": "M. S. Swaminathan"
+        },
+        {
+          "page": "White revolution (India)",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The White Revolution"
+        },
+        {
+          "page": "Public Distribution System (India)",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The ration system"
+        },
+        {
+          "page": "Minimum support price (India)",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Minimum support prices"
+        },
+        {
+          "page": "Food Corporation of India",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Storing the grain"
+        }
+      ]
+    },
+    {
+      "id": "industrial-revolution",
+      "kind": "topic",
+      "name": "Industrial Revolution",
+      "subtitle": "c. 1760 to 1840",
+      "poster_lines": [
+        "INDUSTRIAL",
+        "REVOLUTION"
+      ],
+      "group": "revolutions-empires",
+      "era": "modern",
+      "region": "europe",
+      "period_start": 1760,
+      "period_end": 1840,
+      "themes": [
+        "revolution",
+        "science-tech",
+        "economy",
+        "society"
+      ],
+      "bg": "#3A3F44",
+      "tint": "#D9A441",
+      "lettering": "carved",
+      "brief": "Steam, iron and the first factories.",
+      "linked_title_ids": [],
+      "rank": 15,
+      "pages": [
+        {
+          "page": "Industrial Revolution",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Steam, iron and factories"
+        },
+        {
+          "page": "British Agricultural Revolution",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Farming changes first"
+        },
+        {
+          "page": "Textile manufacture during the British Industrial Revolution",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Spinning and weaving"
+        },
+        {
+          "page": "Spinning jenny",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The spinning jenny"
+        },
+        {
+          "page": "Watt steam engine",
+          "sections": [
+            "lead"
+          ],
+          "heading": "James Watt's engine"
+        },
+        {
+          "page": "Coalbrookdale",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Coalbrookdale"
+        },
+        {
+          "page": "Liverpool and Manchester Railway",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The first railway"
+        },
+        {
+          "page": "Luddites",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Luddites"
+        },
+        {
+          "page": "Factory Acts",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Factory Acts"
+        }
+      ]
+    },
+    {
+      "id": "american-revolution",
+      "kind": "topic",
+      "name": "American Revolution",
+      "subtitle": "1765 to 1783",
+      "poster_lines": [
+        "The American",
+        "Revolution"
+      ],
+      "group": "revolutions-empires",
+      "era": "early-modern",
+      "region": "americas",
+      "period_start": 1765,
+      "period_end": 1783,
+      "themes": [
+        "revolution",
+        "independence",
+        "war",
+        "politics"
+      ],
+      "bg": "#1B2A52",
+      "tint": "#7C9CFF",
+      "lettering": "brush",
+      "brief": "Thirteen colonies, one big argument about taxes.",
+      "linked_title_ids": [
+        "french-revolution"
+      ],
+      "rank": 16,
+      "pages": [
+        {
+          "page": "American Revolution",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Thirteen colonies rebel"
+        },
+        {
+          "page": "Stamp Act 1765",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Stamp Act"
+        },
+        {
+          "page": "Boston Massacre",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Boston Massacre"
+        },
+        {
+          "page": "Boston Tea Party",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Boston Tea Party"
+        },
+        {
+          "page": "Battles of Lexington and Concord",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The first shots"
+        },
+        {
+          "page": "United States Declaration of Independence",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Declaration"
+        },
+        {
+          "page": "Battles of Saratoga",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Saratoga"
+        },
+        {
+          "page": "Siege of Yorktown",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Yorktown"
+        },
+        {
+          "page": "Treaty of Paris (1783)",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Peace in Paris"
+        }
+      ]
+    },
+    {
+      "id": "napoleon",
+      "kind": "topic",
+      "name": "Napoleon",
+      "subtitle": "1799 to 1815",
+      "poster_lines": [
+        "Napoleon"
+      ],
+      "group": "revolutions-empires",
+      "era": "modern",
+      "region": "europe",
+      "period_start": 1799,
+      "period_end": 1815,
+      "themes": [
+        "war",
+        "leadership",
+        "politics",
+        "law"
+      ],
+      "bg": "#1F2A44",
+      "tint": "#E2B65A",
+      "lettering": "brush",
+      "brief": "From artillery officer to emperor of France.",
+      "linked_title_ids": [
+        "french-revolution",
+        "napoleon-bonaparte"
+      ],
+      "rank": 18,
+      "pages": [
+        {
+          "page": "Napoleon",
+          "sections": [
+            "lead"
+          ],
+          "heading": "From Corsica to emperor"
+        },
+        {
+          "page": "Coup of 18 Brumaire",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The coup of 18 Brumaire"
+        },
+        {
+          "page": "Napoleonic Code",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Napoleonic Code"
+        },
+        {
+          "page": "Battle of Austerlitz",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Austerlitz"
+        },
+        {
+          "page": "Continental System",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Continental System"
+        },
+        {
+          "page": "French invasion of Russia",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The march on Russia"
+        },
+        {
+          "page": "Battle of Leipzig",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Leipzig"
+        },
+        {
+          "page": "Hundred Days",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Hundred Days"
+        },
+        {
+          "page": "Battle of Waterloo",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Waterloo"
+        },
+        {
+          "page": "Saint Helena",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Exile on Saint Helena"
+        }
+      ]
+    },
+    {
+      "id": "russian-revolution",
+      "kind": "topic",
+      "name": "Russian Revolution",
+      "subtitle": "1905 to 1923",
+      "poster_lines": [
+        "RUSSIAN",
+        "REVOLUTION"
+      ],
+      "group": "revolutions-empires",
+      "era": "modern",
+      "region": "europe",
+      "period_start": 1905,
+      "period_end": 1923,
+      "themes": [
+        "revolution",
+        "politics",
+        "war",
+        "society"
+      ],
+      "bg": "#7A1414",
+      "tint": "#F2C14E",
+      "lettering": "stencil",
+      "brief": "1917: the tsar goes and the world looks different.",
+      "linked_title_ids": [],
+      "rank": 19,
+      "pages": [
+        {
+          "page": "Russian Revolution of 1905",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The revolution of 1905"
+        },
+        {
+          "page": "Bloody Sunday (1905)",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Bloody Sunday"
+        },
+        {
+          "page": "February Revolution",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The February Revolution"
+        },
+        {
+          "page": "Russian Provisional Government",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Provisional Government"
+        },
+        {
+          "page": "October Revolution",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The October Revolution"
+        },
+        {
+          "page": "Russian Constituent Assembly",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Constituent Assembly"
+        },
+        {
+          "page": "Treaty of Brest-Litovsk",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Brest-Litovsk"
+        },
+        {
+          "page": "Russian Civil War",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Civil War"
+        },
+        {
+          "page": "Murder of the Romanov family",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The fate of the Romanovs"
+        },
+        {
+          "page": "Treaty on the Creation of the Union of Soviet Socialist Republics",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Soviet Union is born"
+        }
+      ]
+    },
+    {
+      "id": "british-empire",
+      "kind": "topic",
+      "name": "British Empire",
+      "subtitle": "c. 1600 to 1997",
+      "poster_lines": [
+        "BRITISH",
+        "EMPIRE"
+      ],
+      "group": "revolutions-empires",
+      "era": "modern",
+      "region": "global",
+      "period_start": 1600,
+      "period_end": 1997,
+      "themes": [
+        "empire",
+        "trade",
+        "politics",
+        "war"
+      ],
+      "bg": "#1C2E4A",
+      "tint": "#E06A6A",
+      "lettering": "roman",
+      "brief": "How a small island came to run a quarter of the world.",
+      "linked_title_ids": [
+        "elizabeth-i"
+      ],
+      "rank": 20,
+      "pages": [
+        {
+          "page": "British Empire",
+          "sections": [
+            "lead"
+          ],
+          "heading": "An empire on which the sun never set"
+        },
+        {
+          "page": "East India Company",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The East India Company"
+        },
+        {
+          "page": "Thirteen Colonies",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Thirteen Colonies"
+        },
+        {
+          "page": "Seven Years' War",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Seven Years' War"
+        },
+        {
+          "page": "Slavery Abolition Act 1833",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Ending slavery"
+        },
+        {
+          "page": "Opium Wars",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Opium Wars"
+        },
+        {
+          "page": "Scramble for Africa",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Scramble for Africa"
+        },
+        {
+          "page": "Suez Crisis",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Suez Crisis"
+        },
+        {
+          "page": "Decolonisation of Africa",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The end of empire in Africa"
+        },
+        {
+          "page": "Handover of Hong Kong",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Hong Kong, 1997"
+        }
+      ]
+    },
+    {
+      "id": "american-civil-war",
+      "kind": "topic",
+      "name": "American Civil War",
+      "subtitle": "1861 to 1865",
+      "poster_lines": [
+        "AMERICAN",
+        "CIVIL WAR"
+      ],
+      "group": "wars-space",
+      "era": "modern",
+      "region": "americas",
+      "period_start": 1861,
+      "period_end": 1865,
+      "themes": [
+        "war",
+        "politics",
+        "society",
+        "leadership"
+      ],
+      "bg": "#26324D",
+      "tint": "#9DB2D6",
+      "lettering": "stencil",
+      "brief": "A nation splits over slavery and fights for four years.",
+      "linked_title_ids": [],
+      "rank": 21,
+      "pages": [
+        {
+          "page": "American Civil War",
+          "sections": [
+            "lead"
+          ],
+          "heading": "A nation at war with itself"
+        },
+        {
+          "page": "Origins of the American Civil War",
+          "sections": [
+            "lead"
+          ],
+          "heading": "How the war began"
+        },
+        {
+          "page": "Battle of Fort Sumter",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Fort Sumter"
+        },
+        {
+          "page": "First Battle of Bull Run",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Bull Run"
+        },
+        {
+          "page": "Battle of Antietam",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Antietam"
+        },
+        {
+          "page": "Emancipation Proclamation",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Emancipation Proclamation"
+        },
+        {
+          "page": "Battle of Gettysburg",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Gettysburg"
+        },
+        {
+          "page": "Gettysburg Address",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Gettysburg Address"
+        },
+        {
+          "page": "Sherman's March to the Sea",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Sherman's march"
+        },
+        {
+          "page": "Appomattox campaign",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Appomattox"
+        },
+        {
+          "page": "Assassination of Abraham Lincoln",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Lincoln is shot"
+        }
+      ]
+    },
+    {
+      "id": "ww1",
+      "kind": "topic",
+      "name": "WW1",
+      "subtitle": "1914 to 1918",
+      "poster_lines": [
+        "WORLD",
+        "WAR I"
+      ],
+      "group": "wars-space",
+      "era": "modern",
+      "region": "global",
+      "period_start": 1914,
+      "period_end": 1918,
+      "themes": [
+        "war",
+        "politics",
+        "empire",
+        "science-tech"
+      ],
+      "bg": "#4A4232",
+      "tint": "#E06A4F",
+      "lettering": "stencil",
+      "brief": "Trenches, alliances and a war nobody expected to last.",
+      "linked_title_ids": [
+        "ww2"
+      ],
+      "rank": 22,
+      "pages": [
+        {
+          "page": "World War I",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Great War"
+        },
+        {
+          "page": "Causes of World War I",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Why it started"
+        },
+        {
+          "page": "Assassination of Archduke Franz Ferdinand",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Sarajevo, 1914"
+        },
+        {
+          "page": "Schlieffen Plan",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Schlieffen Plan"
+        },
+        {
+          "page": "Trench warfare",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Life in the trenches"
+        },
+        {
+          "page": "Battle of Verdun",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Verdun"
+        },
+        {
+          "page": "Battle of the Somme",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Somme"
+        },
+        {
+          "page": "Gallipoli campaign",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Gallipoli"
+        },
+        {
+          "page": "Zimmermann telegram",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Zimmermann telegram"
+        },
+        {
+          "page": "Spring offensive",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Germany's last push"
+        },
+        {
+          "page": "Armistice of 11 November 1918",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Armistice"
+        },
+        {
+          "page": "Treaty of Versailles",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Treaty of Versailles"
+        }
+      ]
+    },
+    {
+      "id": "ww2",
+      "kind": "topic",
+      "name": "WW2",
+      "subtitle": "1939 to 1945",
+      "poster_lines": [
+        "WORLD",
+        "WAR II"
+      ],
+      "group": "wars-space",
+      "era": "modern",
+      "region": "global",
+      "period_start": 1939,
+      "period_end": 1945,
+      "themes": [
+        "war",
+        "politics",
+        "science-tech",
+        "leadership"
+      ],
+      "bg": "#1B261F",
+      "tint": "#B8C25A",
+      "lettering": "stencil",
+      "brief": "Six years, dozens of countries, and a changed world.",
+      "linked_title_ids": [
+        "ww1",
+        "cold-war"
+      ],
+      "rank": 23,
+      "pages": [
+        {
+          "page": "World War II",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The world at war"
+        },
+        {
+          "page": "Causes of World War II",
+          "sections": [
+            "lead"
+          ],
+          "heading": "How it began"
+        },
+        {
+          "page": "Invasion of Poland",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The invasion of Poland"
+        },
+        {
+          "page": "Battle of Britain",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Battle of Britain"
+        },
+        {
+          "page": "Operation Barbarossa",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Operation Barbarossa"
+        },
+        {
+          "page": "Attack on Pearl Harbor",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Pearl Harbor"
+        },
+        {
+          "page": "Battle of Stalingrad",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Stalingrad"
+        },
+        {
+          "page": "Battle of Midway",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Midway"
+        },
+        {
+          "page": "The Holocaust",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Holocaust"
+        },
+        {
+          "page": "Normandy landings",
+          "sections": [
+            "lead"
+          ],
+          "heading": "D-Day"
+        },
+        {
+          "page": "Atomic bombings of Hiroshima and Nagasaki",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Hiroshima and Nagasaki"
+        },
+        {
+          "page": "Surrender of Japan",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The war ends"
+        }
+      ]
+    },
+    {
+      "id": "cold-war",
+      "kind": "topic",
+      "name": "Cold War",
+      "subtitle": "1947 to 1991",
+      "poster_lines": [
+        "COLD",
+        "WAR"
+      ],
+      "group": "wars-space",
+      "era": "modern",
+      "region": "global",
+      "period_start": 1947,
+      "period_end": 1991,
+      "themes": [
+        "politics",
+        "war",
+        "science-tech",
+        "ideas"
+      ],
+      "bg": "#14213D",
+      "tint": "#8FD3F0",
+      "lettering": "stencil",
+      "brief": "Two superpowers, no direct war, and a race to space.",
+      "linked_title_ids": [
+        "space-history",
+        "ww2"
+      ],
+      "rank": 24,
+      "pages": [
+        {
+          "page": "Cold War",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Two superpowers"
+        },
+        {
+          "page": "Truman Doctrine",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Truman Doctrine"
+        },
+        {
+          "page": "Marshall Plan",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Marshall Plan"
+        },
+        {
+          "page": "Berlin Blockade",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Berlin Blockade"
+        },
+        {
+          "page": "Korean War",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Korean War"
+        },
+        {
+          "page": "Cuban Missile Crisis",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Cuban Missile Crisis"
+        },
+        {
+          "page": "Vietnam War",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Vietnam War"
+        },
+        {
+          "page": "Détente",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Détente"
+        },
+        {
+          "page": "Soviet–Afghan War",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Soviet–Afghan War"
+        },
+        {
+          "page": "Fall of the Berlin Wall",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Wall falls"
+        },
+        {
+          "page": "Dissolution of the Soviet Union",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Soviet Union ends"
+        }
+      ]
+    },
+    {
+      "id": "great-depression",
+      "kind": "topic",
+      "name": "Great Depression",
+      "subtitle": "1929 to 1939",
+      "poster_lines": [
+        "GREAT",
+        "DEPRESSION"
+      ],
+      "group": "money-crashes",
+      "era": "modern",
+      "region": "global",
+      "period_start": 1929,
+      "period_end": 1939,
+      "themes": [
+        "economy",
+        "society",
+        "politics"
+      ],
+      "bg": "#3A3A32",
+      "tint": "#D9A441",
+      "lettering": "stencil",
+      "brief": "A stock market crash became a decade of lost jobs and bank failures.",
+      "linked_title_ids": [],
+      "rank": 26,
+      "pages": [
+        {
+          "page": "Great Depression",
+          "sections": [
+            "lead"
+          ],
+          "heading": "A decade of hardship"
+        },
+        {
+          "page": "Wall Street crash of 1929",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The 1929 crash"
+        },
+        {
+          "page": "Causes of the Great Depression",
+          "sections": [
+            "lead"
+          ],
+          "heading": "What caused it"
+        },
+        {
+          "page": "Bank run",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Bank runs"
+        },
+        {
+          "page": "Smoot–Hawley Tariff Act",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The tariff that backfired"
+        },
+        {
+          "page": "Dust Bowl",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Dust Bowl"
+        },
+        {
+          "page": "New Deal",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The New Deal"
+        },
+        {
+          "page": "Glass–Steagall legislation",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Glass–Steagall"
+        },
+        {
+          "page": "Social Security Act",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Social Security"
+        },
+        {
+          "page": "Adolf Hitler's rise to power",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Depression and Hitler"
+        }
+      ]
+    },
+    {
+      "id": "dotcom-bubble",
+      "kind": "topic",
+      "name": "Dotcom bubble",
+      "subtitle": "c. 1995 to 2002",
+      "poster_lines": [
+        "DOTCOM",
+        "BUBBLE"
+      ],
+      "group": "money-crashes",
+      "era": "modern",
+      "region": "americas",
+      "period_start": 1995,
+      "period_end": 2002,
+      "themes": [
+        "economy",
+        "science-tech",
+        "trade"
+      ],
+      "bg": "#1A1F3A",
+      "tint": "#5CE0D0",
+      "lettering": "stencil",
+      "brief": "When any company with .com in its name could raise millions, until it all popped.",
+      "linked_title_ids": [],
+      "rank": 27,
+      "pages": [
+        {
+          "page": "Dot-com bubble",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The dot-com boom and bust"
+        },
+        {
+          "page": "Netscape",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Netscape"
+        },
+        {
+          "page": "Browser wars",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The browser wars"
+        },
+        {
+          "page": "Telecommunications Act of 1996",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Telecom Act"
+        },
+        {
+          "page": "Initial public offering",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Going public"
+        },
+        {
+          "page": "Pets.com",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Pets.com"
+        },
+        {
+          "page": "Webvan",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Webvan"
+        },
+        {
+          "page": "Boo.com",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Boo.com"
+        },
+        {
+          "page": "Merger of AOL and Time Warner",
+          "sections": [
+            "lead"
+          ],
+          "heading": "AOL buys Time Warner"
+        },
+        {
+          "page": "Nasdaq Composite",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Nasdaq crash"
+        },
+        {
+          "page": "Amazon (company)",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Amazon survives"
+        }
+      ]
+    },
+    {
+      "id": "housing-crisis",
+      "kind": "topic",
+      "name": "Housing crisis",
+      "subtitle": "c. 2007 to 2009",
+      "poster_lines": [
+        "HOUSING",
+        "CRISIS"
+      ],
+      "group": "money-crashes",
+      "era": "modern",
+      "region": "americas",
+      "period_start": 2007,
+      "period_end": 2009,
+      "themes": [
+        "economy",
+        "society",
+        "politics"
+      ],
+      "bg": "#2A1A1A",
+      "tint": "#E06A4F",
+      "lettering": "stencil",
+      "brief": "Risky mortgages, bundled and sold on, until the whole system shook.",
+      "linked_title_ids": [],
+      "rank": 28,
+      "pages": [
+        {
+          "page": "Subprime mortgage crisis",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The subprime crisis"
+        },
+        {
+          "page": "2000s United States housing bubble",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The housing bubble"
+        },
+        {
+          "page": "Subprime lending",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Subprime lending"
+        },
+        {
+          "page": "Mortgage-backed security",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Mortgage-backed securities"
+        },
+        {
+          "page": "Collateralized debt obligation",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Collateralized debt obligations"
+        },
+        {
+          "page": "Credit default swap",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Credit default swaps"
+        },
+        {
+          "page": "Bear Stearns",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Bear Stearns"
+        },
+        {
+          "page": "Bankruptcy of Lehman Brothers",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Lehman Brothers falls"
+        },
+        {
+          "page": "2008 financial crisis",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The global crisis"
+        },
+        {
+          "page": "Troubled Asset Relief Program",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The bailout"
+        },
+        {
+          "page": "Great Recession",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Great Recession"
+        },
+        {
+          "page": "Dodd–Frank Act",
+          "sections": [
+            "lead"
+          ],
+          "heading": "Dodd–Frank"
+        }
+      ]
     }
   ]
 }
