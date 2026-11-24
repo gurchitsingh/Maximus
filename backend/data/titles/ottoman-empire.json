@@ -1,0 +1,522 @@
+{
+  "id": "ottoman-empire",
+  "kind": "topic",
+  "name": "Ottoman Empire",
+  "subtitle": "c. 1299 to 1922",
+  "poster_lines": [
+    "OTTOMAN",
+    "EMPIRE"
+  ],
+  "group": "ancient-medieval",
+  "era": "early-modern",
+  "region": "middle-east-africa",
+  "period_start": 1299,
+  "period_end": 1922,
+  "themes": [
+    "empire",
+    "war",
+    "religion",
+    "politics"
+  ],
+  "bg": "#0F4C4A",
+  "tint": "#F2C14E",
+  "lettering": "carved",
+  "poster_image_id": null,
+  "hero_image_id": "ottoman-empire.i01",
+  "brief": "Six centuries of sultans, from Istanbul to the Balkans.",
+  "linked_title_ids": [
+    "mehmed-ii"
+  ],
+  "rank": 8,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "ottoman-empire.l01",
+      "title_id": "ottoman-empire",
+      "index": 1,
+      "heading": "Six centuries of sultans",
+      "body": "The Ottoman Empire, also known historically as Turkey or the Turkish Empire, was a state that spanned much of Southeastern Europe, West Asia, and North Africa from the 14th century to the early 20th century, centred in modern-day Turkey. It also controlled parts of southeastern Central Europe between the early 16th and early 18th centuries.\n\n![](ottoman-empire.i02)\n\nThe empire emerged from a beylik, or principality, founded in northwestern Anatolia in c. 1299 by the Turkoman tribal leader Osman I. His successors conquered much of Anatolia and expanded into the Balkans by the mid-14th century, transforming their petty kingdom into a transcontinental empire. The Ottomans ended the Byzantine Empire with the conquest of Constantinople in 1453 by Mehmed II and claimed themselves as successors to the Roman Empire. Further conquests by Selim I led the Sultans to adopt the title of caliph. With its capital at Constantinople and control over a significant portion of the Mediterranean Basin, the Ottoman Empire was at the centre of interactions between the Middle East and Europe for six centuries. Ruling over diverse peoples, the empire granted varying levels of autonomy to its many confessional communities, or millets, to manage their own affairs per Islamic law. During the reign of Suleiman the Magnificent in the 16th century, the Ottoman Empire became a global power.\n\nModern academic consensus posits that the empire began to decline after defeat in the Second Siege of Vienna in 1683, but continued to maintain a flexible and strong economy, society and military into much of the 18th century. The Ottoman Empire fell behind technologically from the rest of Europe by the late 18th century as imperial authority fragmented. Further defeats from Austria and Russia culminated in the loss of territory, and with rising nationalism after the French Revolution, a number of new states emerged in the Balkans. Following Mahmud II's reign and the Tanzimat reforms over the course of the 19th century, the Ottoman state became more powerful and organised internally as a new Ottoman identity took hold. In the 1876 revolution, the Ottoman Empire attempted constitutional monarchy, before reverting to an absolute monarchy under Abdul Hamid II, following the Great Eastern Crisis.\n\n![](ottoman-empire.i03)\n\nOver the course of the late 19th century, Ottoman intellectuals known as Young Turks sought to liberalise and rationalise society and politics along Western lines, culminating in the Young Turk Revolution of 1908 led by the Committee of Union and Progress (CUP), which reestablished a constitutional monarchy. However, following the disastrous Balkan Wars, the CUP became increasingly radicalised and embraced Turkish nationalism, leading to a coup d'état in 1913 that established a dictatorship.\n\nIn the 19th and in the start of 20th centuries, persecution of Muslims during the Ottoman contraction and in the Russian Empire resulted in large-scale loss of life and mass migration into modern-day Turkey from the Balkans, Caucasus, and Crimea. The CUP joined World War I on the side of the Central Powers. It struggled with internal dissent, especially the Arab Revolt, and engaged in genocide against Armenians, Assyrians, and Greeks. In the aftermath of World War I, the victorious Allied Powers occupied and partitioned the Ottoman Empire, which lost its southern territories to the United Kingdom and France. The successful Turkish War of Independence, led by Mustafa Kemal Atatürk against the occupying Allies, led to the end of the Ottoman sultanate in 1922.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ottoman-empire.i01",
+        "ottoman-empire.i02",
+        "ottoman-empire.i03"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ottoman-empire.s01"
+      ]
+    },
+    {
+      "id": "ottoman-empire.l02",
+      "title_id": "ottoman-empire",
+      "index": 2,
+      "heading": "Osman I",
+      "body": "Osman I or Osman Ghazi was the eponymous founder of the Ottoman Empire (first known as a beylik or emirate). While initially a small Turkoman principality during Osman's lifetime, his beylik transformed into a vast empire in the centuries after his death. It existed until 1922, shortly after the end of World War I, when the sultanate was abolished.\n\nOwing to the scarcity of historical sources dating from his lifetime, very little factual information about Osman has survived. Not a single written source survives from Osman's reign, and the Ottomans did not record the history of his life until the fifteenth century, more than a hundred years after his death. Because of this, historians find it very challenging to differentiate between fact and myth in the many stories told about him. One historian has even gone so far as to declare it impossible, describing the period of Osman's life as a \"black hole\".\n\nAccording to later Ottoman tradition, Osman's ancestors were descendants of the Kayı tribe of Oghuz Turks. However, many scholars of the early Ottomans regard it as a later fabrication meant to reinforce dynastic legitimacy.\n\nThe Ottoman principality was one of many Anatolian beyliks that emerged in the second half of the thirteenth century. Situated in the region of Bithynia in the north of Asia Minor, Osman's principality found itself particularly well placed to launch attacks on the vulnerable Byzantine Empire, which his descendants would eventually go on to conquer.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "ottoman-empire.i04"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ottoman-empire.s02"
+      ]
+    },
+    {
+      "id": "ottoman-empire.l03",
+      "title_id": "ottoman-empire",
+      "index": 3,
+      "heading": "1453: Constantinople falls",
+      "body": "Constantinople, the capital city of the Byzantine Empire, was captured by the Ottoman Empire on 29 May 1453 as part of the culmination of a 53-day siege which had begun on 6 April.\n\nThe attacking Ottoman Army, which significantly outnumbered Constantinople's defenders, was commanded by Sultan Mehmed II (later titled \"the Conqueror\"), while the Byzantine army was led by Emperor Constantine XI Palaiologos. After conquering the city, Mehmed II made Constantinople the new Ottoman capital, replacing Adrianople.\n\nThe fall of Constantinople and of the Byzantine Empire was a watershed moment of the Late Middle Ages, marking the effective end of the Roman Empire, a state which began in roughly 27 BC and had lasted nearly 1,500 years. For many modern historians, the fall of Constantinople marks the end of the medieval period and the beginning of the early modern period. The city's fall also stood as a turning point in military history. Since ancient times, cities and castles had depended upon ramparts and walls to repel invaders. The walls of Constantinople, especially the Theodosian walls, protected Constantinople from attack for 800 years and were noted as some of the most advanced defensive systems in the world at the time. However, these fortifications were overcome by Ottoman infantry with the support of gunpowder, specifically from cannons and bombards, heralding a change in siege warfare. The Ottoman cannons repeatedly fired massive cannonballs weighing 500 kilograms (1,100 lb) over 1.5 kilometres (0.93 mi) which created gaps in the Theodosian walls for the Ottoman siege.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ottoman-empire.s03"
+      ]
+    },
+    {
+      "id": "ottoman-empire.l04",
+      "title_id": "ottoman-empire",
+      "index": 4,
+      "heading": "Selim the Grim",
+      "body": "Selim I (10 October 1470 – 22 September 1520), also known as Selim the Grim or Selim the Resolute, was the sultan of the Ottoman Empire from 1512 to 1520. Despite lasting only eight years, his reign is notable for the enormous expansion of the Empire, particularly his conquest between 1516 and 1517 of the entire Mamluk Sultanate of Egypt, which included all of the Levant, Hejaz, and Egypt itself. On the eve of his death in 1520, the Ottoman Empire spanned about 3.4 million km2 (1.3 million sq mi), having grown by seventy percent during Selim's reign.\n\n![](ottoman-empire.i06)\n\nSelim's conquest of the Middle Eastern heartlands of the Muslim world, and particularly his assumption of the role of guardian of the pilgrimage routes to Mecca and Medina, established the Ottoman Empire as the pre-eminent Muslim state. His conquests dramatically shifted the empire's geographical and cultural center of gravity away from the Balkans and toward the Middle East. By the eighteenth century, Selim's conquest of the Mamluk Sultanate had come to be romanticized as the moment when the Ottomans seized leadership over the rest of the Muslim world, and consequently Selim is popularly remembered as the first legitimate Ottoman Caliph, although stories of an official transfer of the caliphal office from the last Mamluk Abbasid caliph to the Ottomans were a later invention.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "ottoman-empire.i05",
+        "ottoman-empire.i06"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ottoman-empire.s04"
+      ]
+    },
+    {
+      "id": "ottoman-empire.l05",
+      "title_id": "ottoman-empire",
+      "index": 5,
+      "heading": "Suleiman the Magnificent",
+      "body": "Suleiman I (6 November 1494 – 6 September 1566), commonly known as Suleiman the Magnificent, was the Ottoman sultan from 1520 to 1566.\n\nThe longest reign among the Ottoman sultans, his rule brought about a notable peak in the Ottoman Empire's economic, military and political power, and raised the number of the empire's subjects to at least 25 million people.\n\n![](ottoman-empire.i08)\n\nAfter succeeding his father Selim I on 30 September 1520, Suleiman began his reign by launching military campaigns against the Christian powers of Central and Eastern Europe and the Mediterranean; Belgrade fell to him in 1521 and Rhodes in 1522, and at Mohács in 1526, Suleiman broke the strength of the Kingdom of Hungary. Hungary was subsequently divided, with much of it incorporated directly into the empire. However, his defeat at the siege of Vienna in 1529 prevented him from advancing further into Europe. Suleiman also fought for years against the Shia Islamic Safavid Empire of Iran and annexed Iraq. In North Africa, Ottoman Tripolitania was established and the Ottoman fleet dominated the seas from the Mediterranean to the Red Sea and into the Persian Gulf.\n\nSuleiman personally instituted major judicial changes pertaining to society, education, taxation, and criminal law. His reforms, carried out in conjunction with the Ottoman chief judicial official Ebussuud Efendi, brought together the two forms of Ottoman law: sultanic (Kanun) and Islamic (Sharia).\n\nHe was also a distinguished poet and goldsmith; and a great patron of fine culture, overseeing the \"Golden Age\" of the Ottoman Empire which was at the height of its artistic, literary, and architectural development.\n\nIn 1534, Suleiman broke with Ottoman tradition by marrying Hürrem, an influential woman from his Imperial Harem who helped usher in the \"Sultanate of Women\" period in Ottoman history. Upon Suleiman's death in 1566, he was succeeded by his and Hürrem's son Selim II. The death of Suleiman marks a watershed moment in Ottoman history, although scholars typically regard the period after his death to be one of crisis and adaptation rather than of simple decline. In the following decades, the Ottoman Empire began to experience significant political, institutional, and economic changes, a period often referred to as the Era of Transformation.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "ottoman-empire.i07",
+        "ottoman-empire.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ottoman-empire.s05"
+      ]
+    },
+    {
+      "id": "ottoman-empire.l06",
+      "title_id": "ottoman-empire",
+      "index": 6,
+      "heading": "The Janissaries",
+      "body": "A janissary was a member of the elite infantry units that formed the Ottoman sultan's household troops. They were one of the first modern standing armies, and perhaps the first infantry force in the world to be equipped primarily with firearms, adopted during the reign of Murad II (r. 1421–1444, 1446–1451). The corps was established under either Orhan or Murad I, and dismantled by Mahmud II in 1826.\n\nJanissaries began as an elite corps made up through the devşirme system of child levy enslavement, by which Christian boys, chiefly from the Balkans, were taken, levied, subjected to forced circumcision and forced conversion to Islam, and incorporated into the Ottoman army. They became famed for internal cohesion cemented by strict discipline and order. Unlike typical slaves, they were paid regular salaries. Forbidden to marry until retirement (typically in their 40s) or engage in trade, their complete loyalty to the Ottoman sultan was expected. By the 17th century, due to a dramatic increase in the size of the Ottoman standing army, the corps' initially strict recruitment policy was relaxed. Civilians bought their way into it in order to benefit from the improved socio-economic status it conferred upon them. Consequently, the corps gradually lost its military character, undergoing a process that has been described as \"civilianization\".\n\nThe Janissary Corps were a formidable military unit in the early centuries, but as Western Europe modernized its military organization and technology, the Janissaries became a reactionary force that resisted all change within the Ottoman army. Steadily the Ottoman military power became outdated, but when the Janissaries felt their privileges were being threatened, or outsiders wanted to modernize them, or they might be superseded by their cavalry rivals, they would rise in rebellion. By the time the Janissaries were suppressed, it was too late for Ottoman military power to catch up with the West. The Janissary Corps was abolished by Mahmud II in 1826 in the Auspicious Incident, in which 6,000 or more Janissaries were executed.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "ottoman-empire.i09"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ottoman-empire.s06"
+      ]
+    },
+    {
+      "id": "ottoman-empire.l07",
+      "title_id": "ottoman-empire",
+      "index": 7,
+      "heading": "The Tanzimat reforms",
+      "body": "The Tanzimat was a period of reforms in the Ottoman Empire that began with the Edict of Gülhane of 1839 and ended with the First Constitutional Era in 1876. Driven by reformist statesmen such as Mustafa Reşid Pasha, Mehmed Emin Âli Pasha, and Fuad Pasha, under Sultans Abdul Mejid and Abdul Aziz, the reforms sought to reverse the empire's decline by modernizing legal, military, and administrative systems while promoting Ottomanism (equality for all subjects). Though the secular Nizamiye Courts (Regular Courts), modern education, and infrastructure like railways, were introduced, the reforms faced resistance from conservative clerics, exacerbated ethnic tensions in the Balkans, and saddled the empire with crippling foreign debt. The Tanzimat's legacy remains contested: some historians credit it with establishing a powerful national government, while others argue it accelerated imperial fragmentation.\n\nDifferent functions of government received reform, were completely reorganized, or started from scratch. Among institutions that received significant attention throughout this period included legislative functions, trade policy, secularization and codification of the legal system, crackdowns on the slave trade, education, property law, law enforcement, and the military. Ottoman statesmen also worked with reformers of the many confessional communities of the empire, millets, to codify — and in some cases democratize — their confessional governments.\n\nThe reforms of the Tanzimat built on previous reform efforts of Sultan Mahmud II. In its height, the Porte's bureaucracy overshadowed the sultans. After a period of chaos following Âlî Pasha's death in 1871, the spirit of reorganization turned towards the imperial social contract, in the form of the 1876 Ottoman Constitution, written by Midhat Pasha. The Tanzimat Period is considered to have ended with the chaos of the Great Eastern Crisis (1875–1878). However, reform efforts continued into the Hamidian, Young Turk, and One-Party period.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ottoman-empire.s07"
+      ]
+    },
+    {
+      "id": "ottoman-empire.l08",
+      "title_id": "ottoman-empire",
+      "index": 8,
+      "heading": "The Young Turks",
+      "body": "The Young Turk Revolution (July 1908; Turkish: Jön Türk Devrimi) was a constitutionalist revolution in the Ottoman Empire. Revolutionaries belonging to the Internal Committee of Union and Progress (CUP), an organization of the Young Turks movement, forced Sultan Abdul Hamid II to restore the Constitution, recall the parliament, and schedule an election. Thus began the Second Constitutional Era which lasted from 1908–1912 and also the Turkish Revolution, an era of political instability and social change which lasted for more than four decades.\n\nThe revolution took place in Ottoman Rumeli in the context of the Macedonian Struggle and the increasing instability of the Hamidian regime. It began with CUP member Ahmed Niyazi's flight into the Albanian highlands. He was soon joined by İsmail Enver, Eyub Sabri, and other Unionist officers. They networked with local Albanians and utilized their connections within the Salonica based Third Army to instigate a large revolt. A string of assassinations by Unionist Fedai also contributed to Abdul Hamid's capitulation. Though the constitutional regime established after the revolution eventually succumbed to Unionist dictatorship by 1913, the Ottoman sultanate ceased to be the base of power in Turkey after 1908.\n\n![](ottoman-empire.i11)\n\nImmediately after the revolution, Bulgaria declared independence from the Ottoman Empire and Austria-Hungary's annexation of nominal Ottoman territory sparked the Bosnian Crisis.\n\nAfter an attempted monarchist uprising known as the 31 March incident in favor of Abdul Hamid the following year, he was deposed and his half-brother Mehmed V ascended the throne.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "ottoman-empire.i10",
+        "ottoman-empire.i11"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ottoman-empire.s08"
+      ]
+    },
+    {
+      "id": "ottoman-empire.l09",
+      "title_id": "ottoman-empire",
+      "index": 9,
+      "heading": "The empire ends",
+      "body": "The dissolution of the Ottoman Empire (1908–1922) was a period of history of the Ottoman Empire beginning with the Young Turk Revolution and ultimately ending with the empire's dissolution and the founding of the modern state of Turkey.\n\n![](ottoman-empire.i13)\n\nThe Young Turk Revolution restored the constitution of 1876 and brought in multi-party politics with a two-stage electoral system for the Ottoman Parliament. At the same time, a nascent movement called Ottomanism was promoted in an attempt to maintain the unity of the Empire, emphasising a collective Ottoman nationalism regardless of religion or ethnicity. Within the empire, the new constitution was initially seen positively, as an opportunity to modernize state institutions and resolve inter-communal tensions between different ethnic groups.\n\nAdditionally, this period was characterised by continuing military failures by the empire. Despite military reforms, the Ottoman Army met with disastrous defeat in the Italo-Turkish War (1911–1912) and the Balkan Wars (1912–1913), resulting in the Ottomans being driven out of North Africa and nearly out of Europe. Continuous unrest leading up to World War I resulted in the 31 March Incident, the 1912 Ottoman coup d'état and the 1913 Ottoman coup d'état. The Committee of Union and Progress (CUP) government became increasingly radicalised during this period, and conducted ethnic cleansing and genocide against the empire's Armenian, Assyrian, and Greek citizens, events collectively referred to as the Late Ottoman genocides. Ottoman participation in World War I ended with defeat and the partition of the empire's remaining territories under the terms of the Treaty of Sèvres. The treaty, formulated at the conference of London, allocated nominal land to the Ottoman state and allowed it to retain the designation of \"Ottoman Caliphate\" (similar to the Vatican, a sacerdotal-monarchical state ruled by the Catholic Pope), leaving it severely weakened. One factor behind this arrangement was Britain's desire to thwart the Khilafat Movement.\n\n![](ottoman-empire.i14)\n\nThe occupation of Constantinople (Istanbul), along with the occupation of Smyrna (modern-day İzmir), mobilized the Turkish national movement, which ultimately won the Turkish War of Independence. The formal abolition of the Ottoman Sultanate was performed by the Grand National Assembly of Turkey on 1 November 1922. The Sultan was declared persona non grata from the lands the Ottoman Dynasty had ruled since 1299.\n\n## The last sultan\n\nThe Grand National Assembly of Turkey abolished the monarchy on 1 November 1922 and ended the Ottoman Empire, which had lasted from c. 1299. On 11 November 1922, at the Conference of Lausanne, the sovereignty of the Grand National Assembly exercised by the Government in Angora (now Ankara) over Turkey was recognized. The last sultan, Mehmed VI, departed the Ottoman capital, Constantinople (now Istanbul), on 17 November 1922 aboard HMS Malaya. The legal position was solidified with the signing of the Treaty of Lausanne on 24 July 1923 and the proclamation of the Republic of Turkey on 29 October 1923. In March 1924 the Caliphate was abolished, marking the end of the last remnant of the former monarchy.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ottoman-empire.i12",
+        "ottoman-empire.i13",
+        "ottoman-empire.i14"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ottoman-empire.s09",
+        "ottoman-empire.s10"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "ottoman-empire.i01",
+      "title_id": "ottoman-empire",
+      "url": "http://10.0.2.2:8000/media/ottoman-empire/i01-fc65206beb.png",
+      "width": 1600,
+      "height": 1149,
+      "alt": "A depiction of the Ottoman Empire and its vassal states in 1481 AD. Borders follow Shepherd (1923).",
+      "kind": "map",
+      "author": "Chamboz at English Wikipedia",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:OttomanEmpire1481.png",
+      "credit_line": "Chamboz at English Wikipedia · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ottoman-empire.i02",
+      "title_id": "ottoman-empire",
+      "url": "http://10.0.2.2:8000/media/ottoman-empire/i02-3d11a539ab.png",
+      "width": 1600,
+      "height": 1148,
+      "alt": "Ottoman Empire in 1683",
+      "kind": "other",
+      "author": "Chamboz at English Wikipedia",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:OttomanEmpireMain.png",
+      "credit_line": "Chamboz at English Wikipedia · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ottoman-empire.i03",
+      "title_id": "ottoman-empire",
+      "url": "http://10.0.2.2:8000/media/ottoman-empire/i03-95f1babae3.png",
+      "width": 1600,
+      "height": 1148,
+      "alt": "A depiction of the boundaries of the Ottoman Empire and its dependencies in 1739.",
+      "kind": "other",
+      "author": "Chamboz",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:OttomanEmpire1739.png",
+      "credit_line": "Chamboz · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ottoman-empire.i04",
+      "title_id": "ottoman-empire",
+      "url": "http://10.0.2.2:8000/media/ottoman-empire/i04-8377494327.jpg",
+      "width": 1600,
+      "height": 2558,
+      "alt": "An Ottoman miniature depicting Osman I, c. 1580",
+      "kind": "painting",
+      "author": "Ottoman miniature painting",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:I_Osman.jpg",
+      "credit_line": "Ottoman miniature painting · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ottoman-empire.i05",
+      "title_id": "ottoman-empire",
+      "url": "http://10.0.2.2:8000/media/ottoman-empire/i05-d35b2002a0.jpg",
+      "width": 1600,
+      "height": 2653,
+      "alt": "16th-century miniature of Selim I by Nakkaş Osman",
+      "kind": "other",
+      "author": "Naḳḳāş ʿOs̠mān",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Nakka%C5%9F_Selim.jpg",
+      "credit_line": "Naḳḳāş ʿOs̠mān · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ottoman-empire.i06",
+      "title_id": "ottoman-empire",
+      "url": "http://10.0.2.2:8000/media/ottoman-empire/i06-5d18d3e806.png",
+      "width": 1600,
+      "height": 686,
+      "alt": "Tughra (i.e., seal or signature) of Selim I, Sultan of the Ottoman Empire (1512-1520). An explanation of the different elements composing the tughra can be found here.",
+      "kind": "other",
+      "author": "Unknown court calligrapher.",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Tughra_of_Padishah_Yavuz_Sultan_Selim.png",
+      "credit_line": "Unknown court calligrapher. · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ottoman-empire.i07",
+      "title_id": "ottoman-empire",
+      "url": "http://10.0.2.2:8000/media/ottoman-empire/i07-5c3d6bc33a.jpg",
+      "width": 1600,
+      "height": 1871,
+      "alt": "Delle tre versioni del ritratto di Solimano, ricordate dalle fonti come «di mano di Tiziano», ne sono giunte fino a noi solo due, iconograficamente diverse tra loro, ma entrambe riferibili alla…",
+      "kind": "other",
+      "author": "Circle of Titian",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:EmperorSuleiman.jpg",
+      "credit_line": "Circle of Titian · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ottoman-empire.i08",
+      "title_id": "ottoman-empire",
+      "url": "http://10.0.2.2:8000/media/ottoman-empire/i08-8127d5a02b.png",
+      "width": 1600,
+      "height": 863,
+      "alt": "Tughra (i.e., seal or signature) of Suleiman I (known as Suleiman the Magnificent or the Lawgiver), Sultan of the Ottoman Empire (1520-1566).",
+      "kind": "other",
+      "author": "Tughra_of_Suleiman_I_the_Magnificent.JPG: Unknown court calligrapher. derivative work: Alberto Fernandez Fernandez (talk)",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Tughra_of_Suleiman_I_the_Magnificent.svg",
+      "credit_line": "Tughra_of_Suleiman_I_the_Magnificent.JPG: Unknown court calligrapher. derivative work: Alberto Fernandez Fernandez (talk) · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ottoman-empire.i09",
+      "title_id": "ottoman-empire",
+      "url": "http://10.0.2.2:8000/media/ottoman-empire/i09-1be5b3827e.jpg",
+      "width": 1600,
+      "height": 2421,
+      "alt": "Agha of the Janissaries and a Bölük of the Janissaries by Lambert Wyts, 1573",
+      "kind": "other",
+      "author": "Lambert Wyts",
+      "license": "CC0",
+      "license_version": null,
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Lambert_Wyts_-_Agha_of_the_Janissaries_and_a_B%C3%B6l%C3%BCk_of_the_Janissaries.jpg",
+      "credit_line": "Lambert Wyts · CC0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ottoman-empire.i10",
+      "title_id": "ottoman-empire",
+      "url": "http://10.0.2.2:8000/media/ottoman-empire/i10-68d6f7763a.png",
+      "width": 1600,
+      "height": 1071,
+      "alt": "Declaration of the Young Turk Revolution by the leaders of the Ottoman millets in 1908",
+      "kind": "other",
+      "author": "Charles Roden Buxton",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Declaration_of_the_1908_Revolution_in_Ottoman_Empire.png",
+      "credit_line": "Charles Roden Buxton · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ottoman-empire.i11",
+      "title_id": "ottoman-empire",
+      "url": "http://10.0.2.2:8000/media/ottoman-empire/i11-f51042497f.jpg",
+      "width": 1600,
+      "height": 1688,
+      "alt": "Emblem of the Committee of Union and Progress",
+      "kind": "other",
+      "author": "Psoron",
+      "license": "CC0",
+      "license_version": null,
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:%C4%B0ttihat_ve_Terakki_amblemi.jpg",
+      "credit_line": "Psoron · CC0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ottoman-empire.i12",
+      "title_id": "ottoman-empire",
+      "url": "http://10.0.2.2:8000/media/ottoman-empire/i12-d5a4f5548f.jpg",
+      "width": 1600,
+      "height": 1209,
+      "alt": "Territorial changes of the Ottoman Empire",
+      "kind": "map",
+      "author": "Esemono",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Territorial_changes_of_the_Ottoman_Empire_1913.jpg",
+      "credit_line": "Esemono · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ottoman-empire.i13",
+      "title_id": "ottoman-empire",
+      "url": "http://10.0.2.2:8000/media/ottoman-empire/i13-18c7960140.jpg",
+      "width": 1600,
+      "height": 1209,
+      "alt": "Territorial changes of the Ottoman Empire",
+      "kind": "map",
+      "author": "Esemono",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Territorial_changes_of_the_Ottoman_Empire_1920.jpg",
+      "credit_line": "Esemono · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ottoman-empire.i14",
+      "title_id": "ottoman-empire",
+      "url": "http://10.0.2.2:8000/media/ottoman-empire/i14-c911e54076.jpg",
+      "width": 1600,
+      "height": 1042,
+      "alt": "Mehmed VI, the last Sultan of the Ottoman Empire, leaving the country after the abolition of the Ottoman sultanate, 17 November 1922",
+      "kind": "other",
+      "author": "Unknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Sultanvahideddin.jpg",
+      "credit_line": "Unknown author · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "ottoman-empire.s01",
+      "title": "Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ottoman_Empire",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ottoman-empire.s02",
+      "title": "Osman I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Osman_I",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ottoman-empire.s03",
+      "title": "Fall of Constantinople (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ottoman-empire.s04",
+      "title": "Selim I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Selim_I",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ottoman-empire.s05",
+      "title": "Suleiman the Magnificent (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Suleiman_the_Magnificent",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ottoman-empire.s06",
+      "title": "Janissary (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Janissary",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ottoman-empire.s07",
+      "title": "Tanzimat (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tanzimat",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ottoman-empire.s08",
+      "title": "Young Turk Revolution (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Young_Turk_Revolution",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ottoman-empire.s09",
+      "title": "Dissolution of the Ottoman Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Ottoman_Empire",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ottoman-empire.s10",
+      "title": "Abolition of the Ottoman sultanate (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Abolition_of_the_Ottoman_sultanate",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}
