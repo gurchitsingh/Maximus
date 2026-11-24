@@ -41,11 +41,6 @@ class HomeScreen extends ConsumerWidget {
                   : null,
               child: const MxLogo(size: 30),
             ),
-            trailing: MxIconButton(
-              icon: MxIcons.settings,
-              label: 'Settings',
-              onPressed: () => context.push(AppRoute.settings.path),
-            ),
           ),
           const Expanded(child: _HomeBody()),
         ],
@@ -167,4 +162,3 @@ class _ResumeSlot extends ConsumerWidget {
     );
   }
 }
-

@@ -28,6 +28,11 @@ void main() {
 
     await tapAndSettle(tester, find.text('Library'));
     expect(find.text('For you'), findsOneWidget);
+    await tester.scrollUntilVisible(
+      find.text('Ancient and medieval'),
+      300,
+      scrollable: find.byType(Scrollable).first,
+    );
     expect(find.text('Ancient and medieval'), findsOneWidget);
     // The people row sits below the fold of the lazy list.
     await tester.scrollUntilVisible(
@@ -164,8 +169,8 @@ void main() {
         lessonIndex: 1,
       );
     });
-    await tapAndSettle(tester, find.text('Study'));
-    expect(find.text('Study list'), findsWidgets);
+    await tapAndSettle(tester, find.text('Library'));
+    expect(find.text('Your study list'), findsWidgets);
     expect(find.text('Lesson 2 of 6'), findsOneWidget);
     expect(find.text('Not started'), findsOneWidget);
 

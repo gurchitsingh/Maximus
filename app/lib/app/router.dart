@@ -17,7 +17,6 @@ import '../features/quiz/quiz_result_screen.dart';
 import '../features/quiz/quiz_screen.dart';
 import '../features/reader/reader_screen.dart';
 import '../features/settings/settings_screen.dart';
-import '../features/study/study_screen.dart';
 import '../features/title_sheet/title_sheet.dart';
 import '../features/topic/topic_shell.dart';
 import 'shell.dart';
@@ -27,13 +26,12 @@ enum AppRoute {
   home('/home'),
   library('/library'),
   feed('/feed'),
-  study('/study'),
+  settings('/settings'),
   titleSheet('/sheet/:titleId'),
   reader('/title/:titleId/lesson/:lessonId'),
   chat('/title/:titleId/chat'),
   quiz('/title/:titleId/quiz'),
   quizResult('/title/:titleId/quiz/result'),
-  settings('/settings'),
   credits('/settings/credits'),
   gallery('/dev/gallery');
 
@@ -85,6 +83,8 @@ GoRouter buildRouter({String? initialLocation}) {
       final path = state.uri.path;
       // Splash and onboarding are S5; until then '/' goes straight to Home.
       if (path == AppRoute.splash.path) return AppRoute.home.path;
+      // The Study tab is gone: it is the first section of Library (D40).
+      if (path == '/study') return AppRoute.library.path;
       // The gallery is hidden in release and profile builds.
       if (!kDebugMode && path.startsWith('/dev')) return AppRoute.home.path;
       return null;
@@ -97,7 +97,7 @@ GoRouter buildRouter({String? initialLocation}) {
             (AppRoute.home, const HomeScreen()),
             (AppRoute.library, const LibraryScreen()),
             (AppRoute.feed, const FeedScreen()),
-            (AppRoute.study, const StudyScreen()),
+            (AppRoute.settings, const SettingsScreen()),
           ])
             StatefulShellBranch(
               routes: [
@@ -173,12 +173,6 @@ GoRouter buildRouter({String? initialLocation}) {
             ),
           ),
         ],
-      ),
-      GoRoute(
-        path: AppRoute.settings.path,
-        name: AppRoute.settings.name,
-        parentNavigatorKey: rootKey,
-        builder: (_, _) => const SettingsScreen(),
       ),
       GoRoute(
         path: AppRoute.credits.path,

@@ -29,9 +29,10 @@ class SettingsScreen extends ConsumerWidget {
     final reading = Theme.of(context).extension<MxReading>()!;
     return Scaffold(
       body: SafeArea(
+        bottom: false,
         child: Column(
           children: [
-            const MxPushedTopBar(title: 'Settings'),
+            const MxTabTopBar(title: 'Settings'),
             Expanded(
               child: ListView(
                 padding: const EdgeInsets.only(bottom: 24),

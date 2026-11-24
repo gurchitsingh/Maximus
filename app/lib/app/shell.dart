@@ -1,4 +1,4 @@
-// Main tab shell: Home, Library, Feed, Study (DESIGN_SPEC 7.8, 9).
+// Main tab shell: Home, Library, Feed, Settings (DESIGN_SPEC 7.8, 9).
 import 'package:go_router/go_router.dart';
 import 'package:material_ui/material_ui.dart';
 

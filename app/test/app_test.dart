@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:material_ui/material_ui.dart';
+import 'package:maximus/app/router.dart';
 import 'package:maximus/core/gallery/gallery_screen.dart';
 import 'package:maximus/core/theme/theme_controller.dart';
 import 'package:maximus/core/theme/tokens.dart';
@@ -20,9 +21,9 @@ void main() {
     await AppHarness.settle(tester);
     expect(find.text('FEATURED'), findsOneWidget);
 
-    await tester.tap(find.text('Study'));
-    await AppHarness.settle(tester);
-    expect(find.text('Study list'), findsWidgets);
+    // The study list is the first Library section; there is no Study tab.
+    expect(find.text('Your study list'), findsOneWidget);
+    expect(find.text('Study'), findsNothing);
 
     await tester.tap(find.text('Home'));
     await AppHarness.settle(tester);
@@ -36,6 +37,22 @@ void main() {
     expect(Theme.of(ctx).extension<MxColors>(), MxColors.sepia);
     final container = ProviderScope.containerOf(ctx);
     expect(container.read(themeSettingsProvider).variant, MxThemeVariant.sepia);
+  });
+
+  testWidgets('a /study deep link lands on Library', (tester) async {
+    usePixel8(tester);
+    await AppHarness.pump(
+      tester,
+      overrides: [
+        routerProvider.overrideWith((ref) {
+          final r = buildRouter(initialLocation: '/study');
+          ref.onDispose(r.dispose);
+          return r;
+        }),
+      ],
+    );
+    expect(find.text('FEATURED'), findsOneWidget);
+    expect(find.text('Your study list'), findsOneWidget);
   });
 
   for (final variant in MxThemeVariant.values) {

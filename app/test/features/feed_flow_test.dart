@@ -66,7 +66,7 @@ void main() {
     await tapAndSettle(tester, find.text('Feed'));
     expect(find.text('Your feed is empty'), findsOneWidget);
     await tapAndSettle(tester, find.text('Browse the library'));
-    expect(find.text('Ancient and medieval'), findsOneWidget);
+    expect(find.text('FEATURED'), findsOneWidget);
   });
 
   testWidgets('Save and Like persist and move match %', (tester) async {
