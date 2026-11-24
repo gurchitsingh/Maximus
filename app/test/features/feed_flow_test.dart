@@ -154,7 +154,9 @@ void main() {
     expect(find.text('Add to study list'), findsOneWidget);
   });
 
-  testWidgets('saved state stays in drift after the screen is gone', (tester) async {
+  testWidgets('saved state stays in drift after the screen is gone', (
+    tester,
+  ) async {
     usePixel8(tester);
     driftRuntimeOptions.dontWarnAboutMultipleDatabases = true;
     final db = AppDatabase(NativeDatabase.memory());

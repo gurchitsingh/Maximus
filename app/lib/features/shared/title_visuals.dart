@@ -6,6 +6,7 @@ import 'package:material_ui/material_ui.dart';
 
 import '../../app/router.dart';
 import '../../core/util/colors.dart';
+import '../../core/util/image_cache.dart';
 import '../../core/widgets/widgets.dart';
 import '../../data/models/catalogue.dart';
 import '../../data/models/title.dart';
@@ -16,8 +17,7 @@ import '../../data/providers.dart';
 /// dev build makes no network calls and shows the tinted gradient instead.
 String? imageUrl(ContentImage? image) {
   if (image == null) return null;
-  final host = Uri.tryParse(image.url)?.host ?? '';
-  if (host == 'example.org' || host == 'example.com') return null;
+  if (isPlaceholderImageUrl(image.url)) return null;
   return image.url;
 }
 

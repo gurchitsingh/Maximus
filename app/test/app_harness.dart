@@ -59,6 +59,7 @@ class AppHarness {
     WidgetTester tester, {
     AppDatabase? db,
     List<Override> overrides = const [],
+    ContentSource? contentSource,
   }) async {
     driftRuntimeOptions.dontWarnAboutMultipleDatabases = true;
     final h = AppHarness._(
@@ -71,7 +72,9 @@ class AppHarness {
         overrides: [
           databaseProvider.overrideWithValue(h.db),
           ttsEngineProvider.overrideWithValue(h.tts),
-          contentSourceProvider.overrideWithValue(SyncDevSource()),
+          contentSourceProvider.overrideWithValue(
+            contentSource ?? SyncDevSource(),
+          ),
           initialThemeSettingsProvider.overrideWithValue(
             ThemeSettings.fromStored(stored),
           ),

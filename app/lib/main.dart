@@ -6,6 +6,13 @@ import 'core/theme/font_licenses.dart';
 import 'core/theme/theme_controller.dart';
 import 'data/db/app_database.dart';
 import 'data/providers.dart';
+import 'data/repositories/credits_repository.dart';
+import 'features/feed/feed_providers.dart';
+import 'features/on_this_day/on_this_day_card.dart';
+
+/// `--dart-define=DEV_CONTENT=true` runs on the bundled assets/dev samples
+/// with no backend (UI work); otherwise content comes from /v1 (S12).
+const _devContent = bool.fromEnvironment('DEV_CONTENT');
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -22,6 +29,20 @@ Future<void> main() async {
           ThemeSettings.fromStored(stored),
         ),
         settingsWriterProvider.overrideWithValue(db.settingsDao),
+        if (!_devContent) ...[
+          contentSourceProvider.overrideWith(
+            (ref) => ref.watch(apiContentSourceProvider),
+          ),
+          feedSourceProvider.overrideWith(
+            (ref) => ref.watch(apiContentSourceProvider),
+          ),
+          onThisDaySourceProvider.overrideWith(
+            (ref) => ref.watch(apiContentSourceProvider),
+          ),
+          creditsSourceProvider.overrideWith(
+            (ref) => ref.watch(apiContentSourceProvider),
+          ),
+        ],
       ],
       child: const MaximusApp(),
     ),
