@@ -492,8 +492,7 @@
           "sections": [
             "lead"
           ],
-          "heading": "The Hellenistic world",
-          "max_words": 550
+          "heading": "The Hellenistic world"
         },
         {
           "page": "Battle of Corinth (146 BC)",
@@ -1120,6 +1119,15 @@
           "heading": "The Black Death"
         },
         {
+          "page": "Siege of Caffa",
+          "sections": [
+            "lead",
+            "Siege"
+          ],
+          "heading": "The siege of Caffa",
+          "max_words": 350
+        },
+        {
           "page": "Yersinia pestis",
           "sections": [
             "lead"
@@ -1139,6 +1147,24 @@
             "lead"
           ],
           "heading": "The Peasants' Revolt"
+        },
+        {
+          "page": "Persecution of Jews during the Black Death",
+          "sections": [
+            "lead",
+            "Persecutions and massacres"
+          ],
+          "heading": "Blaming the Jews",
+          "max_words": 350
+        },
+        {
+          "page": "Danse macabre",
+          "sections": [
+            "lead",
+            "Background"
+          ],
+          "heading": "The dance of death",
+          "max_words": 350
         },
         {
           "page": "Quarantine",
@@ -1538,8 +1564,7 @@
           "sections": [
             "lead"
           ],
-          "heading": "The Rebellion of 1857",
-          "max_words": 550
+          "heading": "The Rebellion of 1857"
         },
         {
           "page": "Indian National Congress",
@@ -1644,8 +1669,7 @@
           "sections": [
             "lead"
           ],
-          "heading": "The Bengal famine",
-          "max_words": 550
+          "heading": "The Bengal famine"
         },
         {
           "page": "Green Revolution",
@@ -1761,6 +1785,13 @@
           "heading": "The spinning jenny"
         },
         {
+          "page": "Spinning mule",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The spinning mule"
+        },
+        {
           "page": "Watt steam engine",
           "sections": [
             "lead"
@@ -1773,6 +1804,15 @@
             "lead"
           ],
           "heading": "Coalbrookdale"
+        },
+        {
+          "page": "Bessemer process",
+          "sections": [
+            "lead",
+            "History"
+          ],
+          "heading": "Cheap steel",
+          "max_words": 350
         },
         {
           "page": "Liverpool and Manchester Railway",
@@ -1789,11 +1829,27 @@
           "heading": "The Luddites"
         },
         {
+          "page": "Cotton mill",
+          "sections": [
+            "lead",
+            "Labour conditions"
+          ],
+          "heading": "Life in the mill",
+          "max_words": 400
+        },
+        {
           "page": "Factory Acts",
           "sections": [
             "lead"
           ],
           "heading": "The Factory Acts"
+        },
+        {
+          "page": "Great Exhibition",
+          "sections": [
+            "lead"
+          ],
+          "heading": "The Great Exhibition"
         }
       ]
     },
@@ -2080,8 +2136,7 @@
           "sections": [
             "lead"
           ],
-          "heading": "The fate of the Romanovs",
-          "max_words": 550
+          "heading": "The fate of the Romanovs"
         },
         {
           "page": "Treaty on the Creation of the Union of Soviet Socialist Republics",
@@ -2225,8 +2280,7 @@
           "sections": [
             "lead"
           ],
-          "heading": "A nation at war with itself",
-          "max_words": 550
+          "heading": "A nation at war with itself"
         },
         {
           "page": "Origins of the American Civil War",
@@ -2355,8 +2409,7 @@
           "sections": [
             "lead"
           ],
-          "heading": "The Schlieffen Plan",
-          "max_words": 550
+          "heading": "The Schlieffen Plan"
         },
         {
           "page": "Trench warfare",
@@ -2451,8 +2504,7 @@
           "sections": [
             "lead"
           ],
-          "heading": "The world at war",
-          "max_words": 550
+          "heading": "The world at war"
         },
         {
           "page": "Causes of World War II",
@@ -2480,8 +2532,7 @@
           "sections": [
             "lead"
           ],
-          "heading": "Operation Barbarossa",
-          "max_words": 550
+          "heading": "Operation Barbarossa"
         },
         {
           "page": "Attack on Pearl Harbor",
@@ -2604,8 +2655,7 @@
           "sections": [
             "lead"
           ],
-          "heading": "The Cuban Missile Crisis",
-          "max_words": 550
+          "heading": "The Cuban Missile Crisis"
         },
         {
           "page": "Vietnam War",
@@ -2675,8 +2725,7 @@
           "sections": [
             "lead"
           ],
-          "heading": "A decade of hardship",
-          "max_words": 550
+          "heading": "A decade of hardship"
         },
         {
           "page": "Wall Street crash of 1929",
