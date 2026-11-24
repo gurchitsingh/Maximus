@@ -1,8 +1,11 @@
-# Maximus backend (v0)
+# Maximus backend (v3)
 
-FastAPI + SQLAlchemy + SQLite (Alembic migrations). Serves the 3 sample titles from `data/samples/`.
+FastAPI + SQLAlchemy + Alembic. **Production: Postgres (Neon). Dev and tests: SQLite.** Serves the 3 sample titles
+from `data/samples/` and the real titles in `data/titles/` (S11 Wikipedia ingest).
 The API contract is `docs/CONTRACTS.md` (authoritative); responses are tested against `docs/schemas/`.
-Real titles live in `data/titles/` (S11 Wikipedia ingest). Chat proxy: S14, see Chat below.
+Chat proxy: S14, see Chat below. Accounts, sync, chat history and account deletion: S17, see
+[Accounts](#accounts-s17-contracts-14), [Sync](#sync-s17-contracts-15), [Account deletion and web pages](#account-deletion-and-web-pages-s17-contracts-17),
+[Environment](#environment) and [Deploy, migrations and backups](#deploy-migrations-and-backups).
 
 ## Run (Windows, PowerShell, from `backend/`)
 
@@ -10,7 +13,7 @@ Real titles live in `data/titles/` (S11 Wikipedia ingest). Chat proxy: S14, see 
 py -3.12 -m venv .venv
 .venv\Scripts\pip install -r requirements-dev.txt
 copy .env.example .env                      # dev settings: SERVE_DRAFTS=true (samples are drafts)
-.venv\Scripts\alembic upgrade head          # creates maximus.db
+.venv\Scripts\alembic upgrade head          # creates maximus.db (and adds 0003 to an existing one)
 .venv\Scripts\python -m ingest.cli seed-samples
 Get-ChildItem data\titles\*.json | % { .venv\Scripts\python -m ingest.cli import $_.FullName }  # real titles (same id replaces a sample)
 .venv\Scripts\uvicorn app.main:app --host 0.0.0.0 --port 8000
@@ -20,6 +23,8 @@ Get-ChildItem data\titles\*.json | % { .venv\Scripts\python -m ingest.cli import
 - From the Android emulator the PC is **`http://10.0.2.2:8000`** (use `--host 0.0.0.0` or `127.0.0.1`; both work for the emulator).
 - Re-running `seed-samples` is safe: unchanged titles stay at the same `content_version`, a changed file bumps it.
 - Import one file: `python -m ingest.cli import data/titles/<id>.json`.
+- Dev mail is printed to the server log (`EMAIL_PROVIDER=console`): copy the link to verify an email or reset a
+  password. With no `JWT_SECRET` in dev, a random one is made per process, so sign-ins end when the server restarts.
 
 ## Content ingest (S11)
 
@@ -109,11 +114,16 @@ a `draft` title is overwritten on re-run, `reviewed` or `published` needs `--rep
 
 ## Endpoints
 
-`GET /healthz`, `/v1/catalogue`, `/v1/titles/{id}`, `/v1/feed?title_ids=a,b&limit=20&seed=1`,
+Public: `GET /healthz`, `/v1/catalogue`, `/v1/titles/{id}`, `/v1/feed?title_ids=a,b&limit=20&seed=1`,
 `/v1/on-this-day?date=MM-DD` (live from Wikipedia, cached 24 h), `/v1/credits`, `/v1/fonts`.
 ETag + `If-None-Match` (304) on catalogue, titles, credits, fonts, on-this-day. Errors always use
 `{"error": {"code", "message", "retry_after_s", "details"}}`.
-`POST /v1/titles/{id}/chat`: see Chat below.
+
+Accounts (no bearer): `POST /v1/auth/signup`, `signin`, `google`, `refresh`, `signout`, `verify-email`,
+`forgot-password`, `reset-password`. Bearer (`Authorization: Bearer <access_token>`): `POST
+/v1/auth/resend-verification`, `GET /v1/me`, `DELETE /v1/me`, `GET`/`POST /v1/me/sync`,
+`POST /v1/titles/{id}/chat`, `GET`/`DELETE /v1/me/chat/{title_id}`, `DELETE /v1/me/chat`.
+Web pages (HTML): `/privacy`, `/account/delete`, `/verify-email`, `/reset-password`.
 
 Production serves only `status: published` titles (and reviewed quiz/facts). `SERVE_DRAFTS=true` serves everything.
 
@@ -124,11 +134,35 @@ Production serves only `status: published` titles (and reviewed quiz/facts). `SE
 ..\tools\.venv\Scripts\python ..\tools\validate_samples.py   # from the repo root: contracts, samples, examples
 ```
 
-## Chat (S14, CONTRACTS 4)
+The same suite runs on Postgres when `TEST_DATABASE_URL` is set (CI does this in the `postgres` job). Tables are
+created once and emptied before each test. A throwaway local server:
 
-`POST /v1/titles/{id}/chat` with `{"install_id", "message", "history"}` returns one whole JSON reply
-`{"kind": "answer"|"out_of_scope", "text", "lesson_refs", "remaining_today"}` (not streamed). Answers come only
-from the open title's stored text; anything the output check cannot trust becomes "I only know about {name}.".
+```powershell
+docker run -d --name maximus-pg -e POSTGRES_USER=maximus -e POSTGRES_PASSWORD=maximus -e POSTGRES_DB=maximus_test -p 55432:5432 postgres:16-alpine
+$env:TEST_DATABASE_URL = "postgresql://maximus:maximus@127.0.0.1:55432/maximus_test"; .venv\Scripts\python -m pytest
+```
+
+Auth tests sign Google ID tokens with a local RSA key and send mail to an in-memory outbox; addresses are
+`example.com` / `example.org` only.
+
+## Chat (S14, CONTRACTS 4; v3 changes in CONTRACTS 16)
+
+`POST /v1/titles/{id}/chat` needs a bearer token. The body is `{"message"}` plus an optional `"install_id"`
+(a `history` field is refused: the server builds the last 6 turns of that title from the stored history). It returns
+one whole JSON reply `{"kind": "answer"|"out_of_scope", "text", "lesson_refs", "remaining_today", "message_id"}`
+(not streamed). Answers come only from the open title's stored text; anything the output check cannot trust becomes
+"I only know about {name}.".
+
+- **v3 caps:** `CHAT_ACCOUNT_DAILY_CAP` (20 per account) and, when the app sends `install_id`, `CHAT_DAILY_CAP` (20
+  per install, so a new account on the same phone gets no fresh allowance) → 429 `chat_daily_cap`;
+  `CHAT_GLOBAL_DAILY_CAP` (200, summed over accounts) → 503 `chat_resting`. Burst: 6/min per account and per
+  install, 20/min per IP. `remaining_today` is the tighter of the account and install allowances.
+- **v3 history:** both turns of every 200 reply are stored in `user_chat_messages` (refusals too; failures not).
+  `GET /v1/me/chat/{title_id}?limit=50&before=<message id>` (newest page first, oldest first in a page),
+  `DELETE /v1/me/chat/{title_id}`, `DELETE /v1/me/chat`. Kept `CHAT_RETENTION_DAYS` (30): purged on the first chat
+  of each UTC day and by `python -m app.jobs purge`. Chat text is never logged.
+- `docs/schemas/chat-request.schema.json`, `chat-response.schema.json` and `error.schema.json` still describe
+  the v1 shapes (no `message_id`, `history` required, no auth codes); the tests check v3 against CONTRACTS 16.
 
 - Code: `app/routers/chat.py` (route), `app/services/chat/` (`providers.py` OpenRouter then Gemini behind a small
   `Provider` protocol, `prompt.py` context + system prompt with a per-process canary, `guard.py` injection
@@ -136,21 +170,133 @@ from the open title's stored text; anything the output check cannot trust become
 - Caps: `CHAT_DAILY_CAP` (20 per install) → 429 `chat_daily_cap`; `CHAT_GLOBAL_DAILY_CAP` (200 server-wide) → 503
   `chat_resting`; both reset at 00:00 UTC. Burst: 6/min per install, 20/min per IP → 429 `rate_limited`.
   Every provider failing → 503 `chat_resting` (`providers_down`, retry 300 s). Only 200 replies are counted.
-- Counts live in the `chat_usage` table (migration `0002`; run `alembic upgrade head` on an existing dev DB),
-  as `sha256(INSTALL_ID_SALT + install_id)`, kept for today and yesterday. Message text, history and replies
-  are never stored or logged.
+- Counts: `chat_usage` per (day, account) and `chat_install_usage` per (day, `sha256(INSTALL_ID_SALT +
+  install_id)`), both kept for today and yesterday (migration `0003` renamed the S14 table).
 - History turns that match the injection pre-filter are dropped before the provider call (the message itself
   gets the refusal).
 
 Manual check with real keys (put them in `backend/.env`, never commit it), server running:
 
 ```powershell
-$b = @{install_id="3f1c9a52-7b4e-4d2a-9c61-0e8b5a7d2f10"; message="Why did the Republic fall?"; history=@()} | ConvertTo-Json
-Invoke-RestMethod -Method Post -Uri http://127.0.0.1:8000/v1/titles/roman-history/chat -ContentType application/json -Body $b
+$s = Invoke-RestMethod -Method Post -Uri http://127.0.0.1:8000/v1/auth/signup -ContentType application/json -Body (@{email="you@example.com"; password="a long test password"} | ConvertTo-Json)
+$h = @{Authorization = "Bearer $($s.access_token)"}
+$b = @{message="Why did the Republic fall?"} | ConvertTo-Json
+Invoke-RestMethod -Method Post -Uri http://127.0.0.1:8000/v1/titles/roman-history/chat -Headers $h -ContentType application/json -Body $b
 ```
+
+## Accounts (S17, CONTRACTS 14)
+
+- Code: `app/routers/auth.py`, `app/services/auth/` (`passwords.py` Argon2id 19 MiB / t=2 / p=1, rehashed on
+  sign-in; `tokens.py` 15-minute HS256 access JWTs and opaque refresh / email tokens stored as sha256;
+  `google.py` ID token checks against Google's keys, cached for their `max-age`; `mailer.py`; `limits.py`;
+  `service.py` the account rules; `deps.py` the bearer dependency, which reloads the user on every request).
+- Refresh tokens last 60 days and rotate on every use. Presenting a revoked one revokes every session of that
+  user (`token_reused`). A password reset also revokes every session.
+- Google sign-in finds the account by Google id, else links by the verified email, else creates one. Linking to
+  an account whose email was never verified **drops its password**: whoever set it never proved they own the
+  address (pre-hijacking guard).
+- Limits (in memory, per process): 10/min per IP on every `/v1/auth/*` call, 5 failed sign-ins per 15 minutes
+  per email, 3 reset or verification mails per hour per email, 1 resend per minute per account.
+- Mail goes out after the response (a background task), so timing does not show whether an address has an
+  account; failures are logged without the address and dropped.
+
+## Sync (S17, CONTRACTS 15)
+
+`GET /v1/me/sync?since=<seq>&limit=200` and `POST /v1/me/sync` with `{"records": [...]}` (1 to 500, at most
+512 KB). One table, `user_records` (user, kind, id), for the kinds `setting` (synced keys only, never
+`install_id`), `interest`, `study_item`, `rating`, `progress`, `quiz_result` (append-only) and `feed_item`; each
+`data` shape is checked (`app/services/sync.py`). Newer `updated_at` wins, a delete wins a tie, a future
+`updated_at` is clamped to now + 5 minutes. The server hands out `seq` per user under a row lock, so pulls never
+skip a record. 50 000 live records per user (`SYNC_RECORD_QUOTA`). Tombstones are purged after
+`SYNC_TOMBSTONE_DAYS` (90); a pull from before a purged tombstone gets `reset: true`.
+
+## Account deletion and web pages (S17, CONTRACTS 17)
+
+- `DELETE /v1/me` (body `{"password"}` for email accounts; Google accounts need an access token under 5
+  minutes old, else 403 `reauth_required`) hard-deletes `refresh_tokens`, `email_tokens`, `user_records`,
+  `user_chat_messages`, `chat_usage` and the `users` row in one transaction. Nothing is kept.
+- `GET /account/delete` (link it from the Play Console and the privacy policy): email form → always "If an account
+  exists, we sent a link" → a one-hour link to `/account/delete/confirm`, which shows a **Delete my account**
+  button; only the POST deletes (mail scanners open links). 3 requests per hour per email, 10 per minute per IP.
+- `GET /privacy`: the policy (draft wording, for the owner to review before launch).
+- `/verify-email` and `/reset-password` are the pages the email links open (button or form, then POST).
+- Templates are plain HTML in `app/templates/`; pages carry no scripts, a strict CSP, `Referrer-Policy:
+  no-referrer` (the URLs carry tokens) and `Cache-Control: no-store`.
+
+## Maintenance job
+
+`python -m app.jobs purge` (add `--dry-run` to count only) removes chat history older than `CHAT_RETENTION_DAYS`,
+sync tombstones older than `SYNC_TOMBSTONE_DAYS`, chat counters older than yesterday, and refresh or email tokens
+that expired over a day ago. Run it daily (a Render cron job, or a scheduled GitHub Action with the database URL as
+a secret). The chat route also purges lazily, so a missed day loses nothing.
+
+## Environment
+
+Every setting is an environment variable (or a line in `backend/.env`); empty values use the default.
+`.env.example` lists them all with no secrets. Production values live in Render's environment settings only.
+
+| Name | Default | What it is |
+|---|---|---|
+| `ENVIRONMENT` | (empty) | `development` or `production`. Empty on Render (where Render sets `RENDER`) counts as production |
+| `RENDER` | (set by Render) | Present on Render; used only to treat an unset `ENVIRONMENT` as production |
+| `DATABASE_URL` | `sqlite:///backend/maximus.db` | Production: Neon's **pooled** URL with `sslmode=require`. `postgres://` and `postgresql://` are accepted |
+| `DATABASE_URL_DIRECT` | (empty = `DATABASE_URL`) | Neon's **direct** URL, used by Alembic only |
+| `DB_POOL_SIZE` | `5` | Postgres pool size (no overflow, pre-ping, recycle 300 s, no prepared statements) |
+| `SERVE_DRAFTS` | `false` | `true` serves draft titles (dev, the samples) |
+| `WIKI_USER_AGENT` | MaximusApp/0.1 (repo URL) | User-Agent of the ingest |
+| `CORS_ORIGINS` | (empty) | Comma-separated origins; empty = no CORS (the app needs none) |
+| `MEDIA_DIR` | `backend/media` | Image store served at `/media` (dev; production storage is open, D44) |
+| `MEDIA_BASE_URL` | `http://10.0.2.2:8000/media` | Base of image URLs written by the ingest |
+| `RATE_LIMIT_IP_PER_MIN` | `120` | GET `/v1/*` per IP per minute |
+| `JWT_SECRET` | (empty) | **Secret.** HS256 key of access tokens; production needs 32+ characters |
+| `GOOGLE_CLIENT_ID` | (empty) | Web OAuth client id (the app's `serverClientId`); empty = Google sign-in refused |
+| `APP_BASE_URL` | `http://127.0.0.1:8000` | Base of email links and web pages, e.g. the Render URL |
+| `CONTACT_EMAIL` | (empty) | Contact line on `/privacy` |
+| `EMAIL_PROVIDER` | `console` | `console` (dev log; in production mails are not sent), `resend` or `smtp` |
+| `EMAIL_FROM` | (empty) | Sender address of account emails |
+| `EMAIL_PROVIDER_API_KEY` | (empty) | **Secret.** Resend API key |
+| `SMTP_HOST` | (empty) | SMTP server (with `EMAIL_PROVIDER=smtp`) |
+| `SMTP_PORT` | `587` | SMTP port |
+| `SMTP_USERNAME` | (empty) | SMTP login |
+| `SMTP_PASSWORD` | (empty) | **Secret.** SMTP password |
+| `SMTP_STARTTLS` | `true` | Use STARTTLS |
+| `OPENROUTER_API_KEY` | (empty) | **Secret.** First chat provider; no key = skipped |
+| `OPENROUTER_MODEL` | `meta-llama/llama-3.3-70b-instruct:free` | OpenRouter model id |
+| `GEMINI_API_KEY` | (empty) | **Secret.** Fallback chat provider |
+| `GEMINI_MODEL` | `gemini-2.5-flash` | Gemini model id |
+| `CHAT_ACCOUNT_DAILY_CAP` | `20` | Chats per account per UTC day |
+| `CHAT_DAILY_CAP` | `20` | Chats per install per UTC day (when the app sends `install_id`) |
+| `CHAT_GLOBAL_DAILY_CAP` | `200` | Chats for everyone per UTC day |
+| `CHAT_RETENTION_DAYS` | `30` | Days stored chat history is kept |
+| `CHAT_PROVIDER_TIMEOUT_S` | `12` | Per-provider timeout |
+| `CHAT_CONTEXT_CHARS` | `24000` | Title text budget in the prompt |
+| `CHAT_INSTALL_PER_MIN` | `6` | Chat burst limit per account and per install |
+| `CHAT_IP_PER_MIN` | `20` | Chat burst limit per IP |
+| `INSTALL_ID_SALT` | (empty) | **Secret.** Salt of the install-id hashes; production refuses to start without it |
+| `SYNC_TOMBSTONE_DAYS` | `90` | Days a sync delete is kept before it is purged |
+| `SYNC_RECORD_QUOTA` | `50000` | Live sync records per user |
+
+Tests only: `TEST_DATABASE_URL` (run the suite on Postgres).
+
+**Production refuses to start** (`app/config.py` `check_startup`, called when `app.main` is imported) when
+`INSTALL_ID_SALT` is empty, `JWT_SECRET` is empty or under 32 characters, or `DATABASE_URL` is SQLite.
+
+## Deploy, migrations and backups
+
+- Start command on Render: `uvicorn app.main:app --host 0.0.0.0 --port $PORT --proxy-headers
+  --forwarded-allow-ips="*"`. Without the proxy flags every request has Render's proxy IP and the per-IP limits
+  hit everyone at once.
+- Migrations: `alembic upgrade head` once per deploy (a pre-deploy command), with `DATABASE_URL_DIRECT` set to
+  Neon's direct URL. Never run it from several workers at once. Only the S17 session edits migrations.
+- In-memory rate limits are per process: run one worker on Render free, or the limits multiply.
+- **Backups (not built):** Neon's free plan keeps only about 6 hours of history for restores, which is not a
+  backup. Before launch, set up a scheduled `pg_dump` of the direct URL (for example a daily GitHub Actions
+  workflow that runs `pg_dump --format=custom` and stores the file somewhere private and encrypted, with a
+  retention of a few weeks), and test a restore once. The dump holds personal data: treat it like the database
+  (private storage, deleted on schedule, covered by the privacy policy's processors list).
 
 ## Secrets
 
 `backend/.env` is gitignored; only `.env.example` (names, no values) is committed. Chat needs
 `OPENROUTER_API_KEY` and/or `GEMINI_API_KEY` (a provider without a key is skipped; with neither, chat answers
-503 `chat_resting`). Set `INSTALL_ID_SALT` to a random string in production.
+503 `chat_resting`). Production also needs `JWT_SECRET` and `INSTALL_ID_SALT` (random strings) and the Neon URLs.

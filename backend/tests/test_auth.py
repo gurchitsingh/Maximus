@@ -461,3 +461,13 @@ def test_rehash_on_signin_when_params_change(client, seeded, monkeypatch, no_ip_
     assert client.post("/v1/auth/signin", json={"email": "ada@example.com", "password": PASSWORD}).status_code == 200
     (u,) = rows(seeded, User)
     assert not passwords.needs_rehash(u.password_hash)
+
+
+def test_every_setting_is_documented():
+    """Every env name is in .env.example and backend/README.md (S17 task 6). RENDER is set by Render itself."""
+    from app.config import BACKEND_DIR
+    names = {n.upper() for n in Settings.model_fields}
+    example = (BACKEND_DIR / ".env.example").read_text("utf-8")
+    readme = (BACKEND_DIR / "README.md").read_text("utf-8")
+    assert sorted(n for n in names - {"RENDER"} if f"\n{n}=" not in "\n" + example) == []
+    assert sorted(n for n in names if f"`{n}`" not in readme) == []
