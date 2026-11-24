@@ -1,4 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- The /v1 API and content images (CONTRACTS 3). -->
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:label="maximus"
         android:name="${applicationName}"

@@ -5,6 +5,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:material_ui/material_ui.dart';
 
 import '../theme/tokens.dart';
+import '../util/image_cache.dart';
 import 'poster_card.dart';
 
 @immutable
@@ -41,6 +42,7 @@ class TitleArt extends StatelessWidget {
         ? fallback
         : CachedNetworkImage(
             imageUrl: url,
+            cacheManager: mxImageCache,
             fit: BoxFit.cover,
             alignment: Alignment(data.focalX * 2 - 1, data.focalY * 2 - 1),
             placeholder: (_, _) => fallback,

@@ -56,6 +56,42 @@ class ContentRepository {
     }
   }
 
+  /// "Stale titles" (3.6): refetch, in the background and at most
+  /// [parallel] at once, every cached title in [ids] whose catalogue
+  /// `content_version` is higher than the cached one. Uncached titles wait
+  /// until they are opened. Returns how many were refreshed.
+  Future<int> refreshStale(
+    Catalogue catalogue,
+    Iterable<String> ids, {
+    int parallel = 3,
+  }) async {
+    final queue = <({String id, int version})>[];
+    for (final id in ids.toSet()) {
+      final summary = catalogue.title(id);
+      final cached = await db.contentCacheDao.title(id);
+      if (summary != null &&
+          cached != null &&
+          cached.contentVersion < summary.contentVersion) {
+        queue.add((id: id, version: summary.contentVersion));
+      }
+    }
+    var refreshed = 0;
+    Future<void> worker() async {
+      while (queue.isNotEmpty) {
+        final next = queue.removeAt(0);
+        try {
+          final t = await title(next.id, catalogueVersion: next.version);
+          if (t.summary.contentVersion >= next.version) refreshed++;
+        } catch (_) {
+          // Offline: the cached copy keeps working.
+        }
+      }
+    }
+
+    await Future.wait([for (var i = 0; i < parallel; i++) worker()]);
+    return refreshed;
+  }
+
   TitleDetail _parse(String body) =>
       TitleDetail.fromJson(jsonDecode(body) as Map<String, dynamic>);
 }

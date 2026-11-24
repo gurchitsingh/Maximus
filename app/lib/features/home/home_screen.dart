@@ -1,6 +1,5 @@
 // Home (DESIGN_SPEC 9.2.1, 9.2.2; FLOW 3): resume card, study rows, For you,
-// quiz scores. On this day stays hidden until S12 brings live data (11.19).
-// S9 finishes the dashboard.
+// quiz scores, On this day (live; hidden when there is no data, 11.19).
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -12,7 +11,9 @@ import '../../core/widgets/widgets.dart';
 import '../../data/db/app_database.dart';
 import '../../data/providers.dart';
 import '../../domain/match/rows.dart';
+import '../on_this_day/on_this_day_card.dart';
 import '../quiz/quiz_scores.dart';
+import '../shared/catalogue_states.dart';
 import '../shared/title_visuals.dart';
 
 /// Greeting by local time of day (DESIGN_SPEC 11.19).
@@ -62,14 +63,12 @@ class _HomeBody extends ConsumerWidget {
     final c = catalogue.value;
     if (c == null) {
       return catalogue.hasError
-          ? ErrorState(
-              title: 'Could not load the library',
-              body: 'Connect to the internet to set up Maximus.',
-              offline: true,
-              onRetry: () => ref.invalidate(catalogueProvider),
-            )
+          ? CatalogueErrorState(error: catalogue.error)
           : const PosterRowSkeleton();
     }
+    if (c.titles.isEmpty) return const EmptyCatalogueState();
+    // Background refetch of stale study-list titles (CONTRACTS 3.6).
+    ref.watch(staleTitlesRefreshProvider);
     final match = ref.watch(matchProvider);
     final studyIds = ref.watch(studyIdsProvider);
     final study = [
@@ -128,6 +127,10 @@ class _HomeBody extends ConsumerWidget {
           padding: EdgeInsets.symmetric(horizontal: 20),
           child: QuizScores(),
         ),
+        const Padding(
+          padding: EdgeInsets.fromLTRB(20, MxSpace.sectionGap, 20, 0),
+          child: OnThisDayCard(),
+        ),
       ],
     );
   }
@@ -164,3 +167,4 @@ class _ResumeSlot extends ConsumerWidget {
     );
   }
 }
+

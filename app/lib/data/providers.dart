@@ -1,9 +1,14 @@
 // Riverpod wiring for the data layer. main() overrides [databaseProvider];
 // tests override it with an in-memory database.
+import 'dart:async' show unawaited;
+
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../core/util/image_cache.dart';
 import '../domain/match/match_scores.dart';
+import 'api/api_client.dart';
+import 'api/api_content_source.dart';
 import 'db/app_database.dart';
 import 'dev/dev_content_source.dart';
 import 'models/catalogue.dart';
@@ -172,3 +177,27 @@ final matchProvider = Provider<MatchResult>(
     ref.watch(matchSignalsProvider),
   ),
 );
+
+// ---- /v1 API (S12, CONTRACTS 3) ----
+// main.dart overrides contentSourceProvider, feedSourceProvider,
+// onThisDaySourceProvider and creditsSourceProvider with
+// [apiContentSourceProvider]; tests keep the bundled dev sources.
+
+final apiClientProvider = Provider<ApiClient>((_) => ApiClient());
+
+final apiContentSourceProvider = Provider<ApiContentSource>(
+  (ref) => ApiContentSource(
+    ref.watch(apiClientProvider),
+    ref.watch(databaseProvider).contentCacheDao,
+    prefetchImages: (urls) => unawaited(prefetchImages(urls)),
+  ),
+);
+
+/// Background refetch of stale study-list titles (3.6). Home watches it.
+final staleTitlesRefreshProvider = FutureProvider<int>((ref) async {
+  final catalogue = await ref.watch(catalogueProvider.future);
+  final rows = await ref.watch(studyListProvider.future);
+  return ref
+      .watch(contentRepositoryProvider)
+      .refreshStale(catalogue, [for (final r in rows) r.titleId]);
+});

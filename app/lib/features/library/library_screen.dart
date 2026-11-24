@@ -11,6 +11,7 @@ import '../../data/db/app_database.dart';
 import '../../data/providers.dart';
 import '../../domain/match/match_scores.dart';
 import '../../domain/match/rows.dart';
+import '../shared/catalogue_states.dart';
 import '../shared/title_visuals.dart';
 
 class LibraryScreen extends ConsumerWidget {
@@ -23,14 +24,12 @@ class LibraryScreen extends ConsumerWidget {
     if (c == null) {
       return SafeArea(
         child: catalogue.hasError
-            ? ErrorState(
-                title: 'Could not load the library',
-                body: 'Connect to the internet to set up Maximus.',
-                offline: true,
-                onRetry: () => ref.invalidate(catalogueProvider),
-              )
+            ? CatalogueErrorState(error: catalogue.error)
             : const PosterRowSkeleton(posterWidth: 126),
       );
+    }
+    if (c.titles.isEmpty) {
+      return const SafeArea(child: EmptyCatalogueState());
     }
     final match = ref.watch(matchProvider);
     final studyIds = ref.watch(studyIdsProvider);
