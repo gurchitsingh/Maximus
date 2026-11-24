@@ -1,0 +1,495 @@
+{
+  "id": "ancient-greece",
+  "kind": "topic",
+  "name": "Ancient Greece",
+  "subtitle": "c. 800 to 146 BCE",
+  "poster_lines": [
+    "ANCIENT",
+    "GREECE"
+  ],
+  "group": "ancient-medieval",
+  "era": "ancient",
+  "region": "europe",
+  "period_start": -800,
+  "period_end": -146,
+  "themes": [
+    "politics",
+    "ideas",
+    "war",
+    "culture"
+  ],
+  "bg": "#1E3A5F",
+  "tint": "#6FB1E0",
+  "lettering": "roman",
+  "poster_image_id": null,
+  "hero_image_id": "ancient-greece.i01",
+  "brief": "City-states, philosophers, and the first democracy.",
+  "linked_title_ids": [
+    "alexander-the-great",
+    "socrates",
+    "plato",
+    "aristotle"
+  ],
+  "rank": 2,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "ancient-greece.l01",
+      "title_id": "ancient-greece",
+      "index": 1,
+      "heading": "The Minoans",
+      "body": "The Minoan civilization was a Bronze Age culture centered on the island of Crete. Known for its monumental architecture and Minoan art, it is often regarded as the first civilization in Europe. They traded extensively, exporting agricultural products and luxury crafts in exchange for raw metals which were difficult to obtain on Crete. Through traders and artisans, their cultural influence reached beyond Crete to the Aegean and eastern Mediterranean. Today, the ruins of the Minoan palaces at Knossos and Phaistos have become popular tourist attractions.\n\nThe Minoan civilization developed from the local Neolithic culture around 3100 BC, with complex urban settlements beginning around 2000 BC. After c. 1450 BC, they came under the cultural and perhaps political domination of the mainland Mycenaean Greeks, forming a hybrid culture which lasted until around 1100 BC. Largely forgotten after the Late Bronze Age collapse, the Minoan civilization was rediscovered in the early twentieth century through archaeological excavation.\n\nThe Minoans developed two writing systems known as Cretan hieroglyphs and Linear A. Because neither script has been fully deciphered, the identity of the Minoan language is unknown. Based on what is known, the language is regarded as unlikely to belong to a well-attested language family such as Indo-European or Afroasiatic. After 1450 BC, a modified version of Linear A known as Linear B was used to write Mycenaean Greek, which had become the language of administration on Crete. Linear B was deciphered in 1952.\n\nLittle is known about the structure of Minoan society, and it is unclear whether there was ever a unified Minoan state. Religious practices included worship at peak sanctuaries and sacred caves, but nothing is certain regarding their pantheon. The Minoans constructed enormous labyrinthine buildings which their initial excavators labeled Minoan palaces. Subsequent research has shown that they served a variety of religious and economic purposes rather than being royal residences, though their exact role in Minoan society is a matter of continuing debate, as is the political structure of Minoan society. Minoan art included elaborately decorated pottery, seals, figurines, and colorful frescoes.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "ancient-greece.i01"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-greece.s01"
+      ]
+    },
+    {
+      "id": "ancient-greece.l02",
+      "title_id": "ancient-greece",
+      "index": 2,
+      "heading": "The Mycenaeans",
+      "body": "Mycenaean Greece, also called Mycenaean civilization, was the last phase of the Bronze Age in ancient Greece, spanning the period from approximately 1750 to 1050 BC. It represents the first advanced and distinctively Greek civilization in mainland Greece with its palatial states, urban organization, works of art, and writing system. The Mycenaeans were mainland Greek peoples who were likely stimulated by their contact with insular Minoan Crete and other Mediterranean cultures to develop a more sophisticated sociopolitical culture of their own. The most prominent site was Mycenae, after which the culture of this era is named. Other centers of power that emerged included Pylos, Tiryns, and Midea in the Peloponnese, Orchomenos, Thebes, and Athens in Central Greece, and Iolcos in Thessaly. Mycenaean settlements also appeared in Epirus, Macedonia, on islands in the Aegean Sea, on the south-west coast of Asia Minor, and on Cyprus, while Mycenaean-influenced settlements appeared in the Levant and Italy.\n\nThe Mycenaean Greeks introduced several innovations in the fields of engineering, architecture and military infrastructure, while trade over vast areas of the Mediterranean was essential for the Mycenaean economy. Their syllabic script, Linear B, offers the first written records of the Greek language, and their religion already included several deities also to be found in the Olympic pantheon. Mycenaean Greece was dominated by a warrior elite society and consisted of a network of palace-centered states that developed rigid hierarchical, political, social, and economic systems. At the head of this society was the king, known as a wanax.\n\nMycenaean Greece perished with the collapse of Bronze Age culture in the eastern Mediterranean, to be followed by the Greek Dark Ages, a recordless transitional period leading to Archaic Greece where significant shifts occurred from palace-centralized to decentralized forms of socio-economic organization (including the extensive use of iron). Various theories have been proposed for the end of this civilization, among them the Dorian invasion or activities connected to the \"Sea Peoples\". Additional theories such as natural disasters and climatic changes have also been suggested. The Mycenaean period became the historical setting of much ancient Greek literature and mythology, including the Trojan Epic Cycle.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "ancient-greece.i02"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-greece.s02"
+      ]
+    },
+    {
+      "id": "ancient-greece.l03",
+      "title_id": "ancient-greece",
+      "index": 3,
+      "heading": "The Archaic age",
+      "body": "Archaic Greece was the period in Greek history lasting from c. 800 BC to the second Persian invasion of Greece in 480 BC, following the Greek Dark Ages and succeeded by the Classical period. In the archaic period, the Greeks settled across the Mediterranean Sea and the Black Sea: by the end of the period, they were part of a trade network that spanned the entire Mediterranean.\n\nThe archaic period began with a massive increase in the Greek population and significant changes that rendered the Greek world at the end of the 8th century entirely unrecognizable from its beginning. According to Anthony Snodgrass, the archaic period was bounded by two revolutions in the Greek world. It began with a \"structural revolution\" that \"drew the political map of the Greek world\" and established the poleis, the distinctively Greek city-states, and it ended with the intellectual revolution of the Classical period.\n\n![](ancient-greece.i04)\n\nThe archaic period saw developments in Greek politics, economics, international relations, warfare and culture. It laid the groundwork for the Classical period, both politically and culturally. It was in the archaic period that the Greek alphabet developed, the earliest surviving Greek literature was composed, monumental sculpture and red-figure pottery began in Greece and the hoplite became the core of Greek armies.\n\nIn Athens, the earliest institutions of democracy were implemented under Solon, and the reforms of Cleisthenes at the end of the archaic period brought in Athenian democracy as it was during the Classical period. In Sparta, many of the institutions credited to the reforms of Lycurgus were introduced during the archaic period, the region of Messenia was brought under Spartan control, helotage was introduced and the Peloponnesian League was founded and made Sparta a dominant power in Greece.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "ancient-greece.i03",
+        "ancient-greece.i04"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-greece.s03"
+      ]
+    },
+    {
+      "id": "ancient-greece.l04",
+      "title_id": "ancient-greece",
+      "index": 4,
+      "heading": "Democracy in Athens",
+      "body": "Athenian democracy developed around the 6th century BC in the Greek city-state (known as a polis) of Athens. It comprised the city of Athens and the surrounding territory of Attica, and supported ideals of liberty, equality, and security. Athens practiced a political system of legislation and executive bills. Participation was open to free, adult male citizens (i.e., not minors, metics, women or slaves). Adult male citizens probably constituted no more than 30 percent of the total adult population.\n\n![](ancient-greece.i06)\n\nSolon (in 594 BC), Cleisthenes (in 508–07 BC), and Ephialtes (in 462 BC) contributed to the development of Athenian democracy. Cleisthenes broke up the unlimited power of the nobility by organizing citizens into ten groups based on where they lived, rather than by their wealth. The longest-lasting democratic leader was Pericles, who led Athens from 461 to 429 BC. After his death, Athenian democracy was twice briefly interrupted by oligarchic revolutions in 411 and 404 BC. These occurred during the Peloponnesian War (431–404 BC) fought between Athens and Sparta.\n\nAlthough Athens is the most familiar of the democratic city-states in ancient Greece, it was not the only one, nor was it the first; multiple other city-states adopted similar democratic constitutions before Athens. By the late 4th century BC, as many as half of the over one thousand existing Greek cities might have been democracies.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "ancient-greece.i05",
+        "ancient-greece.i06"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-greece.s04"
+      ]
+    },
+    {
+      "id": "ancient-greece.l05",
+      "title_id": "ancient-greece",
+      "index": 5,
+      "heading": "Greeks against Persia",
+      "body": "The Greco-Persian Wars, also called the Persian Wars, were a series of armed conflicts involving various Greek city-states and the Achaemenid Empire from 499 BC to 449 BC. The precipitating collision between the fractious political world of ancient Greece and the enormous empire of ancient Persia had begun when the Persian king Cyrus the Great conquered the Greek-inhabited region of Ionia in 547 BC. As they struggled to exert authority over the independent-minded Ionian cities, the Persians appointed Greek tyrants to rule each of them, though this would prove to be the source of much trouble for the Greeks and the Persians alike.\n\nIn 499 BC, the Greek tyrant Aristagoras of Miletus embarked on what would ultimately be a failed expedition to conquer Naxos with Persian support. Anticipating his dismissal, Aristagoras incited Greek city-states in Asia Minor to join him in deposing their Persian rulers, sparking the Ionian Revolt. Despite initially lacking support from mainland Greece, Aristagoras secured alliances with Athens and Eretria that helped him capture and raze Sardis in 498 BC. In response to the loss of his regional capital city, the Persian king Darius the Great vowed to exact revenge against the Athenians and the Eretrians. Both sides then effectively stalemated until 495 BC, but in 494 BC, the Persian army consolidated and launched a major assault at the heart of the Ionion Revolt in Miletus; Ionia suffered a decisive defeat in the Battle of Lade, which enabled the collapse of the rebellion over the course of the following year.\n\nSeeking to protect the Achaemenid Empire from being threatened by further uprisings in Asia Minor, Darius embarked on a scheme to conquer the mainland Greeks themselves—both to prevent their political and military interference in Asia Minor and to fulfill his earlier vow to specifically punish Athens and Eretria for their role in the destruction of Sardis. In 492 BC, the first Persian invasion of Greece began under the command of Mardonius, who successfully re-subjugated Thrace and Macedon before several mishaps forced an early end to the rest of the campaign. In 490 BC, another Persian force was sent to Greece—this time across the Aegean Sea—under the command of Datis and Artaphernes, who successfully subjugated the Cyclades before razing Eretria. Before they could reach Athens itself, however, the Persians were defeated by the Athenians and the Plataeans in the Battle of Marathon.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "ancient-greece.i07"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-greece.s05"
+      ]
+    },
+    {
+      "id": "ancient-greece.l06",
+      "title_id": "ancient-greece",
+      "index": 6,
+      "heading": "Greeks against Persia (continued)",
+      "body": "Upon the death of Darius in 486 BC, his son Xerxes I took the throne and the responsibility for continuing the Achaemenid Empire's stalled conquest of Greece. In 480 BC, Xerxes initiated and personally led the second Persian invasion of Greece with one of the largest armies ever assembled in the ancient world. His victory over the Greek alliance in the Battle of Thermopylae allowed the Persian army to raze an evacuated Athens and occupy most of the Greek mainland. Subsequently seeking to destroy the combined Greek fleet, the Persians suffered a severe defeat in the Battle of Salamis. The following year, the confederated Greek forces initiated a joint offensive that decisively routed the Persian army in the Battle of Plataea, which granted independence to Attica and Boeotia.\n\nThe Greeks followed up on their success at Plataea by destroying the rest of the Persian fleet in the Battle of Mycale before expelling Persian garrisons from Sestos in 479 BC and from Byzantium in 478 BC. These consecutive losses would force Persian troops to eventually withdraw from Europe, allowing Macedonia and the Ionian city-states to again assert their independence. Tensions between Sparta and other Greek city-states, especially amidst the suspicion that the Spartan general Pausanias had conspired with Xerxes as well as due to Sparta's lack of interest in aiding the Greeks of Asia Minor, prompted the anti-Persian alliance to fall to Athenian hegemony under the Delian League. For the next three decades, the Wars of the Delian League focused on removing the Persian army from Greek territory in both Asia Minor and Cyprus. In 466 BC, the League achieved a double victory in the Battle of the Eurymedon, which completely liberated Ionia. By 460 BC, the Athenians led the League to militarily intervene in support of the Egyptian pharaoh Inaros II, who was rebelling against Artaxerxes I (the king since his father's assassination in 465 BC). Although the Greek–Egyptian alliance saw initial tactical success, the Persian army was able to secure a strategic advantage from Memphis and inflicted a disastrous defeat on the League, which was forced to suspend any further campaigns against the Achaemenid Empire, while Inaros was captured and executed by crucifixion in Susa. A Greek fleet was sent to Cyprus in 451 BC, but achieved little, drawing the Greco-Persian Wars to a quiet end shortly thereafter. Some contemporary and later Greek and Roman sources suggest that the conflict was formally resolved when Athens and the Achaemenid Empire signed the purported Peace of Callias.",
+      "reading_minutes": 3,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-greece.s05"
+      ]
+    },
+    {
+      "id": "ancient-greece.l07",
+      "title_id": "ancient-greece",
+      "index": 7,
+      "heading": "The Classical age",
+      "body": "Classical Greece was a period of around 200 years (the 5th and 4th centuries BC) in Ancient Greece, marked by much of the eastern Aegean and northern regions of Greek culture (such as Ionia and Macedonia) gaining increased autonomy from the Persian Empire; the peak flourishing of democratic Athens; the First and Second Peloponnesian Wars; the Spartan and then Theban hegemonies; and the expansion of Macedonia under Philip II. Much of the early defining mathematics, science, artistic thought (architecture, sculpture), theatre, literature, philosophy, and politics of Western civilization derive from this period of Greek history, which had a powerful influence on the later Roman Empire. Part of the broader era of classical antiquity, the classical Greek era ended after Philip II's unification of most of the Greek world against the common enemy of the Persian Empire, which was conquered within 13 years during the wars of Alexander the Great, Philip's son.\n\nIn the context of the art, architecture, and culture of ancient Greece, the Classical period corresponds to most of the 5th and 4th centuries BC (the most common dates being the fall of the last Athenian tyrant in 510 BC to the death of Alexander the Great in 323 BC). The Classical period in this sense follows the Greek Dark Ages and Archaic period and is in turn succeeded by the Hellenistic period.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "ancient-greece.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-greece.s06"
+      ]
+    },
+    {
+      "id": "ancient-greece.l08",
+      "title_id": "ancient-greece",
+      "index": 8,
+      "heading": "Athens against Sparta",
+      "body": "The Peloponnesian War was fought in the Eastern Mediterranean between the Athenian-led Delian League and the Spartan-led Peloponnesian League from 431 to 404 BC for hegemony over Ancient Greece. Initially inconclusive, the intervention of the Persian Empire in support of Sparta in 413 BC allowed the Spartan coalition to decisively defeat Athens, beginning a period of Spartan hegemony over Greece.\n\nThe war consists of four related conflicts which have traditionally been combined into one. The opening phase, called the Ten Years' War or the Archidamian War, began in 431 BC when the Spartan king Archidamus II invaded Attica with his army. After successive Spartan invasions of Attica and Athenian raiding of the Peloponnese, Athens gained the upper hand at Sphacteria in 425 BC, but suffered a major defeat by Thebes at Delium in 424 BC. Both sides also faced rebellions within their respective alliances. With both city-states exhausted from years of fighting, the Peace of Nicias was signed in 421 BC. The second phase, the Argive War (419–416 BC), was a proxy war between Sparta and its Peloponnesian rivals, led by Argos and supported by Athens. The Argive alliance was defeated at Mantinea in 418 BC, restoring Spartan control over the Peloponnese. The third phase, the Sicilian Expedition, saw Athens attempt to conquer the Spartan-allied Syracuse. Fought between 415 and 413 BC, the expedition ended in defeat for Athens and the destruction of most of its navy.\n\nAfter the expedition's failure, Sparta, now allied to the Persian Empire, broke the peace in 413 BC and began the final phase of the war, called the Decelean War or Ionian War. While Persia captured the Athenian cities in Asia Minor; Sparta, led by Lysander, built a Persian-financed fleet to break Athens's naval superiority. Sparta won the decisive battle of Aegospotami in 405 BC, which broke the power of the Delian League. Athens fell the following year and the Delian League was dissolved, ending the war. The Delian League's democracies were replaced with Spartan-style oligarchies, most notably the Thirty Tyrants in Athens. Spartan hegemony was short-lived after the victory. A decade later Athens regained its independence in the Corinthian War, and Sparta's power continued to fall in the years to come.\n\nThe war changed the ancient Greek world. Athens lost its Aegean empire and its maritime dominance, while Sparta became established as the leading power of Greece. The destruction of whole cities and large swathes of countryside made poverty widespread in the Peloponnese, while Athens was economically devastated and never regained its pre-war prosperity. The war also created subtler changes in Greek society. While Ancient Greek warfare had once been limited and formalised, with religious and cultural taboos preventing large-scale fighting, the conflict between the democratic Athenian alliance and the oligarchical Spartan alliance transformed it into total war between competing political ideologies, making civil war between those factions a common occurrence in the Greek world. The divisions and destruction caused by the war helped lead to foreign domination of the region and the end of the golden age of Greece.",
+      "reading_minutes": 3,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-greece.s07"
+      ]
+    },
+    {
+      "id": "ancient-greece.l09",
+      "title_id": "ancient-greece",
+      "index": 9,
+      "heading": "Alexander the Great",
+      "body": "Alexander III of Macedon, most commonly known as Alexander the Great, was king of the ancient Greek kingdom of Macedon from 336 BC until his death. He spent most of his reign conducting a lengthy military campaign throughout Asia and Egypt, and by the age of 30, he had created one of the largest empires in history, stretching from Greece to Egypt and northwestern India. He was undefeated in battle and is widely considered to be one of history's greatest and most successful military commanders.\n\nAlexander was born in Pella, Macedon, to King Philip II and his fifth wife, Olympias. He was tutored by the philosopher and polymath Aristotle until the age of 16. Alexander ascended the throne at the age of 20 after his father was assassinated. Shortly afterward, he launched a campaign in the Balkans and reasserted control over Thrace and parts of Illyria before capturing and destroying the city of Thebes. Alexander then assumed leadership of the League of Corinth, created by his father.\n\nAlexander launched a pan-Hellenic invasion of the Achaemenid Persian Empire in 334 BC, and with it began a series of campaigns which lasted for ten years. Following his conquest of Asia Minor and a series of decisive battles, particularly at Issus and Gaugamela, he diminished the power of the Achaemenid Empire, subsequently overthrowing its ruler Darius III and conquering the entire empire. After the fall of Persia, the Macedonian Empire held a vast swath of territory between the Adriatic Sea and the Indus River. Alexander endeavored to reach the \"ends of the world and the Great Outer Sea\" and invaded India in 326 BC, achieving an important victory over Porus, an Indian king of present-day Punjab, at the Battle of the Hydaspes. Facing mutiny from his troops, he was eventually forced to turn back at the Beas River, and later died in 323 BC in Babylon, Mesopotamia, the city which he had planned to make the capital of his empire, while on his return to Greece.\n\nIn the years following Alexander's death, a series of civil wars broke out across the Macedonian Empire, eventually leading to its disintegration at the hands of the Diadochi and beginning the Hellenistic period. Through his conquests, Alexander built a legacy that includes cultural diffusion and syncretism, which gave rise to Greco-Buddhism and Hellenistic Judaism. He founded more than twenty cities, the most prominent being Alexandria in Egypt. Alexander's establishment of Greek colonies and the spreading of Greek culture led to Hellenistic civilization became a major force in the ancient world, influencing regions as far east as the Indian subcontinent. The Hellenistic period developed through the Roman Empire into modern Western culture; the Greek language became the region's lingua franca and was the predominant language of the Byzantine Empire until its collapse in 1453 AD. Alexander became a legendary hero similar to Achilles, and his military achievements and successes in battle made him the touchstone against which later Greek and non-Greek military leaders would judge themselves. His tactics remain a significant subject of study in military academies worldwide. Legends of Alexander's exploits were coalesced into the 3rd century Alexander Romance which, in the premodern period, went through over one hundred recensions, translations, and derivations and was translated into almost every European vernacular and every language of the Islamic world.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ancient-greece.i09"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-greece.s08"
+      ]
+    },
+    {
+      "id": "ancient-greece.l10",
+      "title_id": "ancient-greece",
+      "index": 10,
+      "heading": "The Hellenistic world",
+      "body": "In classical antiquity, the Hellenistic period covers the time in Greek, Eastern Mediterranean and West Asian history following Classical Greece, between the death of Alexander the Great in 323 BC and the death of Cleopatra VII in 30 BC, in which all these regions were under the influence of Greek leadership, culture, and language as a result of Alexander's conquests.\n\nAfter the military campaigns of Alexander the Great, the subsequent conquest of the Achaemenid Empire in 330 BC, its disintegration shortly thereafter in the Partition of Babylon and subsequent Wars of the Diadochi, Greek kingdoms were established throughout West Asia (Seleucid Empire, Kingdom of Pergamon), Northeast Africa (Ptolemaic Kingdom) and South Asia (Greco–Bactrian Kingdom, Indo-Greek Kingdom). This resulted in an influx of Greek colonists and the export of Greek culture and language to these new realms, a breadth spanning as far as modern-day India. These new Greek kingdoms were also influenced by regional indigenous cultures, adopting local practices which were deemed beneficial, necessary, or convenient. Hellenistic culture thus represents a fusion of the ancient Greek world with that of the Western Asian, Northeastern African, and Southwestern Asian worlds. The consequence of this mixture gave rise to an Attic-Ionic based Greek dialect, known as Koine Greek, which became the lingua franca throughout the ancient world.\n\nDuring the Hellenistic period, Greek cultural influence reached its peak in the Mediterranean and beyond. Prosperity and progress in the arts, literature, theatre, architecture, music, mathematics, philosophy, and science characterize the era. The Hellenistic period saw the rise of New Comedy, Alexandrian poetry, translation efforts such as the Septuagint, and the philosophies of Stoicism, Epicureanism, and Pyrrhonism. In science, the works of the mathematician Euclid and the polymath Archimedes are exemplary. Sculpture during this period was characterized by intense emotion and dynamic movement, as seen in sculptural works like the Dying Gaul and the Venus de Milo. A form of Hellenistic architecture arose which especially emphasized the building of grand monuments and ornate decorations, as exemplified by structures such as the Pergamon Altar. The religious sphere of Greek religion expanded through syncretic facets to include new gods such as the Greco–Egyptian Serapis, eastern deities such as Attis and Cybele, and a syncretism between Hellenistic culture and Buddhism in Bactria and Northwest India.\n\nThe Hellenistic period was followed by the ascendancy of the Roman Empire in the Mediterranean, the Battle of Actium in 31 BC, and the Roman conquest of Ptolemaic Egypt the following year, which eliminated the last major Hellenistic kingdom. Its name stems from the Ancient Greek word Hellas (Ἑλλάς, Hellás), which was gradually recognized as the name for Greece, from which the modern historiographical term Hellenistic was derived. The term \"Hellenistic\" is to be distinguished from \"Hellenic\" in that the latter refers to Greece itself, while the former encompasses all the ancient territories of the period that had come under significant Greek influence, particularly the Hellenized Ancient Near East, after the conquests of Alexander the Great.\n\nScholars and historians are divided as to which event signals the end of the Hellenistic era.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ancient-greece.i10"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-greece.s09"
+      ]
+    },
+    {
+      "id": "ancient-greece.l11",
+      "title_id": "ancient-greece",
+      "index": 11,
+      "heading": "Rome takes Greece",
+      "body": "The Battle of Corinth of 146 BC, also known as the Battle of Leucapetra or the Battle of Lefkopetra, was a decisive engagement fought between the Roman Republic and the Greek city-state of Corinth and its allies in the Achaean League. The battle marked the end of the Achaean War and the beginning of the period of Roman domination in Greek history, and is also notable for the complete destruction of Corinth by the Romans in its aftermath.\n\nThe Romans had moved swiftly since the war's beginning a few weeks earlier; they had destroyed the main Achaean force at Scarpheia, conquered Boeotia and then proceeded to Corinth itself. Despite the Roman successes, the Achaeans refused to surrender and gathered a final army for the defense of the League's capital of Corinth, where they engaged the Romans in battle. In a few hours of fighting, the Achaeans were soundly routed, with their troops killed, captured, or put to flight. After a few days' waiting, the Romans entered the city, and, on the orders of Mummius, set it on fire, killed all the men and enslaved all the women and children, after which the rest of Greece was subjugated by Rome.",
+      "reading_minutes": 1,
+      "image_ids": [
+        "ancient-greece.i11"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-greece.s10"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "ancient-greece.i01",
+      "title_id": "ancient-greece",
+      "url": "http://10.0.2.2:8000/media/ancient-greece/i01-06e13da116.png",
+      "width": 1600,
+      "height": 961,
+      "alt": "Map of Minoan Crete.",
+      "kind": "map",
+      "author": "User:Bibi Saint-Pol",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Map_Minoan_Crete-en.svg",
+      "credit_line": "User:Bibi Saint-Pol · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-greece.i02",
+      "title_id": "ancient-greece",
+      "url": "http://10.0.2.2:8000/media/ancient-greece/i02-3d82a5262e.png",
+      "width": 1600,
+      "height": 1404,
+      "alt": "Map of Mycenaean Greece in c. 1400 – c. 1100 BC, showing palaces, main cities, and other settlements. Not shown are the palatial centers of Agios Vasileios, Menelaion, and Midea.",
+      "kind": "map",
+      "author": "User:Alexikoua, User:Panthera tigris tigris, TL User:Reedside",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Mycenaean_World_en.png",
+      "credit_line": "User:Alexikoua, User:Panthera tigris tigris, TL User:Reedside · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-greece.i03",
+      "title_id": "ancient-greece",
+      "url": "http://10.0.2.2:8000/media/ancient-greece/i03-06622627fa.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "The Temple of Concordia, Valle dei Templi, Magna Graecia, in present-day Italy",
+      "kind": "other",
+      "author": "Evan Erickson",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Agrigento-Tempio_della_Concordia01.JPG",
+      "credit_line": "Evan Erickson · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-greece.i04",
+      "title_id": "ancient-greece",
+      "url": "http://10.0.2.2:8000/media/ancient-greece/i04-410aa68136.png",
+      "width": 1600,
+      "height": 908,
+      "alt": "Greek territories and colonies in the Archaic period",
+      "kind": "map",
+      "author": "Dipa1965",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Greek_Colonization_Archaic_Period.svg",
+      "credit_line": "Dipa1965 · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-greece.i05",
+      "title_id": "ancient-greece",
+      "url": "http://10.0.2.2:8000/media/ancient-greece/i05-867d9a2dda.png",
+      "width": 1600,
+      "height": 1275,
+      "alt": "19th-century painting by Philipp Foltz: Pericles delivers funeral oration before the Assembly.",
+      "kind": "painting",
+      "author": "Philipp Foltz",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Discurso_funebre_pericles.PNG",
+      "credit_line": "Philipp Foltz · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-greece.i06",
+      "title_id": "ancient-greece",
+      "url": "http://10.0.2.2:8000/media/ancient-greece/i06-287b67bc9d.jpg",
+      "width": 1600,
+      "height": 2133,
+      "alt": "Relief, about 336 BC, depicting personified Demos being crowned by Democracy. Ancient Agora Museum.",
+      "kind": "art",
+      "author": "Jerónimo Roure Pérez",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Demos_embodiment_being_crowned_by_Democracy._Ancient_Agora_Museum_in_Athens.jpg",
+      "credit_line": "Jerónimo Roure Pérez · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-greece.i07",
+      "title_id": "ancient-greece",
+      "url": "http://10.0.2.2:8000/media/ancient-greece/i07-52e11ccc42.jpg",
+      "width": 1600,
+      "height": 1584,
+      "alt": "Greek hoplite and Persian warrior fighting each other. Depiction in ancient kylix. 5th c. B.C. National Archaeological Museum of Athens.",
+      "kind": "other",
+      "author": "Unknown",
+      "license": "CC0",
+      "license_version": null,
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Greek-Persian_duel_1.jpg",
+      "credit_line": "Unknown · CC0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-greece.i08",
+      "title_id": "ancient-greece",
+      "url": "http://10.0.2.2:8000/media/ancient-greece/i08-806708e821.jpg",
+      "width": 1600,
+      "height": 900,
+      "alt": "The Acropolis and Parthenon, in Athens, a temple to Athena",
+      "kind": "other",
+      "author": "Nikos Kitsakis",
+      "license": "CC BY",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:The_Acropolis_of_Athens_as_seen_from_the_Pnyx_in_October_2025.jpg",
+      "credit_line": "Nikos Kitsakis · CC BY 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-greece.i09",
+      "title_id": "ancient-greece",
+      "url": "http://10.0.2.2:8000/media/ancient-greece/i09-3d75a57f33.jpg",
+      "width": 1600,
+      "height": 2133,
+      "alt": "Detail from the Alexander Mosaic (created c. 120–100 BC)",
+      "kind": "art",
+      "author": "Unknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Alexander_Mosaic_detail_of_Alexander_the_Great_(3x4_cropped).jpg",
+      "credit_line": "Unknown author · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-greece.i10",
+      "title_id": "ancient-greece",
+      "url": "http://10.0.2.2:8000/media/ancient-greece/i10-602d390462.jpg",
+      "width": 1600,
+      "height": 2424,
+      "alt": "The Winged Victory of Samothrace (The Winged Nike) is considered one of the greatest masterpieces of Hellenistic art.",
+      "kind": "other",
+      "author": "Unknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Nike_of_Samothrake_Louvre_Ma2369_n4.jpg",
+      "credit_line": "Unknown author · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-greece.i11",
+      "title_id": "ancient-greece",
+      "url": "http://10.0.2.2:8000/media/ancient-greece/i11-6487c70540.jpg",
+      "width": 1600,
+      "height": 1097,
+      "alt": "The Sack of Corinth",
+      "kind": "other",
+      "author": "Sailko",
+      "license": "CC BY",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Tony_robert-fleury,_l%27ultimo_giorno_di_corinto,_ante_1870.JPG",
+      "credit_line": "Sailko · CC BY 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "ancient-greece.s01",
+      "title": "Minoan civilization (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Minoan_civilization",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-greece.s02",
+      "title": "Mycenaean Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mycenaean_Greece",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-greece.s03",
+      "title": "Archaic Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Archaic_Greece",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-greece.s04",
+      "title": "Athenian democracy (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Athenian_democracy",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-greece.s05",
+      "title": "Greco-Persian Wars (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Greco-Persian_Wars",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-greece.s06",
+      "title": "Classical Greece (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Classical_Greece",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-greece.s07",
+      "title": "Peloponnesian War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Peloponnesian_War",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-greece.s08",
+      "title": "Alexander the Great (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Alexander_the_Great",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-greece.s09",
+      "title": "Hellenistic period (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hellenistic_period",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-greece.s10",
+      "title": "Battle of Corinth (146 BC) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Corinth_(146_BC)",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}

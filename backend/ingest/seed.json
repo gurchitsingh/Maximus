@@ -492,7 +492,8 @@
           "sections": [
             "lead"
           ],
-          "heading": "The Hellenistic world"
+          "heading": "The Hellenistic world",
+          "max_words": 550
         },
         {
           "page": "Battle of Corinth (146 BC)",

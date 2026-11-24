@@ -1,0 +1,401 @@
+{
+  "id": "ancient-india",
+  "kind": "topic",
+  "name": "Ancient India",
+  "subtitle": "c. 322 BCE to 550 CE",
+  "poster_lines": [
+    "ANCIENT",
+    "INDIA"
+  ],
+  "group": "ancient-medieval",
+  "era": "ancient",
+  "region": "asia",
+  "period_start": -322,
+  "period_end": 550,
+  "themes": [
+    "empire",
+    "politics",
+    "culture",
+    "science-tech"
+  ],
+  "bg": "#8A3B12",
+  "tint": "#F2A64A",
+  "lettering": "carved",
+  "poster_image_id": null,
+  "hero_image_id": "ancient-india.i01",
+  "brief": "Cities on the Indus, empires on the Ganges.",
+  "linked_title_ids": [
+    "chandragupta-maurya",
+    "ashoka"
+  ],
+  "rank": 4,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "ancient-india.l01",
+      "title_id": "ancient-india",
+      "index": 1,
+      "heading": "The Maurya Empire",
+      "body": "The Maurya Empire was a geographically extensive Iron Age historical power in South Asia with its power base in Magadha. Founded by Chandragupta Maurya around c. 320 BCE, it existed in loose-knit fashion until 185 BCE. The primary sources for the written records of the Mauryan times are partial records of the lost history of Megasthenes in Roman texts of several centuries later, and the Edicts of Ashoka. Archaeologically, the period of Mauryan rule in South Asia falls into the era of Northern Black Polished Ware (NBPW).\n\nThrough military conquests and diplomatic treaties, Chandragupta Maurya defeated the Nanda Empire and extended his suzerainty as far westward as Afghanistan below the Hindu Kush and as far south as the northern Deccan; however, beyond the core Magadha area, the prevailing levels of technology and infrastructure limited how deeply his rule could penetrate society. During the rule of Chandragupta's grandson, Ashoka (c. 268–232 BCE), the empire briefly controlled the major urban hubs and arteries of the subcontinent excepting the deep south. The Mauryan capital (what is today Patna) was located in Magadha; the other core regions were Taxila in the northwest; Ujjain in the Malwa Plateau; Kalinga on the Bay of Bengal coast; and the precious metal-rich lower Deccan Plateau. Outside the core regions, the empire's geographical extent was dependent on the loyalty of military commanders who controlled the armed cities scattered within it.\n\nThe Mauryan economy was helped by the earlier rise of Buddhism and Jainism—creeds that promoted nonviolence, proscribed ostentation, or superfluous sacrifices and rituals, and reduced the costs of economic transactions; by coinage that increased economic accommodation in the region; and by the use of writing, which might have boosted more intricate business dealings. Despite profitable settled agriculture in the fertile eastern Gangetic plain, these factors helped maritime and river-borne trade, which were essential for acquiring goods for consumption as well as metals of high economic value. To promote movement and trade, the Maurya dynasty built roads, most prominently a chiefly winter-time road—the Uttarapath—which connected eastern Afghanistan to their capital Pataliputra during the time of year when the water levels in the intersecting rivers were low, and they could be easily forded. Other roads connected the Ganges basin to the Arabian Sea coast in the west, and precious metal-rich mines in the south.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-india.s01"
+      ]
+    },
+    {
+      "id": "ancient-india.l02",
+      "title_id": "ancient-india",
+      "index": 2,
+      "heading": "The Maurya Empire (continued)",
+      "body": "The population of South Asia during the Mauryan period has been estimated to be between 15 and 30 million. The empire's period of dominion was marked by exceptional creativity in art, architecture, inscriptions, and produced texts, but also by the consolidation of caste in the Indo-Gangetic Plain, and the declining rights of women in the mainstream Indo-Aryan speaking regions of India. After the Kalinga War, in which Ashoka's troops inflicted much violence on the region, he embraced Buddhism and promoted its tenets in edicts scattered around South Asia, most commonly in clusters along the well-traveled road networks. He sponsored Buddhist missionaries to Sri Lanka, northwest India, and Central Asia, which played a salient role in Buddhism becoming a world religion, and himself a figure of world history. As Ashoka's edicts forbade both the killing of wild animals and the destruction of forests, he is seen by some modern environmental historians as an early embodiment of that ethos. In July 1947, Jawaharlal Nehru, the interim prime minister of India, proposed in the Constituent Assembly of India that the Lion Capital of Ashoka at Sarnath be the State Emblem of India, and the 24-pointed Ashoka Chakra on the capital's drum-shaped abacus the central feature of India's national flag. The proposal was accepted in December 1947.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-india.s01"
+      ]
+    },
+    {
+      "id": "ancient-india.l03",
+      "title_id": "ancient-india",
+      "index": 3,
+      "heading": "Chandragupta Maurya",
+      "body": "Chandragupta Maurya (reigned c. 320 BCE – c. 298 BCE) was the founder and the first emperor of the Maurya Empire, based in Magadha (present-day Bihar) in the Indian subcontinent.\n\n![](ancient-india.i03)\n\nHis rise to power began in the period of unrest and local warfare that arose after Alexander the Great's Indian campaign and early death in 323 BCE, although the exact chronology and sequence of events remains subject to debate among historians. He started a war against the unpopular Nanda dynasty in Magadha on the Ganges Valley, defeated them and established his own dynasty. In addition, he raised an army to resist the Greeks, defeated them, and took control of the eastern Indus Valley. His conquest of Magadha is generally dated to c. 322–319 BCE, and his expansion to Punjab subsequently at c. 317–312 BCE, but some scholars have speculated that he might have initially consolidated his power base in Punjab, before conquering Magadha; an alternative chronology places these events all in the period c. 311–305 BCE. According to the play Mudrarakshasa, Chandragupta was assisted by his mentor Chanakya, who later became his minister. He expanded his reach subsequently into parts of the western Indus Valley and possibly eastern Afghanistan through a dynastic marriage alliance with Seleucus I Nicator c. 305–303 BCE. His empire also included Gujarat and a geographically extensive network of cities and trade-routes.\n\n![](ancient-india.i04)\n\nThere are no historical facts about Chandragupta's origins and early life, only legends, while the narrative of his reign is mainly deduced from a few fragments in Greek and Roman sources, and a few Indian religious texts, all written centuries after his death. The prevailing levels of technology and infrastructure limited the extent of Chandragupta's rule, and the administration was decentralised, with provinces and local governments, and large autonomous regions within its limits. Chandragupta's reign, and the Maurya Empire, which reached its peak under his grandson Ashoka the Great, began an era of economic prosperity, reforms, infrastructure expansions. Buddhism, Jainism and Ājīvika prevailed over the non-Maghadian Vedic and Brahmanistic traditions, initiating, under Ashoka, the expansion of Buddhism, and the synthesis of Brahmanic and non-Brahmanic religious traditions which converged in Hinduism. His legend still inspires visions of an undivided Indian nation.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "ancient-india.i02",
+        "ancient-india.i03",
+        "ancient-india.i04"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-india.s02"
+      ]
+    },
+    {
+      "id": "ancient-india.l04",
+      "title_id": "ancient-india",
+      "index": 4,
+      "heading": "A handbook of statecraft",
+      "body": "Kautilya's Arthashastra (IAST: Kauṭilyam Arthaśāstram; transl. Kautilya's compendium on worldly affairs) is an Ancient Indian Sanskrit treatise on statecraft, politics, economic policy and military strategy. The text is likely the work of several authors over centuries, starting as a compilation of Arthashastras, texts which according to Olivelle date from the 2nd c. BCE to the 1st c. CE. These earlier treatises were compiled and amended in a new treatise, according to McClish and Olivelle in the 1st century CE by either an anonymous author or Kautilya, though earlier and later dates have also been proposed. While often regarded as created by a single author, McClish and Olivelle argue that this compilation, possibly titled Daņdanīti, served as the basis for a major expansion and redaction in the 2nd or 3rd century CE by either Kautilya or an anonymous author, when several books, dialogical comments, and the disharmonious chapter-division were added, and a stronger Brahmanical ideology was brought in. The text thus became a proper arthashastra, and was retitled to Kautilya's Arthashastra.\n\nTwo names for the text's compilor or redactor are used in the text, Kauṭalya (Kautilya) and Vishnugupta. Chanakya (375–283 BCE), the legendary counsellor of Chandragupta Maurya, is implied in a later interpolation, reinforced by Gupta-era and medieval traditions, which explicitly identified Kautilya with Chanakya. This identification started during the Gupta reign (c. 240 – c. 579), strengthening the Gupta's ideological presentation as heirs of the Mauryas. However, the identification has been questioned by scholarship, and rejected by the main studies on the topic since 1965, because of stylistic differences within the text which point to multiple authorship, as well as historical elements which are anachronistic for the Mauryan period, but fit in the first centuries of the Common Era. The Arthashastra was influential until the 12th century, when it disappeared. It was rediscovered in 1905 by R. Shamasastry, who published it in 1909. The first English translation, also by Shamasastry, was published in 1915.\n\nThe Sanskrit title, Arthashastra, can be translated as 'treatise on \"political science\"' or \"economic science\" or simply \"statecraft\", as the word artha (अर्थ) is polysemous in Sanskrit; the word has a broad scope. It includes books on the nature of government, law, civil and criminal court systems, ethics, economics, markets and trade, the methods for screening ministers, diplomacy, theories on war, nature of peace, and the duties and obligations of a king. The text incorporates Hindu philosophy, includes ancient economic and cultural details on agriculture, mineralogy, mining and metals, animal husbandry, medicine, forests and wildlife.\n\nThe Arthashastra explores issues of social welfare, the collective ethics that hold a society together, advising the king that in times and in areas devastated by famine, epidemic and such acts of nature, or by war, he should initiate public projects such as creating irrigation waterways and building forts around major strategic holdings and towns and exempt taxes on those affected. The text was influenced by Hindu texts such as the sections on kings, governance and legal procedures included in Manusmriti.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ancient-india.i05"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-india.s03"
+      ]
+    },
+    {
+      "id": "ancient-india.l05",
+      "title_id": "ancient-india",
+      "index": 5,
+      "heading": "Ashoka",
+      "body": "Ashoka, also known as Asoka or Aśoka, most commonly known as Ashoka the Great, was Emperor of Magadha from c. 268 BCE until his death, and the third ruler of the Maurya Empire. His empire covered a large part of the Indian subcontinent, stretching from present-day Afghanistan in the west to present-day Bangladesh in the east, with its capital at Pataliputra. A patron of Buddhism, he is credited with an important role in the spread of Buddhism across ancient Asia.\n\nThe Edicts of Ashoka state that during his eighth regnal year (c. 260 BCE), he conquered Kalinga after a brutal war. Ashoka subsequently devoted himself to the propagation of \"dhamma\" or righteous conduct, the major theme of the edicts. Ashoka's edicts suggest that a few years after the Kalinga War, he was gradually drawn towards Buddhism. The Buddhist legends credit Ashoka with establishing a large number of stupas, patronising the Third Buddhist council, supporting Buddhist missionaries, and making generous donations to the sangha.\n\nAshoka's existence as a historical emperor had almost been forgotten, but since the decipherment in the 19th century of sources written in the Brahmi script, Ashoka holds a reputation as one of the greatest Indian emperors. The State Emblem of the modern Republic of India is an adaptation of the Lion Capital of Ashoka. Ashoka's wheel, the Ashoka Chakra, is adopted at the centre of the National Flag of India.\n\n## The Kalinga War\n\nThe Kalinga War (ended c. 261 BCE) was fought in ancient India between the Mauryan Empire under Ashoka the Great and Kalinga, an independent feudal kingdom located on the east coast, in the present-day state of Odisha and northern parts of Andhra Pradesh. It is presumed that the battle was fought on Dhauli hills in Dhauli which is situated on the banks of Daya River. The Kalinga War was one of the largest and deadliest battles in Indian history.\n\nThis is the only major war Ashoka fought after his accession to the throne, and marked the close of the empire-building and military conquests of ancient India that began with the Mauryan Emperor Chandragupta Maurya. The war cost nearly 250,000 lives.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "ancient-india.i06"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-india.s04",
+        "ancient-india.s05"
+      ]
+    },
+    {
+      "id": "ancient-india.l06",
+      "title_id": "ancient-india",
+      "index": 6,
+      "heading": "The Gupta Empire",
+      "body": "The Gupta Empire was an Indian empire during the classical period of the Indian subcontinent which existed from the mid 3rd century to mid 6th century CE. At its peak, the dynasty ruled over an empire that spanned much of the northern Indian subcontinent. This period has been considered as the Golden Age of India by some historians, although this characterisation has been disputed by others. The ruling dynasty of the empire was founded by Gupta.\n\n![](ancient-india.i08)\n\nThe high points of the period are the great cultural developments which took place primarily during the reigns of Samudragupta, Chandragupta II, Kumaragupta I, and Skandagupta. Many Hindu epics and literary sources, such as the Mahabharata and Ramayana, were canonised during this period. The Gupta period produced scholars such as Kalidasa, Aryabhata, Varāhamihira, and Vātsyāyana, who made significant advancements in many academic fields. Science and political administration reached new heights during the Gupta era. The period, sometimes described as Pax Gupta, gave rise to achievements in architecture, sculpture, and painting that \"set standards of form and taste [that] determined the whole subsequent course of art, not only in India but far beyond her borders\". Strong trade ties also made the region an important cultural centre and established the region as a base that would influence nearby kingdoms and regions in India and Southeast Asia. The Puranas, earlier long poems on a variety of subjects, are also thought to have been committed to written texts around this period. Hinduism was followed by the rulers and the Brahmins flourished in the Gupta Empire but the Guptas were tolerant towards people of other faiths as well.\n\nThe empire eventually died out because of factors such as substantial loss of territory and imperial authority caused by their own erstwhile feudatories, as well as the invasion by the Huna peoples (Kidarites and Alchon Huns) from Central Asia. After the collapse of the Gupta Empire in the 6th century, India was again ruled by numerous regional kingdoms.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "ancient-india.i07",
+        "ancient-india.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-india.s06"
+      ]
+    },
+    {
+      "id": "ancient-india.l07",
+      "title_id": "ancient-india",
+      "index": 7,
+      "heading": "Chandragupta II",
+      "body": "Chandragupta II (died c. 415), also known by his title Vikramaditya, as well as Chandragupta Vikramaditya, was the emperor of the Gupta Empire from c. 375 until his death in c. 415. Modern scholars generally identify him with King Chandra of the Delhi iron pillar inscription.\n\nHe continued the expansionist policy of his father Samudragupta through military conquests and marital alliances. Historical evidence attests to his remarkable victories, which include the defeat of the Sassanids, the conquest of the Western Kshatrapas and the vassalization of the Hunas. Under the reign of Chandragupta II, the Gupta Empire reached its zenith, directly controlling a vast territory which stretched from the Oxus River in the west to the Bengal region in the east, and from the foothills of the Himalayas in the north to the Narmada River in the south. Chandragupta II expanded his influence and indirectly ruled over the Kuntala region of Karnataka through a marriage alliance with Kadambas, and during his daughter Prabhavatigupta's 20-year-long regency, he effectively integrated the Vakataka dynasty into the Gupta Empire.\n\n![](ancient-india.i10)\n\nShort Sanskrit inscriptions Found at the Sacred Rock of Hunza in Gilgit-Baltistan mention both Chandra and Harisena. Here Chandra is generally identified as Famous Gupta emperor Chandragupta ІІ and Harisena is identified with Gupta Courtier and minister of his father Emperor Samudragupta. Harisena is not just a Simple poet. The Allahabad Prayaga Prashasti Pillar Identifies him as a Sandhavigrahika(minister of peace and war), Kumaramatya(Senior administrative official). This positions shows Harisena held senior administrative position and significant military power under Samudragupta and the Udayagiri Cave Inscriptions demonstrates that experienced ministers could accompany Chandragupta II on royal military expeditions.\n\nFamous Historians such as R.C.Majumdar have explored the possibility and pointed out that the combination of Chandra,Vikramaditya, and mention of Samudragupta's courtier Harisena on the Sacred Rocks of Hunza in Gilgit-Balitstan of Kashmir validates the claim mentioned in the Mehrauli Iron Pillar in Delhi claiming \"Chandra\" referring to \"Chandragupta II Crossing Seven Mouths Of Indus to conquer the Vahlikas\". Here the Vahlikas are commonly associated with Bactrian Region Around Balkh in present-day Afghanistan, Although the geographical identification remains debated. This validates the possibility of Military Expedition conducted by Chandragupta II crossing Indus River and defeating the Vahlikas as claimed in the Chandragupta's Mehrauli Iron Pillar.\n\nChandragupta II was a devout Vaishnava but tolerated other faiths as well. He was a great patron of learning, and his court is said to have hosted a group of nine scholars known as the Navaratnas (nine gems). His rule strengthened trade, culture, and administration, making him one of India's most celebrated monarchs. The Chinese pilgrim Faxian, who visited India during his reign, suggests that he ruled over a peaceful and prosperous kingdom. The legendary figure of Vikramaditya is probably based on Chandragupta II (among other kings), and the noted Sanskrit poet Kalidasa may have been his court poet. The cave shrines at Udayagiri were also built during his rule. He was succeeded by Kumaragupta I.\n\n## Aryabhata\n\nAryabhata or Aryabhata I (476–550 CE) was the first of the major mathematician-astronomers and early physicist from the classical age of Indian mathematics and Indian astronomy. His works include the Āryabhaṭīya (which mentions that in 3600 Kali Yuga, 499 CE, he was 23 years old) and the Arya-siddhanta.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ancient-india.i09",
+        "ancient-india.i10"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-india.s07",
+        "ancient-india.s08"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "ancient-india.i01",
+      "title_id": "ancient-india",
+      "url": "http://10.0.2.2:8000/media/ancient-india/i01-9c199d44b7.png",
+      "width": 1600,
+      "height": 1495,
+      "alt": "Maximum extent of the Maurya Empire, as shown by the location of Ashoka's inscriptions, and visualized by A.S.I.",
+      "kind": "map",
+      "author": "Levakpitam",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ashoka_Maurya_Empire.png",
+      "credit_line": "Levakpitam · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-india.i02",
+      "title_id": "ancient-india",
+      "url": "http://10.0.2.2:8000/media/ancient-india/i02-c658d6c3ce.png",
+      "width": 1600,
+      "height": 1495,
+      "alt": "Possible extent of Nanda Empire c. 325 BCE",
+      "kind": "map",
+      "author": "Avantiputra7",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Nanda_Empire,_c.325_BCE.png",
+      "credit_line": "Avantiputra7 · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-india.i03",
+      "title_id": "ancient-india",
+      "url": "http://10.0.2.2:8000/media/ancient-india/i03-e554a9cc15.png",
+      "width": 1600,
+      "height": 1395,
+      "alt": "There are no contemporary records of Chandragupta's military conquests and the reach of his empire.",
+      "kind": "map",
+      "author": "Avantiputra7",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Chandragupta_Maurya_Empire_303_BCE_2.png",
+      "credit_line": "Avantiputra7 · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-india.i04",
+      "title_id": "ancient-india",
+      "url": "http://10.0.2.2:8000/media/ancient-india/i04-3e65e32d58.png",
+      "width": 1600,
+      "height": 1395,
+      "alt": "Traditional representation of extent of Chandragupta Maurya's empire c. 303 BCE, as a solid mass of territory. Some maps include all of Gedrosia, e.g., south-east Iran.",
+      "kind": "map",
+      "author": "Avantiputra7",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Chandragupta_Maurya_Empire_303_BCE_1.png",
+      "credit_line": "Avantiputra7 · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-india.i05",
+      "title_id": "ancient-india",
+      "url": "http://10.0.2.2:8000/media/ancient-india/i05-14a08c1870.jpg",
+      "width": 1600,
+      "height": 262,
+      "alt": "16th century Arthashastra manuscript in Grantha script kept at the Oriental Research Institute, Mysore",
+      "kind": "art",
+      "author": "Unknown scribe",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Rediscovered_circa_16th_century_Arthashastra_manuscript_in_Grantha_script_from_the_Oriental_Research_Institute_(ORI)_which_was_found_in_1905_03.jpg",
+      "credit_line": "Unknown scribe · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-india.i06",
+      "title_id": "ancient-india",
+      "url": "http://10.0.2.2:8000/media/ancient-india/i06-6a491d2a0b.jpg",
+      "width": 1600,
+      "height": 1528,
+      "alt": "A c. 1st century BCE / CE relief from Sanchi, showing Ashoka on his chariot, visiting the Ramagrama",
+      "kind": "art",
+      "author": "Photo Dharma from Sadao, Thailand",
+      "license": "CC BY",
+      "license_version": "2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ashoka%27s_visit_to_the_Ramagrama_stupa_Sanchi_Stupa_1_Southern_gateway.jpg",
+      "credit_line": "Photo Dharma from Sadao, Thailand · CC BY 2.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-india.i07",
+      "title_id": "ancient-india",
+      "url": "http://10.0.2.2:8000/media/ancient-india/i07-44febc1c92.png",
+      "width": 1600,
+      "height": 1551,
+      "alt": "Political map of the Gupta Empire around 375, during the reign of Samudragupta. Sources used: .mw-parser-output .smallcaps{font-variant:small-caps}Agrawal, A.;",
+      "kind": "map",
+      "author": "Woudloper",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:South_Asia_historical_AD375_EN.svg",
+      "credit_line": "Woudloper · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-india.i08",
+      "title_id": "ancient-india",
+      "url": "http://10.0.2.2:8000/media/ancient-india/i08-89ba880354.png",
+      "width": 1600,
+      "height": 1504,
+      "alt": "Political map of the Gupta Empire and its ally, the Vakataka Empire, around 450 AD, during the reign of Kumaragupta I. Sources: .mw-parser-output .smallcaps{font-variant:small-caps}Agrawal, A.;",
+      "kind": "map",
+      "author": "Woudloper",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:South_Asia_historical_AD450_EN.svg",
+      "credit_line": "Woudloper · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-india.i09",
+      "title_id": "ancient-india",
+      "url": "http://10.0.2.2:8000/media/ancient-india/i09-acd8811ba8.jpg",
+      "width": 1600,
+      "height": 1593,
+      "alt": "An 8 gm gold coin featuring Chandragupta II astride a caparisoned horse with a bow in his left hand",
+      "kind": "art",
+      "author": "I, PHGCOM",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:ChandraguptaIIOnHorse.jpg",
+      "credit_line": "I, PHGCOM · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-india.i10",
+      "title_id": "ancient-india",
+      "url": "http://10.0.2.2:8000/media/ancient-india/i10-2f4133dbe8.jpg",
+      "width": 1600,
+      "height": 2291,
+      "alt": "Statue of Aryabhata of Bihar, or then Magadha",
+      "kind": "art",
+      "author": "Cpjha13",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Aryabhatta_of_Bihar.jpg",
+      "credit_line": "Cpjha13 · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "ancient-india.s01",
+      "title": "Maurya Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Maurya_Empire",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-india.s02",
+      "title": "Chandragupta Maurya (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chandragupta_Maurya",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-india.s03",
+      "title": "Arthashastra (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Arthashastra",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-india.s04",
+      "title": "Ashoka (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ashoka",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-india.s05",
+      "title": "Kalinga War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kalinga_War",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-india.s06",
+      "title": "Gupta Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gupta_Empire",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-india.s07",
+      "title": "Chandragupta II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Chandragupta_II",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-india.s08",
+      "title": "Aryabhata (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Aryabhata",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}

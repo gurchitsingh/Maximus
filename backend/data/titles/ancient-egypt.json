@@ -1,0 +1,558 @@
+{
+  "id": "ancient-egypt",
+  "kind": "topic",
+  "name": "Ancient Egypt",
+  "subtitle": "c. 3100 to 30 BCE",
+  "poster_lines": [
+    "ANCIENT",
+    "EGYPT"
+  ],
+  "group": "ancient-medieval",
+  "era": "ancient",
+  "region": "middle-east-africa",
+  "period_start": -3100,
+  "period_end": -30,
+  "themes": [
+    "empire",
+    "religion",
+    "culture",
+    "politics"
+  ],
+  "bg": "#F0B35A",
+  "tint": "#E8A33D",
+  "lettering": "carved",
+  "poster_image_id": null,
+  "hero_image_id": "ancient-egypt.i01",
+  "brief": "Pharaohs, pyramids and 3,000 years of one river.",
+  "linked_title_ids": [
+    "cleopatra-vii"
+  ],
+  "rank": 3,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "ancient-egypt.l01",
+      "title_id": "ancient-egypt",
+      "index": 1,
+      "heading": "The land of the Nile",
+      "body": "Ancient Egypt was a cradle of civilization concentrated along the lower reaches of the Nile River in the eastern part of North Africa. It emerged from prehistoric Egypt around 3150 BC (according to conventional Egyptian chronology), when Upper and Lower Egypt were united by Menes, who is believed by the majority of Egyptologists to have been the same person as Narmer. The history of ancient Egypt unfolded as a series of stable kingdoms interspersed by the \"Intermediate Periods\" of relative instability. These stable kingdoms existed in one of three periods: the Old Kingdom of the Early Bronze Age; the Middle Kingdom of the Middle Bronze Age; or the New Kingdom of the Late Bronze Age.\n\nThe pinnacle of ancient Egyptian power was achieved during the New Kingdom, which extended its rule to much of Nubia and a considerable portion of the Levant. After this period, Egypt entered an era of slow decline. Over the course of its history, it was invaded or conquered by a number of foreign civilizations, including the Hyksos, the Kushites, the Assyrians, the Persians, the Greeks and the Romans. The end of ancient Egypt is variously defined as occurring with the end of the Late Period during the Wars of Alexander the Great in 332 BC or with the end of the Greek-ruled Ptolemaic Kingdom during the Roman conquest of Egypt in 30 BC. In AD 642, the Arab conquest of Egypt brought an end to the region's millennium-long Greco-Roman period.\n\nThe success of ancient Egyptian civilization came partly from its ability to adapt to the Nile's conditions for agriculture. The predictable flooding of the Nile and controlled irrigation of its fertile valley produced surplus crops which supported a more dense population and thereby substantial social and cultural development. With resources to spare, the administration sponsored the mineral exploitation of the valley and its surrounding desert regions, the early development of an independent writing system, the organization of collective construction and agricultural projects, trade with other civilizations, and a military to assert Egyptian dominance throughout the Near East. Motivating and organizing these activities was a bureaucracy of elite scribes, religious leaders, and administrators under the control of the reigning pharaoh, who ensured the cooperation and unity of the Egyptian people in the context of an elaborate system of religious beliefs.\n\nAmong the many achievements of ancient Egypt are: the quarrying, surveying, and construction techniques that supported the building of monumental pyramids, temples, and obelisks; a system of mathematics; a practical and effective system of medicine; irrigation systems and agricultural production techniques; the first known planked boats; Egyptian faience and glass technology; new forms of literature; and the earliest known peace treaty, which was ratified with the Anatolia-based Hittite Empire. Its art and architecture were widely copied and its antiquities were carried off to be studied, admired, or coveted in the far corners of the world. Likewise, its monumental ruins inspired the imaginations of travelers and writers for millennia. A newfound European and Egyptian respect for antiquities and excavations that began in earnest in the early modern period has led to much scientific investigation of ancient Egypt and its society, as well as a greater appreciation of its cultural legacy.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ancient-egypt.i02"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-egypt.s01"
+      ]
+    },
+    {
+      "id": "ancient-egypt.l02",
+      "title_id": "ancient-egypt",
+      "index": 2,
+      "heading": "The first kings",
+      "body": "The Early Dynastic Period, also known as Archaic Period or the Thinite Period (from Thinis, the hometown of its rulers), is the era of ancient Egypt that immediately follows the unification of Upper and Lower Egypt in c. 3150 BC. It is generally taken to include the First Dynasty and the Second Dynasty, lasting from the end of the archaeological culture of Naqada III until c. 2686 BC, or the beginning of the Old Kingdom. With the First Dynasty, the Egyptian capital moved from Thinis to Memphis, with the unified land being ruled by an Egyptian god-king. In the south, Abydos remained the major centre of ancient Egyptian religion; the hallmarks of ancient Egyptian civilization, such as Egyptian art, Egyptian architecture, and many aspects of Egyptian religion, took shape during the Early Dynastic Period.\n\n![](ancient-egypt.i04)\n\nBefore the unification of Egypt, the land was settled with autonomous villages. With the early dynasties, and for much of Egypt's history thereafter, the country came to be known as \"The Two Lands\" (referencing Upper and Lower Egypt). The pharaohs established a national administration and appointed royal governors, and buildings of the central government were typically open-air temples constructed of wood or sandstone. The earliest Egyptian hieroglyphs appear just before this period, though little is known of the spoken language that they represent.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "ancient-egypt.i03",
+        "ancient-egypt.i04",
+        "ancient-egypt.i05"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-egypt.s02"
+      ]
+    },
+    {
+      "id": "ancient-egypt.l03",
+      "title_id": "ancient-egypt",
+      "index": 3,
+      "heading": "The age of the pyramids",
+      "body": "In ancient Egyptian history, the Old Kingdom is the period spanning c. 2700 – c. 2200 BC. It is also known as the \"Age of the Pyramids\" or the \"Age of the Pyramid Builders\", as it encompasses the reigns of the great pyramid-builders of the Fourth Dynasty, such as King Sneferu, under whom the art of pyramid-building was perfected, and the kings Khufu, Khafre and Menkaure, who commissioned the construction of the pyramids at Giza. Egypt attained its first sustained peak of civilization during the Old Kingdom, the first of three so-called \"Kingdom\" periods (followed by the Middle Kingdom and New Kingdom), which mark the high points of civilization in the lower Nile Valley.\n\nThe concept of an \"Old Kingdom\" as one of three \"golden ages\" was coined in 1845 by the German Egyptologist Baron von Bunsen, and its definition evolved significantly throughout the 19th and the 20th centuries. Not only was the last king of the Early Dynastic Period related to the first two kings of the Old Kingdom, but the \"capital\", the royal residence, remained at Ineb-Hedj, the Egyptian name for Memphis. The basic justification for separating the two periods is the revolutionary change in architecture accompanied by the effects on Egyptian society and the economy of large-scale building projects.\n\nThe Old Kingdom is most commonly regarded as the period from the Third Dynasty to the Sixth Dynasty (2686–2181 BC). Information from the Fourth to the Sixth Dynasties of Egypt is scarce, and historians regard the history of the era as literally \"written in stone\" and largely architectural in that it is through the monuments and their inscriptions that scholars have been able to construct a history. While the Old Kingdom was a period of internal security and prosperity, it was followed by a period of disunity and relative cultural decline referred to by Egyptologists as the First Intermediate Period, starting with the Seventh Dynasty. Some Egyptologists include both the Seventh and Eighth Dynasty as a continuation of the Old Kingdom, with the administration centralized at Memphis. During the Old Kingdom, the King of Egypt (not called the Pharaoh until the New Kingdom) became a living god who ruled absolutely and could demand the services and wealth of his subjects.\n\nUnder King Djoser, the first king of the Third Dynasty of the Old Kingdom, a new era of building was initiated at Saqqara. Djoser's architect, Imhotep, is credited with the development of building with stone and with the conception of the new architectural form, the step pyramid. The Old Kingdom is best known for a large number of pyramids constructed at this time as burial places for Egypt's kings.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ancient-egypt.i06"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-egypt.s03"
+      ]
+    },
+    {
+      "id": "ancient-egypt.l04",
+      "title_id": "ancient-egypt",
+      "index": 4,
+      "heading": "The Great Pyramid",
+      "body": "The Great Pyramid of Giza is the largest of the Egyptian pyramids and the most famous landmark of the Giza pyramid complex in Giza, Egypt. It is the oldest of the Seven Wonders of the Ancient World, and the only wonder that has remained largely intact. The Great Pyramid served as the tomb of Egyptian Pharaoh Khufu (\"Cheops\"), who ruled during the Fourth Dynasty of the Old Kingdom. It was built c. 2600 BC over a period of about 26 years.\n\n![](ancient-egypt.i04)\n\nInitially standing at 146.6 metres (481 feet), the Great Pyramid was the world's tallest human-made structure for more than 3,700 years. Over time, most of the smooth white limestone casing was removed, which lowered the pyramid's height to the current 138.5 metres (454.4 ft); what is seen today is the underlying core structure. Each side of the base was measured to be about 230.3 metres (755.6 ft) in length, giving a volume of roughly 2.6 million cubic metres (92 million cubic feet), which includes an internal hillock. The dimensions of the pyramid were 280 royal cubits (146.7 m; 481.4 ft) high, a base length of 440 cubits (230.6 m; 756.4 ft), with a seked of ⁠5+1/2⁠ palms (a slope of 51°50'40\").\n\nThe Great Pyramid was built by quarrying an estimated 2.3 million large blocks, weighing 6 million tonnes in total. The majority of the stones are not uniform in size or shape, and are only roughly dressed. The outside layers were bound together by mortar, primarily local limestone from the Giza Plateau was used for its construction. Other blocks were imported by boat on the Nile: white limestone from Tura for the casing, and blocks of granite from Aswan, weighing up to 80 tonnes, for the \"King's Chamber\" structure.\n\n![](ancient-egypt.i08)\n\nThere are three known chambers inside of the Great Pyramid. The lowest was cut into the bedrock, upon which the pyramid was built, but remained unfinished. The so-called Queen's Chamber and King's Chamber, which contain a granite sarcophagus, are above ground within the pyramid structure. Hemiunu, Khufu's vizier, is believed by some to be the architect of the Great Pyramid. Many varying scientific and alternative hypotheses attempt to explain the exact construction techniques, but, as is the case for other such structures, there is no definite consensus.\n\nThe funerary complex around the pyramid consisted of two mortuary temples connected by a causeway (one close to the pyramid and one near the Nile); tombs for the immediate family and court of Khufu, including three smaller pyramids for Khufu's wives; an even smaller \"satellite pyramid\"; and five buried solar barques. It is part of the UNESCO World Heritage Site \"Memphis and its Necropolis\".",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ancient-egypt.i07",
+        "ancient-egypt.i04",
+        "ancient-egypt.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-egypt.s04"
+      ]
+    },
+    {
+      "id": "ancient-egypt.l05",
+      "title_id": "ancient-egypt",
+      "index": 5,
+      "heading": "The Middle Kingdom",
+      "body": "The Middle Kingdom of Egypt (also known as The Period of Reunification) is the period in the history of ancient Egypt following a period of political division known as the First Intermediate Period. The Middle Kingdom lasted from approximately 2040 to 1782 or 1700 BC (depending on the definition), stretching from the reunification of Egypt under the reign of Mentuhotep II in the Eleventh Dynasty to the end of the Twelfth Dynasty or the mid Thirteenth Dynasty. The kings of the Eleventh Dynasty ruled from Thebes and the kings of the Twelfth and Thirteenth Dynasties ruled from el-Lisht.\n\nThe concept of the Middle Kingdom as one of three golden ages was coined in 1845 by German Egyptologist Baron von Bunsen, and its definition evolved significantly throughout the 19th and 20th centuries. Some scholars also include the Thirteenth Dynasty of Egypt wholly into this period, in which case the Middle Kingdom would end around 1650 BC, while others only include it until Merneferre Ay around 1700 BC, last king of this dynasty to be attested in both Upper and Lower Egypt. During the Middle Kingdom period, Osiris became the most important deity in popular religion. The Middle Kingdom was followed by the Second Intermediate Period of Egypt, another period of division that involved foreign rule of Lower Egypt by the Hyksos of West Asia.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "ancient-egypt.i09"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-egypt.s05"
+      ]
+    },
+    {
+      "id": "ancient-egypt.l06",
+      "title_id": "ancient-egypt",
+      "index": 6,
+      "heading": "The New Kingdom",
+      "body": "The New Kingdom, also called the Egyptian Empire, refers to ancient Egypt between the 16th century BC and the 11th century BC. This period of ancient Egyptian history covers the Eighteenth, Nineteenth, and Twentieth dynasties. Through radiocarbon dating, the establishment of the New Kingdom has been placed between 1570 and 1544 BC. The New Kingdom followed the Second Intermediate Period and was succeeded by the Third Intermediate Period. It was the most prosperous time for ancient Egypt and marked the peak of its power.\n\nIn 1845, the concept of a \"New Kingdom\" as one of three \"golden ages\" was coined by German scholar Christian Charles Josias von Bunsen; the original definition would evolve significantly throughout the 19th and 20th centuries. The later part of this period, under the Nineteenth Dynasty (1295–1189 BC) and the Twentieth Dynasty (1189–1069 BC), is also known as the Ramesside period. It is named after the eleven pharaohs who took the name Ramesses, after Ramesses I, who founded the Nineteenth Dynasty, and his grandson Ramesses II, who was its longest-reigning monarch.\n\nPossibly as a result of the foreign rule of the Hyksos during the Second Intermediate Period, the New Kingdom saw a historic expansion into the Levant, thus marking Egypt's greatest territorial extent. Similarly, in response to attacks by the Kushites, who led raids into Egypt during the Second Intermediate Period, the rulers of the New Kingdom felt compelled to expand far into Nubia and to hold wider territories in the Near East, particularly on the Levantine frontier.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-egypt.s06"
+      ]
+    },
+    {
+      "id": "ancient-egypt.l07",
+      "title_id": "ancient-egypt",
+      "index": 7,
+      "heading": "The heretic pharaoh",
+      "body": "Akhenaten, also spelled Akhenaton, Echnaton, and Khuenaten, was an ancient Egyptian pharaoh reigning c. 1353–1336 or 1351–1334 BC, the 10th ruler of the 18th Dynasty. Originally named Amenhotep IV, in the fifth year of his reign he changed his name to \"Akhenaten\".\n\nAbandoning the traditional, polytheistic ancient Egyptian religion, and introducing Atenism, or worship centered around Aten. The views of Egyptologists differ as to whether the religious policy was absolutely monotheistic, or whether it was monolatristic, syncretistic, or henotheistic.\n\nMoving the royal capital out of Thebes and into a new city that he founded as Akhetaten, known today as Amarna.\n\nBegan a new period in Egyptian political history, known as the Amarna Period.\n\nThis culture shift away from traditional religion was reversed after his death. Akhenaten's monuments were dismantled and hidden, his statues were destroyed, and his name excluded from lists of rulers compiled by later pharaohs. Traditional religious practice was gradually restored, notably under his close successor Tutankhamun, who changed his name from Tutankhaten early in his reign. When, some dozen years later, rulers without clear rights of succession from the Eighteenth Dynasty founded a new dynasty, they discredited Akhenaten and his immediate successors and referred to him as \"the enemy of Akhetaten\", \"the enemy\" or \"that criminal\" in archival records.\n\nAkhenaten was all but lost to history until the late 19th-century discovery of Amarna, or Akhetaten, the new capital city he built for the worship of Aten. Furthermore, in 1907 a mummy that could be Akhenaten's was unearthed from the tomb KV55 in the Valley of the Kings by Edward Ayrton. Genetic testing has determined that the man buried in KV55 was Tutankhamun's father, but its identification as Akhenaten has since been questioned.\n\nAkhenaten's rediscovery and Flinders Petrie's early excavations at Amarna sparked great public interest in the pharaoh and his queen Nefertiti. He has been described as \"enigmatic\", \"mysterious\", \"revolutionary\", \"the greatest idealist of the world\", and \"the first individual in history\", but also as a \"heretic\", \"fanatic\", \"possibly insane\", and \"mad\". Public and scholarly fascination with Akhenaten comes from his connection with Tutankhamun, the unique style and high quality of the pictorial arts he patronized, and the religion he attempted to establish, foreshadowing monotheism.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-egypt.s07"
+      ]
+    },
+    {
+      "id": "ancient-egypt.l08",
+      "title_id": "ancient-egypt",
+      "index": 8,
+      "heading": "Tutankhamun",
+      "body": "Tutankhamun or Tutankhamen, was the third to last pharaoh of the Eighteenth Dynasty of ancient Egypt, who ruled c. 1332 – 1323 BC, dying at about the age of 19. Born Tutankhaten, his administration restored the traditional polytheistic form of ancient Egyptian religion, undoing a previous shift to the religion known as Atenism. Tutankhamun's tomb door proclaims his devotion to the ancient Egyptian gods.\n\nHis endowments and restorations of cults were recorded on the Restoration Stela. The cult of the god Amun at Thebes was restored to prominence, and the royal couple changed their names to \"Tutankhamun\" and \"Ankhesenamun\", replacing the -aten suffix. He also moved the royal court from Akhenaten's capital, Amarna, back to Memphis almost immediately on his accession to the kingship. He reestablished diplomatic relations with the Mitanni and carried out military campaigns in Nubia and the Near East. Tutankhamun was one of only a few kings known to be worshipped as a deity during their lifetime. He likely began construction of a royal tomb in the Valley of the Kings and an accompanying mortuary temple, but both were unfinished at the time of his death.\n\nIn 2012, it was suggested he died from a combination of malaria and a leg fracture. Since his royal tomb was incomplete, he was instead buried in a small non-royal tomb adapted for the purpose. He was succeeded by Ay, who had held titles such as Fan-bearer on the Right Side of the King. After a very brief reign, Ay was succeeded by Horemheb, who had been the commander-in-chief of Tutankhamun's armed forces. Under Horemheb, the restoration of the traditional ancient Egyptian religion was completed; Ay and Tutankhamun's constructions were usurped, and earlier Amarna Period rulers were erased.\n\nTutankhamun's tomb was discovered in 1922 by excavators led by Howard Carter and his patron, George Herbert, 5th Earl of Carnarvon. Although it had clearly been raided and robbed in ancient times, it retained much of its original contents, including the king's undisturbed mummy. The discovery received worldwide press coverage; with over 5,000 artifacts, it gave rise to renewed public interest in ancient Egypt, for which Tutankhamun's mask, preserved at the Egyptian Museum, remains a popular symbol. Before it was relocated to the Grand Egyptian Museum in 2025, some of his treasures have traveled worldwide, with unprecedented response; the Egyptian government allowed tours of the tomb beginning in 1961. The deaths of some individuals who were involved in the excavation have been popularly attributed to the \"curse of the pharaohs\" due to the similarity of their circumstances. Since the discovery of his tomb, he has been referred to colloquially as \"King Tut\".",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ancient-egypt.i10"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-egypt.s08"
+      ]
+    },
+    {
+      "id": "ancient-egypt.l09",
+      "title_id": "ancient-egypt",
+      "index": 9,
+      "heading": "Ramesses the Great",
+      "body": "Ramesses II, commonly known as Ramesses the Great, was the third pharaoh of the Nineteenth Dynasty of Egypt. Ramesses II is often regarded as the greatest, most celebrated, and most powerful pharaoh of the New Kingdom, which itself was the most powerful period of ancient Egypt. He is also widely considered one of ancient Egypt's most successful warrior pharaohs, conducting no fewer than 15 military campaigns, all resulting in victories except the Battle of Kadesh, which is generally considered a stalemate. His 66-year rule was also the longest recorded reign of any pharaoh (and one of the longest in history), possibly alongside Pepi II, who lived 1,000 years earlier and is said to have reigned for over 90 years.\n\nIn ancient Greek sources, he is called Ozymandias, derived from the first part of his Egyptian-language regnal name: Usermaatre Setepenre. Contemporary documents, particularly cuneiform letters discovered at Hattusa indicate that the name Ramesses was pronounced Riamessesa and the full titulary was pronounced Wasmuriya Satepnaria Riamessesa Maiamana. Ramesses was also referred to as the \"Great God\" by successor pharaohs, who prayed to enjoy his longevity and glory.\n\nRamesses ascended to the throne at age 25, and for the early part of his reign, he focused on building cities, temples, and monuments. After establishing the city of Pi-Ramesses in the Nile Delta, he designated it as Egypt's new capital and used it as the main staging point for his campaigns in Syria. Ramesses led several military expeditions into the Levant, where he reasserted Egyptian control over Canaan and Phoenicia; he also led a number of expeditions into Nubia, all commemorated in inscriptions at Beit el-Wali and Gerf Hussein. He celebrated an unprecedented thirteen or fourteen Sed festivals—more than any other pharaoh.\n\nEstimates of his age at death vary, although 90 or 91 is considered to be the most likely figure. Upon his death, he was buried in a tomb (KV7) in the Valley of the Kings; his body was later moved to the Royal Cache, where it was discovered by archaeologists in 1881. Ramesses' mummy is now on display at the National Museum of Egyptian Civilization, located in the city of Cairo. Ramesses II was one of the few pharaohs who was worshipped as a deity during his lifetime.\n\nScholars dispute Ramesses II's association with the popular and contemporary depiction of him as the pharaoh of The Exodus, including former Secretary-General of Egypt's Supreme Council of Antiquities Mostafa Wazir and Jewish historian Lester L. Grabbe.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ancient-egypt.i11"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-egypt.s09"
+      ]
+    },
+    {
+      "id": "ancient-egypt.l10",
+      "title_id": "ancient-egypt",
+      "index": 10,
+      "heading": "The Ptolemies",
+      "body": "The Ptolemaic Kingdom or Ptolemaic Empire was an ancient Greek polity based in Egypt during the Hellenistic period. It was founded in 305 BC by the Macedonian Greek general Ptolemy I Soter, a companion of Alexander the Great, and was ruled by the Ptolemaic dynasty until the death of Cleopatra VII in 30 BC.\n\nAlexandria, a Greek polis (city-state) founded by Alexander the Great, became the capital city and a major center of Greek culture, learning, and trade for the next several centuries. Reigning for nearly three centuries, the Ptolemies were the longest and final dynasty of ancient Egypt, heralding a distinct era of religious and cultural syncretism between the Greek and Egyptian civilizations.\n\n![](ancient-egypt.i13)\n\nAlexander conquered Egypt in 332 BC during his campaigns against the Achaemenid Empire. Alexander's death in 323 BC was followed by the rapid unraveling of the Macedonian Empire amid competing claims by the diadochi, his closest friends and companions. Ptolemy, one of Alexander's most trusted generals and confidants, won control of Egypt from his rivals and declared himself its ruler in 305 BC. Following the Syrian Wars with the Seleucid Empire, a rival Hellenistic state, the Ptolemaic Kingdom expanded its territory to include eastern Libya, the Sinai, and northern Nubia.\n\nTo legitimize their rule and gain recognition from native Egyptians, the Ptolemies adopted the local title of pharaoh, alongside the Greek title of basileus, and had themselves portrayed on public monuments in Egyptian style and dress; the monarchy otherwise strictly maintained its Hellenistic character and traditions. The kingdom had a complex government bureaucracy that exploited the country's vast economic resources to the benefit of a Greek ruling class, which dominated military, political, and economic affairs and rarely integrated into Egyptian society and culture. Native Egyptians maintained control over local and religious institutions, and only gradually accrued power in the central bureaucracy, provided they Hellenized. Beginning with Ptolemy I's son and successor, Ptolemy II Philadelphus, the Ptolemies began to adopt Egyptian customs, such as marrying their siblings per the Osiris myth and participating in Egyptian religious life. New temples were built, older ones restored, and royal patronage lavished on the priesthood.\n\nFrom the mid third century BC, Ptolemaic Egypt was the wealthiest of Alexander's successor states and the leading example of Greek civilization. At its peak under Ptolemy III Euergetes, the kingdom was the greatest power in the Mediterranean, and a major center of scientific, artistic, and intellectual development. Beginning in the mid second century BC, dynastic strife and a series of foreign wars weakened the kingdom, and it became increasingly reliant on the Roman Republic. Under Cleopatra VII, who sought to restore Ptolemaic power, Egypt became entangled in a Roman civil war, which ultimately led to its conquest by Rome as the last independent Hellenistic state. Roman Egypt became one of Rome's richest provinces and a center of Greek culture. Greek remained the language of government and trade until the Muslim conquest of Egypt in 641 AD, while Alexandria maintained its status as one of the leading cities of the Mediterranean well into the late Middle Ages.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ancient-egypt.i12",
+        "ancient-egypt.i13"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-egypt.s10"
+      ]
+    },
+    {
+      "id": "ancient-egypt.l11",
+      "title_id": "ancient-egypt",
+      "index": 11,
+      "heading": "Cleopatra",
+      "body": "Cleopatra VII Thea Philopator was Queen of the Ptolemaic Kingdom of Egypt from 51 to 30 BC, and the last active Hellenistic pharaoh. A member of the Ptolemaic dynasty, she was a descendant of its founder, Ptolemy I Soter, a Macedonian Greek general and companion of Alexander the Great. Cleopatra's first language was Koine Greek, and she is the only Ptolemaic ruler known to have learned the Egyptian language, among several others. After her death, Egypt became a province of the Roman Empire, marking the end of the Hellenistic period, which had begun with the death of Alexander in 323 BC.\n\nBorn in Alexandria, Cleopatra was the daughter of Ptolemy XII Auletes, who named her his heir before his death in 51 BC. Cleopatra began her reign alongside her brother Ptolemy XIII, but a falling-out between them led to a civil war. Roman statesman Pompey, their father's former ally, fled to Egypt after losing the 48 BC Battle of Pharsalus against his rival Julius Caesar, the Roman dictator, in Caesar's civil war. Ptolemy XIII had Pompey ambushed and killed before Caesar arrived and occupied Alexandria. Caesar then attempted to reconcile the rival Ptolemaic siblings, but Ptolemy XIII's forces besieged Cleopatra and Caesar at the palace. Shortly after reinforcements lifted the siege, Ptolemy XIII drowned in the Nile. Caesar declared Cleopatra and her brother Ptolemy XIV joint rulers, and maintained a private affair with Cleopatra which produced a son, Caesarion. Cleopatra traveled to Rome as a client queen in 46 and 44 BC, where she stayed at Caesar's villa. After Caesar's assassination and Ptolemy XIV's sudden death (possibly murdered on Cleopatra's order), she named Caesarion co-ruler.\n\nIn the Liberators' civil war of 43–42 BC, Cleopatra sided with the Roman Second Triumvirate formed by Caesar's heir Octavian, Mark Antony, and Marcus Aemilius Lepidus. After their meeting at Tarsos in 41 BC, Cleopatra and Antony had an affair which produced three children. Antony became increasingly reliant on Cleopatra for both funding and military aid during his invasions of the Parthian Empire and the Kingdom of Armenia. The Donations of Alexandria declared their children rulers over various territories under Antony's authority. Octavian portrayed this event as an act of treason, forced Antony's allies in the Roman Senate to flee Rome in 32 BC, and declared war on Cleopatra. After defeating Antony and Cleopatra's naval fleet at the 31 BC Battle of Actium, Octavian's forces invaded Egypt in 30 BC and defeated Antony, who committed suicide. After his death, Cleopatra reportedly killed herself, probably by poisoning, to avoid being publicly displayed by Octavian in a Roman triumphal procession.\n\nCleopatra's legacy survives in ancient and modern works of art. Roman historiography and Latin poetry produced a generally critical view of the queen that pervaded later Medieval and Renaissance literature. In the visual arts, her ancient depictions include Roman busts, paintings, sculptures, cameo carvings and glass, Ptolemaic and Roman coinage, and reliefs. In Renaissance and Baroque art, she was the subject of many works including operas, paintings, poetry, sculptures, and theatrical dramas. She has become a pop culture icon of Egyptomania since the Victorian era, and in modern times has been depicted in the applied and fine arts, burlesque satire, Hollywood films, and brand images for commercial products.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ancient-egypt.i14"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ancient-egypt.s11"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "ancient-egypt.i01",
+      "title_id": "ancient-egypt",
+      "url": "http://10.0.2.2:8000/media/ancient-egypt/i01-6626798326.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Great Sphinx of Giza and the pyramid of Khafre",
+      "kind": "other",
+      "author": "Most likely Hamish2k, the first uploader",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Egypt.Giza.Sphinx.02_(cropped).jpg",
+      "credit_line": "Most likely Hamish2k, the first uploader · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-egypt.i02",
+      "title_id": "ancient-egypt",
+      "url": "http://10.0.2.2:8000/media/ancient-egypt/i02-c43dee2739.png",
+      "width": 1600,
+      "height": 3266,
+      "alt": "Map of Ancient Egypt, showing the Nile up to the fifth cataract, and major cities and sites of the Dynastic period (c. 3150 BC to 30 BC). Cairo and Jerusalem are shown as reference cities.",
+      "kind": "map",
+      "author": "Jeff Dahl",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ancient_Egypt_map-en.svg",
+      "credit_line": "Jeff Dahl · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-egypt.i03",
+      "title_id": "ancient-egypt",
+      "url": "http://10.0.2.2:8000/media/ancient-egypt/i03-bc83739f66.png",
+      "width": 1600,
+      "height": 2133,
+      "alt": "The double crown symbolizing dominion over upper and lower Egypt.",
+      "kind": "other",
+      "author": "Jeff Dahl",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Double_crown.svg",
+      "credit_line": "Jeff Dahl · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-egypt.i04",
+      "title_id": "ancient-egypt",
+      "url": "http://10.0.2.2:8000/media/ancient-egypt/i04-1fbe30be2a.jpg",
+      "width": 1600,
+      "height": 1476,
+      "alt": "Physical location map of Egypt. Showing new governorate boundaries since 14 April 2011, after the dissolution of the 6th of October and Helwan Governorates.",
+      "kind": "map",
+      "author": "Eric Gaba (Sting - fr:Sting) and NordNordWest",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Egypt_relief_location_map.jpg",
+      "credit_line": "Eric Gaba (Sting - fr:Sting) and NordNordWest · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-egypt.i05",
+      "title_id": "ancient-egypt",
+      "url": "http://10.0.2.2:8000/media/ancient-egypt/i05-08c73a22cc.png",
+      "width": 1600,
+      "height": 2269,
+      "alt": "Chronology of state formation in Ancient Egypt Reference: (2018) Ancient Egypt: anatomy of a civilization (3rd ed.), New-York (NY): Routledge, p. 14/44, Fig.2.6 ISBN: 978-0415827263.",
+      "kind": "other",
+      "author": "पाटलिपुत्र",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Chronology_of_state_formation_in_Ancient_Egypt.png",
+      "credit_line": "पाटलिपुत्र · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-egypt.i06",
+      "title_id": "ancient-egypt",
+      "url": "http://10.0.2.2:8000/media/ancient-egypt/i06-e5b09f7fbc.png",
+      "width": 1600,
+      "height": 2906,
+      "alt": "A Map of the Old Kingdom of Egypt showing trade relations, nomes, other polities as well as cities and settlements from that era.",
+      "kind": "map",
+      "author": "Cattette",
+      "license": "CC BY",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:4th_Dynasty_of_Egypt-03.png",
+      "credit_line": "Cattette · CC BY 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-egypt.i07",
+      "title_id": "ancient-egypt",
+      "url": "http://10.0.2.2:8000/media/ancient-egypt/i07-3c9ac2c128.jpg",
+      "width": 1600,
+      "height": 900,
+      "alt": "The Great Pyramid, seen in 2023",
+      "kind": "other",
+      "author": "Douwe C. van der Zee",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Great_Pyramid_of_Giza_-_Pyramid_of_Khufu.jpg",
+      "credit_line": "Douwe C. van der Zee · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-egypt.i08",
+      "title_id": "ancient-egypt",
+      "url": "http://10.0.2.2:8000/media/ancient-egypt/i08-ed099a74c1.jpg",
+      "width": 1600,
+      "height": 1511,
+      "alt": "Blank physical map of political Africa, for geo-location purposes. Borders as in July 2011.",
+      "kind": "map",
+      "author": "Eric Gaba, Wikimedia Commons user Sting",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Africa_relief_location_map.jpg",
+      "credit_line": "Eric Gaba, Wikimedia Commons user Sting · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-egypt.i09",
+      "title_id": "ancient-egypt",
+      "url": "http://10.0.2.2:8000/media/ancient-egypt/i09-10aa000da2.png",
+      "width": 1600,
+      "height": 1856,
+      "alt": "Map of the Old and Middle Kingdoms of Ancient Egypt.",
+      "kind": "map",
+      "author": "Gert7",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ancient_Egyptian_old_and_middle_kingdom.svg",
+      "credit_line": "Gert7 · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-egypt.i10",
+      "title_id": "ancient-egypt",
+      "url": "http://10.0.2.2:8000/media/ancient-egypt/i10-e4d4b1d013.jpg",
+      "width": 1600,
+      "height": 2000,
+      "alt": "Pharaohs' tombs were provided with vast quantities of wealth, such as the golden mask from the mummy of Tutankhamun.",
+      "kind": "photo",
+      "author": "Roland Unger",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:CairoEgMuseumTaaMaskMostlyPhotographed.jpg",
+      "credit_line": "Roland Unger · Public domain · Wikimedia Commons",
+      "modified": false,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-egypt.i11",
+      "title_id": "ancient-egypt",
+      "url": "http://10.0.2.2:8000/media/ancient-egypt/i11-60b848b381.jpg",
+      "width": 1600,
+      "height": 2399,
+      "alt": "The Younger Memnon (c. 1250 BC), a statue depicting Ramesses II, from the Ramesseum in Luxor (Thebes). Currently on display at the British Museum in London.",
+      "kind": "art",
+      "author": "Pbuergler",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ramses_II_British_Museum.jpg",
+      "credit_line": "Pbuergler · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-egypt.i12",
+      "title_id": "ancient-egypt",
+      "url": "http://10.0.2.2:8000/media/ancient-egypt/i12-d4c8ce2d55.png",
+      "width": 1600,
+      "height": 1600,
+      "alt": "Eagle of Zeus standing on a thunderbolt, traditional symbol of Ptolemaic Egypt often found on coins.",
+      "kind": "art",
+      "author": "Unknown",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ptolemaic_eagle.png",
+      "credit_line": "Unknown · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-egypt.i13",
+      "title_id": "ancient-egypt",
+      "url": "http://10.0.2.2:8000/media/ancient-egypt/i13-664da043b4.png",
+      "width": 1600,
+      "height": 1226,
+      "alt": "Ptolemaic Kingdom in the 3rd–2nd centuries BCE",
+      "kind": "other",
+      "author": "Ptolemaic Kingdom III-II century BC - ru.svg: Kaidor (talk · contribs) derivative work: rowanwindwhistler (talk) derivative work: Amphipolis",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ptolemaic_Kingdom_III-II_century_BC_-_en.svg",
+      "credit_line": "Ptolemaic Kingdom III-II century BC - ru.svg: Kaidor (talk · contribs) derivative work: rowanwindwhistler (talk) derivative work: Amphipolis · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ancient-egypt.i14",
+      "title_id": "ancient-egypt",
+      "url": "http://10.0.2.2:8000/media/ancient-egypt/i14-8badb37672.jpg",
+      "width": 1600,
+      "height": 2121,
+      "alt": "The Berlin Cleopatra, a Roman sculpture of Cleopatra wearing a royal diadem, mid-1st century BC, now in the Altes Museum, Germany",
+      "kind": "portrait",
+      "author": "Louis le Grand",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Kleopatra-VII.-Altes-Museum-Berlin1.jpg",
+      "credit_line": "Louis le Grand · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.35
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "ancient-egypt.s01",
+      "title": "Ancient Egypt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ancient_Egypt",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-egypt.s02",
+      "title": "Early Dynastic Period of Egypt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Early_Dynastic_Period_of_Egypt",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-egypt.s03",
+      "title": "Old Kingdom of Egypt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Old_Kingdom_of_Egypt",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-egypt.s04",
+      "title": "Great Pyramid of Giza (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-egypt.s05",
+      "title": "Middle Kingdom of Egypt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Middle_Kingdom_of_Egypt",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-egypt.s06",
+      "title": "New Kingdom of Egypt (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/New_Kingdom_of_Egypt",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-egypt.s07",
+      "title": "Akhenaten (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Akhenaten",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-egypt.s08",
+      "title": "Tutankhamun (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Tutankhamun",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-egypt.s09",
+      "title": "Ramesses II (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ramesses_II",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-egypt.s10",
+      "title": "Ptolemaic Kingdom (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Ptolemaic_Kingdom",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ancient-egypt.s11",
+      "title": "Cleopatra (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cleopatra",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}

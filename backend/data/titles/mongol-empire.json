@@ -1,0 +1,385 @@
+{
+  "id": "mongol-empire",
+  "kind": "topic",
+  "name": "Mongol Empire",
+  "subtitle": "1206 to 1368",
+  "poster_lines": [
+    "The Mongol",
+    "Empire"
+  ],
+  "group": "ancient-medieval",
+  "era": "medieval",
+  "region": "asia",
+  "period_start": 1206,
+  "period_end": 1368,
+  "themes": [
+    "empire",
+    "war",
+    "leadership",
+    "trade"
+  ],
+  "bg": "#D9A441",
+  "tint": "#B5481F",
+  "lettering": "brush",
+  "poster_image_id": null,
+  "hero_image_id": "mongol-empire.i01",
+  "brief": "Horse archers who built the largest land empire in history.",
+  "linked_title_ids": [
+    "genghis-khan"
+  ],
+  "rank": 6,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "mongol-empire.l01",
+      "title_id": "mongol-empire",
+      "index": 1,
+      "heading": "The largest land empire",
+      "body": "The Mongol Empire was the largest contiguous empire in history. Originating in present-day Mongolia in East Asia, the medieval empire at its height stretched from the Sea of Japan to Eastern Europe, extending northward into Siberia and east and southward into the Indian subcontinent, mounting invasions of Southeast Asia, and conquering the Iranian plateau; and reaching westward as far as the Levant and the Carpathian Mountains.\n\nThe empire emerged from the unification of several nomadic tribes in the Mongol heartland under the leadership of Temüjin, known by the title of Genghis Khan (c. 1162–1227), whom a council proclaimed as the ruler of all Mongols in 1206. The empire grew rapidly under his rule and that of his descendants, who sent out invading armies in every direction. The vast transcontinental empire connected the East with the West, and the Pacific to the Mediterranean, in an enforced Pax Mongolica, allowing the exchange of trade, technologies, commodities, and ideologies across Eurasia.\n\nThe empire began to split due to wars over succession, as the grandchildren of Genghis Khan disputed whether the royal line should follow from his son and initial heir Ögedei, or from one of his other sons, such as Tolui, Chagatai, or Jochi. The Toluids prevailed after a bloody purge of the Ögedeid and Chagatayid factions, but disputes continued among the descendants of Tolui. The conflict over whether the empire would adopt a sedentary, cosmopolitan lifestyle, or continue its nomadic, steppe-based way of life was a major factor in the breakup.\n\nAfter Möngke Khan died in 1259, rival kurultai councils simultaneously elected different successors, the brothers Ariq Böke and Kublai Khan, who fought each other in the Toluid Civil War (1260–1264) and dealt with challenges from the descendants of other sons of Genghis. Kublai successfully took power, but war ensued as he sought unsuccessfully to regain control of the Chagatayid and Ögedeid families. By Kublai's death in 1294, the empire had fractured into four separate khanates or empires, each pursuing its own objectives: the Golden Horde khanate in the northwest, the Chagatai Khanate in Central Asia, the Ilkhanate in Iran, and the Yuan dynasty in China, based in modern-day Beijing. In 1304, during the reign of Temür, the three western khanates accepted the suzerainty of the Yuan dynasty.\n\nThe Ilkhanate was the first to fall, which disintegrated between 1335 and 1353. Next, the Yuan dynasty lost control of the Tibetan Plateau and China proper in 1354 and 1368, respectively, and collapsed after its capital Dadu was taken over by Ming forces. The Genghisid rulers of the Yuan then retreated north and continued to rule the Mongolian Plateau. The regime is thereafter known as the Northern Yuan, surviving as a rump state until the conquest by the Qing dynasty in the 1630s. The Golden Horde had broken into competing khanates by the end of the 15th century, and its rule on Eastern Europe is traditionally considered to have ended in 1480 with the Great Stand on the Ugra River by the Grand Duchy of Moscow, while the Chagatai Khanate lasted until 1687, or, in the Yarkent Khanate's case, until 1705.",
+      "reading_minutes": 3,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "mongol-empire.s01"
+      ]
+    },
+    {
+      "id": "mongol-empire.l02",
+      "title_id": "mongol-empire",
+      "index": 2,
+      "heading": "Genghis Khan",
+      "body": "Genghis Khan (born Temüjin; c. 1162 – 18 or 25 August 1227), also known as Chinggis Khan, was the founder and first khan of the Mongol Empire. After spending most of his life uniting the Mongol tribes, he launched a series of military campaigns, conquering large parts of China and Central Asia.\n\nGenghis Khan was born Temüjin between 1155 and 1167 as the eldest child of Yesugei, a Mongol chieftain of the Borjigin clan, and his wife Hö'elün. When Temüjin was eight, his father died and his family was abandoned by its tribe. Reduced to near-poverty, Temüjin killed his older half-brother Behter to secure his familial position. His charismatic personality helped to attract his first followers and to form alliances with two prominent steppe leaders named Jamukha and Toghrul; they worked together to retrieve Temüjin's newlywed wife Börte, who had been kidnapped by raiders. As his reputation grew, his relationship with Jamukha deteriorated into open warfare. Temüjin was badly defeated in c. 1187, and may have spent the following years as a subject of the Jin dynasty; upon reemerging in 1196, he swiftly began gaining power. Toghrul came to view Temüjin as a threat and launched a surprise attack on him in 1203. Temüjin regrouped and overpowered Toghrul. After defeating the Naiman tribe and executing Jamukha, he was left as the sole ruler on the Mongolian steppe.\n\nTemüjin formally adopted the title \"Genghis Khan\", the meaning of which is uncertain, at an assembly in 1206. Carrying out reforms designed to ensure long-term stability, he transformed the Mongols' tribal structure into an integrated meritocracy dedicated to the service of the ruling family. After thwarting a coup attempt from a powerful shaman, Genghis began to consolidate his power. In 1209, he led a large-scale raid against the neighbouring Western Xia, who agreed to Mongol terms the following year. He then launched a campaign against the Jin dynasty, which lasted for four years and ended in 1215 with the capture of the Jin capital Zhongdu. His general Jebe annexed the Central Asian state of Qara Khitai in 1218. The following year, Genghis invaded the Khwarazmian Empire following the execution of his envoys; the campaign toppled the Khwarazmian state and devastated the regions of Transoxiana and Khorasan, while Jebe and his colleague Subutai led an expedition that reached Georgia and Kievan Rus'. In 1227, Genghis died while subduing the rebellious Western Xia. Following a two-year interregnum, his third son and heir Ögedei acceded to the throne in 1229.\n\nGenghis Khan remains a controversial figure. He was generous and intensely loyal to his followers, but ruthless towards his enemies. He welcomed advice from diverse sources in his quest for world domination, for which he believed the shamanic supreme deity Tengri had destined him. The Mongol army under Genghis killed millions of people, yet his conquests also facilitated unprecedented commercial and cultural exchange over a vast geographical area. He is remembered as a backward, savage tyrant in Russia and the Arab world while Western scholarship since the 1990s has begun to reassess the previous view of him as a barbarian warlord. He was posthumously deified in Mongolia; modern Mongolians recognise him as the founding father of their nation.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "mongol-empire.i01"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "mongol-empire.s02"
+      ]
+    },
+    {
+      "id": "mongol-empire.l03",
+      "title_id": "mongol-empire",
+      "index": 3,
+      "heading": "The Mongols in Europe",
+      "body": "From the 1220s to the 1240s, the Mongols conquered the Turkic states of Volga Bulgaria, Cumania and Iranic state of Alania, and various principalities in Eastern Europe. Following this, they began their invasion into Central Europe by launching a two-pronged invasion of then-fragmented Poland, culminating in the Battle of Legnica (April 9, 1241), and the Kingdom of Hungary, culminating in the Battle of Mohi (April 11, 1241). Invasions were also launched into the Caucasus against the Kingdom of Georgia, the Chechens, the Ingush, and Circassia though they failed to fully subjugate the latter. More invasions were launched in Southeast Europe against Bulgaria, Croatia, and the Latin Empire. The operations were planned by General Subutai (1175–1248) and commanded by Batu Khan (c. 1207–1255) and Kadan (d. c. 1261), two grandsons of Genghis Khan. Their conquests integrated much of Eastern European territory into the empire of the Golden Horde. Warring European princes realized they had to cooperate in the face of a Mongol invasion, so local wars and conflicts were suspended in parts of central Europe, only to be resumed after the Mongols had withdrawn. After the initial invasions, subsequent raids and punitive expeditions continued into the late 13th century.\n\nMelik, one of the princes from the Ögedei family who participated in the expedition, invaded the Transylvania region of the Hungarian kingdom, called Sasutsi in sources.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "mongol-empire.s03"
+      ]
+    },
+    {
+      "id": "mongol-empire.l04",
+      "title_id": "mongol-empire",
+      "index": 4,
+      "heading": "The fall of Baghdad",
+      "body": "The Siege of Baghdad, also known as the Sack of Baghdad, took place in early 1258. A large army commanded by Hulegu, a prince of the Mongol Empire, attacked the historic capital of the Abbasid Caliphate after a series of provocations from its ruler, caliph al-Musta'sim. Within a few weeks, Baghdad fell and was sacked by the Mongol army—al-Musta'sim was killed alongside hundreds of thousands of his subjects. The city's fall has traditionally been seen as marking the end of the Islamic Golden Age; in reality, its ramifications are uncertain.\n\nAfter the accession of his brother Möngke Khan to the Mongol throne in 1251, Hulegu, a grandson of Genghis Khan, was dispatched westwards to Persia to secure the region. His massive army of over 138,000 men took years to reach the region but then quickly attacked and overpowered the Nizari Ismaili Assassins in 1256. The Mongols had expected al-Musta'sim to provide reinforcements for their army—the Caliph's failure to do so, combined with his arrogance in negotiations, convinced Hulegu to overthrow him in late 1257. Invading Mesopotamia from all sides, the Mongol army soon approached Baghdad, routing a sortie on 17 January 1258 by flooding their opponents' camp. They then invested Baghdad, which was left with around 30,000 troops.\n\nThe assault began at the end of January. Mongol siege engines breached Baghdad's fortifications within a couple of days, and Hulegu's highly-trained troops controlled the eastern wall by 4 February. The increasingly desperate al-Musta'sim frantically tried to negotiate, but Hulegu was intent on total victory, even killing soldiers who attempted to surrender. The Caliph eventually surrendered the city on 10 February, and the Mongols began looting three days later. The total number of people who died is unknown, as it was increased by subsequent epidemics; Hulegu later claimed a likely-exaggerated total of over two million. After calling an amnesty for the pillaging on 20 February, Hulegu executed the caliph. In contrast to the exaggerations of later Muslim historians, Baghdad prospered under Hulegu's Ilkhanate, although it did decline in comparison to the new capital, Tabriz.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "mongol-empire.i02"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "mongol-empire.s04"
+      ]
+    },
+    {
+      "id": "mongol-empire.l05",
+      "title_id": "mongol-empire",
+      "index": 5,
+      "heading": "The Mongols are stopped",
+      "body": "The Battle of Ain Jalut, also spelled Ayn Jalut, was fought between the Bahri Mamluks of Egypt and the Ilkhanate on 3 September 1260 near the spring of Ain Jalut in southeastern Galilee in the Jezreel Valley. It marks the first major halt to Mongolian advances and paused their expansion into Arabia and Europe.\n\nContinuing the westward expansion of the Ilkhanate, the armies of Hulegu Khan captured and sacked Baghdad in 1258, along with the Ayyubid capital of Damascus sometime later. Hulegu sent envoys to Cairo demanding Qutuz surrender Egypt, to which Qutuz responded by killing the envoys and displaying their heads on the Bab Zuweila gate of Cairo. Shortly after this, Möngke Khan was slain in battle against the Southern Song. Hulegu returned to Mongolia with the bulk of his army to attend the kurultai in accordance with Mongol customs, leaving approximately 10,000 troops west of the Euphrates under the command of Kitbuqa.\n\nLearning of these developments, Qutuz quickly advanced his army from Cairo towards Palestine. Kitbuqa sacked Sidon, before turning his army south toward Ain Jalut to meet Qutuz' forces. Using hit-and-run tactics and a feigned retreat by Mamluk general Baibars, combined with a final flanking maneuver by Qutuz, the Mamluks forced the Mongol army to retreat toward Bisan, after which the Mamluks led a final counterattack, which resulted in the deaths of many Mongols, including Kitbuqa himself.\n\nThe battle has been cited as the first time the Mongols were permanently prevented from expanding their influence; it also marked the first of two defeats the Mongols would face in their attempts to invade Egypt and the Levant, the other being the Battle of Marj al-Saffar in 1303.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "mongol-empire.i03"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "mongol-empire.s05"
+      ]
+    },
+    {
+      "id": "mongol-empire.l06",
+      "title_id": "mongol-empire",
+      "index": 6,
+      "heading": "Kublai Khan",
+      "body": "Kublai Khan (23 September 1215 – 18 February 1294), also known by his temple name as the Emperor Shizu of Yuan and his regnal name Setsen Khan, was the founder and first emperor of the Mongol-led Yuan dynasty of China. He proclaimed the dynastic name \"Great Yuan\" in 1271, and ruled Yuan China until his death in 1294.\n\nKublai was the second son of Tolui by his chief wife Sorghaghtani Beki, and a grandson of Genghis Khan. He was almost 12 when Genghis Khan died in 1227. He had succeeded his older brother Möngke as Khagan in 1260, but had to defeat his younger brother Ariq Böke in the Toluid Civil War lasting until 1264. This episode marked the beginning of the division of the Mongol Empire. Kublai's real power was limited to the Yuan Empire, even though as Khagan he still influenced the Ilkhanate and, to a significantly lesser degree, the Golden Horde.\n\nIn 1271, Kublai established the Yuan dynasty and formally claimed orthodox succession from prior Chinese dynasties. The Yuan dynasty came to rule over most of present-day China, Mongolia, Korea, southern Siberia, and other adjacent areas. He also amassed influence in the Middle East and Europe as Khagan. By 1279, the Yuan conquest of the Song dynasty was completed and Kublai became the first non-Han emperor to rule all of China proper. As emperor, he ordered invasions of Japan, Vietnam, Burma, and Java.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "mongol-empire.i04"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "mongol-empire.s06"
+      ]
+    },
+    {
+      "id": "mongol-empire.l07",
+      "title_id": "mongol-empire",
+      "index": 7,
+      "heading": "Mongols rule China",
+      "body": "The Yuan dynasty, officially the Great Yuan, was a Mongol-led imperial dynasty of China and a successor state to the Mongol Empire after its division. It was established by Kublai (Emperor Shizu or Setsen Khan), the fifth khagan-emperor of the Mongol Empire from the Borjigin clan, and lasted from 1271 to 1368 CE. In Chinese history, the Yuan dynasty followed the Song dynasty and preceded the Ming dynasty.\n\nAlthough Genghis Khan's enthronement as khagan in 1206 was described in Chinese as the Han-style title of emperor and the Mongol Empire had ruled territories including modern-day northern China for decades, it was not until 1271 that Kublai Khan officially proclaimed the dynasty in the traditional Han style, and the conquest was not complete until 1279 when the Southern Song dynasty was defeated in the Battle of Yamen. His realm was, by this point, isolated from the other Mongol-led khanates and controlled most of modern-day China and its surrounding areas, including modern-day Mongolia. It was the first dynasty founded by a non-Han ethnicity that ruled all of China proper. In 1368, following the defeat of the Yuan forces by the Ming dynasty, the Genghisid rulers retreated to the Mongolian Plateau and continued to rule until 1635 when they surrendered to the Later Jin dynasty (which later evolved into the Qing dynasty); this rump state is known in Chinese history as the Northern Yuan.\n\nAfter the division of the Mongol Empire, the Yuan dynasty was the khanate ruled by the successors of Möngke. In official Chinese histories, the Yuan dynasty bore the Mandate of Heaven. The dynasty was established by Kublai Khan, yet he placed his grandfather Genghis Khan on the imperial records as the official founder of the dynasty and accorded him the temple name Taizu. In the edict titled Proclamation of the Dynastic Name issued in 1271, Kublai announced the name of the new dynasty as Great Yuan and claimed the succession of former Chinese dynasties from the Three Sovereigns and Five Emperors to the Tang dynasty. Some of the Yuan emperors mastered the Chinese language, while others only used their native Mongolian language, written with the ʼPhags-pa script.\n\nKublai, as a khagan (great khan) of the Mongol Empire from 1260, had claimed supremacy over the other successor Mongol khanates: the Chagatai, the Golden Horde, and the Ilkhanate, before proclaiming as the emperor of China in 1271. As such, the Yuan was also sometimes referred to as the Empire of the Great Khan. However, even though the claim of supremacy by the Yuan emperors was recognized by the western khans in 1304, their subservience was nominal and each continued its own separate development.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "mongol-empire.i05"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "mongol-empire.s07"
+      ]
+    },
+    {
+      "id": "mongol-empire.l08",
+      "title_id": "mongol-empire",
+      "index": 8,
+      "heading": "The storms that saved Japan",
+      "body": "Major military efforts were taken by Kublai Khan of the Yuan dynasty in 1274 and 1281 to conquer the Japanese archipelago after the submission of the Korean kingdom of Goryeo to vassaldom. Ultimately a failure, the invasion attempts are of macro-historical importance because they set a limit on Mongol expansion and rank as nation-defining events in the history of Japan. The invasions are referred to in many works of fiction and gave rise to the belief of kamikaze (神風 \"divine wind\"), first used to describe the typhoons that destroyed the Mongol invasion fleets in the 13th century. The term was later adopted in the 20th century to describe Japanese pilots who deliberately crashed their aircraft into enemy warships during the last years of World War II.\n\n![](mongol-empire.i07)\n\nThe invasions were one of the earliest cases of gunpowder warfare outside of China. One of the most notable technological innovations during the war was the use of explosive, hand-thrown bombs.\n\n## The Mongol peace\n\nThe Pax Mongolica (Latin for 'Mongol Peace'), less often known as Pax Tatarica ('Tatar Peace'), is a historiographical term modeled after the original phrase Pax Romana which describes the stabilizing effects of the conquests of the Mongol Empire on the social, cultural and economic life of the inhabitants of the vast Eurasian territory that the Mongols conquered in the 13th and 14th centuries. The term is used to describe the eased communication and commerce that the unified administration helped to create and the period of relative peace that followed the Mongols' vast and violent conquests.\n\n![](mongol-empire.i08)\n\nThe conquests of Genghis Khan (r. 1206–1227) and his successors spanned from Southeast Asia to Eastern Europe. The Silk Road, connecting trade centres across Asia and Europe, came under the sole rule of the Mongol Empire. It was commonly said that \"a maiden bearing a nugget of gold on her head could wander safely throughout the realm\". Despite the political fragmentation of the Mongol Empire into four khanates (Yuan dynasty, Golden Horde, Chagatai Khanate, and Ilkhanate), nearly a century of conquest and civil war was followed by relative stability in the early 14th century. The end of the Pax Mongolica was marked by the disintegration of the khanates and the outbreak of the Black Death in Asia which spread along trade routes to much of the world in the mid-14th century.\n\nDuring this time, Mongol elements including the ʼPhags-pa script made numerous appearances in Western art.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "mongol-empire.i06",
+        "mongol-empire.i07",
+        "mongol-empire.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "mongol-empire.s08",
+        "mongol-empire.s09"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "mongol-empire.i01",
+      "title_id": "mongol-empire",
+      "url": "http://10.0.2.2:8000/media/mongol-empire/i01-6228fa17c7.jpg",
+      "width": 1600,
+      "height": 2033,
+      "alt": "A 1278 portrait of Genghis Khan",
+      "kind": "portrait",
+      "author": "Unknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumGenghisPortrait.jpg",
+      "credit_line": "Unknown author · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.35
+    },
+    {
+      "id": "mongol-empire.i02",
+      "title_id": "mongol-empire",
+      "url": "http://10.0.2.2:8000/media/mongol-empire/i02-0bd8b4dcd6.jpg",
+      "width": 1600,
+      "height": 1201,
+      "alt": "Mongols besieging Baghdad in 1258",
+      "kind": "other",
+      "author": "Sayf al-vâhidî et al.",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bagdad1258.jpg",
+      "credit_line": "Sayf al-vâhidî et al. · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "mongol-empire.i03",
+      "title_id": "mongol-empire",
+      "url": "http://10.0.2.2:8000/media/mongol-empire/i03-186e969b37.png",
+      "width": 1600,
+      "height": 2119,
+      "alt": "A map of the campaign leading to the Battle of Ain Jalut — in 1260 CE.",
+      "kind": "map",
+      "author": "MapMaster",
+      "license": "CC BY",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Campaign_of_the_Battle_of_Ain_Jalut_1260.svg",
+      "credit_line": "MapMaster · CC BY 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "mongol-empire.i04",
+      "title_id": "mongol-empire",
+      "url": "http://10.0.2.2:8000/media/mongol-empire/i04-61d2882c63.jpg",
+      "width": 1600,
+      "height": 1996,
+      "alt": "Kublai Khan, Genghis Khan's grandson and founder of the Yuan dynasty",
+      "kind": "portrait",
+      "author": "Araniko",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumKhubilaiPortrait.jpg",
+      "credit_line": "Araniko · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.35
+    },
+    {
+      "id": "mongol-empire.i05",
+      "title_id": "mongol-empire",
+      "url": "http://10.0.2.2:8000/media/mongol-empire/i05-713b320dd4.png",
+      "width": 1600,
+      "height": 1683,
+      "alt": "Based on Encyclopedia of Mongolia and the Mongol Empire (2004) by Christopher P. Atwood",
+      "kind": "other",
+      "author": "Cattette",
+      "license": "CC BY",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Yuan_Dynasty_revised.png",
+      "credit_line": "Cattette · CC BY 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "mongol-empire.i06",
+      "title_id": "mongol-empire",
+      "url": "http://10.0.2.2:8000/media/mongol-empire/i06-546d66523f.png",
+      "width": 1600,
+      "height": 1600,
+      "alt": "Mitsuuroko is a kind of Japanese family crest \"scale\". It is a design that stacks three equilateral triangles into pyramid shapes. Japanese clans Ogata clan, Hojo clan, etc. used it.",
+      "kind": "other",
+      "author": "Mukai",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Japanese_Crest_mitu_Uroko.svg",
+      "credit_line": "Mukai · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "mongol-empire.i07",
+      "title_id": "mongol-empire",
+      "url": "http://10.0.2.2:8000/media/mongol-empire/i07-2c48299459.png",
+      "width": 1600,
+      "height": 1600,
+      "alt": "Dakigyoyo is a type of Japanese family crest, \"Kyouhamon\". It is believed to be a stylized harness of apricot leaves.",
+      "kind": "other",
+      "author": "user:Mukai",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Japanese_Crest_daki_Gyouyou.svg",
+      "credit_line": "user:Mukai · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "mongol-empire.i08",
+      "title_id": "mongol-empire",
+      "url": "http://10.0.2.2:8000/media/mongol-empire/i08-b0e0a8118a.jpg",
+      "width": 1600,
+      "height": 1156,
+      "alt": "Detail of the Catalan Atlas depicting Marco Polo travelling to the East during the Pax Mongolica",
+      "kind": "other",
+      "author": "Abraham Cresques, Atlas catalan",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Caravane_Marco_Polo.jpg",
+      "credit_line": "Abraham Cresques, Atlas catalan · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "mongol-empire.s01",
+      "title": "Mongol Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mongol_Empire",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "mongol-empire.s02",
+      "title": "Genghis Khan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Genghis_Khan",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "mongol-empire.s03",
+      "title": "Mongol invasion of Europe (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Europe",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "mongol-empire.s04",
+      "title": "Siege of Baghdad (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Baghdad",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "mongol-empire.s05",
+      "title": "Battle of Ain Jalut (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Ain_Jalut",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "mongol-empire.s06",
+      "title": "Kublai Khan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kublai_Khan",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "mongol-empire.s07",
+      "title": "Yuan dynasty (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Yuan_dynasty",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "mongol-empire.s08",
+      "title": "Mongol invasions of Japan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mongol_invasions_of_Japan",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "mongol-empire.s09",
+      "title": "Pax Mongolica (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pax_Mongolica",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}
