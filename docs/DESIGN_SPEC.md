@@ -1,7 +1,6 @@
 # DESIGN_SPEC: Maximus v3 (extracted for Flutter build)
 
-Extracted in S2 (2026-11-22) from the Claude Design handoff bundle at
-`C:\Users\gurch\OneDrive\Desktop\Projects\Maximus\Maximus_v1\mobile-app-design-scope\`.
+Extracted in S2 (2026-11-22) from the first Claude Design handoff bundle, **rebuilt 2026-11-24 from the new export** committed at `docs/design/claude-design-export/mobile-app-design-scope/` (Maximus_Design.zip; adds v4: new-user Home, quiz tile, Fact of the day, day and evening posters). **Section 15 is the delta and wins over sections 1 to 14 where they conflict** (accounts, four tabs, onboarding order, posters, rating deltas).
 This file is the single source for S4 (theme + components) and S5 to S9 (screens). If the bundle and this file disagree, the bundle wins, then log the fix here.
 
 **Units.** Prototype CSS px = Flutter logical px (dp), 1:1.
@@ -13,7 +12,8 @@ This file is the single source for S4 (theme + components) and S5 to S9 (screens
 
 | File (in `project/`) | Role | Status |
 |---|---|---|
-| `Maximus v3 All Pages.dc.html` | Board that renders every v3 screen, in order, dark theme | **Primary.** Defines the screen list (section 9) |
+| `Maximus v3 All Pages.dc.html` | Board that renders every v3 screen, in order, dark theme, plus 10 light screens | **Primary.** Defines the screen list (section 9, and 15.6 for the 24 Nov version) |
+| `Maximus v4.dc.html` | Three changes: new-user Home with quiz tile, day and evening posters, Fact of the day | **New 24 Nov.** Specified in 15.2 and 15.5 |
 | `Maximus v3 App.dc.html` | The single prototype component all boards import. Holds all markup, styles, data and logic | **Canonical for every value in this spec** |
 | `android-frame.jsx` | Device frame used by the prototype (412x892 bezel, 40 status bar, 24 gesture bar, 8 px border) | Frame only, not app UI |
 | `support.js` | Claude Design runtime (React glue) | Not design. Ignore |
@@ -492,7 +492,7 @@ Numbering follows the All Pages board.
 - [sign in only] "Forgot password?" text button, left aligned.
 - Spacer, then primary button: "Sign in" / "Create account".
 - Footer (centred, 6 above): "New to Maximus?" + link "Create an account" / "Already have an account?" + link "Sign in" (toggles mode).
-- All buttons just advance (mock). **Conflicts with "no accounts in v1"** (11.1).
+- All buttons just advance in the prototype (mock). **V3: real accounts** (CONTRACTS 14). Build "Continue with Google" and email only: **drop "Continue with Apple"** (Android only).
 
 **1.4 What are you into? By era** (`ob3`), **1.5 By region** (`ob3region`), **1.6 5 of 5 topics** (`ob3full`)
 - Onboarding header, step 1 of 4 filled.
@@ -716,8 +716,8 @@ Each item: what conflicts, and a recommended default.
 
 ## 12. Owner decisions (2026-11-22) - these override section 11 defaults
 
-1. **Accounts:** dropped. No sign-in or create-account screens in v1. Splash goes to onboarding (first run) or Home.
-2. **Onboarding:** v3 order without sign-in: Pick topics, Favourite leader, First matches, Theme. Guess the year and Mystery card are built later as polish (specified above, not in v1 scope).
+1. **Accounts:** ~~dropped~~ **reversed 2026-11-24 (DECISIONS D34): sign-in is required, no guest mode.** Splash goes to Sign in (signed out), onboarding (first run) or Home.
+2. **Onboarding:** ~~Pick topics, Favourite leader, First matches, Theme~~ **now (24 Nov): Theme first, then topics, leaders, first matches (15.1).** Guess the year and Mystery card are built later as polish (specified above, not in v1 scope).
 3. **Text size:** Settings only, not onboarding.
 4. **Catalogue:** TOPICS.md is the source of truth (28 topics, 40 leaders, 11 thinkers). Design data is visual reference only. Topics without artwork use a tinted gradient poster with title lettering until illustrations are generated.
 5. **Think Like...:** person row (portrait posters) and person sheet are NOT designed yet. Run Prompt 2b in Claude Design first; S5 waits for that output. Until then S4/S5 build everything else.
@@ -744,3 +744,82 @@ Each item: what conflicts, and a recommended default.
 9. **Study list (11.12):** row tap opens the reader at the resume lesson; X and swipe left remove, with an "Undo" snackbar. Titles gone from the catalogue show "No longer available" and stay removable.
 10. **Placeholder images:** sample image URLs on example.org/example.com are not fetched; the tinted gradient shows (credit lines still show).
 11. **Settings:** VOICE SPEED (0.8x, 1x, 1.2x) under TEXT SIZE (the text-size sample sits directly under TEXT SIZE); theme, text size and voice speed persist in the drift settings table. Snackbar action colour is accentText.
+
+
+## 15. V3 delta: rebuilt from the 24 Nov 2026 export (read this first; it wins over sections 1 to 14 where they conflict)
+
+Source: `docs/design/claude-design-export/mobile-app-design-scope/project/` (the Claude Design handoff `Maximus_Design.zip`, 24 Nov 2026; `project/uploads` and `project/screenshots` were left out). Read in full: `Maximus v3 All Pages.dc.html` (primary: screen list), `Maximus v3 App.dc.html` (canonical values), `Maximus v3 Overview.dc.html`, `Maximus v4.dc.html`. Against the earlier bundle only these files changed: `All Pages`, `App`, `Library` (+40 bytes), `Overview` (+3 bytes), and `Maximus v4` is new. **Tokens did not change** (sections 1 to 6 stand: colours, Figtree and poster fonts, spacing 4/8/12/16/20/24/32/48, radii 8/14/18/24/full, 48 dp targets, no streaks, lives or timers, icon-and-word feedback, not colour alone).
+
+### 15.1 What the export now means for the app
+
+| Area | Rule (supersedes) |
+|---|---|
+| Accounts | Sign in and Create account are **real** screens (1.2, 1.3), no longer mock. Section 12 item 1 ("accounts dropped") and 11.1 are void: DECISIONS D34, CONTRACTS 14. The design draws a **"Continue with Apple"** button: do **not** build it (Android only, D35). Sign in is "Continue with Google", "or with email", Email, Password, "Forgot password?", primary button, toggle to Create account |
+| Bottom nav | **Home, Library, Feed, Settings** (four tabs). No Study tab; section 9 "Study" screens 2.6 and 2.7 become the study list section of Library (15.3). D40, CONTRACTS 19 |
+| Onboarding order | All Pages board: Sign in, then **Light or dark? (2.1)**, then What are you into? by era (2.2), by region (2.3), 5 of 5 (2.4), Favourite leader (2.5), 3 of 3 (2.6), Your first matches (2.7), then Home. **Theme is first.** This overrides section 12 item 2 and the 1.4 to 1.10 step counts (now 1 of 4 theme, 2 of 4 topics, 3 of 4 leaders, 4 of 4 matches). The Overview screen map still shows the old order (Mystery card ... Theme at the end); All Pages and the prototype `ORDER` constant win. Theme step stays a two-card choice; text size is **not** in onboarding (section 12 item 3 stands) |
+| Skip | Skip goes to Home and adds Roman history to the study list (prototype rule, unchanged) |
+| Home, new user | See 15.2. The old "Continue studying" card is replaced by "Your picks" until the user has progress |
+| Home, returning | Greeting, resume card, study list rows, "Your quiz scores" (or the dashed empty state "no scores yet"), **Fact of the day**, On This Day |
+| Library | See 15.3 |
+| Posters | See 15.5 and CONTRACTS 21 |
+| Settings | Rows: profile, taste (topics, leaders), theme, text size, voice, clear my data, **sign out**, **delete my account**, credits, **privacy policy**, version. Sign out returns to Sign in. Delete my account and privacy policy are not drawn: build them as plain list rows and a confirm dialog (CONTRACTS 17); the owner will design the deletion and privacy screens in Claude Design |
+| Chat | Per title, history saved to the account (CONTRACTS 16). The six chat states drawn (normal, off-topic refusal, "Chat is resting", offline) stay as in 3.3 to 3.6 |
+| Person sheet and people posters | **Still not designed** (the export has neither). Think Like... stays a row of portrait posters in Library; S5 waits for the designer's output (section 12 item 5 stands) |
+
+### 15.2 New-user Home, quiz tile and Fact of the day
+
+**Welcome block** (pad 0 20): "Welcome. Here is what you picked." (900 24/1.15), sub "Start anywhere. Tap a poster to see the lessons." (500 14/1.4 muted, 4 below). Then a horizontal row (gap 12, pad 16 20 0) of the user's picks as 156 dp wide posters with match badge (94, 90, 86, 82, 78 are prototype fixtures: use real match %).
+
+**Quiz tile** (section label "Quiz", 800 19, 22 above): full-width 200 dp tall tile, radius 18, over the poster of one picked topic (starts on the first pick; "Pick another topic" cycles through the user's picks). Poster art fills the tile, scrim `linear-gradient(to top, rgba(10,8,5,.92) 25%, rgba(10,8,5,.5))`. Bottom-left stack at 18 / 14, gap 6: title in the topic's lettering style, "6 questions" (700 14, `#F4EDE0`), then a row with **Begin** (48 dp, pill, `#C8933A` on `#1A1208`, 800 16) and **Pick another topic** (text button, 700 14, underlined, `#F4EDE0`). Begin starts that topic's quiz directly, no extra tap. Collapsed variant (before the user opens it): "Test yourself" (900 20), "Six questions on one of your picks." (muted) and a "Start a quiz" pill. Beside or under it a "Scores" placeholder card says "They show up here after your first quiz." Both themes are drawn (v4 1a to 1d). The tile needs a topic with at least 6 reviewed questions; otherwise show "Start a quiz" for the next pick that has them.
+
+**Fact of the day card** (above On This Day, pad 22 20 0): row, gap 12, padding 10, radius 16, bg `surface`, 1 px `divider`; 56 dp thumbnail (radius 12) of the fact's topic poster; right column: label "Fact of the day · 24 November" (800 11, uppercase, +0.12em, accent text), then the fact (600 13/1.35). Text under 25 words. Source and pick rule: CONTRACTS 20. v4 shows days 1, 2, 3 (Roman concrete, Cleopatra and the Moon landing, Viking ships) and day 2 in light.
+
+**On This Day** card follows: label "On this day · 21 November" (800 12, uppercase, +0.14em, accent text), headline 900 20/1.2, body 500 15/1.45 muted. Card padding 18, radius 22, `surface`, 1 px `divider`.
+
+### 15.3 Library with the study list
+
+Order: hero (Featured), **Your study list** (first section, section title 800 19 with the count on the right, "2 topics"), then rows: For you, one row per topic group, Because you liked X, Think Like... (portrait posters). Study rows are the existing 7.6 row: 64 dp poster thumbnail, topic name 800 16, sub "Lesson 3 of 8" or "Not started", progress bar in the topic tint, remove button (label "Remove <topic>"). Empty list (All Pages 4.2): a dashed 2 px `divider` box, radius 18, a picture and "Add a topic from any poster below and it waits here." Home's study section uses the same rows; when empty it shows "Nothing on your study list yet." with a **Browse library** pill. Title sheet (4.3 "Added", 4.4 "Rated: matches update") is unchanged from 7.10; the Add button reads "Add to study list" and then "Added to study list".
+
+### 15.4 Rating deltas: design vs CONTRACTS 6 (report; section 6 is NOT changed)
+
+| | Design (Overview 4, prototype) | CONTRACTS 6 |
+|---|---|---|
+| Up | "Thumbs up raises the match % of other topics **in the same group by 4**" | Rating up is a **weight of +4 on the rated title**, spread to every title by tag similarity (Jaccard of group, era, region and themes), then squashed into 40..99 (6.1, 6.2) |
+| Down | "lowers it by **6**" | Rating down is a weight of **-4** (symmetric with up) |
+| Unit | Percentage points, flat | Weight units; the resulting percentage change depends on the user's other signals (6.4 cases 1 to 5) |
+| Scope | Prototype group `grp` (five letters: a, m, r, w, e) | Catalogue groups (12 keys) plus every title that shares era, region or themes |
+
+Mismatches: (1) **asymmetric -6 vs symmetric -4**; (2) flat points vs weighted similarity: from a cold start a single thumbs up moves a closely related title from no badge to about the mid-60s, far more than +4, while a user with many signals sees changes of only a point or two; (3) the design's five prototype groups do not exist in the catalogue. The prototype numbers are a visual placeholder for "posters update behind the sheet" (Overview 4: "The Library posters update behind the sheet"). **Build the real formula; ignore +4 and -6.** If the owner wants a stronger thumbs-down than thumbs-up, change 6.1 on purpose (and the reference script and `match-cases.json`); that is a decision, not an S-prompt detail.
+
+### 15.5 Posters: the 20-vs-28 gap, day and evening
+
+The Overview text says "20 topics ... four detailed hero posters and 16 simpler motifs". The prototype file actually defines **30** poster drawings (4 hero on 200 x 300, 26 simple on about 100 x 150), plus two redrawn day versions (`d-roman`, `d-egypt`). Against the real catalogue (TOPICS.md, 28 topics):
+
+| Set | Count | Topics |
+|---|---|---|
+| Drawn **and** in TOPICS.md | 19 | Roman history, Ancient Greece, Ancient Egypt, Ancient India, Vikings, Mongol Empire, Renaissance, Ottoman Empire, Indian independence, Industrial Revolution, American Revolution, French Revolution, Napoleon, Russian Revolution, British Empire, American Civil War, WW1, WW2, Cold War |
+| In TOPICS.md, **no poster** | **9** | Black Death, Sikh history, Maratha Empire, Rajput history, Green Revolution in India, Space history, Great Depression, Dotcom bubble, Housing crisis (the v4 board lists 8: it leaves out Green Revolution) |
+| Drawn, **not in TOPICS.md** | 11 | Mughal Empire (removed from the list), Maya, Aztec, Inca, Byzantine, Persian, Samurai Japan, Mali, Crusades, Ming China, Zulu Kingdom. Keep the art; do not ship them unless the owner adds the topics |
+| People posters | 0 of 51 | The Think Like... posters are not built |
+
+Day and evening rules (v4 2a to 2d, prototype `art()` and `SINGLE` / `DAYART`): **light theme shows the day version, dark shows the evening version.** Redrawn pairs: Roman history, Ancient Egypt. One drawing with a theme wash: all other place posters and Napoleon (lighting only). One fixed drawing: WW1, WW2, Cold War, American Civil War. Planned pairs: Maratha, Rajput, Sikh, Space history; planned singles: Great Depression, Black Death, Housing crisis, Dotcom bubble. Wash colours, file names and modes: CONTRACTS 21. Prototype id to catalogue id map (file stems): `roman` roman-history, `greece` ancient-greece, `egypt` ancient-egypt, `ancientindia` ancient-india, `vikings` vikings, `mongol` mongol-empire, `renaissance` renaissance, `ottoman` ottoman-empire, `indian` indian-independence (confirm), `industrial` industrial-revolution, `american` american-revolution, `french` french-revolution, `napoleon` napoleon, `russian` russian-revolution, `british` british-empire, `civilwar` american-civil-war, `ww1` ww1, `ww2` ww2, `coldwar` cold-war. Slugs that are not in `backend/data/titles/` yet follow the kebab-case of the TOPICS.md name; the catalogue's ids win.
+
+### 15.6 Screen list (All Pages board order, the build target)
+
+| # | Screen | Prototype `screen` | Notes |
+|---|---|---|---|
+| 1.1 to 1.3 | Splash, Sign in, Create account | `splash`, `login`, `loginUp` | 1.5 s splash, then Sign in or Home |
+| 2.1 | Light or dark? | `ob5` | First onboarding step |
+| 2.2 to 2.4 | What are you into? by era, by region, 5 of 5 | `ob3`, `ob3region`, `ob3full` | 3 to 5 topics |
+| 2.5, 2.6 | Favourite leader, 3 of 3 | `leader`, `leaderFull` | 1 to 3 leaders |
+| 2.7 | Your first matches | `ob4` | |
+| 3.1 to 3.3 | Home new user, Quiz another topic, Fact of the day | `homeNew`, `homeNewQuiz2`, `homeNew` scrolled | 15.2 |
+| 3.4, 3.5 | Home returning, no quiz scores | `home`, `home` + `homeEmpty` | |
+| 4.1 to 4.5 | Library, empty study list, Title sheet, Rated, Day and evening posters | `library`, `libraryEmpty`, `sheetAdded`, `sheetRated`, `pairs` | 15.3, 15.5 |
+| 5.1 | Feed | `feed` | |
+| 6.1 to 6.10 | Reader, Topic finished, Chat, Off-topic refusal, Chat is resting, Offline, Quiz question, Right, Wrong, Result | `reader`, `readerDone`, `chat`, `chatOff`, `chatRest`, `chatOffline`, `quiz`, `quizRight`, `quizWrong`, `quizResult` | |
+| 7.1 | Settings | `settings` | 15.1 |
+| L1 to L10 | Light theme: Sign in, What are you into?, Favourite leader, Home new user, Library, Title sheet, Feed, Reader, Quiz wrong, Settings | same screens, `theme="light"` | |
+
+Not drawn and needed: person sheet, people posters, account deletion confirm, privacy policy, email verification banner, forgot-password screen, "Waking the server..." state, sync and sign-in error states. Build them from the existing components and tokens until the owner supplies designs.
+

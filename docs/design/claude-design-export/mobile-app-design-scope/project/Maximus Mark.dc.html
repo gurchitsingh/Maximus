@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&display=swap">
+</helmet>
+<div style="{{ wrapStyle }}">
+<sc-if value="{{ isA }}" hint-placeholder-val="{{ false }}">
+<svg viewBox="0 0 120 120" style="{{ svgStyle }}">
+<circle cx="60" cy="60" r="55" style="fill:none;stroke:currentColor;stroke-width:3"></circle>
+<circle cx="60" cy="60" r="48" style="fill:none;stroke:currentColor;stroke-width:1"></circle>
+<path d="M20 60 L27 56 L27 64 Z" style="fill:currentColor"></path>
+<path d="M100 60 L93 56 L93 64 Z" style="fill:currentColor"></path>
+<text x="60" y="79" style="fill:currentColor;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:56px;text-anchor:middle">M</text>
+</svg>
+</sc-if>
+<sc-if value="{{ isB }}" hint-placeholder-val="{{ false }}">
+<svg viewBox="0 0 120 120" style="{{ svgStyle }}">
+<circle cx="60" cy="60" r="55" style="fill:none;stroke:currentColor;stroke-width:3.2;stroke-linecap:round;stroke-dasharray:0.01 6.05"></circle>
+<circle cx="60" cy="60" r="50" style="fill:none;stroke:currentColor;stroke-width:1.2"></circle>
+<path id="mxCoinArc" d="M60,60 m-39,0 a39,39 0 1,1 78,0 a39,39 0 1,1 -78,0" style="fill:none"></path>
+<text style="fill:currentColor;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:10.5px;letter-spacing:3.6px"><textPath href="#mxCoinArc" startOffset="0">MAXIMVS · ARCHIVVM ·</textPath></text>
+<circle cx="60" cy="60" r="27" style="fill:none;stroke:currentColor;stroke-width:1"></circle>
+<path d="M50 46 H70" style="stroke:currentColor;stroke-width:1.6"></path>
+<text x="60" y="74" style="fill:currentColor;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:32px;text-anchor:middle">M</text>
+</svg>
+</sc-if>
+<sc-if value="{{ isC }}" hint-placeholder-val="{{ false }}">
+<svg viewBox="0 0 120 120" style="{{ svgStyle }}">
+<path d="M28 46 L11 35 L11 85 L28 74 Z M92 46 L109 35 L109 85 L92 74 Z" style="fill:none;stroke:currentColor;stroke-width:2.4;stroke-linejoin:round"></path>
+<rect x="28" y="34" width="64" height="52" style="fill:none;stroke:currentColor;stroke-width:2.8"></rect>
+<rect x="33.5" y="39.5" width="53" height="41" style="fill:none;stroke:currentColor;stroke-width:0.9"></rect>
+<text x="60" y="73" style="fill:currentColor;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:36px;text-anchor:middle">M</text>
+</svg>
+</sc-if>
+<sc-if value="{{ isCW }}" hint-placeholder-val="{{ false }}">
+<svg viewBox="0 0 280 90" style="{{ svgStyle }}">
+<path d="M34 26 L12 12 L12 78 L34 64 Z M246 26 L268 12 L268 78 L246 64 Z" style="fill:none;stroke:currentColor;stroke-width:2.4;stroke-linejoin:round"></path>
+<rect x="34" y="12" width="212" height="66" style="fill:none;stroke:currentColor;stroke-width:2.8"></rect>
+<rect x="40" y="18" width="200" height="54" style="fill:none;stroke:currentColor;stroke-width:0.9"></rect>
+<text x="143.5" y="56" style="fill:currentColor;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:30px;letter-spacing:7px;text-anchor:middle">MAXIMVS</text>
+</svg>
+</sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:200,&quot;height&quot;:200},&quot;variant&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;cw&quot;],&quot;default&quot;:&quot;a&quot;,&quot;tsType&quot;:&quot;'a'|'b'|'c'|'cw'&quot;},&quot;size&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:120,&quot;tsType&quot;:&quot;number&quot;},&quot;color&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#7d5411&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    const v = this.props.variant || 'a';
+    const size = Number(this.props.size) || 120;
+    const wide = v === 'cw';
+    return {
+      isA: v === 'a', isB: v === 'b', isC: v === 'c', isCW: wide,
+      wrapStyle: { display: 'inline-flex', color: this.props.color || 'currentColor', lineHeight: 0 },
+      svgStyle: { width: size, height: wide ? size * 90 / 280 : size, display: 'block', overflow: 'visible' },
+    };
+  }
+}
+</script>
+</body>
+</html>

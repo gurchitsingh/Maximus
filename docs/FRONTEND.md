@@ -1,26 +1,40 @@
-# FRONTEND (v2): Flutter, Android first
+# FRONTEND (v3): Flutter, Android first
 
-## Packages (proposed)
-Riverpod, go_router, dio, drift (SQLite), cached_network_image, flutter_tts, json_serializable, flutter_animate (or built-in animations), confetti. No shared_preferences: settings live in drift (CONTRACTS.md 8.1).
+# V3 CHANGES (24 Nov 2026) - read first
+
+These override anything below that conflicts.
+
+- **Auth:** sign in with Google and email and password. Tokens stored in secure storage (flutter_secure_storage). New packages to add to CONTRACTS 8.1: google_sign_in, flutter_secure_storage.
+- **Sync layer (offline-first):** the drift database stays the working copy. A sync service pushes and pulls ratings, study list, progress, quiz results, feed state, settings and chat history in the background when online (last-write-wins by updated_at, deletes as tombstones). Add updated_at and a deleted flag to the synced tables via a drift migration.
+- **Navigation:** bottom nav is Home, Library, Feed, Settings. The Study screen becomes the first section of Library. The router redirects to Sign in when signed out.
+- **New features:** Sign in and Create account screens, onboarding in the new order, Fact of the day card (bundled list of about 100 facts, picked by date), account deletion and sign out in Settings, privacy policy link.
+- **Posters:** SVG posters (day and evening versions) bundled as assets or served from the backend; decide in the design-delta job.
+- **Already built and kept:** match %, title sheet, reader, quiz, feed, settings, voice sheet, confetti drawn with CustomPainter.
+
+---
+
+## Packages
+Riverpod, go_router, dio, drift (SQLite), shared_preferences, cached_network_image, flutter_tts, url_launcher; v3 adds google_sign_in and flutter_secure_storage. Confetti is drawn by hand (CustomPainter), not a package.
 
 ## Structure
-lib/ app/ (app, router), core/ (theme and design tokens, shared widgets, widget gallery), features/ (splash, onboarding, home, library, title_sheet, study, reader, chat, quiz, feed, settings, credits), data/ (api client, drift DB, models, repositories), domain/ (match %, quiz picker, feed ranker, markdown parser). Full tree and routes: CONTRACTS.md section 8.
+lib/ app/ (router, theme), features/ (auth, onboarding, home, library, title, reader, chat, quiz, feed, settings), data/ (api client, drift DB, repositories, sync), domain/ (models, recommender).
 
 ## Local database (drift)
-settings (incl. install_id), interests, study_list, ratings, lesson_progress, quiz_results, quiz_seen, feed_state, cached_docs (catalogue, credits, On This Day), cached_titles. Columns and "Clear my data": CONTRACTS.md section 5. No chat_usage table: the server owns the chat caps and returns remaining_today.
-A title is cached whole the first time it is opened (study-list titles are also refreshed in the background), so every opened title works offline.
+titles_cache, lessons_cache, study_list, ratings(title_id, value), progress(title_id, lesson_index, done_at), quiz_results(title_id, score, at), feed_state, interests(topic, weight), settings, chat_usage(date, count), chat_messages (v3). Synced tables carry updated_at and a deleted flag.
+Content is downloaded per title when added to the study list, so it works offline.
 
 ## Match % (on-device recommender)
-Exact formula, weights and test vectors: CONTRACTS.md section 6 and docs/examples/match-cases.json. In short:
-- signals: onboarding topic and leader picks, ratings (thumbs down is negative), study list, lessons read, feed likes/saves/dislikes
-- each signal spreads to other titles by tag similarity (Jaccard over group, era, region and themes)
-- squashed to 40 to 99%; no badges at all before the first signal
-Plain weighted sum; no ML needed.
+Score each title 0 to 100:
+- interest overlap from onboarding picks (strongest at start)
+- similarity to titles you rated up / added / finished (shared category, era and tags)
+- negative weight from thumbs down
+- small bonus for titles near ones you finished
+Plain weighted sum; no ML. Exact weights are in CONTRACTS section 6 (tested against docs/examples/match-cases.json). Check the design's rating deltas (up +4, down -6 within a group) against it before S5.
 
 ## Navigation
-Bottom nav: Home, Library, Feed, Study. Inside a title: contextual bottom bar (Lessons, Chat, Quiz).
+Bottom nav: Home, Library, Feed, Settings. Inside a title: contextual bottom bar (Lessons, Chat, Quiz).
 
 ## Notes
-- Posters come with their bg and tint colours and lettering kind from the API, so no runtime colour extraction.
-- Chat calls the backend only; no keys in the app.
+- Posters come with accent colour from the API, so no runtime colour extraction.
+- Chat calls the backend only; no keys in the app. Chat needs a signed-in user.
 - Android only for V1; keep code platform-neutral.

@@ -1,6 +1,6 @@
 # DECISIONS (S3, 2026-11-22)
 
-Non-obvious choices behind `docs/CONTRACTS.md`. Three lines each: the decision, why, and what we gave up. Owner decisions from DESIGN_SPEC section 12 (no accounts, v3 onboarding, TOPICS.md catalogue, public repo) are not repeated here. Open items are CONTRACTS section 13.
+Non-obvious choices behind `docs/CONTRACTS.md`. Three lines each: the decision, why, and what we gave up. Owner decisions from DESIGN_SPEC section 12 (v3 onboarding, TOPICS.md catalogue, public repo) are not repeated here. **D34 to D44 (24 Nov 2026) add accounts, sync, Postgres, hosting and the v4 design; they supersede D24 and the "no accounts" rule. Items marked UNCONFIRMED are defaults awaiting the owner (D35, D37, the 30 days in D39, bundling in D42).** Open items are CONTRACTS section 13.
 
 ## D1. Chat replies are whole, not streamed
 - **Decision:** `POST /v1/titles/{id}/chat` returns one JSON reply after the server has the complete answer.
@@ -117,7 +117,7 @@ Non-obvious choices behind `docs/CONTRACTS.md`. Three lines each: the decision, 
 - **Why:** S10 can compare its responses to the examples (ignoring `generated_at`), and S5 to S9 get fake data that is guaranteed to agree with the samples.
 - **Gave up:** Hand-editing those three files. Change a sample, then regenerate them with the validator's builder functions.
 
-## D24. Chat history and suggestions are not stored or authored
+## D24. Chat history and suggestions are not stored or authored (history part superseded by D39, 2026-11-24)
 - **Decision:** Chat messages live in memory and clear when the title closes; suggestion chips come from on-device templates.
 - **Why:** Less personal data on the phone, no new schema field, and no extra content to write for 79 titles.
 - **Gave up:** Resuming a conversation later, and hand-picked questions per title (CONTRACTS Q6).
@@ -168,3 +168,59 @@ Non-obvious choices behind `docs/CONTRACTS.md`. Three lines each: the decision, 
 - **Decision:** `ingest.cli` has `merge`, `report`, `review`, `publish` and `people` (CONTRACTS 9.2). Rejected items are logged in `data/rejected/<id>.json` so merge never re-adds them and ids are not reused. `publish` needs a `reviewed` title and gate G1 to G9; `needs_check` items do not block it and are not served (G10). A draft `lesson_id` of null stays an error. Draft files (`data/drafts/*.json`) are gitignored. The person draft format (claims list `sources`, the tool assigns `source_ids`) is defined in CONTRACTS 9.2.
 - **Why:** Reviewed content must be the only content served, and rejected questions must stay rejected across re-merges.
 - **Gave up:** Restoring a rejected item automatically (edit the log by hand).
+
+
+## D34. Accounts are required; there is no guest mode (2026-11-24)
+- **Decision:** Every user signs in before onboarding. The server stores their data (D36). Confirmed by the owner. Supersedes the v1 rule "no accounts" (CONTRACTS P5, old DESIGN_SPEC 12).
+- **Why:** Real users on a Play Store app need their study data to survive a lost phone and to span devices, and chat needs a per-account cap.
+- **Gave up:** Instant start without a sign-in screen, and the "nothing personal on the server" privacy story. We now owe a privacy policy, the Data safety form, account deletion and security audits.
+
+## D35. Google sign-in ships first, email and password second (2026-11-24) **UNCONFIRMED**
+- **Decision:** Default only. S17 builds both sets of endpoints (CONTRACTS 14); S18 may release the Google screen first and the email screens one version later. Accounts link by verified email (14.3).
+- **Why:** Google needs no password storage, reset mail or verification flow, so it is the smaller and safer first release. The design's sign-in screen also shows a "Continue with Apple" button: dropped, Android only.
+- **Gave up:** Users without a Google account wait one release. **Owner: confirm or change the order.**
+
+## D36. The server stores a fixed list of user data (2026-11-24)
+- **Decision:** Ratings, study list, lesson progress, quiz results, feed saves and likes, onboarding picks, settings and chat history. Not stored: quiz "seen" cycle state, cached content, the install id.
+- **Why:** That is everything that would hurt to lose, and nothing else. A short list is easy to disclose in the privacy policy and to delete.
+- **Gave up:** Cross-device continuity of the quiz question cycle (it restarts per device).
+
+## D37. User data lives in hosted Postgres, default Neon free tier (2026-11-24) **UNCONFIRMED**
+- **Decision:** Production uses Postgres (default Neon free); SQLite stays for dev and tests. CONTRACTS 18 lists the pooling, migration and SSL rules; nothing is Neon-specific.
+- **Why:** Render's free disk is wiped on redeploy, so SQLite would lose users' data.
+- **Gave up:** A single-file database, and Neon's free-tier limits and cold starts. **Owner: confirm the host.** Because nothing is vendor-specific, switching later is a config change.
+
+## D38. Offline-first sync, last write wins, server-assigned cursor (2026-11-24)
+- **Decision:** One generic `user_records` table, per-record `updated_at` set on the device and a per-user `seq` set by the server (CONTRACTS 15). Conflicts: newer `updated_at` wins; at equal times a delete wins. Tombstones live 90 days. Push, then pull. "Clear my data" tombstones rows instead of deleting them.
+- **Why:** Device clocks can be wrong, so they decide conflicts only; paging uses the server's `seq`, which cannot be wrong. One table and one endpoint pair keep S17 and S18 small.
+- **Gave up:** Field-level merges (two devices editing one rating: the later edit wins whole), and exact conflict ordering when a phone's clock is far off. Acceptable for a study app.
+
+## D39. Chat history is stored per account, kept 30 days by default (2026-11-24) **UNCONFIRMED (the 30 days)**
+- **Decision:** The server saves both turns of every successful chat, builds the model's context from the stored history (the request no longer sends `history` or `install_id`), and hard-deletes rows older than `CHAT_RETENTION_DAYS` (30). The user can delete one title's chat or all chats. Supersedes D24 and the "log failures, not conversations" rule.
+- **Why:** The owner wants chat history saved to the account; server-built context removes a client-controlled input (injection surface) and saves bandwidth.
+- **Gave up:** A "we store no conversations" privacy claim, and some server storage. Chat text is now personal data, so it is disclosed, deletable and in the security audits. **Owner: confirm 30 days.**
+
+## D40. The study list lives inside Library; four tabs (2026-11-24)
+- **Decision:** Bottom nav is Home, Library, Feed, Settings. "Your study list" is the first section under the Library hero; an empty list shows a picture and a link to browse. The `/study` route redirects to `/library`.
+- **Why:** It is how the Claude Design export draws it, and it saves a tab.
+- **Gave up:** A dedicated Study screen and its quick access. The app's `study` feature folder merges into `library`.
+
+## D41. Fact of the day is a bundled, date-picked list (2026-11-24)
+- **Decision:** About 100 hand-written facts of at most 25 words in `assets/facts/facts.json`, picked by device-local date, no endpoint and no backend table (CONTRACTS 20). Each fact names a `title_id` for its thumbnail and tap target.
+- **Why:** It must work offline, cost nothing to run and never show an AI-drafted fact. A bundled file needs no server work.
+- **Gave up:** Changing facts without an app release (new facts arrive with updates; the list only grows at the end).
+
+## D42. 79 flat SVG posters, bundled, day and evening (2026-11-24) **UNCONFIRMED (bundling)**
+- **Decision:** One style, drawn in Claude Design: 28 topics and 51 people. Light theme shows day, dark shows evening. Three modes per title: `pair` (two drawings), `wash` (one drawing plus a theme overlay), `single` (CONTRACTS 21). Bundled in the app with `flutter_svg`; a manifest lists each title's mode.
+- **Why:** Matches the v4 design, works offline, and replaces the per-title image dependency for posters. 19 of the 28 topic posters exist; 9 are missing and the 51 people posters are not started.
+- **Gave up:** Updating art without an app release, and some app size (small, flat SVG). The design also drew 11 topics that are not in TOPICS.md (Mughal, Maya, Aztec, Inca, Byzantine, Persia, Samurai, Mali, Crusades, Ming, Zulu); they stay in the export, unused until the owner adds those topics.
+
+## D43. The people section keeps the name "Think Like..." (2026-11-24)
+- **Decision:** `people_row_label` stays "Think Like...". It is still a server string (CONTRACTS 3.2), so renaming needs no app release.
+- **Why:** The owner chose it.
+- **Gave up:** Nothing; the "section name" question left open in CONTRACTS 13 is closed.
+
+## D44. The API runs on Render's free tier (2026-11-24)
+- **Decision:** FastAPI on Render free, Postgres elsewhere (D37). Production refuses to start with an empty `JWT_SECRET` or `INSTALL_ID_SALT`. The app allows a long first-request timeout and shows a "Waking the server..." state (CONTRACTS 18).
+- **Why:** Free, and enough for launch traffic.
+- **Gave up:** Instant first requests (about 15 minutes idle puts it to sleep) and a persistent disk. **Open:** `backend/media/` images cannot live on that disk; the owner must pick object storage (or bundle more art) before the deploy session S22 (CONTRACTS 18, Q9).
