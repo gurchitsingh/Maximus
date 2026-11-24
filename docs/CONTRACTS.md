@@ -512,6 +512,7 @@ Hand check of #1: J(Rome, Greece) = 5/9 (shared: ancient-medieval, ancient, euro
 |---|---|
 | Own pool | `feed_facts` of cached titles on the study list |
 | Try pool | Online only: `GET /v1/feed?title_ids=<top 5 titles by match not on the study list and not rated down>&limit=10` (cold start: top 5 by rank), once per Feed session |
+| Uncached study-list title | The feed may fetch a study-list title that is not cached yet (`GET /v1/titles/{id}`) to get its facts. Offline, that title is skipped and the feed uses the other pools |
 | Excluded | Facts with `reaction = -1` |
 | Next card | Among unseen candidates: weighted random with weight `max(1, pct(title) − 39)` (cold start: 1). Never the previous card's title when another title has candidates. Every 5th card is a try card when one is left |
 | Seen | `seen_at` is set after a card has been on screen for 1 s. When every candidate is seen, seen marks are ignored and the cycle repeats; reactions stay |
@@ -553,7 +554,7 @@ app/
   drift_schemas/                 drift schema snapshots (5.2)
   test/                          mirrors lib/; contract tests read ../docs/examples and ../backend/data/samples
 ```
-Design tokens live only in `lib/core/theme/`. Per-title colours (`bg`, `tint`) are data from the payload, never theme constants. Packages: `flutter_riverpod`, `go_router`, `drift` + `sqlite3_flutter_libs`, `dio`, `cached_network_image`, `flutter_tts`, `json_annotation`/`json_serializable`, `uuid` (or `Random.secure`), `confetti`, `url_launcher` (attribution and credit links, accepted 2026-11-22); dev: `build_runner`, `drift_dev`. No `shared_preferences` (settings live in drift).
+Design tokens live only in `lib/core/theme/`. Per-title colours (`bg`, `tint`) are data from the payload, never theme constants. Packages: `flutter_riverpod`, `go_router`, `drift` + `sqlite3_flutter_libs`, `dio`, `cached_network_image`, `flutter_tts`, `json_annotation`/`json_serializable`, `uuid` (or `Random.secure`), `url_launcher` (attribution and credit links, accepted 2026-11-22); dev: `build_runner`, `drift_dev`. No `shared_preferences` (settings live in drift). No confetti package: the finish celebration and the 5/6 or 6/6 quiz result confetti are drawn with `CustomPainter`.
 
 ### 8.2 Backend (`backend/`)
 
@@ -629,10 +630,23 @@ Topic routes share a ShellRoute with the topic bar (Lessons, Chat, Quiz). Sign-i
 | 1 Seed list | TOPICS.md → `backend/ingest/seed.json` (S11): the editorial title fields + `pages[]`; each entry names a page and the sections that make one lesson (usually the page lead, optionally one section shortened with `max_words`), so a title reads as a chronological sequence. Format in `ingest/build.py` | |
 | 2 Topic text | S11 ingest: Wikipedia Action/REST API → clean → split on section boundaries into lessons of about 400 words (200 to 600) → `role: text` sources (licence `CC BY-SA 4.0`) | `data/titles/<id>.json`, `draft` |
 | 3 Images | S11 ingest: the images each picked section shows on Wikipedia (and Wikidata P18 or the seed's `hero_image` as hero) → Commons `imageinfo` + `extmetadata`; accept only PD, CC0, CC BY, CC BY-SA; reject non-free, trademarked, too small (<500 px), files not on Commons, CC files with no author and files with no English caption for `alt`; copy to our storage (`backend/media/<title>/<iNN>-<url hash>.<ext>`, URL base `MEDIA_BASE_URL`); fill every image field (2.3). Our own art: licence `OWN` | in the title file |
-| 4 People text | Perplexity research (claim, source URL, confidence) → Claude drafts the person fields with `role: citation` sources | person block, `draft` |
+| 4 People text | Perplexity research (claim, source URL, confidence) → Claude writes `data/drafts/<id>.person.json`; `python -m ingest.cli people <id> [--research research/people-N.md] [--replace] [--dry-run]` imports it (format below) | person block + `role: citation` sources, `draft` |
 | 5 Quiz + feed | Gemini from stored lessons only: `data/drafts/<id>.quiz.json` = `{"quiz": [...]}`, `<id>.feed.json` = `{"feed_facts": [...]}`; items in the 2.5 / 2.6 shape **without** `id`, `title_id`, `status`, `review_note`. The S13 merge tool assigns the next free ids, sets `needs_check` and checks `lesson_id` | merged into the title file |
-| 6 Review | Owner, in chat or NotebookLM | statuses flipped, `review_note`s |
-| 7 Import / publish | `python -m ingest.cli import data/titles/<id>.json` | DB rows; `published` only if the gate passes |
+| 6 Review | Owner, in chat or NotebookLM, with `report` and `review` (below) | statuses flipped, `review_note`s, `data/rejected/<id>.json` |
+| 7 Import / publish | `python -m ingest.cli publish <id> [--import]`, or `import data/titles/<id>.json` | DB rows; `published` only if the gate passes |
+
+**Person draft (`data/drafts/<id>.person.json`, gitignored)** = `{"person": {...}}`: the 2.4 fields with one change: every claim (`traits`, `changes`, `odds_beaten`, `core_ideas`, `use_today`) lists `sources: [{url, title, publisher?, confidence: high|medium|low}]` instead of `source_ids`. `died`, `odds_beaten`, `core_ideas` and `legend_note` may be left out (null, [], [], null). `people` turns each distinct URL into one `role: citation` source (`<id>.sNN`, after the existing ids, reused when the URL is already cited), fills `source_ids`, checks the block against the schema and the title against G1, and writes `person` plus the new sources into the title file (text sources and the title status are untouched). The title file must exist and be a leader or thinker; a `draft` title is overwritten on re-run, `reviewed` or `published` needs `--replace`. With `--research`, every cited URL must appear in that file and no source may claim more confidence than the research gave. Claims with fewer than 2 distinct sources, only low-confidence sources, or a missing `legend_note` import with a warning and are stopped by `publish` (G7, G8). All or nothing, atomic write.
+
+**Rejected log (`data/rejected/<id>.json`)** = list of the items removed by `review --reject`. It keeps their ids from being reused and keeps `merge` from adding the same draft again.
+
+**Commands** (`python -m ingest.cli ...`, details in `backend/README.md`):
+- `merge <id>|--all [--dry-run] [--skip-invalid]`: appends valid Gemini quiz/feed drafts as `needs_check` with the next free ids; existing items are never changed; all or nothing unless `--skip-invalid`; re-runs skip duplicates and rejected items.
+- `report <id>|--all [--brief]`: lists the `needs_check` items, runs the whole gate G1 to G10 and prints the next step.
+- `review <id>`: prints the items to check (`--lesson l03 --lesson-text`); `--approve q001-q012 f001 [--note ...]` sets `reviewed` (one unknown id writes nothing); `--reject q013` removes a `needs_check` item and logs it; `--approve-all [--kind quiz|feed]`; `--title-reviewed` moves the title `draft` to `reviewed`.
+- `publish <id> [--import]`: `reviewed` to `published` only when G1 to G9 pass (file untouched on refusal); items still `needs_check` do not block it but are not served (G10); `--import` also loads the DB.
+- `people <id>`: as above.
+
+Typical order: `merge`, `report`, `review`, `review --title-reviewed`, `publish --import`.
 
 **Import format** = `title-import.schema.json`: the TitleDetail shape where computed fields may be omitted (`reading_minutes`, `lesson_count`, `quiz_count`, `content_version`, `updated_at`) and these default: `subtitle` null, `period_start`/`period_end` null, `poster_image_id`/`hero_image_id` null, `linked_title_ids` [], `rank` 999. The importer: validates the schema and the referential rules (the checks in `tools/validate_samples.py: title_checks`, minus the SAMPLE markers), fills computed fields, hashes the payload, bumps `content_version` and `updated_at` only when the hash changed, replaces the title and its children in one transaction, logs an `ingest_runs` row. Same id = update, never a duplicate.
 
