@@ -5,11 +5,12 @@ from fastapi.staticfiles import StaticFiles
 from pathlib import Path
 
 from app import __version__
-from app.config import settings
+from app.config import check_startup, settings
 from app.errors import ApiError, error_response, install_handlers
 from app.routers.v1 import health, v1
 from app.services.ratelimit import RateLimiter
 
+check_startup(settings)  # production refuses to start without JWT_SECRET, INSTALL_ID_SALT, Postgres
 app = FastAPI(title="Maximus API", version=__version__, docs_url="/docs", redoc_url=None)
 install_handlers(app)
 limiter = RateLimiter(settings.rate_limit_ip_per_min)
@@ -29,7 +30,7 @@ async def rate_limit(request: Request, call_next):
 
 origins = [o.strip() for o in settings.cors_origins.split(",") if o.strip()]
 if origins:
-    app.add_middleware(CORSMiddleware, allow_origins=origins, allow_methods=["GET"], allow_headers=["*"])
+    app.add_middleware(CORSMiddleware, allow_origins=origins, allow_methods=["GET", "POST", "DELETE"], allow_headers=["*"])
 
 app.include_router(health)
 app.include_router(v1)

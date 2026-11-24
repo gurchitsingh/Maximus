@@ -10,6 +10,7 @@ from sqlalchemy.orm import Session
 from app import __version__
 from app.db import get_db
 from app.errors import ApiError
+from app.routers import auth as auth_routes
 from app.routers.chat import router as chat_router
 from app.services import otd, store
 from app.services.etag import etag_response
@@ -19,6 +20,8 @@ SLUG_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*$")
 
 v1 = APIRouter(prefix="/v1")
 v1.include_router(chat_router)
+v1.include_router(auth_routes.auth)
+v1.include_router(auth_routes.me)
 health = APIRouter()
 
 
