@@ -1,0 +1,607 @@
+{
+  "id": "ww1",
+  "kind": "topic",
+  "name": "WW1",
+  "subtitle": "1914 to 1918",
+  "poster_lines": [
+    "WORLD",
+    "WAR I"
+  ],
+  "group": "wars-space",
+  "era": "modern",
+  "region": "global",
+  "period_start": 1914,
+  "period_end": 1918,
+  "themes": [
+    "war",
+    "politics",
+    "empire",
+    "science-tech"
+  ],
+  "bg": "#4A4232",
+  "tint": "#E06A4F",
+  "lettering": "stencil",
+  "poster_image_id": null,
+  "hero_image_id": "ww1.i01",
+  "brief": "Trenches, alliances and a war nobody expected to last.",
+  "linked_title_ids": [
+    "ww2"
+  ],
+  "rank": 22,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "ww1.l01",
+      "title_id": "ww1",
+      "index": 1,
+      "heading": "The Great War",
+      "body": "World War I, or the First World War (28 July 1914 – 11 November 1918), also known as the Great War, was a global conflict between two coalitions: the Allies (or Entente) and the Central Powers. One of the deadliest conflicts in history, World War I caused 15 to 22 million deaths, including those resulting from war crimes and genocides. The war also contributed to the spread of the Spanish flu pandemic. The conflict saw important developments in weaponry, including machine guns, artillery, aircraft, chemical weapons, and tanks.\n\n![](ww1.i02)\n\nThe causes of World War I included the rise of the German Empire, which disturbed the long-standing balance of power in Europe, and the exacerbation of imperial rivalries, as reflected in new alliances and an arms race between the great powers. Tensions in the Balkans reached a breaking point on 28 June 1914 when Gavrilo Princip, a Bosnian Serb, assassinated Franz Ferdinand, the heir to the Austro-Hungarian throne. Austria-Hungary blamed Serbia and declared war on 28 July, upon which the Russian Empire mobilised in Serbia's defence. In early August, Germany declared war on Russia and France; the United Kingdom entered the war after Germany invaded Belgium. Germany's strategy in 1914 was to quickly defeat France, but its advance was halted in September, and the Western Front solidified into a near-continuous line of fortified trenches. The Eastern Front was more dynamic, but neither side gained a decisive advantage, despite costly offensives. The Ottoman Empire joined the Central Powers in November, which was followed by a failed Allied campaign at Gallipoli. Japan and Italy also joined the Allies.\n\n![](ww1.i03)\n\nMajor battles, including those at Verdun, the Somme, and Passchendaele, failed to break the stalemate on the Western Front. In April 1917, the United States joined the Allies after Germany resumed unrestricted submarine warfare against Atlantic shipping. Later that year, the Bolsheviks seized power in Russia in the October Revolution; Soviet Russia signed an armistice with the Central Powers in December, followed by a separate peace in March 1918. That month, Germany launched a spring offensive in the west, which despite initial successes left the German Army exhausted and demoralised. The Allied Hundred Days Offensive, beginning in August 1918, caused a collapse of the German front line. By early November, the Allies had signed armistices with the Ottomans and with Austria-Hungary, leaving Germany isolated. Facing a revolution at home, Kaiser Wilhelm II abdicated on 9 November, and the war ended with the Armistice of 11 November 1918.\n\nThe Paris Peace Conference of 1919–1920 imposed settlements on the defeated powers. Under the Treaty of Versailles, Germany lost significant territories, was disarmed, and was required to pay large war reparations to the Allies. The collapse of the Russian, German, Austro-Hungarian, and Ottoman empires resulted in new national boundaries and the creation of new independent states including Poland, Finland, the Baltic states, Czechoslovakia, and Yugoslavia. The League of Nations was established to maintain world peace, but its failure to manage the instability during the interwar period contributed to the outbreak of World War II in 1939.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ww1.i01",
+        "ww1.i02",
+        "ww1.i03"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww1.s01"
+      ]
+    },
+    {
+      "id": "ww1.l02",
+      "title_id": "ww1",
+      "index": 2,
+      "heading": "Why it started",
+      "body": "Identifying the causes of World War I remains a debated issue. World War I began in the Balkans on 28 July 1914, and hostilities ended on 11 November 1918, leaving 17 million dead and 25 million wounded. Moreover, the Russian Civil War can in many ways be considered a continuation of World War I, as can various other conflicts in the direct aftermath of 1918.\n\nScholars looking at the long term seek to explain why two rival sets of powers (the German Empire, Austria-Hungary, and the Ottoman Empire against the Russian Empire, France, and the British Empire) came into conflict by the start of 1914. They look at such factors as political, territorial and economic competition; militarism, a complex web of alliances and alignments; imperialism, the growth of nationalism; and the power vacuum created by the decline of the Ottoman Empire. Other important long-term or structural factors that are often studied include unresolved territorial disputes, the perceived breakdown of the European balance of power, convoluted and fragmented governance, arms races and security dilemmas, a cult of the offensive, and military planning.\n\n![](ww1.i05)\n\nScholars seeking short-term analysis focus on the summer of 1914 and ask whether the conflict could have been stopped, or instead whether deeper causes made it inevitable. Among the immediate causes were the decisions made by statesmen and generals during the July Crisis, which was triggered by the assassination of Archduke Franz Ferdinand of Austria by the Bosnian Serb nationalist Gavrilo Princip, who had been supported by a nationalist organization in Serbia. The crisis escalated as the conflict between Austria-Hungary and Serbia was joined by their allies Russia, Germany, France, and ultimately Belgium and the United Kingdom. Other factors that came into play during the diplomatic crisis leading up to the war included misperceptions of intent (such as the German belief that the UK would remain neutral), the fatalistic belief that war was inevitable, and the speed with which the crisis escalated, partly due to delays and misunderstandings in diplomatic communications.\n\nThe crisis followed a series of diplomatic clashes among the Great Powers (Italy, France, Germany, Britain, Austria-Hungary and Russia) over European and colonial issues in the decades before 1914 that had left tensions high. The cause of these public clashes can be traced to changes in the balance of power in Europe that had been taking place since 1867.\n\nConsensus on the origins of the war remains elusive, since historians disagree on key factors and place differing emphasis on a variety of factors. That is compounded by historical arguments changing over time, particularly as classified historical archives become available, and as perspectives and ideologies of historians have changed. The deepest division among historians is between those who see Germany and Austria-Hungary as having driven events and those who focus on power dynamics among a wider set of actors and circumstances. Secondary fault lines exist between those who believe that Germany deliberately planned a European war, those who believe that the war was largely unplanned but was still caused principally by Germany and Austria-Hungary taking risks, and those who believe that some or all of the other powers (Russia, France, Serbia, the UK) played a more significant role in causing the war than has been traditionally suggested.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ww1.i04",
+        "ww1.i05"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww1.s02"
+      ]
+    },
+    {
+      "id": "ww1.l03",
+      "title_id": "ww1",
+      "index": 3,
+      "heading": "Sarajevo, 1914",
+      "body": "Archduke Franz Ferdinand of Austria, heir presumptive to the Austro-Hungarian throne, and his wife, Sophie, Duchess of Hohenberg, were assassinated by Bosnian Serb student Gavrilo Princip in Sarajevo on 28 June 1914. They were shot at close range while being driven through the provincial capital of Bosnia and Herzegovina, formally annexed by Austria-Hungary in 1908. The incident was one of the key events that led to World War I.\n\nPrincip was part of a group of six Bosnian assassins together with Muhamed Mehmedbašić, Vaso Čubrilović, Nedeljko Čabrinović, Cvjetko Popović and Trifko Grabež coordinated by Danilo Ilić; all but one were Bosnian Serbs and members of a revolutionary movement later known as Young Bosnia. The political objective of the assassination was to free Bosnia and Herzegovina of Austro-Hungarian rule and establish a common South Slav (\"Yugoslav\") state. The assassination precipitated the July Crisis, which led to Austria-Hungary declaring war on Serbia and the start of World War I.\n\n![](ww1.i07)\n\nThe assassination team was helped by the Black Hand, a Serbian secret nationalist group; support came from Dragutin Dimitrijević, chief of the military intelligence section of the Serbian general staff, as well as from Major Vojislav Tankosić and Rade Malobabić, a Serbian intelligence agent. Tankosić provided bombs and pistols to the assassins and trained them in their use. The assassins were given access to the same clandestine network of safe-houses and agents that Malobabić used for the infiltration of weapons and operatives into Austria-Hungary.\n\nThe assassins and key members of the clandestine network were tried in Sarajevo in October 1914. In total twenty-five people were indicted. Five of the six assassins were under 20 years old at the time of the assassination, the exception being Mehmedbašić who was 26 or 27. While the group was dominated by Bosnian Serbs, four were Bosnian Croats, one was a Bosnian Muslim and all of them were Austro-Hungarian citizens; none were from Serbia. Princip was found guilty of murder and high treason, but being too young to be executed, was sentenced to 20 years in jail. The four other attackers also received jail terms. Five of the older prisoners were sentenced to be hanged.\n\nBlack Hand members were arrested and tried before a Serbian court in Salonika in 1917 on charges of high treason, which were later widely regarded as fabricated. The Black Hand was disbanded, and three of its leaders were executed. Much of what is known about the assassinations comes from these two trials and related records. Princip's legacy was re-evaluated following the breakup of Yugoslavia, and public opinion of him in the successor states is largely divided along ethnic lines.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ww1.i06",
+        "ww1.i07"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww1.s03"
+      ]
+    },
+    {
+      "id": "ww1.l04",
+      "title_id": "ww1",
+      "index": 4,
+      "heading": "The Schlieffen Plan",
+      "body": "The Schlieffen Plan is a name given after the First World War to German war plans, due to the influence of Field Marshal Alfred von Schlieffen and his thinking on an invasion of France and Belgium, that began on 7 August 1914. Schlieffen was Chief of the General Staff of the German Army from 1891 to 1906. In 1905 and 1906, Schlieffen devised an army deployment plan for a decisive (war-winning) offensive against France. German forces were to invade France through the Netherlands, Luxembourg and Belgium rather than across the common border.\n\nAfter losing the First World War, the German official historians of the Reichsarchiv and other writers, described the plan as a blueprint for victory. Generaloberst (Colonel-General) Helmuth von Moltke the Younger had succeeded Schlieffen as Chief of the German General Staff in 1906 and was dismissed after the First Battle of the Marne (5–12 September 1914). German historians claimed that Moltke had ruined the plan by tampering with it, out of timidity. They managed to establish a narrative that Moltke failed to follow the blueprint devised by Schlieffen, condemning the belligerents to four years of attrition warfare.\n\nIn 1956, Gerhard Ritter published Der Schlieffenplan: Kritik eines Mythos (The Schlieffen Plan: Critique of a Myth), which began a period of revision, when the details of the supposed Schlieffen Plan were subjected to scrutiny. Treating the plan as a blueprint was rejected because this was contrary to the tradition of Prussian war planning established by Helmuth von Moltke the Elder, in which military operations were considered to be inherently unpredictable. Mobilisation and deployment plans were essential but campaign plans were pointless; rather than attempting to dictate to subordinate commanders, the commander gave his intent and subordinates achieved it through Auftragstaktik (mission tactics).\n\nIn writings from the 1970s, Martin van Creveld, John Keegan, Hew Strachan and others studied the practical aspects of an invasion of France through Belgium and Luxembourg. They judged that the physical constraints of German, Belgian and French railways and the Belgian and northern French road networks made it impossible to move enough troops far enough and fast enough for them to fight a decisive battle if the French retreated from the frontier. Most of the pre-1914 planning of the German General Staff was secret and the documents were destroyed when deployment plans were superseded each April. The bombing of Potsdam in April 1945 destroyed much of the Prussian army archive and only incomplete records and other documents survived. Some records turned up after the fall of the German Democratic Republic (GDR), making an outline of German war planning possible for the first time, proving wrong much post-1918 writing.\n\nIn the 2000s, a document, RH61/v.96, was discovered in the trove inherited from the GDR, which had been used in a 1930s study of pre-war German General Staff planning. Inferences that Schlieffen's war planning was solely offensive were found to have been made by extrapolating his writings and speeches on tactics into grand strategy. From a 1999 article in War in History and in Inventing the Schlieffen Plan (2002) to The Real German War Plan, 1906–1914 (2011), Terence Zuber engaged in a debate with Terence Holmes, Annika Mombauer, Robert Foley, Gerhard Gross, Holger Herwig and others.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ww1.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww1.s04"
+      ]
+    },
+    {
+      "id": "ww1.l05",
+      "title_id": "ww1",
+      "index": 5,
+      "heading": "Life in the trenches",
+      "body": "Trench warfare is a type of land warfare using occupied lines largely comprising military trenches, in which combatants are well-protected from the enemy's fire and are substantially sheltered from artillery. Although used in antiquity it fully developed in the 17th century. During the American Civil War (1861–1865), particularly during the sieges of Vicksburg and Petersburg, modern firepower clashed with outdated infantry tactics. Soldiers began digging in to avoid the deadly shelling. This tactical shift signaled the end of classic open-field battles. This development ultimately reached its most extreme and deadly form in World War I (1914–1918). Through the combined use of machine guns, rapid-fire artillery, and barbed wire, the front lines—particularly on the Western Front—became frozen in a kilometer-long, deeply echeloned system of trenches. The trench was now no longer merely a means of siege but, as a defensive infrastructure, determined the entire course of the industrialized war of attrition.",
+      "reading_minutes": 1,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww1.s05"
+      ]
+    },
+    {
+      "id": "ww1.l06",
+      "title_id": "ww1",
+      "index": 6,
+      "heading": "Verdun",
+      "body": "The Battle of Verdun was fought from 21 February to 18 December 1916 on the Western Front in France. The battle was the longest of the First World War and took place on the hills north of Verdun. The German 5th Army attacked the defences of the Fortified Region of Verdun (RFV, Région Fortifiée de Verdun) and those of the French Second Army on the right (east) bank of the Meuse. Using the experience of the Second Battle of Champagne in 1915, the Germans planned to capture the Meuse Heights, an excellent defensive position, with good observation for artillery-fire on Verdun. The Germans hoped that the French would commit their strategic reserve to recapture the position and suffer catastrophic losses at little cost to the German infantry.\n\nPoor weather delayed the beginning of the attack until 21 February but the Germans captured Fort Douaumont four days later. The advance then slowed for several days, despite inflicting many French casualties. By 6 March, 20+1⁄2 French divisions were in the RFV and a more extensive defence in depth had been organised. Philippe Pétain ordered there to be no retreat and that German attacks were to be counter-attacked, despite this exposing French infantry to the German artillery. By 29 March, French guns on the west bank had begun a constant bombardment of Germans on the east bank, causing many infantry casualties. The German offensive was extended to the west bank of the Meuse to gain observation and eliminate the French artillery firing over the river but the attacks failed to reach their objectives.\n\n![](ww1.i10)\n\nIn early May, the Germans changed tactics again and made local attacks and counter-attacks; the French recaptured part of Fort Douaumont but the Germans ejected them and took many prisoners. The Germans tried alternating their attacks on either side of the Meuse and in June captured Fort Vaux. The Germans advanced towards the last geographical objectives of the original plan, at Fleury-devant-Douaumont and Fort Souville, driving a salient into the French defences. Fleury was captured and the Germans came within 2.5 mi (4 km) of the Verdun citadel but in July the offensive was limited to provide troops, artillery and ammunition for the Battle of the Somme, leading to a similar transfer of the French Tenth Army to the Somme front. From 23 June to 17 August, Fleury changed hands sixteen times and a German attack on Fort Souville failed. The offensive was reduced further but to keep French troops away from the Somme, ruses were used to disguise the change.\n\nIn September and December, French counter-offensives recaptured much ground on the east bank and recovered Fort Douaumont and Fort Vaux. The battle lasted for 302 days, one of the longest and costliest in human history. In 2000, Hannes Heer and Klaus Naumann calculated that the French suffered 377,231 casualties and the Germans 337,000, a total of 714,231 and an average of 70,000 a month. In 2014, William Philpott wrote of 714,000 casualties suffered by both sides during the Battle of Verdun in 1916 and that about 1,250,000 casualties were suffered in the vicinity of Verdun in the war. In France, the battle came to symbolise the determination of the French Army and the destructiveness of the war.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ww1.i09",
+        "ww1.i10"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww1.s06"
+      ]
+    },
+    {
+      "id": "ww1.l07",
+      "title_id": "ww1",
+      "index": 7,
+      "heading": "The Somme",
+      "body": "The Battle of the Somme, also known as the Somme offensive, was a battle of the First World War fought by the armies of the British Empire and the French Republic against the German Empire. It took place between 1 July and 18 November 1916 on both sides of the upper reaches of the river Somme in France. The battle was intended to hasten a victory for the Allies. More than three million men fought in the battle, of whom more than one million were either wounded or killed, making it one of the deadliest battles in human history. It illustrated the deadly potential of mechanized warfare that began in the mid-19th century.\n\n![](ww1.i10)\n\nThe French and British had planned an offensive on the Somme during the Chantilly Conference in December 1915. The Allies agreed upon a strategy of combined offensives against the Central Powers in 1916 by the French, Russian, British and Italian armies, with the Somme offensive as the Franco-British contribution. The French army was to undertake the main part of the Somme offensive, supported on the northern flank by the Fourth Army of the British Expeditionary Force (BEF). When the Imperial German Army began the Battle of Verdun on the Meuse on 21 February 1916, French commanders diverted many of the divisions intended for the Somme and the \"supporting\" attack by the British became the principal effort. British forces comprised a mixture of wartime volunteers from the Territorial Force and Kitchener's Army with the remains of the pre-war army.\n\n![](ww1.i12)\n\nOn the first day on the Somme (1 July) the German 2nd Army suffered a serious defeat opposite the French Sixth Army, from Foucaucourt-en-Santerre south of the Somme to Maricourt on the north bank and by the Fourth Army from Maricourt to the vicinity of the Albert–Bapaume road. The 57,470 casualties suffered by the British, including 19,240 killed, were the worst in the history of the British Army. Most of the British casualties were suffered on the front between the Albert–Bapaume road and Gommecourt to the north, which was the area where the principal German defensive effort (Schwerpunkt) was made. The battle became notable for the importance of air power and the first use of the tank in September but these were a product of new technology and proved unreliable.\n\nAt the end of the battle, British and French forces had penetrated 6.2 miles (10 km) into German-occupied territory along the majority of the front, their largest territorial gain since the First Battle of the Marne in 1914. The operational objectives of the Anglo-French armies were not achieved, as they failed to capture Péronne and Bapaume, where the German armies maintained their positions over the winter. British attacks in the Ancre valley resumed in January 1917 and forced the Germans into local withdrawals in February before the strategic retreat by about 25 mi (40 km) in Operation Alberich to the Siegfriedstellung (Hindenburg Line) in March 1917. Debate continues over the necessity, significance and effect of the battle.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ww1.i11",
+        "ww1.i10",
+        "ww1.i12"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww1.s07"
+      ]
+    },
+    {
+      "id": "ww1.l08",
+      "title_id": "ww1",
+      "index": 8,
+      "heading": "Gallipoli",
+      "body": "The Gallipoli campaign, the Dardanelles campaign, the Defence of Gallipoli or the Battle of Gallipoli was a military campaign in the First World War on the Gallipoli Peninsula (now Gelibolu) from 19 February 1915 to 9 January 1916. The Allied powers (Britain, France and the Russian Empire) unsuccessfully attempted to make the Ottoman Empire, one of the Central Powers, capitulate by taking control of the Turkish straits. They intended to expose the Ottoman capital at Constantinople to bombardment by Allied warships and cut it off from the Asian part of the empire. An Ottoman Empire defeat could have led to unfettered Western control of the Suez Canal and the opening of the Bosphorus and Dardanelles straits to Allied supplies headed for the Black Sea and warm-water ports in Russia.\n\nIn March 1915, the Allied fleet failed to force a passage through the Dardanelles. An amphibious landing on the Gallipoli peninsula began in April 1915. In January 1916, after eight months' fighting, with approximately 250,000 casualties on each side, the land campaign was abandoned and the invasion force was withdrawn, resulting in an Ottoman victory. It was a costly campaign for the Allied powers and the Ottoman Empire as well as for the sponsors of the expedition, especially the First Lord of the Admiralty (1911–1915), Winston Churchill.\n\n![](ww1.i14)\n\nIn Turkey, it is regarded as a defining moment in the country's history. Mustafa Kemal Atatürk, who rose to prominence as a commander at Gallipoli, became the founder and first president of the Republic of Turkey in 1923. The campaign is considered by some to be the beginning of Australian and New Zealand national consciousness. The anniversary of the landings, 25 April, is known as Anzac Day, the most significant commemoration of military casualties and veterans in the two countries, surpassing Remembrance Day (Armistice Day).\n\n## The Zimmermann telegram\n\nThe Zimmermann telegram (or Zimmermann note or Zimmermann cable) was a secret diplomatic communication issued from the German Foreign Office on January 17, 1917, that proposed a military contract between the German Empire and Mexico if the United States entered World War I against Germany. With Germany's aid, Mexico would recover Texas, Arizona, and New Mexico. The telegram was intercepted by British intelligence.\n\nRevelation of the contents enraged Americans, especially after German State Secretary for Foreign Affairs Arthur Zimmermann publicly admitted on March 3, 1917, that the telegram was genuine. It helped to generate support for the American declaration of war on Germany in April 1917.\n\nThe decryption has been described as the most significant intelligence triumph for Britain during World War I and it marked one of the earliest occasions on which a piece of signals intelligence influenced world events. The decryption was possible after the failure of the Niedermayer–Hentig Expedition to Afghanistan, when Wilhelm Wassmuss abandoned his codebook, which the Allies later recovered, and that allowed the British to decrypt the Zimmermann telegram.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ww1.i13",
+        "ww1.i14"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww1.s08",
+        "ww1.s09"
+      ]
+    },
+    {
+      "id": "ww1.l09",
+      "title_id": "ww1",
+      "index": 9,
+      "heading": "Germany's last push",
+      "body": "The German spring offensive, also known as Kaiserschlacht (\"Emperor's Battle\") or the Ludendorff offensive, was a series of German attacks along the Western Front during the First World War, beginning on 21 March 1918. Following the American entry into the war in April 1917, the Germans decided that their only remaining chance of victory was to defeat the Allies before the United States could ship soldiers across the Atlantic and fully deploy its resources. The Imperial German Army had gained a temporary advantage in numbers as nearly 50 divisions had been freed by the Russian withdrawal from the war with the Treaty of Brest-Litovsk.\n\nThere were five German offensives, codenamed Michael, Georgette, Gneisenau, Blücher-Yorck, and Marneschütz-Reims, the last also nicknamed the Friedenssturm, or \"Peace Offensive\". Michael was the main attack, which was intended to break through the Allied lines, outflank the British forces (which held the front from the Somme River to the English Channel) and defeat the British Army. Once that was achieved, it was hoped that the French would seek armistice terms. The other offensives were subsidiary to Michael and were designed to divert Allied forces from the main offensive effort on the Somme. No clear objective was established before the start of the offensives and once the operations were underway, the targets of the attacks were constantly changed, depending on the tactical situation.\n\nOnce they began advancing, the Germans struggled to maintain the momentum, partly due to logistical issues. The fast-moving stormtrooper units could not carry enough food and ammunition to sustain themselves for long, and the army could not move in supplies and reinforcements fast enough to assist them. The Allies concentrated their main forces in the essential areas (the approaches to the Channel Ports and the rail junction of Amiens). Strategically worthless ground, which had been devastated by years of conflict, was left lightly defended. Within a few weeks, the danger of a German breakthrough had passed, though related fighting continued until July.\n\nThe German Army made the deepest advances either side had made on the Western Front since 1914. They re-took much ground that they had lost in 1916–17 and took some ground that they had not yet controlled. Despite these apparent successes, they suffered heavy casualties in return for land that was of little strategic value and hard to defend. The offensive failed to deliver a blow that could save Germany from defeat, which has led some historians to describe it as a Pyrrhic victory. In July 1918, the Allies regained their numerical advantage with the arrival of American troops. In August, they used this and improved tactics to launch a counteroffensive. The ensuing Hundred Days Offensive resulted in the Germans losing all of the ground that they had taken in the Spring Offensive, the collapse of the Hindenburg Line, and the capitulation of Germany that November.",
+      "reading_minutes": 3,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww1.s10"
+      ]
+    },
+    {
+      "id": "ww1.l10",
+      "title_id": "ww1",
+      "index": 10,
+      "heading": "The Armistice",
+      "body": "The Armistice of 11 November 1918 was the armistice that ended fighting on land, at sea, and in the air in World War I between the Entente and their last remaining opponent, Germany. It was signed in a railroad car in the Compiègne Forest, near the town of Compiègne, France. Previous armistices had been agreed with Bulgaria, the Ottoman Empire and Austria-Hungary. It was concluded after the German government sent a message to American president Woodrow Wilson to negotiate terms on the basis of a recent speech of his and the earlier declared \"Fourteen Points\", which later became the basis of the German surrender at the Paris Peace Conference, which took place the following year.\n\nAlso known as the Armistice of Compiègne from the town near the place where it was officially agreed to at 5:00 a.m. by the Allied Supreme Commander, French Marshal Ferdinand Foch, it came into force at 11:00 a.m. Paris Time (11:00 UT) on 11 November 1918 and marked a victory for the Entente and a defeat for Germany, although not formally a surrender.\n\nThe actual terms, which were largely written by Foch, included the cessation of hostilities on the Western Front, the withdrawal of German forces from west of the Rhine, Entente occupation of the Rhineland and bridgeheads further east, the preservation of infrastructure, the surrender of aircraft, warships, and military materiel, the release of Allied prisoners of war and interned civilians, eventual reparations, no release of German prisoners and no relaxation of the naval blockade of Germany. The armistice was extended three times while negotiations continued on a peace treaty. The Treaty of Versailles, which was officially signed on 28 June 1919, took effect on 10 January 1920.\n\nFighting continued up until 11 a.m. UT on 11 November 1918, with 2,738 men dying on the last day of the war.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "ww1.i15"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww1.s11"
+      ]
+    },
+    {
+      "id": "ww1.l11",
+      "title_id": "ww1",
+      "index": 11,
+      "heading": "The Treaty of Versailles",
+      "body": "The Treaty of Versailles was a peace treaty signed on 28 June 1919. As the most important treaty of World War I, it ended the state of war between Germany and most of the Allied Powers. It was signed in the Palace of Versailles, exactly five years after the assassination of Archduke Franz Ferdinand, the proximate cause of the war. The other Central Powers on the German side signed separate treaties. Although the armistice of 11 November 1918 ended the actual fighting, and agreed certain principles and conditions including the payment of reparations, it took six months of Allied negotiations at the Paris Peace Conference to conclude the peace treaty. Germany was not allowed to participate in the negotiations before signing the treaty.\n\nThe treaty required Germany to disarm, make territorial concessions, extradite alleged war criminals, agree to Kaiser Wilhelm being put on trial, recognise the independence of states whose territory had previously been part of the German Empire, and pay reparations to the Entente powers. The most critical and controversial provision in the treaty was: \"The Allied and Associated Governments affirm and Germany accepts the responsibility of Germany and her allies for causing all the loss and damage to which the Allied and Associated Governments and their nationals have been subjected as a consequence of the war imposed upon them by the aggression of Germany and her allies.\" The other members of the Central Powers signed treaties containing similar articles. This article, Article 231, became known as the \"War Guilt\" clause.\n\nCritics including John Maynard Keynes declared the treaty too harsh, styling it as a \"Carthaginian peace\". On the other hand, prominent Allied figures such as French Marshal Ferdinand Foch criticized the treaty for treating Germany too leniently. This remains the subject of debate by historians and economists.\n\nThe result of these competing and sometimes conflicting goals among the victors was a compromise that left no one satisfied. In particular, Germany was neither pacified nor conciliated, nor was it permanently weakened. The United States never ratified the Versailles Treaty; instead it made a separate peace treaty with Germany, albeit based on the Versailles Treaty. The problems that arose from the treaty would lead to the Locarno Treaties, which improved relations between Germany and the other European powers. The reparation system was reorganized and payments reduced in the Dawes Plan and the Young Plan. Bitter resentment of the treaty powered the rise of the Nazi Party, and eventually the outbreak of a Second World War.\n\nAlthough it is often referred to as the \"Versailles Conference\", only the actual signing of the treaty took place at the historic palace. Most of the negotiations were in Paris, with the \"Big Four\" meetings taking place generally at the French Ministry of Foreign Affairs on the Quai d'Orsay.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "ww1.i16"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "ww1.s12"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "ww1.i01",
+      "title_id": "ww1",
+      "url": "http://10.0.2.2:8000/media/ww1/i01-de2bb7d40a.jpg",
+      "width": 1600,
+      "height": 1196,
+      "alt": "French soldiers moving into attack from their trench during the Battle of Verdun, 1916.",
+      "kind": "other",
+      "author": "Collection DocAnciens/docpix.fr",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bataille_de_Verdun_1916.jpg",
+      "credit_line": "Collection DocAnciens/docpix.fr · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww1.i02",
+      "title_id": "ww1",
+      "url": "http://10.0.2.2:8000/media/ww1/i02-8c9ed3bc08.jpg",
+      "width": 1600,
+      "height": 1175,
+      "alt": "8-inch howitzers of the 39th Siege Battery, Royal Garrison Artillery conducting a shoot in the Fricourt-Mametz Valley, August 1916, during the Battle of the Somme.",
+      "kind": "other",
+      "author": "John Warwick Brooke",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:British_39th_Siege_Battery_RGA_Somme_1916.jpg",
+      "credit_line": "John Warwick Brooke · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww1.i03",
+      "title_id": "ww1",
+      "url": "http://10.0.2.2:8000/media/ww1/i03-0a7714b60e.jpg",
+      "width": 1600,
+      "height": 1199,
+      "alt": "General notes: Use War and Conflict Number 630 when ordering a reproduction or requesting information about this image.",
+      "kind": "other",
+      "author": "Unknown authorUnknown author or not provided",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:American_troops_going_forward_to_the_battle_line_in_the_Forest_of_Argonne._France,_September_26,_1918._-_NARA_-_530748.jpg",
+      "credit_line": "Unknown authorUnknown author or not provided · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww1.i04",
+      "title_id": "ww1",
+      "url": "http://10.0.2.2:8000/media/ww1/i04-b1cb96eeb3.png",
+      "width": 1600,
+      "height": 1045,
+      "alt": "European diplomatic alignments shortly before the war. The Ottomans joined the Central Powers shortly after the war started, with Bulgaria joining the following year.",
+      "kind": "painting",
+      "author": "It Is Me Here Xiaphias",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:WWIchartX.svg",
+      "credit_line": "It Is Me Here Xiaphias · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww1.i05",
+      "title_id": "ww1",
+      "url": "http://10.0.2.2:8000/media/ww1/i05-3bb04c2027.png",
+      "width": 1600,
+      "height": 793,
+      "alt": "Map of the world with participants in World War I after U.S. entry (6 April 1917), but before the October Revolution (7 November 1917): .mw-parser-output…",
+      "kind": "map",
+      "author": "Template created by MapChart; edited by myself",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:World_War_I_alliances.png",
+      "credit_line": "Template created by MapChart; edited by myself · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww1.i06",
+      "title_id": "ww1",
+      "url": "http://10.0.2.2:8000/media/ww1/i06-8fa5686caa.jpg",
+      "width": 1600,
+      "height": 1938,
+      "alt": "Assassination illustrated in the Italian newspaper La Domenica del Corriere, 12 July 1914 by Achille Beltrame",
+      "kind": "other",
+      "author": "Achille Beltrame",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:DC-1914-27-d-Sarajevo-cropped.jpg",
+      "credit_line": "Achille Beltrame · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww1.i07",
+      "title_id": "ww1",
+      "url": "http://10.0.2.2:8000/media/ww1/i07-fce0c91bfd.png",
+      "width": 1600,
+      "height": 1166,
+      "alt": "Chart of the assassination in Sarajevo. Note that it may not be entirely accurate because of the lack of accuracy of the chart it is based on.",
+      "kind": "other",
+      "author": "User:Oni Lukos",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Sarajevo-assn-chart.svg",
+      "credit_line": "User:Oni Lukos · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww1.i08",
+      "title_id": "ww1",
+      "url": "http://10.0.2.2:8000/media/ww1/i08-eae5e743b7.jpg",
+      "width": 1600,
+      "height": 2249,
+      "alt": "Count Alfred von Schlieffen in 1906",
+      "kind": "other",
+      "author": "Photo studio E. Bieber",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Alfred_von_Schlieffen_1906.jpg",
+      "credit_line": "Photo studio E. Bieber · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww1.i09",
+      "title_id": "ww1",
+      "url": "http://10.0.2.2:8000/media/ww1/i09-d3be7e30ff.png",
+      "width": 1600,
+      "height": 1035,
+      "alt": "Map of the Battle of Verdun, 1916",
+      "kind": "map",
+      "author": "Drawn by Gdr",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Battle_of_Verdun_map.png",
+      "credit_line": "Drawn by Gdr · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww1.i10",
+      "title_id": "ww1",
+      "url": "http://10.0.2.2:8000/media/ww1/i10-5c8c70017d.jpg",
+      "width": 1600,
+      "height": 1538,
+      "alt": "Verdun in eastern France",
+      "kind": "map",
+      "author": "Eric Gaba (Sting - fr:Sting)",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:France_relief_location_map.jpg",
+      "credit_line": "Eric Gaba (Sting - fr:Sting) · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww1.i11",
+      "title_id": "ww1",
+      "url": "http://10.0.2.2:8000/media/ww1/i11-bfa80ec9f3.jpg",
+      "width": 1600,
+      "height": 1165,
+      "alt": "Troops supposedly \"going over the top\" at the start of the Battle of the Somme in 1916, photographed by Canadian official photographer Ivor Castle.",
+      "kind": "photo",
+      "author": "Ivor Castle",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Going_over_the_top_01.jpg",
+      "credit_line": "Ivor Castle · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww1.i12",
+      "title_id": "ww1",
+      "url": "http://10.0.2.2:8000/media/ww1/i12-f575875306.jpg",
+      "width": 1600,
+      "height": 1368,
+      "alt": "Physical location map Europe; Lambert azimuthal equal-area projection",
+      "kind": "map",
+      "author": "Alexrk2",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Europe_relief_laea_location_map.jpg",
+      "credit_line": "Alexrk2 · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww1.i13",
+      "title_id": "ww1",
+      "url": "http://10.0.2.2:8000/media/ww1/i13-c3357b15ce.jpg",
+      "width": 1600,
+      "height": 2176,
+      "alt": "Gallipoli Campaign",
+      "kind": "other",
+      "author": "LoudHmen",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:G.C._18_March_1915_Gallipoli_Campaign_Article.jpg",
+      "credit_line": "LoudHmen · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww1.i14",
+      "title_id": "ww1",
+      "url": "http://10.0.2.2:8000/media/ww1/i14-78d426bd27.jpg",
+      "width": 1600,
+      "height": 2026,
+      "alt": "The Zimmermann Telegram as received by the German Ambassador to Mexico",
+      "kind": "other",
+      "author": "Unknown authorUnknown author or not provided",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Zimmermann_Telegram_as_Received_by_the_German_Ambassador_to_Mexico_-_NARA_-_302025.jpg",
+      "credit_line": "Unknown authorUnknown author or not provided · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww1.i15",
+      "title_id": "ww1",
+      "url": "http://10.0.2.2:8000/media/ww1/i15-c3ec850767.jpg",
+      "width": 1600,
+      "height": 2137,
+      "alt": "Delegates that reached the armistice in Ferdinand Foch's own railway carriage in the Forest of Compiègne. Foch's chief of staff Maxime Weygand is second from left.",
+      "kind": "photo",
+      "author": "Unknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Armisticetrain_(slight_crop).jpg",
+      "credit_line": "Unknown author · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "ww1.i16",
+      "title_id": "ww1",
+      "url": "http://10.0.2.2:8000/media/ww1/i16-cf56c838f7.jpg",
+      "width": 1600,
+      "height": 2436,
+      "alt": "Cover of the English version of the treaty.",
+      "kind": "map",
+      "author": "David Lloyd George, Woodrow Wilson and Georges Clemenceau",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Treaty_of_Versailles,_English_version.jpg",
+      "credit_line": "David Lloyd George, Woodrow Wilson and Georges Clemenceau · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "ww1.s01",
+      "title": "World War I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/World_War_I",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww1.s02",
+      "title": "Causes of World War I (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Causes_of_World_War_I",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww1.s03",
+      "title": "Assassination of Archduke Franz Ferdinand (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Assassination_of_Archduke_Franz_Ferdinand",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww1.s04",
+      "title": "Schlieffen Plan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Schlieffen_Plan",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww1.s05",
+      "title": "Trench warfare (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Trench_warfare",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww1.s06",
+      "title": "Battle of Verdun (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Verdun",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww1.s07",
+      "title": "Battle of the Somme (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Somme",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww1.s08",
+      "title": "Gallipoli campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gallipoli_campaign",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww1.s09",
+      "title": "Zimmermann telegram (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Zimmermann_telegram",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww1.s10",
+      "title": "German spring offensive (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/German_spring_offensive",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww1.s11",
+      "title": "Armistice of 11 November 1918 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Armistice_of_11_November_1918",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "ww1.s12",
+      "title": "Treaty of Versailles (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Versailles",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}

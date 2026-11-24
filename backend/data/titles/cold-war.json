@@ -1,0 +1,687 @@
+{
+  "id": "cold-war",
+  "kind": "topic",
+  "name": "Cold War",
+  "subtitle": "1947 to 1991",
+  "poster_lines": [
+    "COLD",
+    "WAR"
+  ],
+  "group": "wars-space",
+  "era": "modern",
+  "region": "global",
+  "period_start": 1947,
+  "period_end": 1991,
+  "themes": [
+    "politics",
+    "war",
+    "science-tech",
+    "ideas"
+  ],
+  "bg": "#14213D",
+  "tint": "#8FD3F0",
+  "lettering": "stencil",
+  "poster_image_id": null,
+  "hero_image_id": "cold-war.i01",
+  "brief": "Two superpowers, no direct war, and a race to space.",
+  "linked_title_ids": [
+    "space-history",
+    "ww2"
+  ],
+  "rank": 24,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "cold-war.l01",
+      "title_id": "cold-war",
+      "index": 1,
+      "heading": "Two superpowers",
+      "body": "The Cold War was a period of international geopolitical rivalry between the United States (US) and the Soviet Union (USSR) and their respective allies, the capitalist Western Bloc and communist Eastern Bloc. It began in the aftermath of the Second World War and ended with the dissolution of the Soviet Union in 1991. The term cold war is used because there was no direct fighting between the two superpowers, though each supported opposing sides in regional conflicts known as proxy wars. In addition to the struggle for ideological and economic influence and an arms race in both conventional and nuclear weapons, the Cold War was expressed through technological rivalries such as the Space Race, espionage, propaganda campaigns, embargoes, and sports diplomacy.\n\nAfter the end of the Second World War in 1945, during which the US and USSR had been allies, the USSR installed satellite governments in its occupied territories in Eastern Europe and North Korea by 1949, resulting in the political division of Europe (and Germany) by an \"Iron Curtain\". The USSR tested its first nuclear weapon in 1949, four years after the US used its own on Hiroshima and Nagasaki, and allied with the People's Republic of China, founded in 1949. The US declared the Truman Doctrine of \"containment\" of communism in 1947, launched the Marshall Plan in 1948 to assist Western Europe's economic recovery, and founded the NATO military alliance in 1949 (matched by the Soviet-led Warsaw Pact in 1955). The Berlin Blockade of 1948 to 1949 was an early confrontation, as was the Korean War of 1950 to 1953, which ended in a stalemate.\n\nUS involvement in regime change during the Cold War included support for First World anti-communist and right-wing dictatorships and uprisings, while Soviet involvement included the funding of Second World left-wing parties, wars of independence, and dictatorships. As nearly all the colonial states underwent decolonization, many became Third World battlefields of the Cold War. Both powers used economic aid in an attempt to win the loyalty of non-aligned countries. The Cuban Revolution of 1959 installed the first communist regime in the Western Hemisphere, and in 1962, the Cuban Missile Crisis began after deployments of US missiles in Europe and Soviet missiles in Cuba; it is widely considered the closest the Cold War came to escalating into nuclear war. Another major proxy conflict was the Vietnam War of 1955 to 1975, which ended in a North Vietnamese victory.\n\nThe USSR solidified its domination of Eastern Europe with its crushing of the Hungarian Revolution in 1956 and the Warsaw Pact invasion of Czechoslovakia in 1968. Relations between the USSR and China broke down by 1961, with the Sino-Soviet split bringing the two states to the brink of war amid a border conflict in 1969. In 1972, the US initiated diplomatic contacts with China and the US and USSR signed a series of treaties limiting their nuclear arsenals during a period known as détente. In 1979, the toppling of US-allied governments in Iran and Nicaragua and the outbreak of the Soviet–Afghan War again raised tensions. In 1985, Mikhail Gorbachev became leader of the USSR and expanded political freedoms, which contributed to the revolutions of 1989 in the Eastern Bloc and the collapse of the USSR in 1991, ending the Cold War.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "cold-war.i02"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "cold-war.s01"
+      ]
+    },
+    {
+      "id": "cold-war.l02",
+      "title_id": "cold-war",
+      "index": 2,
+      "heading": "The Truman Doctrine",
+      "body": "The Truman Doctrine is a U.S. foreign policy that pledges American support for U.S.-aligned nations against alleged authoritarian threats. The doctrine originated with the primary goal of countering the growth of the Soviet bloc during the Cold War. It was announced to Congress by President Harry S. Truman on March 12, 1947, and further developed on July 4, 1948, when he pledged to oppose the communist rebellions in Greece and Soviet demands on Turkey. More generally, the Truman Doctrine implied U.S. support for other nations threatened by the Soviet Union. It led to the formation of NATO in 1949. Historians often use Truman's speech to Congress on March 12, 1947, to date the start of the Cold War.\n\nTruman told Congress that \"it must be the policy of the United States to support free peoples who are resisting attempted subjugation by armed minorities or by outside pressures.\" Truman contended that because totalitarian regimes coerced free peoples, they automatically represented a threat to international peace and the national security of the United States. Truman argued that if Greece and Turkey did not receive the aid, they would inevitably fall out of the United States' sphere of influence and into the communist bloc, with grave consequences throughout the region.\n\nThe Truman Doctrine was informally extended to become the basis of American Cold War policy throughout Europe and around the world. It shifted U.S. policy toward the Soviet Union from a wartime alliance to containment of Soviet expansion, as advocated by diplomat George F. Kennan.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "cold-war.s02"
+      ]
+    },
+    {
+      "id": "cold-war.l03",
+      "title_id": "cold-war",
+      "index": 3,
+      "heading": "The Marshall Plan",
+      "body": "The Marshall Plan (officially the European Recovery Program, ERP) was an American initiative enacted in 1948 to provide foreign aid to Western Europe. The United States transferred US$13.3 billion to 17 European countries (equivalent to $141 billion in 2025) in economic recovery programs to Western European economies after the end of World War II in Europe. Replacing an earlier proposal for a Morgenthau Plan, it operated for four years beginning on April 3, 1948; though in 1951, the Marshall Plan was largely replaced by the Mutual Security Act. The goals of the United States were to rebuild war-torn regions, remove trade barriers, modernize industry, improve European prosperity and prevent the spread of communism. The Marshall Plan proposed the reduction of interstate barriers and the economic integration of the European continent while also encouraging an increase in productivity as well as the adoption of modern business procedures. According to a report from the U.S. Congressional Research Service, 83% of the Marshall Plan funds were spent within the United States.\n\nThe Marshall Plan aid was divided among the participating states roughly on a per capital basis. A larger amount was given to the major industrial powers, as the prevailing opinion was that their resuscitation was essential for the general European revival. Somewhat more aid per capital was also directed toward the Allied nations, with less for those that had been part of the Axis or remained neutral. The largest recipient of Marshall Plan money was the United Kingdom (receiving about 26% of the total). The next highest contributions went to France (18%) and West Germany (11%). Some eighteen European countries received Plan benefits. Although offered participation, the Soviet Union refused Plan benefits and also blocked benefits to Eastern Bloc countries, such as Romania and Poland. The United States provided similar aid programs in Asia, but they were not part of the Marshall Plan.\n\nIts role in rapid recovery has been debated. The Marshall Plan's accounting reflects that aid accounted for about 3% of the combined national income of the recipient countries between 1948 and 1951, which means an increase in GDP growth of less than half a percent.\n\nGraham T. Allison states that \"the Marshall Plan has become a favorite analogy for policy-makers. Yet few know much about it.\" Some new studies highlight not only the role of economic cooperation but also approach the Marshall Plan as a case concerning strategic thinking to face some typical challenges in policy, such as problem definition, risk analysis, decision support to policy formulation, and program implementation.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "cold-war.i03"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "cold-war.s03"
+      ]
+    },
+    {
+      "id": "cold-war.l04",
+      "title_id": "cold-war",
+      "index": 4,
+      "heading": "The Marshall Plan (continued)",
+      "body": "In 1947, two years after the end of the war, industrialist Lewis H. Brown wrote, at the request of General Lucius D. Clay, A Report on Germany, which served as a detailed recommendation for the reconstruction of post-war Germany and served as a basis for the Marshall Plan. The initiative was named after United States secretary of state George C. Marshall. The plan had bipartisan support in Washington, where the Republicans controlled Congress and the Democrats controlled the White House with Harry S. Truman as president. Some businessmen feared the Marshall Plan, unsure whether reconstructing European economies and encouraging foreign competition was in the US' best interests. The plan was largely the creation of State Department officials, especially William L. Clayton and George F. Kennan, with help from the Brookings Institution, as requested by Senator Arthur Vandenberg, chairman of the United States Senate Committee on Foreign Relations. Marshall spoke of an urgent need to help the European recovery in his address at Harvard University in June 1947. The purpose of the Marshall Plan was to aid in the economic recovery of nations after World War II and secure US geopolitical influence over Western Europe. To combat the effects of the Marshall Plan, the USSR developed its own economic recovery program, known as the Molotov Plan.\n\nThe phrase \"equivalent of the Marshall Plan\" is often used to describe a proposed large-scale economic rescue program.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "cold-war.s03"
+      ]
+    },
+    {
+      "id": "cold-war.l05",
+      "title_id": "cold-war",
+      "index": 5,
+      "heading": "The Berlin Blockade",
+      "body": "The Berlin Blockade (24 June 1948 – 12 May 1949) was one of the first major international crises of the Cold War. During the multinational occupation of post–World War II Germany, the Soviet Union blocked the Western Allies' railway, road, and canal access to the sectors of Berlin under Western control. The Soviets offered to drop the blockade if the Western Allies withdrew the newly introduced Deutsche Mark from West Berlin.\n\nThe Western Allies organised the Berlin Airlift from 26 June 1948 to 30 September 1949 to carry supplies to the people of West Berlin, a difficult feat given the size of the city and the population. American and British air forces landed in Berlin more than 200,000 times, delivering 13,000 tons of food, fuel, and other necessities each day. Among these was the work of the later concurrent Operation Little Vittles in which candy-dropping aircraft dubbed \"raisin bombers\" generated much goodwill among German children.\n\nOn 12 May 1949, the USSR lifted the blockade of West Berlin, due to economic issues in East Berlin, although for a time the Americans and British continued to supply the city by air as they were worried that the Soviets would resume the blockade and were only trying to disrupt Western supply lines. The Berlin Airlift officially ended on 30 September 1949 after fifteen months. The US Air Force had delivered 1,783,573 tons (76.4% of total) and the RAF 541,937 tons (23.3% of total), totalling 2,334,374 tons, nearly two-thirds of which was coal, on 278,228 flights to Berlin. In addition Canadian, Australian, New Zealand and South African air crews assisted the RAF during the blockade. The French air force also conducted flights, but only to supply their own military garrison.\n\nAmerican C-47 and C-54 transport airplanes, together, flew over 92 million miles (148 million kilometres) in the process, almost the distance from Earth to the Sun. British transports, including Handley Page Haltons and Short Sunderlands, flew as well. At the height of the airlift, one plane reached West Berlin every thirty seconds.\n\nSeventeen American and eight British aircraft crashed during the operation. A total of 101 fatalities were recorded as a result of the operation, including 40 Britons and 31 Americans, mostly due to flying accidents.\n\nThe Berlin Blockade served to highlight the competing ideological and economic visions for postwar Europe. It played a major role in aligning West Berlin with the United States and Britain as the major protecting powers, and in drawing West Germany into the NATO orbit several years later in 1955.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "cold-war.i04"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "cold-war.s04"
+      ]
+    },
+    {
+      "id": "cold-war.l06",
+      "title_id": "cold-war",
+      "index": 6,
+      "heading": "The Korean War",
+      "body": "The Korean War (25 June 1950 – 27 July 1953) was an armed conflict fought on the Korean Peninsula between North Korea (Democratic People's Republic of Korea; DPRK) and South Korea (Republic of Korea; ROK) and their allies. North Korea was supported by China and the Soviet Union, while South Korea was supported by the United Nations led by the United States under the auspices of the United Nations Command (UNC).\n\n![](cold-war.i06)\n\nAfter the end of World War II in 1945, Korea, which had been a Japanese colony for 35 years, was divided by the Soviet Union and the United States into two occupation zones at the 38th parallel, with plans for a future independent state. The zones formed their own governments in 1948 due to political disagreements. North Korea was led by Kim Il Sung in Pyongyang, and South Korea by Syngman Rhee in Seoul; both claimed to be the sole legitimate government of all of Korea.\n\nBoth sides engaged in extensive border clashes while Rhee's government suppressed communist uprisings at Jeju and Yeosu-Suncheon. On 25 June 1950, North Korea launched an invasion of South Korea. In the absence of the Soviet Union's representative, the UN Security Council denounced the invasion, calling on member states to help repel the invasion. UN forces under the unified command comprised 21 countries, with the US providing around 90% of military personnel. On 27 June 1950, United States President Harry S. Truman ordered US air and sea forces to aid South Korea.\n\n![](cold-war.i07)\n\nSeoul was captured by the KPA on 28 June, and by early August, the Republic of Korea Army (ROKA) and its allies were nearly defeated, holding onto only the Pusan Perimeter in the peninsula's southeast. On 15 September, UN forces landed at Inchon near Seoul, cutting off KPA troops and supply lines. UN forces broke out from the perimeter on 18 September, recaptured Seoul, and invaded North Korea in October, capturing Pyongyang and advancing towards the Yalu River (border with China). On 19 October, the Chinese People's Volunteer Army (PVA) crossed the Yalu and entered the war on the side of the North. UN forces retreated from North Korea in December, following the PVA's first and second offensive. Communist forces captured Seoul again in January 1951 before losing it to a UN counter-offensive two months later. After an abortive Chinese spring offensive, UN forces retook territory roughly up to the 38th parallel. Armistice negotiations began in July 1951, but dragged on as the fighting became a war of attrition and the North suffered devastating damage from UN bombing, destroying virtually all of North Korea's major cities.\n\nCombat ended on 27 July 1953 with the signing of the Korean Armistice Agreement, which allowed the exchange of prisoners and created a 4-kilometre wide (2.5 mile) Demilitarized Zone (DMZ) along the frontline, with a Joint Security Area at Panmunjom. The industrial warfare was defined by armored offensives, with the North's initial invasion and later by UN forces, tunnel warfare by Chinese forces, and the first large jet aircraft battles. The conflict caused around one million military deaths and an estimated 1.5 million to 3 million civilian deaths. Alleged war crimes include the mass killing of alleged communists by South Korea, the Seoul National University Hospital massacre by North Korea, and the carpet bombing of North Korea by the UNC. North Korea became one of the most heavily bombed countries in history. No peace treaty has been signed; the Korean conflict remains a frozen conflict, which has occasionally flared, such as in the 1966–1969 DMZ Conflict.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "cold-war.i05",
+        "cold-war.i06",
+        "cold-war.i07"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "cold-war.s05"
+      ]
+    },
+    {
+      "id": "cold-war.l07",
+      "title_id": "cold-war",
+      "index": 7,
+      "heading": "The Cuban Missile Crisis",
+      "body": "The Cuban Missile Crisis, also known as the October Crisis in Cuba, or the Caribbean Crisis, was a 13-day confrontation between the governments of the United States and the Soviet Union, when American deployments of nuclear missiles in the United Kingdom, Italy and Turkey were matched by Soviet deployments of nuclear missiles in Cuba. The crisis lasted from 16 to 28 October 1962. The confrontation is widely considered the closest the Cold War came to escalating into full-scale nuclear war.\n\n![](cold-war.i09)\n\nIn 1959, the US government deployed Thor nuclear missiles in England, an initiative known as Project Emily. In 1961 the US put Jupiter nuclear missiles in Italy and Turkey. All were within range of Moscow. The US had also trained a paramilitary force of Cuban expatriates, for a CIA-led attempt to invade Cuba and overthrow its government in April 1961. Starting in November of that year, the US government engaged in a violent campaign of terrorism and sabotage in Cuba, referred to as the Cuban Project, which continued throughout the first half of the 1960s. The Soviet administration was concerned about a Cuban drift towards China, with which the Soviets had an increasingly strained relationship. In response to these factors the Soviet and Cuban governments agreed, at a meeting between leaders Nikita Khrushchev and Fidel Castro in July 1962, to place nuclear missiles on Cuba to deter a future US invasion. Construction of launch facilities started shortly thereafter.\n\nA U-2 spy plane captured photographic evidence of medium- and long-range launch facilities in October. US president John F. Kennedy convened a meeting of the National Security Council and other key advisers, forming the Executive Committee of the National Security Council (EXCOMM). Kennedy was advised to carry out an air strike on Cuban soil in order to compromise Soviet missile supplies, followed by an invasion of the Cuban mainland. He chose a less aggressive course in order to avoid a declaration of war. On 22 October, Kennedy ordered a naval blockade to prevent further missiles from reaching Cuba. He referred to the blockade as a \"quarantine\", not as a blockade, so the US could avoid the formal implications of a state of war.\n\n![](cold-war.i10)\n\nAn agreement was eventually reached between Kennedy and Khrushchev. The Soviets would dismantle their offensive weapons in Cuba, subject to United Nations verification, in exchange for a US public declaration and agreement not to invade Cuba again. The United States secretly agreed to dismantle all of the offensive weapons it had deployed to Turkey. All Thors in the UK were disbanded by August 1963. While the Soviets dismantled their missiles, some Soviet bombers remained in Cuba, and the United States kept the naval quarantine in place until 20 November 1962. The blockade was formally ended on 20 November after all offensive missiles and bombers had been withdrawn from Cuba. The evident necessity of a quick and direct communication line between the two powers resulted in the Moscow–Washington hotline. A series of agreements later reduced US–Soviet tensions for several years.\n\nThe compromise embarrassed Khrushchev and the Soviet Union because the withdrawal of US missiles from Italy and Turkey was a secret deal between Kennedy and Khrushchev, and the Soviets were seen as retreating from a situation that they had started.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "cold-war.i08",
+        "cold-war.i09",
+        "cold-war.i10"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "cold-war.s06"
+      ]
+    },
+    {
+      "id": "cold-war.l08",
+      "title_id": "cold-war",
+      "index": 8,
+      "heading": "The Vietnam War",
+      "body": "The Vietnam War (c. 1955 – 30 April 1975) was an armed conflict in Vietnam, Laos, and Cambodia fought between North Vietnam (Democratic Republic of Vietnam) and South Vietnam (Republic of Vietnam) and their allies. North Vietnam was supported by China and the Soviet Union, while South Vietnam was supported by the United States and other anti-communist nations. The second of the Indochina wars, the Vietnam War was a postcolonial war of national liberation, a theater in the Cold War, and a civil war, with civil warfare a defining feature from the outset. Direct US military involvement escalated from 1965, peaked in 1969, and subsequently declined until the complete withdrawal of US forces in 1973. The fighting spilled into the Laotian and Cambodian civil wars, which ended with all three countries becoming communist in 1975.\n\n![](cold-war.i12)\n\nThe civil and colonial conflicts in Vietnam became internationalized in 1950. After the defeat of the French Union in the First Indochina War, Vietnam's independence was affirmed at the 1954 Geneva Conference, but the country was divided at the 17th parallel under an agreement between the Viet Minh and the French. The communists under Hồ Chí Minh assumed power in North Vietnam, while the anticommunist regime under Ngô Đình Diệm took control of South Vietnam with US backing. The North Vietnamese supplied and eventually directed the communist-controlled Viet Cong (VC), which intensified guerrilla warfare in the South from 1957. In 1958, North Vietnam invaded Laos, establishing the Ho Chi Minh trail to supply the VC. By 1961, it was covertly sending People's Army of Vietnam (PAVN) troops to assist the southern insurgents. John F. Kennedy increased US involvement, including military advisors and aid to the Army of the Republic of Vietnam (ARVN). In 1963, Diệm was killed in a US-backed ARVN military coup, which added to South Vietnam's instability.\n\n![](cold-war.i13)\n\nFollowing the Gulf of Tonkin incident in 1964, the US Congress passed a resolution that gave Lyndon B. Johnson authority to increase military presence without declaring war. Johnson launched a bombing campaign of the north and deployed combat troops, dramatically increasing deployment to 184,000 by 1966, and 536,000 by 1969. US forces relied on air supremacy and overwhelming firepower to conduct search and destroy operations in rural areas. Communist forces relied on guerrilla tactics, using the countryside and jungle as concealed base areas. In 1968, the communists under Lê Duẩn launched the Tet Offensive, which was a tactical defeat but contributed to growing American opposition to the war. Johnson's successor, Richard Nixon, began \"Vietnamization\" from 1969, which saw the conflict fought by an expanded ARVN while US forces withdrew. The 1970 Cambodian coup d'état resulted in a PAVN invasion and US–ARVN counter-invasion, escalating its civil war.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "cold-war.i11",
+        "cold-war.i12",
+        "cold-war.i13"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "cold-war.s07"
+      ]
+    },
+    {
+      "id": "cold-war.l09",
+      "title_id": "cold-war",
+      "index": 9,
+      "heading": "The Vietnam War (continued)",
+      "body": "With its ranks degraded by widespread drug abuse and plummeting morale, US troops had mostly withdrawn from Vietnam by 1972. However, American forces provided crucial air support to ARVN against North Vietnam's massive Easter Offensive with the Linebacker Operations. Following the 1973 Paris Peace Accords, the last American forces left. The accords were subsequently violated by North Vietnam, and bloody fighting continued until the 1975 Spring Offensive. Weakened by years of corruption and the economic troubles of South Vietnam's Thiệu regime, Saigon fell to the PAVN, marking the war's end. North and South Vietnam were officially reunified in 1976.\n\n![](cold-war.i15)\n\nThe war exacted an enormous cost: estimates of Vietnamese soldiers and civilians killed range from 970,000 to 3 million. Some 275,000–310,000 Cambodians, 20,000–62,000 Laotians, and 58,220 US service members died. The war was also marked by brutal atrocities, including large-scale massacres (such as Huế and Mỹ Lai), terrorism, indiscriminate bombings, rape, and torture. 20% of South Vietnam's jungle was sprayed with toxic herbicides.\n\nPolitical repression and flawed economic policies following the war would precipitate the Vietnamese boat people and Indochina refugee crisis, which saw millions leave Indochina, of which about 250,000 perished at sea. The Khmer Rouge carried out the Cambodian genocide, and the Cambodian–Vietnamese War began in 1978. In response, China invaded Vietnam, with border conflicts lasting until 1991. Within the US, the war gave rise to Vietnam syndrome, an aversion to American overseas military involvement, which, with the Watergate scandal, contributed to the crisis of confidence that affected the US throughout the 1970s.\n\n![](cold-war.i16)\n\n## Détente\n\nDétente is the relaxation of strained relations, especially political ones, through verbal communication. The diplomacy term originates from around 1912, when France and Germany tried unsuccessfully to reduce tensions.\n\nThe term is often used to refer to a period of general easing of geopolitical tensions between the Soviet Union and the United States during the Cold War. Détente began in 1969 as a core element of the foreign policy of U.S. president Richard Nixon. In an effort to avoid an escalation of conflict with the Eastern Bloc, the Nixon administration promoted greater dialogue with the Soviet government in order to facilitate negotiations over arms control and other bilateral agreements. Détente was known in Russian as разрядка (razryadka), loosely meaning \"relaxation of tension\". Détente unravelled steadily throughout the late 1970s due to proxy conflicts in Africa and disagreement over human rights, but its definitive end came with the Soviet Invasion of Afghanistan (December 1979).",
+      "reading_minutes": 3,
+      "image_ids": [
+        "cold-war.i14",
+        "cold-war.i15",
+        "cold-war.i16"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "cold-war.s07",
+        "cold-war.s08"
+      ]
+    },
+    {
+      "id": "cold-war.l10",
+      "title_id": "cold-war",
+      "index": 10,
+      "heading": "The Soviet–Afghan War",
+      "body": "The Soviet–Afghan War took place in Afghanistan from December 1979 to February 1989. Marking the beginning of the ongoing Afghan conflict, it saw the Soviet Union and the Afghan Armed Forces fight against the rebelling Afghan mujahideen. While backed by various countries and organizations, the majority of the mujahideen's external support came from Pakistan, the United States (as part of Operation Cyclone), the United Kingdom, China, Iran, and the Arab states of the Persian Gulf, in addition to a large influx of foreign fighters who came to be known as the Afghan Arabs. American and British involvement in support of the mujahideen re-escalated the Cold War by bringing an end to the brief détente period.\n\n![](cold-war.i18)\n\nCombat primarily occurred in the Afghan countryside as most of the large cities remained under Soviet military control for the duration of the war, which resulted in the deaths of between one and three million Afghans, while millions more fled from the country as refugees; most externally displaced Afghans sought refuge in Pakistan and in Iran. Between 6.5 and 11.5% of Afghanistan's population of 13.5 million people (per the 1979 census) is estimated to have been killed over the course of the decade. The Soviet–Afghan War has been cited by scholars as a significant factor that contributed to the dissolution of the Soviet Union by 1991; it is for this reason that it is sometimes referred to as \"the Soviet Union's Vietnam\".\n\n![](cold-war.i19)\n\nA violent uprising broke out in Herat in March 1979, in which a number of Soviet military advisers were executed. The ruling People's Democratic Party of Afghanistan (PDPA), having determined that it could not subdue the uprising by itself, requested urgent Soviet military assistance; in 1979, over 20 requests were sent. Soviet premier Alexei Kosygin, declining to send troops, advised in one call to Afghan prime minister Nur Muhammad Taraki to use local industrial workers in the province. This was apparently on the belief that these workers would be supporters of the Afghan government. This was discussed further in the Soviet Union with a wide range of views, mainly split between those who wanted to ensure that Afghanistan remained a socialist state and those who were concerned that the unrest would escalate. Eventually, a compromise was reached to send military aid, but not troops.\n\nThe conflict began when the Soviet military, under Leonid Brezhnev, entered Afghanistan to support the federal government that had been installed during Operation Storm-333. Debate over their presence in the country soon ensued in international channels, with the Muslim world and the Western Bloc classifying it as an invasion, while the Eastern Bloc asserted that it was a legal intervention. Nevertheless, numerous sanctions and embargoes were imposed on the Soviet Union by the international community shortly after the beginning of the conflict. Soviet troops occupied Afghanistan's major cities and all main arteries of communication, whereas the mujahideen waged guerrilla warfare in small groups across the 80% of the country that was not subject to uncontested Soviet control—almost exclusively comprising the rugged, mountainous terrain of the countryside. In addition to laying millions of landmines across Afghanistan, the Soviets used their aerial power to deal harshly with both Afghan resistance and civilians, levelling villages to deny safe haven to the mujahideen, destroying vital irrigation ditches and other infrastructure through scorched earth tactics.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "cold-war.i17",
+        "cold-war.i18",
+        "cold-war.i19"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "cold-war.s09"
+      ]
+    },
+    {
+      "id": "cold-war.l11",
+      "title_id": "cold-war",
+      "index": 11,
+      "heading": "The Soviet–Afghan War (continued)",
+      "body": "The Soviet government had initially planned to secure Afghanistan's towns and road networks quickly, stabilize the PDPA, and withdraw all of its military forces within a year. However, the military met fierce resistance from Afghan guerrillas and experienced operational difficulties on the rugged mountainous terrain. By the mid-1980s, the Soviet military presence in Afghanistan had increased to approximately 115,000 troops and fighting across the country intensified. The war gradually inflicted a high cost on the Soviet Union as military, economic, and political resources became increasingly exhausted. By mid-1987, the reformist Soviet leader, Mikhail Gorbachev, announced the Soviet military would begin a complete withdrawal from Afghanistan. On 15 February 1989, the last Soviet military column occupying Afghanistan crossed into the Uzbek SSR. With continued external Soviet backing, the PDPA government continued the war alone, and the conflict evolved into the first Afghan Civil War (1989–1992). Following the dissolution of the Soviet Union in December 1991, all support to the Democratic Republic was stopped, leading to the toppling of the government by the mujahideen in 1992 and the start of a second Afghan Civil War (1992–1996).\n\n## The Wall falls\n\nThe Fall of the Berlin Wall and the fortified inner German border occurred after a Politburo press conference on 9 November 1989 prematurely announced that East Germans could travel without restrictions after, in the decades before, hundreds had been killed by Border Troops of the German Democratic Republic when trying to sneak through the Iron Curtain.\n\nSoon, people gathered at Berlin border crossings, citing the news that were broadcast in East and West, and puzzled border guards eventually let them pass in the late evening hours, with live television broadcasting worldwide. The next days, thousands travelled across the border, also in other places less covered by press. After this symbolic fall, obstacles were removed, former crossings were opened again, and following demolition, L-shaped concrete segments of the Berlin wall were actually falling and spread around the world.\n\nIn the early stages of the Revolutions of 1989, Hungary removed the fence in May and opened its border in August, and after many East German families had fled into the West German embassy in Prague, the CSSR followed in late September. Despite holiday season being over, East Germans continued to defect via neighbouring Communist Bloc countries, putting pressure on the East German leaders to either shut down these borders, too, or \"letting steam off\" by allowing disgruntled citizens to directly emigrate to West Germany. Long-term leader Erich Honecker was ousted in October, and while new communist leaders discussed a travel law, the premature publication led to a total loss of control over the formerly fortified, lethal border, and due to the ensuing Peaceful Revolution, over the country itself. After the first free elections in spring 1990 showed preference for a German reunification and for the Western Deutsche Mark. The DM already came in July, unification took place on 3 October 1990 when 5 new states joined the 10 old states of the Federal Republic of Germany, with reunited Berlin being a 16th state. Soviet occupation forces left in 1994.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "cold-war.i20"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "cold-war.s09",
+        "cold-war.s10"
+      ]
+    },
+    {
+      "id": "cold-war.l12",
+      "title_id": "cold-war",
+      "index": 12,
+      "heading": "The Soviet Union ends",
+      "body": "On 26 December 1991, the Soviet Union was formally dissolved and ceased to exist as a sovereign state. It also brought an end to the Soviet Union's federal government and to Soviet leader Mikhail Gorbachev's efforts to reform the Soviet political and economic system in an attempt to stop a period of political and economic stagnation.\n\nThe collapse of the Soviet Union in 1991 resulted from several factors: chronic economic stagnation, the unsustainable financial burden of the arms race with the United States and foreign conflicts, intense ethnic nationalism and separatism within its union republics, and the destabilizing effects of Gorbachev's reforms (particularly glasnost and perestroika).\n\nThe process began with growing unrest in the country's union republics developing into an incessant political and legislative conflict between them and the central government. Until its final years, the Soviet Union was made up of 15 union republics that served as the homelands of different ethnic groups. Estonia was the first union republic to declare state sovereignty on 16 November 1988. Lithuania was the first republic to declare independence, in March 1990.\n\nDuring the failed 1991 August coup, communist hardliners attempted to overthrow Gorbachev and reverse his reforms. However, the turmoil caused the central government in Moscow to lose influence, ultimately leading many republics to declare independence in the following days and months. On 8 December 1991, the leaders of its three founding republics—the Russian SFSR, the Byelorussian SSR, and the Ukrainian SSR—signed the Belovezha Accords and declared that the Soviet Union no longer existed. Eight more republics joined the declaration shortly thereafter. The Belovezha Accords also established the Commonwealth of Independent States (CIS) to replace the Soviet Union as a community. Kazakhstan was the last republic to declare independence, on 16 December. All post-Soviet states, with the exception of Georgia and the Baltic states, joined the CIS on 21 December by signing the Alma-Ata Protocol. Russia, as by far the largest and most populous republic, became the Soviet Union's recognized successor state.\n\nOn 25 December 1991, Gorbachev resigned and transferred his presidential powers—including control of the nuclear launch codes—to Russian president Boris Yeltsin. That evening, the Soviet flag was lowered from the Moscow Kremlin for the last time and replaced with the Russian tricolor. The following day, the Soviet of the Republics, the upper chamber of the Supreme Soviet of the Soviet Union, formally dissolved the Soviet Union by adopting Declaration No. 142-N. The dissolution marked the culmination of the Revolutions of 1989 and the end of the Cold War.\n\nIn the aftermath of the Cold War, several of the post-Soviet states have retained close links with Russia and formed multilateral organizations such as the CIS and the Collective Security Treaty Organization (CSTO). A few, notably the Baltic states, moved out of the Russian sphere of influence and towards the West.",
+      "reading_minutes": 3,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "cold-war.s11"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "cold-war.i01",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i01-0f628778da.jpg",
+      "width": 1600,
+      "height": 1206,
+      "alt": "Soviet and American tanks face each other at Checkpoint Charlie during the Berlin Crisis of 1961",
+      "kind": "other",
+      "author": "U.S. Army photo Photo Credit: USAMHI",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:US_Army_tanks_face_off_against_Soviet_tanks,_Berlin_1961.jpg",
+      "credit_line": "U.S. Army photo Photo Credit: USAMHI · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "cold-war.i02",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i02-f0287a2fe5.png",
+      "width": 1600,
+      "height": 1600,
+      "alt": ".mw-parser-output .legend{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .legend-color{display:inline-block;min-width:1.25em;height:1.25em;line-height:1.25;margin:1px…",
+      "kind": "map",
+      "author": "Discombobulates",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:NATO_vs._Warsaw_Pact_(1949-1990).svg",
+      "credit_line": "Discombobulates · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "cold-war.i03",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i03-57aec3c0de.jpg",
+      "width": 1600,
+      "height": 2000,
+      "alt": "General George C. Marshall, the 50th U.S. Secretary of State",
+      "kind": "other",
+      "author": "U.S. Department of State from United States",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:George_C._Marshall,_U.S._Secretary_of_State.jpg",
+      "credit_line": "U.S. Department of State from United States · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "cold-war.i04",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i04-70a2bc782f.jpg",
+      "width": 1600,
+      "height": 1523,
+      "alt": "During the Berlin Airlift in 1948, U.S., British, and French planes delivered food and other goods to Berlin, which was blockaded by Soviet forces.",
+      "kind": "photo",
+      "author": "Henry Ries / USAF",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:C-54_landing_at_Tempelhof.jpg",
+      "credit_line": "Henry Ries / USAF · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "cold-war.i05",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i05-5cb73faa8e.jpg",
+      "width": 1600,
+      "height": 1284,
+      "alt": "A column of troops and armor of the 1st Marine Division move through communist Chinese lines during their successful breakout from the Chosin Reservoir in North Korea.",
+      "kind": "other",
+      "author": "Photo by Corporal Peter McDonald, USMC",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Chosin.jpg",
+      "credit_line": "Photo by Corporal Peter McDonald, USMC · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "cold-war.i06",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i06-88a30f91e4.jpg",
+      "width": 1600,
+      "height": 1201,
+      "alt": "Original description: \"Supply warehouses and dock facilities at this important east coast port feel the destructive weight of para-demolition bombs dropped from Fifth Air Force's B-26 Invader light…",
+      "kind": "other",
+      "author": "USAF (photo 306-PS-51(10303))",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Korean_War_bombing_Wonsan_(cropped).jpg",
+      "credit_line": "USAF (photo 306-PS-51(10303)) · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "cold-war.i07",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i07-c5a791b155.jpg",
+      "width": 1600,
+      "height": 1240,
+      "alt": "This is a photograph that shows extensive damage to Namdaemun, one of the former gates into the city of Seoul, Korea. A tank is parked near the gate. From: Gene Putnam. Ca. 1951",
+      "kind": "photo",
+      "author": "Gene Putnam; Harry S. Truman Library & Museum.",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Namdaemun,_Main_Southern_Entrance_to_Seoul_(cropped).jpg",
+      "credit_line": "Gene Putnam; Harry S. Truman Library & Museum. · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "cold-war.i08",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i08-b272c9c7a1.jpg",
+      "width": 1600,
+      "height": 1372,
+      "alt": "A PGM-19A Jupiter missile on its silo.",
+      "kind": "other",
+      "author": "USAF",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:PGM-19A_Jupiter_missile-02.jpg",
+      "credit_line": "USAF · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "cold-war.i09",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i09-5b725a4ead.jpg",
+      "width": 1600,
+      "height": 1035,
+      "alt": "The image features a parade of missiles in Moscow in 1964. St. Basil's Cathedral can be seen in the background.",
+      "kind": "other",
+      "author": "Thomas Taylor Hammond (1920-1993)",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Missile_Parade_Moscow_1964.jpg",
+      "credit_line": "Thomas Taylor Hammond (1920-1993) · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "cold-war.i10",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i10-69a029db1b.jpg",
+      "width": 1600,
+      "height": 1100,
+      "alt": "Adlai Stevenson II shows aerial photos of Russian missiles in Cuba to the United Nations Security Council in the presence of USSR ambassador Valerian Zorin.",
+      "kind": "photo",
+      "author": "US Government, Unknown photographer",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Adlai_Stevenson_shows_missiles_to_UN_Security_Council_with_David_Parker_standing.jpg",
+      "credit_line": "US Government, Unknown photographer · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "cold-war.i11",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i11-3cb2904863.jpg",
+      "width": 1600,
+      "height": 979,
+      "alt": "Soldiers of the Army of Vietnam (ARVN) 1st Batallion, 6th Regiment, are airlifted to \"Landing Zone Kala\" northeast of Khâm Đức, Vietnam, by U.S.",
+      "kind": "other",
+      "author": "U.S. Air Force (Operation Holly 1970 (Folder 13 of 15), sheet 182)",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:U.S._Army_UH-1H_Hueys_insert_ARVN_troops_at_Kh%C3%A2m_%C4%90%E1%BB%A9c,_Vietnam,_12_July_1970_(79431435).jpg",
+      "credit_line": "U.S. Air Force (Operation Holly 1970 (Folder 13 of 15), sheet 182) · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "cold-war.i12",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i12-abc90414b2.jpg",
+      "width": 1600,
+      "height": 1202,
+      "alt": "PAVN troops, circa 1966 US Army, Command and General Staff College, Combined Arms Research Library, Center for Military History: Vietnam Studies, (DEPARTMENT OF THE ARMY, WASHINGTON, D. C., 1989)",
+      "kind": "other",
+      "author": "Unknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Pavnbattle.jpg",
+      "credit_line": "Unknown author · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "cold-war.i13",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i13-64f5420a19.jpg",
+      "width": 1600,
+      "height": 1215,
+      "alt": "Mass grave in Khe Đá Mài, south of Huế city. Following information provided by Viet Cong defectors, the massacre site was discovered on 19 September 1969.",
+      "kind": "other",
+      "author": "Unknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:VA056293_Da_Mai_grave.jpg",
+      "credit_line": "Unknown author · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "cold-war.i14",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i14-7aa1990578.jpg",
+      "width": 1600,
+      "height": 1276,
+      "alt": "Original caption: \"Flying under radar control with a B-66 Destroyer, Air Force F-105 Thunderchief pilots bomb a military target through low clouds over the southern panhandle of North Viet Nam.",
+      "kind": "other",
+      "author": "Lt.Col. Cecil J. Poss, USAF, in a McDonnell RF-101C Voodoo of the 20th Tactical Reconnaissance Squadron.",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bombing_in_Vietnam_(rotated).jpg",
+      "credit_line": "Lt.Col. Cecil J. Poss, USAF, in a McDonnell RF-101C Voodoo of the 20th Tactical Reconnaissance Squadron. · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "cold-war.i15",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i15-b484969911.jpg",
+      "width": 1600,
+      "height": 1153,
+      "alt": "Nguyễn Ngọc Loan executes Viet Cong Captain Nguyễn Văn Lém. This Associated Press photograph won the 1969 Pulitzer Prize for Spot News Photography.",
+      "kind": "photo",
+      "author": "Eddie Adams / Associated Press",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Saigon_Execution.jpg",
+      "credit_line": "Eddie Adams / Associated Press · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "cold-war.i16",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i16-42dbe15fb0.jpg",
+      "width": 1600,
+      "height": 1028,
+      "alt": "S73-30889 (June 1973) --- Leonid I. Breznev, General Secretary of the Communist Party, Union of Soviet Socialist Republics, and President Richard M.",
+      "kind": "photo",
+      "author": "NASA",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Skylab_2_crew_members_with_Richard_Nixon_and_Leonid_Brezhnev.jpg",
+      "credit_line": "NASA · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "cold-war.i17",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i17-94c628673c.jpg",
+      "width": 1600,
+      "height": 1038,
+      "alt": "Mujahideen in Kunar, Afghanistan",
+      "kind": "other",
+      "author": "erwinlux",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Mortar_attack_on_Shigal_Tarna_garrison,_Kunar_Province,_87.jpg",
+      "credit_line": "erwinlux · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "cold-war.i18",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i18-8872ac649e.png",
+      "width": 1600,
+      "height": 1600,
+      "alt": "Roundel of Afghanistan (1980–1987) – Army Aviation",
+      "kind": "other",
+      "author": "Unknown author",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Roundel_of_Afghanistan_(1980%E2%80%931987)_%E2%80%93_Army.svg",
+      "credit_line": "Unknown author · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "cold-war.i19",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i19-f82d12f854.png",
+      "width": 1600,
+      "height": 1600,
+      "alt": "Aircraft roundel used by Afghanistan from 1983 to 1992",
+      "kind": "other",
+      "author": "Joshbaumgartner",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Roundel_of_Afghanistan_(1983%E2%80%931992).svg",
+      "credit_line": "Joshbaumgartner · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "cold-war.i20",
+      "title_id": "cold-war",
+      "url": "http://10.0.2.2:8000/media/cold-war/i20-b9fa946df4.jpg",
+      "width": 1600,
+      "height": 1205,
+      "alt": "Germans on and at the Wall in front of the Brandenburg Gate, some carrying a banner \"Test the West!\", citing a cigarette ad slogan",
+      "kind": "photo",
+      "author": "Lear 21 at English Wikipedia",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:West_and_East_Germans_at_the_Brandenburg_Gate_in_1989.jpg",
+      "credit_line": "Lear 21 at English Wikipedia · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "cold-war.s01",
+      "title": "Cold War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cold_War",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "cold-war.s02",
+      "title": "Truman Doctrine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Truman_Doctrine",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "cold-war.s03",
+      "title": "Marshall Plan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Marshall_Plan",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "cold-war.s04",
+      "title": "Berlin Blockade (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Berlin_Blockade",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "cold-war.s05",
+      "title": "Korean War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Korean_War",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "cold-war.s06",
+      "title": "Cuban Missile Crisis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Cuban_Missile_Crisis",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "cold-war.s07",
+      "title": "Vietnam War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Vietnam_War",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "cold-war.s08",
+      "title": "Détente (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/D%C3%A9tente",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "cold-war.s09",
+      "title": "Soviet–Afghan War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Soviet%E2%80%93Afghan_War",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "cold-war.s10",
+      "title": "Fall of the Berlin Wall (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Fall_of_the_Berlin_Wall",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "cold-war.s11",
+      "title": "Dissolution of the Soviet Union (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}

@@ -1,0 +1,431 @@
+{
+  "id": "american-revolution",
+  "kind": "topic",
+  "name": "American Revolution",
+  "subtitle": "1765 to 1783",
+  "poster_lines": [
+    "The American",
+    "Revolution"
+  ],
+  "group": "revolutions-empires",
+  "era": "early-modern",
+  "region": "americas",
+  "period_start": 1765,
+  "period_end": 1783,
+  "themes": [
+    "revolution",
+    "independence",
+    "war",
+    "politics"
+  ],
+  "bg": "#1B2A52",
+  "tint": "#7C9CFF",
+  "lettering": "brush",
+  "poster_image_id": null,
+  "hero_image_id": "american-revolution.i01",
+  "brief": "Thirteen colonies, one big argument about taxes.",
+  "linked_title_ids": [
+    "french-revolution"
+  ],
+  "rank": 16,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "american-revolution.l01",
+      "title_id": "american-revolution",
+      "index": 1,
+      "heading": "Thirteen colonies rebel",
+      "body": "The American Revolution (1765–1789) was a political movement in the Thirteen Colonies of Great Britain. It began as a colonial rebellion and evolved into a revolution, the result of which was the creation of the United States following the colonies' victory in the American Revolutionary War (1775–1783) and British recognition of their sovereign independence in the Treaty of Paris. The Second Continental Congress, as the provisional government, established the Continental Army and appointed George Washington as its commander-in-chief in 1775. In May 1776, Congress voted to suppress all forms of Crown authority, to be replaced by locally created authority, and each state created a constitution. The Congress passed the Lee Resolution for independence on July 2 and unanimously adopted the Declaration of Independence on July 4 arguing for the separation based on \"inalienable rights\". The individual member states together created a shared sovereignty under the Articles of Confederation to facilitate international affairs and the promulgation of the war. Throughout most of the conflict the outcome appeared uncertain, but a decisive 1781 victory by combined French and Continental Army forces commanded by Washington in the Siege of Yorktown led King George III and the Fox–North coalition in government to negotiate the cessation of British colonial rule, and the acknowledgment of American sovereignty. A more centralized federal republic was created with the passage of the Constitution of the United States that took effect in 1789, and the Bill of Rights was ratified in 1791.\n\nDiscontent with British colonial rule began shortly after the end of the French and Indian War in 1763. Although the Thirteen Colonies had fought and supported the war directly, the British Parliament imposed new taxes on the colonists, ostensibly to compensate for wartime costs, and transferred control of the colonies' western lands to British officials in Montreal. In 1765, Representatives from several colonies held the Stamp Act Congress in New York City, resulting in the Declaration of Rights and Grievances, which argued that taxation without representation, among other British policies, violated their rights as Englishmen. The Stamp Act was repealed in 1767, but tensions increased again following Parliament's passage of the Townshend Acts. In an effort to quell the mounting rebellion, King George III deployed British troops to the colony of Massachusetts, which resulted in the Boston Massacre in 1770. In December 1773, a local faction of the Sons of Liberty orchestrated the Boston Tea Party, during which they dumped chests of taxed tea owned by the British East India Company into Boston Harbor. Parliament responded by enacting a series of punitive laws, called the Intolerable Acts. These were intended to end self-government in Massachusetts, but instead increased American support for revolution.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "american-revolution.i01"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-revolution.s01"
+      ]
+    },
+    {
+      "id": "american-revolution.l02",
+      "title_id": "american-revolution",
+      "index": 2,
+      "heading": "Thirteen colonies rebel (continued)",
+      "body": "In 1774, twelve of the Thirteen Colonies sent delegates to the First Continental Congress (the Province of Georgia joined in 1775) in order to begin coordinating Patriot resistance. In August 1775, King George III proclaimed Massachusetts to be in rebellion. The British subsequently attempted to disarm the colonists, resulting in the Battles of Lexington and Concord and starting the Revolutionary War. The Second Continental Congress convened in May 1775 and created the Continental Army, which soon laid siege to Boston and forced the British to withdraw by sea in March 1776. On July 2, the Congress passed the Lee Resolution, affirming their support for joint independence. On July 4, 1776, they unanimously adopted the Declaration of Independence.\n\nThe Revolutionary War continued for another seven years, with France and Spain eventually entering. On September 28, 1781, Washington commanded the Continental Army's capture of a British army under General Cornwallis at the Siege of Yorktown, leading to the collapse of King George's control of Parliament. Consensus in Parliament soon shifted to the war ending on American terms. On September 3, 1783, the British signed the Treaty of Paris, recognizing the sovereign independence of the United States, and ceding to the new nation nearly all the territory east of the Mississippi River and south of the Great Lakes. The United States became the first nation to establish a federal republic with a written constitution based on the principles of universal natural rights, consent of the governed, and equality under the law, although with significant democratic limitations compared to later evolution of the concept.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-revolution.s01"
+      ]
+    },
+    {
+      "id": "american-revolution.l03",
+      "title_id": "american-revolution",
+      "index": 3,
+      "heading": "The Stamp Act",
+      "body": "The Stamp Act 1765, also known as the Duties in American Colonies Act 1765 (5 Geo. 3. c. 12), was an act of the Parliament of Great Britain that imposed a direct tax on the British colonies in America and required that many printed materials in the colonies be produced on stamped paper from London that included an embossed revenue stamp. Printed materials included legal documents, magazines, playing cards, newspapers, and many other types of paper used throughout the colonies, and it had to be paid in British currency, not in colonial paper money.\n\nThe purpose of the tax was to pay for British military troops stationed in the American colonies after the French and Indian War, but the colonists had never feared a French invasion to begin with, and they contended that they had already paid their share of the war expenses. Colonists suggested that it was actually a matter of British patronage to surplus British officers and career soldiers who should be paid by London.\n\nThe act was very unpopular among colonists. A majority considered it a violation of their rights as Englishmen to be taxed without their consent—consent that only the colonial legislatures could grant. Their slogan was \"No taxation without representation\". Colonial assemblies sent petitions and protests, and the Stamp Act Congress held in New York City was the first significant joint colonial response to any British measure when it petitioned Parliament and the King.\n\nOne member of the British Parliament argued that the American colonists were no different from the 90-percent of Great Britain who did not own property and thus could not vote, but who were nevertheless \"virtually\" represented by land-owning electors and representatives who had common interests with them. Daniel Dulany, a Maryland attorney and politician, disputed this assertion in a widely read pamphlet, arguing that the relations between the Americans and the English electors were \"a knot too infirm to be relied on\" for proper representation, \"virtual\" or otherwise. Local protest groups established Committees of Correspondence, which created a loose coalition from New England to Maryland. Protests and demonstrations increased, often initiated by the Sons of Liberty and occasionally involving hanging of effigies. Very soon, all stamp tax distributors were intimidated into resigning their commissions, and the tax was never effectively collected.\n\nOpposition to the act was not limited to the colonies. British merchants and manufacturers pressured Parliament because their exports to the colonies were threatened by boycotts. The act was repealed on 18 March 1766 as a matter of expedience, but Parliament affirmed its power to legislate for the colonies \"in all cases whatsoever\" by also passing the Declaratory Act 1766 (6 Geo. 3. c. 12). A series of new taxes and regulations then ensued—likewise opposed by the Americans. The episode played a major role in defining the 27 colonial grievances that were clearly stated within the text of the Indictment of George III section of the United States Declaration of Independence, enabling the organised colonial resistancethat led to the American Revolution in 1775.",
+      "reading_minutes": 3,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-revolution.s02"
+      ]
+    },
+    {
+      "id": "american-revolution.l04",
+      "title_id": "american-revolution",
+      "index": 4,
+      "heading": "The Boston Massacre",
+      "body": "The Boston Massacre, known in Great Britain as the Incident on King Street, was a confrontation on March 5, 1770, in the prelude to the American Revolution in Boston, in what was then the colony of the Province of Massachusetts Bay.\n\nIn the confrontation, nine British soldiers shot several in a crowd, estimated between 300 and 400, who were harassing them verbally and throwing various projectiles. Five American colonists were killed. The event was subsequently described as \"a massacre\" by Samuel Adams, Paul Revere, and other leading Patriots who later became central proponents of independence during the American Revolution and Revolutionary War. British troops had been stationed in the Province of Massachusetts Bay since 1768 in order to support Crown-appointed officials and to enforce unpopular legislation implemented by the British Parliament.\n\nAmid tense relations between the civilians and the soldiers, a mob formed around a British sentry and verbally abused him. He was eventually supported by seven additional soldiers, led by Captain Thomas Preston, who were hit by clubs, stones, and snowballs. Eventually, one soldier fired, prompting the others to fire without an order by Preston. The gunfire instantly killed three people and wounded eight others, two of whom later died of their wounds.\n\nThe crowd eventually dispersed after acting governor Thomas Hutchinson promised an inquiry, but they reformed the next day, prompting the withdrawal of the troops to Castle Island. Eight soldiers, one officer, and four civilians were arrested and charged with murder, and they were defended in court by attorney, and future U.S. president, John Adams. Six of the soldiers were acquitted; the other two were convicted of manslaughter and sentenced to branding on the thumb, according to the law at that time.\n\nDepictions, reports, and propaganda about the event, notably the colored engraving The Bloody Massacre, heightened tensions throughout the Thirteen Colonies.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "american-revolution.i02"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-revolution.s03"
+      ]
+    },
+    {
+      "id": "american-revolution.l05",
+      "title_id": "american-revolution",
+      "index": 5,
+      "heading": "The Boston Tea Party",
+      "body": "The Boston Tea Party was an act of protest that took place on December 16, 1773, during the American Revolution. Initiated by the Sons of Liberty in Boston, the capital of Massachusetts, one of the Thirteen Colonies of British America, it escalated tensions between Great Britain and the Patriots, who opposed British policy towards its American colonies. Less than two years later, on April 19, 1775, the Battles of Lexington and Concord, also in Massachusetts, launched the eight-year American Revolutionary War, which resulted in the independence of the colonies as the United States.\n\nThe source of the protestors' anger was the passage of the Tea Act by the Parliament of Great Britain on May 10, 1773, which allowed the East India Company (EIC) to sell Chinese tea in the colonies without paying taxes apart from those imposed by the Townshend Acts. The Sons of Liberty strongly opposed both the Tea Act and Townshend Acts, which they saw as a violation of their \"rights as Englishmen\" to no taxation without representation.\n\nDisguised as Native Americans, members of the Sons of Liberty boarded the merchantman Dartmouth on the night of December 16 after it had docked in Boston with a major shipment of EIC tea and threw 340 or 342 chests into Boston Harbor. The British government considered the protest an act of treason and responded with several punitive measures. Nine days later, on December 25, during the Philadelphia Tea Party, a group of Patriots forced the merchantmen Polly, which was transporting a shipment of tea, to return to England without unloading her cargo.\n\nParliament responded in 1774 with the Intolerable Acts, which, among other provisions, ended local self-government in Massachusetts and closed Boston's commercial port. Colonists throughout the Thirteen Colonies responded to the Intolerable Acts with additional acts of protest, and by convening the First Continental Congress in Philadelphia, which sent a Petition to the King for repeal of the acts and coordinated colonial resistance to them, culminating in the October 1774 Continental Association.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "american-revolution.i03"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-revolution.s04"
+      ]
+    },
+    {
+      "id": "american-revolution.l06",
+      "title_id": "american-revolution",
+      "index": 6,
+      "heading": "The first shots",
+      "body": "The Battles of Lexington and Concord on April 19, 1775, were the first major military actions between the British Army and Patriot militias from British America's Thirteen Colonies during the American Revolutionary War. The opposing forces fought day-long running battles in Middlesex County in the Province of Massachusetts Bay, in the towns of Lexington, Concord, Lincoln, Menotomy (present-day Arlington), and Cambridge.\n\nAfter the Boston Tea Party (1773), the British Parliament passed the Intolerable Acts (early 1774), including the restrictive Massachusetts Government Act. Patriot (Colonial) leaders in Suffolk County, Massachusetts, adopted the Suffolk Resolves in resistance to the acts. The leaders formed a Patriot provisional government, the Massachusetts Provincial Congress, and called for local militias to train for possible hostilities. The Provincial Congress effectively controlled the colony outside of Boston. On September 17, the First Continental Congress endorsed the Suffolk Resolves. In response, in February 1775, the British government declared Massachusetts to be in a state of rebellion.\n\nOn April 18, 1775, about 700 British Regulars in Boston, under Lieutenant Colonel Francis Smith, received secret orders to capture and destroy colonial military supplies reportedly stored at Concord. Through effective intelligence gathering, Patriot leaders received word weeks before the British expedition that their supplies might be at risk and had moved most of them to other locations. On the night before the battles, several riders, including Paul Revere, William Dawes and Samuel Prescott, warned area militias of the British plans and approaching British Army expedition from Boston.\n\nThe first shots between Patriot militiamen and Regulars at Lexington were fired at sunrise on April 19. Eight militiamen were killed and ten wounded. Only one British soldier was wounded. The outnumbered militia quickly fell back and the Regulars proceeded to Concord, where they split into companies to search for supplies. At the Old North Bridge in Concord, approximately 400 militiamen engaged 100 Regulars at about 11:00 am, resulting in casualties on both sides. The outnumbered Regulars fell back and rejoined the main body of British troops in Concord.\n\nThen the British forces began a return march to Boston after a mostly unsuccessful search for military supplies. Meanwhile, more militiamen from neighboring towns arrived along the return route. The two forces exchanged gunfire at many places along the march throughout the day. Lieutenant Colonel Smith's troops were reinforced by Brigadier General Earl Percy's force at Lexington at a crucial time during their return. The combined British force of about 1,700 men returned to Boston under heavy fire and eventually reached the safety of Charlestown after incurring heavy losses. The militias then blockaded the narrow land accesses to Charlestown and Boston, starting the siege of Boston.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "american-revolution.i04"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-revolution.s05"
+      ]
+    },
+    {
+      "id": "american-revolution.l07",
+      "title_id": "american-revolution",
+      "index": 7,
+      "heading": "The Declaration",
+      "body": "The Declaration of Independence, headed The unanimous Declaration of the thirteen united States of America on the document directed to be engrossed by Congress on July 19, 1776, is the founding document of the United States. On July 4, 1776, it was adopted unanimously by the Second Continental Congress, who were convened at the Pennsylvania State House, later renamed Independence Hall, in Philadelphia. These delegates became known as the nation's Founding Fathers. The Declaration explains why the Thirteen Colonies regarded themselves as independent sovereign states no longer subject to British colonial rule, and has become one of the most circulated, reprinted, and influential documents in history.\n\nThe American Revolutionary War commenced in April 1775 with the Battles of Lexington and Concord. Amid the growing tensions, delegates of the several colonies reconvened the Continental Congress on May 10 at Philadelphia. The British monarch, King George III, proclaimed them to be in rebellion on August 23, 1775.\n\nOn June 11, 1776, Congress appointed the Committee of Five (John Adams, Benjamin Franklin, Thomas Jefferson, Robert R. Livingston, and Roger Sherman) to draft and present the Declaration. Adams, a leading proponent of independence, persuaded the committee to charge Jefferson with writing the document's original draft, which the Congress then edited. Jefferson largely wrote the Declaration between June 11 and 28, 1776. The Declaration presented the political, moral, and legal justifications for independence from the Kingdom of Great Britain. Two days prior to the Declaration's adoption, Congress passed the Lee Resolution, which resolved that the British no longer had governing authority over the Thirteen Colonies. The Declaration justified the independence of the colonies, citing 27 colonial grievances against the king and asserting certain natural and legal rights, including a right of revolution.\n\nThe Declaration was unanimously ratified on July 4 by the Second Continental Congress, whose delegates represented the Thirteen Colonies. In ratifying and signing it, the delegates knew they were committing an act of high treason against the Crown, which was punishable by torture and death. Two days following its ratification, on July 6, it was published by The Pennsylvania Evening Post. The first public readings of the Declaration occurred simultaneously on July 8, 1776, at noon at three previously designated locations: Trenton, New Jersey; Easton, Pennsylvania; and Philadelphia.\n\nThe Declaration was published in several forms. The printed Dunlap broadside was widely distributed following the Declaration's signing, and two original copies are now preserved in the Library of Congress in Washington, D.C. The signed copy of the Declaration is on display at the National Archives in Washington, D.C., and is generally considered the official document; this copy, engrossed (hand written) by Timothy Matlack, was ordered by Congress on July 19, and signed primarily on August 2, 1776.\n\nThe Declaration has proven an influential and globally impactful statement on human rights. It was viewed by Abraham Lincoln as the moral standard to which the United States should strive, and he considered it a statement of principles through which the Constitution should be interpreted. In 1863, Lincoln made the Declaration the centerpiece of his Gettysburg Address, widely considered among the most famous speeches in American history. The Declaration's second sentence—\"We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness\"—is considered one of the most significant and famed lines in world history. Pulitzer Prize-winning historian Joseph Ellis has written that these words are \"the most potent and consequential words in American history\".",
+      "reading_minutes": 3,
+      "image_ids": [
+        "american-revolution.i05"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-revolution.s06"
+      ]
+    },
+    {
+      "id": "american-revolution.l08",
+      "title_id": "american-revolution",
+      "index": 8,
+      "heading": "Saratoga",
+      "body": "The Battles of Saratoga were fought September 19 and October 7, 1777 over the same ground by the American Continental Army and the British Army near Saratoga, New York during the American Revolutionary War. The second battle was a decisive American victory, with the entire British force taken captive. The outcome greatly affected the course of the war, persuading France to enter the conflict as an American ally in 1778. In both battles, General John Burgoyne served as the British commander, while Generals Horatio Gates and Benedict Arnold oversaw the American forces. Historian Edmund Morgan described Saratoga as \"a great turning point of the war, because it won for Americans the foreign assistance which was the last element needed for victory.\"\n\nThe British Army's campaign in New York aimed to divide New England from the middle and southern colonies. Burgoyne led an invasion army southward from Quebec, Canada with the goal of taking Albany, New York in coordination with General William Howe and Brig. General Barry St. Leger. The strategy began promisingly, but stalled due to logistical issues. Howe never moved his forces north, and St. Leger turned back his forces meant to arrive from the west, leaving Burgoyne surrounded by the Americans in upstate New York, 15 miles (24 km) short of his goal. Burgoyne fought two battles, 18 days apart, on the same ground 9 miles (14 km) south of Saratoga, New York.\n\nIn the first battle, at Freeman's Farm on September 19, Burgoyne won a tactical victory over the Continental Army at the cost of heavy casualties. The battle began with Burgoyne's attempt to flank the entrenched American position on Bemis Heights with some of his troops. American Major General Benedict Arnold anticipated the maneuver and placed significant forces in his way. Still, Burgoyne was able to gain the field. Skirmishes continued in the following days while Burgoyne waited in the hope that reinforcements would arrive from New York City.\n\nMeanwhile, patriot militia forces continued to arrive, swelling the American ranks. Within the American camp, disputes over tactical decisions led Gates to strip Arnold of his command. Once it became apparent that the British would not receive aid in time, Burgoyne attacked again in the Battle of Bemis Heights on October 7 but lost both the battle and his earlier gains. Culminating in heavy fighting, this battle was marked by Arnold's spirited rallying of the American troops. Burgoyne's forces were thrown back to the positions they held before the action of September 19, and the Americans captured a portion of the entrenched British defenses.\n\nFollowing this loss, Burgoyne was compelled to retreat to Saratoga (now Schuylerville). Finding himself surrounded by a much larger force, he surrendered his entire army to General Gates on October 17. Although British General Sir Henry Clinton moved up from New York City, attempting to divert American attention by capturing Forts Clinton and Montgomery in the Hudson River highlands on October 6, and Kingston on October 13, these efforts were too late to save Burgoyne. News of the surrender at Saratoga was instrumental in formally creating the Franco-American Alliance, although France had already been clandestinely providing supplies, ammunition, and guns, notably the Vallière cannon which played an important role in Saratoga.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "american-revolution.i06"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-revolution.s07"
+      ]
+    },
+    {
+      "id": "american-revolution.l09",
+      "title_id": "american-revolution",
+      "index": 9,
+      "heading": "Yorktown",
+      "body": "The Siege of Yorktown, also known as the Battle of Yorktown and the surrender at Yorktown, took place in 1781 and was the final major land engagement of the American Revolutionary War. It was won decisively by the Continental Army, led by George Washington, with support from the Marquis de Lafayette and French Army troops, led by Comte de Rochambeau, and a French Navy force commanded by the Comte de Grasse, making the British Army commanded by British Lieutenant General Charles Cornwallis surrender.\n\nThe French and American armies united north of New York City in the summer of 1781. Following the arrival of dispatches from France that included the possibility of support from the French West Indies fleet of the Comte de Grasse, disagreements arose between Washington and Rochambeau on whether to ask de Grasse for assistance in besieging New York or in military operations against a British army in Virginia. On the advice of Rochambeau, de Grasse informed them of his intent to sail to the Chesapeake Bay, where Cornwallis had taken command of the British army. Cornwallis, at first given confusing orders by his superior officer, Henry Clinton, was eventually ordered to build a defensible deep-water port, which he began to do at Yorktown. Cornwallis's movements in Virginia were shadowed by a Continental Army force led by Gilbert du Motier, Marquis de Lafayette.\n\n![](american-revolution.i08)\n\nWhen word of de Grasse's decision to engage the British navy at the Chesapeake Bay arrived in New York, the American and French armies began moving south toward Virginia, engaging in deception tactics to lead the British to believe a siege of New York was planned. De Grasse sailed from the West Indies and arrived at Chesapeake Bay at the end of August, bringing additional troops and creating a naval blockade of Yorktown. In the beginning of September, he defeated a British fleet led by Sir Thomas Graves, which was dispatched to relieve Cornwallis at the Battle of the Chesapeake. As a result of this victory, de Grasse blocked any reinforcement or escape by sea for Cornwallis and also disembarked the heavy siege guns required by the allied land forces. Washington and Rochambeau arrived at Yorktown on September 28, 1781. Washington moved the army closer to the British defenses on September 29. The American and French army and naval forces had completely surrounded Cornwallis.\n\nAfter initial preparations, the Americans and French built their first parallel and began the bombardment. With the British defense weakened, on October 14, 1781, Washington commanded two columns to attack the last major remaining British outer defenses. A French column under Vicomte de Deux-Ponts took Redoubt No. 9 and an American column under Lieutenant Colonel Alexander Hamilton took Redoubt No. 10. With these defenses, the allies were able to finish their second parallel. With the Franco-American artillery closer and its bombardment more intense than ever, the British position began to deteriorate rapidly. Cornwallis asked for capitulation terms on October 17. After two days of negotiation, the surrender ceremony occurred on October 19; Cornwallis was absent from the ceremony. With the capture of more than 7,000 British soldiers, negotiations between the United States and Great Britain began, resulting in the Treaty of Paris of 1783.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "american-revolution.i07",
+        "american-revolution.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-revolution.s08"
+      ]
+    },
+    {
+      "id": "american-revolution.l10",
+      "title_id": "american-revolution",
+      "index": 10,
+      "heading": "Peace in Paris",
+      "body": "The Treaty of Paris, signed by representatives of King George III of Great Britain and representatives of the United States on September 3, 1783, officially ended the War of American Independence and recognized the Thirteen Colonies, which had been part of colonial British America, to be free, sovereign, and independent unified states. It forms one treaty out of many that are collectively named the \"Peace of Paris\".\n\nThe treaty set the boundaries between British North America, later called Canada, and the United States, on lines the British labeled as \"exceedingly generous\", although exact boundary definitions in the far-northwest and to the south continued to be subject to some controversy. Details included fishing rights and restoration of property and prisoners of war.\n\nOnly Article 1 of the treaty, which acknowledges the United States' existence as free, sovereign, and independent states, remains in force.",
+      "reading_minutes": 1,
+      "image_ids": [
+        "american-revolution.i09"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-revolution.s09"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "american-revolution.i01",
+      "title_id": "american-revolution",
+      "url": "http://10.0.2.2:8000/media/american-revolution/i01-673ed7e0c8.jpg",
+      "width": 1600,
+      "height": 1051,
+      "alt": "The Committee of Five presenting its draft of the Declaration of Independence to the Second Continental Congress in Philadelphia on June 28, 1776, depicted in John Trumbull's 1818 portrait…",
+      "kind": "portrait",
+      "author": "John Trumbull",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Declaration_of_Independence_(1819),_by_John_Trumbull.jpg",
+      "credit_line": "John Trumbull · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.35
+    },
+    {
+      "id": "american-revolution.i02",
+      "title_id": "american-revolution",
+      "url": "http://10.0.2.2:8000/media/american-revolution/i02-8308c0731f.jpg",
+      "width": 1600,
+      "height": 1801,
+      "alt": "The Bloody Massacre by Paul Revere, a 1770 engraving depicting the Boston Massacre in March 1770",
+      "kind": "painting",
+      "author": "Paul Revere",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:The_Boston_Massacre_MET_DT2086.jpg",
+      "credit_line": "Paul Revere · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-revolution.i03",
+      "title_id": "american-revolution",
+      "url": "http://10.0.2.2:8000/media/american-revolution/i03-307342361a.jpg",
+      "width": 1600,
+      "height": 917,
+      "alt": "The December 16, 1773 Boston Tea Party, led by Samuel Adams and Sons of Liberty, has become a mainstay of American patriotic lore.",
+      "kind": "other",
+      "author": "Original uploader was Cornischong at lb.wikipedia",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Boston_Tea_Party_w.jpg",
+      "credit_line": "Original uploader was Cornischong at lb.wikipedia · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-revolution.i04",
+      "title_id": "american-revolution",
+      "url": "http://10.0.2.2:8000/media/american-revolution/i04-b7ccbe0c0c.jpg",
+      "width": 1600,
+      "height": 1155,
+      "alt": "\"Stand Your Ground\" depicts the first fighting of the Revolution on Lexington Common, 19 April 1775. (Oil on hardboard, by Don Troiani, 1985;",
+      "kind": "painting",
+      "author": "Don Troiani",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Stand_your_ground_-_Don_Troiani_-_1985_(cropped).jpg",
+      "credit_line": "Don Troiani · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-revolution.i05",
+      "title_id": "american-revolution",
+      "url": "http://10.0.2.2:8000/media/american-revolution/i05-0b2f7381ec.jpg",
+      "width": 1600,
+      "height": 1899,
+      "alt": "The 1823 facsimile of Timothy Matlack's engrossed copy of the Declaration of Independence",
+      "kind": "painting",
+      "author": "original: w:Second Continental Congress; reproduction: William Stone",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:United_States_Declaration_of_Independence.jpg",
+      "credit_line": "original: w:Second Continental Congress; reproduction: William Stone · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-revolution.i06",
+      "title_id": "american-revolution",
+      "url": "http://10.0.2.2:8000/media/american-revolution/i06-e1a5d8c094.jpg",
+      "width": 1600,
+      "height": 1060,
+      "alt": "The scene of the surrender of the British General John Burgoyne at Saratoga, on October 17, 1777, was a turning point in the American Revolutionary War that prevented the British from dividing New…",
+      "kind": "portrait",
+      "author": "John Trumbull",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Surrender_of_General_Burgoyne.jpg",
+      "credit_line": "John Trumbull · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.35
+    },
+    {
+      "id": "american-revolution.i07",
+      "title_id": "american-revolution",
+      "url": "http://10.0.2.2:8000/media/american-revolution/i07-76f09afac9.jpg",
+      "width": 1600,
+      "height": 1055,
+      "alt": "This painting depicts the forces of British Major General Charles Cornwallis, 1st Marquess Cornwallis (1738–1805) (who was not himself present at the surrender), surrendering to French and American…",
+      "kind": "portrait",
+      "author": "John Trumbull",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Surrender_of_Lord_Cornwallis.jpg",
+      "credit_line": "John Trumbull · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.35
+    },
+    {
+      "id": "american-revolution.i08",
+      "title_id": "american-revolution",
+      "url": "http://10.0.2.2:8000/media/american-revolution/i08-20f0ff9d43.png",
+      "width": 1600,
+      "height": 1028,
+      "alt": "Location within Virginia",
+      "kind": "map",
+      "author": "SANtosito",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:USA_Virginia_relief_location_map.svg",
+      "credit_line": "SANtosito · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-revolution.i09",
+      "title_id": "american-revolution",
+      "url": "http://10.0.2.2:8000/media/american-revolution/i09-a682bd4b02.jpg",
+      "width": 1600,
+      "height": 2387,
+      "alt": "The first page of the Treaty of Paris, signed on September 3, 1783",
+      "kind": "other",
+      "author": "iDK",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Treaty_of_Paris_(1783).jpg",
+      "credit_line": "iDK · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "american-revolution.s01",
+      "title": "American Revolution (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/American_Revolution",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "american-revolution.s02",
+      "title": "Stamp Act 1765 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Stamp_Act_1765",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "american-revolution.s03",
+      "title": "Boston Massacre (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Boston_Massacre",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "american-revolution.s04",
+      "title": "Boston Tea Party (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Boston_Tea_Party",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "american-revolution.s05",
+      "title": "Battles of Lexington and Concord (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battles_of_Lexington_and_Concord",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "american-revolution.s06",
+      "title": "United States Declaration of Independence (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "american-revolution.s07",
+      "title": "Battles of Saratoga (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battles_of_Saratoga",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "american-revolution.s08",
+      "title": "Siege of Yorktown (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Yorktown",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "american-revolution.s09",
+      "title": "Treaty of Paris (1783) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1783)",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}

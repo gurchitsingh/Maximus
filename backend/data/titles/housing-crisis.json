@@ -1,0 +1,462 @@
+{
+  "id": "housing-crisis",
+  "kind": "topic",
+  "name": "Housing crisis",
+  "subtitle": "c. 2007 to 2009",
+  "poster_lines": [
+    "HOUSING",
+    "CRISIS"
+  ],
+  "group": "money-crashes",
+  "era": "modern",
+  "region": "americas",
+  "period_start": 2007,
+  "period_end": 2009,
+  "themes": [
+    "economy",
+    "society",
+    "politics"
+  ],
+  "bg": "#2A1A1A",
+  "tint": "#E06A4F",
+  "lettering": "stencil",
+  "poster_image_id": null,
+  "hero_image_id": "housing-crisis.i01",
+  "brief": "Risky mortgages, bundled and sold on, until the whole system shook.",
+  "linked_title_ids": [],
+  "rank": 28,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "housing-crisis.l01",
+      "title_id": "housing-crisis",
+      "index": 1,
+      "heading": "The subprime crisis",
+      "body": "The American subprime mortgage crisis was a multinational financial crisis that occurred between 2007 and 2010, contributing to the 2008 financial crisis. It led to a severe economic recession, with millions becoming unemployed and many businesses going bankrupt. The U.S. government intervened with a series of measures to stabilize the financial system, including the Troubled Asset Relief Program (TARP) and the American Recovery and Reinvestment Act of 2009 (ARRA).\n\nThe collapse of the 2000s United States housing bubble and high interest rates led to unprecedented numbers of borrowers missing mortgage repayments and becoming delinquent. This ultimately led to mass foreclosures and the devaluation of housing-related securities. The housing bubble preceding the crisis was financed with mortgage-backed securities (MBSes) and collateralized debt obligations (CDOs), which initially offered higher interest rates (i.e., better returns) than government securities, along with attractive risk ratings from rating agencies. Despite being highly rated, most of these financial instruments were made up of high-risk subprime mortgages.\n\nWhile elements of the crisis first became more visible during 2007, several major financial institutions collapsed in late 2008, with significant disruption in the flow of credit to businesses and consumers and the onset of a severe global recession. Most notably, Lehman Brothers, a major mortgage lender, filed for bankruptcy in September 2008. There were many causes of the crisis, with commentators assigning different levels of blame to financial institutions, regulators, credit agencies, government housing policies, and consumers, among others. Two proximate causes were the rise in subprime lending and the increase in housing speculation. Investors, even those with \"prime\", or low-risk, credit ratings, were much more likely to default than non-investors when prices fell. These changes were part of a broader trend of lowered lending standards and higher-risk mortgage products, which contributed to U.S. households becoming increasingly indebted.\n\nThe crisis had severe, long-lasting consequences for the U.S. and European economies. The U.S. entered a deep recession, with nearly 9 million jobs lost during 2008 and 2009, roughly 6% of the workforce. The number of jobs did not return to the December 2007 pre-crisis peak until May 2014. U.S. household net worth declined by nearly $13 trillion (20%) from its Q2 2007 pre-crisis peak, recovering by Q4 2012. U.S. housing prices fell nearly 30% on average and the U.S. stock market fell approximately 50% by early 2009, with stocks regaining their December 2007 level during September 2012. One estimate of lost output and income from the crisis comes to \"at least 40% of 2007 gross domestic product\". Europe also continued to struggle with its own economic crisis, with elevated unemployment and severe banking impairments estimated at €940 billion between 2008 and 2012. As of January 2018, U.S. bailout funds had been fully recovered by the government, when interest on loans is taken into consideration. A total of $626B was invested, loaned, or granted due to various bailout measures, while $390B had been returned to the Treasury. The Treasury had earned another $323B in interest on bailout loans, resulting in a $109B profit as of January 2021.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "housing-crisis.i02"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "housing-crisis.s01"
+      ]
+    },
+    {
+      "id": "housing-crisis.l02",
+      "title_id": "housing-crisis",
+      "index": 2,
+      "heading": "The housing bubble",
+      "body": "During the 2000s, United States housing prices experienced a sharp run up and subsequent collapse affecting over half of the U.S. states. In many regions, a real estate bubble was the impetus for the subprime mortgage crisis. Housing prices, which peaked in early 2006, started to decline in 2006 and 2007, and reached new lows in 2011. On December 30, 2008, the Case–Shiller home price index reported the largest price drop in its history. The credit crisis resulting from the bursting of the housing bubble is an important cause of the Great Recession in the United States.\n\nIncreased foreclosure rates in 2006–2007 among U.S. homeowners led to a crisis in August 2008 for the subprime, Alt-A, collateralized debt obligation (CDO), mortgage, credit, hedge fund, and foreign bank markets. In October 2007, Henry Paulson, the U.S. secretary of the treasury, called the bursting housing bubble \"the most significant risk to our economy\".\n\n![](housing-crisis.i04)\n\nA bubble had the potential to affect not only on home valuations, but also mortgage markets, home builders, real estate, home supply retail outlets, Wall Street hedge funds held by large institutional investors, and foreign banks, increasing the risk of a nationwide recession. Concerns about the impact of the collapsing housing and credit markets on the larger U.S. economy caused President George W. Bush and the chairman of the Federal Reserve Ben Bernanke to announce a limited bailout of the U.S. housing market for homeowners who were unable to pay their mortgage debts.\n\nIn 2008 alone, the United States government allocated over $900 billion (~$1.32 trillion in 2025) to special loans and rescues related to the U.S. housing bubble. This was shared between the public sector and the private sector. Because of the large market share of Federal National Mortgage Association (Fannie Mae) and the Federal Home Loan Mortgage Corporation (Freddie Mac) (both of which are government-sponsored enterprises) as well as the Federal Housing Administration, they received a substantial share of government support, even though their mortgages were more conservatively underwritten and actually performed better than those of the private sector.\n\n![](housing-crisis.i05)\n\n## Subprime lending\n\nIn finance, subprime lending (also referred to as near-prime, subpar, non-prime, and second-chance lending) is the provision of loans to people who may have difficulty maintaining the repayment schedule.\n\nSubprime loans are characterized by higher interest rates, poor quality collateral, and less favorable terms in order to compensate for higher credit risk. During the early to mid-2000s, many subprime loans were packaged into mortgage-backed securities (MBS) and ultimately defaulted, contributing to the 2008 financial crisis.\n\nProponents of subprime lending maintain that the practice extends credit to people who would otherwise not have access to the credit market. Professor Harvey S. Rosen of Princeton University explained, \"The main thing that innovations in the mortgage market have done over the past 30 years is to let in the excluded: the young, the discriminated against, the people without a lot of money in the bank to use for a down payment.\"",
+      "reading_minutes": 3,
+      "image_ids": [
+        "housing-crisis.i03",
+        "housing-crisis.i04",
+        "housing-crisis.i05"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "housing-crisis.s02",
+        "housing-crisis.s03"
+      ]
+    },
+    {
+      "id": "housing-crisis.l03",
+      "title_id": "housing-crisis",
+      "index": 3,
+      "heading": "Mortgage-backed securities",
+      "body": "A mortgage-backed security (MBS) is a type of asset-backed security (an \"instrument\") which is secured by a mortgage or collection of mortgages. The mortgages are aggregated and sold to a group of individuals (a government agency or investment bank) that securitizes, or packages, the loans together into a security that investors can buy. Bonds securitizing mortgages are usually treated as a separate class, termed residential; another class is commercial, depending on whether the underlying asset is mortgages owned by borrowers or assets for commercial purposes ranging from office space to multi-dwelling buildings.\n\nThe structure of the MBS may be known as \"pass-through\", where the interest and principal payments from the borrower or homebuyer pass through it to the MBS holder, or it may be more complex, made up of a pool of other MBSs. Other types of MBS include collateralized mortgage obligations (CMOs, often structured as real estate mortgage investment conduits) and collateralized debt obligations (CDOs).\n\nAs of 2025, the U.S. MBS market had more than $11 trillion in outstanding securities and almost $300 billion in average daily trading volume.\n\nA mortgage bond is a bond backed by a pool of mortgages on a real estate asset such as a house. More generally, bonds which are secured by the pledge of specific assets are called mortgage bonds. Mortgage bonds can pay interest in either monthly, quarterly or semiannual periods. The prevalence of mortgage bonds is commonly credited to Mike Vranos.\n\nThe shares of subprime MBSs issued by various structures, such as CMOs, are not identical but rather issued as tranches (French for \"slices\"), each with a different level of priority in the debt repayment stream, giving them different levels of risk and reward. Tranches of an MBS—especially the lower-priority, higher-interest tranches—are/were often further repackaged and resold as collateralized debt obligations. These subprime MBSs issued by investment banks were a major issue in the subprime mortgage crisis of 2006–2008.\n\nThe total face value of an MBS decreases over time, because like mortgages, and unlike bonds, and most other fixed-income securities, the principal in an MBS is not paid back as a single payment to the bond holder at maturity but rather is paid along with the interest in each periodic payment (monthly, quarterly, etc.). This decrease in face value is measured by the MBS's \"factor\", the percentage of the original \"face\" that remains to be repaid.\n\nIn the United States, MBSs may be issued by structures set up by government-sponsored enterprises like Fannie Mae or Freddie Mac, or they can be \"private-label\", issued by structures set up by investment banks.",
+      "reading_minutes": 3,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "housing-crisis.s04"
+      ]
+    },
+    {
+      "id": "housing-crisis.l04",
+      "title_id": "housing-crisis",
+      "index": 4,
+      "heading": "Collateralized debt obligations",
+      "body": "A collateralized debt obligation (CDO) is a type of structured asset-backed security (ABS). Originally developed as instruments for the corporate debt markets, after 2002 CDOs became vehicles for refinancing mortgage-backed securities (MBS). Like other private label securities backed by assets, a CDO can be thought of as a promise to pay investors in a prescribed sequence, based on the cash flow the CDO collects from the pool of bonds or other assets it owns. Distinctively, CDO credit risk is typically assessed based on a probability of default (PD) derived from ratings on those bonds or assets.\n\nThe CDO is \"sliced\" into sections known as \"tranches\", which \"catch\" the cash flow of interest and principal payments in sequence based on seniority. If some loans default and the cash collected by the CDO is insufficient to pay all of its investors, those in the lowest, most \"junior\" tranches suffer losses first. The last to lose payment from default are the safest, most senior tranches. Consequently, coupon payments (and interest rates) vary by tranche with the safest/most senior tranches receiving the lowest rates and the lowest tranches receiving the highest rates to compensate for higher default risk. As an example, a CDO might issue the following tranches in order of safeness: Senior AAA (sometimes known as \"super senior\"); Junior AAA; AA; A; BBB; Residual.\n\nSeparate special purpose entities—rather than the parent investment bank—issue the CDOs and pay interest to investors. As CDOs developed, some sponsors repackaged tranches into yet another iteration, known as \"CDO-Squared\" (\"CDOs of CDOs\") or created insurance markets for them with \"synthetic CDOs\".\n\nIn the early 2000s, the debt underpinning CDOs was generally diversified, but by 2006–2007—when the CDO market grew to hundreds of billions of dollars—this had changed. CDO collateral became dominated by high risk (BBB or A) tranches recycled from other asset-backed securities, whose assets were usually subprime mortgages. These CDOs have been called \"the engine that powered the mortgage supply chain\" for subprime mortgages, and are credited with giving lenders greater incentive to make subprime loans, leading to the 2007–2009 subprime mortgage crisis.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "housing-crisis.s05"
+      ]
+    },
+    {
+      "id": "housing-crisis.l05",
+      "title_id": "housing-crisis",
+      "index": 5,
+      "heading": "Credit default swaps",
+      "body": "A credit default swap (CDS) is a financial contract that transfers the risk of a borrower failing to repay a debt. The CDS is a type of credit derivative. The buyer makes regular payments to the seller, and in return the seller agrees to pay the buyer if a borrower fails to repay a debt or another agreed credit event occurs. The borrower, called the reference entity, is usually a company or government and is not a party to the contract.\n\nCredit events include failure to pay and bankruptcy. After one, the seller either pays the buyer the face value of the debt in exchange for the defaulted bond (physical settlement), or pays the difference between face value and the bond's market value (cash settlement). When many contracts refer to the same borrower, an auction is often held to set one settlement price.\n\nA CDS resembles insurance, but the buyer does not need to own the debt or suffer a loss, and CDSs are not subject to insurance regulation. Banks and investors use them to hedge credit risk. Others use them to speculate on a borrower's creditworthiness or to make arbitrage trades. A CDS bought by someone who does not own the debt is called a \"naked\" CDS, and these are thought to make up most of the market. Most contracts follow standard forms published by the International Swaps and Derivatives Association (ISDA).\n\nCDSs have existed since the early 1990s, and JPMorgan Chase is widely credited with creating the modern form in 1994. US law largely exempted CDSs from regulation in 2000. By 2002, speculators rather than banks hedging loans dominated the market. The market grew quickly reaching a notional value of $62.2 trillion at the end of 2007. In the 2008 financial crisis, the lack of transparency in this market raised concerns about systemic risk, and AIG, a large seller of protection, needed an $85 billion US government loan. After 2008, central clearing was introduced and the market shrank as offsetting contracts were cancelled falling to about $8 trillion by mid-2018.\n\n![](housing-crisis.i07)\n\nCritics say CDSs encourage speculation and magnify risk. Supporters say they spread risk and add liquidity to the market.\n\n## Bear Stearns\n\nThe Bear Stearns Companies, Inc. was an American holding company that had investment banking, securities trading, and brokerage firm operations. Its former headquarters were located at the Bear Stearns building in Manhattan, New York City.\n\nFounded in 1923, Bear Stearns grew into the fifth-largest investment bank in the United States and at its peak it was one of the highest-performing brokerage firms on Wall Street. It was led for much of its modern history by Alan \"Ace\" Greenberg and later CEO James Cayne.\n\nBear Stearns was affected by the 2007–2008 global financial crisis due to its subprime mortgage exposure, where it was subject to a liquidity run by its customers. It was subsequently merged with JP Morgan Chase. In January 2010, JPMorgan ceased using the Bear Stearns name.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "housing-crisis.i06",
+        "housing-crisis.i07"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "housing-crisis.s06",
+        "housing-crisis.s07"
+      ]
+    },
+    {
+      "id": "housing-crisis.l06",
+      "title_id": "housing-crisis",
+      "index": 6,
+      "heading": "Lehman Brothers falls",
+      "body": "The bankruptcy of Lehman Brothers, also known as the Crash of '08 and the Lehman Shock, on September 15, 2008, was the climax of the subprime mortgage crisis. After the financial services firm was notified of a pending credit downgrade due to its very heavy position in subprime mortgages, the Federal Reserve summoned several banks to negotiate financing for its reorganization. These discussions failed, and Lehman filed a Chapter 11 petition that remains the largest bankruptcy filing in U.S. history, involving more than US$600 billion in assets.\n\nThe bankruptcy triggered a 4.5% one-day drop in the Dow Jones Industrial Average, then the largest decline since the attacks of September 11, 2001. It shook confidence in the government's ability to manage the crisis and prompted a general financial panic. Money market mutual funds, a key source of credit, saw mass withdrawal demands to avoid losses, and the interbank lending market tightened, threatening banks with imminent failure. The government and the Federal Reserve system responded with several emergency measures to contain the panic.\n\nLehman Brothers' parent company, Lehman Brothers Holdings, remained in liquidation until September 28, 2022. Lehman's 110,000 customers received all $106 billion they were owed. General unsecured creditors received back $9.4 billion, or 41 cents on the dollar.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "housing-crisis.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "housing-crisis.s08"
+      ]
+    },
+    {
+      "id": "housing-crisis.l07",
+      "title_id": "housing-crisis",
+      "index": 7,
+      "heading": "The global crisis",
+      "body": "The 2008 financial crisis was a major worldwide financial crisis which started in the United States. The first phase was the subprime mortgage crisis, which began in early 2007 as mortgage-backed securities (MBS) tied to U.S. real estate, and a vast web of derivatives linked to those MBS, collapsed in value. A liquidity crisis spread to global institutions by mid-2007 and climaxed with the bankruptcy of Lehman Brothers in September 2008, which triggered a stock market crash and bank runs in several countries. The crisis exacerbated the Great Recession, a global recession that began in late 2007, and contributed to major crises in Iceland and the eurozone.\n\nDuring the 1990s, the U.S. Congress passed legislation intended to expand affordable housing through looser financing laws, and in 1999 parts of the 1933 Banking Act (Glass–Steagall Act) were repealed, enabling institutions to mix low-risk operations, such as commercial banking and insurance, with higher-risk operations such as investment banking and proprietary trading. As the Federal Reserve (Fed) lowered the federal funds rate from 2000 to 2003, institutions increasingly targeted low-income homebuyers, largely belonging to racial minority groups, with high-risk subprime loans; this development went unattended by regulators. As interest rates rose from 2004 to 2006, monthly payments on these largely adjustable-rate mortgages spiked, leading to a wave of defaults, foreclosures, and bankruptcies among subprime lenders in early 2007. As housing demand and prices continued to fall, the financial contagion spread to global credit markets by August 2007. In March 2008, Bear Stearns, one of the largest U.S. investment banks, was sold to JPMorgan Chase in a \"fire sale\" backed by Fed financing.\n\n![](housing-crisis.i09)\n\nIn response to the crisis, governments around the world deployed massive bailouts of financial institutions and used monetary and fiscal policy to prevent a collapse of the global financial system. On September 7, 2008, Fannie Mae and Freddie Mac, two government-sponsored enterprises which owned or guaranteed half of the U.S. housing market, were seized by the federal government. On September 15, Lehman Brothers filed for the largest bankruptcy in the country's history, which was followed that month by a Fed bailout of American International Group and the seizure of Washington Mutual in the largest bank failure in U.S. history. On October 3, Congress passed the Emergency Economic Stabilization Act, authorizing the Treasury Department to purchase toxic assets and bank stocks through the $700 billion Troubled Asset Relief Program (TARP). The Fed began a program of quantitative easing by buying treasury bonds and other assets, and the American Recovery and Reinvestment Act, signed in February 2009 by President Barack Obama, included various measures which, combined with actions taken in other countries, ended the worst of the Great Recession by mid-2009.\n\nAssessments of the crisis's impact in the U.S. vary, but suggest that some 8.7 million jobs were lost, causing unemployment to rise from 5% in 2007 to a high of 10% in October 2009. The percentage of citizens living in poverty rose from 12.5% in 2007 to 15.1% in 2010. The Dow Jones Industrial Average fell by 53% between October 2007 and March 2009, and some estimates suggest that one in four households lost 75% or more of their net worth. In 2010, the Dodd–Frank Wall Street Reform and Consumer Protection Act was passed, overhauling financial regulations. It was opposed by many Republicans, and it was weakened by the Economic Growth, Regulatory Relief, and Consumer Protection Act in 2018. The Basel III capital and liquidity standards were also adopted by countries around the world.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "housing-crisis.i08",
+        "housing-crisis.i09"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "housing-crisis.s09"
+      ]
+    },
+    {
+      "id": "housing-crisis.l08",
+      "title_id": "housing-crisis",
+      "index": 8,
+      "heading": "The bailout",
+      "body": "The Troubled Asset Relief Program (TARP) is a program of the United States government to purchase toxic assets and equity from financial institutions to strengthen its financial sector that was passed by Congress and signed into law by President George W. Bush. It was a component of the government's measures in 2008 to address the subprime mortgage crisis.\n\nThe TARP originally authorized expenditures of $700 billion. The Emergency Economic Stabilization Act of 2008 created the TARP. The Dodd–Frank Wall Street Reform and Consumer Protection Act, signed into law in 2010, reduced the amount authorized to $475 billion (approximately $684 billion in 2025). In its final April 2024 report, the Congressional Budget Office (CBO) stated that total disbursements were $443.5 billion, and estimated the program's total subsidy cost at $31.1 billion, mostly from grants for mortgage programs.\n\nOn December 19, 2014, the U.S. Treasury sold its remaining holdings of Ally Financial, essentially ending the program. Through the Treasury, the U.S. government actually booked $15.3 billion in surplus, as it earned $441.7 billion on the $426.4 billion invested.\n\n## The Great Recession\n\nThe Great Recession was a period of contraction in economies around the world (particularly in the western world and associated countries) that occurred from late 2007 to mid-2009, overlapping with the closely related 2008 financial crisis. The scale and timing of the recession varied from country to country (see map). At the time, the International Monetary Fund (IMF) concluded that it was the most severe economic and financial meltdown since the Great Depression of the 1930s.\n\nThe Great Recession was caused by many weaknesses that slowly developed in the global financial system, along with a series of concurrent and triggering events that began with the bursting of the United States housing bubble, which had formed in 2005 and lasted until 2012. When housing prices fell and homeowners began to abandon their mortgages, the value of mortgage-backed securities held by investment banks declined sharply in 2007–2008, causing several banks to collapse or be bailed out in September 2008. This 2007–2008 phase became known as the subprime mortgage crisis, referring to borrowers of lesser payment capacity as subprime debtors.\n\nThe combination of banks being unable to provide funds to businesses (also known as the credit crunch) and homeowners forsaking or paying down their debts (rather than borrowing and spending) resulted in the Great Recession. In the U.S., the recession officially began in December 2007 and lasted until June 2009, thus extending over 19 months. As with most other recessions, it appears that no known formal theoretical or empirical model succeeded in accurately predicting the onset of this recession, except for minor signals in the sudden rise of forecast probabilities, which were still well under 50%.\n\nThe recession was not felt equally around the world. Whereas most of the world's developed economies, particularly in North America and Europe, fell into a severe, sustained recession (with international trade and financial contagion spreading into developing countries in Latin America and Africa), far less impact occurred in many more-recently developing economies, particularly in China, India and Indonesia, whose economies grew substantially during this period. Similarly, Oceania suffered minimal impact, in part due to its proximity to Asian markets.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "housing-crisis.i10"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "housing-crisis.s10",
+        "housing-crisis.s11"
+      ]
+    },
+    {
+      "id": "housing-crisis.l09",
+      "title_id": "housing-crisis",
+      "index": 9,
+      "heading": "Dodd–Frank",
+      "body": "The Dodd–Frank Wall Street Reform and Consumer Protection Act, commonly referred to as the Dodd–Frank Act, is a United States federal law enacted on July 21, 2010, as the primary legislative response to the 2007–2008 financial crisis—the worst financial crisis since the Great Depression. Named for its sponsors, Senator Chris Dodd and Representative Barney Frank, the law was signed by President Barack Obama on July 21, 2010. Its stated purposes are to promote financial stability, end \"too big to fail,\" prevent taxpayer-funded bailouts, and protect consumers from abusive financial practices.\n\nThe act reorganized financial regulation through three major reforms: it created the Consumer Financial Protection Bureau (CFPB) to protect consumers against predatory lending and unfair financial practices; it established the Financial Stability Oversight Council (FSOC) to monitor systemic risks and designate firms as \"systemically important\"; and it created the Orderly Liquidation Authority to wind down large failing financial institutions without taxpayer bailouts.\n\nKey regulatory changes include the Volcker Rule, which restricts banks from making speculative investments with depositor funds; requirements for derivatives to be traded through regulated clearinghouses; enhanced Federal Reserve oversight of large financial institutions; and new standards for mortgage lending and credit rating agencies. The law also strengthened whistleblower protections and established data collection requirements for small business lending.\n\nDodd–Frank is considered one of the most significant financial laws since the New Deal. The CFPB has returned over $21 billion to consumers harmed by illegal practices. Critics argued the law imposed excessive compliance costs on smaller financial institutions, and in 2018, the Economic Growth, Regulatory Relief, and Consumer Protection Act rolled back certain requirements, particularly for banks with assets below $250 billion.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "housing-crisis.s12"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "housing-crisis.i01",
+      "title_id": "housing-crisis",
+      "url": "http://10.0.2.2:8000/media/housing-crisis/i01-261ca46bbb.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Sign of the times - Foreclosure",
+      "kind": "other",
+      "author": "respres",
+      "license": "CC BY",
+      "license_version": "2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Sign_of_the_Times-Foreclosure.jpg",
+      "credit_line": "respres · CC BY 2.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "housing-crisis.i02",
+      "title_id": "housing-crisis",
+      "url": "http://10.0.2.2:8000/media/housing-crisis/i02-7006203af4.png",
+      "width": 1600,
+      "height": 903,
+      "alt": "Mortgage delinquencies (missed payments) began rapidly rising from 2007.",
+      "kind": "other",
+      "author": "Isochrone",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Mortgage_delinquencies_by_loan_type_(2000%E2%80%932010).svg",
+      "credit_line": "Isochrone · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "housing-crisis.i03",
+      "title_id": "housing-crisis",
+      "url": "http://10.0.2.2:8000/media/housing-crisis/i03-4ac4d6e75a.webp",
+      "width": 1600,
+      "height": 776,
+      "alt": "Median cost to purchase a home by U.S. state",
+      "kind": "other",
+      "author": "Wikideas1",
+      "license": "CC0",
+      "license_version": null,
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Cost_of_housing_by_State.webp",
+      "credit_line": "Wikideas1 · CC0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "housing-crisis.i04",
+      "title_id": "housing-crisis",
+      "url": "http://10.0.2.2:8000/media/housing-crisis/i04-e5a96e5d05.webp",
+      "width": 1600,
+      "height": 771,
+      "alt": "Median cost to purchase a home by U.S. metro area",
+      "kind": "other",
+      "author": "Wikideas1",
+      "license": "CC0",
+      "license_version": null,
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Median_housing_price_by_metro_area.webp",
+      "credit_line": "Wikideas1 · CC0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "housing-crisis.i05",
+      "title_id": "housing-crisis",
+      "url": "http://10.0.2.2:8000/media/housing-crisis/i05-006521f5cd.png",
+      "width": 1600,
+      "height": 1322,
+      "alt": "Fig. 1: Robert Shiller's plot of U.S. home prices, population, building costs, and bond yields, from Irrational Exuberance, 2nd ed. Shiller shows that inflation-adjusted U.S.",
+      "kind": "other",
+      "author": "Frothy",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Shiller_IE2_Fig_2-1.png",
+      "credit_line": "Frothy · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "housing-crisis.i06",
+      "title_id": "housing-crisis",
+      "url": "http://10.0.2.2:8000/media/housing-crisis/i06-14e1d71b33.png",
+      "width": 1600,
+      "height": 1215,
+      "alt": "If the reference bond performs without default, the protection buyer pays quarterly payments to the seller until maturity",
+      "kind": "other",
+      "author": "Original: Lamro Vector: JoshIzBored",
+      "license": "CC0",
+      "license_version": null,
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:CDS-nodefault.svg",
+      "credit_line": "Original: Lamro Vector: JoshIzBored · CC0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "housing-crisis.i07",
+      "title_id": "housing-crisis",
+      "url": "http://10.0.2.2:8000/media/housing-crisis/i07-86628a38c5.png",
+      "width": 1600,
+      "height": 1215,
+      "alt": "If the reference bond defaults, the protection seller pays par value of the bond to the buyer, and the buyer transfers ownership of the bond to the seller",
+      "kind": "other",
+      "author": "Original: Lamro Vector: JoshIzBored",
+      "license": "CC0",
+      "license_version": null,
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:CDS-default.svg",
+      "credit_line": "Original: Lamro Vector: JoshIzBored · CC0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "housing-crisis.i08",
+      "title_id": "housing-crisis",
+      "url": "http://10.0.2.2:8000/media/housing-crisis/i08-9c49017923.jpg",
+      "width": 1600,
+      "height": 2133,
+      "alt": "Lehman Brothers headquarters in New York City, one year prior to bankruptcy",
+      "kind": "other",
+      "author": "David Shankbone",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Lehman_Brothers_Times_Square_by_David_Shankbone.jpg",
+      "credit_line": "David Shankbone · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "housing-crisis.i09",
+      "title_id": "housing-crisis",
+      "url": "http://10.0.2.2:8000/media/housing-crisis/i09-a2aaee090a.png",
+      "width": 1600,
+      "height": 1000,
+      "alt": "The TED spread, an indicator of perceived credit risk in the financial system, increased significantly during the crisis.",
+      "kind": "other",
+      "author": "Lawrencekhoo",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:TED_Spread.png",
+      "credit_line": "Lawrencekhoo · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "housing-crisis.i10",
+      "title_id": "housing-crisis",
+      "url": "http://10.0.2.2:8000/media/housing-crisis/i10-5c4ff521b1.png",
+      "width": 1600,
+      "height": 706,
+      "alt": "World map showing real GDP growth rates for 2009 (countries in brown were in recession)",
+      "kind": "map",
+      "author": "Gdp_real_growth_rate_2007_CIA_Factbook.PNG: Sbw01f, Kami888, Fleaman5000, Kami888 derivative work: Mnmazur (talk)",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:GDP_Real_Growth_in_2009.svg",
+      "credit_line": "Gdp_real_growth_rate_2007_CIA_Factbook.PNG: Sbw01f, Kami888, Fleaman5000, Kami888 derivative work: Mnmazur (talk) · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "housing-crisis.s01",
+      "title": "Subprime mortgage crisis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Subprime_mortgage_crisis",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "housing-crisis.s02",
+      "title": "2000s United States housing bubble (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/2000s_United_States_housing_bubble",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "housing-crisis.s03",
+      "title": "Subprime lending (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Subprime_lending",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "housing-crisis.s04",
+      "title": "Mortgage-backed security (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Mortgage-backed_security",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "housing-crisis.s05",
+      "title": "Collateralized debt obligation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Collateralized_debt_obligation",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "housing-crisis.s06",
+      "title": "Credit default swap (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Credit_default_swap",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "housing-crisis.s07",
+      "title": "Bear Stearns (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bear_Stearns",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "housing-crisis.s08",
+      "title": "Bankruptcy of Lehman Brothers (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bankruptcy_of_Lehman_Brothers",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "housing-crisis.s09",
+      "title": "2008 financial crisis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/2008_financial_crisis",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "housing-crisis.s10",
+      "title": "Troubled Asset Relief Program (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Troubled_Asset_Relief_Program",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "housing-crisis.s11",
+      "title": "Great Recession (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Great_Recession",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "housing-crisis.s12",
+      "title": "Dodd–Frank Act (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dodd%E2%80%93Frank_Act",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}

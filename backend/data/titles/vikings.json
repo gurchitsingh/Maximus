@@ -1,0 +1,463 @@
+{
+  "id": "vikings",
+  "kind": "topic",
+  "name": "Vikings",
+  "subtitle": "c. 793 to 1066",
+  "poster_lines": [
+    "The",
+    "Vikings"
+  ],
+  "group": "ancient-medieval",
+  "era": "medieval",
+  "region": "europe",
+  "period_start": 793,
+  "period_end": 1066,
+  "themes": [
+    "war",
+    "exploration",
+    "trade",
+    "culture"
+  ],
+  "bg": "#12303A",
+  "tint": "#7FC3D1",
+  "lettering": "brush",
+  "poster_image_id": null,
+  "hero_image_id": "vikings.i01",
+  "brief": "Raiders, traders and explorers from the north.",
+  "linked_title_ids": [],
+  "rank": 5,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "vikings.l01",
+      "title_id": "vikings",
+      "index": 1,
+      "heading": "The Viking Age",
+      "body": "The Viking Age (about 800–1050 CE) was the period during the Middle Ages when Norsemen, referred to as Vikings, undertook large-scale raiding, colonising, conquest, and trading throughout Europe and reached North America. The Viking Age applies not only to their homeland of Scandinavia but also to any place significantly settled by these Norsemen, or Scandinavians during the period. Although few of the Scandinavians of the Viking Age were Vikings in the sense of being engaged in piracy, they are often referred to as Vikings as well as Norsemen.\n\nVoyaging by sea from their homelands in Denmark, Norway, and Sweden, the Norse people settled in the British Isles, Ireland, the Faroe Islands, Iceland, Greenland, Normandy, and the Baltic coast and along the Dnieper and Volga trade routes in eastern Europe, where they were also known as Varangians. They also briefly settled in Newfoundland, becoming the first Europeans to reach North America. The Norse-Gaels, Normans, Rus' people, Faroese, and Icelanders emerged from these Norse colonies. The Vikings founded several kingdoms and earldoms in Europe: the Kingdom of the Isles (Suðreyjar), Orkney (Norðreyjar), York (Jórvík) and the Danelaw (Danalǫg), Dublin (Dyflin), Normandy, and Kievan Rus' (Garðaríki). In the 11th century the Norse homelands were unified into larger kingdoms during the Viking Age, and the short-lived North Sea Empire included large swathes of Scandinavia and Britain. In 1021, the Vikings achieved the feat of reaching North America—the date of which was not determined until a millennium later.\n\nSeveral factors drove this expansion. The Vikings were drawn by the growth of wealthy towns and monasteries overseas and weak kingdoms. They may also have been pushed to leave their homeland by overpopulation, lack of good farmland, and political strife arising from the unification of Norway. The aggressive expansion of the Carolingian Empire and forced conversion of the neighbouring Saxons to Christianity may also have been a factor. This period of raiding, colonising and trade was also fueled by innovations in sailing that gave the Vikings the ability to sail over longer periods to farther destinations.\n\nInformation about the Viking Age is drawn largely from primary sources written by those the Vikings encountered, as well as archaeology, supplemented with secondary sources such as the Icelandic Sagas.\n\n## The raid on Lindisfarne\n\nThe Sacking of Lindisfarne was a Viking raid in AD 793, targeting the monastery on Lindisfarne, an island off the northeastern coast of England. The attack was carried out by Norse seafarers and is often considered the beginning of the Viking Age. The monastery, founded in 635 AD by Saint Aidan, was a major centre of Christian learning in Northumbria. The Viking raiders plundered its wealth, killed or enslaved monks, and desecrated sacred relics. The event sent shockwaves through Christian Europe, with contemporaries interpreting it as divine punishment.\n\nFollowing the raid, Viking incursions into the British Isles increased in frequency and scale. The attack on Lindisfarne foreshadowed later Norse settlements in England and the eventual establishment of the Danelaw. The monastery was later rebuilt, but its vulnerability led to shifts in defensive strategies across Anglo-Saxon England.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "vikings.i02"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "vikings.s01",
+        "vikings.s02"
+      ]
+    },
+    {
+      "id": "vikings.l02",
+      "title_id": "vikings",
+      "index": 2,
+      "heading": "Longships",
+      "body": "Longships were long clinker-built warships propelled by oars, and later also by sail, used by the Norse and surrounding Germanic tribes from at least the 4th century AD and throughout the Viking Age, being part of the Nordic ship building tradition. As the name suggests, they were long slender ships, intended for speed, with the ability to carry a large crew of warriors. They are sometimes called \"dragonships\" due to a tradition of the fore and aft ends being decorated with a raised dragonhead and tail respectively, with the sail making up the \"wing\" of the dragon. The largest types were thus called \"dragons\" (dreki), while smaller types had names such as karve (karfi), snekke (snekkja), and skeid (skeið). In modern times, the term drakkar exist for longships, originally a French borrowing from Swedish drakar (plural of drake).\n\n![](vikings.i04)\n\nArchaeological finds have been made of longships from the 9th, 10th and 11th centuries in Denmark, Norway and Germany, with motifs on Gotlandic picture stones dating to the 8th century or earlier. It is thought that the Norse specifically invented the design for Viking usage, which included raiding and warfare, exploration and commerce. The longship is a rather distinctly Norse (Scandinavian) construction, with bronze age petroglyphs in Sweden indicating a long tradition of building long animal-headed naval ships in Scandinavia. Equivalent clinker-built naval ships by the Wends (a South Baltic Slavic people) were much smaller and shorter in comparison.\n\nThe principles leading to the longship's design evolved over a long period of time. A big technological advancement came around 300 AD, when clinker-building was invented, as seen in the Danish Nydam boat and Swedish Björke boat, both from around 320 AD, with their features being subsequently adopted in the ships of other cultures, including those of the Anglo-Saxons, as seen in the 7th century Sutton Hoo ship. They continued to influence naval engineering for centuries, and the character and appearance of these ships have been reflected in Scandinavian boat building traditions to the present day. The particular skills and methods employed in making longships are still used worldwide, often with modern adaptations. They were all made out of wood, with cloth sails (woven wool), and had various details and carvings on the hull.\n\n![](vikings.i05)\n\n## Raiders spread out\n\nViking expansion was the historical movement, beginning in the 8th century, which led Vikings to sail most of the North Atlantic, reaching south as far as North Africa and east as far as Russia, and through the Mediterranean as far as Constantinople and the Middle East, acting as looters, traders, colonists and mercenaries. To the west, Vikings under Leif Erikson (the heir to Erik the Red) reached North America and set up a short-lived settlement in present-day L'Anse aux Meadows, Newfoundland, Canada. Longer lasting and more established Norse settlements were formed in Greenland, Iceland, the Faroe Islands, Russia, Ukraine, Britain, Ireland, Normandy and Sicily.\n\nBy the 11th century expansion largely ceased, but many areas were left with populations of Viking descent, integrated into other local populations in various ways. Some Viking descendents formed ruling dynasties or elites, while elsewhere they settled down as farmers.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "vikings.i03",
+        "vikings.i04",
+        "vikings.i05"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "vikings.s03",
+        "vikings.s04"
+      ]
+    },
+    {
+      "id": "vikings.l03",
+      "title_id": "vikings",
+      "index": 3,
+      "heading": "The Danelaw",
+      "body": "The Danelaw was the part of England between the late ninth century and the Norman Conquest under Anglo-Saxon rule in which Danish laws applied. The Danelaw originated in the conquest and occupation of large parts of eastern and northern England by Danish Vikings in the late ninth century. The term applies to the areas in which English kings allowed the Danes to keep their own laws following the early tenth-century Anglo-Saxon conquest of Danish-ruled eastern and northern England in return for the Danish settlers' loyalty to the English crown. \"Danelaw\" is first recorded in the early 11th century as Dena lage.\n\nThe Danelaw originated from the invasion of the Great Heathen Army into England in 865, but the term was not used to describe a geographic area until the 11th century. With the increase in population and productivity in Scandinavia, Viking warriors, having sought treasure and glory in the nearby British Isles, \"proceeded to plough and support themselves\", in the words of the Anglo-Saxon Chronicle for 876.\n\nDanelaw can describe the set of legal terms and definitions created in the treaties between Alfred the Great, the king of Wessex, and Guthrum, the Danish warlord, written following Guthrum's defeat at the Battle of Edington in 878, starting with the Treaty of Wedmore.\n\nBetween the aftermath of the Treaty of Wedmore and Guthrum's death in 890, the Treaty of Alfred and Guthrum was formalised, defining the boundaries of their kingdoms, with provisions for peaceful relations between the Danes and the Anglo-Saxons, including allowing the self-governance of the Danes in exchange of loyalty to England. The language spoken in England was affected by this clash of cultures, with the emergence of Anglo-Norse dialects.\n\nThe Danelaw approximately covered Yorkshire, the central and eastern Midlands, and the East of England.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "vikings.i06"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "vikings.s05"
+      ]
+    },
+    {
+      "id": "vikings.l04",
+      "title_id": "vikings",
+      "index": 4,
+      "heading": "The Varangians",
+      "body": "The Varangians were Viking warriors, traders and settlers, mostly from present-day Sweden, who settled in the territories of present-day Belarus, Russia and Ukraine from the 8th and 9th centuries and established the state of Kievan Rus' as well as the principalities of Polotsk and Turov. They also formed the Byzantine Varangian Guard.\n\nAccording to the 12th-century Primary Chronicle, a group of Varangians known as the Rus' settled in Novgorod in 862 under the leadership of Rurik. Before Rurik, the Rus' might have ruled an earlier hypothetical polity known as the Rus' Khaganate. Rurik's relative Oleg conquered Kiev in 882 and established the state of Kievan Rus', which was later ruled by Rurik's descendants.\n\n![](vikings.i08)\n\nEngaging in trade, piracy, and mercenary service, Varangians roamed the river systems and portages of Gardariki, as the areas north of the Black Sea were known in the Norse sagas. They controlled the Volga trade route (between the Varangians and the Muslims), connecting the Baltic to the Caspian Sea and the Dnieper and Dniester trade route (between Varangians and the Greeks) leading to the Black Sea and Constantinople. Those were the main important trade links at that time, connecting Medieval Europe with the Abbasid Caliphate and the Byzantine Empire. Most of the silver coinage in the West came from the East via those routes.\n\nAttracted by the riches of Constantinople, the Varangian Rus' began the Rus'-Byzantine Wars, some of which resulted in advantageous trade treaties. At least from the early 10th century, many Varangians served as mercenaries in the Byzantine Army, constituting the elite Varangian Guard (the bodyguards of Byzantine emperors). Eventually most of them, in Byzantium and in Eastern Europe, were converted from Norse paganism to Orthodox Christianity, culminating in the Christianization of Kievan Rus' in 988. Coinciding with the general decline of the Viking Age, the influx of Scandinavians to Rus' stopped and Varangians gradually assimilated into Slavic culture by the late 11th century.\n\n## Leif Erikson\n\nLeif Erikson, also known as Leif the Lucky (c. 970s – c. 1018 to 1025), was a Norse explorer who is thought to have been the first European to set foot on continental America, approximately half a millennium before Christopher Columbus. According to the sagas of Icelanders, he established a Norse settlement at Vinland, which is usually interpreted as being coastal North America. There is ongoing speculation that the settlement made by Leif and his crew corresponds to the remains of a Norse settlement found in Newfoundland, Canada, called L'Anse aux Meadows, which was occupied approximately 1,000 years ago.\n\nLeif's place of birth is unknown, although it is assumed to have been in Iceland. His father, Erik the Red, founded the first Norse settlement in Greenland, where Leif was later raised. Following his voyage to Vinland and the subsequent death of his father, Leif became chief of the Greenland settlement. He had two known sons: Thorgils, born in the Hebrides; and Thorkell, who succeeded him as Greenland's chieftain.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "vikings.i07",
+        "vikings.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "vikings.s06",
+        "vikings.s07"
+      ]
+    },
+    {
+      "id": "vikings.l05",
+      "title_id": "vikings",
+      "index": 5,
+      "heading": "A Viking camp in Canada",
+      "body": "L'Anse aux Meadows is an archaeological site, first excavated in the 1960s, of a Norse settlement dating to approximately 1000 CE. The site is located near St. Anthony on the northernmost tip of the island of Newfoundland in the Canadian province of Newfoundland and Labrador.\n\n![](vikings.i10)\n\nWith carbon dating estimates between 990 and 1050 CE (mean date 1014) and tree-ring dating of 1021, L'Anse aux Meadows is the only undisputed site of pre-Columbian trans-oceanic contact of Europeans with the Americas outside of Greenland. It is notable as evidence of the Norse presence in North America and for its possible connection with the accounts of Leif Erikson in the Saga of the Greenlanders and the Saga of Erik the Red, which were written down in the 13th century. Archaeological evidence suggests the settlement served as a base camp for Norse exploration of North America, including regions to the south.\n\nSpanning 8,000 hectares (31 sq mi) of land and sea, the site contains the remains of eight buildings constructed of sod over a wood frame, with over 800 Norse objects unearthed, including bronze, bone, and stone artifacts, and evidence of iron production. The site was designated a National Historic Site of Canada in 1968 and a World Heritage Site by UNESCO in 1978, and is managed by Parks Canada.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "vikings.i09",
+        "vikings.i10"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "vikings.s08"
+      ]
+    },
+    {
+      "id": "vikings.l06",
+      "title_id": "vikings",
+      "index": 6,
+      "heading": "Rollo and Normandy",
+      "body": "Rollo was a Viking who, as Count of Rouen, became the first ruler of Normandy, a region in today's northern France. He emerged as a war leader among the Norsemen who had secured a permanent foothold on Frankish soil in the valley of the lower Seine. He was a prominent figure among the Vikings who besieged Paris in 885 and led the ill-fated Siege of Chartres in 911. The latter was nonetheless the catalyst for the consequential Treaty of Saint-Clair-sur-Epte, which saw Charles the Simple, king of West Francia, grant Rollo lands between the river Epte and the sea in exchange for Rollo agreeing to end his brigandage, swear allegiance to Charles, convert to Christianity, and pledge to defend the Seine estuary from other Viking raiders.\n\n![](vikings.i12)\n\nRollo's life was recorded by Dudo of St. Quentin. Historians such as W. Vogel, Alexander Bugge, and Henri Prentout have debated whether Dudo's account is historically accurate, and Rollo's origin and life are heavily disputed. Rollo is usually identified with Hrólfr \"the Walker\" in Norwegian and Icelandic historiography.\n\nRollo is first recorded in a charter of 918 as the leader of a group of Viking settlers, and he reigned over the region of Normandy until at least 928. He was succeeded as ruler of the new Duchy of Normandy by his son William Longsword. The offspring of Rollo and his followers, through their intermingling with the local Frankish and Gallo-Roman population, became known as the \"Normans\". After the Norman conquest of England and of southern Italy and Sicily over the following two centuries, their descendants came to rule England, much of Ireland, Sicily and Antioch from the 11th to 13th centuries, leaving behind an enduring legacy in the histories of Europe and the Near East.\n\n![](vikings.i13)\n\n## Stamford Bridge\n\nThe Battle of Stamford Bridge took place at the village of Stamford Bridge, East Riding of Yorkshire, in England, on 25 September 1066, between an English army under King Harold Godwinson and an invading Norwegian force led by King Harald Hardrada and the English king's brother Tostig Godwinson. After a bloody battle, both Hardrada and Tostig, along with most of the Norwegians, were killed. Although Harold Godwinson repelled the Norwegian invaders, his army was defeated by the Normans at Hastings less than three weeks later.\n\nThe battle has traditionally been presented as marking the end of the Viking Age, although major Scandinavian campaigns in Britain and Ireland occurred in the following decades, such as those of King Sweyn Estridsen of Denmark in 1069–1070 and King Magnus Barefoot of Norway in 1098 and 1102–1103.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "vikings.i11",
+        "vikings.i12",
+        "vikings.i13"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "vikings.s09",
+        "vikings.s10"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "vikings.i01",
+      "title_id": "vikings",
+      "url": "http://10.0.2.2:8000/media/vikings/i01-a679d3923a.jpg",
+      "width": 1600,
+      "height": 1207,
+      "alt": "Guests from Overseas (1901) by Nicholas Roerich, depicting a Viking raid. (Varangians in Rus')",
+      "kind": "other",
+      "author": "Nicholas Roerich",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Nicholas_Roerich,_Guests_from_Overseas.jpg",
+      "credit_line": "Nicholas Roerich · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "vikings.i02",
+      "title_id": "vikings",
+      "url": "http://10.0.2.2:8000/media/vikings/i02-6822692944.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Viking Age picture stone, Gotland, Sweden.",
+      "kind": "other",
+      "author": "historical museum",
+      "license": "CC BY",
+      "license_version": "2.5",
+      "license_url": "https://creativecommons.org/licenses/by/2.5",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bildsten_fr%C3%A5n_Smiss,_Gotland.jpg",
+      "credit_line": "historical museum · CC BY 2.5 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "vikings.i03",
+      "title_id": "vikings",
+      "url": "http://10.0.2.2:8000/media/vikings/i03-2ea7058c79.png",
+      "width": 1600,
+      "height": 923,
+      "alt": "Schematic drawing of the longship type",
+      "kind": "other",
+      "author": "No machine-readable author provided. Ningyou assumed (based on copyright claims).",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Viking_longship.png",
+      "credit_line": "No machine-readable author provided. Ningyou assumed (based on copyright claims). · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "vikings.i04",
+      "title_id": "vikings",
+      "url": "http://10.0.2.2:8000/media/vikings/i04-8bcddbd2a4.jpg",
+      "width": 1600,
+      "height": 2023,
+      "alt": "Gokstad ship replica, \"Lofotr\"",
+      "kind": "photo",
+      "author": "Geir Are Johansen",
+      "license": "CC BY-SA",
+      "license_version": "2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Viking_ship_%22Lofotr%22.jpg",
+      "credit_line": "Geir Are Johansen · CC BY-SA 2.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "vikings.i05",
+      "title_id": "vikings",
+      "url": "http://10.0.2.2:8000/media/vikings/i05-b1b58d7782.jpg",
+      "width": 1600,
+      "height": 640,
+      "alt": "Runepinne med grafitti av leidangsskip på 1200-tallet, funnet ved Bryggen i Bergen",
+      "kind": "other",
+      "author": "Svein Skare, UiB, CC BY-SA 4.0",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Runepinne_med_skipsgrafitti_(cropped).jpg",
+      "credit_line": "Svein Skare, UiB, CC BY-SA 4.0 · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "vikings.i06",
+      "title_id": "vikings",
+      "url": "http://10.0.2.2:8000/media/vikings/i06-a3a7c80b47.png",
+      "width": 1600,
+      "height": 1990,
+      "alt": "Map of England in 878, depicting the Danelaw territory",
+      "kind": "map",
+      "author": "Hel-hama",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:England_878.svg",
+      "credit_line": "Hel-hama · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "vikings.i07",
+      "title_id": "vikings",
+      "url": "http://10.0.2.2:8000/media/vikings/i07-445e8f103a.png",
+      "width": 1600,
+      "height": 1110,
+      "alt": "Map showing the major Varangian trade routes: the Volga trade route (in red) and the Dnieper and Dniester routes (in purple). Other trade routes of the 8th–11th centuries shown in orange.",
+      "kind": "map",
+      "author": "Briangotts",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Varangian_routes.png",
+      "credit_line": "Briangotts · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "vikings.i08",
+      "title_id": "vikings",
+      "url": "http://10.0.2.2:8000/media/vikings/i08-f515643928.jpg",
+      "width": 1600,
+      "height": 2400,
+      "alt": "Modern artistic representation of Leif Erikson in Leif Erikson Park, Duluth, U.S.",
+      "kind": "art",
+      "author": "Sculptor Daniels, John K. 1875-1978 Photo: Sharon Mollerus",
+      "license": "CC BY",
+      "license_version": "2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Leif_Erikson_Statue,_Duluth_(15290644106).jpg",
+      "credit_line": "Sculptor Daniels, John K. 1875-1978 Photo: Sharon Mollerus · CC BY 2.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "vikings.i09",
+      "title_id": "vikings",
+      "url": "http://10.0.2.2:8000/media/vikings/i09-089780e5ab.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "Modern recreation of the Norse site at L'Anse aux Meadows. The site was originally occupied c. 1021 and listed by UNESCO as a World Heritage Site in 1968",
+      "kind": "other",
+      "author": "Dylan Kereluk from White Rock, Canada",
+      "license": "CC BY",
+      "license_version": "2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Authentic_Viking_recreation.jpg",
+      "credit_line": "Dylan Kereluk from White Rock, Canada · CC BY 2.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "vikings.i10",
+      "title_id": "vikings",
+      "url": "http://10.0.2.2:8000/media/vikings/i10-20ec6c83b5.png",
+      "width": 1600,
+      "height": 1829,
+      "alt": "Carte administrative de Terre-Neuve, Canada.",
+      "kind": "map",
+      "author": "NordNordWest (original map), Flappiefh (cropping, scale and graticules).",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Canada_Newfoundland_location_map.svg",
+      "credit_line": "NordNordWest (original map), Flappiefh (cropping, scale and graticules). · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "vikings.i11",
+      "title_id": "vikings",
+      "url": "http://10.0.2.2:8000/media/vikings/i11-d51b0102e0.jpg",
+      "width": 1600,
+      "height": 1439,
+      "alt": "Rollo as depicted in the 13th century",
+      "kind": "portrait",
+      "author": "AnonymousUnknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:RolloA.jpg",
+      "credit_line": "AnonymousUnknown author · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.35
+    },
+    {
+      "id": "vikings.i12",
+      "title_id": "vikings",
+      "url": "http://10.0.2.2:8000/media/vikings/i12-87c3c48d9c.png",
+      "width": 1600,
+      "height": 890,
+      "alt": "The Battle of Stamford Bridge, from The Life of King Edward the Confessor by Matthew Paris. 13th century. Cambridge, Cambridge University Library, MS Ee.3.59, f. 32v; MS produced c. 1250-60.",
+      "kind": "other",
+      "author": "Matthew Paris",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Battle_of_Stamford_Bridge,_full.png",
+      "credit_line": "Matthew Paris · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "vikings.i13",
+      "title_id": "vikings",
+      "url": "http://10.0.2.2:8000/media/vikings/i13-13c89cf12c.jpg",
+      "width": 1600,
+      "height": 1943,
+      "alt": "Location within England",
+      "kind": "map",
+      "author": "Nilfanion",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:England_relief_location_map.jpg",
+      "credit_line": "Nilfanion · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "vikings.s01",
+      "title": "Viking Age (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Viking_Age",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "vikings.s02",
+      "title": "Sack of Lindisfarne (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sack_of_Lindisfarne",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "vikings.s03",
+      "title": "Longship (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Longship",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "vikings.s04",
+      "title": "Viking expansion (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Viking_expansion",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "vikings.s05",
+      "title": "Danelaw (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Danelaw",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "vikings.s06",
+      "title": "Varangians (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Varangians",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "vikings.s07",
+      "title": "Leif Erikson (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Leif_Erikson",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "vikings.s08",
+      "title": "L'Anse aux Meadows (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/L%27Anse_aux_Meadows",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "vikings.s09",
+      "title": "Rollo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rollo",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "vikings.s10",
+      "title": "Battle of Stamford Bridge (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Stamford_Bridge",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}

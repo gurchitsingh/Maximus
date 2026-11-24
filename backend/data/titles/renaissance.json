@@ -1,0 +1,415 @@
+{
+  "id": "renaissance",
+  "kind": "topic",
+  "name": "Renaissance",
+  "subtitle": "c. 1300 to 1600",
+  "poster_lines": [
+    "THE",
+    "RENAISSANCE"
+  ],
+  "group": "ancient-medieval",
+  "era": "early-modern",
+  "region": "europe",
+  "period_start": 1300,
+  "period_end": 1600,
+  "themes": [
+    "culture",
+    "ideas",
+    "science-tech",
+    "politics"
+  ],
+  "bg": "#6B2D2D",
+  "tint": "#E8B27A",
+  "lettering": "roman",
+  "poster_image_id": null,
+  "hero_image_id": "renaissance.i01",
+  "brief": "Art, science and big ideas reborn in Italy.",
+  "linked_title_ids": [],
+  "rank": 7,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "renaissance.l01",
+      "title_id": "renaissance",
+      "index": 1,
+      "heading": "A rebirth of ideas",
+      "body": "The Renaissance (UK: rin-AY-sənss, US: REN-ə-sahnss, \"rebirth\") was a European period of history and cultural movement taking place at the end of the Middle Ages and the beginning of the Early modern era. It is variously defined as covering the 15th and 16th centuries or, more broadly, as lasting from the 16th century to the 17th century. It was characterized by the European rediscovery and revival of the literary, philosophical, and artistic achievements of classical antiquity. Associated with great change in art, architecture, politics, literature, exploration and technology, the Renaissance was first centered in the Republic of Florence, then spread to the rest of Italy and later throughout Europe.\n\nThe Renaissance's intellectual basis was founded in its version of humanism, derived from the concept of Roman humanitas and the rediscovery of classical Greek philosophy, such as that of Protagoras, who said that \"man is the measure of all things\". Although the invention of metal movable type sped the dissemination of ideas from the later 15th century, the changes of the Renaissance were not uniform across Europe: the first traces appear in Italy as early as the late 13th century, in particular with the writings of Dante and the paintings of Giotto.\n\nAs a cultural movement, the Renaissance encompassed an innovative flowering of literary Latin and an explosion of vernacular literatures, beginning with the 14th-century resurgence of learning based on classical sources, which contemporaries credited to Petrarch; the development of linear perspective and other techniques of rendering a more natural reality in painting; and gradual but widespread educational reform. It saw myriad artistic developments and contributions from such polymaths as Leonardo da Vinci and Michelangelo, who inspired the term \"Renaissance man\". In politics, the Renaissance contributed to the development of the customs and conventions of diplomacy. The period also saw revolutions in printing and navigation, as well as the introduction of modern banking and the field of accounting.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "renaissance.s01"
+      ]
+    },
+    {
+      "id": "renaissance.l02",
+      "title_id": "renaissance",
+      "index": 2,
+      "heading": "Italy leads the way",
+      "body": "The Italian Renaissance is a period in Italian history covering the 15th and 16th centuries, marking the transition from the Middle Ages to the early modern era. It was the initial phase of the broader Renaissance culture, which later spread to the rest of Europe—setting off the Northern Renaissance from the late 15th century—as well as to extra-European territories ruled by colonial powers or where Christian missionaries and traders were active. Proponents of a \"long Renaissance\" argue that it started around 1300 and lasted until about 1600, with a Proto-Renaissance accepted in some fields beginning around 1250. The term—derived from the French renaissance—defines the period as one of cultural revival and renewed interest in classical antiquity following what humanists labelled the \"Dark Ages\". The movement began in Tuscany, centered in the city of Florence. The Florentine Republic, one of several city-states on the peninsula, rose to economic and political prominence by providing credit to European monarchs and laying the groundwork for modern capitalism and banking. Renaissance culture later spread to Venice, Milan, Rome and the whole of Italy.\n\nBy the late 15th century, Italy had become the model culture for painting, architecture, sculpture, literature, music, philosophy, science, technology, and exploration. The period peaked in the mid-16th century as domestic disputes and foreign invasions plunged the region into the Italian Wars (1494–1559). Meanwhile, Italian explorers from the maritime republics sailed under European monarchs, ushering in the Age of Discovery: Christopher Columbus (for Spain) laid the foundation for European dominance of the Americas, alongside Giovanni da Verrazzano (for France), Amerigo Vespucci (for Portugal), and John Cabot (for England). In science, Italian figures such as Falloppio, Tartaglia, Galileo, and Torricelli played key roles in the Scientific Revolution, while foreigners like Copernicus and Vesalius worked at Italian universities. Historiographers have proposed various 17th-century events, such as the conclusion of the European wars of religion in 1648, as marking the end of the era.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "renaissance.s02"
+      ]
+    },
+    {
+      "id": "renaissance.l03",
+      "title_id": "renaissance",
+      "index": 3,
+      "heading": "Humanism",
+      "body": "Renaissance humanism is a worldview centered on the nature and importance of humanity that emerged from the study of classical antiquity.\n\nRenaissance humanists sought to create a citizenry able to speak and write with eloquence and clarity, and thus capable of engaging in the civic life of their communities and persuading others to virtuous and prudent actions. Humanism, while set up by a small elite who had access to books and education, was intended as a cultural movement to influence all of society. It was a program to revive the cultural heritage, literary legacy, and moral philosophy of the Greco-Roman civilization.\n\nIt first began in Italy and then spread across Western Europe in the 14th, 15th, and 16th centuries. During the period, the term humanist referred to teachers and students of the humanities, known as the studia humanitatis, which included the study of Latin and Greek literatures, grammar, rhetoric, history, poetry, and moral philosophy. It was not until the 19th century that this began to be called humanism instead of the original humanities, and later by the retronym Renaissance humanism to distinguish it from later humanist developments.\n\nDuring the Renaissance period most humanists were Christians, so their concern was to \"purify and renew Christianity\", not to do away with it. Their vision was to return ad fontes (\"to the pure sources\") to the Gospels, the New Testament and the Church Fathers, bypassing the complexities of medieval Christian theology.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "renaissance.i01"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "renaissance.s03"
+      ]
+    },
+    {
+      "id": "renaissance.l04",
+      "title_id": "renaissance",
+      "index": 4,
+      "heading": "The Medici bankers",
+      "body": "The House of Medici was an Italian banking family and political dynasty that first consolidated power in the Republic of Florence under Cosimo de' Medici and his grandson Lorenzo \"the Magnificent\" during the first half of the 15th century. The family originated in the Mugello region of Tuscany, and prospered gradually in trade until it was able to fund the Medici Bank. This bank was the largest in Europe in the 15th century and facilitated the Medicis' rise to political power in Florence, although they officially remained citizens rather than monarchs until the 16th century.\n\nIn 1532, the family acquired the hereditary title Duke of Florence. In 1569, the duchy was elevated to the Grand Duchy of Tuscany after territorial expansion. The Medici ruled the Grand Duchy from its inception under the builder Cosimo I until 1737, with the death of Gian Gastone de' Medici. The Medici produced four popes of the Catholic Church—Pope Leo X (1513–1521), Pope Clement VII (1523–1534), Pope Pius IV (1559–1565) and Pope Leo XI (1605)—and two queens of France—Catherine de' Medici (1547–1559) and Marie de' Medici (1600–1610). The Medici's grand duchy witnessed degrees of economic growth under the early grand dukes, but was bankrupt by the time of Cosimo III de' Medici (r. 1670–1723).\n\nThe Medicis' wealth and influence was initially derived from the textile trade guided by the wool guild of Florence, the Arte della Lana. Like other families ruling in Italian signorie, the Medici dominated their city's government, were able to bring Florence under their family's power, and created an environment in which art and humanism flourished. The Italian Renaissance was inspired by the Medici along with other families of Italy, such as the Visconti and Sforza in Milan, the Este in Ferrara, the Borgia and Della Rovere in Rome, and the Gonzaga in Mantua.\n\nThe Medici Bank, from when it was created in 1397 to its fall in 1494, was one of the most prosperous and respected institutions in Europe, and the Medici family was considered the wealthiest in Europe for a time. From this base, they acquired political power initially in Florence and later in wider Italy and Europe. They were among the earliest businesses to use the general ledger system of accounting through the development of the double-entry bookkeeping system for tracking credits and debits.\n\nThe Medici family financed the construction of Saint Peter's Basilica and Florence Cathedral, and were patrons of Donatello, Brunelleschi, Botticelli, Leonardo da Vinci, Michelangelo, Raphael, Machiavelli, Galileo, and Francesco Redi, among many others in the arts and sciences. They funded the invention of the piano, and arguably that of opera. They were also protagonists of the Counter-Reformation, from the beginning of the Reformation through the Council of Trent and the French Wars of Religion.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "renaissance.i02"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "renaissance.s04"
+      ]
+    },
+    {
+      "id": "renaissance.l05",
+      "title_id": "renaissance",
+      "index": 5,
+      "heading": "Leonardo da Vinci",
+      "body": "Leonardo di ser Piero da Vinci (15 April 1452 – 2 May 1519), better known as Leonardo da Vinci, was an Italian polymath of the High Renaissance who was active as a painter, draughtsman, engineer, scientist, anatomist, sculptor, and architect. While his fame initially rested on his achievements as a painter, he has also become known for his notebooks, in which he made drawings and notes on a variety of subjects, including anatomy, astronomy, botany, cartography, painting, and palaeontology. Leonardo is widely regarded as a genius who epitomised the Renaissance humanist ideal, and his collective works contributed to the development of European art to an extent rivalled only by that of his younger contemporary Michelangelo.\n\nBorn out of wedlock to a young peasant woman and a successful notary in (or near) Vinci in Tuscany, he was educated in Florence by the Italian painter and sculptor Andrea del Verrocchio. He began his career in the city, but then spent much time in the service of Ludovico Sforza in Milan. Later, he worked in Florence and Milan again, as well as briefly in Rome, all while attracting a large following of imitators and students. Upon the invitation of Francis I, he spent his last three years in France, where he died in 1519. Since his death, there has not been a time when his achievements, diverse interests, personal life, and empirical thinking have failed to incite interest and admiration, making him a frequent namesake and subject in culture.\n\nLeonardo is identified as one of the greatest painters in the history of Western art and is often credited as the founder of the High Renaissance. Despite having many lost works and fewer than 25 attributed major works – including numerous unfinished works – he created some of the most influential paintings in the Western canon. The Mona Lisa is regarded as the world's most famous painting. The Last Supper is the most reproduced religious painting of all time and his Vitruvian Man drawing is also regarded as a cultural icon. In 2017, Salvator Mundi, attributed in whole or part to Leonardo, was sold at auction for US$450.3 million, setting a new record for the most expensive painting ever sold at public auction.\n\nRevered for his technological ingenuity, he conceptualised flying machines, a type of armoured fighting vehicle, concentrated solar power, a ratio machine that could be used in an adding machine, and the double hull. Relatively few of his designs were constructed or were even feasible during his lifetime, as the modern scientific approaches to metallurgy and engineering were only in their infancy during the Renaissance. Some of his smaller inventions, however, entered the world of manufacturing unheralded, such as an automated bobbin winder and a machine for testing the tensile strength of wire. He made substantial discoveries in anatomy, civil engineering, hydrodynamics, geology, optics, and tribology, but he did not publish his findings and they had little to no direct influence on subsequent science.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "renaissance.i03"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "renaissance.s05"
+      ]
+    },
+    {
+      "id": "renaissance.l06",
+      "title_id": "renaissance",
+      "index": 6,
+      "heading": "Michelangelo",
+      "body": "Michelangelo di Lodovico Buonarroti Simoni (6 March 1475 – 18 February 1564), known mononymously as Michelangelo, was an Italian sculptor, painter, architect, and poet of the High Renaissance. He was born in the Republic of Florence but was mostly active in Rome from his 30s onwards. His work was inspired by models from classical antiquity and had a lasting influence on Western art. Michelangelo's creative abilities and mastery in a range of artistic arenas define him as an archetypal Renaissance man, along with his rival and elder contemporary, Leonardo da Vinci. Given the sheer volume of surviving correspondence, sketches, and reminiscences, Michelangelo is one of the best-documented artists of the 16th century.\n\n![](renaissance.i05)\n\nMichelangelo achieved fame early. Two of his best-known works, the Pietà and David, were sculpted before the age of 30. Although he did not consider himself a painter, Michelangelo created two of the most influential frescoes in the history of Western art: the scenes from Genesis on the ceiling of the Sistine Chapel in Rome, and The Last Judgment on its altar wall. His design of the Laurentian Library pioneered Mannerist architecture. At the age of 71, he succeeded Antonio da Sangallo the Younger as the architect of St. Peter's Basilica. Michelangelo transformed the plan so that the Western end was finished to his design, as was the dome, with some modification, after his death.\n\nMichelangelo was the first Western artist whose biography was published during his lifetime. Giorgio Vasari's Lives (1550), in which he was the only living artist given a biography, presented his work as the culmination of the revival of the arts and called him divino, an honorific then extended to several celebrated writers and artists. Ascanio Condivi's Life (1553), prepared with Michelangelo's participation, corrected Vasari in places, and Vasari incorporated much of it into his expanded edition of 1568. His contemporaries admired his terribilità—his ability to instill a sense of awe in viewers of his art. Attempts by subsequent artists to imitate the expressive physicality of Michelangelo's style contributed to the rise of Mannerism, a short-lived movement in Western art between the High Renaissance and the Baroque.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "renaissance.i04",
+        "renaissance.i05"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "renaissance.s06"
+      ]
+    },
+    {
+      "id": "renaissance.l07",
+      "title_id": "renaissance",
+      "index": 7,
+      "heading": "Gutenberg and the press",
+      "body": "Johannes Gensfleisch zur Laden zum Gutenberg (c. 1393–1406 – 1468) was a German inventor and craftsman who invented the movable-type printing press. Though movable type was already in use in East Asia, Gutenberg's invention of the printing press enabled a much faster rate of printing. The printing press later spread across the world, and led to an information revolution and the unprecedented mass-spread of literature throughout Europe. It had a profound impact on the development of the Renaissance, Reformation, and humanist movements.\n\nGutenberg's many contributions to printing include the invention of a process for mass-producing movable type; the use of oil-based ink for printing books; adjustable molds; mechanical movable type; and the invention of a wooden printing press similar to the agricultural screw presses of the period. Gutenberg's method for making type is traditionally considered to have included a type metal alloy and a hand mould for casting type. The alloy was a mixture of lead, tin, and antimony that melted at a relatively low temperature for faster and more economical casting, cast well, and created a durable type. His major work, the Gutenberg Bible, was the first printed version of the Bible and has been acclaimed for its high aesthetic and technical quality.\n\nGutenberg is often cited as among the most influential figures in human history and has been commemorated around the world. To celebrate the 500th anniversary of his birth, the Gutenberg Museum was founded in his hometown of Mainz in 1900. In 1997, Time Life picked Gutenberg's invention as the most important of the second millennium.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "renaissance.i06"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "renaissance.s07"
+      ]
+    },
+    {
+      "id": "renaissance.l08",
+      "title_id": "renaissance",
+      "index": 8,
+      "heading": "The Renaissance goes north",
+      "body": "The Northern Renaissance was a cultural awakening or boom that occurred in Europe north of the Alps, developing later than the Italian Renaissance, and in most respects only beginning in the last years of the 15th century. It took different forms in the various countries involved, and the German, French, English, Low Countries and Polish Renaissances often had different characteristics. Northern Renaissanse is also called Arts Nova as strictly speaking there was no equivalent ancient flourishing of art north of the Alps that could undergo a 'rebirth'.\n\nEarly Netherlandish painting, especially its later phases, is often classified as part of the Northern Renaissance. Rapidly expanding trade and commerce and a new class of rich merchant patrons in then Burgundian cities like Bruges in the 15th century and Antwerp in the 16th increased cultural exchange between Italy and the Low Countries; however in art, and especially architecture, late Gothic influences remained present until the arrival of Baroque even as painters increasingly drew on Italian models.\n\n![](renaissance.i08)\n\nIn France, King Francis I imported Italian Renaissance art, and commissioned Italian artists (including Leonardo da Vinci), building grand palaces at great expense, starting the French Renaissance. In England also, the first signs of Renaissance art and architecture were the result of patronage by a small circle of patrons at the royal courts of Henry VII of England and his son Henry VIII (Nonsuch Palace), and courtiers such as Cardinal Thomas Wolsey, who built Hampton Court Palace.\n\nUniversities and the printed book helped spread the spirit of the age through France, the Low Countries and the Holy Roman Empire, and then to Scandinavia and Britain in the early 16th century. Writers and humanists such as Rabelais, Pierre de Ronsard and Desiderius Erasmus were greatly influenced by the Italian Renaissance model and were part of the same intellectual movement. During the English Renaissance (which overlapped with the Elizabethan era) writers such as William Shakespeare and Christopher Marlowe composed works of lasting influence. The Renaissance was brought to Poland directly from Italy by artists from Florence and the Low Countries, starting the Polish Renaissance.\n\nIn some areas the Northern Renaissance was distinct from the Italian Renaissance in its centralization of political power. While Italy and Germany were dominated by independent city-states, most of Europe began emerging as nation-states or even unions of countries. The Northern Renaissance was also closely linked to the Protestant Reformation with the resulting long series of internal and external conflicts between various Protestant groups and the Catholic Church having lasting effects.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "renaissance.i07",
+        "renaissance.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "renaissance.s08"
+      ]
+    },
+    {
+      "id": "renaissance.l09",
+      "title_id": "renaissance",
+      "index": 9,
+      "heading": "Galileo",
+      "body": "Galileo di Vincenzo Bonaiuti de' Galilei (15 February 1564 – 8 January 1642), commonly referred to as Galileo Galilei or mononymously as Galileo, was an Italian astronomer, physicist, engineer and polymath. He was born in Pisa, then part of the Duchy of Florence. Galileo has been called the father of observational astronomy, classical physics, the scientific method, and modern science.\n\nHe studied speed and velocity, gravity and free fall, the principle of relativity, inertia, projectile motion, and also worked in applied science and technology, describing the properties of the pendulum and \"hydrostatic balances\". He was one of the earliest developers of the thermoscope and the inventor of various military compasses. With an improved telescope he built, he observed the stars of the Milky Way, the phases of Venus, the four largest satellites of Jupiter, Saturn's rings, lunar craters, and sunspots. He also built an early microscope.\n\nGalileo's championing of Copernican heliocentrism was met with opposition from within the Catholic Church and from some astronomers. The matter was investigated by the Roman Inquisition in 1615, which concluded that his opinions contradicted accepted Biblical interpretations.\n\nGalileo defended his views in Dialogo sopra i due massimi sistemi del mondo\n\n(Dialogue Concerning the Two Chief World Systems, 1632), which appeared to dispute and satirize Pope Urban VIII, thus alienating both the Pope and the Jesuits, who had both strongly supported Galileo until this point. He was tried by the Inquisition, found \"vehemently suspect of heresy\", and forced to recant. He spent the rest of his life under house arrest. During this time, he wrote Discorsi e Dimostrazioni Matematiche, intorno a due nuove scienze (Discourses and Mathematical Demonstrations Relating to Two New Sciences, 1638) primarily about kinematics and the strength of materials.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "renaissance.i09"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "renaissance.s09"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "renaissance.i01",
+      "title_id": "renaissance",
+      "url": "http://10.0.2.2:8000/media/renaissance/i01-8e7618928d.jpg",
+      "width": 1600,
+      "height": 2175,
+      "alt": "Leonardo da Vinci's Vitruvian Man (c. 1490) demonstrates the effect writers of Antiquity had on Renaissance thinkers.",
+      "kind": "other",
+      "author": "Leonardo da Vinci",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Da_Vinci_Vitruve_Luc_Viatour.jpg",
+      "credit_line": "Leonardo da Vinci · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "renaissance.i02",
+      "title_id": "renaissance",
+      "url": "http://10.0.2.2:8000/media/renaissance/i02-4a25c6b150.png",
+      "width": 1600,
+      "height": 1867,
+      "alt": "Arms of the House of MediciBlazon: Or, five balls in orle gules, in chief a larger one of the arms of France (viz.",
+      "kind": "other",
+      "author": "Heralder",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Augmented_Arms_of_Medici.svg",
+      "credit_line": "Heralder · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "renaissance.i03",
+      "title_id": "renaissance",
+      "url": "http://10.0.2.2:8000/media/renaissance/i03-a22213a397.png",
+      "width": 1600,
+      "height": 2292,
+      "alt": "This portrait attributed to Francesco Melzi, c. 1515–1518, is the only certain contemporary depiction of Leonardo.",
+      "kind": "portrait",
+      "author": "Attributed to Francesco Melzi",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Francesco_Melzi_-_Portrait_of_Leonardo_(colour_correction).png",
+      "credit_line": "Attributed to Francesco Melzi · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.35
+    },
+    {
+      "id": "renaissance.i04",
+      "title_id": "renaissance",
+      "url": "http://10.0.2.2:8000/media/renaissance/i04-ffab1aff94.jpg",
+      "width": 1600,
+      "height": 1852,
+      "alt": "Portrait by Daniele da Volterra, c. 1545",
+      "kind": "portrait",
+      "author": "Attributed to Daniele da Volterra",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Michelangelo_Daniele_da_Volterra_(dettaglio).jpg",
+      "credit_line": "Attributed to Daniele da Volterra · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.35
+    },
+    {
+      "id": "renaissance.i05",
+      "title_id": "renaissance",
+      "url": "http://10.0.2.2:8000/media/renaissance/i05-f917816239.png",
+      "width": 1600,
+      "height": 433,
+      "alt": "Signature of Michelangelo",
+      "kind": "other",
+      "author": "Connormah, Michelangelo",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Michelangelo_Signature2.svg",
+      "credit_line": "Connormah, Michelangelo · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "renaissance.i06",
+      "title_id": "renaissance",
+      "url": "http://10.0.2.2:8000/media/renaissance/i06-226b8a4428.jpg",
+      "width": 1600,
+      "height": 2131,
+      "alt": "Gutenberg Monument by Bertel Thorvaldsen, erected 1837",
+      "kind": "other",
+      "author": "Kenneth C. Zirkel",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Mainz_Gutenbergdenkmal_2016_(cropped).jpg",
+      "credit_line": "Kenneth C. Zirkel · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "renaissance.i07",
+      "title_id": "renaissance",
+      "url": "http://10.0.2.2:8000/media/renaissance/i07-466c08f698.jpg",
+      "width": 1600,
+      "height": 2189,
+      "alt": "Jan van Eyck, The Arnolfini Portrait, 1434, National Gallery, London. An Italian merchant based in Bruges in modern Belgium",
+      "kind": "portrait",
+      "author": "Jan van Eyck",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Van_Eyck_-_Arnolfini_Portrait.jpg",
+      "credit_line": "Jan van Eyck · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.35
+    },
+    {
+      "id": "renaissance.i08",
+      "title_id": "renaissance",
+      "url": "http://10.0.2.2:8000/media/renaissance/i08-f458c80fab.jpg",
+      "width": 1600,
+      "height": 1056,
+      "alt": "The Adoration of the Magi in the snow, Pieter Brueghel the Younger, 1584–1638",
+      "kind": "other",
+      "author": "Pieter Brueghel the Younger",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Pieter_Brueghel,_the_Younger_-_The_Adoration_of_the_Magi_in_the_snow.jpeg",
+      "credit_line": "Pieter Brueghel the Younger · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "renaissance.i09",
+      "title_id": "renaissance",
+      "url": "http://10.0.2.2:8000/media/renaissance/i09-27dad1cce5.jpg",
+      "width": 1600,
+      "height": 2032,
+      "alt": "Portrait c. 1640",
+      "kind": "portrait",
+      "author": "Justus Sustermans",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Galileo_Galilei_(1564-1642)_RMG_BHC2700.tiff",
+      "credit_line": "Justus Sustermans · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.35
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "renaissance.s01",
+      "title": "Renaissance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Renaissance",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "renaissance.s02",
+      "title": "Italian Renaissance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Italian_Renaissance",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "renaissance.s03",
+      "title": "Renaissance humanism (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Renaissance_humanism",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "renaissance.s04",
+      "title": "House of Medici (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/House_of_Medici",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "renaissance.s05",
+      "title": "Leonardo da Vinci (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Leonardo_da_Vinci",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "renaissance.s06",
+      "title": "Michelangelo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Michelangelo",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "renaissance.s07",
+      "title": "Johannes Gutenberg (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Johannes_Gutenberg",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "renaissance.s08",
+      "title": "Northern Renaissance (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Northern_Renaissance",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "renaissance.s09",
+      "title": "Galileo Galilei (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Galileo_Galilei",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "id": "industrial-revolution",
+  "kind": "topic",
+  "name": "Industrial Revolution",
+  "subtitle": "c. 1760 to 1840",
+  "poster_lines": [
+    "INDUSTRIAL",
+    "REVOLUTION"
+  ],
+  "group": "revolutions-empires",
+  "era": "modern",
+  "region": "europe",
+  "period_start": 1760,
+  "period_end": 1840,
+  "themes": [
+    "revolution",
+    "science-tech",
+    "economy",
+    "society"
+  ],
+  "bg": "#3A3F44",
+  "tint": "#D9A441",
+  "lettering": "carved",
+  "poster_image_id": null,
+  "hero_image_id": "industrial-revolution.i01",
+  "brief": "Steam, iron and the first factories.",
+  "linked_title_ids": [],
+  "rank": 15,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "industrial-revolution.l01",
+      "title_id": "industrial-revolution",
+      "index": 1,
+      "heading": "Steam, iron and factories",
+      "body": "The Industrial Revolution, sometimes called the First Industrial Revolution in contrast to the subsequent Second Industrial Revolution, was a transitional period of the global economy toward more widespread, efficient and stable manufacturing processes, succeeding the Second Agricultural Revolution. Beginning in Great Britain around 1760, the Industrial Revolution had spread to continental Europe and the United States by about 1840. Economic historians agree that the onset of the Industrial Revolution is the most important event in human history, comparable only to the adoption of agriculture for material advancement.\n\nThis transition included going from hand production methods to machines; new chemical manufacturing and iron production processes; the increasing use of water power and steam power; the development of machine tools; and rise of the mechanised factory system. Output greatly increased, and the result was an unprecedented rise in population and population growth. Many technological and architectural innovations were British. By the mid-18th century, Britain was the leading commercial nation, with GDP per capita considerably over the world average. The textile industry was the first to use modern production methods, and textiles became the dominant industry in terms of employment, value of output, and capital invested.\n\nThe precise start and end of the Industrial Revolution is debated among historians, as is the pace of economic and social changes. Rapid adoption of mechanized textiles spinning occurred in Britain in the 1780s, and high rates of growth in steam power and iron production occurred after 1800. Mechanised textile production spread from Britain to continental Europe and the US in the early 19th century.\n\nA recession occurred from the late 1830s when the adoption of the Industrial Revolution's early innovations, such as mechanised spinning and weaving, slowed as markets matured despite increased adoption of locomotives, steamships, and hot blast iron smelting. New technologies such as the electrical telegraph, widely introduced in the 1840s in the UK and US, were not sufficient to drive high rates of growth. Rapid growth reoccurred after 1870, springing from new innovations in the Second Industrial Revolution. These included steel-making processes, mass production, assembly lines, electrical grid systems, large-scale manufacture of machine tools, and use of advanced machinery in steam-powered factories.\n\nThe Industrial Revolution influenced almost every aspect of life. In particular, average income and population began to exhibit unprecedented sustained growth, with the standard of living improving for most in the Western world, though others have said it did not begin to improve meaningfully until the 20th century. Prior to the Industrial Revolution, most manufacturing occurred in China and India; after the Industrial Revolution, most manufacturing took place in North America and Western Europe.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "industrial-revolution.i01"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "industrial-revolution.s01"
+      ]
+    },
+    {
+      "id": "industrial-revolution.l02",
+      "title_id": "industrial-revolution",
+      "index": 2,
+      "heading": "Farming changes first",
+      "body": "The British Agricultural Revolution, or Second Agricultural Revolution, was an unprecedented increase in agricultural production in Britain arising from increases in the productivity of labour and land between the mid-17th (or earlier) and late 19th centuries. Agricultural output grew faster than the population over the hundred-year period ending in 1770, and thereafter productivity remained among the highest in the world.\n\nThis increase in the food supply contributed to the rapid growth of the population in England and Wales, from 5.5 million in 1700 to over 9 million by 1801, though domestic production gave way increasingly to food imports in the 19th century as the population almost quadrupled to over 35 million.\n\nFrom 1700 to 1850, agricultural productivity per labourer increased by a factor of 2.5. The rise in productivity accelerated the decline of the agricultural share of the labour force, adding to the urban workforce on which industrialisation depended: the Agricultural Revolution has therefore been cited as an enabling factor for the Industrial Revolution.\n\nHowever, historians continue to dispute when exactly such a \"revolution\" took place and of what it consisted. Rather than a single event, G. E. Mingay states that there were a \"profusion of agricultural revolutions, one for two centuries before 1650, another emphasising the century after 1650, a third for the period 1750–1780, and a fourth for the middle decades of the nineteenth century\". This has led more recent historians to argue that any general statements about \"the Agricultural Revolution\" are difficult to sustain.\n\nOne important change in farming methods was the move in crop rotation to turnips and clover in place of fallow under the Norfolk four-course system. Turnips can be grown in winter and are deep-rooted, allowing them to gather elements unavailable to shallow-rooted crops. Clover fixes nitrogen from the atmosphere into a form of fertiliser. This permitted the intensive arable cultivation of light soils on enclosed farms and provided fodder to support increased livestock numbers whose manure added further to soil fertility.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "industrial-revolution.s02"
+      ]
+    },
+    {
+      "id": "industrial-revolution.l03",
+      "title_id": "industrial-revolution",
+      "index": 3,
+      "heading": "Spinning and weaving",
+      "body": "Textile manufacture during the British Industrial Revolution was centred in south Lancashire and the towns on both sides of the Pennines in the United Kingdom. The main drivers of the Industrial Revolution were textile manufacturing, iron founding, steam power, oil drilling, the discovery of electricity and its many industrial applications, the telegraph and many others. Railways, steamboats, the telegraph and other innovations massively increased worker productivity and raised standards of living by greatly reducing time spent during travel, transportation and communications.\n\nBefore the 18th century, the manufacture of cloth was performed by individual workers, in the premises in which they lived and goods were transported around the country by packhorses or by river navigations and contour-following canals that had been constructed in the early 18th century. In the mid-18th century, artisans were inventing ways to become more productive. Silk, wool, and linen fabrics were being eclipsed by cotton which became the most important textile.\n\n![](industrial-revolution.i03)\n\nInnovations in carding and spinning enabled by advances in cast iron technology resulted in the creation of larger spinning mules and water frames. The machinery was housed in water-powered mills on streams. The need for more power stimulated the production of steam-powered beam engines, and rotative mill engines transmitting the power to line shafts on each floor of the mill. Surplus power capacity encouraged the construction of more sophisticated power looms working in weaving sheds. The scale of production in the mill towns round Manchester created a need for a commercial structure; for a cotton exchange and warehousing. The technology was used in woollen and worsted mills in the West Yorkshire and elsewhere.\n\n## The spinning jenny\n\nThe spinning jenny is a multi-spindle spinning frame, and was one of the key developments in the industrialisation of textile manufacturing during the early Industrial Revolution. It was invented in 1764–1765 by James Hargreaves in Stanhill, Oswaldtwistle, Lancashire in England.\n\nThe device reduced the amount of work needed to produce cloth, with a worker able to work eight or more spools at once. This grew to 120 as technology advanced. The yarn produced by the jenny was not very strong until Richard Arkwright invented the water-powered water frame. The spinning jenny helped to start the factory system of cotton manufacturing.\n\n![](industrial-revolution.i04)\n\n## James Watt's engine\n\nThe Watt steam engine was an invention of James Watt that was a driving force of the Industrial Revolution. According to the Encyclopædia Britannica, it was \"the first truly efficient steam engine\".\n\n## Coalbrookdale\n\nCoalbrookdale is a settlement in the Ironbridge Gorge and the Telford and Wrekin borough of Shropshire, England, of great significance in the history of iron ore smelting. It lies within the civil parish called The Gorge, and is sometimes referred to as a town.\n\nThis is where iron ore was first smelted by Abraham Darby using easily mined \"coking coal\". The coal was drawn from drift mines in the sides of the valley. As it contained far fewer impurities than normal coal, the iron it produced was of a superior quality. Along with many other industrial developments that were going on in other parts of the country, this discovery was a major factor in the growing industrialisation of Britain, which was to become known as the Industrial Revolution. Today, Coalbrookdale is home to the Ironbridge Institute, a partnership between the University of Birmingham and the Ironbridge Gorge Museum Trust offering postgraduate and professional development courses in heritage.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "industrial-revolution.i02",
+        "industrial-revolution.i03",
+        "industrial-revolution.i04"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "industrial-revolution.s03",
+        "industrial-revolution.s04",
+        "industrial-revolution.s05",
+        "industrial-revolution.s06"
+      ]
+    },
+    {
+      "id": "industrial-revolution.l04",
+      "title_id": "industrial-revolution",
+      "index": 4,
+      "heading": "The first railway",
+      "body": "The Liverpool and Manchester Railway (L&MR) was the first inter-city railway in the world. It opened on 15 September 1830 between the Lancashire towns of Liverpool and Manchester in England. It was also the first railway to rely exclusively on locomotives driven by steam power, with no horse-drawn traffic permitted at any time; the first to be entirely double track throughout its length; the first to have a true signalling system; the first to be fully timetabled; and the first to carry mail.\n\nTrains were hauled by company steam locomotives between the two towns, though private wagons and carriages were allowed. Cable haulage of freight trains was down the steeply-graded 1.26-mile (2.03 km) Wapping Tunnel to Liverpool Docks from Edge Hill junction. The railway was primarily built to provide faster transport of raw materials, finished goods, and passengers between the Port of Liverpool and the cotton mills and factories of Manchester and surrounding towns.\n\n![](industrial-revolution.i06)\n\nDesigned and built by George Stephenson, the line was financially successful, and influenced the development of railways across Britain in the 1830s. In 1845, the railway was absorbed by its principal business partner, the Grand Junction Railway (GJR), which in turn amalgamated the following year with the London and Birmingham Railway and the Manchester and Birmingham Railway to form the London and North Western Railway.\n\n## The Luddites\n\nThe Luddites were members of a 19th-century movement of English textile workers who protested against the usage of certain types of automated machinery owing to their concerns over worker pay, labour savings, child labour, working conditions, and output quality. They often destroyed production machines in organised raids. Members of the group referred to themselves as Luddites, self-described followers of \"Ned Ludd\", a legendary weaver whose name was used as a pseudonym in threatening letters to mill owners and government officials.\n\nThe Luddite movement began in Nottingham, England, and spread to the North West and Yorkshire between 1811 and 1816. Mill and factory owners took to shooting protesters, and the Luddites were eventually suppressed by legal and military force, which included execution and penal transportation of convicted members.\n\nMore recently the term has been adopted as a reference to those who are opposed to new technologies.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "industrial-revolution.i05",
+        "industrial-revolution.i06"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "industrial-revolution.s07",
+        "industrial-revolution.s08"
+      ]
+    },
+    {
+      "id": "industrial-revolution.l05",
+      "title_id": "industrial-revolution",
+      "index": 5,
+      "heading": "The Factory Acts",
+      "body": "The Factory Acts were a series of acts passed by the Parliament of the United Kingdom beginning in 1802 to regulate and improve the conditions of industrial employment. The early acts concentrated on regulating the hours of work and moral welfare of young children employed in cotton mills but were effectively unenforced until the Labour of Children, etc., in Factories Act 1833 (3 & 4 Will. 4. c. 103) established a professional Factory Inspectorate. The regulation of working hours was then extended to women by an act of Parliament in 1844.\n\nThe Factories Act 1847 (10 & 11 Vict. c. 29) (known as the Ten Hour Act), together with acts in 1850 and 1853 remedying defects in the 1847 act, met a long-standing and well-organised demand by the millworkers for a ten-hour day. The Factory Acts also included regulations for ventilation, hygienic practices, and machinery guarding in an effort to improve the working circumstances for mill children. Introduction of the ten-hour day proved to have none of the dire consequences predicted by its opponents, and its apparent success effectively ended theoretical objections to the principle of factory legislation; from the 1860s onwards more industries were brought within the Factory Acts.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "industrial-revolution.i07"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "industrial-revolution.s09"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "industrial-revolution.i01",
+      "title_id": "industrial-revolution",
+      "url": "http://10.0.2.2:8000/media/industrial-revolution/i01-8da7d47641.jpg",
+      "width": 1600,
+      "height": 1034,
+      "alt": "A Roberts loom in a weaving shed in the United Kingdom in 1835",
+      "kind": "painting",
+      "author": "Illustrator T. Allom, Engraver J. Tingle",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Powerloom_weaving_in_1835.jpg",
+      "credit_line": "Illustrator T. Allom, Engraver J. Tingle · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "industrial-revolution.i02",
+      "title_id": "industrial-revolution",
+      "url": "http://10.0.2.2:8000/media/industrial-revolution/i02-bc4c3ec92e.jpg",
+      "width": 1600,
+      "height": 1161,
+      "alt": "Early industrialised region at Barmen in the Wupper Valley, 1870 - painting by August von Wille",
+      "kind": "painting",
+      "author": "August von Wille †1887 (Scan: de:Benutzer:Morty)",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Barmen_(1870).jpg",
+      "credit_line": "August von Wille †1887 (Scan: de:Benutzer:Morty) · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "industrial-revolution.i03",
+      "title_id": "industrial-revolution",
+      "url": "http://10.0.2.2:8000/media/industrial-revolution/i03-8fdd3e4c96.jpg",
+      "width": 1600,
+      "height": 1321,
+      "alt": "A model of the spinning jenny in a museum in Wuppertal. Invented by James Hargreaves in 1764, the spinning jenny was one of the innovations that started the revolution.",
+      "kind": "other",
+      "author": "Markus Schweiß",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Spinning_jenny.jpg",
+      "credit_line": "Markus Schweiß · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "industrial-revolution.i04",
+      "title_id": "industrial-revolution",
+      "url": "http://10.0.2.2:8000/media/industrial-revolution/i04-d48c9eb0db.jpg",
+      "width": 1600,
+      "height": 1188,
+      "alt": "A Watt steam engine, invented by James Watt, who transformed the steam engine from a reciprocating motion that was used for pumping to a rotating motion suited to industrial applications;",
+      "kind": "art",
+      "author": "Nicolás Pérez",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Maquina_vapor_Watt_ETSIIM.jpg",
+      "credit_line": "Nicolás Pérez · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "industrial-revolution.i05",
+      "title_id": "industrial-revolution",
+      "url": "http://10.0.2.2:8000/media/industrial-revolution/i05-2e7f93d49d.jpg",
+      "width": 1600,
+      "height": 1293,
+      "alt": "A portrait depicting the opening of the Liverpool and Manchester Railway in 1830, the first inter-city railway in the world and which spawned Railway Mania due to its success",
+      "kind": "portrait",
+      "author": "A.B. Clayton",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Opening_Liverpool_and_Manchester_Railway.jpg",
+      "credit_line": "A.B. Clayton · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.35
+    },
+    {
+      "id": "industrial-revolution.i06",
+      "title_id": "industrial-revolution",
+      "url": "http://10.0.2.2:8000/media/industrial-revolution/i06-964ce6ef2d.jpg",
+      "width": 1600,
+      "height": 2112,
+      "alt": "Engraving of Ned Ludd, Leader of the Luddites, 1812",
+      "kind": "painting",
+      "author": "Unknown. 195 years since publication, copyright extinguished",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Luddite.jpg",
+      "credit_line": "Unknown. 195 years since publication, copyright extinguished · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "industrial-revolution.i07",
+      "title_id": "industrial-revolution",
+      "url": "http://10.0.2.2:8000/media/industrial-revolution/i07-3acc0febf2.png",
+      "width": 1600,
+      "height": 1096,
+      "alt": "Children at work in a cotton mill (mule spinning), England, 1835",
+      "kind": "painting",
+      "author": "Baines",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Baines_1835-Mule_spinning.png",
+      "credit_line": "Baines · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "industrial-revolution.s01",
+      "title": "Industrial Revolution (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Industrial_Revolution",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "industrial-revolution.s02",
+      "title": "British Agricultural Revolution (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Agricultural_Revolution",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "industrial-revolution.s03",
+      "title": "Textile manufacture during the British Industrial Revolution (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Textile_manufacture_during_the_British_Industrial_Revolution",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "industrial-revolution.s04",
+      "title": "Spinning jenny (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Spinning_jenny",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "industrial-revolution.s05",
+      "title": "Watt steam engine (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Watt_steam_engine",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "industrial-revolution.s06",
+      "title": "Coalbrookdale (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Coalbrookdale",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "industrial-revolution.s07",
+      "title": "Liverpool and Manchester Railway (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Liverpool_and_Manchester_Railway",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "industrial-revolution.s08",
+      "title": "Luddites (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Luddites",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "industrial-revolution.s09",
+      "title": "Factory Acts (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Factory_Acts",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}

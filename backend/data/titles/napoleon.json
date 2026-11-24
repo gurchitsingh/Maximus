@@ -1,0 +1,531 @@
+{
+  "id": "napoleon",
+  "kind": "topic",
+  "name": "Napoleon",
+  "subtitle": "1799 to 1815",
+  "poster_lines": [
+    "Napoleon"
+  ],
+  "group": "revolutions-empires",
+  "era": "modern",
+  "region": "europe",
+  "period_start": 1799,
+  "period_end": 1815,
+  "themes": [
+    "war",
+    "leadership",
+    "politics",
+    "law"
+  ],
+  "bg": "#1F2A44",
+  "tint": "#E2B65A",
+  "lettering": "brush",
+  "poster_image_id": null,
+  "hero_image_id": "napoleon.i01",
+  "brief": "From artillery officer to emperor of France.",
+  "linked_title_ids": [
+    "french-revolution",
+    "napoleon-bonaparte"
+  ],
+  "rank": 18,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "napoleon.l01",
+      "title_id": "napoleon",
+      "index": 1,
+      "heading": "From Corsica to emperor",
+      "body": "Napoleon Bonaparte (born Napoleone di Buonaparte; 15 August 1769 – 5 May 1821) was Emperor of the French from 18 May 1804 until his first abdication in 1814, with a brief restoration during the Hundred Days in 1815. He rose to prominence as a general during the French Revolution and led a series of military campaigns across Europe and the Middle East during the French Revolutionary and Napoleonic Wars. As a statesman, he implemented numerous legal and administrative reforms in France and Europe.\n\nBorn on the island of Corsica to a family of Italian origin, Napoleon moved to mainland France in 1779 and was commissioned as an officer in the French Royal Army in 1785. He supported the French Revolution in 1789 and promoted its cause in Corsica. He rose rapidly through the ranks after winning the siege of Toulon in 1793 and defeating royalist insurgents in Paris on 13 Vendémiaire in 1795. In 1796 he commanded a military campaign against the Austrians and their Italian allies in the War of the First Coalition, scoring decisive victories and becoming a national hero. He led an invasion of Egypt and Syria in 1798, which served as a springboard for his rise to political power. In November 1799 Napoleon engineered the Coup of 18 Brumaire against the French Directory and became First Consul of the Republic. He won the Battle of Marengo in 1800, which secured France's victory in the War of the Second Coalition, and in 1803 he sold the territory of Louisiana to the United States. In December 1804 Napoleon crowned himself Emperor of the French, further consolidating his power.\n\nThe breakdown of the Treaty of Amiens led to the War of the Third Coalition by 1805. Napoleon shattered the coalition with a decisive victory at the Battle of Austerlitz, which led to the dissolution of the Holy Roman Empire. In the War of the Fourth Coalition, Napoleon defeated Prussia at the Battle of Jena–Auerstedt in 1806, marched his Grande Armée into Eastern Europe, and defeated the Russians in 1807 at the Battle of Friedland. Seeking to extend his trade embargo against Britain, Napoleon invaded the Iberian Peninsula and installed his brother Joseph as King of Spain in 1808, provoking the Peninsular War. In 1809 the Austrians again challenged France in the War of the Fifth Coalition, during which Napoleon consolidated his dominance over Europe after winning the Battle of Wagram. In the summer of 1812 he launched an invasion of Russia. After forcing the Russians to abandon Moscow following the Battle of Borodino, Napoleon briefly occupied the city before conducting a catastrophic retreat of his army that winter. In 1813 Prussia and Austria joined Russia in the War of the Sixth Coalition, in which Napoleon was decisively defeated at the Battle of Leipzig. The coalition invaded France and captured Paris, forcing Napoleon to abdicate in April 1814. He was exiled to the Mediterranean island of Elba and the Bourbons were restored to power. Ten months later Napoleon escaped from Elba with around a thousand men and marched on Paris, reclaiming control of the country. His opponents responded by forming a Seventh Coalition, which defeated him at the Battle of Waterloo in June 1815. Napoleon was exiled to the remote island of Saint Helena in the South Atlantic, where he died of stomach cancer in 1821, aged 51.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "napoleon.i01"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "napoleon.s01"
+      ]
+    },
+    {
+      "id": "napoleon.l02",
+      "title_id": "napoleon",
+      "index": 2,
+      "heading": "From Corsica to emperor (continued)",
+      "body": "Since his death, Napoleon has maintained a prominent place in historical research and popular culture. He is considered one of the greatest military commanders in history, and Napoleonic tactics are still studied at military schools worldwide. His legacy endures through the legal and administrative reforms he enacted in France and Western Europe, most notably the Napoleonic Code. He established a system of public education, abolished the vestiges of feudalism, emancipated Jews and other religious minorities, abolished the Spanish Inquisition, enacted the principle of equality before the law for an emerging middle class, and centralized state power at the expense of religious authorities. His conquests also acted as a catalyst for political change and the development of nation-states. However, he remains controversial because of his role in wars that devastated Europe, his looting of conquered territories, and his mixed record on civil rights. He abolished the free press, ended directly elected representative government, exiled and imprisoned critics of his regime, reinstated slavery in French colonies, banned the entry of black people and mulattos into France, reduced the civil rights of women and children, reintroduced a hereditary monarchy and nobility, and violently repressed popular uprisings against his rule.\n\n## The coup of 18 Brumaire\n\nThe Coup of 18 Brumaire brought Napoleon Bonaparte to power as First Consul of the French First Republic. In the view of most historians, it ended the French Revolution and would soon lead to the coronation of Napoleon as Emperor of the French. This bloodless coup d'état overthrew the Directory, replacing it with the French Consulate. This occurred on 9 November 1799, which was 18 Brumaire, Year VIII, under the short-lived French Republican calendar system.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "napoleon.i02"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "napoleon.s01",
+        "napoleon.s02"
+      ]
+    },
+    {
+      "id": "napoleon.l03",
+      "title_id": "napoleon",
+      "index": 3,
+      "heading": "The Napoleonic Code",
+      "body": "The Napoleonic Code, officially the Civil Code of the French, is the French civil code established during the French Consulate in 1804 and still in force in France, although heavily and frequently amended since its inception. Although Napoleon himself was not directly involved in the drafting of the Code, as it was drafted by a commission of four eminent jurists, he chaired many of the commission's plenary sessions, and his support was crucial to its enactment.\n\nThe code, with its stress on clearly written and accessible law, was a major milestone in the abolition of the previous patchwork of feudal laws. Historian Robert Holtman regards it as one of the few documents that have influenced the whole world.\n\nThe Napoleonic Code was not the first legal code to be established in a European country with a civil-law legal system; it was preceded by the Codex Maximilianeus bavaricus civilis (Bavaria, 1756), the Allgemeines Landrecht (Prussia, 1794), and the West Galician Code (Galicia, then part of Austria, 1797). It was, however, the first modern legal code to be adopted with a pan-European scope, and it strongly influenced the law of many of the countries formed during and after the Napoleonic Wars. The Napoleonic Code influenced developing countries outside Europe attempting to modernize and defeudalize their countries through legal reforms, such as those in the Middle East, while in Latin America the Spanish and Portuguese had established their own versions of the civil code.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "napoleon.i03"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "napoleon.s03"
+      ]
+    },
+    {
+      "id": "napoleon.l04",
+      "title_id": "napoleon",
+      "index": 4,
+      "heading": "Austerlitz",
+      "body": "The Battle of Austerlitz was fought on Monday 2 December 1805, near Austerlitz (then in the Austrian Empire, now in the Czech Republic), being the decisive engagement of the War of the Third Coalition. The Grande Armée under the command of Emperor Napoleon I defeated a combined Russo-Austrian army. One force was an imperial Russian army under the command of Tsar Alexander I and General Mikhail Kutuzov, while the other comprised an imperial Austrian army under the command of Emperor Francis II. The battle was known contemporaneously as the Battle of the Three Emperors (after the three monarchs present on the field).\n\n![](napoleon.i05)\n\nThe battle is often cited by military historians as one of Napoleon's tactical masterpieces, in the same league as other historic engagements like Hannibal's Cannae (216 BC) or Alexander the Great's Gaugamela (331 BC). The military victory of Napoleon's Grande Armée at Austerlitz brought the War of the Third Coalition to an end, with the Peace of Pressburg signed by the French and Austrians later in the month. These achievements did not establish a lasting peace on the continent. Austerlitz had driven neither Russia nor Britain, whose armies protected Sicily from a French invasion, to settle.\n\nAfter eliminating an Austrian army during the Ulm campaign, French forces seized Vienna in November 1805. The Austrians avoided further conflict until the arrival of the Russians, who helped increase the allied numbers. Napoleon sent his army north in pursuit of the Allies, but then ordered his forces to retreat so he could feign a grave weakness to lure the Allies into thinking that they were facing a weak army, while it was in fact formidable. Napoleon gave every indication in the days preceding the engagement that the French army was in a pitiful state, even abandoning the dominant Pratzen Heights near Austerlitz. He deployed the French army below the Pratzen Heights and weakened his right flank, enticing the Allies to launch an assault there to roll up the French line. The French Emperor meanwhile hid the main army in dead ground (ground obscured from a particular vantage point). Napoleon's plan was based on the hope that Marshal Davout and his III Corps would arrive soon on their way from Vienna. A forced march by Davout plugged the gap left by Napoleon just in time. Davout's men stubbornly held their defensive positions under the onslaught of superior opponents. These positions represented both a natural and a fortified-structural barrier. The Allied deployment against the French right weakened the Allied centre on the Pratzen Heights, which was attacked by the IV Corps of Marshal Soult. Napoleon also exploited the weather: noticing the weakened Allied centre, he sent this corps just as the early morning mist – which contributed to the concealment of both Soult's corps and the Allied centre – was clearing. The mist at that moment had not cleared low enough to uncover Soult's advance. With the centre demolished, the French swept through both flanks and routed the Allies, which enabled the French to capture thousands of prisoners.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "napoleon.i04",
+        "napoleon.i05"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "napoleon.s04"
+      ]
+    },
+    {
+      "id": "napoleon.l05",
+      "title_id": "napoleon",
+      "index": 5,
+      "heading": "Austerlitz (continued)",
+      "body": "Remarkably, the pleiad of Russian military commanders nurtured by the great general Alexander Suvorov (1730–1800) – including Mikhail Kutuzov, Pyotr Bagration, Mikhail Miloradovich, Nikolay Kamensky, Sergei Kamensky, Peter Wittgenstein and Friedrich (Fyodor) von Buxhoeveden – was decisively defeated at Austerlitz. The blame for the Allied disaster initially lies with the supreme commander Emperor Alexander I of Russia, who, together with his Austrian chief of staff Franz von Weyrother, fell into Napoleon's \"trap\" at Austerlitz by accepting an encounter on a battlefield chosen by the French Emperor, then being encircled in the direction of the left Allied flank. The Allied disaster significantly shook the will of Emperor Francis to further resist Napoleon. France and Austria agreed to an armistice immediately, and the Treaty of Pressburg followed shortly after, on 26 December. Pressburg took Austria out of both the war and the Coalition while reinforcing the earlier treaties of Campo Formio and of Lunéville between the two powers. The treaty confirmed the Austrian loss of lands in Italy and Bavaria to France, and in Germany to Napoleon's German allies. It also imposed an indemnity of 40 million francs, equivalent to €106 million in 2025, on the Habsburgs and allowed the fleeing Russian troops free passage through hostile territories and back to their home soil. Critically, victory at Austerlitz permitted the creation of the Confederation of the Rhine, a collection of German states intended as a buffer zone between France and the eastern powers, Austria, Prussia, and Russia. The Confederation rendered the Holy Roman Empire virtually useless, so Francis dissolved the Holy Roman Empire in 1806, but remained as emperor of Austria. Prussian worries about the growing French influence in Central Europe led to the War of the Fourth Coalition in 1806.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "napoleon.s04"
+      ]
+    },
+    {
+      "id": "napoleon.l06",
+      "title_id": "napoleon",
+      "index": 6,
+      "heading": "The Continental System",
+      "body": "The Continental System or Continental Blockade was a large-scale embargo by French emperor Napoleon I against the British Empire from 21 November 1806 until 11 April 1814, during the Napoleonic Wars. Napoleon issued the Berlin Decree on 21 November 1806 in response to the naval blockade of the French coasts enacted by the British government on 16 May 1806. The embargo was applied intermittently, ending on 11 April 1814 after Napoleon's first abdication.\n\nAside from subduing Britain, the blockade was also intended to establish French industrial and commercial hegemony in Europe. Within the French Empire, the newly acquired territories and client states were subordinate to France itself, as there was a unified market within France (no internal barriers or tariffs) while economic distortions were maintained on the borders of the new territories.\n\nThe Berlin Decree forbade the import of British goods into any European country allied with or dependent upon France, and it installed the Continental System in Europe. All connections with Britain were to be cut, even mail. However, there was extensive smuggling, which made the Continental System an ineffective weapon of economic war. There was some damage to British trade, especially in 1808 and 1812, but British control of the oceans led to replacement trade with North and South America, as well as large scale smuggling in Europe particularly from Malta, which was used by the British to sell their goods to southern Italy.\n\nThe loss of Britain as a trading partner also hit the economies of France and its allies. Angry governments gained an incentive to ignore the Continental System, which led to the weakening of Napoleon's coalition. As Napoleon realised that extensive trade was going through Spain and Russia, he invaded those two countries. One portion of his forces were tied down in Spain (in which the Spanish War of Independence occurred simultaneously), and the other portion suffered severely in, and ultimately retreated from, Russia in 1812.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "napoleon.s05"
+      ]
+    },
+    {
+      "id": "napoleon.l07",
+      "title_id": "napoleon",
+      "index": 7,
+      "heading": "The march on Russia",
+      "body": "The French invasion of Russia, also known as the Russian campaign, the Second Polish War, and in Russia as the Patriotic War of 1812, was initiated by Napoleon with the aim of forcing the Russian Empire to comply with the continental blockade of the United Kingdom. Widely studied, Napoleon's incursion into Russia remains a focal point in military history, recognized as among the most devastating military endeavors to ever unfold. In the span of less than six months, the campaign claimed the lives of around a million soldiers and civilians.\n\n![](napoleon.i07)\n\nBeginning on 24 June 1812, the initial wave of the multinational Grande Armée crossed the Neman River, marking the entry from the Duchy of Warsaw into Russia. Employing extensive forced marches, Napoleon rapidly advanced his army of nearly half a million men through Western Russia, encompassing present-day Belarus, in a bid to dismantle the disparate Russian forces led by Barclay de Tolly and Pyotr Bagration totaling approximately 180,000–220,000 soldiers at that juncture. Despite suffering enormous losses from extreme weather conditions, disease, desertion and inadequate supplies, Napoleon captured Smolensk after a two-day battle in August 1812, although the main Russian armies escaped encirclement. The Russian army continued to retreat deeper into Russia, forcing Napoleon to rely on an increasingly overstretched supply system that was incapable of sustaining such a large army in the field.\n\n![](napoleon.i08)\n\nFollowing the Battle of Smolensk, Alexander I appointed Mikhail Kutuzov commander-in-chief of the Russian armies. The decision was widely welcomed by the army and the public, many of whom had become dissatisfied with Barclay de Tolly's continued retreats. Although Kutuzov enjoyed greater prestige than his predecessor, he largely maintained the same strategy of withdrawing deeper into Russia while preserving the army. In the fierce Battle of Borodino, located 110 kilometres (70 mi) west of Moscow, Napoleon failed to destroy the Russian army, while Kutuzov was unable to halt the French advance. At the Council at Fili, Kutuzov made the critical decision not to defend Moscow but to order a general withdrawal, prioritizing the preservation of the Russian army. On 14 September, Napoleon and his roughly 100,000-strong army took control of Moscow, only to discover it deserted and set ablaze by its military governor Fyodor Rostopchin. Remaining in Moscow for five weeks, Napoleon awaited a peace proposal that never materialized. Due to favorable weather conditions, Napoleon delayed his retreat and, hoping to secure supplies, began a different route westward than the one the army had devastated on the way there. However, after losing the Battle of Maloyaroslavets, he was compelled to retrace his initial path.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "napoleon.i06",
+        "napoleon.i07",
+        "napoleon.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "napoleon.s06"
+      ]
+    },
+    {
+      "id": "napoleon.l08",
+      "title_id": "napoleon",
+      "index": 8,
+      "heading": "The march on Russia (continued)",
+      "body": "As early November arrived, snowfall and frost complicated the retreat. Shortages of food and winter attire for the soldiers and provision for the horses, combined with guerilla warfare from Russian peasants and Cossacks, resulted in significant losses. More than half of the soldiers perished from starvation, exhaustion, typhus, and the unforgiving continental climate.\n\nDuring the Battle of Krasnoi, Napoleon faced a critical scarcity of cavalry and artillery due to severe snowfall and icy conditions. Employing a strategic maneuver, he deployed the Old Guard against Miloradovich, who obstructed the primary road to Krasny, effectively isolating him from the main army. Of the French commanders, Davout successfully broke through, whereas Eugene de Beauharnais and Michel Ney were forced to take a detour. Despite the consolidation of several retreating French corps with the main army, by the time he reached the Berezina river, Napoleon commanded only around 49,000 troops alongside 40,000 stragglers of little military significance. On 5 December, Napoleon departed from the army at Smorgonie in a sled and returned to Paris. Within a few days, an additional 20,000 people succumbed to the bitter cold and diseases carried by lice. Murat and Ney assumed command, pressing forward but leaving over 20,000 men in the hospitals of Vilnius. The remnants of the principal armies, disheartened, crossed the frozen Neman and the Bug.\n\n![](napoleon.i10)\n\nWhile exact figures remain elusive due to the absence of meticulous records, estimations varied and often included exaggerated counts, overlooking auxiliary troops. Napoleon's initial force upon entering Russia exceeded 450,000 men, over 150,000 horses, approximately 25,000 wagons, and nearly 1,400 artillery pieces. However, the surviving count dwindled to 120,000 men (excluding early deserters), signifying a staggering loss of approximately 380,000 lives (dead or missing/prisoner) throughout the campaign, half from diseases. This catastrophic outcome shattered Napoleon's once-untarnished reputation of invincibility. The great loss of cavalry would particularly affect him in the subsequent campaigns. Russian losses were nearly as large, with the campaign whittling down their field army to 40,000 effectives by the time they reached the Neman River. With the considerable resources of the French Empire at his disposal (more than Russia's), Napoleon quickly went about reconstituting his army, but in this moment of opportunity Austria and Prussia switched sides to that of Russia and Britain, greatly shifting the balance of power and triggering the War of the Sixth Coalition.\n\n## Leipzig\n\nThe Battle of Leipzig, also known as the Battle of the Nations, was fought from 16 to 19 October 1813 at Leipzig, Saxony. The Coalition armies of Austria, Prussia, Sweden, and Russia, led by Tsar Alexander I, Karl von Schwarzenberg, Gebhard von Blücher and Swedish Crown Prince Charles John, decisively defeated the Grande Armée of French Emperor Napoleon Bonaparte. Napoleon's army also contained Polish and Italian troops, as well as Germans from the Confederation of the Rhine (mainly Saxony and Württemberg). The battle was the culmination of the German campaign of 1813 and involved about 560,000 soldiers, 2,200 artillery pieces, the expenditure of 400,000 rounds of artillery ammunition, and 133,000 casualties. This made it the largest of the battles during the Napoleonic Wars and, arguably, the deciding battle of the wars.\n\nDecisively defeated, Napoleon was compelled to return to France while the Sixth Coalition kept up its momentum, dissolving the Confederation of the Rhine and invading France early the next year. Napoleon was forced to abdicate and was exiled to Elba in May 1814.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "napoleon.i09",
+        "napoleon.i10"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "napoleon.s06",
+        "napoleon.s07"
+      ]
+    },
+    {
+      "id": "napoleon.l09",
+      "title_id": "napoleon",
+      "index": 9,
+      "heading": "The Hundred Days",
+      "body": "The Hundred Days, commonly referred to as The War of The Seventh Coalition or Napoleon’s Hundred days marked the period between Napoleon's return from ten months of exile on the island of Elba to Paris on 20 March 1815 and the second restoration of King Louis XVIII on 8 July 1815 (a period of 110 days). This period saw the War of the Seventh Coalition, a commonly-used name for the Hundred Days, which includes the Waterloo campaign and the Neapolitan War (Naples and Austria) as well as several other minor campaigns. The phrase les Cent Jours (the Hundred Days) was first used by the prefect of Paris, Gaspard, count of Chabrol, in his speech welcoming the king back to Paris on 8 July.\n\nNapoleon returned while the Congress of Vienna was sitting. On 13 March, seven days before Napoleon reached Paris, the powers at the Congress of Vienna declared him an outlaw, and on 25 March, Austria, Prussia, Russia, and the United Kingdom, the four Great Powers and key members of the Seventh Coalition, bound themselves to put 150,000 men each into the field to end his rule. This set the stage for the last conflict of the Napoleonic Wars, the defeat of Napoleon at the Battle of Waterloo, the second restoration of the French kingdom, and the permanent exile of Napoleon to the distant island of Saint Helena, where he died in 1821.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "napoleon.s08"
+      ]
+    },
+    {
+      "id": "napoleon.l10",
+      "title_id": "napoleon",
+      "index": 10,
+      "heading": "Waterloo",
+      "body": "The Battle of Waterloo was fought on Sunday 18 June 1815, near Waterloo (then in the United Kingdom of the Netherlands, now in Belgium), being the last engagement with Napoleon I. The French Imperial Army under the command of Napoleon I was defeated by two armies of the Seventh Coalition. One was a British-led force with units from the United Kingdom, the Netherlands, Hanover, Brunswick, and Nassau, under the command of Field Marshal Arthur Wellesley, Duke of Wellington. The other comprised three corps of the Prussian army under Generalfeldmarschall Gebhard Leberecht von Blücher. The battle was known contemporaneously as the Battle of Mont Saint-Jean in France (after the hamlet of Mont-Saint-Jean) and La Belle Alliance in Prussia (\"the Beautiful Alliance\"; after the inn of La Belle Alliance).\n\nUpon Napoleon's return to power in March 1815, the beginning of the Hundred Days, many states that had previously opposed him formed the Seventh Coalition to oppose him again and hurriedly mobilised their armies. Wellington's and Blücher's armies were cantoned close to the northeastern border of France. Napoleon planned to attack them separately, before they could link up and invade France with other members of the coalition. On 16 June, Napoleon successfully attacked the bulk of the Prussian Army at the Battle of Ligny with his main force, while a small portion of the French Imperial Army contested the Battle of Quatre Bras to prevent the Anglo-allied army from reinforcing the Prussians. The Anglo-allied army held their ground at Quatre Bras but were prevented from reinforcing the Prussians, and on the 17th, the Prussians withdrew from Ligny in good order, while Wellington then withdrew in parallel with the Prussians northward to Waterloo on 17 June. Napoleon sent a third of his forces to pursue the Prussians, which resulted in the separate Battle of Wavre with the Prussian rear-guard on 18–19 June and prevented that French force from participating at Waterloo.\n\nUpon learning that the Prussian Army was able to support him, Wellington decided to offer battle on the Mont-Saint-Jean escarpment across the Brussels Road, near the village of Waterloo. Here he withstood repeated attacks by the French throughout the afternoon of 18 June and was eventually aided by the progressively arriving 50,000 Prussians who attacked the French flank and inflicted heavy casualties. In the evening, Napoleon assaulted the Anglo-allied line with his last reserves, the senior infantry battalions of the Imperial Guard. With the Prussians breaking through on the French right flank, the Anglo-allied army repulsed the Imperial Guard, and the French army was routed.\n\nWaterloo was the decisive engagement of the Waterloo campaign and Napoleon's last. It was the second-bloodiest single day battle of the Napoleonic Wars, after Borodino. According to Wellington, the battle was \"the nearest-run thing you ever saw in your life\". Napoleon abdicated four days later, and coalition forces entered Paris on 7 July. The defeat at Waterloo marked the end of Napoleon's Hundred Days return from exile. It precipitated Napoleon's second and definitive abdication as Emperor of the French and ended the First French Empire. It set a historical milestone between serial European wars and decades of relative peace, often referred to as the Pax Britannica. In popular culture, the phrase \"meeting one's Waterloo\" has become an expression for experiencing a catastrophic reversal or undoing.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "napoleon.i11"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "napoleon.s09"
+      ]
+    },
+    {
+      "id": "napoleon.l11",
+      "title_id": "napoleon",
+      "index": 11,
+      "heading": "Exile on Saint Helena",
+      "body": "Saint Helena (US:; US:) is a volcanic tropical island located in the South Atlantic Ocean, west of Africa. The nearest countries geographically are Angola and Namibia. The island is about 1,860 km (1,160 mi) west of Angola, 3,280 km (2,040 mi) east of Brazil and South America, and 4,000 km (2,500 mi) east of Rio de Janeiro, Brazil. It is one of the three constituent parts of Saint Helena, Ascension and Tristan da Cunha, a British overseas territory.\n\nSaint Helena measures about 16 by 8 km (10 by 5 mi) with a population of 4,439 in the 2021 census. It was named after Helena of Constantinople. It is one of the most remote major islands in the world and was uninhabited until the 16th century, when it was discovered by Portuguese explorers en route around the continent of Africa in 1502. For about the next four centuries, the island was an important stopover for ships between Europe and Asia sailing around the African continent, before the opening of the shortcut Suez Canal in 1869.\n\n![](napoleon.i13)\n\nThe primary method of reaching Saint Helena is by its airport. It is also served by cargo ships.\n\nSaint Helena is known for being the site of the second period of exile of Napoleon Bonaparte, from his defeat at the Battle of Waterloo in 1815 until his death six years later.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "napoleon.i12",
+        "napoleon.i13"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "napoleon.s10"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "napoleon.i01",
+      "title_id": "napoleon",
+      "url": "http://10.0.2.2:8000/media/napoleon/i01-9ff477d93a.jpg",
+      "width": 1600,
+      "height": 2668,
+      "alt": "The Emperor Napoleon in His Study at the Tuileries, 1812",
+      "kind": "other",
+      "author": "Jacques-Louis David",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg",
+      "credit_line": "Jacques-Louis David · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "napoleon.i02",
+      "title_id": "napoleon",
+      "url": "http://10.0.2.2:8000/media/napoleon/i02-084c39b1f0.jpg",
+      "width": 1600,
+      "height": 1705,
+      "alt": "Bonaparte at the Council of Five Hundred at Saint-Cloud by François Bouchot, 1840",
+      "kind": "other",
+      "author": "François Bouchot",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bouchot_-_Le_general_Bonaparte_au_Conseil_des_Cinq-Cents.jpg",
+      "credit_line": "François Bouchot · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "napoleon.i03",
+      "title_id": "napoleon",
+      "url": "http://10.0.2.2:8000/media/napoleon/i03-3a0263730e.jpg",
+      "width": 1600,
+      "height": 1049,
+      "alt": "The Napoleonic Code in the Historical Museum of the Palatinate in Speyer",
+      "kind": "other",
+      "author": "DerHexer",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Speyer,_Historical_Museum_of_the_Palatinate_-_Code_civil_des_Fran%C3%A7ais.jpg",
+      "credit_line": "DerHexer · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "napoleon.i04",
+      "title_id": "napoleon",
+      "url": "http://10.0.2.2:8000/media/napoleon/i04-61e3309585.jpg",
+      "width": 1600,
+      "height": 793,
+      "alt": "Napoleon at the Battle of Austerlitz, by François Gérard, 1805",
+      "kind": "other",
+      "author": "François Gérard",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:La_bataille_d%27Austerlitz._2_decembre_1805_(Fran%C3%A7ois_G%C3%A9rard).jpg",
+      "credit_line": "François Gérard · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "napoleon.i05",
+      "title_id": "napoleon",
+      "url": "http://10.0.2.2:8000/media/napoleon/i05-f575875306.jpg",
+      "width": 1600,
+      "height": 1368,
+      "alt": "Location within Europe",
+      "kind": "map",
+      "author": "Alexrk2",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Europe_relief_laea_location_map.jpg",
+      "credit_line": "Alexrk2 · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "napoleon.i06",
+      "title_id": "napoleon",
+      "url": "http://10.0.2.2:8000/media/napoleon/i06-3c01999249.jpg",
+      "width": 1600,
+      "height": 1122,
+      "alt": "IV corps of the Grande Armeé in the invasion of Russia (1812)",
+      "kind": "other",
+      "author": "Albrecht Adam",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:IV_corpo_durante_la_campagna_di_Russia.jpg",
+      "credit_line": "Albrecht Adam · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "napoleon.i07",
+      "title_id": "napoleon",
+      "url": "http://10.0.2.2:8000/media/napoleon/i07-c1ff683fad.jpg",
+      "width": 1600,
+      "height": 1030,
+      "alt": "The end of Borodino battle",
+      "kind": "other",
+      "author": "Vasily Vereshchagin",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%BE%D0%BD%D0%B5%D1%86_%D0%91%D0%BE%D1%80%D0%BE%D0%B4%D0%B8%D0%BD%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B1%D0%BE%D1%8F.jpg",
+      "credit_line": "Vasily Vereshchagin · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "napoleon.i08",
+      "title_id": "napoleon",
+      "url": "http://10.0.2.2:8000/media/napoleon/i08-d5b4406652.jpg",
+      "width": 1600,
+      "height": 1105,
+      "alt": "Retreat of the French Grand Army from Moscow, intercepted by Russian Cossack, 1812. The Inscribed to the Wisdom, Policy & Valour, of the Russian Government & Army. // By Edwd Orme.",
+      "kind": "other",
+      "author": "artists: del. Atkinson, John Augustus (1775-1831 or 1833) sc. Dubourg, M. (19th century)",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Retreat_of_Napoleon_Army_from_Moscow_1812.jpg",
+      "credit_line": "artists: del. Atkinson, John Augustus (1775-1831 or 1833) sc. Dubourg, M. (19th century) · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "napoleon.i09",
+      "title_id": "napoleon",
+      "url": "http://10.0.2.2:8000/media/napoleon/i09-491a1ef86c.png",
+      "width": 1600,
+      "height": 1067,
+      "alt": ".mw-parser-output .legend{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .legend-color{display:inline-block;min-width:1.25em;height:1.25em;line-height:1.25;margin:1px…",
+      "kind": "other",
+      "author": "User:Sodacan, wheel from File:Coat of Arms of Ernest August, Duke of Brunswick-Lüneburg (1661-1692).svg",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Banner_of_the_Electorate_of_Mainz.svg",
+      "credit_line": "User:Sodacan, wheel from File:Coat of Arms of Ernest August, Duke of Brunswick-Lüneburg (1661-1692).svg · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "napoleon.i10",
+      "title_id": "napoleon",
+      "url": "http://10.0.2.2:8000/media/napoleon/i10-4363d27d0a.jpg",
+      "width": 1600,
+      "height": 833,
+      "alt": ".mw-parser-output .legend{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .legend-color{display:inline-block;min-width:1.25em;height:1.25em;line-height:1.25;margin:1px…",
+      "kind": "other",
+      "author": "Vladimir Moshkov",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:MoshkovVI_SrazhLeypcigomGRM.jpg",
+      "credit_line": "Vladimir Moshkov · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "napoleon.i11",
+      "title_id": "napoleon",
+      "url": "http://10.0.2.2:8000/media/napoleon/i11-3924f57cba.png",
+      "width": 1600,
+      "height": 730,
+      "alt": ".mw-parser-output .legend{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output .legend-color{display:inline-block;min-width:1.25em;height:1.25em;line-height:1.25;margin:1px…",
+      "kind": "other",
+      "author": "William Sadler",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Battle_of_Waterloo_1815.PNG",
+      "credit_line": "William Sadler · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "napoleon.i12",
+      "title_id": "napoleon",
+      "url": "http://10.0.2.2:8000/media/napoleon/i12-ae30bed404.png",
+      "width": 1600,
+      "height": 1297,
+      "alt": "Topographic map of the British island of Saint Helena.",
+      "kind": "map",
+      "author": "Oona Räisänen (Mysid)",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Topographic_map_of_Saint_Helena-en.svg",
+      "credit_line": "Oona Räisänen (Mysid) · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "napoleon.i13",
+      "title_id": "napoleon",
+      "url": "http://10.0.2.2:8000/media/napoleon/i13-af89cb7afe.png",
+      "width": 1600,
+      "height": 1600,
+      "alt": "Location of XY (see filename) on the globe.",
+      "kind": "map",
+      "author": "United_Kingdom_on_the_globe_(Saint_Helena,_Ascension_and_Tristan_da_Cunha_special)_(Africa_centered).svg: TUBS derivative work: RaviC",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Saint_Helena_on_the_Globe_(in_the_United_Kingdom).svg",
+      "credit_line": "United_Kingdom_on_the_globe_(Saint_Helena,_Ascension_and_Tristan_da_Cunha_special)_(Africa_centered).svg: TUBS derivative work: RaviC · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "napoleon.s01",
+      "title": "Napoleon (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Napoleon",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "napoleon.s02",
+      "title": "Coup of 18 Brumaire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Coup_of_18_Brumaire",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "napoleon.s03",
+      "title": "Napoleonic Code (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Napoleonic_Code",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "napoleon.s04",
+      "title": "Battle of Austerlitz (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Austerlitz",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "napoleon.s05",
+      "title": "Continental System (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Continental_System",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "napoleon.s06",
+      "title": "French invasion of Russia (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/French_invasion_of_Russia",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "napoleon.s07",
+      "title": "Battle of Leipzig (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Leipzig",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "napoleon.s08",
+      "title": "Hundred Days (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Hundred_Days",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "napoleon.s09",
+      "title": "Battle of Waterloo (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Waterloo",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "napoleon.s10",
+      "title": "Saint Helena (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Saint_Helena",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}

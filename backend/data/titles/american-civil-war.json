@@ -1,0 +1,647 @@
+{
+  "id": "american-civil-war",
+  "kind": "topic",
+  "name": "American Civil War",
+  "subtitle": "1861 to 1865",
+  "poster_lines": [
+    "AMERICAN",
+    "CIVIL WAR"
+  ],
+  "group": "wars-space",
+  "era": "modern",
+  "region": "americas",
+  "period_start": 1861,
+  "period_end": 1865,
+  "themes": [
+    "war",
+    "politics",
+    "society",
+    "leadership"
+  ],
+  "bg": "#26324D",
+  "tint": "#9DB2D6",
+  "lettering": "stencil",
+  "poster_image_id": null,
+  "hero_image_id": "american-civil-war.i01",
+  "brief": "A nation splits over slavery and fights for four years.",
+  "linked_title_ids": [],
+  "rank": 21,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "american-civil-war.l01",
+      "title_id": "american-civil-war",
+      "index": 1,
+      "heading": "A nation at war with itself",
+      "body": "The American Civil War (April 12, 1861 – May 26, 1865; also known by other names) was fought in the United States between the Union (\"the North\") and the Confederacy (\"the South\"), which was formed in 1861 by Southern states that had seceded from the Union to preserve the institution of slavery. The South saw slavery as threatened because of the election of Abraham Lincoln as president in 1860, the abolitionist movement, and the growing electoral power of the North. The war ended with a Union victory, dissolution of the Confederacy and the national abolition of slavery, freeing four million African Americans.\n\n![](american-civil-war.i03)\n\nDecades of controversy over slavery came to a head when Abraham Lincoln, a Republican who opposed slavery's expansion into the western territories, won the 1860 presidential election. Seven slave states in the South responded to Lincoln's victory by seceding from the United States and forming the Confederate States. The Confederate States seized United States forts and other federal assets in the South. The war began on April 12, 1861, when the Confederate States bombarded Fort Sumter in South Carolina. A wave of enthusiasm for war swept over the North and South, as military recruitment soared. Four more Southern states seceded after the war began and, led by its president Jefferson Davis, the Confederacy comprised eleven states, containing a third of the US population. Four years of intense combat, mostly in the South, ensued.\n\nDuring 1861–1862 in the western theater, the Union made permanent gains, capturing New Orleans, the largest city in the South. In the eastern theater the conflict was inconclusive. The abolition of slavery became a Union war goal on January 1, 1863, when Lincoln issued the Emancipation Proclamation, which declared all slaves in rebel states to be free, applying to more than 3.5 million of the 4 million enslaved people in the country. To the west, the Union first destroyed the Confederate river navy by the summer of 1862, then much of its western armies. The successful 1863 Union siege of Vicksburg split the Confederacy in two at the Mississippi River, while Confederate general Robert E. Lee's incursion north failed at the Battle of Gettysburg. Union general Ulysses S. Grant's western successes led Lincoln to promote him to command of all Union armies in 1864.\n\n![](american-civil-war.i04)\n\nCoordinating with an ever-tightening naval blockade of Confederate ports, the Union army marshaled resources and the manpower to attack the Confederate States army from all directions. That led to the fall of Atlanta in 1864 to Union general William Tecumseh Sherman, followed by his March to the Sea, which culminated in his taking Savannah. The last significant battles raged around the ten-month siege of Petersburg, gateway to the Confederate capital of Richmond. The Confederates abandoned Richmond, and on April 9, 1865, Lee surrendered to Grant following the Battle of Appomattox Court House, setting in motion the end of the war. Lincoln lived to see this victory but was shot by an assassin on April 14, dying the next day.\n\nBy the end of the war, much of the South's infrastructure had been destroyed. The Confederacy collapsed, the Thirteenth Amendment abolished slavery (except as punishment for a crime) and four million enslaved black people were freed.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "american-civil-war.i02",
+        "american-civil-war.i03",
+        "american-civil-war.i04"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-civil-war.s01"
+      ]
+    },
+    {
+      "id": "american-civil-war.l02",
+      "title_id": "american-civil-war",
+      "index": 2,
+      "heading": "How the war began",
+      "body": "The origins of the American Civil War were rooted in the desire of the Southern states to preserve and expand the institution of slavery. Historians in the 21st century overwhelmingly agree on the centrality of slavery in the conflict, but they disagree on the North's reasons for refusing to allow the Southern states to secede. The negationist Lost Cause ideology denies that slavery was the principal cause of the secession, a view disproven by historical evidence, including the seceding states' own secession documents. After leaving the Union, Mississippi issued a declaration stating, \"Our position is thoroughly identified with the institution of slavery—the greatest material interest of the world.\"\n\nBackground factors in the run up to the Civil War were partisan politics, abolitionism, nullification versus secession, Southern and Northern nationalism, expansionism, economics, and modernization in the antebellum period. As a panel of historians emphasized in 2011, \"while slavery and its various and multifaceted discontents were the primary cause of disunion, it was disunion itself that sparked the war.\"\n\nAbraham Lincoln won the 1860 presidential election as an opponent of the extension of slavery into the U.S. territories. His victory triggered declarations of secession by seven slave states of the Deep South, all of whose riverfront or coastal economies were based on cotton that was cultivated by slave labor. They formed the Confederate States of America after Lincoln was elected in November 1860 but before he took office in March 1861. Nationalists in the North and \"Unionists\" in the South refused to accept the declarations of secession. No foreign government ever recognized the Confederacy. The refusal of the U.S. government, under President James Buchanan, to relinquish its forts that were in territory claimed by the Confederacy proved to be a major turning point leading to war. The war itself began on April 12, 1861, when Confederate forces bombarded the Union's Fort Sumter in the harbor of Charleston, South Carolina.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "american-civil-war.i05"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-civil-war.s02"
+      ]
+    },
+    {
+      "id": "american-civil-war.l03",
+      "title_id": "american-civil-war",
+      "index": 3,
+      "heading": "Fort Sumter",
+      "body": "The Battle of Fort Sumter (also the Attack on Fort Sumter or the Fall of Fort Sumter) (April 12–13, 1861) was the bombardment of Fort Sumter near Charleston, South Carolina, by the South Carolina militia. It ended with the surrender of the fort by the United States Army, beginning the American Civil War.\n\nFollowing the declaration of secession by South Carolina on December 20, 1860, its authorities demanded that the U.S. Army abandon its facilities in Charleston Harbor. On December 26, Major Robert Anderson of the U.S. Army surreptitiously moved his small command from the vulnerable Fort Moultrie on Sullivan's Island to Fort Sumter, a substantial fortress built on an island controlling the entrance of Charleston Harbor. An attempt by U.S. President James Buchanan to reinforce and resupply Anderson using the unarmed merchant ship Star of the West failed when it was fired upon by shore batteries on January 9, 1861. The ship was hit three times, which caused no major damage but kept the supplies from reaching Anderson.\n\nDuring the early months of 1861, the situation around Fort Sumter increasingly began to resemble a siege. In March, Brigadier General P. G. T. Beauregard, the first general officer of the newly formed Confederate States Army, was placed in command of Confederate forces in Charleston. Beauregard energetically directed the strengthening of batteries around Charleston harbor aimed at Fort Sumter. Conditions in the fort deteriorated due to shortages of men, food, and supplies as the Union soldiers rushed to complete the installation of additional guns.\n\nThe resupply of Fort Sumter became the first crisis of the administration of U.S. President Abraham Lincoln, inaugurated March 4, 1861, following his victory in the election of November 6, 1860. He notified the Governor of South Carolina, Francis Wilkinson Pickens, that he was sending supply ships, which resulted in an ultimatum from the Confederate government for the immediate evacuation of Fort Sumter, which Major Anderson refused. Beginning at 4:30 a.m. on April 12, the Confederates bombarded the fort from artillery batteries surrounding the harbor. Although the Union garrison returned fire, they were significantly outgunned and, after 34 hours, Major Anderson agreed to evacuate. There were no deaths on either side as a direct result of this engagement, although a gun explosion during the surrender ceremonies on April 14 caused the death of two U.S. Army soldiers. The event often regarded as the \"First Bloodshed of the Civil War\" was the Baltimore riot of 1861, one week later.\n\nFollowing the battle, there was widespread support from both North and South for further military action. Lincoln's immediate call for 75,000 volunteers to suppress the rebellion resulted in an additional four Southern states also declaring their secession and joining the Confederacy. The battle is usually recognized as the first of the American Civil War.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "american-civil-war.i05"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-civil-war.s03"
+      ]
+    },
+    {
+      "id": "american-civil-war.l04",
+      "title_id": "american-civil-war",
+      "index": 4,
+      "heading": "Bull Run",
+      "body": "The First Battle of Bull Run, called the Battle of First Manassas by Confederate forces, was the first major battle of the American Civil War. The battle was fought on July 21, 1861, in Prince William County, Virginia, just north of what is now the city of Manassas and about thirty miles west-southwest of Washington, D.C. The Union army was slow in positioning itself, allowing Confederate reinforcements time to arrive by rail. Each side had about 18,000 poorly trained and poorly led troops. The battle was a Confederate victory and was followed by a disorganized post-battle retreat of the Union forces.\n\n![](american-civil-war.i07)\n\nJust months after the start of the war at Fort Sumter, the northern public clamored for a march against the Confederate capital of Richmond, Virginia, which was expected to bring an early end to the Confederacy. Yielding to political pressure, Brigadier General Irvin McDowell led his unseasoned Union army across Bull Run against the equally inexperienced Confederate Army of Brigadier General P. G. T. Beauregard, whose forces were camped near Manassas Junction. McDowell's ambitious plan for a surprise flank attack on the Confederate left was poorly executed, although the Confederates, who had been planning to attack the Union left flank, found themselves at an initial disadvantage.\n\n![](american-civil-war.i08)\n\nConfederate reinforcements under Brigadier General Joseph E. Johnston arrived from the Shenandoah Valley by railroad, and the course of the battle quickly changed. A brigade of Virginians under a relatively unknown brigadier general from the Virginia Military Institute, Thomas J. Jackson, stood its ground, which resulted in Jackson receiving his famous nickname, \"Stonewall\". The Confederates launched a strong counterattack, and as the Union troops began withdrawing under fire, many panicked and the retreat turned into a rout. McDowell's men frantically ran without order in the direction of Washington, D.C.\n\nBoth armies were sobered by the fierce fighting and the many casualties and realized that the war was going to be much longer and bloodier than either had anticipated. The First Battle of Bull Run highlighted many of the problems and deficiencies that were typical of the first year of the war. Units were committed piecemeal, attacks were frontal, infantry failed to protect exposed artillery, tactical intelligence was minimal, and neither commander was able to employ his whole force effectively. McDowell, with 35,000 men, could commit only about 18,000, and the combined Confederate forces, with about 32,000 men, also committed 18,000.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "american-civil-war.i06",
+        "american-civil-war.i07",
+        "american-civil-war.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-civil-war.s04"
+      ]
+    },
+    {
+      "id": "american-civil-war.l05",
+      "title_id": "american-civil-war",
+      "index": 5,
+      "heading": "Antietam",
+      "body": "The Battle of Antietam (an-TEE-təm), also called the Battle of Sharpsburg (particularly in the Southern United States) took place during the American Civil War on September 17, 1862, near Antietam Creek and Sharpsburg, Maryland, between the Army of Northern Virginia, led by Confederate General Robert E. Lee, and the Army of the Potomac, led by Union Major General George B. McClellan. Part of the Maryland Campaign, it was the first field army–level engagement in the Eastern Theater of the American Civil War to take place on Union soil. It remains the bloodiest day in American history, with a tally of 22,726 dead, wounded, or missing on both sides. Although the Union army suffered heavier casualties than the Confederates, the battle was a major turning point in the Union's favor.\n\nAfter pursuing Lee into Maryland, McClellan and the Union army launched attacks against Lee's army who were in defensive positions behind Antietam Creek. At dawn on September 17, Major General Joseph Hooker's corps mounted a powerful assault on Lee's left flank. Attacks and counterattacks swept across Miller's Cornfield, and fighting swirled around the Dunker Church. Union assaults against the Sunken Road eventually pierced the Confederate center but the Federal advantage was not followed up. In the afternoon, Union Major General Ambrose Burnside's corps entered the action, capturing a stone bridge over Antietam Creek and advancing against the Confederate right. At a crucial moment, Confederate Major General A. P. Hill's division arrived from Harpers Ferry and launched a surprise counterattack, driving back Burnside and ending the battle. Although outnumbered two-to-one, Lee committed his entire force, while McClellan sent in less than three-quarters of his army, enabling Lee to fight the Federals to a standstill. During the night, both armies consolidated their lines. In spite of crippling casualties, Lee continued to skirmish with McClellan throughout September 18, while removing his battered army south of the Potomac River.\n\nMcClellan successfully turned Lee's invasion back, making the battle a strategic Union victory. From a tactical standpoint, the battle was somewhat inconclusive; the Union army successfully repelled the Confederate invasion, but suffered heavier casualties and failed to defeat Lee's army outright. President Abraham Lincoln, unhappy with McClellan's general pattern of over-caution and his failure to pursue the retreating Lee, relieved McClellan of command in November.\n\nNevertheless, the strategic accomplishment was a significant turning point in the war in favor of the Union due in large part to its political ramifications: the battle's result gave Lincoln the political confidence to issue the Emancipation Proclamation. This effectively discouraged the British and French governments from recognizing the Confederacy, as neither power wished to give the appearance of supporting slavery.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "american-civil-war.i09"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-civil-war.s05"
+      ]
+    },
+    {
+      "id": "american-civil-war.l06",
+      "title_id": "american-civil-war",
+      "index": 6,
+      "heading": "The Emancipation Proclamation",
+      "body": "The Emancipation Proclamation, officially Proclamation 95, was a presidential proclamation and executive order issued by United States president Abraham Lincoln on January 1, 1863, during the American Civil War. The Proclamation changed the legal status of more than 3.5 million enslaved African Americans in the secessionist Confederate states from enslaved to free. As soon as slaves escaped the control of their enslavers, either by fleeing to Union lines or through the advance of federal troops, they were permanently free. In addition, the Proclamation allowed for former slaves to \"be received into the armed service of the United States\". The Emancipation Proclamation played a significant part in the end of slavery in the United States.\n\nOn September 22, 1862, Lincoln issued the Preliminary Emancipation Proclamation (Proclamation 93). Its third paragraph begins:\n\nThat on the first day of January in the year of our Lord, one thousand eight hundred and sixty-three, all persons held as slaves within any State, or designated part of a State, the people whereof shall then be in rebellion against the United States shall be then, thenceforward, and forever free;...\n\nOn January 1, 1863, Lincoln issued the Final Emancipation Proclamation. It stated:\n\nNow, therefore I, Abraham Lincoln, President of the United States, by virtue of the power in me vested as Commander-in-Chief, of the Army and Navy of the United States in time of actual armed rebellion against the authority and government of the United States, and as a fit and necessary war measure for suppressing said rebellion, do... order and designate as the States and parts of States wherein the people thereof respectively, are this day in rebellion against the United States, the following, to wit:\n\nLincoln then listed the ten states—of the eleven that had seceded—still in rebellion, Tennessee then being under Union control, and continued:\n\nAnd by virtue of the power, and for the purpose aforesaid, I do order and declare that all persons held as slaves within said designated States, and parts of States, are, and henceforward shall be free.... And I further declare and make known, that such persons of suitable condition, will be received into the armed service of the United States.... And upon this act, sincerely believed to be an act of justice, warranted by the Constitution, upon military necessity, I invoke the considerate judgment of mankind, and the gracious favor of Almighty God.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "american-civil-war.i10"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-civil-war.s06"
+      ]
+    },
+    {
+      "id": "american-civil-war.l07",
+      "title_id": "american-civil-war",
+      "index": 7,
+      "heading": "The Emancipation Proclamation (continued)",
+      "body": "The Proclamation applied to more than 3.5 million of the 4 million enslaved people in the country, though it excluded states not in rebellion, as well as parts of Virginia under Union control and Louisiana parishes thought to be pro-Union. Around 25,000 to 75,000 were immediately emancipated in those regions of the Confederacy where the US Army was already in place. It could not be enforced in the areas still in rebellion, but, as the Union army took control of Confederate regions, the Proclamation provided the legal framework for the liberation of more than three and a half million enslaved people in those regions by the end of the war. The Emancipation Proclamation outraged white Southerners and their sympathizers, who saw it as the beginning of a race war. It energized abolitionists, and undermined those Europeans who wanted to intervene to help the Confederacy. The Proclamation lifted the spirits of African Americans, both free and enslaved. It encouraged many to escape from slavery and flee toward Union lines, where many joined the Union Army. The Emancipation Proclamation became a historic document because it \"would redefine the Civil War, turning it from a struggle to preserve the Union to one focused on ending slavery, and set a decisive course for how the nation would be reshaped after that historic conflict.\"\n\nThe Emancipation Proclamation was never challenged in court. To ensure the abolition of slavery in all of the U.S., Lincoln also mandated that Reconstruction plans for Southern states require them to enact laws abolishing slavery (which occurred during the war in Tennessee, Arkansas, and Louisiana); Lincoln encouraged border states to adopt abolition (which occurred during the war in Maryland, Missouri, and West Virginia) and pushed for passage of the 13th Amendment. The Senate passed the 13th Amendment by the necessary two-thirds vote on April 8, 1864; the House of Representatives did the same on January 31, 1865; and the required ratification by three-fourths of the states was completed on December 6, 1865. The amendment made slavery and involuntary servitude unconstitutional, \"except as a punishment for crime...\".",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-civil-war.s06"
+      ]
+    },
+    {
+      "id": "american-civil-war.l08",
+      "title_id": "american-civil-war",
+      "index": 8,
+      "heading": "Gettysburg",
+      "body": "The Battle of Gettysburg (locally) (July 1–3, 1863) was fought in the American Civil War between the Union and Confederate armies in and around Gettysburg, Pennsylvania. The battle is widely considered the turning point of the war, leading to the preservation of the Union and freedom from slavery. The Battle of Gettysburg was the bloodiest battle of both the Civil War and of any battle in American military history up to that time, claiming over 50,000 combined casualties. Union major general George Meade's Army of the Potomac defeated attacks by Confederate general Robert E. Lee's Army of Northern Virginia, halting Lee's invasion of the North and forcing his retreat.\n\n![](american-civil-war.i12)\n\nAfter his success in the Battle of Chancellorsville, in May 1863, Lee led his forces through the Shenandoah Valley to begin the Gettysburg campaign, his second attempt to invade the North. With Lee's army in high spirits, he intended to shift the focus of the summer campaign from war-ravaged Northern Virginia in the hopes of penetrating as far as Harrisburg or Philadelphia, which he hoped would convince northern politicians to end the war. President Abraham Lincoln initially prodded Major General Joseph Hooker into pursuing Lee, then relieved him of command just three days before the Battle of Gettysburg commenced, replacing him with Meade.\n\nOn July 1, 1863, as Lee's forces moved on Gettysburg in the hopes of destroying the Union army, the two armies encountered each other. Low ridges to the northwest of Gettysburg were initially defended by a Union cavalry division under Brigadier General John Buford, soon reinforced by two corps of Union infantry. Two large Confederate corps assaulted them from the northwest and north, however, collapsing the hastily developed Union lines, leading them to retreat through the streets of Gettysburg to the hills just south of the city. On the second day of battle, on July 2, the Union line was laid out in a defensive formation resembling a fishhook. In the late afternoon, Lee launched a heavy assault on the Union's left flank, leading to fierce fighting at Little Round Top, the Wheatfield, Devil's Den, and the Peach Orchard. On the Union's right flank, Confederate demonstrations escalated into full-scale assaults on Culp's Hill and Cemetery Hill. Despite incurring significant losses, Union forces held their lines.\n\n![](american-civil-war.i13)\n\nOn the third day of battle, July 3, fighting resumed on Culp's Hill, and cavalry battles raged to the east and south of Gettysburg. The main engagement was Pickett's Charge, a Confederate infantry assault of approximately 12,000 troops, who attacked the center of the Union line at Cemetery Ridge. Crossing nearly a mile of open ground, they were ravaged by Union rifle and artillery fire, but briefly reached the ridge before being repulsed by bayonet. The following day, on the Fourth of July, Lee led his Confederate troops on the torturous retreat from the North. Between 46,000 and 51,000 soldiers from both armies were casualties in the three-day Battle of Gettysburg, the most in any battle in American history up to that time.\n\nOn November 19, Lincoln traveled to Gettysburg, where he spoke at a ceremony dedicating Gettysburg National Cemetery, which honored the fallen Union soldiers and redefined the purpose of the Civil War in his famed Gettysburg Address, a 271-word speech that has endured as one of the most famous in American history.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "american-civil-war.i11",
+        "american-civil-war.i12",
+        "american-civil-war.i13"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-civil-war.s07"
+      ]
+    },
+    {
+      "id": "american-civil-war.l09",
+      "title_id": "american-civil-war",
+      "index": 9,
+      "heading": "The Gettysburg Address",
+      "body": "The Gettysburg Address is a dedication speech delivered by Abraham Lincoln, the 16th U.S. president, following the Battle of Gettysburg during the American Civil War. The speech has come to be viewed as one of the most famous, enduring, and historically significant speeches in American history.\n\nLincoln delivered the speech on the afternoon of November 19, 1863, during a formal dedication of Soldiers' National Cemetery, now known as Gettysburg National Cemetery, on the grounds where the Battle of Gettysburg had been fought four and a half months earlier, between July 1 and July 3, 1863, in Gettysburg, Pennsylvania. In the battle, Union army soldiers successfully repelled and defeated Confederate forces in what proved to be the Civil War's deadliest and most decisive battle, resulting in more than 50,000 Confederate and Union army casualties in a Union victory that altered the war's course in the Union's favor.\n\nThe historical and enduring significance and fame of the Gettysburg Address is at least partly attributable to its brevity; it has only 271 words and was read in less than two minutes before approximately 15,000 people who had gathered to commemorate the sacrifice of the Union soldiers, over 3,000 of whom had been killed during the three-day battle. Lincoln began with a reference to the Declaration of Independence of 1776; \"Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal.\"\n\nHe said that the Civil War was \"testing whether that nation, or any nation so conceived and so dedicated, can long endure\". Lincoln then extolled the sacrifices of the thousands who had died in the Battle of Gettysburg in defense of those principles, and he argued that their sacrifice should elevate the nation's commitment to ensuring the Union prevailed and the nation endured, famously saying \"that these dead shall not have died in vain—that this nation, under God, shall have a new birth of freedom—and that government of the people, by the people, for the people, shall not perish from the earth.\"\n\nDespite the historical significance and fame that the speech ultimately obtained, Lincoln was scheduled to give only brief dedicatory remarks, following the main oration given by the elder statesman Edward Everett. Thus, Lincoln's closing remarks consumed a very small fraction of the multi-hour event, and was therefore not immediately recognized as particularly significant. Over time, it came to be widely viewed as one of the greatest and most influential statements ever delivered on the American national purpose, and it came to be seen as one of the most prominent examples of the successful use of the English language and rhetoric to advance a political cause.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "american-civil-war.i14"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-civil-war.s08"
+      ]
+    },
+    {
+      "id": "american-civil-war.l10",
+      "title_id": "american-civil-war",
+      "index": 10,
+      "heading": "Sherman's march",
+      "body": "Sherman's March to the Sea, officially known as the Savannah campaign, or simply Sherman's March, was a military campaign of the American Civil War conducted through Georgia from November 15 until December 21, 1864, by United States Army major general William T. Sherman. It began on November 15 with Sherman's troops leaving Atlanta, recently taken by Union forces under Sherman, and ended with the capture of the port of Savannah on December 21. Emulating the chevauchée of medieval European warfare, his forces followed a \"scorched earth\" policy, destroying military targets as well as industry, infrastructure, and civilian property, disrupting the Confederacy's economy and transportation networks.\n\n![](american-civil-war.i16)\n\nThe operation debilitated the Confederacy and helped lead to its eventual demise. Sherman's decision to operate deep within enemy territory without supply lines was unusual for its time, and his campaign of \"hard war\" is regarded by some historians as an early example of total war in modern warfare.\n\nFollowing the March to the Sea, Sherman's army headed north for the Carolinas campaign. The portion of this march through South Carolina was even more destructive than the Savannah campaign, since Sherman and his men harbored much ill-will for that state's part in bringing on the Civil War. The following portion, through North Carolina however, was less so.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "american-civil-war.i15",
+        "american-civil-war.i16"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-civil-war.s09"
+      ]
+    },
+    {
+      "id": "american-civil-war.l11",
+      "title_id": "american-civil-war",
+      "index": 11,
+      "heading": "Appomattox",
+      "body": "The Appomattox campaign was a series of American Civil War battles fought March 29 – April 9, 1865, in Virginia that concluded with the surrender of Confederate General Robert E. Lee's Army of Northern Virginia to forces of the Union Army (Army of the Potomac, Army of the James and Army of the Shenandoah) under the overall command of Lieutenant General Ulysses S. Grant, marking the effective end of the war.\n\nAs the Richmond–Petersburg campaign (also known as the siege of Petersburg) ended, Lee's army was outnumbered and exhausted from a winter of trench warfare over an approximately 40 mi (64 km) front, numerous battles, disease, hunger and desertion. Grant's well-equipped and well-fed army was growing in strength. On March 29, 1865, the Union Army began an offensive that stretched and broke the Confederate defenses southwest of Petersburg and cut their supply lines to Petersburg and the Confederate capital of Richmond, Virginia. Union victories at the Battle of Five Forks on April 1, 1865, and the Third Battle of Petersburg, often called the Breakthrough at Petersburg, on April 2, 1865, opened Petersburg and Richmond to imminent capture. Lee ordered the evacuation of Confederate forces from both Petersburg and Richmond on the night of April 2–3 before Grant's army could cut off any escape. Confederate government leaders also fled west from Richmond that night.\n\nThe Confederates marched west, heading toward Lynchburg, Virginia, as an alternative capital. Lee planned to resupply his army at one of those cities and march southwest into North Carolina where he could unite his army with the Confederate army commanded by General Joseph E. Johnston. Grant's Union Army pursued Lee's fleeing Confederates relentlessly. During the next week, the Union troops fought a series of battles with Confederate units, cut off or destroyed Confederate supplies and blocked their paths to the south and ultimately to the west. On April 6, 1865, the Confederate Army suffered a significant defeat at the Battle of Sailor's Creek, Virginia, where they lost about 7,700 men killed or captured and an unknown number wounded. Nonetheless, Lee continued to move the remainder of his battered army to the west. Soon cornered, short of food and supplies and outnumbered, Lee surrendered the Army of Northern Virginia to Grant on April 9, 1865, at the McLean House near the county courthouse in the small central Virginia village of Appomattox Court House.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "american-civil-war.i17"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-civil-war.s10"
+      ]
+    },
+    {
+      "id": "american-civil-war.l12",
+      "title_id": "american-civil-war",
+      "index": 12,
+      "heading": "Lincoln is shot",
+      "body": "On April 14, 1865, Abraham Lincoln, the 16th president of the United States, was shot in the head while attending a play at Ford's Theatre in Washington, D.C. He died the following day, six weeks into his second term and a month before the conclusion of the American Civil War. Lincoln was watching the play Our American Cousin with his wife Mary Todd, Major Henry Rathbone, and Rathbone's fiancé Clara Harris when John Wilkes Booth, an actor and Confederate sympathizer, shot him from behind. Lincoln was taken to the Petersen House across the street, where he died the following morning.\n\nWith Union victory imminent, Booth and his conspirators, including Lewis Powell, David Herold, and George Atzerodt, originally plotted to kidnap Lincoln to aid the Confederacy. After that plan failed to materialize, they decided to assassinate him, Secretary of State William H. Seward, and Vice President Andrew Johnson. Booth hoped that eliminating the three most important officials of the federal government would revive the Confederate cause. Powell and Herold were assigned to kill Seward, while Atzerodt was assigned to kill Johnson. Booth succeeded in killing Lincoln, but Powell only managed to wound Seward, while Atzerodt became drunk and never targeted Johnson.\n\nBooth fled into Maryland after shooting Lincoln and rendezvoused with Herold. Lincoln's secretary of war, Edwin Stanton, directed the largest manhunt in US history at the time, involving thousands of troops. After a 12-day search, on April 26, Booth and Herold were located at a tobacco farm in King George County, Virginia. Booth was fatally shot by Sergeant Boston Corbett after refusing to surrender. The other conspirators were captured by the end of April 1865, except for John Surratt, whom the US captured in Egypt in November 1866. Powell, Herold, Atzerodt, and Mary Surratt were hanged in July 1865, while John Surratt was released after a mistrial in 1867 and never retried.\n\nJohnson was hastily sworn in as the 17th president on April 15 and served for the remainder of Lincoln's second term. Lincoln's state funeral was held on April 19, after which a funeral train transported his remains through seven states for burial in Illinois. He was the third US president to die in office, and the first by assassination. The assassination drew international condemnation and left a profound impact on the US. It made Lincoln a national martyr and led to a lengthy period of mourning as the US entered the Reconstruction era.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "american-civil-war.i18"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "american-civil-war.s11"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "american-civil-war.i01",
+      "title_id": "american-civil-war",
+      "url": "http://10.0.2.2:8000/media/american-civil-war/i01-7decf3fddb.png",
+      "width": 1600,
+      "height": 2593,
+      "alt": "A collection of American Civil War related pictures and photographs",
+      "kind": "photo",
+      "author": "Excel23",
+      "license": "CC0",
+      "license_version": null,
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:CivilWarUSAColl.png",
+      "credit_line": "Excel23 · CC0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-civil-war.i02",
+      "title_id": "american-civil-war",
+      "url": "http://10.0.2.2:8000/media/american-civil-war/i02-789be4b5f0.png",
+      "width": 1600,
+      "height": 1023,
+      "alt": "The battle of Gettysburg, Pa. July 3d. 1863, depicting the Battle of Gettysburg, fought July 1–3, 1863. The battle was part of the American Civil War and was won by the North.",
+      "kind": "painting",
+      "author": "Nathaniel Currier and James Merritt Ives",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Battle_of_Gettysburg,_by_Currier_and_Ives.png",
+      "credit_line": "Nathaniel Currier and James Merritt Ives · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-civil-war.i03",
+      "title_id": "american-civil-war",
+      "url": "http://10.0.2.2:8000/media/american-civil-war/i03-87f3f6986f.jpg",
+      "width": 1600,
+      "height": 1114,
+      "alt": "Battle of Franklin. November 30, 1864",
+      "kind": "other",
+      "author": "Kurz and Allison Restoration by Mmxx",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Battle_of_Franklin,_November_30,_1864.jpg",
+      "credit_line": "Kurz and Allison Restoration by Mmxx · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-civil-war.i04",
+      "title_id": "american-civil-war",
+      "url": "http://10.0.2.2:8000/media/american-civil-war/i04-da711825a5.jpg",
+      "width": 1600,
+      "height": 1279,
+      "alt": "Fair Oaks, Va., vicinity. Lt. Robert Clarke, Capt. John C. Tidball, Lt. William N. Dennison, and Capt. Alexander C.M. Pennington. Peninsular Campaign, 1862.",
+      "kind": "photo",
+      "author": "James F. Gibson / Adam Cuerden",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Tidball%27s_Battery,_near_Fair_Oaks,_Va._-_Lt._Robert_Clarke,_Capt._John_C._Tidball,_Lt._William_N._Dennison,_and_Capt._Alexander_C.M._Pennington.jpg",
+      "credit_line": "James F. Gibson / Adam Cuerden · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-civil-war.i05",
+      "title_id": "american-civil-war",
+      "url": "http://10.0.2.2:8000/media/american-civil-war/i05-205d8ed19f.jpg",
+      "width": 1600,
+      "height": 1028,
+      "alt": "The Battle of Fort Sumter, as depicted by Currier and Ives",
+      "kind": "portrait",
+      "author": "Currier & Ives. Uploaded by Christophe cagé 12:52, 6 September 2006 (UTC)",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bombardment_of_Fort_Sumter.jpg",
+      "credit_line": "Currier & Ives. Uploaded by Christophe cagé 12:52, 6 September 2006 (UTC) · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.35
+    },
+    {
+      "id": "american-civil-war.i06",
+      "title_id": "american-civil-war",
+      "url": "http://10.0.2.2:8000/media/american-civil-war/i06-59ecf189d3.jpg",
+      "width": 1600,
+      "height": 1199,
+      "alt": "Bridge during the Retreat from Manassas, First Battle of Bull Run (First Manassas), Virginia, 1861. Engraving by William Ridgway based on a drawing by Felix Octavius Carr Darley",
+      "kind": "painting",
+      "author": "William Ridgway after Felix Octavius Carr Darley",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bridge_during_the_Retreat_from_Manassas,_First_Battle_of_Bull_Run_(First_Manassas),_Virginia_1861.jpg",
+      "credit_line": "William Ridgway after Felix Octavius Carr Darley · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-civil-war.i07",
+      "title_id": "american-civil-war",
+      "url": "http://10.0.2.2:8000/media/american-civil-war/i07-16168846b0.jpg",
+      "width": 1600,
+      "height": 979,
+      "alt": "Virginia (1861)",
+      "kind": "map",
+      "author": "United States, War Department.",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:ATLAS_OR_VIRGINIA_MAP.jpg",
+      "credit_line": "United States, War Department. · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-civil-war.i08",
+      "title_id": "american-civil-war",
+      "url": "http://10.0.2.2:8000/media/american-civil-war/i08-ba9cbc7ba5.jpg",
+      "width": 1600,
+      "height": 972,
+      "alt": "Northeastern Virginia (1861)",
+      "kind": "map",
+      "author": "United States, War Department.",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:ATLAS_OR_NORTHEASTERN_VIRGINIA_MAP_1.jpg",
+      "credit_line": "United States, War Department. · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-civil-war.i09",
+      "title_id": "american-civil-war",
+      "url": "http://10.0.2.2:8000/media/american-civil-war/i09-bac7860648.jpg",
+      "width": 1600,
+      "height": 1153,
+      "alt": "Battle of Antietam by Thure de Thulstrup, published by L. Prang & Co. Specifically, the charge of Iron Brigade near the Dunker Church, on the morning of September 17, 1862. Chromolithograph, U.S.",
+      "kind": "painting",
+      "author": "Thure de Thulstrup / Adam Cuerden",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Thure_de_Thulstrup_-_Battle_of_Antietam.jpg",
+      "credit_line": "Thure de Thulstrup / Adam Cuerden · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-civil-war.i10",
+      "title_id": "american-civil-war",
+      "url": "http://10.0.2.2:8000/media/american-civil-war/i10-587652cebd.jpg",
+      "width": 1600,
+      "height": 2474,
+      "alt": "The five-page original document, held in the National Archives Building – until 1936 it had been bound with other proclamations in a large volume held by the Department of State.",
+      "kind": "other",
+      "author": "Lincoln, Abraham, 1809-1865",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Emancipation_Proclamation_WDL2714.jpg",
+      "credit_line": "Lincoln, Abraham, 1809-1865 · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-civil-war.i11",
+      "title_id": "american-civil-war",
+      "url": "http://10.0.2.2:8000/media/american-civil-war/i11-18181e01d4.jpg",
+      "width": 1600,
+      "height": 1120,
+      "alt": "L. Prang & Co. print of the painting \"Hancock at Gettysburg\" by Thure de Thulstrup, showing Pickett's Charge. Restoration by Adam Cuerden.",
+      "kind": "painting",
+      "author": "Thure de Thulstrup / Adam Cuerden",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Thure_de_Thulstrup_-_L._Prang_and_Co._-_Battle_of_Gettysburg_-_Restoration_by_Adam_Cuerden_(cropped).jpg",
+      "credit_line": "Thure de Thulstrup / Adam Cuerden · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-civil-war.i12",
+      "title_id": "american-civil-war",
+      "url": "http://10.0.2.2:8000/media/american-civil-war/i12-9940a7dd4f.png",
+      "width": 1600,
+      "height": 1920,
+      "alt": "An 1863 oval-shaped map depicting the Gettysburg Battlefield during the three-day Battle of Gettysburg, showing troop and artillery positions and movements, relief hachures, drainage, roads…",
+      "kind": "map",
+      "author": "Theodore Ditterline",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:FieldOfGettysburg1863.PNG",
+      "credit_line": "Theodore Ditterline · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-civil-war.i13",
+      "title_id": "american-civil-war",
+      "url": "http://10.0.2.2:8000/media/american-civil-war/i13-39ae4973c6.jpg",
+      "width": 1600,
+      "height": 1102,
+      "alt": "A November 1862 Harper's Magazine illustration showing Confederate army men escorting kidnapped African-American civilians south into slavery.",
+      "kind": "map",
+      "author": "Harper's Weekly Magazine, November 8, 1862, pp. 712-713., p. 16.",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Negroes_Being_Driven_South_By_the_Rebel_Officers_(November_1862),_by_Harper%27s_Weekly.jpg",
+      "credit_line": "Harper's Weekly Magazine, November 8, 1862, pp. 712-713., p. 16. · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-civil-war.i14",
+      "title_id": "american-civil-war",
+      "url": "http://10.0.2.2:8000/media/american-civil-war/i14-6c351718d9.jpg",
+      "width": 1600,
+      "height": 1305,
+      "alt": "One of only two confirmed photos of Abraham Lincoln at Gettysburg (seated in center facing camera), taken about noon on November 19, 1863; some three hours later, Lincoln delivered the famed address.",
+      "kind": "photo",
+      "author": "Photographer attributions vary from unidentified (William Frassanito) to Mathew Brady (NARA) and David Bachrach (1845-1921) (Center for Civil War Photography).",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Lincolnatgettysburg.jpg",
+      "credit_line": "Photographer attributions vary from unidentified (William Frassanito) to Mathew Brady (NARA) and David Bachrach (1845-1921) (Center for Civil War Photography). · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-civil-war.i15",
+      "title_id": "american-civil-war",
+      "url": "http://10.0.2.2:8000/media/american-civil-war/i15-7c9f596d96.jpg",
+      "width": 1600,
+      "height": 1050,
+      "alt": "Sherman's March to the Sea by F. O. C. Darley",
+      "kind": "painting",
+      "author": "F. O. C. Darley / Alexander Hay Ritchie / Adam Cuerden",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:F.O.C._Darley_and_Alexander_Hay_Ritchie_-_Sherman%27s_March_to_the_Sea.jpg",
+      "credit_line": "F. O. C. Darley / Alexander Hay Ritchie / Adam Cuerden · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-civil-war.i16",
+      "title_id": "american-civil-war",
+      "url": "http://10.0.2.2:8000/media/american-civil-war/i16-5233130379.png",
+      "width": 1600,
+      "height": 1844,
+      "alt": "Location map of Georgia, USA",
+      "kind": "map",
+      "author": "Alexrk2",
+      "license": "CC BY",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:USA_Georgia_location_map.svg",
+      "credit_line": "Alexrk2 · CC BY 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-civil-war.i17",
+      "title_id": "american-civil-war",
+      "url": "http://10.0.2.2:8000/media/american-civil-war/i17-c7abfce2d1.jpg",
+      "width": 1600,
+      "height": 1708,
+      "alt": "Photo montage of two Wikipedia images by Hal Jespersen.",
+      "kind": "photo",
+      "author": "Original uploader was Hlj at en.wikipedia (Original text: Montage by Hal Jespersen)",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Grant%2BLee.jpg",
+      "credit_line": "Original uploader was Hlj at en.wikipedia (Original text: Montage by Hal Jespersen) · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "american-civil-war.i18",
+      "title_id": "american-civil-war",
+      "url": "http://10.0.2.2:8000/media/american-civil-war/i18-2f3451d962.jpg",
+      "width": 1600,
+      "height": 1497,
+      "alt": "John Wilkes Booth shooting Abraham Lincoln in Ford's Theatre",
+      "kind": "other",
+      "author": "Adam Cuerden",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Lincoln_assassination_slide_c1900_-_Restoration.jpg",
+      "credit_line": "Adam Cuerden · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "american-civil-war.s01",
+      "title": "American Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/American_Civil_War",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "american-civil-war.s02",
+      "title": "Origins of the American Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Origins_of_the_American_Civil_War",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "american-civil-war.s03",
+      "title": "Battle of Fort Sumter (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Fort_Sumter",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "american-civil-war.s04",
+      "title": "First Battle of Bull Run (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/First_Battle_of_Bull_Run",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "american-civil-war.s05",
+      "title": "Battle of Antietam (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Antietam",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "american-civil-war.s06",
+      "title": "Emancipation Proclamation (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Emancipation_Proclamation",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "american-civil-war.s07",
+      "title": "Battle of Gettysburg (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Gettysburg",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "american-civil-war.s08",
+      "title": "Gettysburg Address (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Gettysburg_Address",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "american-civil-war.s09",
+      "title": "Sherman's March to the Sea (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Sherman%27s_March_to_the_Sea",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "american-civil-war.s10",
+      "title": "Appomattox campaign (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Appomattox_campaign",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "american-civil-war.s11",
+      "title": "Assassination of Abraham Lincoln (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Assassination_of_Abraham_Lincoln",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}

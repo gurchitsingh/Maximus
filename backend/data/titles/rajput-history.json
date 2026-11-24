@@ -1,0 +1,430 @@
+{
+  "id": "rajput-history",
+  "kind": "topic",
+  "name": "Rajput history",
+  "subtitle": "Warrior clans of north India",
+  "poster_lines": [
+    "RAJPUT",
+    "HISTORY"
+  ],
+  "group": "india",
+  "era": "medieval",
+  "region": "asia",
+  "period_start": null,
+  "period_end": null,
+  "themes": [
+    "war",
+    "politics",
+    "culture",
+    "leadership"
+  ],
+  "bg": "#6B1F2A",
+  "tint": "#E8C547",
+  "lettering": "carved",
+  "poster_image_id": null,
+  "hero_image_id": "rajput-history.i01",
+  "brief": "Warrior clans, hill forts and fierce last stands in Rajasthan.",
+  "linked_title_ids": [
+    "prithviraj-chauhan",
+    "maharana-pratap"
+  ],
+  "rank": 12,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "rajput-history.l01",
+      "title_id": "rajput-history",
+      "index": 1,
+      "heading": "Who the Rajputs were",
+      "body": "Rājpūt, also called Thākur, is a large multi-component cluster of castes, kin bodies, and local groups, sharing social status and ideology of genealogical descent originating from the northern part of the Indian subcontinent. However, the derivation from rājaputra is misleading because although many Rajputs belonged to some ruling clans, the majority of the Rajput community were common agricultural laborers whose main source of income was farming. The term Rajput covers various patrilineal clans historically associated with warriorhood: several clans claim Rajput status, although not all claims are universally accepted. According to modern scholars, almost all Rajput clans originated from peasant or pastoral communities.\n\nOver time, the Rajputs emerged as a social class comprising people from a variety of ethnic and geographical backgrounds. From the 12th to 16th centuries, the membership of this class became largely hereditary, although new claims to Rajput status continued to be made in later centuries. Several Rajput-ruled kingdoms played a significant role in many regions of central and northern India from the seventh century onwards.\n\n![](rajput-history.i02)\n\nThe Rajput population and the former Rajput states are found in northern, western, central and eastern India, as well as southern and eastern Pakistan. These areas include Rajasthan, Delhi, Haryana, Gujarat, Eastern Punjab, Western Punjab, Uttar Pradesh, West Bengal, Himachal Pradesh, Jammu, Uttarakhand, Bihar, Madhya Pradesh, Sindh and Azad Kashmir.\n\n![](rajput-history.i03)\n\nIn terms of religious affiliation, in 1988 it was estimated that out of a total Rajput population of roughly 38 million in the Indian subcontinent, the majority, 30 million (79%) were Hindus, nearly 8 million (19.9%) were followers of Islam (mostly concentrated in Pakistan) while slightly less than 200,000 (0.5%) were Sikhs.\n\n## Rajputana\n\nRājputana, meaning Land of the Rajputs, was a historical region in the Indian subcontinent that included mainly the entire present-day Indian state of Rajasthan, parts of the neighboring states of Madhya Pradesh and Gujarat, and adjoining areas of Sindh in modern-day southern Pakistan. The region was known for its distinctive socio political structure, characterised by numerous Rajput kingdoms and principalities that maintained a strong warrior ethos and a deeply rooted tradition of honour, kinship, and martial governance.\n\nThe main settlements to the west of the Aravalli Hills came to be known as Rajputana, early in the Medieval Period. The name was later adopted by East India Company as the Rajputana Agency for its dependencies in the region of the present-day Indian state of Rājasthān. The Rajputana Agency included 26 Rajput and 2 Jat princely states and two chiefships. This official term remained until its replacement by \"Rajasthan\" in the constitution of 1949.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "rajput-history.i01",
+        "rajput-history.i02",
+        "rajput-history.i03"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "rajput-history.s01",
+        "rajput-history.s02"
+      ]
+    },
+    {
+      "id": "rajput-history.l02",
+      "title_id": "rajput-history",
+      "index": 2,
+      "heading": "Prithviraj Chauhan",
+      "body": "Prithviraja III (IAST: Pṛthvī-rāja; c. 1166 – 1192), popularly known as Prithviraj Chauhan or Rai Pithora, was a king from the Chauhan (Chahamana) dynasty who ruled the territory of Sapadalaksha, with his capital at Ajmer in present-day Rajasthan in north-western India. Ascending the throne as a minor in 1177 CE, Prithviraj inherited a kingdom which stretched from Thanesar in the north to Jahazpur (Mewar) in the south, which he aimed to expand by military actions against neighbouring kingdoms, most notably defeating the Chandelas.\n\nPrithviraj led a coalition of several Rajput kings and defeated the Ghurid army led by Muhammad of Ghor near Taraori in 1191 However, in 1192, Muhammad returned with an army of Turkish mounted archers and defeated the Rajput army on the same battlefield. Prithviraj was captured and summarily executed, although his minor son Govindaraja was reinstated by Muhammad as his puppet ruler in Ajmer. His defeat at Tarain is seen as a landmark event in the Islamic conquest of India, and has been described in several semi-legendary accounts, most notably the Prithviraj Raso.\n\n## The battles of Tarain\n\nBattle of Tarain may refer to any of the following battles fought at Tarain (modern Taraori in Haryana, India):\n\nFirst Battle of Tarain (14 January 1191), in which the Chahamana king Prithviraj Chauhan defeated Sultan Muhammad Ghori\n\nSecond Battle of Tarain (8 March 1192), in which Muhammad Ghori defeated the Chahamana king Prithviraj Chauhan helped by jay chand\n\nThird Battle of Tarain (31 January 1216), in which the Mamluk king Iltutmish of the Delhi Sultanate defeated and captured the former Ghurid general Taj al-Din Yildiz also known as Yaldauj",
+      "reading_minutes": 2,
+      "image_ids": [
+        "rajput-history.i04"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "rajput-history.s03",
+        "rajput-history.s04"
+      ]
+    },
+    {
+      "id": "rajput-history.l03",
+      "title_id": "rajput-history",
+      "index": 3,
+      "heading": "Mewar",
+      "body": "The Kingdom of Mewar, later known as Udaipur State, was an independent Hindu kingdom that existed in the Mewar region of Rajputana in the Indian subcontinent and later became a dominant state in medieval India. The kingdom was initially founded and ruled by the Guhila dynasty, followed by its cadet branch, the Sisodia Dynasty.\n\nThe earliest kingdom was centered around the south-central part of Rajasthan, state of India. It was bordered by the Aravali Range to the northwest, Ajmer to the north, Gujarat, Vagad and Malwa regions to the south and the Hadoti region to the east.\n\nMewar rose to prominence in the reign of Bappa Rawal (7th century) known for his involvement in thwarting Arab incursions in India. Over time, it became vassal to Imperial Pratihara, Paramaras and then to Chahamanas. In the early 10th century, Mewar emerged as an independent state, actively battling neighboring powers and confronting the expansion of Delhi Sultanate until the fall of its capital Chittorgarh in 1303 against the latter, leading to the annihilation of Guhila Dynasty.\n\nThe Sisodia dynasty, a junior branch of Guhilas, re-occupied Mewar in 1326, ushering in a golden age characterized by military prowess and territorial expansion. Under the reigns of Maharana Kumbha and his grandson Maharana Sanga, Mewar achieved victories against Islamic States of Malwa, Gujarat, and Delhi particularly in Mewar-Malwa conflicts and Mewar- Delhi conflicts. It also successfully fought off and vassalized neighboring Hindu kingdoms. At its zenith under Rana Sanga, it controlled large parts of Northern India. After Rana Sanga's death, the kingdom declined rapidly. Nonetheless, it continued to resist Mughal expansion, most notably under Maharana Pratap, later it became a tributary state with a significant degree of autonomy. The decline of Mughal Empire saw sovereign leaders like Raj Singh and his successors led rebellions culminating in de facto independence for Mewar, notably Rathore Rebellion and Rajput-Mughal war (1708–1710). Eventually, falling under Maratha Empire's influence and accepting British suzerainty in 1818, Mewar remained a princely state until it joined the Union of India in 1947.\n\nMewar's legacy includes its prolonged resistance against Islamic invasion and traditions like Jauhar (self-immolation) witnessed during the time of defeats. While primarily a Hindu state, the kingdom also patronized Jainism and Buddhism. Among Mewar's UNESCO World Heritage Sites are Kumbhalgarh and Chittorgarh, described variously as the jewels of Rajput architect in India. Udaipur, also known as the city of lakes and one of the largest cities of the North India was also founded by the Rana of Mewar, Udai Singh II.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "rajput-history.i05"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "rajput-history.s05"
+      ]
+    },
+    {
+      "id": "rajput-history.l04",
+      "title_id": "rajput-history",
+      "index": 4,
+      "heading": "Rana Sanga",
+      "body": "Sangram Singh I, most commonly known as Rana Sanga, was the Maharana of Mewar from 24 May 1509 until his death in 1528. A member of the Sisodia dynasty, he controlled parts of present-day Rajasthan, Gujarat, Madhya Pradesh, Haryana, Sindh, and Uttar Pradesh from his capital at Chittorgarh.\n\nDuring his military career, Sanga was successful against several neighbouring sultanates. After the 1519 Battle of Gagron against the Malwa Sultanate, he captured much of eastern Malwa. He humbled the Sultan of Gujarat several times. Sanga also had the Khanzadas of Mewat as vassals, helping them extend their sway over modern-day Haryana. Among his victories were those against the Lodi dynasty of Delhi at Khatoli, Dholpur, and Ranthambore, enabling Sanga to capture much of the Lodi domain in southern Malwa and western Uttar Pradesh.\n\n![](rajput-history.i07)\n\nAt its zenith in 1521, Sanga's empire stretched from Mandu (the capital of Malwa Sultanate) in the south to Peela Khal (Pilya Khal, a small rivulet near Bayana and Agra) in the northeast, to the Indus River in the west and north-west. Nearly all the Rajput chiefs owed allegiance to him. Sanga also marched against the invading forces of Babur, who founded the Mughal Empire. Despite initial success against Mughal-Afghan forces at the Battle of Bayana, he experienced a significant defeat at Khanwa (primarily due to Babur's use of gunpowder, unknown in northern India at the time).\n\n![](rajput-history.i08)\n\nSanga is considered the greatest ruler of his time. Said to have won 18 battles against the sultans of Delhi, Malwa and Gujarat, he is renowned for his heroism and leadership. Sanga received more than 80 wounds in battle; he lost an eye and an arm, and one of his legs was crippled. He is considered the last independent Hindu sovereign of northern India to control extensive territory. His reign was admired by Babur, the first Mughal emperor who described him as the \"greatest Indian ruler\" of that time; Babur also accused him of sending an invitation to invade India, a claim that has not been widely accepted. Mughal historian Abd al-Qadir Badayuni called Sanga the bravest of all Rajputs with Prithviraj Chauhan, also known as Rai Pithaura.\n\n## Khanwa\n\nThe Battle of Khanwa was fought at Khanwa in modern-day Rajasthan on 16 March 1527, between the Mughal Empire, led by Babur, and the Kingdom of Mewar, led by Rana Sanga for supremacy of Northern India. The battle ended in a Mughal victory and was a major event in medieval Indian history. The Kingdom of Mewar under the rule of Rana Sanga, had turned into one of the strongest powers in northern India. The battle was among the most decisive battles in the Mughal conquest of northern India. It was one of the first battles in Northern India where gunpowder was used. The battle resulted in heavy casualties for both Timurids and Rajputs.\n\n## Maharana Pratap\n\nPratap Singh I (18 May 1540 – 19 January 1597), popularly known as Maharana Pratap, was king of the Kingdom of Mewar, in north-western India in the present-day state of Rajasthan, from 1572 until his death in 1597. He is notable for leading the Rajput resistance against the expansionist policy of the Mughal Emperor Akbar including the battle of Haldighati.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "rajput-history.i06",
+        "rajput-history.i07",
+        "rajput-history.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "rajput-history.s06",
+        "rajput-history.s07",
+        "rajput-history.s08"
+      ]
+    },
+    {
+      "id": "rajput-history.l05",
+      "title_id": "rajput-history",
+      "index": 5,
+      "heading": "Haldighati",
+      "body": "The battle of Haldighati was fought on 18 June 1576 between the Mewar forces led by Maharana Pratap, and the Mughal forces led by Man Singh I of Amber. The Mughals emerged victorious after inflicting significant casualties on Mewari forces, though they failed to capture Pratap, who reluctantly retreated persuaded by his fellow commanders.\n\n![](rajput-history.i10)\n\nThe siege of Chittorgarh in 1568 had led to the loss of the fertile eastern belt of Mewar to the Mughals. However, the rest of the wooded and hilly kingdom was still under the control of the Sisodias. Akbar was intent on securing a stable route to Gujarat through Mewar; when Pratap Singh was crowned king (Rana) in 1572, Akbar sent a number of envoys entreating the Rana to become a vassal like many other Rajput leaders in the region. However, Pratap refused to enter into a treaty, which led to the battle.\n\n![](rajput-history.i08)\n\nThe site of the battle was a narrow mountain pass at Haldighati near Gogunda in Rajasthan. Sources differ on the strength of the respective armies but probably the Mughals outnumbered the Mewar forces by a factor of four to one. Despite initial successes by the Mewaris, the tide slowly turned against them and Pratap found himself wounded and the day lost. A few of his men under Jhala Man Singh covered his retreat in a rearguard action. The Mewar troops were not chased in their retreat by Man Singh for which he was banished from the Mughal court for some time by Akbar.\n\nDespite the reverse at Haldighati, Pratap continued his resistance against the Mughals through guerrilla warfare, and by the time of his death had regained much of his ancestral kingdom.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "rajput-history.i09",
+        "rajput-history.i10",
+        "rajput-history.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "rajput-history.s09"
+      ]
+    },
+    {
+      "id": "rajput-history.l06",
+      "title_id": "rajput-history",
+      "index": 6,
+      "heading": "Jauhar",
+      "body": "Jauhar, sometimes spelled Jowhar or Juhar, was a practice of mass self-immolation by Rajput kshatriya women and girls in the Indian subcontinent to avoid capture, sex slavery, enslavement, and rape when facing certain defeat during a war. Some reports of jauhar mention women committing self-immolation along with their children to avoid rape by the invading armies. This practice was historically observed in the northwest regions of India, with the most famous jauhars in recorded history occurring during wars between Hindu Rajput kingdoms in Rajasthan and the opposing Muslim armies. Jauhar was only performed during war, usually when defeat was imminent. It involved Hindu Rajput women committing suicide with their children and valuables in a massive fire, in order to avoid capture and abuse in the face of inescapable military defeat. At the same time or shortly thereafter, the men would ritualistically march to the battlefield expecting certain death, which in the regional tradition is called saka. This practice was intended to show that those committing it valued honor higher than own lives.\n\nJauhar in the Hindu kingdoms has been documented by Muslim historians of the Delhi Sultanate and the Mughal Empire. Among the most often cited examples of jauhar is the mass suicide committed in 1303 CE by the women of Chittorgarh fort in Rajasthan, when faced with the invading army of the Khilji dynasty of the Delhi Sultanate. The jauhar phenomenon was also observed in other parts of India, such as in the Kampili kingdom of northern Karnataka when it fell in 1327 to Delhi Sultanate armies.\n\nThere is an annual celebration of heroism called the Jauhar Mela in Chittorgarh where the local people commemorate their ancestors.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "rajput-history.i11"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "rajput-history.s10"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "rajput-history.i01",
+      "title_id": "rajput-history",
+      "url": "http://10.0.2.2:8000/media/rajput-history/i01-1e291cd746.png",
+      "width": 1600,
+      "height": 1975,
+      "alt": "The Sikh Khanda symbol (U+262C).",
+      "kind": "other",
+      "author": "Self-made",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Khanda.svg",
+      "credit_line": "Self-made · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "rajput-history.i02",
+      "title_id": "rajput-history",
+      "url": "http://10.0.2.2:8000/media/rajput-history/i02-e6a8e04368.jpg",
+      "width": 1600,
+      "height": 1330,
+      "alt": "The map of the Rajputana Agency in 1909 from the Imperial Gazetteer. Legend: princely states are in yellow",
+      "kind": "map",
+      "author": "The original uploader was Tom Radulovich at English Wikipedia.",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Rajputana_1909.jpg",
+      "credit_line": "The original uploader was Tom Radulovich at English Wikipedia. · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "rajput-history.i03",
+      "title_id": "rajput-history",
+      "url": "http://10.0.2.2:8000/media/rajput-history/i03-4afd649742.png",
+      "width": 1600,
+      "height": 1457,
+      "alt": "Districts of the present-day state of Rajasthan",
+      "kind": "map",
+      "author": "No machine-readable author provided. Miljoshi assumed (based on copyright claims).",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Map_rajasthan_dist_all_shaded.png",
+      "credit_line": "No machine-readable author provided. Miljoshi assumed (based on copyright claims). · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "rajput-history.i04",
+      "title_id": "rajput-history",
+      "url": "http://10.0.2.2:8000/media/rajput-history/i04-69a7776643.jpg",
+      "width": 1600,
+      "height": 2282,
+      "alt": "Posthumous painting depicting Prithviraj Chauhan seated on a terrace leaning against a bolster from Kota",
+      "kind": "painting",
+      "author": "Unknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Posthumous_painting_depicting_Prithviraj_Chauhan_from_Kota_(colour).jpg",
+      "credit_line": "Unknown author · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "rajput-history.i05",
+      "title_id": "rajput-history",
+      "url": "http://10.0.2.2:8000/media/rajput-history/i05-d34bed940e.png",
+      "width": 1600,
+      "height": 1494,
+      "alt": "The map is sourced per Joseph E. Schwartzberg's A Historical Atlas of South Asia: please see the map online in (1978) A Historical atlas of South Asia, Chicago: University of Chicago Press, p.",
+      "kind": "map",
+      "author": "Borders by Rawn3012 using GIMP",
+      "license": "CC BY",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Map_of_Sisodiya_dynasty_at_its_apex.png",
+      "credit_line": "Borders by Rawn3012 using GIMP · CC BY 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "rajput-history.i06",
+      "title_id": "rajput-history",
+      "url": "http://10.0.2.2:8000/media/rajput-history/i06-484ed84499.jpg",
+      "width": 1600,
+      "height": 2557,
+      "alt": "Painting of Rana Sanga in the Udaipur Museum",
+      "kind": "painting",
+      "author": "Aristocratic 536",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Photo_of_Rana_Sanga_from_Udaipur_Museum_(From_my_Camera).jpg",
+      "credit_line": "Aristocratic 536 · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "rajput-history.i07",
+      "title_id": "rajput-history",
+      "url": "http://10.0.2.2:8000/media/rajput-history/i07-00456ea504.jpg",
+      "width": 1600,
+      "height": 2677,
+      "alt": "Description Babur's army in battle against the army of Rana Sanga at Kanvaha (Kanusa) in which bombards and field guns were used.",
+      "kind": "other",
+      "author": "\"Mirza 'Abd al-Rahim, Khan-i khanan (Mirza 'Abd al-Rahim, Khan-i khanan)\"",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Babur%E2%80%99s_army_in_battle_against_the_army_of_Rana_Sanga_at.jpg",
+      "credit_line": "\"Mirza 'Abd al-Rahim, Khan-i khanan (Mirza 'Abd al-Rahim, Khan-i khanan)\" · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "rajput-history.i08",
+      "title_id": "rajput-history",
+      "url": "http://10.0.2.2:8000/media/rajput-history/i08-966272d2c2.jpg",
+      "width": 1600,
+      "height": 1481,
+      "alt": "Location within South Asia",
+      "kind": "other",
+      "author": "DEMIS Mapserver, पाटलिपुत्र (talk)",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:South_Asia_non_political,_with_rivers.jpg",
+      "credit_line": "DEMIS Mapserver, पाटलिपुत्र (talk) · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "rajput-history.i09",
+      "title_id": "rajput-history",
+      "url": "http://10.0.2.2:8000/media/rajput-history/i09-9c499dc800.jpg",
+      "width": 1600,
+      "height": 1069,
+      "alt": "Chokha of Devgarh: Battle of Haldighati, painted 1822. Collection of Gursharan and Elvira Sidhu",
+      "kind": "other",
+      "author": "Chokha",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Chokha,_Battle_of_Haldighati,_painted_1822.jpg",
+      "credit_line": "Chokha · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "rajput-history.i10",
+      "title_id": "rajput-history",
+      "url": "http://10.0.2.2:8000/media/rajput-history/i10-d33c0eb056.png",
+      "width": 1600,
+      "height": 1340,
+      "alt": "Relief map of Rajasthan. Elevation data from STRM3, river data from GSHHG",
+      "kind": "map",
+      "author": "User:Milenioscuro",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:India_Rajasthan_relief_map.svg",
+      "credit_line": "User:Milenioscuro · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "rajput-history.i11",
+      "title_id": "rajput-history",
+      "url": "http://10.0.2.2:8000/media/rajput-history/i11-cbd3497d0d.jpg",
+      "width": 1600,
+      "height": 2119,
+      "alt": "The Rajput ceremony of Jauhar, 1567, as depicted by Ambrose Dudley in Hutchinsons History of the Nations, c. 1910",
+      "kind": "portrait",
+      "author": "Ambrose Dudley",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:The_Rajput_ceremony_of_Jauhar_(holocaust),_1567.jpg",
+      "credit_line": "Ambrose Dudley · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.35
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "rajput-history.s01",
+      "title": "Rajput (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rajput",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "rajput-history.s02",
+      "title": "Rajputana (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rajputana",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "rajput-history.s03",
+      "title": "Prithviraj Chauhan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Prithviraj_Chauhan",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "rajput-history.s04",
+      "title": "Battle of Tarain (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Tarain",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "rajput-history.s05",
+      "title": "Kingdom of Mewar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Kingdom_of_Mewar",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "rajput-history.s06",
+      "title": "Rana Sanga (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Rana_Sanga",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "rajput-history.s07",
+      "title": "Battle of Khanwa (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Khanwa",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "rajput-history.s08",
+      "title": "Maharana Pratap (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Maharana_Pratap",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "rajput-history.s09",
+      "title": "Battle of Haldighati (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Haldighati",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "rajput-history.s10",
+      "title": "Jauhar (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Jauhar",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}

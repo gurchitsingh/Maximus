@@ -1,0 +1,338 @@
+{
+  "id": "dotcom-bubble",
+  "kind": "topic",
+  "name": "Dotcom bubble",
+  "subtitle": "c. 1995 to 2002",
+  "poster_lines": [
+    "DOTCOM",
+    "BUBBLE"
+  ],
+  "group": "money-crashes",
+  "era": "modern",
+  "region": "americas",
+  "period_start": 1995,
+  "period_end": 2002,
+  "themes": [
+    "economy",
+    "science-tech",
+    "trade"
+  ],
+  "bg": "#1A1F3A",
+  "tint": "#5CE0D0",
+  "lettering": "stencil",
+  "poster_image_id": null,
+  "hero_image_id": "dotcom-bubble.i01",
+  "brief": "When any company with .com in its name could raise millions, until it all popped.",
+  "linked_title_ids": [],
+  "rank": 27,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "dotcom-bubble.l01",
+      "title_id": "dotcom-bubble",
+      "index": 1,
+      "heading": "The dot-com boom and bust",
+      "body": "The dot-com bubble (or dot-com boom) was a stock market bubble that developed during the late 1990s and peaked on March 10, 2000. This period of market growth coincided with the widespread adoption of the World Wide Web and the Internet, resulting in a dispensation of available venture capital and the rapid growth of valuations in new dot-com startups. Between 1995 and its peak in March 2000, investments in the Nasdaq Composite stock market index rose by 600%, only to fall 78% from its peak by October 2002, giving up all its gains during the bubble.\n\nDuring the dot-com crash, many online shopping companies like Pets.com, Webvan, and Boo.com, as well as several communication companies, such as WorldCom, NorthPoint Communications, and Global Crossing, failed and shut down; WorldCom was renamed to MCI Inc. in 2003 and was acquired by Verizon in 2006. Others, like Lastminute.com, MP3.com and PeopleSound were bought out. Larger companies like Amazon and Cisco Systems lost large portions of their market capitalization, with the latter losing 80% of its stock value.\n\n![](dotcom-bubble.i02)\n\n## Netscape\n\nNetscape Communications Corporation (originally Mosaic Communications Corporation) was an American independent computer services company with headquarters in Mountain View, California, and then Dulles, Virginia. Its Netscape web browser was once dominant, but lost to Internet Explorer and other competitors in the first browser war, with its market share falling from more than 90 percent in the mid-1990s to less than one percent in 2006. An early Netscape employee, Brendan Eich, created the JavaScript programming language, the most widely used language for client-side scripting of web pages. A founding engineer of Netscape, Lou Montulli, created HTTP cookies. The company also developed SSL which was used for securing online communications and was later renamed to TLS.\n\nNetscape stock traded from 1995 until 1999 when the company was acquired by AOL in a pooling-of-interests transaction ultimately worth US$10 billion. In February 1998, approximately one year before its acquisition by AOL, Netscape released the source code for its browser and created the Mozilla Organization to coordinate future development of its product. The Mozilla Organization rewrote the entire browser's source code based on the Gecko rendering engine, and all future Netscape releases were based on this rewritten code. When AOL scaled back its involvement with Mozilla Organization in the early 2000s, the Organization proceeded to establish the Mozilla Foundation in July 2003 to ensure its continued independence with financial and other assistance from AOL. The Gecko engine is used to power the Mozilla Foundation's Firefox browser.\n\nIn addition to browsers, Netscape developed a suite of award-winning server software, known as SuiteSpot, to power enterprise Internet and Intranet websites, forums, and email; e-commerce software; and a consumer web portal named Netcenter. Netscape's browser development continued until December 2007, when AOL announced that the company would stop supporting it by early 2008. Until 2025, AOL used the Netscape brand to market a discount Internet service provider, which itself provided a Chromium-based web browser called Netscape, developed by UK security firm SentryBay. This Internet service provider was discontinued on November 30, 2025.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "dotcom-bubble.i01",
+        "dotcom-bubble.i02"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "dotcom-bubble.s01",
+        "dotcom-bubble.s02"
+      ]
+    },
+    {
+      "id": "dotcom-bubble.l02",
+      "title_id": "dotcom-bubble",
+      "index": 2,
+      "heading": "The browser wars",
+      "body": "A browser war is a competition for dominance in the usage share of web browsers. The \"first browser war\" (1995–2001) occurred between Internet Explorer and Netscape, and the \"second browser war\" (2004–2017) between Internet Explorer, Firefox and Google Chrome.\n\nWith the introduction of HTML5 in 2008 and CSS 3 in 2011, a new generation of browser wars began, this time involving extensive client-side scripting to the World Wide Web (WWW), and the more widespread use of smartphones and other mobile devices for web browsing. These changes have ensured that browser battles continue among enthusiasts, while the average web user is less affected.\n\n![](dotcom-bubble.i04)\n\n## The Telecom Act\n\nThe Telecommunications Act of 1996 is a United States federal law enacted by the 104th United States Congress on January 3, 1996, and signed into law on February 8, 1996 by President Bill Clinton. It primarily amended Chapter 5 of Title 47 of the United States Code. Heavily supported and lobbied for by major corporations in the telecommunications sector, the act was the first significant overhaul of United States telecommunications law in more than sixty years. It amended the Communications Act of 1934 and represented a major change in that law, because it was the first time that the Internet was added to American regulation of broadcasting and telephony.\n\nThe stated intention of the law was to \"let anyone enter any communications business – to let any communications business compete in any market against any other.\" As such, it is often described as an attempt to deregulate the American broadcasting and telecommunications markets due to technological convergence. The Telecommunications Act of 1996 has been praised for incentivizing the expansion of networks and the offering of new services across the United States. At the same time, it is often criticized for enabling market concentration in the media and telecommunications industries, going against its stated intention by indirectly restricting newcomer access to those industries.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "dotcom-bubble.i03",
+        "dotcom-bubble.i04"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "dotcom-bubble.s03",
+        "dotcom-bubble.s04"
+      ]
+    },
+    {
+      "id": "dotcom-bubble.l03",
+      "title_id": "dotcom-bubble",
+      "index": 3,
+      "heading": "Going public",
+      "body": "An initial public offering (IPO) or stock launch is a public offering in which shares of a company are sold to institutional investors and usually also to retail investors. An IPO is typically underwritten by one or more investment banks, who also arrange for the shares to be listed on one or more stock exchanges. Through this process, colloquially known as floating or going public, a privately held company is transformed into a public company. IPOs can be used to raise new equity capital for companies, to monetize the investments of private shareholders such as company founders or private equity investors, and to enable easy trading of existing holdings or future capital raising by becoming publicly traded.\n\nWhen a company becomes publicly listed, the money paid by the investing public for the newly issued shares goes directly to the company (primary offering) as well as to any early private investors who opt to sell all or a portion of their holdings (secondary offerings) as part of the larger IPO. An IPO, therefore, allows a company to tap into a wide pool of potential investors to provide itself with capital for future growth, repayment of debt, or working capital.\n\nAfter the IPO, shares are traded freely in the open market at what is known as the free float. The market value of a company after an IPO is determined by the share price multiplied by the total number of outstanding shares, commonly referred to as market capitalization. Stock exchanges stipulate a minimum free float both in absolute terms (the total value as determined by the share price multiplied by the number of shares sold to the public) and as a proportion of the total share capital (i.e., the number of shares sold to the public divided by the total shares outstanding). Although IPO offers many benefits, there are also significant costs involved, chiefly those associated with the process such as banking and legal fees, and the ongoing requirement to disclose important and sometimes sensitive information.\n\nDetails of the proposed offering are disclosed to potential purchasers in the form of a lengthy document known as a prospectus. Most companies undertake an IPO with the assistance of an investment banking firm acting in the capacity of an underwriter. Underwriters provide several services, including help with correctly assessing the value of shares (share price) and establishing a public market for shares (initial sale). Alternative methods such as the Dutch auction have also been explored and applied for several IPOs.\n\n## Pets.com\n\nPets.com was an American dot-com enterprise headquartered in San Francisco, California, that sold pet supplies to retail customers. The website was launched in November 1998 and was shut down in November 2000. A high-profile marketing campaign gave it a widely recognized public presence, including an appearance in the 1999 Macy's Thanksgiving Day Parade and an advertisement in the 2000 Super Bowl. Its popular sock puppet advertising mascot was interviewed by People magazine and appeared on Good Morning America.\n\nAlthough sales rose dramatically due to the attention, the company failed to become profitable and became known as one of the biggest faces of the dot-com crash in 2000. Since 2001, the Pets.com domain has redirected to PetSmart's website.",
+      "reading_minutes": 3,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "dotcom-bubble.s05",
+        "dotcom-bubble.s06"
+      ]
+    },
+    {
+      "id": "dotcom-bubble.l04",
+      "title_id": "dotcom-bubble",
+      "index": 4,
+      "heading": "Webvan",
+      "body": "Webvan was a dot-com company and grocery business that filed for bankruptcy in 2001 after three years of operation. It was headquartered in Foster City, California, United States. It delivered products to customers' homes within a 30-minute window of their choosing. At its peak, it offered service in ten US areas: the San Francisco Bay Area; Dallas; Sacramento; San Diego; Los Angeles; Orange County, California; Chicago; Seattle; Portland, Oregon; and Atlanta, Georgia. The company had hoped to expand to 26 cities by 2001.\n\nLong after the failure of Webvan, the concept of companies delivering groceries very quickly grew from about 2020, and several companies were vying for business from dark stores and online grocery and food delivery platforms.\n\n## Boo.com\n\nBoo.com was a short-lived British e-commerce business, founded in 1998 by Swedes Ernst Malmsten, Kajsa Leander and Patrik Hedelin, who were regarded as sophisticated Internet entrepreneurs in Europe by the investors because they had created an online bookstore named Bokus.com, the third largest book e-retailer (in 1997), before founding boo.com.\n\nThe company had its headquarters along Carnaby Street in London and initially had 40 employees. In October 1999, it had eight offices and 400 employees in Amsterdam, Munich, New York City, Paris, and Stockholm.\n\nAfter several highly publicized delays, Boo.com launched in the autumn of 1999 selling branded fashion apparel on the Internet. The company spent $135 million of venture capital in just 18 months, and was placed into receivership on 18 May 2000 and liquidated.\n\nIt relaunched in the autumn of 2000 with Kate Buggeln, an ex-Bloomingdale's salesperson and Internet consultant, as president. She told Women's Wear Daily that they were working to \"expand beyond the portal business model into Boo products and Boo licensing.\"\n\nIn June 2008, CNET hailed Boo.com as one of the greatest dot-com busts in history.\n\nMalmsten wrote about the experience in his book Boo Hoo: A dot.com Story from Concept to Catastrophe, published in 2001.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "dotcom-bubble.i05"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "dotcom-bubble.s07",
+        "dotcom-bubble.s08"
+      ]
+    },
+    {
+      "id": "dotcom-bubble.l05",
+      "title_id": "dotcom-bubble",
+      "index": 5,
+      "heading": "AOL buys Time Warner",
+      "body": "On January 10, 2000, America Online (AOL) announced a $180 billion merger agreement with Time Warner, to acquire the media conglomerate at $108 a share. Despite Time Warner owning far more assets and having higher revenue, AOL was the acquiring party due to its high market valuation. The merger between the companies was the second largest in corporate history and was often presented as a union between traditional and digital media. After an extensive regulatory review, the merger closed on January 11, 2001, with both companies being consolidated into AOL Time Warner. Hopes for successful synergies between the two firms proved to be unsuccessful, as the merger went on to become one of the most infamous mergers and acquisitions deals.\n\nAOL Time Warner faced challenges with the dot-com bubble, the shift to broadband, and the decline of dial-up Internet. The fast-paced culture of AOL often clashed with Time Warner's more traditional approach, and relations only worsened with the company's declining stock and shareholders losses. In January 2003, AOL reported an annual loss of $99 billion, the largest ever for a corporation. Mounting debt forced the divesture of several businesses, and by late 2003 the shared AOL branding was dropped, with the merged company reverting back to Time Warner. AOL's financial issues continued, and in December 2009 it was spun off as an independent company, bringing an end to one of the worst mergers in history.\n\n## The Nasdaq crash\n\nThe NASDAQ Composite is a stock market index that includes almost all stocks listed on the Nasdaq stock exchange. The NASDAQ Composite's ticker symbol (not NASDAQ, Inc. itself, which is also publicly traded) is ^IXIC. The Dow Jones Industrial Average, the Standard & Poors 500, and the NASDAQ Composite are the three main stock market indexes in the United States. Companies listed on NASDAQ are subject to United States federal securities regulations, which are handled by agencies such as the United States Securities and Exchange Commission (SEC), with the participation of organizations such as the self-regulatory Financial Industry Regulatory Authority (FINRA). The NASDAQ Composite is the index most commonly participated in by publicly traded companies in the information technology sector. The Nasdaq-100, which includes 100 of the largest non-financial companies in the Nasdaq Composite, accounts for about 80% of the index weighting of the Nasdaq Composite.\n\nThe Nasdaq Composite is a capitalization-weighted index; its price is calculated by taking the sum of the products of closing price and index share of all of the securities in the index. The sum is then divided by a divisor which reduces the order of magnitude of the result.",
+      "reading_minutes": 3,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "dotcom-bubble.s09",
+        "dotcom-bubble.s10"
+      ]
+    },
+    {
+      "id": "dotcom-bubble.l06",
+      "title_id": "dotcom-bubble",
+      "index": 6,
+      "heading": "Amazon survives",
+      "body": "Amazon.com, Inc. (doing business as Amazon) is an American multinational conglomerate engaged in e-commerce, retail, cloud computing, online advertising, digital streaming, entertainment, supermarkets, and artificial intelligence. Founded in 1994 by Jeff Bezos in Bellevue, Washington, the company started as an online book marketplace that gradually expanded to include virtually all consumer products as well as many other categories, positioned as \"The Everything Store\".\n\nAs of 2026, it was the world's biggest online retailer. Amazon sells books, electronics, pharmaceuticals, car parts, video games, dining products, jewelry, food, music, and sports equipment.\n\nThe company has multiple subsidiaries, including Amazon Web Services (AWS), which provides cloud computing; Zoox, a self-driving car division; satellite Internet provider Kuiper Systems; and Amazon Lab126, a computer hardware R&D provider. Other subsidiaries include Ring, Twitch, IMDb, and grocer Whole Foods Market. Amazon distributes downloadable and streaming content through its Amazon Prime Video, MGM+, Amazon Music, Twitch, Audible, and Wondery units through its Entertainment division. It publishes books through its publishing arm, Amazon Publishing; produces and distributes film and television content through Amazon MGM Studios, including the Metro-Goldwyn-Mayer studio; and owns Brilliance Audio and Audible, which produce and distribute audiobooks, respectively. Amazon produces consumer electronics, most notably Kindle e-readers, Echo devices, Fire tablets, and Fire TVs.\n\nAmazon has a reputation as an industry disruptor through innovation and aggressive reinvestment of profits. As of 2023, it was the largest online retailer and marketplace, smart speaker provider, cloud computing service provider through AWS, live-streaming service provider through Twitch, and Internet company as measured by revenue and market share. In 2021, it surpassed Walmart as the world's largest retailer outside of China, supported by its subscription plan, Amazon Prime, which had 200 million subscribers worldwide. It is the second-largest private employer in the US, second-largest company in the US by revenue as of 2024 (after Walmart), and the largest company in the world by revenue as of 2026. As of October 2026, Amazon was the world's 13th-most visited website. 86.11% of its traffic comes from the United States, according to Similarweb data.\n\nAmazon has been criticized for its alleged business practices, including surveillance partnerships, poor working conditions, anti-union efforts, environmental harm, anticompetitive behavior, censorship controversies, and exploitative treatment of small businesses and suppliers.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "dotcom-bubble.i06"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "dotcom-bubble.s11"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "dotcom-bubble.i01",
+      "title_id": "dotcom-bubble",
+      "url": "http://10.0.2.2:8000/media/dotcom-bubble/i01-da4060a264.png",
+      "width": 1600,
+      "height": 896,
+      "alt": "The NASDAQ Composite index spiked in 2000 and then fell sharply as a result of the dot-com bubble.",
+      "kind": "art",
+      "author": "Lalala666 at English Wikipedia",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Nasdaq_Composite_dot-com_bubble.svg",
+      "credit_line": "Lalala666 at English Wikipedia · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "dotcom-bubble.i02",
+      "title_id": "dotcom-bubble",
+      "url": "http://10.0.2.2:8000/media/dotcom-bubble/i02-a0a41da867.png",
+      "width": 1600,
+      "height": 579,
+      "alt": "Quarterly U.S. venture capital investments, 1995–2017",
+      "kind": "other",
+      "author": "Wikideas1",
+      "license": "CC0",
+      "license_version": null,
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:US_VC_funding.png",
+      "credit_line": "Wikideas1 · CC0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "dotcom-bubble.i03",
+      "title_id": "dotcom-bubble",
+      "url": "http://10.0.2.2:8000/media/dotcom-bubble/i03-8af23b01cd.png",
+      "width": 1600,
+      "height": 986,
+      "alt": "A timeline of web browsers",
+      "kind": "other",
+      "author": "I, CortoFrancese",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Timeline_of_web_browsers.svg",
+      "credit_line": "I, CortoFrancese · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "dotcom-bubble.i04",
+      "title_id": "dotcom-bubble",
+      "url": "http://10.0.2.2:8000/media/dotcom-bubble/i04-4256e33b01.png",
+      "width": 1600,
+      "height": 770,
+      "alt": "The most used web browser by country in May 2025, with Google Chrome as the most widely used",
+      "kind": "map",
+      "author": "StatCounter generated image",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:StatCounter-browser-ww-monthly-map.svg",
+      "credit_line": "StatCounter generated image · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "dotcom-bubble.i05",
+      "title_id": "dotcom-bubble",
+      "url": "http://10.0.2.2:8000/media/dotcom-bubble/i05-0c0c14b8fc.jpg",
+      "width": 1600,
+      "height": 1130,
+      "alt": "Webvan Original caption: Truck of defunct grocery delivery company Webvan.",
+      "kind": "other",
+      "author": "Mark Coggins from San Francisco",
+      "license": "CC BY",
+      "license_version": "2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Webvan.jpg",
+      "credit_line": "Mark Coggins from San Francisco · CC BY 2.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "dotcom-bubble.i06",
+      "title_id": "dotcom-bubble",
+      "url": "http://10.0.2.2:8000/media/dotcom-bubble/i06-a0640c21cf.jpg",
+      "width": 1600,
+      "height": 2400,
+      "alt": "Doppler, home to Amazon's corporate headquarters",
+      "kind": "other",
+      "author": "SounderBruce",
+      "license": "CC BY-SA",
+      "license_version": "2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Amazon_Tower_I_topped_out,_June_2015.jpg",
+      "credit_line": "SounderBruce · CC BY-SA 2.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "dotcom-bubble.s01",
+      "title": "Dot-com bubble (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Dot-com_bubble",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "dotcom-bubble.s02",
+      "title": "Netscape (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Netscape",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "dotcom-bubble.s03",
+      "title": "Browser wars (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Browser_wars",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "dotcom-bubble.s04",
+      "title": "Telecommunications Act of 1996 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Telecommunications_Act_of_1996",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "dotcom-bubble.s05",
+      "title": "Initial public offering (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Initial_public_offering",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "dotcom-bubble.s06",
+      "title": "Pets.com (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Pets.com",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "dotcom-bubble.s07",
+      "title": "Webvan (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Webvan",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "dotcom-bubble.s08",
+      "title": "Boo.com (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Boo.com",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "dotcom-bubble.s09",
+      "title": "Merger of AOL and Time Warner (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Merger_of_AOL_and_Time_Warner",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "dotcom-bubble.s10",
+      "title": "Nasdaq Composite (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Nasdaq_Composite",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "dotcom-bubble.s11",
+      "title": "Amazon (company) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Amazon_(company)",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}

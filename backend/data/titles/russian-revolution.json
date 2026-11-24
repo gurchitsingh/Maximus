@@ -1,0 +1,515 @@
+{
+  "id": "russian-revolution",
+  "kind": "topic",
+  "name": "Russian Revolution",
+  "subtitle": "1905 to 1923",
+  "poster_lines": [
+    "RUSSIAN",
+    "REVOLUTION"
+  ],
+  "group": "revolutions-empires",
+  "era": "modern",
+  "region": "europe",
+  "period_start": 1905,
+  "period_end": 1923,
+  "themes": [
+    "revolution",
+    "politics",
+    "war",
+    "society"
+  ],
+  "bg": "#7A1414",
+  "tint": "#F2C14E",
+  "lettering": "stencil",
+  "poster_image_id": null,
+  "hero_image_id": "russian-revolution.i01",
+  "brief": "1917: the tsar goes and the world looks different.",
+  "linked_title_ids": [],
+  "rank": 19,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "russian-revolution.l01",
+      "title_id": "russian-revolution",
+      "index": 1,
+      "heading": "The revolution of 1905",
+      "body": "The Russian Revolution of 1905, also known as the First Russian Revolution, was a revolution in the Russian Empire which began on 22 January 1905 and led to the establishment of a constitutional monarchy under the Russian Constitution of 1906, the country's first. The revolution saw mass political and social unrest, including worker strikes, peasant revolts, and military mutinies directed against Tsar Nicholas II and the autocracy, who were compelled to establish the State Duma legislative assembly and grant certain rights to the population, though both were later undermined.\n\nIn the years leading up to the revolution, Russian peasants had become increasingly aggrieved by repression from their landlords and the continuation of semi-feudal relations. Further discontent grew due to mounting losses in the Russo-Japanese War, poor conditions for workers, and urban unemployment. On 22 January [O.S. 9 January] 1905, known as \"Bloody Sunday,\" a peaceful procession of workers, led by Georgy Gapon, was fired on by guards outside the tsar's Winter Palace in Saint Petersburg. Demonstrations and strikes spread across the empire, and were brutally repressed by troops. In June, sailors on the battleship Potemkin mutinied, and in October, a strike by railway workers turned into a general strike in Saint Petersburg and Moscow. Workers established councils, including the inaugural St. Petersburg Soviet of Workers' Deputies, to debate their course of action. The influence of revolutionary parties, in particular the Socialist Revolutionary Party and Russian Social Democratic Labour Party, escalated; at the same time, reactionary pro-monarchist Black Hundreds began attacks on revolutionaries and the Jewish population.\n\nIn response, the tsar issued the \"October Manifesto,\" a pledge to create a legislative assembly, halt censorship and violations of freedom of association, and expand the right to vote. The constitution, drafted by Sergei Witte and enacted on 6 May [O.S. 23 April] 1906, did not bring an immediate end to the turmoil, as revolutionaries continued to rally for a constituent assembly. The movement for reform fragmented into conservative Octobrist and liberal Kadet factions, and the left split over demands for the tsar's overthrow. Despite popular participation, the Duma was unable to issue laws of its own, and came into conflict with the tsar, who in July 1906 dissolved the first Duma and appointed Pyotr Stolypin as prime minister, who set about restoring autocratic rule. In June 1907, the second Duma was dissolved and an electoral reform favoring the propertied class was decreed.\n\nMany historians contend that the Revolution of 1905 set the stage for the Russian Revolution of 1917, which saw the monarchy abolished, the tsar executed, and a socialist state established. Calls for the peasantry and workers to take power by force were present in the 1905 revolution, but many of the revolutionaries who were in a potential position to lead were either in exile or in prison while it took place. Vladimir Lenin later famously described the Revolution of 1905 as the \"dress rehearsal\" without which the \"victory of the October Revolution in 1917 would have been impossible.\"",
+      "reading_minutes": 3,
+      "image_ids": [
+        "russian-revolution.i02"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "russian-revolution.s01"
+      ]
+    },
+    {
+      "id": "russian-revolution.l02",
+      "title_id": "russian-revolution",
+      "index": 2,
+      "heading": "Bloody Sunday",
+      "body": "Bloody Sunday, also known as Red Sunday, was the series of events on Sunday, 22 January [O.S. 9 January] 1905 in St Petersburg, Russia, when demonstrators, led by Father Georgy Gapon, were fired upon by soldiers of the Imperial Guard as they marched towards the Winter Palace to present a petition to Tsar Nicholas II.\n\nBloody Sunday caused grave consequences for the tsarist authorities governing Russia: the events in St. Petersburg provoked public outrage and a series of massive strikes that spread quickly to the industrial centres of the Russian Empire. The massacre on Bloody Sunday is considered to be the start of the active phase of the Revolution of 1905. In addition to beginning the 1905 Revolution, historians such as Lionel Kochan in his book Russia in Revolution 1890–1918 view the events of Bloody Sunday to be one of the key events which led to the Russian Revolution of 1917.",
+      "reading_minutes": 1,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "russian-revolution.s02"
+      ]
+    },
+    {
+      "id": "russian-revolution.l03",
+      "title_id": "russian-revolution",
+      "index": 3,
+      "heading": "The February Revolution",
+      "body": "The February Revolution, known in Soviet historiography as the February Bourgeois Democratic Revolution, and sometimes as the March Revolution, was the first of two revolutions which took place in Russia in 1917.\n\nThe main events of the revolution took place in and near Petrograd (now Saint Petersburg), the capital of Russia at the time, where long-standing discontent with the monarchy erupted into mass protests against food rationing on 23 February Old Style (8 March New Style). Revolutionary activity lasted about eight days, involving mass demonstrations and violent armed clashes with police and gendarmes, the last loyal forces of the Russian monarchy. On 27 February O.S. (12 March N.S.), most of the forces of the capital's garrison sided with the revolutionaries. On the same day, the Russian Provisional Government, made up of left-leaning Duma members, was formed. It seized the railway telegraph and issued orders claiming that the Duma now controlled the government. This was followed by a second telegram prohibiting trains from traveling near Petrograd, ensuring that troops loyal to the Tsar could not arrive by rail. Three days later, Nicholas II, stranded on his train in the city of Pskov after failing to reach the capital, was forced to abdicate, ending Romanov dynastic rule. The Provisional Government under Georgy Lvov replaced the Council of Ministers of Russia.\n\nThe Provisional Government proved deeply unpopular and was forced to share dual power with the Petrograd Soviet. After the July Days, in which the government killed hundreds of protesters, Alexander Kerensky became the head of the government. He was unable to resolve Russia's immediate problems, including food shortages and mass unemployment, as he attempted to keep Russia involved in the ever more unpopular world war. The failures of the Provisional Government led to the October Revolution by the communist Bolsheviks later that year. The erosion of authority in Russia caused by the February Revolution, further exacerbated by the October Revolution, resulted in the Russian Civil War and the eventual formation of the Soviet Union.\n\nThe revolution appeared to have broken out without any real leadership or formal planning. Russia had been suffering from a number of economic and social problems, which compounded after the start of World War I in 1914. Disaffected soldiers from the city's garrison (which by then was composed by draftees with low morale, the more disciplined troops being at the front) joined bread rioters, primarily women in bread lines, and industrial strikers on the streets. As more and more troops of the undisciplined garrison of the capital deserted, and with loyal troops away at the Eastern Front, the city fell into chaos, leading to the Tsar's decision to abdicate under his generals' advice, assuming it was the best decision for the ultimate victory in the war efforts. In all, over 1,300 people were killed during the protests of February 1917. The historiographical reasons for the revolution have varied. Russian historians writing during the time of the Soviet Union cited the anger of the proletariat against the bourgeois boiling over as the cause. Russian liberals cited World War I. Revisionists tracked it back to land disputes after the serf era. Modern historians cite a combination of these factors and criticize mythologization of the event.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "russian-revolution.i03"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "russian-revolution.s03"
+      ]
+    },
+    {
+      "id": "russian-revolution.l04",
+      "title_id": "russian-revolution",
+      "index": 4,
+      "heading": "The Provisional Government",
+      "body": "The Russian Provisional Government was a provisional government of the Russian Empire and Russian Republic, announced two days before and established immediately after the abdication of Nicholas II on 2 March, O.S. [15 March 1917, N.S.], during the February Revolution. The intention of the provisional government was the organization of elections to the Russian Constituent Assembly and its convention. The provisional government, led first by Prince Georgy Lvov and then by Alexander Kerensky, lasted approximately eight months, and ceased to exist when the Bolsheviks gained power in the October Revolution in October [November, N.S.] 1917.\n\n![](russian-revolution.i05)\n\nAccording to Harold Whitmore Williams, the history of the eight months during which Russia was ruled by the Provisional Government was the history of the steady and systematic disorganization of the army. The Provisional Government was a caretaker government, with its political system and the status of the monarchy remaining unresolved until the election of the Constituent Assembly. This was finally clarified on 1 September [14 September, N.S.], when the Russian Republic was proclaimed, in a decree signed by Kerensky as Minister-President and Zarudny as Minister of Justice.",
+      "reading_minutes": 1,
+      "image_ids": [
+        "russian-revolution.i04",
+        "russian-revolution.i05"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "russian-revolution.s04"
+      ]
+    },
+    {
+      "id": "russian-revolution.l05",
+      "title_id": "russian-revolution",
+      "index": 5,
+      "heading": "The October Revolution",
+      "body": "The October Revolution, also known as the Great October Socialist Revolution (in Soviet historiography), October coup, Bolshevik coup, or Bolshevik Revolution, was the second of two revolutions in Russia in 1917. It was led by Vladimir Lenin's Russian Social Democratic Labour Party (Bolsheviks) as part of the broader Russian Revolution of 1917–1923. It began through an insurrection in Petrograd (now Saint Petersburg) on 7 November 1917 [O.S. 25 October]. It was the precipitating event of the Russian Civil War. The initial stage of the October Revolution, which involved the assault on Petrograd, occurred largely without any casualties.\n\n![](russian-revolution.i07)\n\nThe October Revolution followed and capitalised on the February Revolution earlier that year, which had led to the abdication of Nicholas II and the creation of the Russian Provisional Government. The provisional government, led by Alexander Kerensky, had taken power after Grand Duke Michael, the younger brother of Nicholas II, declined to take power. During this time, urban workers began to organize into councils (soviets) wherein revolutionaries criticized the provisional government and its actions. The provisional government remained unpopular, especially because it was continuing to fight in World War I, and had ruled with an iron fist throughout mid-1917 (including killing hundreds of protesters in the July Days). It declared the Russian Republic on 1 [N.S. 14] September 1917.\n\n![](russian-revolution.i08)\n\nThe situation grew critical in late 1917 as the Directorate, led by the left-wing Party of Socialist-Revolutionaries (SRs), controlled the government. The far-left Bolsheviks were deeply unhappy with the government, and began spreading calls for a military uprising. On 10 [N.S. 23] October 1917, the Petrograd Soviet, led by Leon Trotsky, voted to back a military uprising. On 24 October [N.S. 6 November], the government closed numerous newspapers, and closed Petrograd, attempting to forestall the revolution; minor armed skirmishes ensued. The next day, a full-scale uprising erupted as a fleet of Bolshevik sailors entered the harbor and tens of thousands of soldiers rose up in support of the Bolsheviks. Bolshevik Red Guards under the Military-Revolutionary Committee began to occupy government buildings. In the early morning of 26 October [N.S. 8 November], they captured the Winter Palace — the seat of the Provisional government located in Petrograd, then capital of Russia.\n\nAs the revolution was not universally recognized, the country descended into civil war, which lasted until late 1922 and led to the creation of the Soviet Union. The historiography of the event has varied. The victorious Soviet Union viewed it as a validation of its ideology and the triumph of the working class over capitalism. On the other hand, Western observers saw it as a totalitarian coup, which used the democratic Soviet councils only until they were no longer useful. The Revolution inspired many cultural works and ignited communist movements globally. October Revolution Day was a public holiday in the Soviet Union, marking its key role in the state's founding, and many communist parties around the world still celebrate it.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "russian-revolution.i06",
+        "russian-revolution.i07",
+        "russian-revolution.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "russian-revolution.s05"
+      ]
+    },
+    {
+      "id": "russian-revolution.l06",
+      "title_id": "russian-revolution",
+      "index": 6,
+      "heading": "The Constituent Assembly",
+      "body": "The All Russian Constituent Assembly was a constituent assembly convened in Russia after the October Revolution of 1917. It met for 13 hours, from 4 p.m. to 5 a.m., 18–19 January [O.S. 5–6 January] 1918, whereupon it was dissolved by the Bolshevik-led All-Russian Central Executive Committee, proclaiming the Third All-Russian Congress of Soviets the new governing body of Russia.\n\nThe 1917 Russian Constituent Assembly election did not produce a democratically elected government, as the Bolsheviks, who were in power since the October Revolution which occurred prior to the election, subsequently disbanded the Constituent Assembly and proceeded to rule the country as a one-party state with all opposition parties outlawed.\n\nSome scholars have had a differing view and attributed the establishment of the one-party system in the Soviet Union to the wartime conditions imposed on the Bolshevik government and others have highlighted the initial attempts to form a coalition government with the Left Socialist Revolutionaries.\n\n![](russian-revolution.i09)\n\n## Brest-Litovsk\n\nThe Treaty of Brest-Litovsk was a separate peace treaty signed on 3 March 1918 between Russia and the Central Powers (Germany, Austria-Hungary, the Ottoman Empire, and Bulgaria), by which Russia withdrew from World War I. The treaty, which followed months of negotiations after the armistice on the Eastern Front in December 1917, was signed at Brest-Litovsk (now Brest, Belarus).\n\nThe Soviet delegation was initially headed by Adolph Joffe, and key figures from the Central Powers included Max Hoffmann and Richard von Kühlmann of Germany, Ottokar Czernin of Austria-Hungary, and Talaat Pasha of the Ottoman Empire. In January 1918, the Central Powers demanded secession of all occupied territories of the former Russian Empire. The Soviets sent a new peace delegation led by Leon Trotsky, which aimed to stall the negotiations while awaiting revolutions in Central Europe. A renewed Central Powers offensive launched on February 18 captured large territories in the Baltic region, Belarus, and Ukraine and forced the Soviet side to sue for peace.\n\nUnder the terms of the treaty, Russia lost control of Ukraine, Poland, Belarus, Lithuania, Latvia, Estonia, and its Caucasian province of Kars and Batum. The lands comprised 34% of the former empire's population, 54% of its industrial land, 89% of its coalfields, and 26% of its railways. The historian Stephen Kotkin wrote that \"no Russian government had ever surrendered so much territory or sovereignty\". The Soviet government also confirmed the independence of Finland, which it had recognized in January 1918, and pledged to end its war with the Ukrainian People's Republic, which the Central Powers had recognized under the prior Treaty of Brest-Litovsk (9 February 1918). A supplementary protocol signed in August 1918 required Russia to pay Germany war reparations of six billion marks. The treaty was controversial in Russia, giving a unifying cause to the White movement and opening a rift between the Bolsheviks and the Left Socialist-Revolutionaries, whose representatives withdrew from the Council of People's Commissars after its signing and later rebelled in the Left SR Uprising.\n\nThe treaty was annulled by the Armistice of 11 November 1918, in which Germany surrendered to the western Allied Powers. Subsequent attempts by the Soviets to restore power in the lost territories during the Russian Civil War (1917–1922) had mixed results, with the Red Army losing the three Baltic countries but regaining Azerbaijan, Armenia, Belarus, Georgia, and Ukraine by 1921. The border with Turkey established by the treaty was largely affirmed by the Treaty of Kars (1921). Under the Treaty of Rapallo (1922), Russia and Germany renounced all territorial and financial claims against each other.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "russian-revolution.i04",
+        "russian-revolution.i09"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "russian-revolution.s06",
+        "russian-revolution.s07"
+      ]
+    },
+    {
+      "id": "russian-revolution.l07",
+      "title_id": "russian-revolution",
+      "index": 7,
+      "heading": "The Civil War",
+      "body": "The Russian Civil War was a multi-party civil war in the former Russian Empire, lasting from 1917 to 1922, sparked by the overthrowing of the Russian Provisional Government in the October Revolution, as many factions vied to determine Russia's political future. It resulted in the formation of the Russian Socialist Federative Soviet Republic and later the Soviet Union in most of its territory. Its finale marked the end of the Russian Revolution, which was one of the key events of the 20th century.\n\nThe Russian monarchy ended with the abdication of Tsar Nicholas II during the February Revolution, and Russia was in a state of political flux. A tense summer culminated in the October Revolution, where the Bolsheviks overthrew the provisional government of the new Russian Republic. Bolshevik seizure of power was not universally accepted, and the country descended into a conflict which became a full-scale civil war in May–June 1918. The two largest combatants were the Red Army, fighting for the establishment of a Bolshevik-led socialist state headed by Vladimir Lenin, and the forces known as the White movement (and its White Army), led mainly by the right-leaning officers of the Russian Empire, united around the figure of Alexander Kolchak. In addition, rival militant socialists, notably the Ukrainian anarchists of the Makhnovshchina and Left Socialist-Revolutionaries, were involved in conflict against the Bolsheviks. They, as well as non-ideological green armies, opposed the Bolsheviks, the Whites and the foreign interventionists. Thirteen foreign states intervened against the Red Army, notably the Allied intervention, whose primary goal was re-establishing the Eastern Front of World War I. Three foreign states of the Central Powers also intervened, rivaling the Allied intervention with the main goal of retaining the territory they had received in the Treaty of Brest-Litovsk with Soviet Russia.\n\nThe Bolsheviks initially consolidated control over most of the former empire. The Treaty of Brest-Litovsk was an emergency peace with the German Empire, who had captured vast swathes of the Russian territory during the chaos of the revolution. In May 1918, the Czechoslovak Legion in Russia revolted in Siberia. In reaction, the Allies began their North Russian and Siberian interventions. That, combined with the creation of the Provisional All-Russian Government, saw the reduction of Bolshevik-controlled territory to most of European Russia and parts of Central Asia. In 1919, the White Army launched several offensives from the east in March, the south in July, and west in October. The advances were later checked by the Eastern Front counteroffensive, the Southern Front counteroffensive, and the defeat of the Northwestern Army.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "russian-revolution.i10"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "russian-revolution.s08"
+      ]
+    },
+    {
+      "id": "russian-revolution.l08",
+      "title_id": "russian-revolution",
+      "index": 8,
+      "heading": "The Civil War (continued)",
+      "body": "By 1919, the White armies were in retreat and by the start of 1920 were defeated on all three fronts. Although the Bolsheviks were victorious, the territorial extent of the Russian state had been reduced, for many non-Russian ethnic groups had used the disarray to push for national independence. In March 1921, during a related war against Poland, the Peace of Riga was signed, splitting disputed territories in Belarus and Ukraine between the Republic of Poland on one side and Soviet Russia and Soviet Ukraine on the other. Soviet Russia invaded all the newly independent nations of the former empire or supported the Bolshevik and socialist forces there, although the success of such invasions was limited. Estonia, Latvia, and Lithuania all repelled Soviet invasions, Ukraine and Belarus were divided (as a result of the Polish–Soviet War), while Armenia, Azerbaijan and Georgia were occupied by the Red Army. By 1921, the Bolsheviks had defeated the national movements in Ukraine and the Caucasus, although anti-Bolshevik uprisings in Central Asia lasted until the late 1920s.\n\nThe armies under Kolchak were eventually forced on a mass retreat eastward. Bolshevik forces advanced east, despite encountering resistance in Chita, Yakut and Mongolia. Soon the Red Army split the Don and Volunteer armies, forcing evacuations in Novorossiysk in March and Crimea in November 1920. After that, fighting was sporadic until the war ended with the capture of Vladivostok in October 1922, but anti-Bolshevik resistance continued with the Muslim Basmachi movement in Central Asia and Khabarovsk Krai until 1934. There were an estimated 7 to 12 million casualties during the war, mostly civilians.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "russian-revolution.s08"
+      ]
+    },
+    {
+      "id": "russian-revolution.l09",
+      "title_id": "russian-revolution",
+      "index": 9,
+      "heading": "The fate of the Romanovs",
+      "body": "Members of the Romanov family–the former Emperor Nicholas II of Russia, Empress Alexandra, and their children, Olga, Tatiana, Maria, Anastasia, and Alexei–were shot and stabbed to death by Bolshevik revolutionaries under Yakov Yurovsky on the orders of the Ural Regional Soviet in Yekaterinburg on the night of 16–17 July 1918. Also killed that night were members of the imperial entourage who had accompanied them: court physician Eugene Botkin; lady-in-waiting Anna Demidova; footman Alexei Trupp; and head cook Ivan Kharitonov. The bodies were taken to the Koptyaki forest, where they were stripped, mutilated with grenades and acid to prevent identification, and buried.\n\nFollowing the February Revolution in 1917, the Romanovs and their servants had been imprisoned in the Alexander Palace before being moved to Tobolsk, Siberia, in the aftermath of the October Revolution. They were next moved to a house in Yekaterinburg, near the Ural Mountains, before they were murdered in July 1918. The Bolsheviks initially announced only Nicholas's death. For the next eight years, the Soviet leadership maintained a systematic web of disinformation regarding his family, making claims ranging from murder by left-wing revolutionaries in September 1919, to outright denial of their deaths in April 1922.\n\nIn 1926 the Soviet regime acknowledged the killings of the entire family (following a French republishing of a 1919 investigation by a White émigré) but claimed the bodies were destroyed and that Lenin's Cabinet was not responsible. The Soviet cover-up of the murders fuelled rumors of survivors. Various Romanov impostors claimed to be members of the Romanov family, which drew media attention away from the activities of Soviet Russia.\n\nIn 1979, amateur detective Alexander Avdonin discovered the burial site. The Soviet Union did not acknowledge the existence of these remains publicly until 1989 during the Glasnost period. The identities of the remains were confirmed by forensic and DNA analysis and investigation in 1994, with the assistance of British experts. In 1998, eighty years after the killings, the remains of the Romanovs were reinterred in a state funeral in the Peter and Paul Cathedral in Saint Petersburg. The funeral was not attended by key members of the Russian Orthodox Church, who disputed the authenticity of the remains. In 2007, a second, smaller grave which contained the remains of two of the Romanov children, missing from the larger grave, was discovered by amateur archaeologists; those remains were confirmed to be from Alexei and a sister—either Anastasia or Maria—by DNA analysis. In 2008, after considerable and protracted legal wrangling, the Russian prosecutor general's office rehabilitated the Romanov family as \"victims of political repressions\". A criminal case was opened by the Russian government in 1993, but nobody was prosecuted on the basis that the perpetrators were dead.\n\nAccording to the official state version of the Soviet Union, the imperial family and retinue were killed by firing squad by order of the Ural Regional Soviet. Historians have debated whether the execution was sanctioned by Moscow leadership. Some Western historians attribute the execution order to the government in Moscow, specifically Vladimir Lenin and Yakov Sverdlov, who wanted to prevent the rescue of the imperial family by the approaching Czechoslovak Legion during the Russian Civil War. This is supported by a passage in Leon Trotsky's diary.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "russian-revolution.i11"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "russian-revolution.s09"
+      ]
+    },
+    {
+      "id": "russian-revolution.l10",
+      "title_id": "russian-revolution",
+      "index": 10,
+      "heading": "The Soviet Union is born",
+      "body": "The Declaration and Treaty on the Formation of the Union of Soviet Socialist Republics officially created the Union of Soviet Socialist Republics (USSR), commonly known as the Soviet Union. It de jure legalised a political union of several Soviet republics that had existed since 1919 and created a new federal government whose key functions were centralised in Moscow. Its legislative branch consisted of the Congress of Soviets and the Central Executive Committee of the Soviet Union, while the Council of People's Commissars composed the executive.\n\nThe Treaty, along with the Declaration of the Creation of the USSR was approved on 30 December 1922 by a conference of delegations from the Russian SFSR, the Transcaucasian SFSR, the Ukrainian SSR and the Byelorussian SSR. The Treaty and the Declaration were confirmed by the First All-Union Congress of Soviets and signed by heads of delegations – Mikhail Kalinin, Mikhail Tskhakaya, and Grigory Petrovsky, Alexander Chervyakov respectively on December 30, 1922. The treaty provided flexibility to admit new members. Therefore, by 1940 the Soviet Union grew from the founding four (or six, depending on whether 1922 or 1940 definitions are applied) republics to 16 republics.\n\n![](russian-revolution.i13)\n\nOn 8 December 1991, Russian, Ukrainian and Belarusian presidents signed the Belovezha Accords. The agreement declared the dissolution of the USSR by its remaining founder states (denunciation of the Treaty on the Creation of the USSR) and established the Commonwealth of Independent States (CIS). On 10 December, the accord was ratified by the Ukrainian and Belarusian parliaments. On 12 December, the agreement was ratified by the Russian Parliament; therefore, the Russian SFSR renounced the Treaty on the Creation of the USSR and de facto declared Russia's independence from the USSR.\n\nOn 26 December 1991, the USSR was dissolved by the Council of the Republics of the Supreme Soviet of the Soviet Union, the upper house of the Supreme Soviet of the Soviet Union (the lower house, the Soviet of the Union, was without a quorum).",
+      "reading_minutes": 2,
+      "image_ids": [
+        "russian-revolution.i12",
+        "russian-revolution.i13"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "russian-revolution.s10"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "russian-revolution.i01",
+      "title_id": "russian-revolution",
+      "url": "http://10.0.2.2:8000/media/russian-revolution/i01-e06511c2ff.jpg",
+      "width": 1600,
+      "height": 1040,
+      "alt": "A barricade erected by revolutionaries in Moscow during Moscow uprising of 1905",
+      "kind": "other",
+      "author": "Unknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:The_Russian_Revolution,_1905_Q81553.jpg",
+      "credit_line": "Unknown author · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "russian-revolution.i02",
+      "title_id": "russian-revolution",
+      "url": "http://10.0.2.2:8000/media/russian-revolution/i02-8d63deff8e.jpg",
+      "width": 1600,
+      "height": 871,
+      "alt": "Old Carte Postale (Open Letter) with view of ruins of burned Odessa port and ships remains after mobs attacked the port on June 29th 1905 during battleship Potemkin mutiny",
+      "kind": "other",
+      "author": "Unknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Odessa_Potemkin_mutiny_(cropped).jpg",
+      "credit_line": "Unknown author · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "russian-revolution.i03",
+      "title_id": "russian-revolution",
+      "url": "http://10.0.2.2:8000/media/russian-revolution/i03-89f779ef94.jpg",
+      "width": 1600,
+      "height": 966,
+      "alt": "Pro-republic demonstration in Petrograd, March 1917.",
+      "kind": "other",
+      "author": "Jones, Stinton",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Manifestaci%C3%B3nAFavorDeLaRep%C3%BAblicaPetrogrado1917--russiainrevolut00jone.jpg",
+      "credit_line": "Jones, Stinton · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "russian-revolution.i04",
+      "title_id": "russian-revolution",
+      "url": "http://10.0.2.2:8000/media/russian-revolution/i04-20716b9590.png",
+      "width": 1600,
+      "height": 1498,
+      "alt": "Coat of arms of Russia - Provisional Government, 1917",
+      "kind": "other",
+      "author": "Билибин, Иван Яковлевич. Компьютерная обработка: Лобачев Владимир",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Russian_coa_1917.svg",
+      "credit_line": "Билибин, Иван Яковлевич. Компьютерная обработка: Лобачев Владимир · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "russian-revolution.i05",
+      "title_id": "russian-revolution",
+      "url": "http://10.0.2.2:8000/media/russian-revolution/i05-c2dbeecb20.jpg",
+      "width": 1600,
+      "height": 1018,
+      "alt": "Nine members of the Provisional Committee of the State Duma in March 1917. From left to right: Seated: V. N. Lvov, V. A. Rzhevsky, S. I. Shidlovsky, and M. V. Rodzianko (chairman); Standing: V. V.",
+      "kind": "other",
+      "author": "Karl Bulla",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Vremenniy_komitet_gozdumy_1917.jpg",
+      "credit_line": "Karl Bulla · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "russian-revolution.i06",
+      "title_id": "russian-revolution",
+      "url": "http://10.0.2.2:8000/media/russian-revolution/i06-e4663dcc4a.jpg",
+      "width": 1600,
+      "height": 1182,
+      "alt": "After the capture of the Winter Palace. Petrograd. 26 October (7 Nov.) 1917. Photo by P. Novitsky",
+      "kind": "photo",
+      "author": "Pyotr Novitsky",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:After_the_capture_of_the_Winter_Palace_26_October_1917.jpg",
+      "credit_line": "Pyotr Novitsky · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "russian-revolution.i07",
+      "title_id": "russian-revolution",
+      "url": "http://10.0.2.2:8000/media/russian-revolution/i07-d63870fedf.jpg",
+      "width": 1600,
+      "height": 1027,
+      "alt": "Red Guard unit of the Vulkan factory in Petrograd, October 1917",
+      "kind": "other",
+      "author": "Viktor Bulla",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Red_Guard_Vulkan_factory.jpg",
+      "credit_line": "Viktor Bulla · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "russian-revolution.i08",
+      "title_id": "russian-revolution",
+      "url": "http://10.0.2.2:8000/media/russian-revolution/i08-6f35b2839a.jpg",
+      "width": 1600,
+      "height": 1135,
+      "alt": "Bolshevik (1920) by Boris Kustodiev",
+      "kind": "other",
+      "author": "Boris Kustodiev",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Kustodiev_The_Bolshevik.jpg",
+      "credit_line": "Boris Kustodiev · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "russian-revolution.i09",
+      "title_id": "russian-revolution",
+      "url": "http://10.0.2.2:8000/media/russian-revolution/i09-6373fbac13.jpg",
+      "width": 1600,
+      "height": 1200,
+      "alt": "The first page of the treaty in (from left to right) German, Hungarian, Bulgarian, Ottoman Turkish, and Russian",
+      "kind": "photo",
+      "author": "Unknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Traktat_brzeski_1918.jpg",
+      "credit_line": "Unknown author · Public domain · Wikimedia Commons",
+      "modified": false,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "russian-revolution.i10",
+      "title_id": "russian-revolution",
+      "url": "http://10.0.2.2:8000/media/russian-revolution/i10-8434b04dac.jpg",
+      "width": 1600,
+      "height": 2038,
+      "alt": "Clockwise from top: Soldiers of the Don Army in 1919; a White Russian infantry division in March 1920; soldiers of the 1st Cavalry Army; Leon Trotsky in 1918;",
+      "kind": "other",
+      "author": "User:Yanachka",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:CWRArticleImage.jpg",
+      "credit_line": "User:Yanachka · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "russian-revolution.i11",
+      "title_id": "russian-revolution",
+      "url": "http://10.0.2.2:8000/media/russian-revolution/i11-5edfa7c03a.jpg",
+      "width": 1600,
+      "height": 1139,
+      "alt": "The basement where the Romanov family and their retainers were killed",
+      "kind": "other",
+      "author": "AnonymousUnknown author",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Ipatyev_house_basement.jpg",
+      "credit_line": "AnonymousUnknown author · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "russian-revolution.i12",
+      "title_id": "russian-revolution",
+      "url": "http://10.0.2.2:8000/media/russian-revolution/i12-18ac4eaf9d.jpg",
+      "width": 1600,
+      "height": 2176,
+      "alt": "The official cover of the 1922 Declaration and Treaty on the Formation of the USSR document. It was signed on December 29 and approved on December 30, 1922.",
+      "kind": "other",
+      "author": "State Register of Unique Documents of the Archival Fund of the Russian Federation",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Cover_of_the_1922_Declaration_and_Treaty_on_the_Formation_of_the_USSR.jpg",
+      "credit_line": "State Register of Unique Documents of the Archival Fund of the Russian Federation · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "russian-revolution.i13",
+      "title_id": "russian-revolution",
+      "url": "http://10.0.2.2:8000/media/russian-revolution/i13-8a25a3f64c.jpg",
+      "width": 1600,
+      "height": 2616,
+      "alt": "Map of the USSR at the time of its creation. The Byelorussian SSR is labelled \"White Russia.\"",
+      "kind": "map",
+      "author": "colonel Lawrence Martin",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Establishment_of_the_USSR_1922.jpg",
+      "credit_line": "colonel Lawrence Martin · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "russian-revolution.s01",
+      "title": "Russian Revolution of 1905 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Russian_Revolution_of_1905",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "russian-revolution.s02",
+      "title": "Bloody Sunday (1905) (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Bloody_Sunday_(1905)",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "russian-revolution.s03",
+      "title": "February Revolution (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/February_Revolution",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "russian-revolution.s04",
+      "title": "Russian Provisional Government (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Russian_Provisional_Government",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "russian-revolution.s05",
+      "title": "October Revolution (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/October_Revolution",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "russian-revolution.s06",
+      "title": "Russian Constituent Assembly (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Russian_Constituent_Assembly",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "russian-revolution.s07",
+      "title": "Treaty of Brest-Litovsk (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Brest-Litovsk",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "russian-revolution.s08",
+      "title": "Russian Civil War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Russian_Civil_War",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "russian-revolution.s09",
+      "title": "Murder of the Romanov family (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Murder_of_the_Romanov_family",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "russian-revolution.s10",
+      "title": "Treaty on the Creation of the Union of Soviet Socialist Republics (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Treaty_on_the_Creation_of_the_Union_of_Soviet_Socialist_Republics",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}
