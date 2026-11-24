@@ -471,3 +471,11 @@ def test_every_setting_is_documented():
     readme = (BACKEND_DIR / "README.md").read_text("utf-8")
     assert sorted(n for n in names - {"RENDER"} if f"\n{n}=" not in "\n" + example) == []
     assert sorted(n for n in names if f"`{n}`" not in readme) == []
+
+
+def test_unknown_kid_refetches_at_most_once_a_minute(client, google):
+    google.verifier.keys.get("test-kid")  # warm
+    before = google.fetches
+    for _ in range(5):
+        client.post("/v1/auth/google", json={"id_token": google.token(kid="made-up")})
+    assert google.fetches - before <= 1

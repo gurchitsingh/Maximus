@@ -12,6 +12,7 @@ from urllib.parse import parse_qs
 from fastapi import APIRouter, BackgroundTasks, Depends, Query, Request
 from fastapi.responses import HTMLResponse
 from sqlalchemy.orm import Session
+from starlette.concurrency import run_in_threadpool
 
 from app.config import settings
 from app.db import get_db
@@ -107,7 +108,7 @@ async def delete_request(request: Request, bg: BackgroundTasks, db: Session = De
         limits.delete_form_email.check(email)
     except ApiError:
         return _too_many()
-    for mail in service.request_delete_link(db, email, tokens.utcnow()):
+    for mail in await run_in_threadpool(service.request_delete_link, db, email, tokens.utcnow()):
         bg.add_task(mailer.deliver, m, mail)
     return message("Check your email", "Check your email",
                    "If an account exists for that address, we sent a link to delete it. The link works for one hour.")
@@ -132,7 +133,7 @@ async def delete_confirm(request: Request, db: Session = Depends(get_db)):
         return _too_many()
     fields = await form(request)
     try:
-        service.confirm_delete_link(db, fields.get("token", ""), tokens.utcnow())
+        await run_in_threadpool(service.confirm_delete_link, db, fields.get("token", ""), tokens.utcnow())
     except ApiError:
         return message(*INVALID_LINK, status=400)
     return message("Account deleted", "Your account and data are deleted",
@@ -160,7 +161,7 @@ async def verify_submit(request: Request, db: Session = Depends(get_db)):
         return _too_many()
     fields = await form(request)
     try:
-        service.verify_email(db, fields.get("token", ""), tokens.utcnow())
+        await run_in_threadpool(service.verify_email, db, fields.get("token", ""), tokens.utcnow())
     except ApiError:
         return message(*INVALID_LINK, status=400)
     return message("Email confirmed", "Email confirmed", "Thank you. You can go back to the app.")
@@ -184,7 +185,7 @@ async def reset_submit(request: Request, db: Session = Depends(get_db)):
     fields = await form(request)
     token = fields.get("token", "")
     try:
-        service.reset_password(db, token, fields.get("new_password", ""), tokens.utcnow())
+        await run_in_threadpool(service.reset_password, db, token, fields.get("new_password", ""), tokens.utcnow())
     except ApiError as e:
         if e.code == "weak_password":
             return render("Choose a new password", "reset_form.html", 422, token=token,

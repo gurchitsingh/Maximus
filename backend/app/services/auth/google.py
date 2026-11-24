@@ -37,6 +37,7 @@ class GoogleKeys:
         self._fetch = fetch or self._http_fetch
         self._keys: dict[str, jwt.PyJWK] = {}
         self._expires = 0.0
+        self._last_fetch = -1e9
         self._lock = threading.Lock()
 
     @staticmethod
@@ -48,7 +49,12 @@ class GoogleKeys:
 
     def get(self, kid: str) -> jwt.PyJWK | None:
         with self._lock:
-            if time.monotonic() >= self._expires or kid not in self._keys:
+            now = time.monotonic()
+            stale = now >= self._expires
+            # An unknown kid refetches (Google rotates keys) but at most once a minute, so made-up kids
+            # cannot turn every sign-in attempt into a request to Google.
+            if stale or (kid not in self._keys and now - self._last_fetch >= 60):
+                self._last_fetch = now
                 try:
                     jwks, max_age = self._fetch()
                     self._keys = {k["kid"]: jwt.PyJWK(k) for k in jwks.get("keys", []) if "kid" in k}
