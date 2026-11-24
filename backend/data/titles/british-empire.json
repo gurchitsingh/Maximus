@@ -1,0 +1,407 @@
+{
+  "id": "british-empire",
+  "kind": "topic",
+  "name": "British Empire",
+  "subtitle": "c. 1600 to 1997",
+  "poster_lines": [
+    "BRITISH",
+    "EMPIRE"
+  ],
+  "group": "revolutions-empires",
+  "era": "modern",
+  "region": "global",
+  "period_start": 1600,
+  "period_end": 1997,
+  "themes": [
+    "empire",
+    "trade",
+    "politics",
+    "war"
+  ],
+  "bg": "#1C2E4A",
+  "tint": "#E06A6A",
+  "lettering": "roman",
+  "poster_image_id": null,
+  "hero_image_id": "british-empire.i01",
+  "brief": "How a small island came to run a quarter of the world.",
+  "linked_title_ids": [
+    "elizabeth-i"
+  ],
+  "rank": 20,
+  "status": "draft",
+  "lessons": [
+    {
+      "id": "british-empire.l01",
+      "title_id": "british-empire",
+      "index": 1,
+      "heading": "An empire on which the sun never set",
+      "body": "The British Empire comprised the dominions, colonies, protectorates, mandates, and other territories ruled or administered by the United Kingdom and its predecessor states. It began with the overseas possessions and trading posts established by England in the late 16th and early 17th centuries, and colonisation attempts by Scotland during the 17th century. At its height in the 19th and early 20th century, it was the largest empire in history and, for a century, was the foremost global power. By 1913 the British Empire held sway over 412 million people, 23 per cent of the world population at the time, and by 1920 it covered 35.5 million km2 (13.7 million sq mi), 24 per cent of the Earth's total land area. The British Parliament was the supreme law-making authority for all the British possessions which made up the empire. As a result, its constitutional, legal, linguistic, and cultural legacy is widespread. It was described as \"the empire on which the sun never sets\", as the sun was always shining on at least one of its territories.\n\nDuring the Age of Discovery in the 15th and 16th centuries, Portugal and Spain pioneered European exploration of the world, and in the process established large overseas empires. Motivated by the great wealth these empires generated, England, France, and the Netherlands began to establish colonies and trade networks in the Americas and Asia. A series of wars in the 17th and 18th centuries with the Netherlands and France left Britain the dominant colonial power in North America. Britain became a major power in the Indian subcontinent after the East India Company's conquest of Mughal Bengal at the Battle of Plassey in 1757.\n\nThe American Revolution resulted in Britain losing some of its oldest and most populous colonies in North America by 1783. While retaining control of British North America (now Canada) and territories in and near the Caribbean in the British West Indies, British colonial expansion turned towards Asia, Africa, and the Pacific. After the defeat of France in the Napoleonic Wars (1803–1815), Britain emerged as the principal naval and imperial power of the 19th century and expanded its imperial holdings. It pursued trade concessions in China and Japan, and territory in Southeast Asia. The Great Game and Scramble for Africa also ensued. It also colonised India by defeating the last major imperial dynasty Maratha Empire by 1818 in the Third Anglo-Maratha War. The period of relative peace (1815–1914) during which the British Empire became the global hegemon was later described as Pax Britannica (Latin for \"British Peace\").",
+      "reading_minutes": 3,
+      "image_ids": [
+        "british-empire.i01"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "british-empire.s01"
+      ]
+    },
+    {
+      "id": "british-empire.l02",
+      "title_id": "british-empire",
+      "index": 2,
+      "heading": "An empire on which the sun never set (continued)",
+      "body": "Alongside the formal control that Britain exerted over its colonies, its dominance of much of world trade, and of its oceans, meant that it effectively controlled the economies of, and readily enforced its interests in, many regions, such as Asia and Latin America. It also came to dominate the Middle East, shaping its modern borders alongside France. Increasing degrees of autonomy were recognised for its white settler colonies, some of which were formally reclassified as dominions by the 1920s. By the start of the 20th century, Germany and the United States had begun to challenge Britain's economic lead. Military, economic and colonial tensions between Britain and Germany were major causes of the First World War, during which Britain relied heavily on its empire. The conflict placed enormous strain on its military, financial, and manpower resources. Although the empire achieved its largest territorial extent immediately after the First World War, Britain was no longer the world's preeminent industrial or military power.\n\nIn the Second World War, Britain's colonies in East Asia and Southeast Asia were occupied by the Empire of Japan. Despite the final victory of Britain and its allies, the damage to British prestige and the British economy helped accelerate the decline of the empire. India, Britain's most valuable and populous possession, achieved independence in 1947 as part of a larger decolonisation movement, in which Britain granted independence to most territories of the empire. The Suez Crisis of 1956 confirmed Britain's decline as a global power, and the handover of Hong Kong to China on 1 July 1997 symbolised for many the end of the British Empire, though fourteen overseas territories that are remnants of the empire remain under British sovereignty. After independence many former British colonies, along with most of the dominions, joined the Commonwealth of Nations, a free association of independent states. Fifteen of these, including the United Kingdom, retain the same person as monarch, currently King Charles III.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "british-empire.s01"
+      ]
+    },
+    {
+      "id": "british-empire.l03",
+      "title_id": "british-empire",
+      "index": 3,
+      "heading": "The East India Company",
+      "body": "The East India Company (EIC) was an English, and later British, joint-stock company that was founded in 1600 and dissolved in 1874. It was formed for Indian Ocean trade, initially with the East Indies (which included the Indian subcontinent and Southeast Asia), and later with East Asia. The company gained control of large parts of the Indian subcontinent and Saint Helena prior to 1834. At its peak, the company was the largest corporation in the world by various measures and had its own armed forces in the form of the company's three presidency armies, totalling about 260,000 soldiers, twice the size of the British Army at certain times.\n\nOriginally chartered as the \"Governor and Company of Merchants of London Trading into the East-Indies\", the company rose to account for half of the world's trade during the mid-1700s and early 1800s, particularly in basic commodities including cotton, silk, indigo dye, sugar, salt, spices, saltpetre, tea, gemstones, and later opium. The company also initiated the beginnings of the British Raj in the Indian subcontinent.\n\nThe company eventually came to rule large areas of the Indian subcontinent, exercising military power and assuming administrative functions. Under this government-like rule, the company used torture to extract taxes, reduced much of the population to poverty and mishandled the Great Bengal famine of 1770, caused by crop failure and smallpox, during which an estimated 10 million people starved to death.\n\nCompany-ruled areas in the region gradually expanded after the Battle of Plassey in 1757, and by 1858 most of modern India, Pakistan and Bangladesh, along with Lower Burma, was either ruled by the company or princely states closely tied to the company by treaties. Following the Indian Rebellion of 1857, the Government of India Act 1858 led to the British Crown assuming direct control of present-day Bangladesh, India, Pakistan, and Myanmar in the form of the new British Raj. The company subsequently experienced recurring problems with its finances, despite frequent government intervention. The company was dissolved in 1874 under the terms of the East India Stock Dividend Redemption Act enacted one year earlier, as the Government of India Act had by then rendered it vestigial, powerless, and obsolete. The official government machinery of the British Empire had assumed its governmental functions and absorbed its armies.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "british-empire.s02"
+      ]
+    },
+    {
+      "id": "british-empire.l04",
+      "title_id": "british-empire",
+      "index": 4,
+      "heading": "The Thirteen Colonies",
+      "body": "The Thirteen Colonies were the British colonies on the Atlantic coast of North America which broke away from the British Crown in the American Revolutionary War (1775–1783), and joined to form the United States of America.\n\nThe Thirteen Colonies in their traditional groupings were: the New England Colonies (Province of New Hampshire, Province of Massachusetts Bay, Colony of Rhode Island and Providence Plantations, and Connecticut Colony); the Middle Colonies (Province of New York, Province of New Jersey, Province of Pennsylvania, and Delaware Colony); and the Southern Colonies (Province of Maryland, Colony of Virginia, Province of North Carolina, Province of South Carolina, and Province of Georgia). These colonies were part of British America, which also included territory in the Floridas, the Caribbean, and what is today Canada.\n\n![](british-empire.i03)\n\nThe Thirteen Colonies were separately administered under the Crown, but had similar political, constitutional, and legal systems, and each was dominated by Protestant English-speakers. The first of the colonies, Virginia, was established at Jamestown in 1607. Maryland, Pennsylvania, and the New England Colonies were substantially motivated by their founders' concerns related to the practice of religion. The other colonies were founded for business and economic expansion. The Middle Colonies were established on the former Dutch colony of New Netherland.\n\nBetween 1625 and 1775, the colonial population grew from 2 thousand to 2.4 million, largely displacing the region's Native Americans. The population included people subject to a system of slavery, which was legal in all of the colonies. In the 18th century, the British government operated under a policy of mercantilism, in which the central government administered its colonies for Britain's economic benefit.\n\nThe 13 colonies had a degree of self-governance and active local elections, and they resisted London's demands for more control over them. The French and Indian War (1754–1763) against France and its Indian allies led to growing tensions between Britain and the 13 colonies. During the 1750s, the colonies began collaborating instead of dealing directly with Britain. With the help of colonial printers and newspapers, these inter-colonial activities and concerns were shared and led to calls for protection of the colonists' \"Rights as Englishmen\", especially the principle of \"no taxation without representation\".\n\nLate 18th century conflicts with the British government over taxes and rights led to the American Revolution, in which the Thirteen Colonies joined for the first time to form the Continental Congress and raised the Continental Army, declaring independence in 1776. They fought the Revolutionary War with the aid of the Kingdom of France and, to a much lesser degree, the Dutch Republic and the Kingdom of Spain.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "british-empire.i02",
+        "british-empire.i03"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "british-empire.s03"
+      ]
+    },
+    {
+      "id": "british-empire.l05",
+      "title_id": "british-empire",
+      "index": 5,
+      "heading": "The Seven Years' War",
+      "body": "The Seven Years' War, 1756 to 1763, was a global conflict fought by numerous great powers, primarily in Europe, with significant subsidiary campaigns in North America and the Indian subcontinent. The primary warring states were Great Britain and Prussia fighting against France and Austria, with other countries joining these coalitions: Portugal, Spain, Sweden, and Russia, plus Saxony and many other minor states of the Holy Roman Empire. Related conflicts include the Third Silesian War, French and Indian War, Third Carnatic War, Anglo-Spanish War (1762–1763), and Spanish–Portuguese War.\n\nAlthough the War of the Austrian Succession ended with the Treaty of Aix-la-Chapelle (1748), none of the signatories were happy with the terms, and it was generally viewed as a temporary armistice. It led to a strategic realignment known as the Diplomatic Revolution that ended the long-running rivalry between Austria and France. The two declared war on Britain after signing the Treaty of Versailles in 1756, with a second agreement in 1757 bringing Prussia into the war on the side of Britain.\n\nSpain became a French ally in 1762, unsuccessfully invading Portugal, and losing Havana and Manila to Britain. Although these were returned under the Treaty of Paris in 1763, France lost its possessions in North America, while Britain established its commercial dominance in India.\n\nThe conflict in Europe centred on Austrian attempts to recover Silesia, and ended with the Treaty of Hubertusburg in 1763. This confirmed Prussian occupation of Silesia and its status as a great power, challenging Austria for dominance within Germany and altering the European balance of power.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "british-empire.i04"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "british-empire.s04"
+      ]
+    },
+    {
+      "id": "british-empire.l06",
+      "title_id": "british-empire",
+      "index": 6,
+      "heading": "Ending slavery",
+      "body": "The Slavery Abolition Act 1833 (3 & 4 Will. 4. c. 73) was an act of the Parliament of the United Kingdom which abolished slavery in the British Empire by way of compensated emancipation. The act was legislated by Whig Prime Minister Charles Grey, 2nd Earl Grey's reforming administration, and it was enacted by ordering the British government to purchase the freedom of all slaves in the British Empire, and by outlawing the further practice of slavery in the British Empire. The act explicitly delineated 19 separate pots of compensation covering the Caribbean, South Africa, and Mauritius. Although Britain, Canada, Australia, and New Zealand were technically included, these had relatively few slaves at this time for other reasons. India was excluded. Around 800,000 freed slaves were attested in the claims process.\n\nWhile the 1833 Act was a landmark, it did not end slavery throughout the entire British sphere of influence. The act explicitly excluded territories like British India, where slavery was addressed separately by the Indian Slavery Act, 1843. In regions colonised later, such as Nigeria, the abolition of pre-existing local systems of slavery was a gradual process that extended into the early 20th century. Furthermore, in British protectorates, which retained their own local laws, the institution persisted for much longer. For example, slavery in Bahrain was not legally abolished until 1937.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "british-empire.s05"
+      ]
+    },
+    {
+      "id": "british-empire.l07",
+      "title_id": "british-empire",
+      "index": 7,
+      "heading": "The Opium Wars",
+      "body": "The Opium Wars (simplified Chinese: 鸦片战争; traditional Chinese: 鴉片戰爭; pinyin: Yāpiàn zhànzhēng) were two conflicts waged between the Qing dynasty and the Western powers during the mid-19th century.\n\nThe First Opium War was fought from 1839 to 1842 between China and the British Empire. It was triggered by the Qing government's campaign to enforce its prohibition of opium, which included destroying opium stocks owned by British merchants and the British East India Company. The British government responded by sending a naval expedition to force the Chinese government to pay reparations and allow the opium trade. The Second Opium War was waged by Britain and France against China from 1856 to 1860, and resulted in China being forced to legalise opium.\n\n![](british-empire.i06)\n\nIn the wars, the military advantages enjoyed by Europeans led to several easy victories over the Chinese military and China was compelled to sign the unequal treaties to grant favourable tariffs, trade concessions, reparations and territory to Western powers. The two conflicts, along with the treaties imposed during the century of humiliation, weakened Chinese sovereignty and forced China to open treaty ports (including Shanghai) to Western merchants. China ceded sovereignty over Hong Kong to the British in 1841, which maintained control over the region until 1997. These developments later became central to Nationalist narratives in China and were cited by movements such as the Chinese Communist Party to legitimize efforts to restore sovereignty and resist foreign influence.\n\n![](british-empire.i07)\n\n## The Scramble for Africa\n\nThe Scramble for Africa was the invasion, conquest, and colonisation of most of Africa by seven Western European powers, which were driven by the Second Industrial Revolution during the late 19th and early 20th centuries through the era of \"New Imperialism\". Belgium, France, Germany, Italy, Portugal, Spain and the United Kingdom were the contending powers.\n\nThe 1884–1885 Berlin Conference regulated European colonisation and trade in Africa, and is seen as emblematic of the \"scramble\". In the last quarter of the 19th century, there were considerable political rivalries among the European empires, which provided the impetus for the colonisation. The later years of the 19th century saw a transition from \"informal imperialism\" – military influence and economic dominance – to direct rule.\n\nWith the decline of the European colonial empires in the wake of the two world wars, most African colonies gained independence during the Cold War, and decided to keep their colonial borders in the Organisation of African Unity conference of 1964 due to fears of civil wars and regional instability, placing emphasis on pan-Africanism.",
+      "reading_minutes": 3,
+      "image_ids": [
+        "british-empire.i05",
+        "british-empire.i06",
+        "british-empire.i07"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "british-empire.s06",
+        "british-empire.s07"
+      ]
+    },
+    {
+      "id": "british-empire.l08",
+      "title_id": "british-empire",
+      "index": 8,
+      "heading": "The Suez Crisis",
+      "body": "The Suez Crisis, also known as the second Arab–Israeli war, the Tripartite Aggression in the Arab world and the Sinai War in Israel, was a British–French–Israeli invasion of Egypt in 1956. Israel invaded on 29 October, with the primary objective of re-opening the Straits of Tiran and the Gulf of Aqaba as the recent tightening of the eight-year-long Egyptian blockade prevented Israeli passage. After issuing a joint ultimatum for a ceasefire, the United Kingdom and France joined the Israelis on 31 October in an attempt to depose Egyptian President Gamal Abdel Nasser and regain control of the Suez Canal (which Nasser had nationalised earlier that year). The countries came under heavy political pressure from the United States, the Soviet Union and the United Nations, prompting their withdrawal from Egypt.\n\nThe crisis demonstrated that the United Kingdom and France could no longer implement independent foreign policies without U.S. consent. Israel's four-month-long occupation of the Egyptian-occupied Gaza Strip and Egypt's Sinai Peninsula enabled it to freely navigate the Straits of Tiran, but the Suez Canal was closed from October 1956 to March 1957.\n\nThe crisis strengthened Nasser's standing, internationally humiliating the British (as historians questioned its role as a superpower) and the French during the Cold War. The UN established an emergency force to police the Egypt–Israel border. For his diplomatic efforts to resolve the conflict through the UN, Canadian external-affairs minister Lester B. Pearson received the Nobel Peace Prize. Analysts have said that the crisis may have emboldened the USSR, facilitating the Soviet invasion of Hungary.\n\n## The end of empire in Africa\n\nThe decolonisation of Africa was a series of political developments in Africa between the mid-1950s to 1976, during the Cold War. Colonial governments formed during the Scramble for Africa collapsed, giving way to sovereign states in a process characterised by violence, political upheaval, civil unrest, and organised revolts. Major events during the decolonisation of Africa include the Mau Mau rebellion, the Algerian War, the Congo Crisis, the Angolan War of Independence, the Zanzibar Revolution, and the events leading to the Nigerian Civil War.",
+      "reading_minutes": 2,
+      "image_ids": [
+        "british-empire.i08"
+      ],
+      "read_aloud_text": null,
+      "source_ids": [
+        "british-empire.s08",
+        "british-empire.s09"
+      ]
+    },
+    {
+      "id": "british-empire.l09",
+      "title_id": "british-empire",
+      "index": 9,
+      "heading": "Hong Kong, 1997",
+      "body": "The handover of Hong Kong from the United Kingdom of Great Britain and Northern Ireland to the People's Republic of China occurred at midnight on 1 July 1997. This event ended 156 years of British rule, dating back to the capture of Hong Kong Island in 1841 during the First Opium War.\n\nHong Kong was a colony within the British Empire from 1841, except during the Japanese occupation of Hong Kong from 1941 to 1945. Its territory expanded after the First Opium War with the addition of the Kowloon Peninsula and Stonecutters Island in 1860 and the New Territories in 1898 under a 99-year lease. The 1984 Sino–British Joint Declaration set the terms of the 1997 handover, under which China pledged to uphold \"one country, two systems\" for 50 years. Hong Kong became China's first special administrative region, followed by Macau in 1999 under similar arrangements. With a population of about 6.5 million in 1997, Hong Kong made up 97 percent of the population of all the British Dependent Territories and was Britain's last major colony.\n\nThe transfer, which was marked by a handover ceremony attended by Charles III (then as Prince of Wales) and broadcast around the world, is often considered to mark the definitive end of the British Empire. Influence from the Chinese Communist Party (CCP)-led central government in Hong Kong expanded significantly during the late 2010s and 2020s, roughly two decades after the handover. The 2019–2020 Hong Kong protests prompted the introduction of the 2020 Hong Kong national security law and the 2021 Hong Kong electoral changes. These measures drew criticism from the British government, which declared that China was in a \"state of ongoing non-compliance\" with the Joint Declaration. Hong Kong is now widely regarded as being under tight control of the Chinese government, with its autonomy largely symbolic.",
+      "reading_minutes": 2,
+      "image_ids": [],
+      "read_aloud_text": null,
+      "source_ids": [
+        "british-empire.s10"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "id": "british-empire.i01",
+      "title_id": "british-empire",
+      "url": "http://10.0.2.2:8000/media/british-empire/i01-cb28cbe00e.png",
+      "width": 1600,
+      "height": 813,
+      "alt": "Areas of the world that were part of the British Empire with current British Overseas Territories underlined in red. Mandates and protected states are shown in a lighter shade.",
+      "kind": "map",
+      "author": "RedStorm1368",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:The_British_Empire_5.png",
+      "credit_line": "RedStorm1368 · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "british-empire.i02",
+      "title_id": "british-empire",
+      "url": "http://10.0.2.2:8000/media/british-empire/i02-5f88f5bf68.png",
+      "width": 1600,
+      "height": 2094,
+      "alt": "Eastern North America in 1775: The British Province of Quebec, the British thirteen colonies on the Atlantic coast and the Indian Reserve (as of the Royal Proclamation of 1763).",
+      "kind": "map",
+      "author": "Cg-realms",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Map_of_territorial_growth_1775.svg",
+      "credit_line": "Cg-realms · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "british-empire.i03",
+      "title_id": "british-empire",
+      "url": "http://10.0.2.2:8000/media/british-empire/i03-754e3bbfb1.jpg",
+      "width": 1600,
+      "height": 1954,
+      "alt": "The Thirteen Colonies of British America:.mw-parser-output .legend{page-break-inside:avoid;break-inside:avoid-column}.mw-parser-output…",
+      "kind": "map",
+      "author": "Richard Zietz (original), Sbb1413 (partly translated to English)",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Thirteencolonies_politics_cropped-en.jpg",
+      "credit_line": "Richard Zietz (original), Sbb1413 (partly translated to English) · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "british-empire.i04",
+      "title_id": "british-empire",
+      "url": "http://10.0.2.2:8000/media/british-empire/i04-4e0c400692.jpg",
+      "width": 1600,
+      "height": 1600,
+      "alt": "Seven Years' War Collage based on these files: Lord Clive meeting with Mir Jafar after the Battle of Plassey, 23 June 1757 The Victory of Montcalm's Troops at Carillon, 6-8 July 1758 Frederick the…",
+      "kind": "other",
+      "author": "Blaue Max",
+      "license": "CC BY-SA",
+      "license_version": "4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Seven_Years%27_War_Collage.jpg",
+      "credit_line": "Blaue Max · CC BY-SA 4.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "british-empire.i05",
+      "title_id": "british-empire",
+      "url": "http://10.0.2.2:8000/media/british-empire/i05-b52a5e21d7.jpg",
+      "width": 1600,
+      "height": 1048,
+      "alt": "The East India Company iron steam ship Nemesis, commanded by Lieutenant W. H.",
+      "kind": "portrait",
+      "author": "Edward Duncan",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Destroying_Chinese_war_junks,_by_E._Duncan_(1843).jpg",
+      "credit_line": "Edward Duncan · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.35
+    },
+    {
+      "id": "british-empire.i06",
+      "title_id": "british-empire",
+      "url": "http://10.0.2.2:8000/media/british-empire/i06-949458df16.jpg",
+      "width": 1600,
+      "height": 1139,
+      "alt": "Pa-Li-Kiao's bridge, on the evening of the battle. The Battle of Palikiao (Baliqiao) took place on 21 September 1860 during the Second Opium War (1856-1860).",
+      "kind": "other",
+      "author": "Émile Bayard",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:La_bataille_de_Palikiao.jpg",
+      "credit_line": "Émile Bayard · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "british-empire.i07",
+      "title_id": "british-empire",
+      "url": "http://10.0.2.2:8000/media/british-empire/i07-ab61277c19.png",
+      "width": 1600,
+      "height": 1491,
+      "alt": "Some pre-colonial states in Africa. The map notably misses numerous polities, such as the East African polities of Ajuran, Adal, Buganda, Rwanda, Kilwa, and Imerina;",
+      "kind": "map",
+      "author": "Jeff Israel (ZyMOS)",
+      "license": "CC BY-SA",
+      "license_version": "3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:African-civilizations-map-pre-colonial.svg",
+      "credit_line": "Jeff Israel (ZyMOS) · CC BY-SA 3.0 · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    },
+    {
+      "id": "british-empire.i08",
+      "title_id": "british-empire",
+      "url": "http://10.0.2.2:8000/media/british-empire/i08-0f16e770d8.jpg",
+      "width": 1600,
+      "height": 1177,
+      "alt": "Smoke rises from oil tanks beside the Suez Canal hit during the initial Anglo-French assault on Port Said, 5 November 1956.",
+      "kind": "other",
+      "author": "Fleet Air Arm official photographer",
+      "license": "PD",
+      "license_version": null,
+      "license_url": null,
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Port_Said_from_air.jpg",
+      "credit_line": "Fleet Air Arm official photographer · Public domain · Wikimedia Commons · resized",
+      "modified": true,
+      "focal_x": 0.5,
+      "focal_y": 0.5
+    }
+  ],
+  "quiz": [],
+  "feed_facts": [],
+  "person": null,
+  "sources": [
+    {
+      "id": "british-empire.s01",
+      "title": "British Empire (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/British_Empire",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "british-empire.s02",
+      "title": "East India Company (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/East_India_Company",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "british-empire.s03",
+      "title": "Thirteen Colonies (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Thirteen_Colonies",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "british-empire.s04",
+      "title": "Seven Years' War (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Seven_Years%27_War",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "british-empire.s05",
+      "title": "Slavery Abolition Act 1833 (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Slavery_Abolition_Act_1833",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "british-empire.s06",
+      "title": "Opium Wars (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Opium_Wars",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "british-empire.s07",
+      "title": "Scramble for Africa (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Scramble_for_Africa",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "british-empire.s08",
+      "title": "Suez Crisis (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Suez_Crisis",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "british-empire.s09",
+      "title": "Decolonisation of Africa (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Decolonisation_of_Africa",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    },
+    {
+      "id": "british-empire.s10",
+      "title": "Handover of Hong Kong (Wikipedia)",
+      "url": "https://en.wikipedia.org/wiki/Handover_of_Hong_Kong",
+      "publisher": "Wikipedia",
+      "role": "text",
+      "license": "CC BY-SA 4.0",
+      "confidence": null
+    }
+  ]
+}
