@@ -12,6 +12,7 @@ from app.db import get_db
 from app.errors import ApiError
 from app.routers import auth as auth_routes
 from app.routers.chat import router as chat_router
+from app.routers.sync import router as sync_router
 from app.services import otd, store
 from app.services.etag import etag_response
 
@@ -22,6 +23,7 @@ v1 = APIRouter(prefix="/v1")
 v1.include_router(chat_router)
 v1.include_router(auth_routes.auth)
 v1.include_router(auth_routes.me)
+v1.include_router(sync_router)
 health = APIRouter()
 
 
