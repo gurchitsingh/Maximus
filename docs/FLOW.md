@@ -19,7 +19,7 @@ These override anything below that conflicts. Source: Claude Design export (Maxi
 Logo (split-disc mark) animates, about 1.5 s, then Sign in (first run or signed out) or Home.
 
 ## 1b. Sign in and Create account
-Google button, or email and password. Create account asks email, password and confirm password; if the email is valid, the passwords match and the password rules pass, the account is created and the user is signed in at once (no email verification, D48). Sign in takes email and password; any wrong credential says "Wrong email or password". Forgot password. Required before anything else.
+Google button, or email and password. Create account asks email, password and confirm password (no name field); the button is enabled when the email looks valid, the password is 10 to 128 characters and the two passwords match, and the account is then created and the user signed in at once (no email verification, D48, D54). Sign in takes email and password; every rejected attempt says "Wrong email or password". Offline, rate limits and server faults say so instead. Forgot password. If a password account exists and the person later signs in with Google using the same address, the account is linked and the password is removed (D45). Required before anything else.
 
 ## 2. Onboarding (first run only, skippable parts)
 1. **Theme and text size:** dark (default) or light, one slider.
@@ -54,7 +54,7 @@ Lesson text, images with credit, read-aloud, previous/next lesson, progress bar.
 Bottom bar: Lessons (list), **Chat**, Quiz.
 
 ## 6. Chat (inside a title)
-Chat bubbles, suggested questions. Header shows the title it is locked to. Off-topic: "I only know about <title>." Answers show a small "From lesson 4" tag that jumps to the lesson. Daily cap reached: "Chat is resting, back tomorrow." Offline: disabled with message. History is saved to your account and can be deleted.
+Chat bubbles, suggested questions. Header shows the title it is locked to. Off-topic: "I only know about <title>." Answers show a small "From lesson 4" tag that jumps to the lesson. Every refusal is a card with a picture and one action: offline ("Connect to the internet and ask again"), signed out ("Please sign in again"), daily cap ("Chat is resting, back tomorrow."), providers down ("It needs a short break. Try again in a few minutes."), rate limit ("One moment"), and other errors. A failed question goes back into the composer and "Try again" resends it; it is not left as a bubble. History is saved to your account (5 days) and can be deleted. On the phone it is held in memory for the session only and reloaded from the server each time the chat opens (D56).
 
 ## 7. Quiz
 Per title. 6 random questions from the bank. One question per screen, big option buttons, instant right/wrong with a one-line explanation (icon and word, not only colour), summary at the end with the score and the questions missed. No timer, no streak.
@@ -69,6 +69,8 @@ Profile, taste, theme, text size, voice and speed, clear my data, sign out, dele
 Pick country and period, then lens (rulers, middle/working, poor). Shows that group's story with an "interpretation" label.
 
 ## Rules
-- Every screen works offline except Chat, On This Day and sign-in. Personal data syncs in the background when online.
+- Every screen works offline except Chat, On This Day and sign-in. Personal data syncs in the background when online: after sign-in and app start, on resume, when the network returns, 5 s after a change, every 15 minutes, and from "Sync now" in Settings (D53). Failures retry after 30 s, 2 min, then every 10 min and are never shown as errors.
+- Sign out first pushes unsynced changes. If some cannot be pushed (offline) the confirm says "N changes not synced yet will be lost" and the button reads "Sign out anyway". The phone's personal data is then wiped; signing in again pulls it back (D51).
+- On a new phone the app waits on Home until the first sync finishes; onboarding is only decided after that pull (D52). Onboarding itself is not built yet.
 - No notifications in V1.
 - Empty states always have a picture and one action.

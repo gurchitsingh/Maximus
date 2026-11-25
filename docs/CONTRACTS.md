@@ -1,6 +1,6 @@
 # CONTRACTS: Maximus v1 (S3, 2026-11-22), with V3 additions (2026-11-24)
 
-> **V3 (24 Nov 2026).** Sections 14 to 21 add accounts and auth, sync, chat history, account deletion, Postgres and hosting, the 4-tab navigation, Fact of the day and the SVG poster assets. Where they conflict with sections 1 to 13 (P5, 3.1 "no auth", 4 request fields, 5.1 Clear my data, 8.3 routes, 11 server data), **sections 14 to 21 win**. Section 6 (match %) is unchanged. Decisions: DECISIONS D34 to D44.
+> **V3 (24 Nov 2026).** Sections 14 to 21 add accounts and auth, sync, chat history, account deletion, Postgres and hosting, the 4-tab navigation, Fact of the day and the SVG poster assets. Where they conflict with sections 1 to 13 (P5, 3.1 "no auth", 4 request fields, 5.1 Clear my data, 8.3 routes, 11 server data), **sections 14 to 21 win**. Section 6 (match %) is unchanged. Decisions: DECISIONS D34 to D56 (later changes: no email verification D48, chat kept 5 days D46, poster manifest D47, sync D49 to D53, sign-up screens D54, `PosterImage` D55, chat session memory D56).
 
 Single source of truth for data, API, device storage, match %, folder layout and content rules.
 Machine-readable side: `docs/schemas/*.schema.json` (JSON Schema 2020-12), `docs/examples/*.json`, `backend/data/samples/*.json`. If this file and a schema disagree, the schema wins and this file gets fixed.
@@ -237,7 +237,7 @@ Order: titles by `(rank, id)`, then sources and images by id. **Credits screen**
 | `feed_facts` | `id`, `title_id` FK, `lesson_id`, `text`, `image_id`, `status`, `review_note` | |
 | `sources` | `id`, `title_id` FK, `title`, `url`, `publisher`, `role`, `license`, `confidence` | |
 | `on_this_day_cache` | `date` (`MM-DD`), `payload` JSON, `fetched_at` | One row per calendar day |
-| `chat_usage` | (`day`, `install_hash`), `count` | `install_hash` = sha256(`INSTALL_ID_SALT` + install_id). Rows older than yesterday are deleted at startup and daily. **V3: keyed by `user_id` (16, 18)** |
+| `chat_usage` | (`day`, `install_hash`), `count` | `install_hash` = sha256(`INSTALL_ID_SALT` + install_id). Rows older than yesterday are purged on the first chat of each UTC day per process (D31 d). **V3: keyed by `user_id` (16, 18)** |
 | V3 user tables | `users`, `refresh_tokens`, `email_tokens`, `user_records`, `user_chat_messages` | Defined in 15.4, 16 and 18 |
 | `ingest_runs` | `id`, `title_id`, `kind` (`wikipedia`\|`import`), `started_at`, `finished_at`, `status`, `notes` | Audit of imports |
 
@@ -343,7 +343,7 @@ Every non-2xx response except 304 has the body `{"error": {"code", "message", "r
 
 `POST /v1/titles/{id}/chat`. Replies are **whole JSON, not streamed** (DECISIONS D1). Example request `docs/examples/chat-request.json`, replies `chat-response.json` and `chat-response-out-of-scope.json`.
 
-**Request:** `install_id` (UUID v4, lowercase), `message` (1..500 chars), `history` (≤6 most recent turns of this title's chat, oldest first, each `{role: user|assistant, text ≤1200}`). History is untrusted client text, exactly like the message.
+**Request (v1; superseded by 16, where the request is `{message}` only and the server holds the history):** `install_id` (UUID v4, lowercase), `message` (1..500 chars), `history` (≤6 most recent turns of this title's chat, oldest first, each `{role: user|assistant, text ≤1200}`). History is untrusted client text, exactly like the message.
 **Reply 200:** `kind` (`answer` \| `out_of_scope`), `text` (plain text ≤1200, no markdown, no links), `lesson_refs` (≤3 `{lesson_id, index}`, empty for out_of_scope), `remaining_today` (chats left today after this one).
 
 ### 4.1 Server pipeline (in order)
@@ -362,7 +362,7 @@ Every non-2xx response except 304 has the body `{"error": {"code", "message", "r
 | 10 Reply | `lesson_refs` from the LESSONS line, de-duplicated, cited order, ids from the stored lessons |
 
 **Out-of-scope wording (fixed, server-built, not model text):** `I only know about {title.name}.` → "I only know about Roman history." 
-**Not stored:** message text, history and replies are never written to the DB or logs. Logs keep only codes, provider used, latency and lengths. The provider gets the title text and the question, never the install id.
+**Not stored (v1; superseded by 16: messages and replies are now saved per account, but still never written to logs):** message text, history and replies are never written to the DB or logs. Logs keep only codes, provider used, latency and lengths. The provider gets the title text and the question, never the install id.
 **Keys:** `OPENROUTER_API_KEY`, `GEMINI_API_KEY` live only in `backend/.env` and the host's secret store. Never in the app, never in git, never logged.
 
 ### 4.2 Client behaviour (DESIGN_SPEC 3.3 to 3.6, 7.14; 11.13 default: disabled = composer and chips at 0.4 opacity, inert)
@@ -379,7 +379,7 @@ Every non-2xx response except 304 has the body `{"error": {"code", "message", "r
 | Offline | no connection | Banner "You are offline. Chat needs a connection." | Disabled until back online |
 | Other error or 35 s client timeout | 4xx/5xx | Note "Something went wrong. Try again." Keeps the typed question | Enabled |
 
-Suggestion chips (no authored list in V1, Q6): built on device from templates. Topic: "Give me a short summary", "Who were the key people?", "Tell me about {current lesson heading}". Person: "What is {name} known for?", "What odds did they beat?" (leaders) or "What were their big ideas?" (thinkers), "Tell me about {current lesson heading}". Chat messages live in memory only and are cleared when the title is closed. The install id is generated once (5.1) and sent only with chat requests.
+Suggestion chips (no authored list in V1, Q6): built on device from templates. Topic: "Give me a short summary", "Who were the key people?", "Tell me about {current lesson heading}". Person: "What is {name} known for?", "What odds did they beat?" (leaders) or "What were their big ideas?" (thinkers), "Tell me about {current lesson heading}". The server owns the history (16); the app keeps the last loaded copy per title in memory for the session only and reloads it from the server on every open (D56). The install id is still generated once (5.1) but the app no longer sends it with chat requests.
 
 ---
 
@@ -400,7 +400,7 @@ Suggestion chips (no authored list in V1, Q6): built on device from templates. T
 | `cached_docs` | `key` TEXT (`catalogue`, `credits`, `otd:MM-DD`), `payload` TEXT, `etag` NULL, `fetched_at` | Whole JSON payloads | No (content, not personal) |
 | `cached_titles` | `title_id`, `payload` TEXT (TitleDetail JSON), `content_version` INT, `etag` NULL, `fetched_at` | Never evicted: about 80 × 100 KB | No |
 
-Time columns are drift `DateTimeColumn` (default storage). Chat history, typed drafts and match % results are not stored (match % is recomputed, about 80 titles, under 1 ms).
+Time columns are drift `DateTimeColumn` (default storage, whole seconds), except the sync column `updated_at` on synced tables, which is an integer of UTC milliseconds (D49). Chat history, typed drafts and match % results are not stored (match % is recomputed, about 80 titles, under 1 ms).
 **V3: Clear my data tombstones the synced rows instead of deleting them, so other devices clear too (15.5).** v1 behaviour (Settings, with a confirm dialog per DESIGN_SPEC 11.14): one transaction deleting every "Yes" table above, re-seeding `settings`, then routing to Splash → onboarding. The content cache stays so the app keeps working offline.
 
 ### 5.2 Migrations
@@ -560,7 +560,7 @@ app/
   drift_schemas/                 drift schema snapshots (5.2)
   test/                          mirrors lib/; contract tests read ../docs/examples and ../backend/data/samples
 ```
-Design tokens live only in `lib/core/theme/`. Per-title colours (`bg`, `tint`) are data from the payload, never theme constants. Packages: `flutter_riverpod`, `go_router`, `drift` + `sqlite3_flutter_libs`, `dio`, `cached_network_image`, `flutter_tts`, `json_annotation`/`json_serializable`, `uuid` (or `Random.secure`), `url_launcher` (attribution and credit links, accepted 2026-11-22); **V3 adds `google_sign_in` (Google sign-in, 14.3), `flutter_secure_storage` (refresh token, 14.2) and `flutter_svg` (bundled SVG posters, 21)**; optional `connectivity_plus` (sync trigger when the network returns, 15.5); dev: `build_runner`, `drift_dev`. No `shared_preferences` (settings live in drift). No confetti package: the finish celebration and the 5/6 or 6/6 quiz result confetti are drawn with `CustomPainter`.
+Design tokens live only in `lib/core/theme/`. Per-title colours (`bg`, `tint`) are data from the payload, never theme constants. Packages: `flutter_riverpod`, `go_router`, `drift` + `sqlite3_flutter_libs`, `dio`, `cached_network_image`, `flutter_tts`, `json_annotation`/`json_serializable`, `uuid` (or `Random.secure`), `url_launcher` (attribution and credit links, accepted 2026-11-22); **V3 adds `google_sign_in` (Google sign-in, 14.3), `flutter_secure_storage` (refresh token, 14.2) and `flutter_svg` (bundled SVG posters, 21)**; `connectivity_plus` (sync trigger when the network returns, 15.5); dev: `build_runner`, `drift_dev`. No `shared_preferences` (settings live in drift). No confetti package: the finish celebration and the 5/6 or 6/6 quiz result confetti are drawn with `CustomPainter`.
 
 ### 8.2 Backend (`backend/`)
 
@@ -702,11 +702,11 @@ Python schema checks must install `jsonschema[format-nongpl]` (as `tools/require
 | Area | Rule |
 |---|---|
 | Public repo | Never commit `.env`, keys, tokens, keystores (`*.jks`, `key.properties`) or personal data. `.gitignore` covers them. Before each commit, `git diff --cached` shows no secret. Optional: a gitleaks pre-commit hook |
-| Env | `backend/.env` (gitignored) holds every secret; `.env.example` lists names only, empty values. Names: `DATABASE_URL`, `SERVE_DRAFTS`, `OPENROUTER_API_KEY`, `OPENROUTER_MODEL`, `GEMINI_API_KEY`, `GEMINI_MODEL`, `CHAT_DAILY_CAP`, `CHAT_GLOBAL_DAILY_CAP`, `CHAT_PROVIDER_TIMEOUT_S`, `CHAT_CONTEXT_CHARS`, `INSTALL_ID_SALT`, `WIKI_USER_AGENT`, `CORS_ORIGINS`, `MEDIA_BASE_URL` (S11, not a secret). Production: the host's secret store |
+| Env | `backend/.env` (gitignored) holds every secret; `.env.example` lists names only, empty values. Names: `DATABASE_URL`, `SERVE_DRAFTS`, `OPENROUTER_API_KEY`, `OPENROUTER_MODEL`, `GEMINI_API_KEY`, `GEMINI_MODEL`, `CHAT_DAILY_CAP`, `CHAT_ACCOUNT_DAILY_CAP`, `CHAT_GLOBAL_DAILY_CAP`, `CHAT_RETENTION_DAYS`, `JWT_SECRET`, `GOOGLE_CLIENT_ID`, `APP_BASE_URL`, `EMAIL_PROVIDER`, `CHAT_PROVIDER_TIMEOUT_S`, `CHAT_CONTEXT_CHARS`, `INSTALL_ID_SALT`, `WIKI_USER_AGENT`, `CORS_ORIGINS`, `MEDIA_BASE_URL` (S11, not a secret). Production: the host's secret store |
 | App | Holds no keys. Only the API base URL is compiled in. Cleartext HTTP only in debug builds (debug-only `network_security_config` for `10.0.2.2`) |
 | Server data | **V3 (14 to 17):** per-account data (email, display name, password hash or Google id, synced records, chat history 5 days, rolling per message (D46)). Still: no IP addresses stored (rate limiting is in memory), chat text and passwords never written to logs, no analytics SDKs in V1. Account deletion is a hard delete (17). Chat usage counters are per account per day |
 | Install id | UUID v4 from `Random.secure` on first launch; stored in drift `settings`; **V3: no longer sent in chat requests (16) and never synced**; kept only for local use; replaced on "Clear my data" |
-| Chat abuse | Size limits, burst limits, per-install and global daily caps, injection guard and fail-closed output check (section 4) |
+| Chat abuse | Size limits, burst limits, per-account and global daily caps (the per-install cap applies only if a client sends `install_id`), injection guard and fail-closed output check (section 4) |
 | Wikimedia | Descriptive `WIKI_USER_AGENT` with the public repo URL as contact (no personal email), ≤3 concurrent requests, everything cached. S11 ingest: one request at a time, ≥0.5 s apart (default 1 s), `maxlag=5`, honours `Retry-After`, disk cache in `backend/.cache/` (gitignored); pytest never touches the network |
 | CC BY-SA | Attribution with link and licence on every lesson and image, "shortened"/"modified" stated, a full Credits screen, and our adapted lesson text is shared under CC BY-SA 4.0 too (ShareAlike notice in Credits) |
 | OFL fonts | Ship each `OFL.txt`, register it with Flutter's `LicenseRegistry`, never sell or rename the fonts |
@@ -738,7 +738,7 @@ Rules carried over: perspectives and scenarios use the same `status` and `conten
 | Q1 | Napoleon is both topic #18 and a leader, and ids must differ. | **Topic `napoleon` ("Napoleon"), leader `napoleon-bonaparte` ("Napoleon Bonaparte").** |
 | Q2 | The Think Like... row in the Library: one row for all 51 people, or one row per people group (Ancient world, Rome, ...)? | **One row until Claude Design Prompt 2b lands**; the catalogue already carries per-group labels, so either layout needs no API change. |
 | Q3 | Which 12 leaders are offered in onboarding? | **The 7 that exist in the design (Julius Caesar, Cleopatra VII, Alexander the Great, Ashoka, Genghis Khan, Elizabeth I, Napoleon Bonaparte) + Chhatrapati Shivaji Maharaj, Augustus, Saladin, Mansa Musa, Rani Lakshmibai**; only published ones show. |
-| Q4 | Chat caps: 20 chats per install per day, 200 per day server-wide? OpenRouter's free models have an account-wide daily limit (about 50 a day without bought credits, verify), so the global cap protects the quota. | **20 and 200, both env settings.** |
+| Q4 | Chat caps: 20 chats per install per day (V3: per account), 200 per day server-wide? OpenRouter's free models have an account-wide daily limit (about 50 a day without bought credits, verify), so the global cap protects the quota. | **20 and 200, both env settings.** |
 | Q5 | Feed "Save" has no screen in the design. Add a "Saved facts" list (e.g. a section in Study)? | **No list in V1**; Save is stored and feeds match %. |
 | Q6 | Chat suggestion chips: on-device templates (4.2) or an authored `chat_suggestions[]` per title (additive schema change, more content work)? | **Templates in V1.** |
 | Q7 | Licence wording for our own AI-assisted art (`OWN`). | **"Illustration made for Maximus", no CC licence claimed**; revisit before the store launch. |
@@ -827,7 +827,7 @@ New codes for the 3.5 table (same body shape; the app shows its own copy keyed b
 | Offline | A device with a stored refresh token is signed in. All offline features keep working. Sign-in, sign-up, Google, chat and sync need a network |
 | First sign-in on a phone | Pull first (15.5), then show onboarding only if the pulled `settings.onboarding_done` is not `true` |
 | Switching accounts | Sign out keeps nothing personal: it wipes every user table (15.5) but keeps `cached_docs` and `cached_titles`, so the next user starts clean and offline content survives |
-| Sign out | `POST /v1/auth/signout`, best effort (offline: clear locally anyway) |
+| Sign out | Unsynced changes are pushed first. If some remain (offline) the confirm says "N changes not synced yet will be lost" and the button reads "Sign out anyway" (D51). Then `POST /v1/auth/signout`, best effort, and the local wipe. `sync_state.user_id` records whose data is on the phone; a different account signing in wipes the user tables before its first push |
 | Email verification | None (D48): no banner, no verify screen. Settings shows the email only |
 | Env (backend) | `JWT_SECRET`, `GOOGLE_CLIENT_ID`, `EMAIL_FROM`, `EMAIL_PROVIDER_API_KEY` (or `SMTP_*`), `APP_BASE_URL` (used in email links and the web pages), `CHAT_ACCOUNT_DAILY_CAP`, `CHAT_RETENTION_DAYS`. Names only in `.env.example` |
 
@@ -898,14 +898,14 @@ Tombstones are kept **90 days**, then purged by a daily job. A pull whose `since
 
 | Rule | Detail |
 |---|---|
-| Local columns | Each synced table gains `updated_at` (UTC), `deleted` (BOOL, default false) and `dirty` (BOOL, default true for locally made changes). New table `sync_state` (`key`, `value`): `cursor`, `last_sync_at`, `user_id`. Drift migration: `schemaVersion` +1 (5.2); existing rows get `updated_at = their own time column`, `dirty = true`, so the first sign-in uploads them |
+| Local columns | Each synced table gains `updated_at` (UTC milliseconds, never earlier than the previous stamp + 1 ms, D49), `deleted` (BOOL, default false) and `dirty` (BOOL, default true for locally made changes). New table `sync_state` (`key`, `value`): `cursor`, `last_sync_at`, `user_id`. Drift migration: `schemaVersion` +1 (5.2); existing rows get `updated_at = their own time column`, `dirty = true`, so the first sign-in uploads them |
 | Reads | Every query ignores `deleted = true` rows |
 | Writes | Set `updated_at = now UTC`, `dirty = true`. Deleting sets `deleted = true`, `dirty = true` (a row is physically removed only after its tombstone is acknowledged) |
-| When it runs | After sign-in; at app start; when the network returns; 5 s after a local change (debounced); every 15 minutes while the app is open. One run at a time |
+| When it runs | After sign-in; at app start; on app resume; when the network returns; 5 s after a local change (debounced, only if something is dirty); every 15 minutes while the app is open; "Sync now" in Settings. One run at a time; a trigger during a run queues one more run (D53). Sign-in, app start, network regained and "Sync now" skip any backoff wait |
 | Order in a run | **Push, then pull.** Push dirty rows in batches of 200. For each `applied` clear `dirty`; for each `superseded` overwrite the local row and clear `dirty`. Then pull from `cursor` until `has_more` is false and apply each record with the same last-write-wins test (newer `updated_at` wins; equal and deleted wins) |
 | Failure | Offline or 5xx: keep `dirty`, retry on the next trigger with backoff 30 s, 2 min, 10 min. A sync failure never blocks the UI and shows nothing unless the user opens Settings (shows "Last synced ...") |
-| First sign-in on an empty phone | Pull everything (`since=0`) before onboarding is decided (14.5) |
-| First sign-in with local data from before accounts | Local rows are `dirty`; a push uploads them, a pull merges the account's own data by last-write-wins |
+| First sign-in on an empty phone | Pull everything (`since=0`) before onboarding is decided (14.5). Until the first sync succeeds the router treats onboarding as done; after the pull, an account that has onboarding picks but no `onboarding_done` gets it set to `true` (D52) |
+| First sign-in with local data from before accounts | Local rows are `dirty` (settings rows have no time column: they are stamped at the epoch and only non-default values are dirty, so they never overwrite the account, D50); a push uploads them, a pull merges the account's own data by last-write-wins |
 | Clear my data | Becomes: tombstone every synced row (so other devices clear too), then regenerate `install_id`, reseed settings, route to Splash → Sign in stays signed in → onboarding. Content cache stays. Confirm dialog text must say the data is removed from the account and other devices |
 | Sign out | Wipes the synced tables locally (no tombstones: the data stays on the server). The next sign-in pulls it back |
 
@@ -931,7 +931,7 @@ Chat requires a signed-in user (`Authorization` bearer). This **replaces** the r
 | DELETE | `/v1/me/chat` | 204. Removes all of the user's chat history |
 
 Table `user_chat_messages`: `id` (uuid), `user_id` FK, `title_id`, `role`, `text` (≤1200), `kind` NULL, `lesson_refs` JSON, `created_at`. Index (`user_id`, `title_id`, `created_at`).
-App: drift table `chat_messages` is a **read-through cache** of the last page per title (not synced, not the source of truth). Opening the chat shows the cache, then refreshes. Offline: history is readable, the composer is disabled (existing offline state). Each chat screen has a "Delete this chat" action; Settings has "Delete all chats". Settings shows "Chats are kept 5 days".
+**App differs from the older line here (D56):** there is no drift `chat_messages` table. The app keeps the last loaded page (up to 100 messages) per title in provider memory for the session and refreshes it from `GET /v1/me/chat/{title_id}` on every open, so history is not readable offline (the composer is disabled then anyway). The server side above is unchanged. Each chat screen has a "Delete this chat" action; Settings has "Delete all chats". Settings shows "Chats are kept 5 days".
 
 ---
 
@@ -975,16 +975,16 @@ Replace the route table of 8.3 with these changes:
 |---|---|---|
 | `splash` | `/` | Then Sign in (signed out), onboarding (signed in, `onboarding_done` false) or Home |
 | `signIn` | `/sign-in` | New. Sign in, with "Continue with Google", email and password, "Forgot password?" and a toggle to Create account |
-| `signUp` | `/sign-up` | New. Create account (email, password, optional name) |
+| `signUp` | `/sign-up` | New. Create account (email, password, confirm password; no name field, D54) |
 | `forgotPassword` | `/forgot-password` | New. Email field, then "Check your email" |
-| `onboardingTheme` | `/onboarding/theme` | Now **first**: theme and text size |
+| `onboardingTheme` | `/onboarding/theme` | Now **first**: theme and text size. **Onboarding routes are not built yet** |
 | `onboardingTopics` | `/onboarding/topics` | Second: era or region toggle, 3 to 5 topics |
 | `onboardingLeaders` | `/onboarding/leaders` | Third: 1 to 3 leaders |
 | `onboardingMatches` | `/onboarding/matches` | Fourth: first matches, then Home |
 | `home`, `library`, `feed`, `settings` | `/home`, `/library`, `/feed`, `/settings` | The four `StatefulShellRoute` branches |
 | `study` | removed | A deep link to `/study` redirects to `/library` |
 | `titleSheet`, `reader`, `chat`, `quiz`, `quizResult`, `credits`, `gallery` | unchanged | |
-| `deleteAccount` | `/settings/delete-account` | New confirm screen (17) |
+| `deleteAccount` | `/settings/delete-account` | Planned as a screen (17); built as a confirm dialog inside Settings (account section), with no route |
 
 Redirect rules (one `redirect` function, evaluated on auth and onboarding state changes): signed out and not on `/`, `/sign-in`, `/sign-up`, `/forgot-password` → `/sign-in`; signed in and on a sign-in route → `/home` or onboarding; signed in and `onboarding_done` false and not on an onboarding route → `/onboarding/theme`. Guess the year and Mystery card stay out of V1 (DESIGN_SPEC 12.2).
 Settings (rows, in order): Profile (name, email), Taste, Theme, Text size, Voice, Clear my data, Delete all chats, Sign out, Delete my account, Credits, Privacy policy, Version.
@@ -1019,6 +1019,7 @@ A compact Home card above On This Day: thumbnail, date line, one fact of at most
 | Date line | "Fact of the day · 24 November" (device locale month name) |
 | Thumbnail | 56 dp square, `title_id`'s poster (21) cropped to the centre, day or evening per theme. If the title has no poster yet: the title's `bg` colour |
 | Tap | Opens the title sheet for `title_id` when the catalogue serves it; otherwise nothing happens (no error) |
+| Status | 12 facts exist in `facts.json` (25 Nov); the 90 to 100 target is not met |
 | Check | S20 adds a unit test and the validator rules above (word count, id uniqueness, `title_id` in TOPICS.md). The owner reviews every fact for accuracy before launch (open item: who reviews) |
 
 ---
@@ -1030,7 +1031,7 @@ A compact Home card above On This Day: thumbnail, date line, one fact of at most
 | Rule | Detail |
 |---|---|
 | Folder and names | `app/assets/posters/<title_id>.svg`, or for a pair `<title_id>.day.svg` and `<title_id>.evening.svg`. The file stem is the catalogue **title id** exactly (`roman-history`, `ancient-egypt`, `french-revolution`, `shivaji-maharaj`), never the prototype ids (`roman`, `egypt`, `french`). DESIGN_SPEC 8.1 holds the map |
-| Mode manifest | `app/assets/posters/manifest.json`: `{"<title_id>": "pair" \| "wash" \| "single"}`. The app reads modes from it, so the API and the catalogue schema do not change. A title with no manifest entry has no poster art and falls back to its `bg` and `tint` gradient |
+| Mode manifest | `app/assets/posters/manifest.json`: `{"<title_id>": "pair" \| "wash" \| "single"}`. (This bare-string form was replaced by the object form in the next row, D47.) The app reads modes from it, so the API and the catalogue schema do not change. A title with no manifest entry has no poster art and falls back to its `bg` and `tint` gradient |
 | Manifest shape (D47) | Built as objects: `{"<title_id>": {"mode": "pair"|"wash"|"single", "bg": "#RRGGBB", "tint": "#RRGGBB", "lettering": "<kind>", "lines": ["LINE1","LINE2"]}}`. The values come from `backend/data/titles`; the catalogue wins over prototype values. The row above shows the mode only |
 | Artboard | `viewBox="0 0 200 300"` (2:3), flat fills only, no text (the title lettering is drawn by the app in the title's `lettering` style), no raster images, no external fonts, no filters, no scripts. Safe area: keep the lower 30% calm because the title scrim covers it |
 | Size | At most 40 KB per file (the hero drawings are the largest) |
@@ -1041,8 +1042,8 @@ A compact Home card above On This Day: thumbnail, date line, one fact of at most
 | Who is in which mode | **pair:** Roman history, Ancient Egypt (drawn); Maratha Empire, Rajput history, Sikh history, Space history (planned). **single:** WW1, WW2, Cold War, American Civil War (drawn); Great Depression, Black Death and the Great Plagues, 2008 housing crisis, Dotcom bubble (planned). **wash:** every other drawn topic, and the people posters unless the designer says otherwise |
 | People | Portrait poster per person, same artboard and rules; mode `wash` by default. Not designed yet |
 | Credit line | Every poster is `OWN`: "Illustration made for Maximus" (D2). One line in Credits, not one per poster |
-| Where used | Poster card, title sheet banner, onboarding tile and Fact of the day thumbnail use the same file. Crops are app-side (DESIGN_SPEC 8.1 `tv`/`bv`) |
-| Gaps (24 Nov 2026) | Drawn and in TOPICS.md: 19 of 28. **Missing for launch: 9** (Black Death, Sikh, Maratha, Rajput, Green Revolution in India, Space history, Great Depression, Dotcom bubble, Housing crisis). v4 lists 8 and leaves out Green Revolution. People posters: 0 of 51 |
+| Where used | `PosterImage(titleId, crop, fallback)` (D55) draws the bundled art when the manifest has the title, else the slot's previous art. Crops are app-side: poster `0 0 200 300` (poster cards), banner `0 50 200 100` (Library hero, title sheet), square `20 40 160 160` (Fact of the day, Home study rows). The reader, quiz, feed, resume card and Library study rows do not use it. The onboarding tile will, once onboarding exists |
+| Gaps (24 Nov 2026; the manifest has 19 entries on 25 Nov) | Drawn and in TOPICS.md: 19 of 28. **Missing for launch: 9** (Black Death, Sikh, Maratha, Rajput, Green Revolution in India, Space history, Great Depression, Dotcom bubble, Housing crisis). v4 lists 8 and leaves out Green Revolution. People posters: 0 of 51 |
 
 ---
 

@@ -1,6 +1,6 @@
 # APP_DETAILS: Study app (working title: Maximus)
 
-Master doc. Version 3 (24 Nov 2026). Replaces the "fact card feed" concept (v2) and adds accounts, sync and the Claude Design export.
+Master doc. Version 3 (24 Nov 2026), status synced to the code on 25 Nov 2026. Replaces the "fact card feed" concept (v2) and adds accounts, sync and the Claude Design export.
 
 # V3 CHANGES (24 Nov 2026) - read first
 
@@ -22,7 +22,8 @@ Decided by the user:
 My defaults, NOT yet confirmed by the user (change if you disagree):
 - Google sign-in ships first; email and password second.
 - User data lives in a hosted Postgres (Neon free tier), not SQLite. Render's free disk is wiped on redeploy, so SQLite would lose users' data.
-- Chat history is kept 5 days (rolling, per message) per user per title, deletable by the user.
+
+Confirmed since: chat history is kept 5 days (rolling, per message) per user per title, deletable by the user (D46).
 
 Consequences:
 - Play Store needs a privacy policy URL, the Data safety form, and account deletion inside the app plus a public web page for deletion.
@@ -64,9 +65,25 @@ Later (not launch): War strategy, Psychology, Geography, General knowledge.
 12. **Settings**: profile, taste, theme, text size, read-aloud voice, clear my data, **sign out**, **delete my account**, about and credits (CC BY-SA), privacy policy.
 13. **Think Like...**: a library section of people. Each person is a portrait poster; the title page shows traits, what they changed and the wars they won against the odds (leaders), or core ideas and how they apply today (thinkers).
 
-## 6. Build order (no dates)
-Built and merged (S1 to S14): backend, ingest, library, title sheet, study list, match %, ratings, reader, settings, quiz, feed, chat proxy.
-Next: S12 (real API client), docs/design-delta, S17 (backend accounts + sync on Postgres), S18 (app sign-in + sync), S5 (onboarding + Think Like), S15 (chat UI), Fact of the day, Library/Study-list restructure, poster art, S11b (people titles), S16 (QA, security audits, store prep).
+## 6. Status (25 Nov 2026)
+**Merged**
+- Backend: catalogue, title, feed, credits, On This Day and chat endpoints; accounts (Google, email and password, refresh, forgot and reset password, delete account) with no email verification; sync endpoints; stored chat history (5 days, rolling); public account-deletion and privacy pages; Postgres-ready migrations; Render config.
+- Content: ingest and review tooling; 28 topic titles ingested as `draft` with lessons and images (publish gate passes 28 of 28, see `backend/data/INGEST_REPORT.md`). Quiz and feed items: 0 so far, so the Quiz tab stays hidden.
+- App: sign-in and create account, secure token storage, offline-first sync, Home, Library with the study list, title sheet, match % and ratings, reader with read-aloud, quiz, feed, chat screen, Fact of the day card (12 facts), On This Day card, Settings (theme, text size, voice, sync, sign out, delete account, credits), 4-tab nav.
+- Posters: bundled SVG posters for 19 of 28 topics with the manifest (2 pairs, 13 washes, 4 singles), drawn through one `PosterImage` entry point in the poster cards, Library hero, title sheet, Fact of the day and Home study rows.
+- Security audit report: `docs/SECURITY_AUDIT.md` (1 High, 4 Medium, 12 Low, all open).
+
+**Not built yet**
+- People titles (51) and the Think Like... person sheet; onboarding (and its person picker); Fact of the day content (about 100 facts; 12 exist); real poster art for the 9 missing topics and all 51 people; hosting (the backend has never been deployed); store assets; quiz and feed content, and publishing the titles.
+
+**Launch blockers** (`docs/store/LAUNCH_CHECKLIST.md` section 0)
+- Release build is signed with the debug key.
+- Backend not deployed, so the privacy and deletion URLs do not work yet.
+- Image storage undecided (`/media` cannot live on Render's free disk, D44).
+- Final app name and package id undecided (the package id is permanent once uploaded).
+- Privacy and deletion pages need the edits listed at the end of `PRIVACY_POLICY.md`.
+- Security audits not finished: fixes listed under "Do before launch" in `docs/SECURITY_AUDIT.md`.
+
 V2: Perspective mode (below), more topics.
 
 ## 7. V2: Perspective mode
@@ -77,9 +94,9 @@ Risks, stated plainly:
 - Do it as pre-written, reviewed lens texts per topic first; live generation only later.
 
 ## 8. Cost and limits (chatbot)
-- Free tiers have rate caps and can change or disappear. Design for it: server proxy, fallback between providers (OpenRouter free model, then Gemini), daily message cap (per install and global, and per account once accounts exist), friendly "chat is resting" state.
+- Free tiers have rate caps and can change or disappear. Design for it: server proxy, fallback between providers (OpenRouter free model, then Gemini), daily message cap (20 per account and 200 global per UTC day; the per-install cap only applies if a client sends an install id, and the app does not), friendly "chat is resting" state.
 - Because titles are small (about 80), each title's text can be sent as context. No vector database needed.
 - Free models are weaker at obeying "stay on topic". Use a strict system prompt plus a server-side check, and test with off-topic attacks.
 
 ## 9. Open items
-Final app name; launch subset of titles; per-title title-art picks; Postgres host (default Neon); email-and-password timing; chat retention (default 5 days, decided D46); person sheet and people posters design; poster art for the 8 topics the design lacks; quiz banks (~50 questions per topic and per person, launch subset first); who reviews facts before launch.
+Final app name; launch subset of titles; per-title title-art picks; Postgres host (default Neon); email-and-password timing; chat retention (default 5 days, decided D46); person sheet and people posters design; poster art for the 9 topics the design lacks; quiz banks (~50 questions per topic and per person, launch subset first); who reviews facts before launch.
