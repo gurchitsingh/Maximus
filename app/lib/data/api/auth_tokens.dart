@@ -159,8 +159,6 @@ class AuthTokens {
 /// so a signed-out cold start can still load the catalogue.
 bool needsBearer(String path) {
   if (!path.startsWith('/v1/')) return false;
-  // The one auth call that needs the bearer (14.1).
-  if (path == '/v1/auth/resend-verification') return true;
   if (path.startsWith('/v1/auth/')) return false;
   if (path.startsWith('/v1/on-this-day')) return false;
   if (const {'/v1/catalogue', '/v1/feed', '/v1/credits'}.contains(path)) {

@@ -108,9 +108,13 @@ class AuthField extends StatelessWidget {
     this.textInputAction = TextInputAction.next,
     this.onSubmitted,
     this.enabled = true,
+    this.focusNode,
+    this.onChanged,
   });
 
   final TextEditingController controller;
+  final FocusNode? focusNode;
+  final ValueChanged<String>? onChanged;
   final String hint;
   final bool obscure;
   final TextInputType? keyboardType;
@@ -130,6 +134,8 @@ class AuthField extends StatelessWidget {
       height: 56,
       child: TextField(
         controller: controller,
+        focusNode: focusNode,
+        onChanged: onChanged,
         enabled: enabled,
         obscureText: obscure,
         enableSuggestions: !obscure,

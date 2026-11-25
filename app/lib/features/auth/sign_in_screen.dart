@@ -1,6 +1,7 @@
 // Sign in and Create account (All Pages 1.2, 1.3; prototype `login` and
 // `loginUp`). Google first, then email and password (D35). No Apple button
-// (Android only). The router moves on once the session starts.
+// (Android only). No email verification (D48): sign-up signs the user in at
+// once and the router moves on. The confirm-password check is app-only.
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:material_ui/material_ui.dart';
@@ -19,6 +20,19 @@ enum AuthMode { signIn, signUp }
 /// Sign-up password length (CONTRACTS 14.1).
 const minPasswordLength = 10, maxPasswordLength = 128;
 
+/// Shown for every failed email sign-in (D48): never says which half was
+/// wrong.
+const wrongCredentials = 'Wrong email or password';
+
+const passwordsDontMatch = "Passwords don't match";
+
+final _emailPattern = RegExp(r'^[^@\s]+@[^@\s]+\.[^@\s]+$');
+
+bool isValidEmail(String email) => _emailPattern.hasMatch(email.trim());
+
+bool passwordRulesPass(String p) =>
+    p.length >= minPasswordLength && p.length <= maxPasswordLength;
+
 class SignInScreen extends ConsumerStatefulWidget {
   const SignInScreen({super.key, this.mode = AuthMode.signIn});
 
@@ -29,34 +43,49 @@ class SignInScreen extends ConsumerStatefulWidget {
 }
 
 class _SignInScreenState extends ConsumerState<SignInScreen> {
-  final _name = TextEditingController();
   final _email = TextEditingController();
   final _password = TextEditingController();
+  final _confirm = TextEditingController();
+  final _confirmFocus = FocusNode();
   bool _busy = false;
+  bool _confirmLeft = false;
   String? _error;
 
   bool get _up => widget.mode == AuthMode.signUp;
 
   @override
+  void initState() {
+    super.initState();
+    _confirmFocus.addListener(() {
+      if (!_confirmFocus.hasFocus && !_confirmLeft) {
+        setState(() => _confirmLeft = true);
+      }
+    });
+  }
+
+  @override
   void dispose() {
-    _name.dispose();
     _email.dispose();
     _password.dispose();
+    _confirm.dispose();
+    _confirmFocus.dispose();
     super.dispose();
   }
 
-  String? _check() {
-    final email = _email.text.trim();
-    if (email.isEmpty || !email.contains('@') || email.endsWith('@')) {
-      return 'Enter your email address.';
-    }
-    final p = _password.text;
-    if (p.isEmpty) return 'Enter your password.';
-    if (_up && (p.length < minPasswordLength || p.length > maxPasswordLength)) {
-      return 'Use a password of 10 to 128 characters.';
-    }
-    return null;
-  }
+  bool get _matches => _password.text == _confirm.text;
+
+  /// "Passwords don't match" shows once the confirm field has lost focus,
+  /// or both fields are filled.
+  bool get _showMismatch =>
+      _up &&
+      !_matches &&
+      (_confirmLeft || (_password.text.isNotEmpty && _confirm.text.isNotEmpty));
+
+  bool get _canSubmit =>
+      !_up ||
+      (isValidEmail(_email.text) &&
+          passwordRulesPass(_password.text) &&
+          _matches);
 
   Future<void> _run(Future<void> Function() action) async {
     FocusScope.of(context).unfocus();
@@ -67,23 +96,26 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
     try {
       await action();
     } catch (e) {
-      if (mounted) setState(() => _error = authErrorMessage(e));
+      if (mounted) {
+        setState(
+          () => _error = _up ? authErrorMessage(e) : signInErrorMessage(e),
+        );
+      }
     } finally {
       if (mounted) setState(() => _busy = false);
     }
   }
 
   void _submit() {
-    if (_busy) return;
-    final problem = _check();
-    if (problem != null) {
-      setState(() => _error = problem);
+    if (_busy || !_canSubmit) return;
+    if (!_up && (_email.text.trim().isEmpty || _password.text.isEmpty)) {
+      setState(() => _error = wrongCredentials);
       return;
     }
     final ctrl = ref.read(authControllerProvider.notifier);
     _run(
       () => _up
-          ? ctrl.signUp(_email.text, _password.text, name: _name.text)
+          ? ctrl.signUp(_email.text, _password.text)
           : ctrl.signInWithEmail(_email.text, _password.text),
     );
   }
@@ -113,21 +145,12 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
             onPressed: _busy ? null : _google,
           ),
           const OrDivider(),
-          if (_up) ...[
-            AuthField(
-              controller: _name,
-              hint: 'Your name',
-              keyboardType: TextInputType.name,
-              autofillHints: const [AutofillHints.name],
-              enabled: !_busy,
-            ),
-            const SizedBox(height: 12),
-          ],
           AuthField(
             controller: _email,
             hint: 'Email',
             keyboardType: TextInputType.emailAddress,
             autofillHints: const [AutofillHints.email],
+            onChanged: (_) => setState(() {}),
             enabled: !_busy,
           ),
           const SizedBox(height: 12),
@@ -138,18 +161,27 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
             autofillHints: [
               _up ? AutofillHints.newPassword : AutofillHints.password,
             ],
-            textInputAction: TextInputAction.done,
-            onSubmitted: (_) => _submit(),
+            textInputAction: _up ? TextInputAction.next : TextInputAction.done,
+            onSubmitted: _up ? null : (_) => _submit(),
+            onChanged: (_) => setState(() {}),
             enabled: !_busy,
           ),
-          if (_up)
-            Padding(
-              padding: const EdgeInsets.only(top: 8),
-              child: Text(
-                'At least 10 characters.',
-                style: MxText.sub.copyWith(color: context.mx.textMuted),
-              ),
+          if (_up) ...[
+            const SizedBox(height: 12),
+            AuthField(
+              controller: _confirm,
+              focusNode: _confirmFocus,
+              hint: 'Confirm password',
+              obscure: true,
+              autofillHints: const [AutofillHints.newPassword],
+              textInputAction: TextInputAction.done,
+              onSubmitted: (_) => _submit(),
+              onChanged: (_) => setState(() {}),
+              enabled: !_busy,
             ),
+            if (_showMismatch) const AuthMessage(passwordsDontMatch),
+            _PasswordRules(_password.text),
+          ],
           if (!_up)
             Align(
               alignment: Alignment.centerLeft,
@@ -170,7 +202,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
           BusyPrimaryButton(
             label: _up ? 'Create account' : 'Sign in',
             busy: _busy,
-            onPressed: _submit,
+            onPressed: _canSubmit ? _submit : null,
           ),
           AuthToggleRow(
             question: _up ? 'Already have an account?' : 'New to Maximus?',
@@ -180,6 +212,44 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
                 : () => context.go(_up ? AuthPaths.signIn : AuthPaths.signUp),
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// The password rules, ticked off as the user types.
+class _PasswordRules extends StatelessWidget {
+  const _PasswordRules(this.password);
+
+  final String password;
+
+  @override
+  Widget build(BuildContext context) {
+    final c = context.mx;
+    final ok = passwordRulesPass(password);
+    return Padding(
+      padding: const EdgeInsets.only(top: 10),
+      child: Semantics(
+        label: ok
+            ? 'Password rule met: $minPasswordLength to $maxPasswordLength '
+                  'characters'
+            : 'Password rule: $minPasswordLength to $maxPasswordLength '
+                  'characters',
+        excludeSemantics: true,
+        child: Row(
+          children: [
+            MxIcon(
+              ok ? MxIcons.check : MxIcons.x,
+              size: 16,
+              color: ok ? c.success : c.textMuted,
+            ),
+            const SizedBox(width: 8),
+            Text(
+              '$minPasswordLength to $maxPasswordLength characters',
+              style: MxText.sub.copyWith(color: ok ? c.success : c.textMuted),
+            ),
+          ],
+        ),
       ),
     );
   }

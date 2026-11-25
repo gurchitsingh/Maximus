@@ -18,7 +18,6 @@ import '../features/auth/auth_models.dart';
 import '../features/auth/auth_redirect.dart';
 import '../features/auth/forgot_password_screen.dart';
 import '../features/auth/sign_in_screen.dart';
-import '../features/auth/verify_email_screen.dart';
 import '../features/auth/welcome_screen.dart';
 import '../features/credits/credits_screen.dart';
 import '../features/feed/feed_screen.dart';
@@ -37,7 +36,6 @@ enum AppRoute {
   signIn('/sign-in'),
   signUp('/sign-up'),
   forgotPassword('/forgot-password'),
-  verifyEmail('/verify-email'),
   home('/home'),
   library('/library'),
   feed('/feed'),
@@ -133,7 +131,6 @@ GoRouter buildRouter({
       for (final (route, screen) in [
         (AppRoute.signIn, const SignInScreen()),
         (AppRoute.signUp, const SignInScreen(mode: AuthMode.signUp)),
-        (AppRoute.verifyEmail, const VerifyEmailScreen()),
       ])
         GoRoute(
           path: route.path,
@@ -255,8 +252,7 @@ final routerProvider = Provider<GoRouter>((ref) {
       (s) => switch (s) {
         AuthLoading() => 0,
         SignedOut() => 1,
-        SignedIn(showVerify: true) => 2,
-        SignedIn() => 3,
+        SignedIn() => 2,
       },
     ),
     (_, _) => refresh.value++,

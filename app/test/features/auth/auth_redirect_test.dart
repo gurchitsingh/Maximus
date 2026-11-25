@@ -6,7 +6,6 @@ import 'package:maximus/features/auth/auth_redirect.dart';
 void main() {
   const user = AuthUser(id: 'u1', email: 'ada@example.com');
   const signedIn = SignedIn(user);
-  const justSignedUp = SignedIn(user, showVerify: true);
 
   test('loading holds everything on Welcome', () {
     expect(authRedirect('/', const AuthLoading()), isNull);
@@ -22,7 +21,6 @@ void main() {
       '/home',
       '/library',
       '/settings',
-      '/verify-email',
       '/sheet/roman-history',
       '/title/roman-history/lesson/l1',
     ]) {
@@ -31,18 +29,12 @@ void main() {
   });
 
   test('signed in: auth screens go to Home, the app stays put', () {
-    for (final p in ['/', '/sign-in', '/sign-up', '/verify-email']) {
+    for (final p in ['/', '/sign-in', '/sign-up']) {
       expect(authRedirect(p, signedIn), '/home', reason: p);
     }
     for (final p in ['/home', '/library', '/settings', '/sheet/x']) {
       expect(authRedirect(p, signedIn), isNull, reason: p);
     }
-  });
-
-  test('just signed up: Verify email first', () {
-    expect(authRedirect('/sign-up', justSignedUp), '/verify-email');
-    expect(authRedirect('/', justSignedUp), '/verify-email');
-    expect(authRedirect('/verify-email', justSignedUp), isNull);
   });
 
   test('onboarding (once S5 builds it) comes before Home', () {
