@@ -14,7 +14,7 @@ These override anything below that conflicts.
 - **Account deletion:** an authenticated delete endpoint plus a public web page, as Play Store requires. Deleting removes all user rows.
 - **Offline-first sync:** the phone is the working copy. Sync is last-write-wins per record with an updated_at timestamp; deletes are tombstones. Keep it simple.
 - **Security:** rate limits on auth endpoints, password hashing (argon2 or bcrypt), password reset for email accounts (no email verification, D48), short-lived access tokens plus refresh tokens, no secrets in the public repo. Run the Cloudflare security-audit skill and Strix before launch.
-- **Per-install chat caps stay** (20 per install, 200 global per UTC day); add a per-account cap once accounts exist.
+- **Chat caps:** 20 per account and 200 global per UTC day (`CHAT_ACCOUNT_DAILY_CAP`, `CHAT_GLOBAL_DAILY_CAP`). The per-install cap (`CHAT_DAILY_CAP`, 20) still exists but only applies when a client sends an optional `install_id`; the app does not.
 
 ---
 
@@ -28,17 +28,19 @@ Python + FastAPI, SQLite (dev) / Postgres (prod), SQLAlchemy + Alembic, httpx. H
 - images: id, url, local_path, author, licence, source_url, width, height
 - lesson_images: lesson_id, image_id
 - facts: id, title_id, lesson_id, text (<= 280 chars), image_id (feed cards)
-- daily_facts: date_key or position, text (<= 25 words), thumbnail image (hand-written list of about 100; bundled in the app as well)
+- (daily_facts is NOT built: Fact of the day is a bundled app asset only, CONTRACTS 20)
 - quiz_questions: id, title_id, question, options[4], correct_index, explanation
 - on_this_day cache: date, payload, fetched_at
 - ingest_runs: id, started_at, status, notes
 (V2) lens_texts: id, title_id, country, period, lens, body, reviewed
 
 ## Data model (users, new in v3)
-- users: id, email (nullable for Google-only), password_hash (nullable), google_sub (nullable), email_verified (unused since D48), created_at, deleted_at
-- refresh_tokens: id, user_id, token_hash, expires_at, revoked_at
-- user_ratings, user_study_list, user_progress, user_quiz_results, user_feed_state, user_settings (incl. onboarding picks): each keyed by user_id with updated_at and a deleted flag for sync
-- user_chat_messages: id, user_id, title_id, role, text, created_at (purged after retention)
+- users: id, email (nullable for Google-only), password_hash (nullable), google_sub (nullable), display_name, sync_seq, email_verified (unused since D48), created_at
+- refresh_tokens: id, user_id, token_hash, family_id, expires_at, revoked_at
+- user_records: one generic table for ratings, study list, progress, quiz results, feed state, settings and onboarding picks, keyed by (user_id, kind, record_id) with data, updated_at, deleted and a server-assigned seq (CONTRACTS 15.4). There are no per-resource `user_*` tables.
+- email_tokens: id, user_id, purpose (reset | delete), token_hash, expires_at, used_at
+- user_chat_messages: id, user_id, title_id, role, text, kind, lesson_refs, created_at (purged after retention)
+- chat_usage: per-day counters keyed by user (and a salted install hash); chat_install_usage keeps the optional install cap
 
 ## API (/v1) as built
 - GET /v1/catalogue (groups, titles, images, catalogue_version)
@@ -50,11 +52,12 @@ Python + FastAPI, SQLite (dev) / Postgres (prod), SQLAlchemy + Alembic, httpx. H
 - GET /healthz
 Note: the list route is /catalogue (not /titles), and quiz and lessons come inside the title payload. CONTRACTS is authoritative.
 
-## API (/v1) planned for v3 (S17)
-- Auth: sign up, sign in (email), sign in with Google (ID token), refresh, sign out, forgot and reset password (no verify email, D48)
-- GET/PUT /v1/me/sync (pull and push of user data since a timestamp), or per-resource endpoints as CONTRACTS defines
-- GET /v1/me/chat/{title_id}, DELETE /v1/me/chat/{title_id}
-- DELETE /v1/me (account deletion) and a public deletion web page
+## API (/v1) accounts and sync, as built
+- Auth: POST /v1/auth/signup (signs in at once, no email step, D48), signin, google (ID token), refresh, signout, forgot-password, reset-password
+- GET /v1/me, DELETE /v1/me (account deletion)
+- GET /v1/me/sync?since=&limit= and POST /v1/me/sync (one generic record endpoint pair, CONTRACTS 15.3)
+- GET /v1/me/chat/{title_id}, DELETE /v1/me/chat/{title_id}, DELETE /v1/me/chat
+- Public HTML pages: GET /privacy, /account/delete (+ request and confirm), /reset-password
 - Chat requires a signed-in user
 
 ## Content ingestion
@@ -69,5 +72,5 @@ Tooling built: python -m ingest.cli (wiki, check, import, seed-samples, merge, r
 - Providers: OpenRouter free model first, Google Gemini free key as fallback. Keys in server env vars.
 - Context: the full stored text of the one title (about 80 small titles, so no vector DB).
 - System prompt: answer only from supplied text; if not answered there, say so; refuse off-topic; short answers; name the lesson used.
-- Guardrails: caps per install and global per UTC day (salted hashes), burst limits, request size limit, injection guard and output check, canary. v3: per-account cap; chat saved to the account with retention.
+- Guardrails: caps per account and global per UTC day (the optional per-install cap uses salted hashes), burst limits, request size limit, injection guard and output check, canary. Chat is saved to the account; messages are deleted 5 days after their own created_at (daily purge workflow plus a lazy purge on the first chat of each UTC day).
 - Free tiers can change or throttle: retry on the other provider, then return "chat is resting".
