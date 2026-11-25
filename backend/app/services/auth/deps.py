@@ -63,6 +63,10 @@ def current_principal(request: Request, db: Session = Depends(get_db)) -> Princi
     user = db.get(User, claims["user_id"])
     if user is None:
         raise ApiError(401, "unauthorized", "Sign in to continue.")
+    # M2: revoked by a password reset, a Google link or refresh-token reuse. iat is whole seconds, so a token
+    # issued in the same second as the revocation (the new session of that same request) stays valid.
+    if user.tokens_valid_after is not None and claims["iat"] < int(user.tokens_valid_after.timestamp()):
+        raise ApiError(401, "unauthorized", "Sign in to continue.")
     return Principal(user, claims)
 
 

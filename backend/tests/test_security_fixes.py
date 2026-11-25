@@ -1,10 +1,14 @@
 """Fixes from docs/SECURITY_AUDIT.md (H1, M1, M2, M3, M4, L5, L6, ...). Addresses are RFC 2606 / RFC 5737 only."""
+import uuid
+from datetime import timedelta
+
 import pytest
 
 from app import main
 from app.config import settings
-from app.services.auth import limits
-from tests.auth_helpers import PASSWORD
+from app.models import User
+from app.services.auth import limits, tokens
+from tests.auth_helpers import PASSWORD, bearer, signup
 
 
 def err(r, status, code):
@@ -59,3 +63,60 @@ def test_h1_get_limit_uses_the_same_client_ip(client, monkeypatch):
 @pytest.fixture
 def no_ip_limit(monkeypatch):
     monkeypatch.setattr(limits.auth_ip, "limit", 10_000)
+
+
+# ---------- M2: revoking every session also kills the access tokens already issued ----------
+
+@pytest.fixture
+def at(monkeypatch):
+    """Freeze the server clock; at(seconds) moves it forward from the frozen start."""
+    base = tokens.utcnow()
+    shift = {"s": 0}
+    monkeypatch.setattr(tokens, "utcnow", lambda: base + timedelta(seconds=shift["s"]))
+
+    def move(seconds):
+        shift["s"] = seconds
+    return move
+
+
+def test_m2_password_reset_kills_old_access_tokens(client, outbox, at, no_ip_limit):
+    old = signup(client)
+    client.post("/v1/auth/forgot-password", json={"email": "ada@example.com"})
+    at(30)
+    r = client.post("/v1/auth/reset-password", json={"token": outbox.token("reset"), "new_password": "a new long password"})
+    assert r.status_code == 204, r.text
+    err(client.get("/v1/me", headers=bearer(old)), 401, "unauthorized")
+    err(client.get("/v1/me/sync", headers=bearer(old)), 401, "unauthorized")
+    new = client.post("/v1/auth/signin", json={"email": "ada@example.com", "password": "a new long password"}).json()
+    assert client.get("/v1/me", headers=bearer(new)).status_code == 200
+
+
+def test_m2_google_link_kills_the_pre_registered_password_session(client, google, at, no_ip_limit):
+    attacker = signup(client)  # D48: anyone can sign up with someone else's address
+    at(60)
+    victim = client.post("/v1/auth/google", json={"id_token": google.token()}).json()
+    assert victim["user"]["has_google"] is True and victim["user"]["has_password"] is False
+    err(client.get("/v1/me", headers=bearer(attacker)), 401, "unauthorized")
+    err(client.delete("/v1/me", headers=bearer(attacker)), 401, "unauthorized")
+    assert client.get("/v1/me", headers=bearer(victim)).status_code == 200  # issued in the same second: valid
+
+
+def test_m2_refresh_token_reuse_kills_access_tokens(client, at, no_ip_limit):
+    first = signup(client)
+    at(10)
+    second = client.post("/v1/auth/refresh", json={"refresh_token": first["refresh_token"]}).json()
+    assert client.get("/v1/me", headers=bearer(first)).status_code == 200  # a normal refresh revokes nothing else
+    assert client.get("/v1/me", headers=bearer(second)).status_code == 200
+    at(20)
+    err(client.post("/v1/auth/refresh", json={"refresh_token": first["refresh_token"]}), 401, "token_reused")
+    err(client.get("/v1/me", headers=bearer(first)), 401, "unauthorized")
+    err(client.get("/v1/me", headers=bearer(second)), 401, "unauthorized")
+    again = client.post("/v1/auth/signin", json={"email": "ada@example.com", "password": PASSWORD}).json()
+    assert client.get("/v1/me", headers=bearer(again)).status_code == 200
+
+
+def test_m2_a_user_never_revoked_keeps_working(client, seeded):
+    d = signup(client)
+    with seeded() as db:
+        assert db.get(User, uuid.UUID(d["user"]["id"])).tokens_valid_after is None
+    assert client.get("/v1/me", headers=bearer(d)).status_code == 200
