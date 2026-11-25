@@ -1,23 +1,25 @@
 # Store listing draft
 
-Facts about Play limits come from https://support.google.com/googleplay/android-developer/answer/9866151 and
-https://support.google.com/googleplay/android-developer/answer/9859655, both read on 2026-11-25 (neither page
-shows a "last updated" date). Nothing here is final: the owner decides names and every claim. Counts of titles
-(28 topics, 51 people) must match what actually ships; the launch subset is still an open item (APP_DETAILS 9).
+**Source status:** my fetches of the Play graphic-assets and content-rating help pages returned error stubs, so every
+Play limit in this file is UNVERIFIED. Where to check:
+https://support.google.com/googleplay/android-developer/answer/9866151 and
+https://support.google.com/googleplay/android-developer/answer/9859655.
+Nothing here is final: the owner decides names and every claim. Counts of titles (28 topics, 51 people) must match
+what actually ships; the launch subset is still an open item (APP_DETAILS 9).
 
 ## App name candidates (the final name is open; none is chosen)
 
 | Candidate | Note |
 |---|---|
 | Maximus | Current working title and Android label. UNVERIFIED: not checked for name clashes on Play or trademark databases |
-| Maximus: Study History | Says what it is. UNVERIFIED: Play's app-name length limit is not on the pages read (commonly 30 characters; UNVERIFIED), this one is 22 |
+| Maximus: Study History | Says what it is. UNVERIFIED: Play's app-name length limit is not verified (commonly 30 characters; UNVERIFIED), this one is 22 |
 | TODO more candidates | The owner may add; do a Play search and a trademark check on each before choosing |
 
-The package name is `com.gurchit.maximus.maximus` (`app/android/app/build.gradle.kts`). Play says package names
-are unique and permanent and cannot be deleted or reused (answer 113469, read 2026-11-25), so decide whether to
+The package name is `com.gurchit.maximus.maximus` (`app/android/app/build.gradle.kts`). UNVERIFIED (as recalled, check answer/113469): package names
+are unique and permanent and cannot be reused, so decide whether to
 keep it **before the first upload**. TODO owner decision.
 
-## Short description (80 characters maximum, per the graphic-assets page)
+## Short description (80 characters maximum: UNVERIFIED, check the graphic-assets page)
 
 1. `Study history in short lessons, with quizzes and a fact feed. Works offline.` (76)
 2. `Learn history in short lessons. Quiz yourself, scroll facts, ask the chat.` (74)
@@ -26,7 +28,7 @@ keep it **before the first upload**. TODO owner decision.
 Option 1 claims offline use; "works offline" is true for opened lessons, quizzes, feed and study list, not for
 sign-in or chat. Keep the full description's offline paragraph.
 
-## Full description (about 1,700 characters; Play's maximum is UNVERIFIED, not on the pages read)
+## Full description (about 1,700 characters; Play's maximum is UNVERIFIED)
 
 ```
 This is a study app for history. It is not a news app and does not replace a teacher or a textbook.
@@ -61,12 +63,12 @@ what is built at launch; "lessons you have opened work offline" depends on the c
 - Contact details (Console): email (public) TODO, website optional TODO, privacy policy URL
   `https://maximus-api.onrender.com/privacy` (TODO final), see `LAUNCH_CHECKLIST.md`.
 - Ads: **No ads** (true per code). In-app purchases: none.
-- Target audience: owner decision, see PRIVACY_POLICY "Children". The content-rating page says apps with children in the target audience must follow the Families policy.
+- Target audience: owner decision, see PRIVACY_POLICY "Children". UNVERIFIED: Play says apps with children in the target audience must follow the Families policy.
 
 ## Content rating questionnaire (IARC, filled in the Console under App content)
 
-The Play page says ratings come from the questionnaire answers and that misrepresenting content can lead to
-removal or suspension. The exact question list is not on the page I read, so the wording below is UNVERIFIED:
+UNVERIFIED (as recalled): ratings come from the questionnaire answers and misrepresenting content can lead to
+removal or suspension. The exact question list was not read, so the wording below is UNVERIFIED:
 re-read each question in the Console and answer by the facts here. **Answer honestly even where it raises the
 rating.**
 
@@ -89,7 +91,7 @@ Console assigns here, and make sure the target audience declaration is consisten
 
 ## Screenshots to capture (phone, 8)
 
-Rules (graphic-assets page, 2026-11-25): 2 to 8 phone screenshots, PNG or JPEG (24-bit, no alpha), each side
+UNVERIFIED rules (as recalled; check the graphic-assets page): 2 to 8 phone screenshots, PNG or JPEG (24-bit, no alpha), each side
 between 320 px and 3,840 px, up to 8 MB, longest side at most 2.3 times the shortest. At least four at 1080 px
 minimum (9:16 portrait at least 1080 x 1920) is highly recommended for recommendation formats.
 
@@ -109,7 +111,7 @@ the sign-in screens with a real email. Check every image's licence and that no r
 
 ## Graphic assets
 
-| Asset | Requirement (page above, 2026-11-25) | Status |
+| Asset | Requirement (UNVERIFIED; check the graphic-assets page) | Status |
 |---|---|---|
 | App icon | 512 x 512 px, 32-bit PNG with alpha, up to 1,024 KB, no badges or ranking text | TODO: make from the logo (see `docs/LOGO_PROMPT.md`) |
 | Feature graphic | 1024 x 500 px, JPEG or 24-bit PNG (no alpha); required to publish | TODO |

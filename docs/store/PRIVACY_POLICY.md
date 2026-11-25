@@ -105,7 +105,7 @@ terms and write the real answer here before publishing. Until then, do not tell 
 Maximus is not meant for children under 13, and we do not knowingly collect data from them. If you are a parent
 and think a child under 13 has an account, contact us and we will delete it.
 
-UNVERIFIED and TODO: (1) The Google Play Families policy page (checked 2026-11-25) does not give a minimum age for
+UNVERIFIED and TODO: (1) The Google Play Families policy page (UNVERIFIED: not read) is said not to give a minimum age for
 general-audience apps; it covers apps whose target audience includes children, and the Play Console asks you to
 declare a target age group. The owner must choose that declaration (for example 13 and over, or 18 and over) and
 make this paragraph match. (2) Whether the app must also block or age-screen under-13 sign-ups (there is no age

@@ -1,10 +1,6 @@
 # Account deletion (Play requirement)
 
-Rule read on 2026-11-25 at https://support.google.com/googleplay/android-developer/answer/13327111 (no "last
-updated" date shown): an app that lets users create an account must give an **in-app path** to delete the account
-and associated data, and a **web link** where users can request deletion without reinstalling. The web link must
-load without error, be easy to find, and refer to the app or developer name. Retained data must be explained to
-users, for example in the privacy policy. Temporary deactivation does not count.
+**Source status.** My fetch of https://support.google.com/googleplay/android-developer/answer/13327111 returned an error stub, so I did not read it. The URL is only where to check. UNVERIFIED, as recalled: an app that lets users create an account needs an in-app deletion path and a web link for deletion requests; the web link must work without reinstalling and refer to the app or developer name; retained data must be explained to users, for example in the privacy policy; temporary deactivation does not count.
 
 ## In-app steps (code: `app/lib/features/settings/account_section.dart`)
 
@@ -26,7 +22,7 @@ users, for example in the privacy policy. Temporary deactivation does not count.
   button posts and deletes. Works for Google and email accounts. It needs working email sending in production
   (`EMAIL_PROVIDER=resend` with a verified sender); with the default `console` provider no email is sent.
 - Page title today: "Delete your Maximus account" (the working name). If the app is renamed, the page must be
-  updated (Play wants the app or developer name on it).
+  updated (Play wants the app or developer name on it: UNVERIFIED).
 
 ## What is deleted, what is kept
 

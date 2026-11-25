@@ -1,9 +1,11 @@
 # Play Console launch checklist (new personal developer account)
 
-Every rule below carries its source URL and the date it was checked: **2026-11-25**. None of the Google pages
-shows a "last updated" date, so recheck anything that matters on the day you act. A rule I could not read is
-marked UNVERIFIED. Never commit keystores, `key.properties` or passwords (`.gitignore` already lists `*.jks` and
-`key.properties`).
+**Source status.** My earlier fetches of the Google Play help pages returned error stubs, so none of those pages
+was actually read. Every Play rule below is **UNVERIFIED** and is written from memory or from unconfirmed second-hand
+summaries; the URL beside each is only "where to check". The one exception is the closed-testing rule in section 2,
+verified from the official page by the owner on 2026-11-25. Recheck every other rule in the Console or on the Play
+help page before relying on it. Never commit keystores, `key.properties` or passwords (`.gitignore` already lists
+`*.jks` and `key.properties`).
 
 ## 0. Blockers found in this repo (fix before any upload)
 
@@ -16,9 +18,9 @@ marked UNVERIFIED. Never commit keystores, `key.properties` or passwords (`.giti
 - [ ] Privacy page and deletion page need the edits listed at the end of `PRIVACY_POLICY.md`.
 - [ ] Security audits planned before launch (APP_DETAILS) are not done: TODO.
 
-## 1. Account
+## 1. Account (Play rules UNVERIFIED)
 
-| Step | Rule | Source (checked 2026-11-25) |
+| Step | Rule | Where to check (all UNVERIFIED) |
 |---|---|---|
 | One-time fee | US$25, one time; credit or debit card, no prepaid cards | https://support.google.com/googleplay/android-developer/answer/6112435 |
 | Age and agreement | Must be 18 or older; accept the Developer Distribution Agreement | same page |
@@ -31,37 +33,35 @@ marked UNVERIFIED. Never commit keystores, `key.properties` or passwords (`.giti
 
 ## 2. Testing requirement for new personal accounts
 
-Source: https://support.google.com/googleplay/android-developer/answer/14151465, checked 2026-11-25.
+**VERIFIED** (official page https://support.google.com/googleplay/android-developer/answer/14151465, checked
+2026-11-25 by the owner's other session): personal developer accounts created after 13 November 2023 need a
+**closed test with at least 12 testers opted in continuously for at least 14 days** before applying for production
+access.
 
-- Applies to personal accounts created after 13 November 2023 (so a new account today is covered).
-- Run a **closed test with at least 12 testers, opted in continuously for at least 14 days.** Testers who opt out
-  and back in must still complete 14 consecutive days.
-- Then use **Dashboard, Apply for production**. The form has three parts: about your closed test, about your app,
-  about your production readiness. Review usually takes 7 days or less, sometimes longer. If testing is judged
-  insufficient you may have to keep testing (for example with fewer than 12 opted-in testers).
-- Internal testing has no such requirement. Closed testing requires completed app setup. Open testing requires
-  production access. Production stays disabled until you meet these rules.
-- No exemption for personal accounts is listed on that page.
+UNVERIFIED (recheck on that page): the 14 days must be consecutive if a tester opts out and back in; the
+"Apply for production" step is on the Dashboard and asks about the closed test, the app and production readiness;
+review time (usually about 7 days or less); internal testing has no such requirement; open testing and
+production need production access; no exemption for personal accounts.
 
 Plan: recruit 15 or more testers (a margin above 12), by Google Group or email list in the closed track. TODO:
 who they are. Testers should use the app on real phones for the full period and give feedback you can cite in the application.
 
-## 3. App content and forms (Policy, App content)
+## 3. App content and forms (Policy, App content) (Play rules UNVERIFIED)
 
 | Item | What to enter | Doc |
 |---|---|---|
-| Privacy policy URL | `https://maximus-api.onrender.com/privacy` (TODO final). Must be a public, active, non-geofenced URL that is not a PDF, and a link or text must also be inside the app (Settings has it) | https://support.google.com/googleplay/android-developer/answer/10144311, 2026-11-25 |
-| Account deletion URL and answers | `/account/delete` and in-app path | `ACCOUNT_DELETION.md`; rule at https://support.google.com/googleplay/android-developer/answer/13327111, 2026-11-25 |
-| Data safety form | Required for closed, open and production tracks (apps only on internal testing are exempt) | `DATA_SAFETY.md`; https://support.google.com/googleplay/android-developer/answer/10787469, 2026-11-25 |
-| App access instructions | Reusable login the reviewer can use; see below | https://support.google.com/googleplay/android-developer/answer/15748846, 2026-11-25 |
+| Privacy policy URL | `https://maximus-api.onrender.com/privacy` (TODO final). Must be a public, active, non-geofenced URL that is not a PDF, and a link or text must also be inside the app (Settings has it) | https://support.google.com/googleplay/android-developer/answer/10144311; where to check, UNVERIFIED |
+| Account deletion URL and answers | `/account/delete` and in-app path | `ACCOUNT_DELETION.md`; rule at https://support.google.com/googleplay/android-developer/answer/13327111; where to check, UNVERIFIED |
+| Data safety form | Required for closed, open and production tracks (apps only on internal testing are exempt) | `DATA_SAFETY.md`; https://support.google.com/googleplay/android-developer/answer/10787469; where to check, UNVERIFIED |
+| App access instructions | Reusable login the reviewer can use; see below | https://support.google.com/googleplay/android-developer/answer/15748846; where to check, UNVERIFIED |
 | Ads | No ads | |
-| Content rating | IARC questionnaire; answer honestly | `STORE_LISTING.md`; https://support.google.com/googleplay/android-developer/answer/9859655, 2026-11-25 |
-| Target audience | Owner decision; Families policy applies if children are in the target audience | https://support.google.com/googleplay/android-developer/answer/9893335, 2026-11-25 |
+| Content rating | IARC questionnaire; answer honestly | `STORE_LISTING.md`; https://support.google.com/googleplay/android-developer/answer/9859655; where to check, UNVERIFIED |
+| Target audience | Owner decision; Families policy applies if children are in the target audience | https://support.google.com/googleplay/android-developer/answer/9893335; where to check, UNVERIFIED |
 | Store listing | Name, short and full description, icon, feature graphic, screenshots | `STORE_LISTING.md` |
 
 ### App access instructions for reviewers
 
-Play requires sign-in details that are reusable, always valid, valid regardless of location, in English, and
+UNVERIFIED (recalled): Play requires sign-in details that are reusable, always valid, valid regardless of location, in English, and
 that work without 2-step verification or one-time codes (page above). For this app:
 
 - [ ] Create a dedicated account such as `TODO-review@<your domain>` with a password of 10 to 128 characters.
@@ -77,15 +77,15 @@ that work without 2-step verification or one-time codes (page above). For this a
       providers are unavailable.
 - [ ] Reset-password email needs the mail provider to be live (Resend, DEPLOY.md 5); not needed for review.
 
-## 4. App signing and the upload key
+## 4. App signing and the upload key (Play rules UNVERIFIED)
 
-Source: https://support.google.com/googleplay/android-developer/answer/9842756, checked 2026-11-25.
+Where to check (rules below UNVERIFIED): https://support.google.com/googleplay/android-developer/answer/9842756
 
 - Use **Play App Signing**: Google holds the app signing key; you hold an **upload key** and sign each bundle
   with it. A lost or compromised upload key can be reset through Play Console (create a new key, export its
   certificate as PEM with `keytool`, "Request upload key reset"). An app signing key you manage yourself cannot
   be reset if lost. Keep the upload key and app signing key different.
-- Once an app is published to an open track the signing key is fixed (https://support.google.com/googleplay/android-developer/answer/9859348, 2026-11-25).
+- Once an app is published to an open track the signing key is fixed (https://support.google.com/googleplay/android-developer/answer/9859348; where to check, UNVERIFIED).
 - [ ] Generate the upload keystore **outside the repo** (for example under `%USERPROFILE%\keys\`), back it up to
       a private place, and record its password in a password manager. Create `app/android/key.properties`
       (gitignored) and wire it into `build.gradle.kts` in a **separate** change; this docs branch does not touch `app/`.
@@ -93,23 +93,23 @@ Source: https://support.google.com/googleplay/android-developer/answer/9842756, 
       App integrity) into the Google Cloud **Android** OAuth client (DEPLOY.md section 4). Without it Google
       sign-in fails in Play builds. Also keep the upload key's SHA-1 there if you test with it.
 
-## 5. Build facts
+## 5. Build facts (Play rules UNVERIFIED)
 
 | Item | Value now | Rule |
 |---|---|---|
-| Format | Build an **app bundle** (`flutter build appbundle`) | One signed bundle; https://support.google.com/googleplay/android-developer/answer/113469, 2026-11-25 |
+| Format | Build an **app bundle** (`flutter build appbundle`) | One signed bundle; https://support.google.com/googleplay/android-developer/answer/113469; where to check, UNVERIFIED |
 | versionCode | `1` (from `version: 1.0.0+1` in `app/pubspec.yaml`) | Must increase with every update; maximum 2100000000 (same page). Bump the number after `+` for each upload |
 | Package name | `com.gurchit.maximus.maximus` | Permanent and cannot be reused (same page) |
-| Target API | Flutter in this PC's SDK sets `targetSdkVersion = 36` (`flutter/packages/flutter_tools/gradle/.../FlutterExtension.kt`, version of the local SDK folder) | From 31 Aug 2026 new apps and updates must target Android 16 (API 36) or higher; an extension to 1 Nov 2026 has already passed. https://support.google.com/googleplay/android-developer/answer/11926878, 2026-11-25 |
-| minSdk | `flutter.minSdkVersion` | No Play rule read; UNVERIFIED which Android versions you want to support |
-| App size | not measured | Limit number not on the page read: UNVERIFIED |
+| Target API | Flutter in this PC's SDK sets `targetSdkVersion = 36` (`flutter/packages/flutter_tools/gradle/.../FlutterExtension.kt`, version of the local SDK folder) | From 31 Aug 2026 new apps and updates must target Android 16 (API 36) or higher; an extension to 1 Nov 2026 has already passed. https://support.google.com/googleplay/android-developer/answer/11926878; where to check, UNVERIFIED |
+| minSdk | `flutter.minSdkVersion` | No Play rule known; UNVERIFIED which Android versions you want to support |
+| App size | not measured | Limit number: UNVERIFIED |
 
 - [ ] Recheck the target-API page on the day you build: Play raises the level yearly, and the Flutter SDK must be recent enough.
 - [ ] Confirm the release build actually has `targetSdk` 36 (inspect the merged manifest in the built bundle).
 
-## 6. Release track order
+## 6. Release track order (Play rules UNVERIFIED)
 
-Source for tracks: https://support.google.com/googleplay/android-developer/answer/9859348, 2026-11-25.
+Where to check the track rules (UNVERIFIED): https://support.google.com/googleplay/android-developer/answer/9859348
 
 1. **Internal testing** (up to 100 testers, no extra requirements). Upload the first signed bundle here, install
    from the Play link, test sign-in (Google and email), sync, chat, deletion.
@@ -117,13 +117,13 @@ Source for tracks: https://support.google.com/googleplay/android-developer/answe
    created while another is outstanding on that track.
 3. **Apply for production** from the Dashboard.
 4. **Production.** A first release cannot use a staged rollout; staged rollouts work for updates only
-   (https://support.google.com/googleplay/android-developer/answer/6346149, 2026-11-25). Use a staged percentage
+   (https://support.google.com/googleplay/android-developer/answer/6346149; where to check, UNVERIFIED). Use a staged percentage
    (for example 10 %, then raise manually: it does not increase by itself) from the second release on.
 5. Open testing is optional and requires production access.
 
-## 7. Pre-launch report
+## 7. Pre-launch report (Play rules UNVERIFIED)
 
-Source: https://support.google.com/googleplay/android-developer/answer/7002270, checked 2026-11-25.
+Where to check (rules below UNVERIFIED): https://support.google.com/googleplay/android-developer/answer/7002270
 
 - It is generated automatically when you upload a bundle (device-lab capacity permitting) and tests stability,
   Android compatibility, performance and accessibility. A crawler taps, types and swipes for several minutes.
@@ -132,10 +132,10 @@ Source: https://support.google.com/googleplay/android-developer/answer/7002270, 
   crawler cannot do it, so give it the **email test account** and mention the server's cold start.
 - [ ] Read the report for every upload to closed testing and production; fix crashes and accessibility issues first.
 
-## 8. Rollback plan
+## 8. Rollback plan (Play rules UNVERIFIED)
 
-Google's pages read do **not** describe reverting a published release to an old build (the word "rollback" is not
-used; checked 2026-11-25 at the staged-rollout page above and https://support.google.com/googleplay/android-developer/answer/16285429). What exists:
+UNVERIFIED: I could not read Google's pages; as recalled they do not describe reverting a published release to an old build (the word "rollback" is not
+used; check the staged-rollout page above and https://support.google.com/googleplay/android-developer/answer/16285429). What exists:
 
 - **Halt a staged rollout:** no further users get the version; those who have it keep it.
 - **Halt a fully rolled-out release** (not available for the first release on a track, not on internal tracks):

@@ -1,12 +1,12 @@
 # Google Play Data safety form: proposed answers
 
 Derived from the code and docs on 2026-11-25 (CONTRACTS 11, 14 to 17, BACKEND.md, `AndroidManifest.xml`,
-`pubspec.yaml`). Play's rules were read on 2026-11-25 from
-https://support.google.com/googleplay/android-developer/answer/10787469 (no "last updated" date shown on the page).
+`pubspec.yaml`). **Source status:** my fetch of the Play Data safety help page returned an error stub, so Play's
+rules and definitions below are UNVERIFIED (where to check: https://support.google.com/googleplay/android-developer/answer/10787469).
 **The owner is responsible for the final answers.** Anything marked UNVERIFIED or TODO needs a decision first.
 The form must match the privacy policy (`PRIVACY_POLICY.md`).
 
-Play's definitions (from that page): **Collect** = transmitting data off the user's device. **Share** =
+UNVERIFIED definitions, as recalled from Play: **Collect** = transmitting data off the user's device. **Share** =
 transferring collected data to a third party; transfers to a **service provider** (an entity that processes data on
 the developer's behalf and on the developer's instructions) are not "sharing".
 
@@ -69,6 +69,6 @@ release build (for example run the Play pre-launch report) before submitting.
 1. TODO owner: AI providers as "shared" or "service provider" (needs their terms, UNVERIFIED).
 2. UNVERIFIED: category for the password and for chat text (see rows).
 3. UNVERIFIED: IP address handling by Render.
-4. Backups keep data up to 28 days after deletion; Play's account-deletion page says retained data must be
-   disclosed in the privacy policy (it does not mention backups specifically). `PRIVACY_POLICY.md` discloses it.
+4. Backups keep data up to 28 days after deletion; UNVERIFIED: Play's account-deletion rules say retained data must be
+   disclosed in the privacy policy (whether backups need naming is UNVERIFIED). `PRIVACY_POLICY.md` discloses it.
 5. Re-fill this form whenever the code changes what is collected (for example if analytics or crash reporting is added).
