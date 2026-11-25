@@ -7,6 +7,7 @@ import pytest
 
 from app import main
 from app.config import settings
+from app.errors import ApiError
 from app.models import User
 from app.services.auth import limits, tokens
 from app.services.chat import service as chat_service
@@ -266,3 +267,35 @@ def test_l4_connection_returned_to_the_pool_during_provider_calls(chat, seeded):
     assert chat.post().status_code == 200
     assert seen == [0]
     assert chat.stored()[-1][2] == "answer"  # the writes after the call still land
+
+
+# ---------- L3: rate-limiter keys are evicted ----------
+
+def test_l3_limiter_memory_is_bounded(monkeypatch):
+    from app.services import ratelimit
+    lim = ratelimit.RateLimiter(2, 60)
+    monkeypatch.setattr(lim, "MAX_KEYS", 10)
+    clock = {"t": 1000.0}
+    monkeypatch.setattr(ratelimit.time, "monotonic", lambda: clock["t"])
+    for i in range(10):
+        lim.check(f"old{i}")
+    clock["t"] += 61  # every old key has expired
+    lim.check("new")
+    assert set(lim.hits) == {"new"}  # expired keys go first, nothing live is lost
+    for i in range(20):
+        lim.check(f"live{i}")
+    assert len(lim.hits) <= 10 and "live19" in lim.hits
+    lim.check("live19")
+    with pytest.raises(ApiError):
+        lim.check("live19")  # a live key still counts
+
+
+def test_l3_failure_only_limiter_drops_expired_keys(monkeypatch):
+    from app.services import ratelimit
+    lim = ratelimit.RateLimiter(5, 60)
+    clock = {"t": 1000.0}
+    monkeypatch.setattr(ratelimit.time, "monotonic", lambda: clock["t"])
+    lim.add("ada@example.com")
+    clock["t"] += 61
+    lim.ensure_open("ada@example.com")
+    assert lim.hits == {}
