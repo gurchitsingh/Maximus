@@ -4,6 +4,7 @@
 // in as ada@example.com.
 import 'package:drift/drift.dart' show driftRuntimeOptions;
 
+import 'dart:async';
 import 'dart:io';
 
 import 'package:drift/native.dart';
@@ -16,6 +17,7 @@ import 'package:maximus/core/theme/theme_controller.dart';
 import 'package:maximus/data/api/auth_tokens.dart';
 import 'package:maximus/data/db/app_database.dart';
 import 'package:maximus/data/providers.dart';
+import 'package:maximus/data/sync/sync_providers.dart';
 import 'package:maximus/data/repositories/content_source.dart';
 import 'package:maximus/features/auth/google_auth.dart';
 import 'package:maximus/features/reader/read_aloud.dart';
@@ -58,6 +60,9 @@ class SyncDevSource implements ContentSource {
 class AppHarness {
   AppHarness._(this.db, this.tts, this.backend, this.store, this.google);
 
+  /// The fake network state sync listens to (true = online).
+  final net = StreamController<bool>.broadcast();
+
   final AppDatabase db;
   final FakeTts tts;
   final FakeAuthBackend backend;
@@ -75,6 +80,9 @@ class AppHarness {
     bool signedIn = true,
     FakeAuthBackend? backend,
     FakeGoogleAuth? google,
+    // Automatic sync (start on sign-in, triggers). Off by default so the
+    // pre-S15 tests see exactly their own calls; sign-out still pushes.
+    bool sync = false,
   }) async {
     driftRuntimeOptions.dontWarnAboutMultipleDatabases = true;
     final h = AppHarness._(
@@ -103,6 +111,8 @@ class AppHarness {
             (ref) => fakeApiClient(h.backend, ref.watch(authTokensProvider)),
           ),
           googleAuthProvider.overrideWithValue(h.google),
+          connectivityProvider.overrideWithValue(h.net.stream),
+          if (!sync) syncAuthBridgeProvider.overrideWith((_) {}),
           ...overrides,
         ],
         child: const MaximusApp(),
@@ -165,6 +175,7 @@ class AppHarness {
   Future<void> dispose(WidgetTester tester) async {
     if (_disposed) return;
     _disposed = true;
+    await net.close();
     // Unmount first so drift stream listeners are cancelled, then close.
     await tester.pumpWidget(const SizedBox.shrink());
     // Let fire-and-forget writes (settings) land before closing.

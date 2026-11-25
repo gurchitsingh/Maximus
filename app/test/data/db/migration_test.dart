@@ -5,7 +5,6 @@ import 'package:drift/drift.dart' hide isNull, isNotNull;
 import 'package:drift_dev/api/migrations_native.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:maximus/data/db/app_database.dart';
-import 'package:maximus/data/sync/sync_dao.dart';
 import 'package:maximus/data/sync/sync_record.dart';
 
 import '../../generated_migrations/schema.dart';

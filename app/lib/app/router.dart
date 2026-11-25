@@ -12,6 +12,7 @@ import '../core/theme/tokens.dart';
 import '../core/widgets/mx_bottom_sheet.dart';
 import '../data/db/tables/user_tables.dart' show SettingKeys;
 import '../data/providers.dart' show settingsMapProvider;
+import '../data/sync/sync_providers.dart';
 import '../features/auth/auth_controller.dart';
 import '../features/auth/auth_models.dart';
 import '../features/auth/auth_redirect.dart';
@@ -264,11 +265,20 @@ final routerProvider = Provider<GoRouter>((ref) {
     settingsMapProvider.select((s) => s.value?[SettingKeys.onboardingDone]),
     (_, _) => refresh.value++,
   );
+  // S15: keeps sync running while the app is, and re-runs the redirect
+  // when the first pull on a fresh device ends (14.5: onboarding is decided
+  // after it, so an account that has picks skips onboarding).
+  ref.listen(
+    syncStatusProvider.select((s) => s.hydrating),
+    (_, _) => refresh.value++,
+  );
+  ref.listen(syncAuthBridgeProvider, (_, _) {});
   final router = buildRouter(
     auth: () => ref.read(authControllerProvider),
     onboardingDone: () =>
         ref.read(settingsMapProvider).value?[SettingKeys.onboardingDone] ==
-        'true',
+            'true' ||
+        ref.read(syncStatusProvider).hydrating,
     refreshListenable: refresh,
   );
   ref.onDispose(() {

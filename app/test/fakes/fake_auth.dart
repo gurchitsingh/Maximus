@@ -9,6 +9,8 @@ import 'package:maximus/data/api/api_client.dart';
 import 'package:maximus/data/api/auth_tokens.dart';
 import 'package:maximus/features/auth/google_auth.dart';
 
+import 'fake_sync.dart';
+
 class FakeUser {
   FakeUser({
     required this.id,
@@ -52,6 +54,9 @@ class FakeAuthBackend implements HttpClientAdapter {
   final authHeaders = <String, String?>{};
 
   bool offline = false;
+
+  /// /v1/me/sync (S15), keyed by user id.
+  final sync = FakeSyncServer();
 
   /// Answers any refresh with this status and code (simulated server
   /// trouble), when set.
@@ -141,6 +146,16 @@ class FakeAuthBackend implements HttpClientAdapter {
       final bytes = await requestStream.expand((b) => b).toList();
       if (bytes.isNotEmpty) {
         body = jsonDecode(utf8.decode(bytes)) as Map<String, dynamic>;
+      }
+    }
+    if (o.uri.path == '/v1/me/sync') {
+      final gate = sync.gate;
+      if (gate != null) await gate;
+      if (offline) {
+        throw DioException.connectionError(
+          requestOptions: o,
+          reason: 'offline (fake)',
+        );
       }
     }
     return _route(call, o, body);
@@ -246,6 +261,25 @@ class FakeAuthBackend implements HttpClientAdapter {
         _refresh.removeWhere((_, e) => e == u.email);
         _access.removeWhere((_, e) => e == u.email);
         return _json(204, null);
+      case 'GET /v1/me/sync' || 'POST /v1/me/sync':
+        final u = _bearer(o, fail);
+        if (u == null) return failed!;
+        if (sync.failures.isNotEmpty) {
+          final (status, code) = sync.failures.removeAt(0);
+          return _error(status, code);
+        }
+        if (call.startsWith('GET')) {
+          final q = o.uri.queryParameters;
+          return _json(
+            200,
+            sync.pull(
+              u.id,
+              int.parse(q['since'] ?? '0'),
+              int.parse(q['limit'] ?? '200'),
+            ),
+          );
+        }
+        return _json(200, sync.push(u.id, b['records'] as List<dynamic>));
       case 'GET /v1/catalogue':
         return _json(200, {'titles': <Object>[]});
     }
