@@ -1,8 +1,8 @@
 """SQLAlchemy tables (CONTRACTS 2.10). `index` is reserved in SQL, hence Lesson.idx; `group` is Title.group_key."""
-from sqlalchemy import JSON, Boolean, Float, ForeignKey, Integer, String, Text
+from sqlalchemy import Boolean, Float, ForeignKey, Integer, String, Text
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from app.db import Base
+from app.db import Base, JSONType
 
 
 class Title(Base):
@@ -11,26 +11,26 @@ class Title(Base):
     kind: Mapped[str] = mapped_column(String)
     name: Mapped[str] = mapped_column(String)
     subtitle: Mapped[str | None] = mapped_column(String)
-    poster_lines: Mapped[list] = mapped_column(JSON)
+    poster_lines: Mapped[list] = mapped_column(JSONType)
     group_key: Mapped[str] = mapped_column(String)
     era: Mapped[str] = mapped_column(String)
     region: Mapped[str] = mapped_column(String)
     period_start: Mapped[int | None] = mapped_column(Integer)
     period_end: Mapped[int | None] = mapped_column(Integer)
-    themes: Mapped[list] = mapped_column(JSON)
+    themes: Mapped[list] = mapped_column(JSONType)
     bg: Mapped[str] = mapped_column(String)
     tint: Mapped[str] = mapped_column(String)
     lettering: Mapped[str] = mapped_column(String)
     poster_image_id: Mapped[str | None] = mapped_column(String)
     hero_image_id: Mapped[str | None] = mapped_column(String)
     brief: Mapped[str] = mapped_column(Text)
-    linked_title_ids: Mapped[list] = mapped_column(JSON)
+    linked_title_ids: Mapped[list] = mapped_column(JSONType)
     rank: Mapped[int] = mapped_column(Integer, default=0)
     status: Mapped[str] = mapped_column(String)
     content_version: Mapped[int] = mapped_column(Integer, default=1)
     updated_at: Mapped[str] = mapped_column(String)  # UTC ISO 8601 with Z
     payload_hash: Mapped[str] = mapped_column(String)
-    person: Mapped[dict | None] = mapped_column(JSON)
+    person: Mapped[dict | None] = mapped_column(JSONType)
 
     lessons = relationship("Lesson", cascade="all, delete-orphan", order_by="Lesson.idx")
     images = relationship("Image", cascade="all, delete-orphan", order_by="Image.id")
@@ -47,9 +47,9 @@ class Lesson(Base):
     heading: Mapped[str] = mapped_column(String)
     body: Mapped[str] = mapped_column(Text)
     reading_minutes: Mapped[int] = mapped_column(Integer)
-    image_ids: Mapped[list] = mapped_column(JSON)
+    image_ids: Mapped[list] = mapped_column(JSONType)
     read_aloud_text: Mapped[str | None] = mapped_column(Text)
-    source_ids: Mapped[list] = mapped_column(JSON)
+    source_ids: Mapped[list] = mapped_column(JSONType)
 
 
 class Image(Base):
@@ -78,7 +78,7 @@ class QuizQuestion(Base):
     title_id: Mapped[str] = mapped_column(ForeignKey("titles.id", ondelete="CASCADE"), index=True)
     lesson_id: Mapped[str | None] = mapped_column(String)
     prompt: Mapped[str] = mapped_column(String)
-    options: Mapped[list] = mapped_column(JSON)
+    options: Mapped[list] = mapped_column(JSONType)
     correct_index: Mapped[int] = mapped_column(Integer)
     explanation: Mapped[str] = mapped_column(String)
     difficulty: Mapped[str] = mapped_column(String)
@@ -112,7 +112,7 @@ class Source(Base):
 class OnThisDayCache(Base):
     __tablename__ = "on_this_day_cache"
     date: Mapped[str] = mapped_column(String, primary_key=True)  # MM-DD
-    payload: Mapped[dict] = mapped_column(JSON)
+    payload: Mapped[dict] = mapped_column(JSONType)
     fetched_at: Mapped[str] = mapped_column(String)
 
 
@@ -127,4 +127,5 @@ class IngestRun(Base):
     notes: Mapped[str | None] = mapped_column(Text)
 
 
-from app.models.chat_usage import ChatUsage  # noqa: E402,F401  (S14, migration 0002)
+from app.models.chat_usage import ChatInstallUsage, ChatUsage  # noqa: E402,F401  (S14 0002, S17 0003)
+from app.models.accounts import EmailToken, RefreshToken, User, UserChatMessage, UserRecord  # noqa: E402,F401  (S17, 0003)

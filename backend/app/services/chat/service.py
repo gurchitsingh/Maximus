@@ -1,11 +1,14 @@
-"""The chat pipeline, CONTRACTS 4.1 steps 1 to 10. Replies are whole JSON, never streamed (D1).
+"""The chat pipeline, CONTRACTS 4.1 steps 1 to 10 with the v3 changes of section 16. Replies are whole JSON,
+never streamed (D1).
 
-Never stored or logged: message text, history, replies, install ids, keys. Logs keep codes, provider, latency, lengths.
+v3: the caller is a signed-in account. The request is {message} (plus an optional install_id, an extra abuse signal
+for the install cap); the server builds the last 6 turns from the stored history and saves both turns of every 200
+reply. Never logged: message text, history, replies, install ids, keys. Logs keep codes, provider, latency, lengths.
 """
 import json
 import logging
 import time
-from typing import Literal
+import uuid
 
 from pydantic import BaseModel, ConfigDict, Field, ValidationError
 from sqlalchemy.orm import Session
@@ -13,7 +16,7 @@ from sqlalchemy.orm import Session
 from app.config import settings
 from app.errors import ApiError
 from app.services import store
-from app.services.chat import usage
+from app.services.chat import history, usage
 from app.services.chat.guard import check_output, looks_like_injection
 from app.services.chat.prompt import CANARY, build_context, build_turns, system_prompt
 from app.services.chat.providers import Provider, ProviderError
@@ -23,22 +26,16 @@ log = logging.getLogger("maximus.chat")
 MAX_BODY_BYTES = 8 * 1024
 PROVIDERS_DOWN_RETRY_S = 300
 
+account_limiter = RateLimiter(settings.chat_install_per_min, scope="account")
 install_limiter = RateLimiter(settings.chat_install_per_min, scope="install")
 ip_limiter = RateLimiter(settings.chat_ip_per_min, scope="ip")
 
 
-class HistoryTurn(BaseModel):
-    model_config = ConfigDict(extra="forbid", strict=True)
-    role: Literal["user", "assistant"]
-    text: str = Field(min_length=1, max_length=1200)
-
-
 class ChatRequest(BaseModel):
-    """Mirrors docs/schemas/chat-request.schema.json."""
+    """CONTRACTS 16: {message}; install_id optional. `history` is gone (the server owns it), so it is refused."""
     model_config = ConfigDict(extra="forbid", strict=True)
-    install_id: str = Field(pattern=r"^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$")
     message: str = Field(min_length=1, max_length=500)
-    history: list[HistoryTurn] = Field(max_length=6)
+    install_id: str | None = Field(None, pattern=r"^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$")
 
 
 def parse_body(raw: bytes) -> ChatRequest:
@@ -61,7 +58,8 @@ def refusal_text(title: dict) -> str:
     return f"I only know about {title['name']}."
 
 
-def handle(db: Session, title_id: str, raw_body: bytes, client_ip: str, providers: list[Provider]) -> dict:
+def handle(db: Session, title_id: str, raw_body: bytes, client_ip: str, providers: list[Provider],
+           user_id: uuid.UUID) -> dict:
     started = time.monotonic()
     # 1 Validate
     req = parse_body(raw_body)
@@ -69,16 +67,26 @@ def handle(db: Session, title_id: str, raw_body: bytes, client_ip: str, provider
     if title is None:
         raise ApiError(404, "title_not_found", f"No served title with id '{title_id}'.", details={"title_id": title_id})
     # 2 Burst limits
-    ihash = usage.install_hash(req.install_id)
-    install_limiter.check(ihash)
+    ihash = usage.install_hash(req.install_id) if req.install_id else None
+    account_limiter.check(str(user_id))
+    if ihash:
+        install_limiter.check(ihash)
     ip_limiter.check(client_ip)
-    # 3 Caps
+    # 3 Caps (and the daily purges: counters, and history past retention)
     now = usage.utcnow()
-    usage.purge_old(db, now)
-    cap = settings.chat_daily_cap
-    if usage.used_today(db, ihash, now) >= cap:
+    if usage.purge_old(db, now):
+        history.purge_expired(db, now)
+        db.commit()
+    account_cap, install_cap = settings.chat_account_daily_cap, settings.chat_daily_cap
+    retry = usage.seconds_to_midnight(now)
+    account_used = usage.used_by_account(db, user_id, now)
+    if account_used >= account_cap:
+        raise ApiError(429, "chat_daily_cap", "Daily chat limit reached for this account.",
+                       retry_after_s=retry, details={"cap": account_cap})
+    install_used = usage.used_by_install(db, ihash, now) if ihash else 0
+    if ihash and install_used >= install_cap:
         raise ApiError(429, "chat_daily_cap", "Daily chat limit reached for this install.",
-                       retry_after_s=usage.seconds_to_midnight(now), details={"cap": cap})
+                       retry_after_s=retry, details={"cap": install_cap})
     if usage.used_today_all(db, now) >= settings.chat_global_daily_cap:
         raise ApiError(503, "chat_resting", "The server-wide daily chat limit is reached.",
                        retry_after_s=usage.seconds_to_midnight(now), details={"reason": "global_cap"})
@@ -91,7 +99,7 @@ def handle(db: Session, title_id: str, raw_body: bytes, client_ip: str, provider
         # 5 Context, 6 Prompt
         context, in_context = build_context(title, req.message, settings.chat_context_chars)
         system = system_prompt(title["name"], context, CANARY)
-        turns = build_turns([h.model_dump() for h in req.history], req.message)
+        turns = build_turns(history.recent(db, user_id, title_id), req.message)
         # 7 Providers, in order; all failed -> resting
         raw = None
         for p in providers:
@@ -113,17 +121,24 @@ def handle(db: Session, title_id: str, raw_body: bytes, client_ip: str, provider
             kind, text, numbers = "answer", checked.text, checked.lesson_numbers
         else:
             reason = checked.reason
-    # 9 Count every 200 reply
-    remaining = max(0, cap - usage.add_one(db, ihash, now))
-    # 10 Reply
+    # 9 Count every 200 reply, and store both turns (16: refusals too, so the history reads naturally)
     by_index = {l["index"]: l["id"] for l in title["lessons"]}
     refs = [{"lesson_id": by_index[n], "index": n} for n in numbers] if kind == "answer" else []
+    usage.add_one(db, user_id, ihash, now)
+    message_id = history.save_exchange(db, user_id, title_id, req.message, kind, text, refs, now)
+    db.commit()
+    remaining = max(0, account_cap - account_used - 1)
+    if ihash:
+        remaining = min(remaining, max(0, install_cap - install_used - 1))
+    # 10 Reply
     log.info("chat reply title=%s kind=%s reason=%s provider=%s ms=%d in_len=%d out_len=%d",
              title_id, kind, reason or "-", provider_used or "-", (time.monotonic() - started) * 1000,
              len(req.message), len(text))
-    return {"kind": kind, "text": text, "lesson_refs": refs, "remaining_today": remaining}
+    return {"kind": kind, "text": text, "lesson_refs": refs, "remaining_today": remaining,
+            "message_id": str(message_id)}
 
 
 def reset_limits() -> None:
+    account_limiter.reset()
     install_limiter.reset()
     ip_limiter.reset()

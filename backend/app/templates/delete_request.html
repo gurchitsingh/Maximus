@@ -1,0 +1,11 @@
+<h1>Delete your Maximus account</h1>
+<p>Enter the email address of your account. We will send you a link to confirm. When you confirm, your account,
+  study data and chats are deleted from our database straight away and cannot be brought back.</p>
+<p class="muted">This works for accounts that sign in with Google and accounts with a password. You can also do it
+  in the app: Settings, then Delete my account.</p>
+$error
+<form method="post" action="/account/delete/request">
+  <label for="email">Email</label>
+  <input id="email" name="email" type="email" autocomplete="email" required maxlength="254">
+  <button type="submit">Send the link</button>
+</form>

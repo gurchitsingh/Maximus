@@ -1,5 +1,11 @@
-"""Test fixtures: a fresh SQLite file per test, seeded from backend/data/samples, no network."""
+"""Test fixtures: a fresh database per test, seeded from backend/data/samples, no network.
+
+SQLite (a temp file per test) by default. Set TEST_DATABASE_URL=postgresql://... to run the same suite on
+Postgres (CI does, CONTRACTS 18): tables are created once and emptied before each test.
+"""
 import json
+import os
+os.environ["ENVIRONMENT"] = "development"  # a developer's .env must not switch the suite to production checks
 from pathlib import Path
 
 import httpx
@@ -7,12 +13,19 @@ import pytest
 from fastapi.testclient import TestClient
 from jsonschema import Draft202012Validator, FormatChecker
 from referencing import Registry, Resource
+from sqlalchemy import text
 from sqlalchemy.orm import sessionmaker
 
 from app import main
 from app.config import BACKEND_DIR, settings
 from app.db import Base, get_db, make_engine
+from app.routers.auth import get_google, get_mailer
+from app.services.auth import limits as auth_limits
 from ingest.import_title import import_file
+from tests.auth_helpers import CLIENT_ID, FakeGoogle, Outbox
+
+OUTBOX = Outbox()      # every mail the app sends in a test (cleared per test)
+GOOGLE = FakeGoogle()  # one RSA key for the whole run (key generation is slow)
 
 ROOT = BACKEND_DIR.parent
 SCHEMAS = ROOT / "docs" / "schemas"
@@ -51,8 +64,28 @@ def no_network(monkeypatch):
     monkeypatch.setattr(httpx.HTTPTransport, "handle_request", refuse)
 
 
+TEST_DATABASE_URL = os.environ.get("TEST_DATABASE_URL", "")
+_pg_engine = None
+
+
+def _postgres_engine():
+    global _pg_engine
+    if _pg_engine is None:
+        _pg_engine = make_engine(TEST_DATABASE_URL, pool_size=2)
+        Base.metadata.drop_all(_pg_engine)
+        Base.metadata.create_all(_pg_engine)
+    return _pg_engine
+
+
 @pytest.fixture
 def session_factory(tmp_path):
+    if TEST_DATABASE_URL:
+        engine = _postgres_engine()
+        with engine.begin() as conn:
+            names = ", ".join(t.name for t in Base.metadata.sorted_tables)
+            conn.execute(text(f"TRUNCATE {names} RESTART IDENTITY CASCADE"))
+        yield sessionmaker(bind=engine, expire_on_commit=False)
+        return
     engine = make_engine(f"sqlite:///{(tmp_path / 'test.db').as_posix()}")
     Base.metadata.create_all(engine)
     yield sessionmaker(bind=engine, expire_on_commit=False)
@@ -77,7 +110,22 @@ def client(seeded, monkeypatch):
             yield db
 
     main.app.dependency_overrides[get_db] = _db
+    main.app.dependency_overrides[get_mailer] = lambda: OUTBOX
+    main.app.dependency_overrides[get_google] = lambda: GOOGLE.verifier
+    monkeypatch.setattr(settings, "google_client_id", CLIENT_ID)
+    OUTBOX.mails.clear()
     main.limiter.reset()
+    auth_limits.reset_all()
     with TestClient(main.app, raise_server_exceptions=False) as c:
         yield c
     main.app.dependency_overrides.clear()
+
+
+@pytest.fixture
+def outbox():
+    return OUTBOX
+
+
+@pytest.fixture
+def google():
+    return GOOGLE
