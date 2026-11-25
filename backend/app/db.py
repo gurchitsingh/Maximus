@@ -43,9 +43,11 @@ class Base(DeclarativeBase):
 
 
 def make_engine(url: str, pool_size: int | None = None):
+    """hide_parameters (SECURITY_AUDIT L7): a DB error message must not carry emails, hashes or record data into
+    the logs (CONTRACTS 11)."""
     url = normalise_db_url(url)
     if url.startswith("sqlite"):
-        engine = create_engine(url, connect_args={"check_same_thread": False})
+        engine = create_engine(url, connect_args={"check_same_thread": False}, hide_parameters=True)
 
         @event.listens_for(engine, "connect")
         def _fk(dbapi_conn, _):
@@ -53,11 +55,11 @@ def make_engine(url: str, pool_size: int | None = None):
         return engine
     if url.startswith("postgresql"):
         return create_engine(
-            url,
+            url, hide_parameters=True,
             connect_args={"prepare_threshold": None},  # PgBouncer transaction mode: no prepared statements
             pool_size=pool_size or settings.db_pool_size, max_overflow=0, pool_pre_ping=True, pool_recycle=300,
         )
-    return create_engine(url)
+    return create_engine(url, hide_parameters=True)
 
 
 engine = make_engine(settings.database_url)

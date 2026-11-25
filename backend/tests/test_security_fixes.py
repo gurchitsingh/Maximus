@@ -234,3 +234,20 @@ def test_l6_expired_history_is_not_served_or_used_as_context(chat, monkeypatch):
     sent = repr(chat.fake.calls[-1][1])
     assert "new question" in sent and "old question" not in sent
     assert ("user", "old question", None) in chat.stored()  # still in the table until the purge deletes it
+
+
+# ---------- L7: SQL errors do not carry bound parameters into the logs ----------
+
+def test_l7_db_errors_hide_parameters(tmp_path):
+    from sqlalchemy import text
+    from sqlalchemy.exc import IntegrityError
+
+    from app.db import make_engine
+    engine = make_engine(f"sqlite:///{(tmp_path / 'l7.db').as_posix()}")
+    with engine.begin() as conn:
+        conn.execute(text("CREATE TABLE t (email TEXT UNIQUE)"))
+        conn.execute(text("INSERT INTO t VALUES (:e)"), {"e": "ada@example.com"})
+    with pytest.raises(IntegrityError) as exc, engine.begin() as conn:
+        conn.execute(text("INSERT INTO t VALUES (:e)"), {"e": "ada@example.com"})
+    assert "ada@example.com" not in str(exc.value) and "hidden" in str(exc.value)
+    engine.dispose()
