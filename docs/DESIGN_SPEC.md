@@ -488,7 +488,7 @@ Numbering follows the All Pages board.
 - Subtitle (`bodyL` muted, 22 below): "Sign in to pick up where you left off." / "Save your study list and pick up where you left off on any device."
 - Provider buttons (outline neutral h56, gap 10): "Continue with Google", "Continue with Apple". No provider logos drawn.
 - Divider row (margin 18 0, gap 12): hairline, "or with email" (700 13 muted), hairline.
-- Inputs (gap 12): [create only] "Your name"; "Email"; "Password".
+- Inputs (gap 12): "Email"; "Password"; [create only] "Confirm password". The design's "Your name" field is not built (D54). Sign in shows one error, "Wrong email or password".
 - [sign in only] "Forgot password?" text button, left aligned.
 - Spacer, then primary button: "Sign in" / "Create account".
 - Footer (centred, 6 above): "New to Maximus?" + link "Create an account" / "Already have an account?" + link "Sign in" (toggles mode).
@@ -821,5 +821,5 @@ Day and evening rules (v4 2a to 2d, prototype `art()` and `SINGLE` / `DAYART`): 
 | 7.1 | Settings | `settings` | 15.1 |
 | L1 to L10 | Light theme: Sign in, What are you into?, Favourite leader, Home new user, Library, Title sheet, Feed, Reader, Quiz wrong, Settings | same screens, `theme="light"` | |
 
-Not drawn and needed: person sheet, people posters, account deletion confirm, privacy policy, email verification banner, forgot-password screen, "Waking the server..." state, sync and sign-in error states. Build them from the existing components and tokens until the owner supplies designs.
+Not drawn and needed: person sheet, people posters, account deletion confirm, privacy policy, forgot-password screen (there is no verification banner or screen: D48), "Waking the server..." state, sync and sign-in error states. Build them from the existing components and tokens until the owner supplies designs.
 
