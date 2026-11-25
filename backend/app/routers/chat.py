@@ -12,7 +12,7 @@ from app.errors import ApiError
 from app.models import User
 from app.services.auth import limits
 from app.services.auth.deps import client_ip, current_user
-from app.services.chat import history, service
+from app.services.chat import history, service, usage
 from app.services.chat.providers import Provider, default_providers
 
 router = APIRouter()
@@ -47,7 +47,7 @@ async def chat(title_id: str, request: Request, user: User = Depends(current_use
 @router.get("/me/chat/{title_id}")
 def chat_history(title_id: str, limit: int = Query(50, ge=1, le=100), before: str | None = Query(None, max_length=64),
                  user: User = Depends(current_user), db: Session = Depends(get_db)):
-    return JSONResponse(history.page(db, user.id, _slug(title_id), limit, before), headers=NO_STORE)
+    return JSONResponse(history.page(db, user.id, _slug(title_id), limit, before, usage.utcnow()), headers=NO_STORE)
 
 
 @router.delete("/me/chat/{title_id}", status_code=204)

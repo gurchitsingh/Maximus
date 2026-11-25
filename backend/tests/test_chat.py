@@ -106,6 +106,7 @@ def chat(client, seeded, monkeypatch):
     monkeypatch.setattr(service.install_limiter, "limit", 10_000)
     monkeypatch.setattr(service.account_limiter, "limit", 10_000)
     monkeypatch.setattr(service.ip_limiter, "limit", 10_000)
+    monkeypatch.setattr(service.ip_daily, "limit", 10_000)
     main.app.dependency_overrides[get_providers] = lambda: h.providers
     yield h
     service.reset_limits()

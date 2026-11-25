@@ -67,8 +67,11 @@ def _email_token(db: Session, user: User, purpose: str, now: datetime) -> str:
 
 
 def revoke_all(db: Session, user_id: uuid.UUID, now: datetime) -> None:
+    """Every session of the user: the refresh tokens, and (M2) every access token issued before now, which
+    current_principal refuses by comparing its iat with users.tokens_valid_after. The caller commits."""
     db.execute(update(RefreshToken).where(RefreshToken.user_id == user_id, RefreshToken.revoked_at.is_(None))
                .values(revoked_at=now))
+    db.execute(update(User).where(User.id == user_id).values(tokens_valid_after=now))
 
 
 def find_by_email(db: Session, email: str) -> User | None:

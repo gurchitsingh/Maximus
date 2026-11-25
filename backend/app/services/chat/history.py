@@ -15,10 +15,16 @@ from app.models import UserChatMessage
 CONTEXT_TURNS = 6
 
 
-def recent(db: Session, user_id: uuid.UUID, title_id: str, n: int = CONTEXT_TURNS) -> list[dict]:
+def _kept(now: datetime):
+    """SECURITY_AUDIT L6: a message past retention is never served or sent as context, even before a purge runs."""
+    return UserChatMessage.created_at >= now - timedelta(days=settings.chat_retention_days)
+
+
+def recent(db: Session, user_id: uuid.UUID, title_id: str, now: datetime, n: int = CONTEXT_TURNS) -> list[dict]:
     """The last n stored turns for this title, oldest first, as {role, text} (the provider context)."""
     rows = list(db.scalars(select(UserChatMessage)
-                           .where(UserChatMessage.user_id == user_id, UserChatMessage.title_id == title_id)
+                           .where(UserChatMessage.user_id == user_id, UserChatMessage.title_id == title_id,
+                                  _kept(now))
                            .order_by(UserChatMessage.created_at.desc(), UserChatMessage.id.desc()).limit(n)))
     return [{"role": r.role, "text": r.text} for r in reversed(rows)]
 
@@ -39,9 +45,10 @@ def _z(dt: datetime) -> str:
     return dt.strftime("%Y-%m-%dT%H:%M:%S.") + f"{dt.microsecond // 1000:03d}Z"
 
 
-def page(db: Session, user_id: uuid.UUID, title_id: str, limit: int, before: str | None) -> dict:
+def page(db: Session, user_id: uuid.UUID, title_id: str, limit: int, before: str | None, now: datetime) -> dict:
     """Newest page first; oldest first within the page. `before` is a message id from an earlier page."""
-    q = select(UserChatMessage).where(UserChatMessage.user_id == user_id, UserChatMessage.title_id == title_id)
+    q = select(UserChatMessage).where(UserChatMessage.user_id == user_id, UserChatMessage.title_id == title_id,
+                                      _kept(now))
     if before is not None:
         try:
             before_id = uuid.UUID(before)

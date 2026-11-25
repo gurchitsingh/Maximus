@@ -23,6 +23,8 @@ class User(Base):
     sync_seq: Mapped[int] = mapped_column(BigInteger, default=0)     # last seq handed out (15.4)
     purged_seq: Mapped[int] = mapped_column(BigInteger, default=0)   # highest seq of a purged tombstone (15.4)
     created_at: Mapped[datetime] = mapped_column(UTCDateTime)
+    # Access tokens with an earlier iat are refused (SECURITY_AUDIT M2; migration 0004). Set by revoke_all.
+    tokens_valid_after: Mapped[datetime | None] = mapped_column(UTCDateTime)
 
 
 class RefreshToken(Base):

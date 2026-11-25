@@ -155,7 +155,9 @@ one whole JSON reply `{"kind": "answer"|"out_of_scope", "text", "lesson_refs", "
 - **v3 caps:** `CHAT_ACCOUNT_DAILY_CAP` (20 per account) and, when the app sends `install_id`, `CHAT_DAILY_CAP` (20
   per install, so a new account on the same phone gets no fresh allowance) → 429 `chat_daily_cap`;
   `CHAT_GLOBAL_DAILY_CAP` (200, summed over accounts) → 503 `chat_resting`. Burst: 6/min per account and per
-  install, 20/min per IP. `remaining_today` is the tighter of the account and install allowances.
+  install, 20/min per IP. Per IP per rolling 24 h (in memory, SECURITY_AUDIT M1): `CHAT_IP_DAILY_CAP` (40) 200
+  replies and `SIGNUP_IP_DAILY_CAP` (5) email sign-ups → 429 `rate_limited` (`scope: "ip"`). `remaining_today` is
+  the tighter of the account and install allowances.
 - **v3 history:** both turns of every 200 reply are stored in `user_chat_messages` (refusals too; failures not).
   `GET /v1/me/chat/{title_id}?limit=50&before=<message id>` (newest page first, oldest first in a page),
   `DELETE /v1/me/chat/{title_id}`, `DELETE /v1/me/chat`. Each message is kept `CHAT_RETENTION_DAYS` (5) from its own timestamp (rolling, not per chat): purged on the first chat
@@ -247,6 +249,7 @@ Every setting is an environment variable (or a line in `backend/.env`); empty va
 | `MEDIA_DIR` | `backend/media` | Image store served at `/media` (dev; production storage is open, D44) |
 | `MEDIA_BASE_URL` | `http://10.0.2.2:8000/media` | Base of image URLs written by the ingest |
 | `RATE_LIMIT_IP_PER_MIN` | `120` | GET `/v1/*` per IP per minute |
+| `TRUSTED_PROXY_HOPS` | `0` | Proxies in front that each append to `X-Forwarded-For`. `0` = use the TCP peer (local runs); Render: `1`. The client IP is that many entries from the right |
 | `JWT_SECRET` | (empty) | **Secret.** HS256 key of access tokens; production needs 32+ characters |
 | `GOOGLE_CLIENT_ID` | (empty) | Web OAuth client id (the app's `serverClientId`); empty = Google sign-in refused |
 | `APP_BASE_URL` | `http://127.0.0.1:8000` | Base of email links and web pages, e.g. the Render URL |
@@ -271,6 +274,10 @@ Every setting is an environment variable (or a line in `backend/.env`); empty va
 | `CHAT_CONTEXT_CHARS` | `24000` | Title text budget in the prompt |
 | `CHAT_INSTALL_PER_MIN` | `6` | Chat burst limit per account and per install |
 | `CHAT_IP_PER_MIN` | `20` | Chat burst limit per IP |
+| `CHAT_IP_DAILY_CAP` | `40` | Chat 200 replies per IP per rolling 24 h (M1; in memory) |
+| `SIGNUP_IP_DAILY_CAP` | `5` | Successful email sign-ups per IP per rolling 24 h (M1; in memory) |
+| `MAIL_PER_EMAIL_DAILY` | `5` | Reset and deletion requests together, per address per rolling 24 h (M3; in memory) |
+| `MAIL_DAILY_BUDGET` | `80` | Mails sent in all per rolling 24 h; past it mails are dropped with a warning (M3). Keep under the provider quota |
 | `INSTALL_ID_SALT` | (empty) | **Secret.** Salt of the install-id hashes; production refuses to start without it |
 | `SYNC_TOMBSTONE_DAYS` | `90` | Days a sync delete is kept before it is purged |
 | `SYNC_RECORD_QUOTA` | `50000` | Live sync records per user |
@@ -282,9 +289,9 @@ Tests only: `TEST_DATABASE_URL` (run the suite on Postgres).
 
 ## Deploy, migrations and backups
 
-- Start command on Render: `uvicorn app.main:app --host 0.0.0.0 --port $PORT --proxy-headers
-  --forwarded-allow-ips="*"`. Without the proxy flags every request has Render's proxy IP and the per-IP limits
-  hit everyone at once.
+- Start command on Render: `uvicorn app.main:app --host 0.0.0.0 --port $PORT --no-proxy-headers`, with
+  `TRUSTED_PROXY_HOPS=1`. The app reads the client IP from the last `X-Forwarded-For` entry (the one Render's
+  proxy appends), never the leftmost one a client can choose (SECURITY_AUDIT H1, DEPLOY.md "Client IP").
 - Migrations: `alembic upgrade head` once per deploy (a pre-deploy command), with `DATABASE_URL_DIRECT` set to
   Neon's direct URL. Never run it from several workers at once. Only the S17 session edits migrations.
 - In-memory rate limits are per process: run one worker on Render free, or the limits multiply.

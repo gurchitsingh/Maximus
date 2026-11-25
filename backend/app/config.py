@@ -41,6 +41,9 @@ class Settings(BaseSettings):
     # of this PC; rewrite once hosting is decided.
     media_base_url: str = "http://10.0.2.2:8000/media"
     rate_limit_ip_per_min: int = 120
+    # Proxies in front of the app that each append one X-Forwarded-For entry (SECURITY_AUDIT H1). 0 = ignore the
+    # header and use the TCP peer (local runs). Render: 1, the last entry, which its proxy appends.
+    trusted_proxy_hops: int = 0
 
     # Chat (CONTRACTS 4, 11, 16). Keys only from the environment / backend/.env; a provider with no key is skipped.
     openrouter_api_key: str = ""
@@ -56,6 +59,10 @@ class Settings(BaseSettings):
     install_id_salt: str = ""
     chat_install_per_min: int = 6        # burst limits (CONTRACTS 3.1); the account burst uses the same number
     chat_ip_per_min: int = 20
+    # SECURITY_AUDIT M1: free sign-ups must not let one person drain the global cap. Per client IP, rolling 24 h,
+    # in memory like the other limits; only 200 replies and successful sign-ups count.
+    chat_ip_daily_cap: int = 40
+    signup_ip_daily_cap: int = 5
 
     # Auth (CONTRACTS 14)
     jwt_secret: str = ""
@@ -72,6 +79,9 @@ class Settings(BaseSettings):
     smtp_username: str = ""
     smtp_password: str = ""
     smtp_starttls: bool = True
+    # SECURITY_AUDIT M3, on top of the per-purpose 3 per hour per email (CONTRACTS 14.4, 17), rolling 24 h:
+    mail_per_email_daily: int = 5        # reset + deletion requests together, per address
+    mail_daily_budget: int = 80          # every mail the server sends; keep it under the provider's daily quota
 
     # Sync (CONTRACTS 15)
     sync_tombstone_days: int = 90

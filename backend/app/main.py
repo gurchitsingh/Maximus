@@ -12,6 +12,7 @@ from app.config import Settings, check_startup, settings
 from app.errors import ApiError, error_response, install_handlers
 from app.routers.v1 import health, v1
 from app.routers.web import web
+from app.services.auth.deps import client_ip
 from app.services.ratelimit import RateLimiter
 
 check_startup(settings)  # production refuses to start without JWT_SECRET, INSTALL_ID_SALT, Postgres
@@ -60,7 +61,7 @@ def build_app(s: Settings) -> FastAPI:
         """120 GET/min per client IP across /v1/* (CONTRACTS 3.1)."""
         if request.method == "GET" and request.url.path.startswith("/v1/"):
             try:
-                limiter.check(request.client.host if request.client else "unknown")
+                limiter.check(client_ip(request))
             except ApiError as e:  # raised inside middleware: handlers do not see it
                 return error_response(e.status, e.code, e.message, e.retry_after_s, e.details)
         return await call_next(request)
