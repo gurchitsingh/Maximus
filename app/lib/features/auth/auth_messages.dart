@@ -12,8 +12,7 @@ String authErrorMessage(Object error) {
     return 'Something went wrong. Try again.';
   }
   return switch (error.code) {
-    'invalid_credentials' =>
-      'That email and password do not match. Check them and try again.',
+    'invalid_credentials' => 'Wrong email or password',
     'email_taken' when error.details?['method'] == 'google' =>
       'This email signs in with Google. Use Continue with Google.',
     'email_taken' => 'There is already an account with this email. Sign in.',
@@ -40,4 +39,18 @@ String _tooMany(int? seconds) {
   }
   final minutes = (seconds / 60).ceil();
   return 'Too many tries. Try again in $minutes minutes.';
+}
+
+/// Email sign-in (D48): every rejected attempt reads the same, so the
+/// screen never reveals whether the email has an account. Offline, rate
+/// limits and server faults keep their own honest copy.
+String signInErrorMessage(Object error) {
+  if (error is ApiException &&
+      error.code != ApiException.offline &&
+      error.code != 'rate_limited' &&
+      error.status != null &&
+      error.status! < 500) {
+    return 'Wrong email or password';
+  }
+  return authErrorMessage(error);
 }
