@@ -1,5 +1,5 @@
 // Settings (DESIGN_SPEC 9 4.1): theme, text size, voice speed, then the
-// list: Voice, Clear my data, About, Credits.
+// list: Voice, Clear my data, About, Credits, then Account (S18).
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -13,6 +13,7 @@ import '../../core/widgets/widgets.dart';
 import '../../data/db/tables/user_tables.dart' show SettingKeys;
 import '../../data/providers.dart';
 import 'about_sheet.dart';
+import 'account_section.dart';
 import 'clear_data.dart';
 import 'voice_sheet.dart';
 import 'voices.dart';
@@ -114,6 +115,7 @@ class SettingsScreen extends ConsumerWidget {
                       ],
                     ),
                   ),
+                  const AccountSection(),
                 ],
               ),
             ),

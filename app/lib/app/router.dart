@@ -1,6 +1,7 @@
-// go_router config (CONTRACTS 8.3). S6 adds the title sheet, the reader and
-// the topic shell (chat is a placeholder until S15). S7 adds the quiz.
-// Onboarding and splash arrive in S5.
+// go_router config (CONTRACTS 8.3, 19). S6 adds the title sheet, the reader
+// and the topic shell (chat is a placeholder until S15). S7 adds the quiz.
+// S18 adds Welcome, the sign-in routes and the auth redirect; onboarding
+// arrives in S5.
 import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
@@ -9,6 +10,15 @@ import 'package:material_ui/material_ui.dart';
 import '../core/gallery/gallery_screen.dart';
 import '../core/theme/tokens.dart';
 import '../core/widgets/mx_bottom_sheet.dart';
+import '../data/db/tables/user_tables.dart' show SettingKeys;
+import '../data/providers.dart' show settingsMapProvider;
+import '../features/auth/auth_controller.dart';
+import '../features/auth/auth_models.dart';
+import '../features/auth/auth_redirect.dart';
+import '../features/auth/forgot_password_screen.dart';
+import '../features/auth/sign_in_screen.dart';
+import '../features/auth/verify_email_screen.dart';
+import '../features/auth/welcome_screen.dart';
 import '../features/credits/credits_screen.dart';
 import '../features/feed/feed_screen.dart';
 import '../features/home/home_screen.dart';
@@ -23,6 +33,10 @@ import 'shell.dart';
 
 enum AppRoute {
   splash('/'),
+  signIn('/sign-in'),
+  signUp('/sign-up'),
+  forgotPassword('/forgot-password'),
+  verifyEmail('/verify-email'),
   home('/home'),
   library('/library'),
   feed('/feed'),
@@ -73,23 +87,63 @@ Page<void> _fadePage(GoRouterState state, Widget child) => CustomTransitionPage(
   transitionsBuilder: (_, a, _, c) => FadeTransition(opacity: a, child: c),
 );
 
-GoRouter buildRouter({String? initialLocation}) {
+/// First onboarding step, null until S5 builds onboarding (then
+/// `AppRoute.onboardingTheme.path`). While null, sign-in goes to Home.
+const String? _onboardingPath = null;
+
+/// [auth] reads the session for the redirect (CONTRACTS 19) and
+/// [refreshListenable] re-runs it on changes. Without [auth] the router
+/// behaves as signed in (widget tests that build their own router).
+GoRouter buildRouter({
+  String? initialLocation,
+  AuthState Function()? auth,
+  bool Function()? onboardingDone,
+  Listenable? refreshListenable,
+}) {
   // One key per router, so a second app instance (tests) never shares it.
   final rootKey = GlobalKey<NavigatorState>(debugLabel: 'root');
   return GoRouter(
     navigatorKey: rootKey,
-    initialLocation: initialLocation ?? _startPath() ?? AppRoute.home.path,
+    initialLocation: initialLocation ?? _startPath() ?? AppRoute.splash.path,
+    refreshListenable: refreshListenable,
     redirect: (context, state) {
       final path = state.uri.path;
-      // Splash and onboarding are S5; until then '/' goes straight to Home.
-      if (path == AppRoute.splash.path) return AppRoute.home.path;
       // The Study tab is gone: it is the first section of Library (D40).
       if (path == '/study') return AppRoute.library.path;
       // The gallery is hidden in release and profile builds.
       if (!kDebugMode && path.startsWith('/dev')) return AppRoute.home.path;
-      return null;
+      if (auth == null) {
+        return path == AppRoute.splash.path ? AppRoute.home.path : null;
+      }
+      // Signed out: Welcome, then Sign in. Signed in: onboarding or Home.
+      return authRedirect(
+        path,
+        auth(),
+        onboardingPath: _onboardingPath,
+        onboardingDone: onboardingDone?.call() ?? false,
+      );
     },
     routes: [
+      GoRoute(
+        path: AppRoute.splash.path,
+        name: AppRoute.splash.name,
+        pageBuilder: (_, state) => _fadePage(state, const WelcomeScreen()),
+      ),
+      for (final (route, screen) in [
+        (AppRoute.signIn, const SignInScreen()),
+        (AppRoute.signUp, const SignInScreen(mode: AuthMode.signUp)),
+        (AppRoute.verifyEmail, const VerifyEmailScreen()),
+      ])
+        GoRoute(
+          path: route.path,
+          name: route.name,
+          pageBuilder: (_, state) => _fadePage(state, screen),
+        ),
+      GoRoute(
+        path: AppRoute.forgotPassword.path,
+        name: AppRoute.forgotPassword.name,
+        builder: (_, _) => const ForgotPasswordScreen(),
+      ),
       StatefulShellRoute.indexedStack(
         builder: (context, state, shell) => MainShell(shell: shell),
         branches: [
@@ -191,7 +245,35 @@ GoRouter buildRouter({String? initialLocation}) {
 }
 
 final routerProvider = Provider<GoRouter>((ref) {
-  final router = buildRouter();
-  ref.onDispose(router.dispose);
+  // Bumped when the kind of session changes, so the redirect runs again.
+  // Not on user-detail updates (GET /v1/me): a refresh re-parses the
+  // location and the tab shell can restore the wrong branch.
+  final refresh = ValueNotifier<int>(0);
+  ref.listen(
+    authControllerProvider.select(
+      (s) => switch (s) {
+        AuthLoading() => 0,
+        SignedOut() => 1,
+        SignedIn(showVerify: true) => 2,
+        SignedIn() => 3,
+      },
+    ),
+    (_, _) => refresh.value++,
+  );
+  ref.listen(
+    settingsMapProvider.select((s) => s.value?[SettingKeys.onboardingDone]),
+    (_, _) => refresh.value++,
+  );
+  final router = buildRouter(
+    auth: () => ref.read(authControllerProvider),
+    onboardingDone: () =>
+        ref.read(settingsMapProvider).value?[SettingKeys.onboardingDone] ==
+        'true',
+    refreshListenable: refresh,
+  );
+  ref.onDispose(() {
+    router.dispose();
+    refresh.dispose();
+  });
   return router;
 });
