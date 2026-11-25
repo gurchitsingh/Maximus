@@ -1,4 +1,4 @@
-// One entry point for title poster art (CONTRACTS 21, D54). A title with a
+// One entry point for title poster art (CONTRACTS 21, D55). A title with a
 // manifest entry draws its bundled SVG (BundledPosterArt, theme-aware: dark
 // shows evening, light shows day) cropped to [crop]; any other title draws
 // [fallback], the network image or tinted gradient the screen used before.
