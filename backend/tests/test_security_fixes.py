@@ -13,7 +13,13 @@ from app.services.auth import limits, tokens
 from app.services.chat import service as chat_service
 from tests.auth_helpers import PASSWORD, bearer, signup
 from tests.fake_llm import FakeProvider, failing
-from tests.test_chat import GOOD, chat  # noqa: F401 (the chat fixture)
+from tests.test_chat import GOOD, chat  # noqa: F401 (the chat fixture, used through chat_h)
+
+
+@pytest.fixture
+def chat_h(request):
+    """test_chat's harness (a signed-in account, fake providers, a frozen chat clock)."""
+    return request.getfixturevalue("chat")
 
 
 def err(r, status, code):
@@ -161,28 +167,28 @@ def signup_from(client, email, ip):
     return r.json()
 
 
-def test_m1_one_ip_gets_40_chats_a_day_across_accounts(chat, monkeypatch, no_ip_limit):
+def test_m1_one_ip_gets_40_chats_a_day_across_accounts(chat_h, monkeypatch, no_ip_limit):
     monkeypatch.setattr(chat_service.ip_daily, "limit", settings.chat_ip_daily_cap)
     monkeypatch.setattr(settings, "trusted_proxy_hops", 1)
     xff = {"X-Forwarded-For": "198.51.100.1, 203.0.113.50"}
-    second = bearer(signup(chat.client, email="second@example.com"))
-    third = bearer(signup(chat.client, email="third@example.com"))
-    for headers in ({**chat.headers, **xff}, {**second, **xff}):
+    second = bearer(signup(chat_h.client, email="second@example.com"))
+    third = bearer(signup(chat_h.client, email="third@example.com"))
+    for headers in ({**chat_h.headers, **xff}, {**second, **xff}):
         for _ in range(20):
-            assert chat.post(install_id=None, headers=headers).status_code == 200
-    e = err(chat.post(install_id=None, headers={**third, **xff}), 429, "rate_limited")
+            assert chat_h.post(install_id=None, headers=headers).status_code == 200
+    e = err(chat_h.post(install_id=None, headers={**third, **xff}), 429, "rate_limited")
     assert e["details"] == {"scope": "ip"}
     # another client IP is not affected, and the global cap (200) was never the limit
-    assert chat.post(install_id=None, headers={**third, "X-Forwarded-For": "203.0.113.51"}).status_code == 200
+    assert chat_h.post(install_id=None, headers={**third, "X-Forwarded-For": "203.0.113.51"}).status_code == 200
 
 
-def test_m1_only_200_replies_count_per_ip(chat, monkeypatch):
+def test_m1_only_200_replies_count_per_ip(chat_h, monkeypatch):
     monkeypatch.setattr(chat_service.ip_daily, "limit", 2)
-    chat.providers = [failing("openrouter")]
+    chat_h.providers = [failing("openrouter")]
     for _ in range(3):
-        assert chat.post(install_id=None).status_code == 503
-    chat.providers = [FakeProvider("openrouter", [GOOD])]
-    assert [chat.post(install_id=None).status_code for _ in range(3)] == [200, 200, 429]
+        assert chat_h.post(install_id=None).status_code == 503
+    chat_h.providers = [FakeProvider("openrouter", [GOOD])]
+    assert [chat_h.post(install_id=None).status_code for _ in range(3)] == [200, 200, 429]
 
 
 # ---------- M3: the reset and deletion mails cannot be used as a mail flood ----------
@@ -224,17 +230,17 @@ def test_m3_global_mail_budget_drops_mail_and_warns(client, outbox, monkeypatch,
 
 # ---------- L6: history past retention is never served, even before a purge ----------
 
-def test_l6_expired_history_is_not_served_or_used_as_context(chat, monkeypatch):
+def test_l6_expired_history_is_not_served_or_used_as_context(chat_h, monkeypatch):
     from app.services.chat import usage
-    monkeypatch.setattr(usage, "_last_purge", chat.now.date())  # no purge has run (lazy or job)
-    chat.seed_history([("user", "old question"), ("assistant", "old answer")], start=chat.now - timedelta(days=6))
-    chat.seed_history([("user", "new question"), ("assistant", "new answer")], start=chat.now - timedelta(hours=1))
-    page = chat.client.get("/v1/me/chat/roman-history", headers=chat.headers).json()
+    monkeypatch.setattr(usage, "_last_purge", chat_h.now.date())  # no purge has run (lazy or job)
+    chat_h.seed_history([("user", "old question"), ("assistant", "old answer")], start=chat_h.now - timedelta(days=6))
+    chat_h.seed_history([("user", "new question"), ("assistant", "new answer")], start=chat_h.now - timedelta(hours=1))
+    page = chat_h.client.get("/v1/me/chat/roman-history", headers=chat_h.headers).json()
     assert [m["text"] for m in page["messages"]] == ["new question", "new answer"] and page["has_more"] is False
-    assert chat.post().status_code == 200
-    sent = repr(chat.fake.calls[-1][1])
+    assert chat_h.post().status_code == 200
+    sent = repr(chat_h.fake.calls[-1][1])
     assert "new question" in sent and "old question" not in sent
-    assert ("user", "old question", None) in chat.stored()  # still in the table until the purge deletes it
+    assert ("user", "old question", None) in chat_h.stored()  # still in the table until the purge deletes it
 
 
 # ---------- L7: SQL errors do not carry bound parameters into the logs ----------
@@ -256,17 +262,17 @@ def test_l7_db_errors_hide_parameters(tmp_path):
 
 # ---------- L4: no DB connection is held while the providers run ----------
 
-def test_l4_connection_returned_to_the_pool_during_provider_calls(chat, seeded):
+def test_l4_connection_returned_to_the_pool_during_provider_calls(chat_h, seeded):
     pool = seeded.kw["bind"].pool
     seen = []
 
     def answer(system, turns):
         seen.append(pool.checkedout())
         return GOOD
-    chat.providers = [FakeProvider("openrouter", fn=answer)]
-    assert chat.post().status_code == 200
+    chat_h.providers = [FakeProvider("openrouter", fn=answer)]
+    assert chat_h.post().status_code == 200
     assert seen == [0]
-    assert chat.stored()[-1][2] == "answer"  # the writes after the call still land
+    assert chat_h.stored()[-1][2] == "answer"  # the writes after the call still land
 
 
 # ---------- L3: rate-limiter keys are evicted ----------

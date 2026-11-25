@@ -5,9 +5,9 @@ Set by revoke_all (password reset, Google link, refresh-token reuse). NULL = no 
 Revision ID: 0004
 Revises: 0003
 """
-from alembic import op
 import sqlalchemy as sa
 
+from alembic import op
 from app.db import UTCDateTime
 
 revision = '0004'
