@@ -251,3 +251,18 @@ def test_l7_db_errors_hide_parameters(tmp_path):
         conn.execute(text("INSERT INTO t VALUES (:e)"), {"e": "ada@example.com"})
     assert "ada@example.com" not in str(exc.value) and "hidden" in str(exc.value)
     engine.dispose()
+
+
+# ---------- L4: no DB connection is held while the providers run ----------
+
+def test_l4_connection_returned_to_the_pool_during_provider_calls(chat, seeded):
+    pool = seeded.kw["bind"].pool
+    seen = []
+
+    def answer(system, turns):
+        seen.append(pool.checkedout())
+        return GOOD
+    chat.providers = [FakeProvider("openrouter", fn=answer)]
+    assert chat.post().status_code == 200
+    assert seen == [0]
+    assert chat.stored()[-1][2] == "answer"  # the writes after the call still land

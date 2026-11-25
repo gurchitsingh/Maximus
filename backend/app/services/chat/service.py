@@ -102,6 +102,9 @@ def handle(db: Session, title_id: str, raw_body: bytes, client_ip: str, provider
         context, in_context = build_context(title, req.message, settings.chat_context_chars)
         system = system_prompt(title["name"], context, CANARY)
         turns = build_turns(history.recent(db, user_id, title_id, now), req.message)
+        # SECURITY_AUDIT L4: end the read transaction so the pooled connection is not held during up to two slow
+        # provider calls (pool of 5, no overflow). The writes below take a fresh connection.
+        db.commit()
         # 7 Providers, in order; all failed -> resting
         raw = None
         for p in providers:
