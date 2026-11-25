@@ -202,7 +202,7 @@ GoRouter buildRouter({
               TopicPlaceholder(
                 titleId: state.pathParameters['titleId']!,
                 subtitle: 'Ask a question',
-                session: 'S15',
+                session: 'Chat',
               ),
             ),
           ),
