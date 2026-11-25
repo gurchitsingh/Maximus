@@ -234,3 +234,8 @@ Non-obvious choices behind `docs/CONTRACTS.md`. Three lines each: the decision, 
 - **Decision:** `CHAT_RETENTION_DAYS` defaults to **5**, replacing the 30 days of D39. Expiry is rolling per message: each message is hard-deleted 5 days after its own `created_at`, so a long chat loses its oldest messages first instead of the whole chat expiring together. The daily purge and the lazy check on the first chat of each UTC day both apply it. The env var still overrides the default.
 - **Why:** The owner confirmed a shorter window: less personal text held on the server, a smaller privacy-policy and breach surface, and enough history for the chat to feel continuous within a study week.
 - **Gave up:** Chat older than 5 days is gone (no archive), and a returning user sees only recent turns. Backups made before a purge can still hold older messages until their own 28-day deletion (DEPLOY.md section 9).
+
+## D47. The poster manifest holds objects, and the catalogue wins (2026-11-25)
+- **Decision:** `app/assets/posters/manifest.json` maps each title id to an object `{mode, bg, tint, lettering, lines}`, not a bare mode string. `bg`, `tint`, `lettering` and `lines` are copied from `backend/data/titles`. Where the prototype differs, the catalogue wins.
+- **Why:** The poster fallback tile and the lettering need bg, tint and lines even when the file is missing, and the app should not need the catalogue loaded to draw a poster.
+- **Gave up:** Values live in two places (catalogue and manifest) and can drift; a future check should compare them.

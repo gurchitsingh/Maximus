@@ -85,8 +85,8 @@ class PosterManifest {
   );
 }
 
-class PosterArt extends StatelessWidget {
-  const PosterArt({
+class BundledPosterArt extends StatelessWidget {
+  const BundledPosterArt({
     super.key,
     required this.titleId,
     this.crop = PosterCrop.poster,

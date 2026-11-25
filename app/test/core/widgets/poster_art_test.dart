@@ -56,7 +56,7 @@ void main() {
     ) async {
       await tester.pumpWidget(
         _host(
-          PosterArt(titleId: 'roman-history', manifest: manifest),
+          BundledPosterArt(titleId: 'roman-history', manifest: manifest),
           brightness: b,
         ),
       );
@@ -74,7 +74,7 @@ void main() {
       (tester) async {
         await tester.pumpWidget(
           _host(
-            PosterArt(titleId: 'vikings', manifest: manifest),
+            BundledPosterArt(titleId: 'vikings', manifest: manifest),
             brightness: b,
           ),
         );
@@ -96,7 +96,7 @@ void main() {
     ) async {
       await tester.pumpWidget(
         _host(
-          PosterArt(titleId: 'ww2', manifest: manifest),
+          BundledPosterArt(titleId: 'ww2', manifest: manifest),
           brightness: b,
         ),
       );
@@ -113,7 +113,7 @@ void main() {
     ) async {
       await tester.pumpWidget(
         _host(
-          PosterArt(
+          BundledPosterArt(
             titleId: 'french-revolution',
             crop: crop,
             manifest: manifest,
@@ -121,7 +121,7 @@ void main() {
         ),
       );
       await tester.pump();
-      final box = tester.getSize(find.byType(PosterArt));
+      final box = tester.getSize(find.byType(BundledPosterArt));
       expect(box.width / box.height, closeTo(crop.width / crop.height, 1e-6));
       final pos = tester.widget<Positioned>(
         find.ancestor(
@@ -139,7 +139,9 @@ void main() {
   testWidgets('loads the manifest from the asset bundle when none is given', (
     tester,
   ) async {
-    await tester.pumpWidget(_host(const PosterArt(titleId: 'ancient-greece')));
+    await tester.pumpWidget(
+      _host(const BundledPosterArt(titleId: 'ancient-greece')),
+    );
     await tester.runAsync(() => PosterManifest.load(rootBundle));
     await tester.pump();
     await tester.pump();
@@ -151,7 +153,7 @@ void main() {
   ) async {
     await tester.pumpWidget(
       _host(
-        PosterArt(
+        BundledPosterArt(
           titleId: 'black-death',
           manifest: manifest,
           fallbackBg: const Color(0xFF112233),
@@ -176,7 +178,9 @@ void main() {
         tint: Color(0xFFCCBB99),
       ),
     });
-    await tester.pumpWidget(_host(PosterArt(titleId: 'ghost', manifest: m)));
+    await tester.pumpWidget(
+      _host(BundledPosterArt(titleId: 'ghost', manifest: m)),
+    );
     await tester.pumpAndSettle();
     expect(find.byKey(_fallbackKey), findsOneWidget);
     final deco = tester.widget<DecoratedBox>(find.byKey(_fallbackKey));
