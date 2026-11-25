@@ -1,5 +1,6 @@
-// "Clear my data" (CONTRACTS 5.1, D18, DESIGN_SPEC 11.14): confirm, empty the
-// personal tables in one transaction, reset live state, go to the splash.
+// "Clear my data" (CONTRACTS 5.1, 15.5, D18, DESIGN_SPEC 11.14): confirm,
+// tombstone the synced rows in one transaction (the account and other
+// devices clear on their next sync), reset live state, go to the splash.
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:material_ui/material_ui.dart';
@@ -38,9 +39,9 @@ Future<bool> confirmClearData(BuildContext context) async {
               const SizedBox(height: 10),
               Text(
                 'This removes your topics, study list, ratings, progress, '
-                'quiz scores and settings from this phone. It cannot be '
-                'undone. Lessons you have opened stay saved so the app still '
-                'works offline.',
+                'quiz scores and settings from your account, this phone and '
+                'your other devices. It cannot be undone. Lessons you have '
+                'opened stay saved so the app still works offline.',
                 style: MxText.body.copyWith(color: c.textMuted),
               ),
               const SizedBox(height: 20),
