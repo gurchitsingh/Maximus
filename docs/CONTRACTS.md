@@ -1034,6 +1034,7 @@ A compact Home card above On This Day: thumbnail, date line, one fact of at most
 |---|---|
 | Folder and names | `app/assets/posters/<title_id>.svg`, or for a pair `<title_id>.day.svg` and `<title_id>.evening.svg`. The file stem is the catalogue **title id** exactly (`roman-history`, `ancient-egypt`, `french-revolution`, `shivaji-maharaj`), never the prototype ids (`roman`, `egypt`, `french`). DESIGN_SPEC 8.1 holds the map |
 | Mode manifest | `app/assets/posters/manifest.json`: `{"<title_id>": "pair" \| "wash" \| "single"}`. The app reads modes from it, so the API and the catalogue schema do not change. A title with no manifest entry has no poster art and falls back to its `bg` and `tint` gradient |
+| Manifest shape (D47) | Built as objects: `{"<title_id>": {"mode": "pair"|"wash"|"single", "bg": "#RRGGBB", "tint": "#RRGGBB", "lettering": "<kind>", "lines": ["LINE1","LINE2"]}}`. The values come from `backend/data/titles`; the catalogue wins over prototype values. The row above shows the mode only |
 | Artboard | `viewBox="0 0 200 300"` (2:3), flat fills only, no text (the title lettering is drawn by the app in the title's `lettering` style), no raster images, no external fonts, no filters, no scripts. Safe area: keep the lower 30% calm because the title scrim covers it |
 | Size | At most 40 KB per file (the hero drawings are the largest) |
 | Theme rule | **Light theme shows day, dark theme shows evening** |

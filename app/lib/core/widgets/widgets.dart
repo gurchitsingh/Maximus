@@ -7,6 +7,7 @@ export 'mx_bottom_sheet.dart';
 export 'mx_icon.dart';
 export 'mx_logo.dart';
 export 'mx_nav_bar.dart';
+export 'poster_art.dart';
 export 'poster_card.dart';
 export 'progress_bars.dart';
 export 'reader_widgets.dart';
