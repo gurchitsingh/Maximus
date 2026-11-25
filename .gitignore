@@ -43,3 +43,7 @@ backend/.cache/
 
 # Local pg_dump backups (backend/tools/backup.ps1): personal data, never commit
 backend/backups/
+
+# Release signing (never commit)
+*.keystore
+key.properties
