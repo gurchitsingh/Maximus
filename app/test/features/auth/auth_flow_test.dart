@@ -1,11 +1,14 @@
-// S18: sign-in is required. Welcome, Sign in, Create account, Verify
-// email, Forgot password, Settings > Account (sign out, delete), and the
-// session ending on a rejected refresh. FakeAuthBackend, no network.
+// S18: sign-in is required. Welcome, Sign in, Create account, Forgot
+// password, Settings > Account (sign out, delete) and the session ending
+// on a rejected refresh. No email verification (D48). FakeAuthBackend, no
+// network.
 import 'package:drift/native.dart';
 import 'package:flutter_riverpod/misc.dart' show Override;
 import 'package:flutter_test/flutter_test.dart';
 import 'package:material_ui/material_ui.dart';
+import 'package:maximus/app/router.dart';
 import 'package:maximus/data/api/auth_tokens.dart';
+import 'package:maximus/features/auth/auth_redirect.dart';
 import 'package:maximus/core/widgets/widgets.dart';
 import 'package:maximus/data/db/app_database.dart';
 import 'package:maximus/features/settings/voices.dart';
@@ -43,6 +46,12 @@ Future<void> _openSettings(WidgetTester tester) =>
     _tap(tester, find.bySemanticsLabel('Settings'));
 
 Finder get _home => find.bySemanticsLabel('Home');
+bool _createEnabled(WidgetTester tester) {
+  final b = tester.widget<PrimaryButton>(
+    find.widgetWithText(PrimaryButton, 'Create account'),
+  );
+  return b.onPressed != null;
+}
 
 void main() {
   testWidgets('signed out: Welcome, then Sign in; no Apple button', (
@@ -104,12 +113,7 @@ void main() {
     await _type(tester, 'Email', AppHarness.email);
     await _type(tester, 'Password', 'not my password');
     await _tap(tester, find.text('Sign in'));
-    expect(
-      find.text(
-        'That email and password do not match. Check them and try again.',
-      ),
-      findsOneWidget,
-    );
+    expect(find.text('Wrong email or password'), findsOneWidget);
     expect(find.text('server text the app never shows'), findsNothing);
     expect(find.text('Welcome back'), findsOneWidget);
     expect(h.store.values, isEmpty);
@@ -118,11 +122,11 @@ void main() {
     backend.calls.clear();
     await _type(tester, 'Password', '');
     await _tap(tester, find.text('Sign in'));
-    expect(find.text('Enter your password.'), findsOneWidget);
+    expect(find.text('Wrong email or password'), findsOneWidget);
     expect(backend.calls, isEmpty);
   });
 
-  testWidgets('sign-up: checks, Verify email with resend, then Home', (
+  testWidgets('sign-up: confirm mismatch blocks submit, then signs in', (
     tester,
   ) async {
     usePixel8(tester);
@@ -138,43 +142,64 @@ void main() {
     await _tap(tester, find.text('Create an account'));
     expect(find.text('Create your account'), findsOneWidget);
     expect(find.text('Forgot password?'), findsNothing);
+    expect(find.widgetWithText(TextField, 'Your name'), findsNothing);
+    expect(find.text('10 to 128 characters'), findsOneWidget);
+    expect(_createEnabled(tester), isFalse);
 
-    await _type(tester, 'Your name', 'Lin');
     await _type(tester, 'Email', 'lin@example.com');
     await _type(tester, 'Password', 'short');
+    await _type(tester, 'Confirm password', 'short');
+    expect(_createEnabled(tester), isFalse, reason: 'rule not met');
+
+    await _type(tester, 'Password', 'long enough pass');
+    expect(find.text("Passwords don't match"), findsOneWidget);
+    expect(_createEnabled(tester), isFalse, reason: 'mismatch');
     await _tap(tester, find.text('Create account'));
-    expect(
-      find.text('Use a password of 10 to 128 characters.'),
-      findsOneWidget,
-    );
     expect(backend.calls, isEmpty);
+
+    await _type(tester, 'Confirm password', 'long enough pass');
+    expect(find.text("Passwords don't match"), findsNothing);
+    expect(_createEnabled(tester), isTrue);
 
     // A Google-only email says so.
     await _type(tester, 'Email', 'grace@example.com');
-    await _type(tester, 'Password', 'long enough pass');
     await _tap(tester, find.text('Create account'));
     expect(
       find.text('This email signs in with Google. Use Continue with Google.'),
       findsOneWidget,
     );
+    expect(backend.calls, ['POST /v1/auth/signup']);
 
+    backend.calls.clear();
     await _type(tester, 'Email', 'lin@example.com');
     await _tap(tester, find.text('Create account'));
-    expect(find.text('Check your email'), findsOneWidget);
-    expect(find.textContaining('lin@example.com'), findsOneWidget);
-    expect(backend.users['lin@example.com']?.name, 'Lin');
-
-    await _tap(tester, find.text('Send the email again'));
-    expect(backend.calls, contains('POST /v1/auth/resend-verification'));
-    expect(backend.authHeaders['POST /v1/auth/resend-verification'], isNotNull);
-    expect(
-      find.text('Sent. Check your inbox, and the spam folder too.'),
-      findsOneWidget,
-    );
-
-    await _tap(tester, find.text('Continue'));
-    expect(_home, findsWidgets);
+    expect(backend.calls, ['POST /v1/auth/signup'], reason: 'submits once');
+    expect(_home, findsWidgets, reason: 'signed in at once, no verify step');
     expect(find.text('Check your email'), findsNothing);
+    expect(backend.users.containsKey('lin@example.com'), isTrue);
+  });
+
+  testWidgets('sign-up: mismatch shows once the confirm field loses focus', (
+    tester,
+  ) async {
+    usePixel8(tester);
+    await AppHarness.pump(tester, signedIn: false, overrides: _voices);
+    await _toSignIn(tester);
+    await _tap(tester, find.text('Create an account'));
+    await _type(tester, 'Password', 'long enough pass');
+    await tester.tap(find.widgetWithText(TextField, 'Confirm password'));
+    await tester.pump();
+    expect(find.text("Passwords don't match"), findsNothing);
+    await tester.tap(find.widgetWithText(TextField, 'Email'));
+    await tester.pump();
+    expect(find.text("Passwords don't match"), findsOneWidget);
+  });
+
+  test('no verify-email route exists', () {
+    for (final r in AppRoute.values) {
+      expect(r.path, isNot(contains('verify')), reason: r.name);
+    }
+    expect(AuthPaths.signedOut, isNot(contains('/verify-email')));
   });
 
   testWidgets('Google: one tap signs in; closing the picker stays put', (
@@ -375,18 +400,18 @@ void main() {
     expect(find.text('Voice'), findsOneWidget);
   });
 
-  testWidgets('unverified email: Settings banner with Resend', (tester) async {
+  testWidgets('Settings shows no verification banner', (tester) async {
     usePixel8(tester);
-    final backend = FakeAuthBackend()
-      ..addUser(AppHarness.email, verified: false);
-    await AppHarness.pump(tester, backend: backend, overrides: _voices);
+    final h = await AppHarness.pump(tester, overrides: _voices);
     await _openSettings(tester);
-    expect(find.text('Confirm your email'), findsOneWidget);
-    await _tap(tester, find.text('Resend'));
-    expect(backend.calls, contains('POST /v1/auth/resend-verification'));
-    expect(find.text('Sent. Check your inbox.'), findsOneWidget);
-    await _tap(tester, find.bySemanticsLabel('Hide'));
+    expect(find.text('Sign out'), findsOneWidget);
     expect(find.text('Confirm your email'), findsNothing);
+    expect(find.text('Resend'), findsNothing);
+    expect(
+      h.backend.calls.where((c) => c.contains('verif')),
+      isEmpty,
+      reason: 'no resend-verification call',
+    );
   });
 
   for (final theme in ['light', 'dark']) {

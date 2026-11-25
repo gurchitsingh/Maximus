@@ -40,7 +40,6 @@ void main() {
       '/v1/me/sync',
       '/v1/me/chat/roman-history',
       '/v1/titles/roman-history/chat',
-      '/v1/auth/resend-verification',
     ]) {
       expect(needsBearer(p), isTrue, reason: p);
     }

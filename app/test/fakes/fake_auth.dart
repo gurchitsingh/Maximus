@@ -17,7 +17,6 @@ class FakeUser {
     required this.email,
     this.password,
     this.google = false,
-    this.verified = false,
     this.name,
   });
 
@@ -25,13 +24,11 @@ class FakeUser {
   final String email;
   String? password;
   bool google;
-  bool verified;
   String? name;
 
   Map<String, Object?> toJson() => {
     'id': id,
     'email': email,
-    'email_verified': verified,
     'display_name': name,
     'has_password': password != null,
     'has_google': google,
@@ -69,14 +66,12 @@ class FakeAuthBackend implements HttpClientAdapter {
     String email, {
     String? password = 'correct horse battery',
     bool google = false,
-    bool verified = true,
     String? name,
   }) => users[email] = FakeUser(
     id: 'u-${++_n}',
     email: email,
     password: password,
     google: google,
-    verified: verified,
     name: name,
   );
 
@@ -195,7 +190,6 @@ class FakeAuthBackend implements HttpClientAdapter {
         final u = addUser(
           email,
           password: pw,
-          verified: false,
           name: b['display_name'] as String?,
         );
         return _json(201, _grant(u));
@@ -209,9 +203,7 @@ class FakeAuthBackend implements HttpClientAdapter {
         if (b['id_token'] != 'google-id-token') {
           return _error(401, 'google_token_invalid');
         }
-        final u =
-            users[googleEmail] ??
-            addUser(googleEmail, password: null, verified: true);
+        final u = users[googleEmail] ?? addUser(googleEmail, password: null);
         u.google = true;
         return _json(200, _grant(u));
       case 'POST /v1/auth/refresh':
@@ -242,8 +234,6 @@ class FakeAuthBackend implements HttpClientAdapter {
         return _json(204, null);
       case 'POST /v1/auth/forgot-password':
         return _json(202, null);
-      case 'POST /v1/auth/resend-verification':
-        return _bearer(o, fail) == null ? failed! : _json(202, null);
       case 'GET /v1/me':
         final u = _bearer(o, fail);
         return u == null ? failed! : _json(200, u.toJson());
