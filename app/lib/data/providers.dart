@@ -9,6 +9,7 @@ import '../core/util/image_cache.dart';
 import '../domain/match/match_scores.dart';
 import 'api/api_client.dart';
 import 'api/api_content_source.dart';
+import 'api/auth_tokens.dart';
 import 'db/app_database.dart';
 import 'dev/dev_content_source.dart';
 import 'models/catalogue.dart';
@@ -183,7 +184,23 @@ final matchProvider = Provider<MatchResult>(
 // onThisDaySourceProvider and creditsSourceProvider with
 // [apiContentSourceProvider]; tests keep the bundled dev sources.
 
-final apiClientProvider = Provider<ApiClient>((_) => ApiClient());
+final apiClientProvider = Provider<ApiClient>(
+  (ref) => ApiClient(auth: ref.watch(authTokensProvider)),
+);
+
+// ---- auth (S18, CONTRACTS 14) ----
+// The session itself (signed in, signed out, loading) is
+// authControllerProvider in features/auth.
+
+/// Refresh token and user id, email and name: secure storage only (14.5).
+final tokenStoreProvider = Provider<TokenStore>((_) => SecureTokenStore());
+
+/// The in-memory access token and the single-flight refresh.
+final authTokensProvider = Provider<AuthTokens>((ref) {
+  final tokens = AuthTokens(ref.watch(tokenStoreProvider));
+  ref.onDispose(tokens.dispose);
+  return tokens;
+});
 
 final apiContentSourceProvider = Provider<ApiContentSource>(
   (ref) => ApiContentSource(
@@ -197,7 +214,7 @@ final apiContentSourceProvider = Provider<ApiContentSource>(
 final staleTitlesRefreshProvider = FutureProvider<int>((ref) async {
   final catalogue = await ref.watch(catalogueProvider.future);
   final rows = await ref.watch(studyListProvider.future);
-  return ref
-      .watch(contentRepositoryProvider)
-      .refreshStale(catalogue, [for (final r in rows) r.titleId]);
+  return ref.watch(contentRepositoryProvider).refreshStale(catalogue, [
+    for (final r in rows) r.titleId,
+  ]);
 });

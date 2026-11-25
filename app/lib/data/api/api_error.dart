@@ -65,6 +65,8 @@ class ApiException implements Exception {
   /// No response at all (connection refused, timeout, no route, cancelled):
   /// offline. A response that dio rejected goes through [fromResponse].
   factory ApiException.fromDio(DioException e) {
+    // The auth interceptor rejects with the refresh call's own error.
+    if (e.error is ApiException) return e.error! as ApiException;
     final r = e.response;
     if (r != null && r.statusCode != null) {
       return ApiException.fromResponse(
@@ -93,5 +95,4 @@ class ApiException implements Exception {
 
 /// True when [error] means "no connection", so screens show the offline
 /// wording and icon instead of the generic one.
-bool isOfflineError(Object? error) =>
-    error is ApiException && error.isOffline;
+bool isOfflineError(Object? error) => error is ApiException && error.isOffline;

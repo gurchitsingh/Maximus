@@ -1,10 +1,13 @@
 // The /v1 HTTP client (CONTRACTS 3, 8.1): dio, base URL from the build,
 // conditional GETs with If-None-Match, error bodies mapped to ApiException.
 // It holds no keys: the base URL is the only compiled-in value (11).
+import 'dart:convert';
+
 import 'package:dio/dio.dart';
 import 'package:meta/meta.dart';
 
 import 'api_error.dart';
+import 'auth_tokens.dart';
 
 /// Build-time base URL. Dev default is the host machine as the Android
 /// emulator sees it; release builds pass
@@ -35,7 +38,9 @@ class ApiNotModified extends ApiResult {
 }
 
 class ApiClient {
-  ApiClient({Dio? dio, String baseUrl = apiBaseUrl})
+  /// With [auth], calls that need a bearer get one and a 401 refreshes the
+  /// token once and retries once (CONTRACTS 14.5).
+  ApiClient({Dio? dio, String baseUrl = apiBaseUrl, AuthTokens? auth})
     : _dio =
           dio ??
           Dio(
@@ -51,6 +56,7 @@ class ApiClient {
       ..responseType = ResponseType.plain
       ..validateStatus = ((_) => true)
       ..headers['Accept'] = 'application/json';
+    if (auth != null) _dio.interceptors.add(AuthInterceptor(auth, this, _dio));
   }
 
   final Dio _dio;
@@ -92,5 +98,47 @@ class ApiClient {
       r.data,
       retryAfterHeader: r.headers.value('retry-after'),
     );
+  }
+
+  /// A JSON call (auth, /v1/me). Returns the decoded object, or null for an
+  /// empty body (202, 204). Throws [ApiException] for anything not 2xx.
+  Future<Map<String, dynamic>?> send(
+    String method,
+    String path, {
+    Map<String, Object?>? body,
+  }) async {
+    final Response<String> r;
+    try {
+      r = await _dio.request<String>(
+        path,
+        data: body == null ? null : jsonEncode(body),
+        options: Options(
+          method: method,
+          contentType: body == null ? null : Headers.jsonContentType,
+        ),
+      );
+    } on DioException catch (e) {
+      throw ApiException.fromDio(e);
+    }
+    final status = r.statusCode ?? 0;
+    if (status < 200 || status > 299) {
+      throw ApiException.fromResponse(
+        status,
+        r.data,
+        retryAfterHeader: r.headers.value('retry-after'),
+      );
+    }
+    final text = r.data ?? '';
+    if (text.trim().isEmpty) return null;
+    final Object? json;
+    try {
+      json = jsonDecode(text);
+    } on FormatException {
+      throw ApiException(code: ApiException.badResponse, status: status);
+    }
+    if (json is! Map<String, dynamic>) {
+      throw ApiException(code: ApiException.badResponse, status: status);
+    }
+    return json;
   }
 }

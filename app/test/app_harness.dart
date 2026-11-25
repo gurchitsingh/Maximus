@@ -1,5 +1,7 @@
 // Pumps the whole app on an in-memory drift database with a fake TTS
-// engine. Content comes from the bundled assets/dev samples.
+// engine. Content comes from the bundled assets/dev samples. Auth runs
+// against FakeAuthBackend (no network); by default the app starts signed
+// in as ada@example.com.
 import 'package:drift/drift.dart' show driftRuntimeOptions;
 
 import 'dart:io';
@@ -11,10 +13,14 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:maximus/app/app.dart';
 import 'package:maximus/core/theme/theme_controller.dart';
+import 'package:maximus/data/api/auth_tokens.dart';
 import 'package:maximus/data/db/app_database.dart';
 import 'package:maximus/data/providers.dart';
 import 'package:maximus/data/repositories/content_source.dart';
+import 'package:maximus/features/auth/google_auth.dart';
 import 'package:maximus/features/reader/read_aloud.dart';
+
+import 'fakes/fake_auth.dart';
 
 class FakeTts implements TtsEngine {
   final spoken = <String>[];
@@ -50,22 +56,35 @@ class SyncDevSource implements ContentSource {
 }
 
 class AppHarness {
-  AppHarness._(this.db, this.tts);
+  AppHarness._(this.db, this.tts, this.backend, this.store, this.google);
 
   final AppDatabase db;
   final FakeTts tts;
+  final FakeAuthBackend backend;
+  final MemoryTokenStore store;
+  final FakeGoogleAuth google;
+
+  static const email = 'ada@example.com';
+  static const password = 'correct horse battery';
 
   static Future<AppHarness> pump(
     WidgetTester tester, {
     AppDatabase? db,
     List<Override> overrides = const [],
     ContentSource? contentSource,
+    bool signedIn = true,
+    FakeAuthBackend? backend,
+    FakeGoogleAuth? google,
   }) async {
     driftRuntimeOptions.dontWarnAboutMultipleDatabases = true;
     final h = AppHarness._(
       db ?? AppDatabase(NativeDatabase.memory()),
       FakeTts(),
+      backend ?? FakeAuthBackend(),
+      MemoryTokenStore(),
+      google ?? FakeGoogleAuth(),
     );
+    if (signedIn) h.signInStored();
     final stored = await run(tester, h.db.settingsDao.readAll);
     await tester.pumpWidget(
       ProviderScope(
@@ -79,6 +98,11 @@ class AppHarness {
             ThemeSettings.fromStored(stored),
           ),
           settingsWriterProvider.overrideWithValue(h.db.settingsDao),
+          tokenStoreProvider.overrideWithValue(h.store),
+          apiClientProvider.overrideWith(
+            (ref) => fakeApiClient(h.backend, ref.watch(authTokensProvider)),
+          ),
+          googleAuthProvider.overrideWithValue(h.google),
           ...overrides,
         ],
         child: const MaximusApp(),
@@ -88,6 +112,20 @@ class AppHarness {
     addTearDown(() => h.dispose(tester));
     await settle(tester);
     return h;
+  }
+
+  /// A session as a cold start finds it: refresh token and user in secure
+  /// storage, no access token yet.
+  void signInStored() {
+    final u =
+        backend.users[email] ??
+        backend.addUser(email, password: password, name: 'Ada');
+    store.values.addAll({
+      TokenKeys.refreshToken: backend.issueRefresh(u.email),
+      TokenKeys.userId: u.id,
+      TokenKeys.userEmail: u.email,
+      TokenKeys.userName: 'Ada',
+    });
   }
 
   /// Runs a drift call to completion. The database lives in the test's
