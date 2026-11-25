@@ -704,7 +704,7 @@ Python schema checks must install `jsonschema[format-nongpl]` (as `tools/require
 | Public repo | Never commit `.env`, keys, tokens, keystores (`*.jks`, `key.properties`) or personal data. `.gitignore` covers them. Before each commit, `git diff --cached` shows no secret. Optional: a gitleaks pre-commit hook |
 | Env | `backend/.env` (gitignored) holds every secret; `.env.example` lists names only, empty values. Names: `DATABASE_URL`, `SERVE_DRAFTS`, `OPENROUTER_API_KEY`, `OPENROUTER_MODEL`, `GEMINI_API_KEY`, `GEMINI_MODEL`, `CHAT_DAILY_CAP`, `CHAT_GLOBAL_DAILY_CAP`, `CHAT_PROVIDER_TIMEOUT_S`, `CHAT_CONTEXT_CHARS`, `INSTALL_ID_SALT`, `WIKI_USER_AGENT`, `CORS_ORIGINS`, `MEDIA_BASE_URL` (S11, not a secret). Production: the host's secret store |
 | App | Holds no keys. Only the API base URL is compiled in. Cleartext HTTP only in debug builds (debug-only `network_security_config` for `10.0.2.2`) |
-| Server data | **V3 (14 to 17):** per-account data (email, display name, password hash or Google id, synced records, chat history 30 days (unconfirmed)). Still: no IP addresses stored (rate limiting is in memory), chat text and passwords never written to logs, no analytics SDKs in V1. Account deletion is a hard delete (17). Chat usage counters are per account per day |
+| Server data | **V3 (14 to 17):** per-account data (email, display name, password hash or Google id, synced records, chat history 5 days, rolling per message (D46)). Still: no IP addresses stored (rate limiting is in memory), chat text and passwords never written to logs, no analytics SDKs in V1. Account deletion is a hard delete (17). Chat usage counters are per account per day |
 | Install id | UUID v4 from `Random.secure` on first launch; stored in drift `settings`; **V3: no longer sent in chat requests (16) and never synced**; kept only for local use; replaced on "Clear my data" |
 | Chat abuse | Size limits, burst limits, per-install and global daily caps, injection guard and fail-closed output check (section 4) |
 | Wikimedia | Descriptive `WIKI_USER_AGENT` with the public repo URL as contact (no personal email), ≤3 concurrent requests, everything cached. S11 ingest: one request at a time, ≥0.5 s apart (default 1 s), `maxlag=5`, honours `Retry-After`, disk cache in `backend/.cache/` (gitignored); pytest never touches the network |
@@ -766,7 +766,7 @@ All under `/v1`, JSON, same error shape as 3.5. Auth is `Authorization: Bearer <
 | POST | `/v1/auth/refresh` | `{refresh_token}` | 200 `AuthResult` (no `user` change) | none | Rotation: the old refresh token is revoked, a new pair is returned |
 | POST | `/v1/auth/signout` | `{refresh_token}` | 204 | none | Revokes that token. Idempotent: an unknown or revoked token is still 204 |
 | POST | `/v1/auth/verify-email` | `{token}` | 204 | none | Token from the email link. One use |
-| POST | `/v1/auth/resend-verification` | none | 202 | bearer | At most 1 per 60 s per account |
+| POST | `/v1/auth/resend-verification` | none | 202 | bearer | **Needs `Authorization: Bearer <access token>`**: without it the answer is 401 `unauthorized`, because it resends to the signed-in account's own email (no email in the body). At most 1 per 60 s per account and 3 per hour per email. Already verified: still 202, nothing is sent |
 | POST | `/v1/auth/forgot-password` | `{email}` | 202 always | none | Never reveals whether the email exists. Google-only accounts get an email saying so |
 | POST | `/v1/auth/reset-password` | `{token, new_password}` | 204 | none | One use. Revokes every refresh token of the user |
 | GET | `/v1/me` | none | 200 `User` | bearer | |
@@ -818,7 +818,7 @@ New codes for the 3.5 table (same body shape; the app shows its own copy keyed b
 | `reauth_required` | 403 | `DELETE /v1/me` for a Google account with an old access token |
 | `forbidden` | 403 | Valid token, not allowed |
 
-`rate_limited` `details.scope` gains `"account"`. Limits (in memory per process, as 3.1): all `/v1/auth/*` per IP 10 per minute; `signin` also 5 failures per 15 minutes per email (`scope: "account"`, `Retry-After` set); `forgot-password` and `resend-verification` 3 per hour per email. Signed-in `/v1/*` reads stay 120 per minute per IP.
+`rate_limited` `details.scope` gains `"account"`. Limits (in memory per process, as 3.1): all `/v1/auth/*` per IP 10 per minute; `signin` also 5 failures per 15 minutes per email (`scope: "account"`, `Retry-After` set); `forgot-password` and `resend-verification` 3 per hour per email (`resend-verification` is also bearer-only, see 14.1). Signed-in `/v1/*` reads stay 120 per minute per IP.
 
 ### 14.5 App behaviour
 
@@ -924,7 +924,7 @@ Chat requires a signed-in user (`Authorization` bearer). This **replaces** the r
 | Reply | Unchanged (`kind`, `text`, `lesson_refs`, `remaining_today`), plus `message_id` (the stored assistant message) |
 | Caps | Per account `CHAT_ACCOUNT_DAILY_CAP` (default 20 per UTC day, counted in `chat_usage` keyed by `user_id`); the global cap stays. `chat_daily_cap` now means "this account used its daily chats" |
 | Stored | Both turns are saved after a successful answer. Refusals (`out_of_scope`) are saved too, so the history reads naturally. Failures (`chat_resting`, 4xx) save nothing |
-| Retention | `CHAT_RETENTION_DAYS`, default **30 (unconfirmed)**. A daily job (and a lazy check on the first chat of the day) hard-deletes older rows |
+| Retention | `CHAT_RETENTION_DAYS`, default **5**, rolling per message (D46): each message expires 5 days after its own `created_at`, not after the last message of the chat. A daily job (and a lazy check on the first chat of the day) hard-deletes older rows |
 | Privacy | Chat text is personal data: not written to server logs, included in account deletion, disclosed in the privacy policy |
 
 | Method | Path | Result |
@@ -934,7 +934,7 @@ Chat requires a signed-in user (`Authorization` bearer). This **replaces** the r
 | DELETE | `/v1/me/chat` | 204. Removes all of the user's chat history |
 
 Table `user_chat_messages`: `id` (uuid), `user_id` FK, `title_id`, `role`, `text` (≤1200), `kind` NULL, `lesson_refs` JSON, `created_at`. Index (`user_id`, `title_id`, `created_at`).
-App: drift table `chat_messages` is a **read-through cache** of the last page per title (not synced, not the source of truth). Opening the chat shows the cache, then refreshes. Offline: history is readable, the composer is disabled (existing offline state). Each chat screen has a "Delete this chat" action; Settings has "Delete all chats". Settings shows "Chats are kept 30 days".
+App: drift table `chat_messages` is a **read-through cache** of the last page per title (not synced, not the source of truth). Opening the chat shows the cache, then refreshes. Offline: history is readable, the composer is disabled (existing offline state). Each chat screen has a "Delete this chat" action; Settings has "Delete all chats". Settings shows "Chats are kept 5 days".
 
 ---
 
@@ -947,7 +947,7 @@ App: drift table `chat_messages` is a **read-through cache** of the last page pe
 | Public web page | `GET /account/delete` (server-rendered HTML, no app needed, linked from the Play Console and the privacy policy). Asks for the account email → `POST /account/delete/request` → always shows "If an account exists, we sent a link" and emails a one-hour link. The link opens `GET /account/delete/confirm?token=...`, which shows a **Delete my account** button; `POST /account/delete/confirm` performs the deletion and shows "Your account and data are deleted". Works for Google and email accounts (no password or Google flow on the web) |
 | Pages | `GET /privacy` (privacy policy) and `GET /account/delete` are plain HTML templates in `backend/app/templates/`, text kept in `docs/` until S22 |
 | Limits | Request form: 3 per hour per email and 10 per minute per IP |
-| What the policy must say | Data collected (email, display name, study data, chat text), why, retention (chat 30 days **(unconfirmed)**, everything else until the user deletes), the deletion page, processors (Render, the Postgres host, the email provider, OpenRouter and Google Gemini for chat text), no ads, no analytics SDK |
+| What the policy must say | Data collected (email, display name, study data, chat text), why, retention (chat 5 days, rolling per message, everything else until the user deletes), the deletion page, processors (Render, the Postgres host, the email provider, OpenRouter and Google Gemini for chat text), no ads, no analytics SDK |
 
 ---
 

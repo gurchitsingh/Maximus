@@ -195,10 +195,10 @@ Non-obvious choices behind `docs/CONTRACTS.md`. Three lines each: the decision, 
 - **Why:** Device clocks can be wrong, so they decide conflicts only; paging uses the server's `seq`, which cannot be wrong. One table and one endpoint pair keep S17 and S18 small.
 - **Gave up:** Field-level merges (two devices editing one rating: the later edit wins whole), and exact conflict ordering when a phone's clock is far off. Acceptable for a study app.
 
-## D39. Chat history is stored per account, kept 30 days by default (2026-11-24) **UNCONFIRMED (the 30 days)**
-- **Decision:** The server saves both turns of every successful chat, builds the model's context from the stored history (the request no longer sends `history` or `install_id`), and hard-deletes rows older than `CHAT_RETENTION_DAYS` (30). The user can delete one title's chat or all chats. Supersedes D24 and the "log failures, not conversations" rule.
+## D39. Chat history is stored per account (2026-11-24) (retention changed to 5 days by D46)
+- **Decision:** The server saves both turns of every successful chat, builds the model's context from the stored history (the request no longer sends `history` or `install_id`), and hard-deletes rows older than `CHAT_RETENTION_DAYS` (30 when written, now 5: D46). The user can delete one title's chat or all chats. Supersedes D24 and the "log failures, not conversations" rule.
 - **Why:** The owner wants chat history saved to the account; server-built context removes a client-controlled input (injection surface) and saves bandwidth.
-- **Gave up:** A "we store no conversations" privacy claim, and some server storage. Chat text is now personal data, so it is disclosed, deletable and in the security audits. **Owner: confirm 30 days.**
+- **Gave up:** A "we store no conversations" privacy claim, and some server storage. Chat text is now personal data, so it is disclosed, deletable and in the security audits. The retention length is settled in D46.
 
 ## D40. The study list lives inside Library; four tabs (2026-11-24)
 - **Decision:** Bottom nav is Home, Library, Feed, Settings. "Your study list" is the first section under the Library hero; an empty list shows a picture and a link to browse. The `/study` route redirects to `/library`.
@@ -229,3 +229,8 @@ Non-obvious choices behind `docs/CONTRACTS.md`. Three lines each: the decision, 
 - **Decision:** If an account was created with an email and password and that email was never verified, the first Google sign-in with the same address (Google reports it verified) links the Google identity and removes the password. A verified password account keeps its password when Google is linked (CONTRACTS 14.3).
 - **Why:** Without this, someone could sign up with an address that is not theirs and keep a working password; when the real owner later signed in with Google the accounts would be linked and the attacker could still sign in. Only the real owner can prove the address through Google.
 - **Gave up:** A person who signed up by email, never verified it, and later uses Google with that address must use "Forgot password" to set a new password before email sign-in works again.
+
+## D46. Chat history is kept 5 days, rolling per message (2026-11-25)
+- **Decision:** `CHAT_RETENTION_DAYS` defaults to **5**, replacing the 30 days of D39. Expiry is rolling per message: each message is hard-deleted 5 days after its own `created_at`, so a long chat loses its oldest messages first instead of the whole chat expiring together. The daily purge and the lazy check on the first chat of each UTC day both apply it. The env var still overrides the default.
+- **Why:** The owner confirmed a shorter window: less personal text held on the server, a smaller privacy-policy and breach surface, and enough history for the chat to feel continuous within a study week.
+- **Gave up:** Chat older than 5 days is gone (no archive), and a returning user sees only recent turns. Backups made before a purge can still hold older messages until their own 28-day deletion (DEPLOY.md section 9).

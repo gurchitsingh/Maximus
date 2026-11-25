@@ -22,7 +22,7 @@ Decided by the user:
 My defaults, NOT yet confirmed by the user (change if you disagree):
 - Google sign-in ships first; email and password second.
 - User data lives in a hosted Postgres (Neon free tier), not SQLite. Render's free disk is wiped on redeploy, so SQLite would lose users' data.
-- Chat history is kept 30 days per user per title, deletable by the user.
+- Chat history is kept 5 days (rolling, per message) per user per title, deletable by the user.
 
 Consequences:
 - Play Store needs a privacy policy URL, the Data safety form, and account deletion inside the app plus a public web page for deletion.
@@ -82,4 +82,4 @@ Risks, stated plainly:
 - Free models are weaker at obeying "stay on topic". Use a strict system prompt plus a server-side check, and test with off-topic attacks.
 
 ## 9. Open items
-Final app name; launch subset of titles; per-title title-art picks; Postgres host (default Neon); email-and-password timing; chat retention (default 30 days); person sheet and people posters design; poster art for the 8 topics the design lacks; quiz banks (~50 questions per topic and per person, launch subset first); who reviews facts before launch.
+Final app name; launch subset of titles; per-title title-art picks; Postgres host (default Neon); email-and-password timing; chat retention (default 5 days, decided D46); person sheet and people posters design; poster art for the 8 topics the design lacks; quiz banks (~50 questions per topic and per person, launch subset first); who reviews facts before launch.
