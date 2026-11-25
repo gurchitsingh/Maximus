@@ -1,0 +1,191 @@
+{
+  "roman-history": {
+    "mode": "pair",
+    "bg": "#2B0E0C",
+    "tint": "#E8553A",
+    "lettering": "roman",
+    "lines": [
+      "ROMAN",
+      "HISTORY"
+    ]
+  },
+  "ancient-greece": {
+    "mode": "wash",
+    "bg": "#1E3A5F",
+    "tint": "#6FB1E0",
+    "lettering": "roman",
+    "lines": [
+      "ANCIENT",
+      "GREECE"
+    ]
+  },
+  "ancient-egypt": {
+    "mode": "pair",
+    "bg": "#F0B35A",
+    "tint": "#E8A33D",
+    "lettering": "carved",
+    "lines": [
+      "ANCIENT",
+      "EGYPT"
+    ]
+  },
+  "ancient-india": {
+    "mode": "wash",
+    "bg": "#8A3B12",
+    "tint": "#F2A64A",
+    "lettering": "carved",
+    "lines": [
+      "ANCIENT",
+      "INDIA"
+    ]
+  },
+  "vikings": {
+    "mode": "wash",
+    "bg": "#12303A",
+    "tint": "#7FC3D1",
+    "lettering": "brush",
+    "lines": [
+      "The",
+      "Vikings"
+    ]
+  },
+  "mongol-empire": {
+    "mode": "wash",
+    "bg": "#D9A441",
+    "tint": "#B5481F",
+    "lettering": "brush",
+    "lines": [
+      "The Mongol",
+      "Empire"
+    ]
+  },
+  "renaissance": {
+    "mode": "wash",
+    "bg": "#6B2D2D",
+    "tint": "#E8B27A",
+    "lettering": "roman",
+    "lines": [
+      "THE",
+      "RENAISSANCE"
+    ]
+  },
+  "ottoman-empire": {
+    "mode": "wash",
+    "bg": "#0F4C4A",
+    "tint": "#F2C14E",
+    "lettering": "carved",
+    "lines": [
+      "OTTOMAN",
+      "EMPIRE"
+    ]
+  },
+  "indian-independence": {
+    "mode": "wash",
+    "bg": "#F08A24",
+    "tint": "#2B8A4A",
+    "lettering": "brush",
+    "lines": [
+      "Indian",
+      "Independence"
+    ]
+  },
+  "industrial-revolution": {
+    "mode": "wash",
+    "bg": "#3A3F44",
+    "tint": "#D9A441",
+    "lettering": "carved",
+    "lines": [
+      "INDUSTRIAL",
+      "REVOLUTION"
+    ]
+  },
+  "american-revolution": {
+    "mode": "wash",
+    "bg": "#1B2A52",
+    "tint": "#7C9CFF",
+    "lettering": "brush",
+    "lines": [
+      "The American",
+      "Revolution"
+    ]
+  },
+  "french-revolution": {
+    "mode": "wash",
+    "bg": "#E9D9B2",
+    "tint": "#6C8CFF",
+    "lettering": "brush",
+    "lines": [
+      "The French",
+      "Revolution"
+    ]
+  },
+  "napoleon": {
+    "mode": "wash",
+    "bg": "#1F2A44",
+    "tint": "#E2B65A",
+    "lettering": "brush",
+    "lines": [
+      "Napoleon"
+    ]
+  },
+  "russian-revolution": {
+    "mode": "wash",
+    "bg": "#7A1414",
+    "tint": "#F2C14E",
+    "lettering": "stencil",
+    "lines": [
+      "RUSSIAN",
+      "REVOLUTION"
+    ]
+  },
+  "british-empire": {
+    "mode": "wash",
+    "bg": "#1C2E4A",
+    "tint": "#E06A6A",
+    "lettering": "roman",
+    "lines": [
+      "BRITISH",
+      "EMPIRE"
+    ]
+  },
+  "american-civil-war": {
+    "mode": "single",
+    "bg": "#26324D",
+    "tint": "#9DB2D6",
+    "lettering": "stencil",
+    "lines": [
+      "AMERICAN",
+      "CIVIL WAR"
+    ]
+  },
+  "ww1": {
+    "mode": "single",
+    "bg": "#4A4232",
+    "tint": "#E06A4F",
+    "lettering": "stencil",
+    "lines": [
+      "WORLD",
+      "WAR I"
+    ]
+  },
+  "ww2": {
+    "mode": "single",
+    "bg": "#1B261F",
+    "tint": "#B8C25A",
+    "lettering": "stencil",
+    "lines": [
+      "WORLD",
+      "WAR II"
+    ]
+  },
+  "cold-war": {
+    "mode": "single",
+    "bg": "#14213D",
+    "tint": "#8FD3F0",
+    "lettering": "stencil",
+    "lines": [
+      "COLD",
+      "WAR"
+    ]
+  }
+}

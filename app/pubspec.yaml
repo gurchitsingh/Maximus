@@ -50,6 +50,8 @@ flutter:
     # Copies of backend/data/samples and docs/examples (CONTRACTS 8.1) until
     # S12 wires the API. test/data/dev_assets_test.dart keeps them in sync.
     - assets/dev/
+    # Bundled SVG posters + manifest.json (CONTRACTS 21).
+    - assets/posters/
 
   # All fonts are SIL OFL 1.1, bundled so the app works offline (DESIGN_SPEC 2.1).
   # Licence texts are registered with LicenseRegistry in lib/core/theme/font_licenses.dart.
