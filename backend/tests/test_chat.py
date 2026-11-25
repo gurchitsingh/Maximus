@@ -1,9 +1,7 @@
 """POST /v1/titles/{id}/chat (CONTRACTS 4, 10 chat row, v3 section 16). Fake providers only: no test reaches a real LLM.
 
 v3: every chat is signed in, the request is {message, install_id?}, the history comes from the server's store.
-docs/schemas/chat-request.schema.json and chat-response.schema.json still describe the v1 shapes (install_id and
-history required; no message_id), so replies are checked against the response schema without message_id and the
-request schema is not used for v3 bodies.
+Requests, replies and errors are checked against docs/schemas (chat-request, chat-response, error).
 """
 import json
 import logging
@@ -140,26 +138,27 @@ def test_answer_matches_example(chat):
     ex = example("chat-response.json")
     chat.providers = [FakeProvider("openrouter", [ex["text"] + "\nLESSONS: 4"])]
     chat.seed_usage(2)  # the example says 17 left after this one: 20 - 3
-    req = {k: v for k, v in example("chat-request.json").items() if k != "history"}
+    req = example("chat-request.json")
+    assert schema_errors(req, "chat-request.schema.json") == []
     r = chat.client.post(URL, json=req, headers=chat.headers)
     assert r.status_code == 200 and r.headers["cache-control"] == "no-store"
-    assert schema_errors(without_id(r.json()), "chat-response.schema.json") == []
-    assert without_id(r.json()) == ex
+    assert schema_errors(r.json(), "chat-response.schema.json") == []
+    assert without_id(r.json()) == without_id(ex)
 
 
 def test_out_of_scope_matches_example(chat):
     chat.providers = [FakeProvider("openrouter", ["OUT_OF_SCOPE"])]
     chat.seed_usage(3)
     r = chat.post("How do I bake sourdough bread?")
-    assert schema_errors(without_id(r.json()), "chat-response.schema.json") == []
-    assert without_id(r.json()) == example("chat-response-out-of-scope.json")
+    assert schema_errors(r.json(), "chat-response.schema.json") == []
+    assert without_id(r.json()) == without_id(example("chat-response-out-of-scope.json"))
 
 
 def test_v3_request_shape():
     service.ChatRequest.model_validate({"message": "Why?"})
     service.ChatRequest.model_validate({"message": "Why?", "install_id": INSTALL})
     with pytest.raises(Exception):  # the v1 body (with history) is refused: the server owns the history
-        service.ChatRequest.model_validate(example("chat-request.json"))
+        service.ChatRequest.model_validate({**example("chat-request.json"), "history": []})
 
 
 def test_refs_deduplicated_in_cited_order(chat):
@@ -285,7 +284,7 @@ def test_over_long_reply_cut_at_sentence_end(chat):
     chat.providers = [FakeProvider("openrouter", [sentence * 40 + "\nLESSONS: 3"])]
     d = chat.post().json()
     assert d["kind"] == "answer" and len(d["text"]) <= 1200 and d["text"].endswith("allies.")
-    assert schema_errors(without_id(d), "chat-response.schema.json") == []
+    assert schema_errors(d, "chat-response.schema.json") == []
 
 
 def test_over_long_reply_with_no_sentence_end_is_refused(chat):
@@ -693,8 +692,7 @@ HIST = "/v1/me/chat/roman-history"
 
 def test_chat_requires_sign_in(chat):
     r = chat.client.post(URL, json=body())
-    # not assert_error: docs/schemas/error.schema.json does not list the v3 codes yet
-    assert r.status_code == 401 and r.json()["error"]["code"] == "unauthorized"
+    assert_error(r, 401, "unauthorized")
     assert chat.fake.calls == [] and chat.rows() == [] and chat.stored() == []
 
 

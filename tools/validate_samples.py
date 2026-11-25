@@ -366,14 +366,18 @@ def example_checks(ex, titles):
     retry = {"rate_limited", "chat_daily_cap", "chat_resting", "upstream_unavailable"}
     details = {"bad_request": {"reason"}, "validation_error": {"fields"}, "not_found": None,
                "title_not_found": {"title_id"}, "rate_limited": {"scope"}, "chat_daily_cap": {"cap"},
-               "chat_resting": {"reason"}, "upstream_unavailable": {"upstream"}, "internal_error": None}
+               "chat_resting": {"reason"}, "upstream_unavailable": {"upstream"}, "internal_error": None,
+               # v3 (CONTRACTS 14.4)
+               "unauthorized": None, "token_expired": None, "token_invalid": None, "token_reused": None,
+               "invalid_credentials": None, "google_token_invalid": None, "email_taken": {"method"},
+               "weak_password": {"min", "max"}, "reauth_required": None}
     for e in (x["error"] for x in ex["errors.json"]):
         if (e["retry_after_s"] is not None) != (e["code"] in retry):
             errs.append(f"errors.json: {e['code']} retry_after_s must be {'set' if e['code'] in retry else 'null'}")
         got = None if e["details"] is None else set(e["details"])
-        if got != details.get(e["code"]) and not (e["code"] == "bad_request" and got is None):
+        if got != details.get(e["code"]) and not (e["code"] in ("bad_request", "email_taken") and got is None):
             errs.append(f"errors.json: {e['code']} details keys {got} != {details.get(e['code'])}")
-    allowed = {("rate_limited", "scope"): {"ip", "install"}, ("chat_resting", "reason"): {"providers_down", "global_cap"}}
+    allowed = {("rate_limited", "scope"): {"ip", "install", "account"}, ("chat_resting", "reason"): {"providers_down", "global_cap"}}
     for e in (x["error"] for x in ex["errors.json"]):
         for (code, key), values in allowed.items():
             if e["code"] == code and (e["details"] or {}).get(key) not in values:

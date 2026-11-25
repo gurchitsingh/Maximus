@@ -70,5 +70,77 @@
       "retry_after_s": null,
       "details": null
     }
+  },
+  {
+    "error": {
+      "code": "unauthorized",
+      "message": "Sign in to continue.",
+      "retry_after_s": null,
+      "details": null
+    }
+  },
+  {
+    "error": {
+      "code": "token_expired",
+      "message": "The session token has expired.",
+      "retry_after_s": null,
+      "details": null
+    }
+  },
+  {
+    "error": {
+      "code": "token_invalid",
+      "message": "This link or session is no longer valid.",
+      "retry_after_s": null,
+      "details": null
+    }
+  },
+  {
+    "error": {
+      "code": "token_reused",
+      "message": "This session was signed out. Sign in again.",
+      "retry_after_s": null,
+      "details": null
+    }
+  },
+  {
+    "error": {
+      "code": "invalid_credentials",
+      "message": "Wrong email or password.",
+      "retry_after_s": null,
+      "details": null
+    }
+  },
+  {
+    "error": {
+      "code": "google_token_invalid",
+      "message": "Google sign-in failed. Try again.",
+      "retry_after_s": null,
+      "details": null
+    }
+  },
+  {
+    "error": {
+      "code": "email_taken",
+      "message": "An account with this email already exists.",
+      "retry_after_s": null,
+      "details": { "method": "google" }
+    }
+  },
+  {
+    "error": {
+      "code": "weak_password",
+      "message": "Password must be 10 to 128 characters.",
+      "retry_after_s": null,
+      "details": { "min": 10, "max": 128 }
+    }
+  },
+  {
+    "error": {
+      "code": "reauth_required",
+      "message": "Sign in again, then delete the account.",
+      "retry_after_s": null,
+      "details": null
+    }
   }
 ]

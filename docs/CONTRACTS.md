@@ -798,7 +798,7 @@ Email-account sign-up requires `password` 10 to 128 characters; no other composi
 
 - App: `google_sign_in` with `serverClientId` = the **web** OAuth client id (`GOOGLE_CLIENT_ID`, not a secret); sends `idToken`.
 - Server: verifies signature against Google's published keys (cached by `Cache-Control`), `aud == GOOGLE_CLIENT_ID`, `iss` is `accounts.google.com` or `https://accounts.google.com`, `exp` in the future, `email_verified == true`.
-- Account rules: found by `google_sub` → sign in. Else found by the verified email → **link** (set `google_sub`; the account keeps its password if it had one). Else create (`email_verified: true`, `password_hash: null`).
+- Account rules: found by `google_sub` → sign in. Else found by the verified email → **link** (set `google_sub`; the account keeps its password if it had one, except when the email was never verified: the first Google sign-in with that address then removes the password, so nobody can claim an address that is not theirs in advance, D45). Else create (`email_verified: true`, `password_hash: null`).
 - Google sign-in ships first, email and password second **(unconfirmed)**: the endpoints for both exist in S17; S18 may release the email screens one version later.
 
 ### 14.4 Errors and limits

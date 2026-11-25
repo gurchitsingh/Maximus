@@ -1,6 +1,6 @@
 # DECISIONS (S3, 2026-11-22)
 
-Non-obvious choices behind `docs/CONTRACTS.md`. Three lines each: the decision, why, and what we gave up. Owner decisions from DESIGN_SPEC section 12 (v3 onboarding, TOPICS.md catalogue, public repo) are not repeated here. **D34 to D44 (24 Nov 2026) add accounts, sync, Postgres, hosting and the v4 design; they supersede D24 and the "no accounts" rule. Items marked UNCONFIRMED are defaults awaiting the owner (D35, D37, the 30 days in D39, bundling in D42).** Open items are CONTRACTS section 13.
+Non-obvious choices behind `docs/CONTRACTS.md`. Three lines each: the decision, why, and what we gave up. Owner decisions from DESIGN_SPEC section 12 (v3 onboarding, TOPICS.md catalogue, public repo) are not repeated here. **D34 to D45 (24 to 25 Nov 2026) add accounts, sync, Postgres, hosting and the v4 design; they supersede D24 and the "no accounts" rule. Items marked UNCONFIRMED are defaults awaiting the owner (D35, D37, the 30 days in D39, bundling in D42).** Open items are CONTRACTS section 13.
 
 ## D1. Chat replies are whole, not streamed
 - **Decision:** `POST /v1/titles/{id}/chat` returns one JSON reply after the server has the complete answer.
@@ -224,3 +224,8 @@ Non-obvious choices behind `docs/CONTRACTS.md`. Three lines each: the decision, 
 - **Decision:** FastAPI on Render free, Postgres elsewhere (D37). Production refuses to start with an empty `JWT_SECRET` or `INSTALL_ID_SALT`. The app allows a long first-request timeout and shows a "Waking the server..." state (CONTRACTS 18).
 - **Why:** Free, and enough for launch traffic.
 - **Gave up:** Instant first requests (about 15 minutes idle puts it to sleep) and a persistent disk. **Open:** `backend/media/` images cannot live on that disk; the owner must pick object storage (or bundle more art) before the deploy session S22 (CONTRACTS 18, Q9).
+
+## D45. Google sign-in removes an unverified password (2026-11-25)
+- **Decision:** If an account was created with an email and password and that email was never verified, the first Google sign-in with the same address (Google reports it verified) links the Google identity and removes the password. A verified password account keeps its password when Google is linked (CONTRACTS 14.3).
+- **Why:** Without this, someone could sign up with an address that is not theirs and keep a working password; when the real owner later signed in with Google the accounts would be linked and the attacker could still sign in. Only the real owner can prove the address through Google.
+- **Gave up:** A person who signed up by email, never verified it, and later uses Google with that address must use "Forgot password" to set a new password before email sign-in works again.

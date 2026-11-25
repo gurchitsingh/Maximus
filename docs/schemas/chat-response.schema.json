@@ -2,10 +2,10 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://maximus.example/schemas/chat-response.schema.json",
   "title": "Chat reply (HTTP 200): POST /v1/titles/{id}/chat",
-  "$comment": "Non-streaming. Resting, cap and rate limits are errors (error.schema.json), not 200s. CONTRACTS.md section 4.",
+  "$comment": "Non-streaming. Resting, cap and rate limits are errors (error.schema.json), not 200s. CONTRACTS.md sections 4 and 16. message_id is the stored assistant message.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["kind", "text", "lesson_refs", "remaining_today"],
+  "required": ["kind", "text", "lesson_refs", "remaining_today", "message_id"],
   "properties": {
     "kind": { "enum": ["answer", "out_of_scope"] },
     "text": { "type": "string", "minLength": 1, "maxLength": 1200 },
@@ -22,7 +22,8 @@
         }
       }
     },
-    "remaining_today": { "type": "integer", "minimum": 0 }
+    "remaining_today": { "type": "integer", "minimum": 0 },
+    "message_id": { "type": "string", "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$" }
   },
   "if": { "properties": { "kind": { "const": "out_of_scope" } } },
   "then": { "properties": { "lesson_refs": { "maxItems": 0 } } }

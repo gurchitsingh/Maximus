@@ -1,8 +1,4 @@
 {
   "install_id": "3f1c9a52-7b4e-4d2a-9c61-0e8b5a7d2f10",
-  "message": "Why did the Republic fall?",
-  "history": [
-    { "role": "user", "text": "Who was Augustus?" },
-    { "role": "assistant", "text": "SAMPLE · Rome's first emperor. Octavian took the name Augustus in 27 BCE." }
-  ]
+  "message": "Why did the Republic fall?"
 }
