@@ -269,6 +269,7 @@ class FakeAuthBackend implements HttpClientAdapter {
           return _error(status, code);
         }
         if (call.startsWith('GET')) {
+          if (sync.failPulls) return _error(500, 'internal_error');
           final q = o.uri.queryParameters;
           return _json(
             200,

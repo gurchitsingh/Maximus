@@ -175,7 +175,9 @@ class SyncService {
     _retryTimer?.cancel();
     _periodicTimer?.cancel();
     _debounceTimer = _retryTimer = _periodicTimer = null;
-    await _writes?.cancel();
+    // Not awaited: drift completes a table-update cancel lazily, and no
+    // event arrives once it is requested.
+    unawaited(_writes?.cancel());
     _writes = null;
     _again = false;
     final running = _current;

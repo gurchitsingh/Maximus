@@ -38,6 +38,9 @@ class FakeSyncServer {
   /// Pushes are applied but not acknowledged (the response is lost).
   bool loseAcks = false;
 
+  /// Every pull answers 500.
+  bool failPulls = false;
+
   /// Every pushed batch, as sent.
   final pushes = <List<Map<String, dynamic>>>[];
 
