@@ -1,5 +1,5 @@
 // go_router config (CONTRACTS 8.3, 19). S6 adds the title sheet, the reader
-// and the topic shell (chat is a placeholder until S15). S7 adds the quiz.
+// and the topic shell; S7 adds the quiz; the chat is features/chat.
 // S18 adds Welcome, the sign-in routes and the auth redirect; onboarding
 // arrives in S5.
 import 'package:flutter/foundation.dart';
@@ -20,6 +20,7 @@ import '../features/auth/forgot_password_screen.dart';
 import '../features/auth/sign_in_screen.dart';
 import '../features/auth/verify_email_screen.dart';
 import '../features/auth/welcome_screen.dart';
+import '../features/chat/chat_screen.dart';
 import '../features/credits/credits_screen.dart';
 import '../features/feed/feed_screen.dart';
 import '../features/home/home_screen.dart';
@@ -199,11 +200,7 @@ GoRouter buildRouter({
             name: AppRoute.chat.name,
             pageBuilder: (_, state) => _fadePage(
               state,
-              TopicPlaceholder(
-                titleId: state.pathParameters['titleId']!,
-                subtitle: 'Ask a question',
-                session: 'Chat',
-              ),
+              ChatScreen(titleId: state.pathParameters['titleId']!),
             ),
           ),
           GoRoute(
