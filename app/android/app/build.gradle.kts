@@ -1,7 +1,19 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
+}
+
+// Release signing: values come from app/android/key.properties (gitignored).
+// Without that file a RELEASE build fails; it never falls back to the debug key.
+// See docs/RELEASE_SIGNING.md.
+val keystorePropertiesFile = rootProject.file("key.properties")
+val keystoreProperties = Properties()
+val hasReleaseKey = keystorePropertiesFile.exists()
+if (hasReleaseKey) {
+    keystorePropertiesFile.inputStream().use { keystoreProperties.load(it) }
 }
 
 android {
@@ -29,12 +41,46 @@ android {
         versionName = flutter.versionName
     }
 
+    signingConfigs {
+        if (hasReleaseKey) {
+            create("release") {
+                storeFile = rootProject.file(
+                    keystoreProperties.getProperty("storeFile")
+                        ?: throw GradleException("key.properties is missing storeFile")
+                )
+                storePassword = keystoreProperties.getProperty("storePassword")
+                    ?: throw GradleException("key.properties is missing storePassword")
+                keyAlias = keystoreProperties.getProperty("keyAlias")
+                    ?: throw GradleException("key.properties is missing keyAlias")
+                keyPassword = keystoreProperties.getProperty("keyPassword")
+                    ?: throw GradleException("key.properties is missing keyPassword")
+            }
+        }
+    }
+
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            if (hasReleaseKey) {
+                signingConfig = signingConfigs.getByName("release")
+            }
+            // No else branch on purpose: never use the debug key for release.
         }
+    }
+}
+
+// Fail any release build early, with a clear message, when key.properties is absent.
+gradle.taskGraph.whenReady {
+    val releaseTask = allTasks.firstOrNull {
+        it.project == project &&
+            Regex("(assemble|bundle|package).*Release", RegexOption.IGNORE_CASE)
+                .containsMatchIn(it.name)
+    }
+    if (releaseTask != null && !hasReleaseKey) {
+        throw GradleException(
+            "RELEASE SIGNING: app/android/key.properties not found. " +
+                "Release builds are never signed with the debug key. " +
+                "Create the upload key and key.properties as described in docs/RELEASE_SIGNING.md."
+        )
     }
 }
 
