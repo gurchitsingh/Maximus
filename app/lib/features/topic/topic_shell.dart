@@ -7,10 +7,8 @@ import 'package:material_ui/material_ui.dart';
 
 import '../../app/router.dart';
 import '../../core/theme/tokens.dart';
-import '../../core/util/colors.dart';
 import '../../core/widgets/widgets.dart';
 import '../../data/providers.dart';
-import '../placeholder_body.dart';
 import '../reader/reader_screen.dart';
 
 enum TopicTab { lessons, chat, quiz }
@@ -79,40 +77,6 @@ class TopicShell extends ConsumerWidget {
         currentIndex: tabs.indexOf(current),
         onSelected: select,
       ),
-    );
-  }
-}
-
-/// Chat (S15) is not built yet: same header, placeholder body.
-class TopicPlaceholder extends ConsumerWidget {
-  const TopicPlaceholder({
-    super.key,
-    required this.titleId,
-    required this.subtitle,
-    required this.session,
-  });
-
-  final String titleId;
-  final String subtitle;
-  final String session;
-
-  @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final t = ref.watch(catalogueProvider).value?.title(titleId);
-    return Column(
-      children: [
-        MxPushedTopBar(
-          kicker: t?.name ?? '',
-          kickerColor: t == null
-              ? null
-              : readableTint(hexColor(t.tint), context.mx.bg),
-          title: subtitle,
-          onBack: () => context.pop(),
-        ),
-        Expanded(
-          child: PlaceholderBody(title: subtitle, session: session),
-        ),
-      ],
     );
   }
 }
