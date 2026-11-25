@@ -79,6 +79,9 @@ class Settings(BaseSettings):
     smtp_username: str = ""
     smtp_password: str = ""
     smtp_starttls: bool = True
+    # SECURITY_AUDIT M3, on top of the per-purpose 3 per hour per email (CONTRACTS 14.4, 17), rolling 24 h:
+    mail_per_email_daily: int = 5        # reset + deletion requests together, per address
+    mail_daily_budget: int = 80          # every mail the server sends; keep it under the provider's daily quota
 
     # Sync (CONTRACTS 15)
     sync_tombstone_days: int = 90

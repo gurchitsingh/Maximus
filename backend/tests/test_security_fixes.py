@@ -1,4 +1,5 @@
 """Fixes from docs/SECURITY_AUDIT.md (H1, M1, M2, M3, M4, L5, L6, ...). Addresses are RFC 2606 / RFC 5737 only."""
+import logging
 import uuid
 from datetime import timedelta
 
@@ -181,3 +182,40 @@ def test_m1_only_200_replies_count_per_ip(chat, monkeypatch):
         assert chat.post(install_id=None).status_code == 503
     chat.providers = [FakeProvider("openrouter", [GOOD])]
     assert [chat.post(install_id=None).status_code for _ in range(3)] == [200, 200, 429]
+
+
+# ---------- M3: the reset and deletion mails cannot be used as a mail flood ----------
+
+def test_m3_reset_and_delete_requests_share_one_daily_limit_per_address(client, outbox, no_ip_limit):
+    signup(client)
+    for _ in range(3):  # the documented 3 per hour of forgot-password still applies
+        assert client.post("/v1/auth/forgot-password", json={"email": "ada@example.com"}).status_code == 202
+    for _ in range(2):
+        assert client.post("/account/delete/request", data={"email": "ada@example.com"}).status_code == 200
+    assert len(outbox.mails) == 5
+    r = client.post("/account/delete/request", data={"email": "ada@example.com"})
+    assert r.status_code == 429 and "Too many requests" in r.text
+    assert len(outbox.mails) == 5
+    # another address is not affected
+    signup(client, email="bob@example.org")
+    assert client.post("/v1/auth/forgot-password", json={"email": "bob@example.org"}).status_code == 202
+
+
+def test_m3_forgot_password_past_the_shared_daily_limit_is_429(client, no_ip_limit):
+    for _ in range(3):
+        client.post("/account/delete/request", data={"email": "nobody@example.com"})
+    for _ in range(2):
+        assert client.post("/v1/auth/forgot-password", json={"email": "nobody@example.com"}).status_code == 202
+    e = err(client.post("/v1/auth/forgot-password", json={"email": "nobody@example.com"}), 429, "rate_limited")
+    assert e["details"] == {"scope": "account"}
+
+
+def test_m3_global_mail_budget_drops_mail_and_warns(client, outbox, monkeypatch, caplog, no_ip_limit):
+    monkeypatch.setattr(limits.mail_budget, "limit", 2)
+    for i in range(3):
+        signup(client, email=f"user{i}@example.com")
+    with caplog.at_level(logging.WARNING, logger="maximus.mail"):
+        for i in range(3):  # the response never says whether a mail went out
+            assert client.post("/v1/auth/forgot-password", json={"email": f"user{i}@example.com"}).status_code == 202
+    assert [m.to for m in outbox.mails] == ["user0@example.com", "user1@example.com"]
+    assert "mail daily budget reached" in caplog.text and "user2" not in caplog.text

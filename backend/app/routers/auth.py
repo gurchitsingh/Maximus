@@ -111,6 +111,7 @@ def forgot_password(body: EmailBody, bg: BackgroundTasks, db: Session = Depends(
                     m: mailer.Mailer = Depends(get_mailer)):
     email = service.normalise_email(body.email)
     limits.mail_per_email.check(email)
+    limits.mail_email_daily.check(email)  # M3: shared with the deletion form
     _send(bg, m, service.forgot_password(db, email, tokens.utcnow()))
     return Response(status_code=202)
 

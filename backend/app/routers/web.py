@@ -106,6 +106,7 @@ async def delete_request(request: Request, bg: BackgroundTasks, db: Session = De
                       raw=error_line("Enter a valid email address."))
     try:
         limits.delete_form_email.check(email)
+        limits.mail_email_daily.check(email)  # M3: shared with forgot-password
     except ApiError:
         return _too_many()
     for mail in await run_in_threadpool(service.request_delete_link, db, email, tokens.utcnow()):

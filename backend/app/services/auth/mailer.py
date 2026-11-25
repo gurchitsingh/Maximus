@@ -17,6 +17,8 @@ from typing import Protocol
 import httpx
 
 from app.config import settings
+from app.errors import ApiError
+from app.services.auth import limits
 
 log = logging.getLogger("maximus.mail")
 
@@ -82,7 +84,13 @@ def make_mailer() -> Mailer:
 
 
 def deliver(mailer: Mailer, mail: Mail) -> None:
-    """Send and swallow failures (run as a background task after the response)."""
+    """Send and swallow failures (run as a background task after the response). Past the daily budget (M3) the
+    mail is dropped, so a flood cannot use up the provider quota that real resets and deletions need."""
+    try:
+        limits.mail_budget.check("all")
+    except ApiError:
+        log.warning("mail daily budget reached: dropped purpose=%s", mail.purpose)
+        return
     try:
         mailer.send(mail)
         log.info("mail sent provider=%s purpose=%s", mailer.name, mail.purpose)

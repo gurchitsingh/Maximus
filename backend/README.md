@@ -276,6 +276,8 @@ Every setting is an environment variable (or a line in `backend/.env`); empty va
 | `CHAT_IP_PER_MIN` | `20` | Chat burst limit per IP |
 | `CHAT_IP_DAILY_CAP` | `40` | Chat 200 replies per IP per rolling 24 h (M1; in memory) |
 | `SIGNUP_IP_DAILY_CAP` | `5` | Successful email sign-ups per IP per rolling 24 h (M1; in memory) |
+| `MAIL_PER_EMAIL_DAILY` | `5` | Reset and deletion requests together, per address per rolling 24 h (M3; in memory) |
+| `MAIL_DAILY_BUDGET` | `80` | Mails sent in all per rolling 24 h; past it mails are dropped with a warning (M3). Keep under the provider quota |
 | `INSTALL_ID_SALT` | (empty) | **Secret.** Salt of the install-id hashes; production refuses to start without it |
 | `SYNC_TOMBSTONE_DAYS` | `90` | Days a sync delete is kept before it is purged |
 | `SYNC_RECORD_QUOTA` | `50000` | Live sync records per user |
