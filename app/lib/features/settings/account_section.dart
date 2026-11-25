@@ -1,5 +1,5 @@
-// Settings > Account (CONTRACTS 14.5, 17, 19): the signed-in email, the
-// verify banner, Sign out, Delete my account and links to the privacy
+// Settings > Account (CONTRACTS 14.5, 17, 19): the signed-in email, Sign
+// out, Delete my account and links to the privacy
 // policy and the account-deletion web page. Not drawn in the export: built
 // from the list rows and the Clear my data dialog (DESIGN_SPEC 15.1).
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -29,24 +29,17 @@ const appBaseUrl = String.fromEnvironment(
 Uri privacyPolicyUri() => Uri.parse('$appBaseUrl/privacy');
 Uri accountDeletionUri() => Uri.parse('$appBaseUrl/account/delete');
 
-/// GET /v1/me when Settings opens: email_verified and the sign-in methods.
+/// GET /v1/me when Settings opens: the sign-in methods.
 /// Offline it fails quietly and the stored email stays.
 final accountRefreshProvider = FutureProvider.autoDispose<AuthUser?>(
   (ref) => ref.read(authControllerProvider.notifier).refreshUser(),
 );
 
-class AccountSection extends ConsumerStatefulWidget {
+class AccountSection extends ConsumerWidget {
   const AccountSection({super.key});
 
   @override
-  ConsumerState<AccountSection> createState() => _AccountSectionState();
-}
-
-class _AccountSectionState extends ConsumerState<AccountSection> {
-  bool _bannerHidden = false;
-
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     ref.watch(accountRefreshProvider);
     final user = ref.watch(currentUserProvider);
     if (user == null) return const SizedBox.shrink();
@@ -57,13 +50,6 @@ class _AccountSectionState extends ConsumerState<AccountSection> {
         children: [
           const SectionLabel('Account'),
           const SizedBox(height: 10),
-          if (user.emailVerified == false && !_bannerHidden) ...[
-            VerifyBanner(
-              email: user.email,
-              onDismiss: () => setState(() => _bannerHidden = true),
-            ),
-            const SizedBox(height: 12),
-          ],
           SettingsRow(
             label: 'Email',
             value: user.email ?? user.displayName ?? 'Signed in',
@@ -82,122 +68,26 @@ class _AccountSectionState extends ConsumerState<AccountSection> {
           SettingsRow(
             label: 'Privacy policy',
             showArrow: true,
-            onTap: () => _open(privacyPolicyUri()),
+            onTap: () => _open(context, privacyPolicyUri()),
           ),
           SettingsRow(
             label: 'Delete account on the web',
             showArrow: true,
             isLast: true,
-            onTap: () => _open(accountDeletionUri()),
+            onTap: () => _open(context, accountDeletionUri()),
           ),
         ],
       ),
     );
   }
 
-  Future<void> _open(Uri uri) async {
+  Future<void> _open(BuildContext context, Uri uri) async {
     final ok = await launchUrl(uri, mode: LaunchMode.externalApplication);
-    if (!ok && mounted) {
+    if (!ok && context.mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Could not open ${uri.toString()}')),
       );
     }
-  }
-}
-
-/// "Confirm your email" with Resend (14.5). Dismissible; nothing is blocked
-/// while unverified.
-class VerifyBanner extends ConsumerStatefulWidget {
-  const VerifyBanner({super.key, required this.email, required this.onDismiss});
-
-  final String? email;
-  final VoidCallback onDismiss;
-
-  @override
-  ConsumerState<VerifyBanner> createState() => _VerifyBannerState();
-}
-
-class _VerifyBannerState extends ConsumerState<VerifyBanner> {
-  bool _busy = false;
-  String? _message;
-  bool _ok = false;
-
-  Future<void> _resend() async {
-    setState(() {
-      _busy = true;
-      _message = null;
-    });
-    try {
-      await ref.read(authControllerProvider.notifier).resendVerification();
-      if (mounted) {
-        setState(() {
-          _ok = true;
-          _message = 'Sent. Check your inbox.';
-        });
-      }
-    } catch (e) {
-      if (mounted) {
-        setState(() {
-          _ok = false;
-          _message = authErrorMessage(e);
-        });
-      }
-    } finally {
-      if (mounted) setState(() => _busy = false);
-    }
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final c = context.mx;
-    return Container(
-      padding: const EdgeInsets.fromLTRB(16, 12, 4, 12),
-      decoration: BoxDecoration(
-        color: c.surfaceRaised,
-        borderRadius: BorderRadius.circular(MxRadius.tile),
-      ),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                const SizedBox(height: 4),
-                Text(
-                  'Confirm your email',
-                  style: MxText.rowTitle.copyWith(color: c.text),
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  'Open the link we sent to '
-                  '${widget.email ?? 'your email address'}.',
-                  style: MxText.sub.copyWith(color: c.textMuted),
-                ),
-                Transform.translate(
-                  offset: const Offset(-12, 0),
-                  child: MxTextButton(
-                    label: _busy ? 'Sending...' : 'Resend',
-                    onPressed: _busy ? null : _resend,
-                  ),
-                ),
-                if (_message != null)
-                  Padding(
-                    padding: const EdgeInsets.only(right: 12),
-                    child: AuthMessage(_message!, ok: _ok),
-                  ),
-              ],
-            ),
-          ),
-          MxIconButton(
-            icon: MxIcons.x,
-            label: 'Hide',
-            size: 20,
-            onPressed: widget.onDismiss,
-          ),
-        ],
-      ),
-    );
   }
 }
 

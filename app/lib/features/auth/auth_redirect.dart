@@ -8,7 +8,6 @@ abstract final class AuthPaths {
   static const signIn = '/sign-in';
   static const signUp = '/sign-up';
   static const forgotPassword = '/forgot-password';
-  static const verifyEmail = '/verify-email';
   static const home = '/home';
 
   /// Screens a signed-out user may see.
@@ -31,16 +30,8 @@ String? authRedirect(
       return path == AuthPaths.welcome ? null : AuthPaths.welcome;
     case SignedOut():
       return AuthPaths.signedOut.contains(path) ? null : AuthPaths.welcome;
-    case SignedIn(:final showVerify):
-      final onAuthScreen =
-          AuthPaths.signedOut.contains(path) || path == AuthPaths.verifyEmail;
-      if (showVerify) {
-        return path == AuthPaths.verifyEmail
-            ? null
-            : onAuthScreen
-            ? AuthPaths.verifyEmail
-            : null;
-      }
+    case SignedIn():
+      final onAuthScreen = AuthPaths.signedOut.contains(path);
       final needsOnboarding = onboardingPath != null && !onboardingDone;
       if (onAuthScreen) {
         return needsOnboarding ? onboardingPath : AuthPaths.home;

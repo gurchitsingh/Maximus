@@ -49,9 +49,6 @@ class AuthApi {
     body: {'refresh_token': refreshToken},
   );
 
-  Future<void> resendVerification() =>
-      client.send('POST', '/v1/auth/resend-verification');
-
   /// Always 202, whether or not the email has an account.
   Future<void> forgotPassword(String email) =>
       client.send('POST', '/v1/auth/forgot-password', body: {'email': email});

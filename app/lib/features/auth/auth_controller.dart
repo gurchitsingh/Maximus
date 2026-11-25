@@ -70,9 +70,9 @@ class AuthController extends Notifier<AuthState> {
     if (ref.mounted && state is AuthLoading) state = next;
   }
 
-  Future<void> _start(TokenGrant grant, {bool showVerify = false}) async {
+  Future<void> _start(TokenGrant grant) async {
     await _tokens.save(grant);
-    state = SignedIn(AuthUser.fromJson(grant.user), showVerify: showVerify);
+    state = SignedIn(AuthUser.fromJson(grant.user));
   }
 
   Future<void> signInWithEmail(String email, String password) async =>
@@ -86,7 +86,6 @@ class AuthController extends Notifier<AuthState> {
         password,
         displayName: trimmed == null || trimmed.isEmpty ? null : trimmed,
       ),
-      showVerify: true,
     );
   }
 
@@ -98,18 +97,10 @@ class AuthController extends Notifier<AuthState> {
     return true;
   }
 
-  /// Leaves Verify email (the user can verify later from the email).
-  void finishVerifyStep() {
-    final s = state;
-    if (s is SignedIn && s.showVerify) state = SignedIn(s.user);
-  }
-
-  Future<void> resendVerification() => _api.resendVerification();
-
   Future<void> forgotPassword(String email) =>
       _api.forgotPassword(email.trim());
 
-  /// GET /v1/me: fills in email_verified and the sign-in methods. Offline
+  /// GET /v1/me: fills in the sign-in methods. Offline
   /// keeps what is stored.
   Future<AuthUser?> refreshUser() async {
     if (state is! SignedIn) return null;
@@ -120,7 +111,7 @@ class AuthController extends Notifier<AuthState> {
       'display_name': user.displayName,
     });
     final s = state;
-    if (s is SignedIn) state = SignedIn(user, showVerify: s.showVerify);
+    if (s is SignedIn) state = SignedIn(user);
     return user;
   }
 
