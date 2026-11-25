@@ -289,11 +289,13 @@ Tests only: `TEST_DATABASE_URL` (run the suite on Postgres).
 - Migrations: `alembic upgrade head` once per deploy (a pre-deploy command), with `DATABASE_URL_DIRECT` set to
   Neon's direct URL. Never run it from several workers at once. Only the S17 session edits migrations.
 - In-memory rate limits are per process: run one worker on Render free, or the limits multiply.
-- **Backups (not built):** Neon's free plan keeps only about 6 hours of history for restores, which is not a
-  backup. Before launch, set up a scheduled `pg_dump` of the direct URL (for example a daily GitHub Actions
-  workflow that runs `pg_dump --format=custom` and stores the file somewhere private and encrypted, with a
-  retention of a few weeks), and test a restore once. The dump holds personal data: treat it like the database
-  (private storage, deleted on schedule, covered by the privacy policy's processors list).
+- **Backups:** Neon's free plan keeps only about 6 hours of history for restores, which is not a backup. Run
+  `backend/tools/backup.ps1` from your own computer: it runs `pg_dump --format=custom` against the direct URL
+  (`DATABASE_URL_DIRECT`, or hidden input), checks the file with `pg_restore --list`, writes
+  `backend/backups/maximus-<UTC time>.dump` (gitignored) and deletes dumps older than 28 days. It never uploads
+  anything: the dump holds personal data and this repo is public, so no GitHub Actions artifact or other public
+  place. Weekly while there are only test users, daily once real users exist; test a restore once. Full steps:
+  `backend/DEPLOY.md` section 9.
 
 ## Secrets
 
