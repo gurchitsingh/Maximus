@@ -76,8 +76,12 @@ def _json(body: dict, status: int = 200) -> JSONResponse:
 
 
 @auth.post("/signup", status_code=201)
-def signup(body: SignUp, db: Session = Depends(get_db)):
-    return _json(service.signup(db, body.email, body.password, body.display_name, tokens.utcnow()), 201)
+def signup(body: SignUp, request: Request, db: Session = Depends(get_db)):
+    ip = client_ip(request)
+    limits.signup_ip_daily.ensure_open(ip)  # M1: only accounts actually created count
+    result = service.signup(db, body.email, body.password, body.display_name, tokens.utcnow())
+    limits.signup_ip_daily.add(ip)
+    return _json(result, 201)
 
 
 @auth.post("/signin")

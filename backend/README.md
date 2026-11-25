@@ -155,7 +155,9 @@ one whole JSON reply `{"kind": "answer"|"out_of_scope", "text", "lesson_refs", "
 - **v3 caps:** `CHAT_ACCOUNT_DAILY_CAP` (20 per account) and, when the app sends `install_id`, `CHAT_DAILY_CAP` (20
   per install, so a new account on the same phone gets no fresh allowance) → 429 `chat_daily_cap`;
   `CHAT_GLOBAL_DAILY_CAP` (200, summed over accounts) → 503 `chat_resting`. Burst: 6/min per account and per
-  install, 20/min per IP. `remaining_today` is the tighter of the account and install allowances.
+  install, 20/min per IP. Per IP per rolling 24 h (in memory, SECURITY_AUDIT M1): `CHAT_IP_DAILY_CAP` (40) 200
+  replies and `SIGNUP_IP_DAILY_CAP` (5) email sign-ups → 429 `rate_limited` (`scope: "ip"`). `remaining_today` is
+  the tighter of the account and install allowances.
 - **v3 history:** both turns of every 200 reply are stored in `user_chat_messages` (refusals too; failures not).
   `GET /v1/me/chat/{title_id}?limit=50&before=<message id>` (newest page first, oldest first in a page),
   `DELETE /v1/me/chat/{title_id}`, `DELETE /v1/me/chat`. Each message is kept `CHAT_RETENTION_DAYS` (5) from its own timestamp (rolling, not per chat): purged on the first chat
@@ -272,6 +274,8 @@ Every setting is an environment variable (or a line in `backend/.env`); empty va
 | `CHAT_CONTEXT_CHARS` | `24000` | Title text budget in the prompt |
 | `CHAT_INSTALL_PER_MIN` | `6` | Chat burst limit per account and per install |
 | `CHAT_IP_PER_MIN` | `20` | Chat burst limit per IP |
+| `CHAT_IP_DAILY_CAP` | `40` | Chat 200 replies per IP per rolling 24 h (M1; in memory) |
+| `SIGNUP_IP_DAILY_CAP` | `5` | Successful email sign-ups per IP per rolling 24 h (M1; in memory) |
 | `INSTALL_ID_SALT` | (empty) | **Secret.** Salt of the install-id hashes; production refuses to start without it |
 | `SYNC_TOMBSTONE_DAYS` | `90` | Days a sync delete is kept before it is purged |
 | `SYNC_RECORD_QUOTA` | `50000` | Live sync records per user |

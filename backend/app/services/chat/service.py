@@ -29,6 +29,7 @@ PROVIDERS_DOWN_RETRY_S = 300
 account_limiter = RateLimiter(settings.chat_install_per_min, scope="account")
 install_limiter = RateLimiter(settings.chat_install_per_min, scope="install")
 ip_limiter = RateLimiter(settings.chat_ip_per_min, scope="ip")
+ip_daily = RateLimiter(settings.chat_ip_daily_cap, 24 * 3600, scope="ip")  # M1: 200 replies per IP per 24 h
 
 
 class ChatRequest(BaseModel):
@@ -72,6 +73,7 @@ def handle(db: Session, title_id: str, raw_body: bytes, client_ip: str, provider
     if ihash:
         install_limiter.check(ihash)
     ip_limiter.check(client_ip)
+    ip_daily.ensure_open(client_ip)
     # 3 Caps (and the daily purges: counters, and history past retention)
     now = usage.utcnow()
     if usage.purge_old(db, now):
@@ -127,6 +129,7 @@ def handle(db: Session, title_id: str, raw_body: bytes, client_ip: str, provider
     usage.add_one(db, user_id, ihash, now)
     message_id = history.save_exchange(db, user_id, title_id, req.message, kind, text, refs, now)
     db.commit()
+    ip_daily.add(client_ip)
     remaining = max(0, account_cap - account_used - 1)
     if ihash:
         remaining = min(remaining, max(0, install_cap - install_used - 1))
@@ -142,3 +145,4 @@ def reset_limits() -> None:
     account_limiter.reset()
     install_limiter.reset()
     ip_limiter.reset()
+    ip_daily.reset()

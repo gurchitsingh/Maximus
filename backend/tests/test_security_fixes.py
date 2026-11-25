@@ -8,7 +8,10 @@ from app import main
 from app.config import settings
 from app.models import User
 from app.services.auth import limits, tokens
+from app.services.chat import service as chat_service
 from tests.auth_helpers import PASSWORD, bearer, signup
+from tests.fake_llm import FakeProvider, failing
+from tests.test_chat import GOOD, chat  # noqa: F401 (the chat fixture)
 
 
 def err(r, status, code):
@@ -120,3 +123,61 @@ def test_m2_a_user_never_revoked_keeps_working(client, seeded):
     with seeded() as db:
         assert db.get(User, uuid.UUID(d["user"]["id"])).tokens_valid_after is None
     assert client.get("/v1/me", headers=bearer(d)).status_code == 200
+
+
+# ---------- M1: throwaway accounts cannot drain the global chat cap ----------
+
+def test_m1_sixth_signup_from_one_ip_in_a_day_is_limited(client, no_ip_limit):
+    for i in range(5):
+        signup(client, email=f"throwaway{i}@example.com")
+    e = err(client.post("/v1/auth/signup", json={"email": "throwaway5@example.com", "password": PASSWORD}),
+            429, "rate_limited")
+    assert e["details"] == {"scope": "ip"} and e["retry_after_s"] > 3600
+
+
+def test_m1_failed_signups_do_not_count(client, no_ip_limit):
+    signup(client)
+    for _ in range(6):
+        err(client.post("/v1/auth/signup", json={"email": "ada@example.com", "password": PASSWORD}), 409, "email_taken")
+        err(client.post("/v1/auth/signup", json={"email": "x@example.com", "password": "short"}), 422, "weak_password")
+    for i in range(4):
+        signup(client, email=f"real{i}@example.com")
+
+
+def test_m1_signup_cap_is_per_ip(client, monkeypatch, no_ip_limit):
+    monkeypatch.setattr(settings, "trusted_proxy_hops", 1)
+    for i in range(5):
+        signup_from(client, f"a{i}@example.com", "203.0.113.1")
+    assert client.post("/v1/auth/signup", json={"email": "a5@example.com", "password": PASSWORD},
+                       headers={"X-Forwarded-For": "203.0.113.1"}).status_code == 429
+    signup_from(client, "b0@example.com", "203.0.113.2")
+
+
+def signup_from(client, email, ip):
+    r = client.post("/v1/auth/signup", json={"email": email, "password": PASSWORD}, headers={"X-Forwarded-For": ip})
+    assert r.status_code == 201, r.text
+    return r.json()
+
+
+def test_m1_one_ip_gets_40_chats_a_day_across_accounts(chat, monkeypatch, no_ip_limit):
+    monkeypatch.setattr(chat_service.ip_daily, "limit", settings.chat_ip_daily_cap)
+    monkeypatch.setattr(settings, "trusted_proxy_hops", 1)
+    xff = {"X-Forwarded-For": "198.51.100.1, 203.0.113.50"}
+    second = bearer(signup(chat.client, email="second@example.com"))
+    third = bearer(signup(chat.client, email="third@example.com"))
+    for headers in ({**chat.headers, **xff}, {**second, **xff}):
+        for _ in range(20):
+            assert chat.post(install_id=None, headers=headers).status_code == 200
+    e = err(chat.post(install_id=None, headers={**third, **xff}), 429, "rate_limited")
+    assert e["details"] == {"scope": "ip"}
+    # another client IP is not affected, and the global cap (200) was never the limit
+    assert chat.post(install_id=None, headers={**third, "X-Forwarded-For": "203.0.113.51"}).status_code == 200
+
+
+def test_m1_only_200_replies_count_per_ip(chat, monkeypatch):
+    monkeypatch.setattr(chat_service.ip_daily, "limit", 2)
+    chat.providers = [failing("openrouter")]
+    for _ in range(3):
+        assert chat.post(install_id=None).status_code == 503
+    chat.providers = [FakeProvider("openrouter", [GOOD])]
+    assert [chat.post(install_id=None).status_code for _ in range(3)] == [200, 200, 429]

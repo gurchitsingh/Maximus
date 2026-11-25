@@ -59,6 +59,10 @@ class Settings(BaseSettings):
     install_id_salt: str = ""
     chat_install_per_min: int = 6        # burst limits (CONTRACTS 3.1); the account burst uses the same number
     chat_ip_per_min: int = 20
+    # SECURITY_AUDIT M1: free sign-ups must not let one person drain the global cap. Per client IP, rolling 24 h,
+    # in memory like the other limits; only 200 replies and successful sign-ups count.
+    chat_ip_daily_cap: int = 40
+    signup_ip_daily_cap: int = 5
 
     # Auth (CONTRACTS 14)
     jwt_secret: str = ""

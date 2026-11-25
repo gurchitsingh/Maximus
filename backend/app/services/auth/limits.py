@@ -6,7 +6,9 @@
 - the public web forms (account deletion, reset): 10 per minute per IP; deletion requests also
   3 per hour per email
 - signed-in writes (sync push, chat-history deletes, DELETE /v1/me): 60 per minute per account
+- email sign-ups: SIGNUP_IP_DAILY_CAP (5) successful ones per IP per 24 h (SECURITY_AUDIT M1)
 """
+from app.config import settings
 from app.services.ratelimit import RateLimiter
 
 auth_ip = RateLimiter(10, 60, scope="ip")
@@ -15,9 +17,10 @@ mail_per_email = RateLimiter(3, 3600, scope="account")
 delete_form_email = RateLimiter(3, 3600, scope="account")
 web_form_ip = RateLimiter(10, 60, scope="ip")
 account_writes = RateLimiter(60, 60, scope="account")
+signup_ip_daily = RateLimiter(settings.signup_ip_daily_cap, 24 * 3600, scope="ip")
 
 ALL = (auth_ip, signin_failures, mail_per_email, delete_form_email, web_form_ip,
-       account_writes)
+       account_writes, signup_ip_daily)
 
 
 def reset_all() -> None:
