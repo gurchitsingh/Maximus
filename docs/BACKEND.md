@@ -10,7 +10,7 @@ These override anything below that conflicts.
 - **Database:** content AND user data move to a hosted **Postgres** (default Neon free tier). Render free disk is wiped on redeploy, so SQLite must not hold user data. SQLite stays for local dev and tests.
 - **Hosting:** Render free tier (sleeps when idle, first request is slow). Production must refuse to start with an empty INSTALL_ID_SALT or JWT secret.
 - **Synced user data:** ratings, study list, lesson progress, quiz scores, feed saves and likes, onboarding picks, settings, chat history.
-- **Chat history is stored** per user per title, kept 30 days by default (to confirm), deletable by the user. This reverses the v2 rule "log failures, not conversations". Chat text is personal data.
+- **Chat history is stored** per user per title, kept 5 days by default, rolling per message (D46), deletable by the user. This reverses the v2 rule "log failures, not conversations". Chat text is personal data.
 - **Account deletion:** an authenticated delete endpoint plus a public web page, as Play Store requires. Deleting removes all user rows.
 - **Offline-first sync:** the phone is the working copy. Sync is last-write-wins per record with an updated_at timestamp; deletes are tombstones. Keep it simple.
 - **Security:** rate limits on auth endpoints, password hashing (argon2 or bcrypt), email verification and password reset for email accounts, short-lived access tokens plus refresh tokens, no secrets in the public repo. Run the Cloudflare security-audit skill and Strix before launch.

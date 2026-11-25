@@ -1,4 +1,4 @@
-"""Stored chat history (CONTRACTS 16, D39): both turns of every 200 reply, kept CHAT_RETENTION_DAYS (30).
+"""Stored chat history (CONTRACTS 16, D39): both turns of every 200 reply, kept CHAT_RETENTION_DAYS (5, rolling per message).
 
 Chat text is personal data: never logged, deleted with the account, listed in the privacy policy.
 """

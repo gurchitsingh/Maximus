@@ -4,7 +4,7 @@ similar) with the production DATABASE_URL:
     python -m app.jobs purge            # prints what it removed
     python -m app.jobs purge --dry-run  # counts only
 
-Removes: chat history older than CHAT_RETENTION_DAYS (30), sync tombstones older than SYNC_TOMBSTONE_DAYS (90),
+Removes: chat history older than CHAT_RETENTION_DAYS (5, rolling per message), sync tombstones older than SYNC_TOMBSTONE_DAYS (90),
 chat counters older than yesterday, and refresh or email tokens that expired more than a day ago.
 The chat route also purges history lazily on the first chat of each UTC day, so a missed run loses nothing.
 """

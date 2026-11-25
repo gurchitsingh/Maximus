@@ -218,11 +218,11 @@ def test_oversized_form_is_treated_as_empty(client):
 
 def test_privacy_page(client, monkeypatch):
     from app.config import settings
-    monkeypatch.setattr(settings, "chat_retention_days", 30)
+    monkeypatch.setattr(settings, "chat_retention_days", 5)
     r = client.get("/privacy")
     assert r.status_code == 200 and "<script" not in r.text
     text = re.sub(r"\s+", " ", r.text)
-    for needle in ("email address", "display name", "study data", "Your chats", "30 days", "Render", "Neon",
+    for needle in ("email address", "display name", "study data", "Your chats", "5 days", "Render", "Neon",
                    "email provider", "OpenRouter", "Google Gemini", "no ads", "/account/delete",
                    "Google Play listing"):
         assert needle in text, needle

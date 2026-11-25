@@ -190,5 +190,3 @@ Not fixed, for you to decide:
 7. **Render free bandwidth** is limited (the number is not on the docs page **(not verified)**); with no card on
    file Render suspends free services for the rest of the month when it runs out.
 8. **Do not use Render's own free Postgres** (expires after 30 days, no backups); stay on Neon.
-9. `backend/README.md` still says the backup is "not built" and suggests a scheduled Action for it. This file
-   supersedes that (a dump must not leave your PC); update the README in the next backend session.

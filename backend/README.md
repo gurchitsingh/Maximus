@@ -159,7 +159,7 @@ one whole JSON reply `{"kind": "answer"|"out_of_scope", "text", "lesson_refs", "
   install, 20/min per IP. `remaining_today` is the tighter of the account and install allowances.
 - **v3 history:** both turns of every 200 reply are stored in `user_chat_messages` (refusals too; failures not).
   `GET /v1/me/chat/{title_id}?limit=50&before=<message id>` (newest page first, oldest first in a page),
-  `DELETE /v1/me/chat/{title_id}`, `DELETE /v1/me/chat`. Kept `CHAT_RETENTION_DAYS` (30): purged on the first chat
+  `DELETE /v1/me/chat/{title_id}`, `DELETE /v1/me/chat`. Each message is kept `CHAT_RETENTION_DAYS` (5) from its own timestamp (rolling, not per chat): purged on the first chat
   of each UTC day and by `python -m app.jobs purge`. Chat text is never logged.
 - `docs/schemas/chat-request.schema.json`, `chat-response.schema.json` and `error.schema.json` still describe
   the v1 shapes (no `message_id`, `history` required, no auth codes); the tests check v3 against CONTRACTS 16.
@@ -267,7 +267,7 @@ Every setting is an environment variable (or a line in `backend/.env`); empty va
 | `CHAT_ACCOUNT_DAILY_CAP` | `20` | Chats per account per UTC day |
 | `CHAT_DAILY_CAP` | `20` | Chats per install per UTC day (when the app sends `install_id`) |
 | `CHAT_GLOBAL_DAILY_CAP` | `200` | Chats for everyone per UTC day |
-| `CHAT_RETENTION_DAYS` | `30` | Days stored chat history is kept |
+| `CHAT_RETENTION_DAYS` | `5` | Days each stored chat message is kept (rolling, per message) |
 | `CHAT_PROVIDER_TIMEOUT_S` | `12` | Per-provider timeout |
 | `CHAT_CONTEXT_CHARS` | `24000` | Title text budget in the prompt |
 | `CHAT_INSTALL_PER_MIN` | `6` | Chat burst limit per account and per install |
@@ -289,11 +289,13 @@ Tests only: `TEST_DATABASE_URL` (run the suite on Postgres).
 - Migrations: `alembic upgrade head` once per deploy (a pre-deploy command), with `DATABASE_URL_DIRECT` set to
   Neon's direct URL. Never run it from several workers at once. Only the S17 session edits migrations.
 - In-memory rate limits are per process: run one worker on Render free, or the limits multiply.
-- **Backups (not built):** Neon's free plan keeps only about 6 hours of history for restores, which is not a
-  backup. Before launch, set up a scheduled `pg_dump` of the direct URL (for example a daily GitHub Actions
-  workflow that runs `pg_dump --format=custom` and stores the file somewhere private and encrypted, with a
-  retention of a few weeks), and test a restore once. The dump holds personal data: treat it like the database
-  (private storage, deleted on schedule, covered by the privacy policy's processors list).
+- **Backups:** Neon's free plan keeps only about 6 hours of history for restores, which is not a backup. Run
+  `backend/tools/backup.ps1` from your own computer: it runs `pg_dump --format=custom` against the direct URL
+  (`DATABASE_URL_DIRECT`, or hidden input), checks the file with `pg_restore --list`, writes
+  `backend/backups/maximus-<UTC time>.dump` (gitignored) and deletes dumps older than 28 days. It never uploads
+  anything: the dump holds personal data and this repo is public, so no GitHub Actions artifact or other public
+  place. Weekly while there are only test users, daily once real users exist; test a restore once. Full steps:
+  `backend/DEPLOY.md` section 9.
 
 ## Secrets
 

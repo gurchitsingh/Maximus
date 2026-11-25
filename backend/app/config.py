@@ -50,7 +50,7 @@ class Settings(BaseSettings):
     chat_daily_cap: int = 20             # per install per UTC day (Q4), when the app sends install_id
     chat_account_daily_cap: int = 20     # per account per UTC day (CONTRACTS 16)
     chat_global_daily_cap: int = 200     # all accounts per UTC day (Q4)
-    chat_retention_days: int = 30        # stored chat history (D39, unconfirmed)
+    chat_retention_days: int = 5         # stored chat history, rolling per message (D46)
     chat_provider_timeout_s: float = 12
     chat_context_chars: int = 24000
     install_id_salt: str = ""

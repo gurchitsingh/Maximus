@@ -807,12 +807,36 @@ def test_delete_one_title_and_all_chats(chat):
     assert chat.client.delete("/v1/me/chat").status_code == 401
 
 
+def test_retention_default_is_5_days_and_env_overrides_it(monkeypatch):
+    from app.config import Settings
+    monkeypatch.delenv("CHAT_RETENTION_DAYS", raising=False)
+    assert Settings(_env_file=None).chat_retention_days == 5
+    monkeypatch.setenv("CHAT_RETENTION_DAYS", "12")
+    assert Settings(_env_file=None).chat_retention_days == 12
+    monkeypatch.setenv("CHAT_RETENTION_DAYS", "")  # empty means unset: the default
+    assert Settings(_env_file=None).chat_retention_days == 5
+
+
 def test_retention_purge_on_the_first_chat_of_the_day(chat, monkeypatch):
-    monkeypatch.setattr(settings, "chat_retention_days", 30)
-    chat.seed_history([("user", "ancient"), ("assistant", "ancient answer.")], start=NOW - timedelta(days=31))
-    chat.seed_history([("user", "recent"), ("assistant", "recent answer.")], start=NOW - timedelta(days=29))
+    monkeypatch.setattr(settings, "chat_retention_days", 5)
+    chat.seed_history([("user", "ancient"), ("assistant", "ancient answer.")], start=NOW - timedelta(days=6))
+    chat.seed_history([("user", "recent"), ("assistant", "recent answer.")], start=NOW - timedelta(days=4))
     chat.post()
     assert [t for _, t, _ in chat.stored()][:2] == ["recent", "recent answer."] and len(chat.stored()) == 4
+
+
+def test_retention_is_rolling_per_message_not_per_chat(chat, monkeypatch):
+    from app import jobs
+    monkeypatch.setattr(settings, "chat_retention_days", 5)
+    # One conversation: its first turn is 6 days old, the next turn 4 days old. Only the old message goes.
+    chat.seed_history([("user", "day six")], start=NOW - timedelta(days=6))
+    chat.seed_history([("user", "day four")], start=NOW - timedelta(days=4))
+    with chat.session_factory() as db:
+        assert jobs.purge(db, NOW)["chat_messages"] == 1
+    assert [t for _, t, _ in chat.stored()] == ["day four"]
+    with chat.session_factory() as db:  # the survivor expires on its own clock, 5 days after it was written
+        assert jobs.purge(db, NOW + timedelta(days=2))["chat_messages"] == 1
+    assert chat.stored() == []
 
 
 def test_purge_job_removes_expired_history_tokens_and_counters(chat, monkeypatch):
