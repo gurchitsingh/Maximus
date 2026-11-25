@@ -247,6 +247,7 @@ Every setting is an environment variable (or a line in `backend/.env`); empty va
 | `MEDIA_DIR` | `backend/media` | Image store served at `/media` (dev; production storage is open, D44) |
 | `MEDIA_BASE_URL` | `http://10.0.2.2:8000/media` | Base of image URLs written by the ingest |
 | `RATE_LIMIT_IP_PER_MIN` | `120` | GET `/v1/*` per IP per minute |
+| `TRUSTED_PROXY_HOPS` | `0` | Proxies in front that each append to `X-Forwarded-For`. `0` = use the TCP peer (local runs); Render: `1`. The client IP is that many entries from the right |
 | `JWT_SECRET` | (empty) | **Secret.** HS256 key of access tokens; production needs 32+ characters |
 | `GOOGLE_CLIENT_ID` | (empty) | Web OAuth client id (the app's `serverClientId`); empty = Google sign-in refused |
 | `APP_BASE_URL` | `http://127.0.0.1:8000` | Base of email links and web pages, e.g. the Render URL |
@@ -282,9 +283,9 @@ Tests only: `TEST_DATABASE_URL` (run the suite on Postgres).
 
 ## Deploy, migrations and backups
 
-- Start command on Render: `uvicorn app.main:app --host 0.0.0.0 --port $PORT --proxy-headers
-  --forwarded-allow-ips="*"`. Without the proxy flags every request has Render's proxy IP and the per-IP limits
-  hit everyone at once.
+- Start command on Render: `uvicorn app.main:app --host 0.0.0.0 --port $PORT --no-proxy-headers`, with
+  `TRUSTED_PROXY_HOPS=1`. The app reads the client IP from the last `X-Forwarded-For` entry (the one Render's
+  proxy appends), never the leftmost one a client can choose (SECURITY_AUDIT H1, DEPLOY.md "Client IP").
 - Migrations: `alembic upgrade head` once per deploy (a pre-deploy command), with `DATABASE_URL_DIRECT` set to
   Neon's direct URL. Never run it from several workers at once. Only the S17 session edits migrations.
 - In-memory rate limits are per process: run one worker on Render free, or the limits multiply.

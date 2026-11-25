@@ -118,7 +118,8 @@ def test_render_yaml_services():
     wf = (REPO / ".github" / "workflows" / "purge.yml").read_text("utf-8")
     assert "python -m app.jobs purge" in wf and "secrets.PURGE_DATABASE_URL" in wf
     assert re.search(r"PYTHON_VERSION\s*\n\s*value: \"?3\.12\.\d+", text)  # pinned to a full version
-    assert "--proxy-headers" in text
+    assert "--no-proxy-headers" in text and "forwarded-allow-ips" not in text  # H1: uvicorn must not trust XFF
+    assert re.search(r"TRUSTED_PROXY_HOPS[^\n]*\n\s*value: \"1\"", text)
     assert "rootDir: backend" in text
 
 

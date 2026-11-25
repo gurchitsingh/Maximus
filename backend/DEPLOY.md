@@ -180,8 +180,13 @@ Not fixed, for you to decide:
    the free tier is meant to sleep, and `/healthz` deliberately does not touch the database.
 2. **In-memory rate limits** are per process and reset on every wake-up: one worker only, as configured. They are
    a brake, not a wall; the per-account chat caps live in the database.
-3. **`--forwarded-allow-ips="*"`** trusts `X-Forwarded-For` from any peer. Safe on Render (only its proxy reaches
-   the process); do not reuse this command on a host that is directly reachable.
+3. **Client IP (SECURITY_AUDIT H1).** uvicorn runs with `--no-proxy-headers`; the app takes the client IP from
+   `X-Forwarded-For`, counting `TRUSTED_PROXY_HOPS` entries from the right (`1` on Render: the entry its proxy
+   appends). Anything to the left is chosen by the client and is ignored. **Unverified:** Render's docs do not say
+   how its proxy sets the header. After a deploy, the log line `x-forwarded-for entries=N` (once per process, no
+   addresses) shows how many entries arrive; then send 11 `POST /v1/auth/signin` in a minute, each with a different
+   `X-Forwarded-For`: the 11th must be `429`. If every user starts hitting limits together, the hop count is too
+   small for the real chain (for example a CDN in front adds one); raise it by one and test again.
 4. **No request-size cap at the proxy.** Chat and sync have their own limits in the app; the free tier has no
    body-size setting.
 5. **No error monitoring or alerts.** Render's log viewer only; add Sentry or an uptime check if you want paging.

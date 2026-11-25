@@ -41,6 +41,9 @@ class Settings(BaseSettings):
     # of this PC; rewrite once hosting is decided.
     media_base_url: str = "http://10.0.2.2:8000/media"
     rate_limit_ip_per_min: int = 120
+    # Proxies in front of the app that each append one X-Forwarded-For entry (SECURITY_AUDIT H1). 0 = ignore the
+    # header and use the TCP peer (local runs). Render: 1, the last entry, which its proxy appends.
+    trusted_proxy_hops: int = 0
 
     # Chat (CONTRACTS 4, 11, 16). Keys only from the environment / backend/.env; a provider with no key is skipped.
     openrouter_api_key: str = ""

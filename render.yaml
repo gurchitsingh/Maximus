@@ -16,8 +16,10 @@ services:
     rootDir: backend
     # Neon's DIRECT url (DATABASE_URL_DIRECT) is used by Alembic only; the app itself uses the pooled DATABASE_URL.
     buildCommand: pip install -r requirements.txt && alembic upgrade head
-    # One worker only: the rate limits live in memory. --proxy-headers so client IPs are real, not Render's proxy.
-    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT --proxy-headers --forwarded-allow-ips="*"
+    # One worker only: the rate limits live in memory. --no-proxy-headers: uvicorn must not take the client IP
+    # from X-Forwarded-For (with "*" it took the leftmost entry, which the client chooses: SECURITY_AUDIT H1).
+    # The app reads the header itself, trusting only the last TRUSTED_PROXY_HOPS entries (below).
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT --no-proxy-headers
     healthCheckPath: /healthz
     autoDeploy: false          # deploy from the dashboard (or a deploy hook) after tests are green
     envVars:
@@ -27,6 +29,8 @@ services:
         value: production
       - key: SERVE_DRAFTS
         value: "false"
+      - key: TRUSTED_PROXY_HOPS        # the last X-Forwarded-For entry (Render's proxy). UNVERIFIED: Render's
+        value: "1"                     # docs do not say how it sets the header; check DEPLOY.md "Client IP"
       - key: DATABASE_URL            # Neon POOLED url, sslmode=require
         sync: false
       - key: DATABASE_URL_DIRECT     # Neon DIRECT url, sslmode=require
