@@ -219,3 +219,18 @@ def test_m3_global_mail_budget_drops_mail_and_warns(client, outbox, monkeypatch,
             assert client.post("/v1/auth/forgot-password", json={"email": f"user{i}@example.com"}).status_code == 202
     assert [m.to for m in outbox.mails] == ["user0@example.com", "user1@example.com"]
     assert "mail daily budget reached" in caplog.text and "user2" not in caplog.text
+
+
+# ---------- L6: history past retention is never served, even before a purge ----------
+
+def test_l6_expired_history_is_not_served_or_used_as_context(chat, monkeypatch):
+    from app.services.chat import usage
+    monkeypatch.setattr(usage, "_last_purge", chat.now.date())  # no purge has run (lazy or job)
+    chat.seed_history([("user", "old question"), ("assistant", "old answer")], start=chat.now - timedelta(days=6))
+    chat.seed_history([("user", "new question"), ("assistant", "new answer")], start=chat.now - timedelta(hours=1))
+    page = chat.client.get("/v1/me/chat/roman-history", headers=chat.headers).json()
+    assert [m["text"] for m in page["messages"]] == ["new question", "new answer"] and page["has_more"] is False
+    assert chat.post().status_code == 200
+    sent = repr(chat.fake.calls[-1][1])
+    assert "new question" in sent and "old question" not in sent
+    assert ("user", "old question", None) in chat.stored()  # still in the table until the purge deletes it

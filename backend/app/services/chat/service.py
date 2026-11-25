@@ -101,7 +101,7 @@ def handle(db: Session, title_id: str, raw_body: bytes, client_ip: str, provider
         # 5 Context, 6 Prompt
         context, in_context = build_context(title, req.message, settings.chat_context_chars)
         system = system_prompt(title["name"], context, CANARY)
-        turns = build_turns(history.recent(db, user_id, title_id), req.message)
+        turns = build_turns(history.recent(db, user_id, title_id, now), req.message)
         # 7 Providers, in order; all failed -> resting
         raw = None
         for p in providers:
