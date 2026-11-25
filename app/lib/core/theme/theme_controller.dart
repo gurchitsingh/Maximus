@@ -74,6 +74,10 @@ class ThemeSettingsController extends Notifier<ThemeSettings> {
   /// After "Clear my data": the stored values were reset to the defaults.
   void reset() => state = const ThemeSettings();
 
+  /// Sync pulled new stored values (S15): follow them without writing
+  /// them back.
+  void restore(ThemeSettings s) => state = s;
+
   void setTextSize(MxTextSize s) {
     state = state.copyWith(textSize: s);
     ref.read(settingsWriterProvider)?.write(ThemeSettings.textSizeKey, s.name);

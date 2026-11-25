@@ -83,7 +83,11 @@ void main() {
     await tapAndSettle(tester, find.bySemanticsLabel('Like'));
     expect(find.text('How does it look?'), findsOneWidget);
     expect(
-      await AppHarness.run(tester, h.db.select(h.db.ratings).get),
+      // A removed rating is a tombstone until synced (CONTRACTS 15.5).
+      await AppHarness.run(
+        tester,
+        (h.db.select(h.db.ratings)..where((t) => t.deleted.equals(false))).get,
+      ),
       isEmpty,
     );
 

@@ -244,3 +244,27 @@ Non-obvious choices behind `docs/CONTRACTS.md`. Three lines each: the decision, 
 - **Decision:** Verify-email and resend-verification are removed (routes, web page, mail, `verify` token purpose, resend limiter). Create account asks email, password and confirm password (the match is checked in the app); a valid email and a passing password create the account and return tokens at once. Sign in takes email and password; every wrong credential gives "Wrong email or password". `users.email_verified` stays in the table but is unused and no longer in the `User` JSON. Kept: Google sign-in, forgot and reset password (needs an email provider such as Resend in production), Argon2, rate limits. Supersedes the verification parts of CONTRACTS 14.1 and refines D45.
 - **Why:** The owner wants a simpler sign-up with no mail step.
 - **Gave up:** Proof that an email belongs to its owner. Anyone can register with someone else's address. Mitigations: a Google ID token with a verified email matching a password account takes the account and drops the password (D45); rate limits stay; nothing sensitive is sent to an address, and reset and deletion links go only to the address on file.
+## D49. Sync times are stored in milliseconds; edits never go back in time (2026-11-25)
+- **Decision:** The drift `updated_at` sync column is an integer of UTC milliseconds (drift's own DateTime storage is whole seconds); v1's `feed_state.updated_at` was converted. A local edit is stamped `max(now, previous stamp + 1 ms)`.
+- **Why:** The server compares milliseconds. With seconds, a second edit in the same second as a sync could tie with the first and be reverted by the server's copy. The +1 ms rule means a phone whose clock moved backwards still lets the user's latest tap win on that row.
+- **Gave up:** Nothing visible. The other time columns stay in seconds.
+
+## D50. Migrated settings fill an empty account but never overwrite it (2026-11-25)
+- **Decision:** In the v1 to v2 migration, settings rows (which have no time column) get `updated_at` = the epoch; only values that differ from the default are dirty. Seeded defaults are always clean and stamped at the epoch. Every other migrated row follows CONTRACTS 15.5 (its own time column, dirty).
+- **Why:** A phone that used the app before accounts must not push "theme: dark" over the theme the user chose on another device, but a value it set itself should reach an account that has none.
+- **Gave up:** A pre-account setting loses to any value the account already has, even an older one.
+
+## D51. Sign-out pushes first; offline it warns with a count; a different account wipes first (2026-11-25)
+- **Decision:** Sign out pushes unsynced rows before the wipe. If some are still unsynced (offline), the confirm says "N changes not synced yet will be lost" and the button reads "Sign out anyway". `sync_state.user_id` records whose data is on the phone; if a different account signs in (possible after a refused refresh, which keeps data per 14.5), the phone's user tables are wiped before the first push.
+- **Why:** Never lose data silently, and never upload one person's study data into another person's account.
+- **Gave up:** In the refused-refresh case, unsynced changes of the previous account are lost when someone else signs in.
+
+## D52. A fresh device decides onboarding after the first pull; picks count as done (2026-11-25)
+- **Decision:** Until the first sync on this device succeeds, the router treats onboarding as done (the user waits on Home, not in onboarding). After that pull, if the account has any onboarding picks but `onboarding_done` is not `true`, the app sets it to `true` (and syncs it). Offline first sign-in: the pull fails, so onboarding is decided from local data.
+- **Why:** CONTRACTS 14.5 decides by the pulled setting; the S15 prompt also asks to skip onboarding when picks exist. Doing both covers accounts whose setting never synced.
+- **Gave up:** A brief Home view before onboarding on a brand-new account (onboarding is not built yet, S5).
+
+## D53. Sync triggers and backoff (2026-11-25)
+- **Decision:** One run at a time; a trigger during a run makes one more run after it. Triggers: sign-in and app start, app resume, network regained (`connectivity_plus`), 5 s after the last local write (only if something is dirty), every 15 minutes, and "Sync now" in Settings. Failures back off 30 s, 2 min, then 10 min as the cap; sign-in, app start, network regained and "Sync now" skip the wait. A 401 after the client's one refresh is not retried. Rejected records (`invalid_data` and so on) stop being sent.
+- **Why:** CONTRACTS 15.5 plus the S15 prompt (resume and manual). Debounce plus single-flight keeps under the server's 60 pushes per minute.
+- **Gave up:** Instant sync of every tap.

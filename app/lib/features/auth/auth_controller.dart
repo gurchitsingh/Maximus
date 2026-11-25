@@ -9,6 +9,7 @@ import '../../core/theme/theme_controller.dart';
 import '../../data/api/api_error.dart';
 import '../../data/api/auth_tokens.dart';
 import '../../data/providers.dart';
+import '../../data/sync/sync_providers.dart';
 import '../reader/read_aloud.dart';
 import 'auth_api.dart';
 import 'auth_models.dart';
@@ -154,9 +155,11 @@ class AuthController extends Notifier<AuthState> {
   }
 
   Future<void> _endSession() async {
+    // No sync may write or push while (or after) the data is wiped.
+    await ref.read(syncServiceProvider).stop();
     await ref.read(googleAuthProvider).signOut();
     await ref.read(readAloudProvider.notifier).stop();
-    await ref.read(databaseProvider).clearMyData();
+    await ref.read(databaseProvider).wipeUserData();
     ref.read(themeSettingsProvider.notifier).reset();
     await _tokens.clear();
     state = const SignedOut();

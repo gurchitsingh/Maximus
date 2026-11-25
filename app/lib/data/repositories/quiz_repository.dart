@@ -1,5 +1,6 @@
 // Quiz state on the device (CONTRACTS 5.1, 7.1): `quiz_seen` and
-// `quiz_results`. Uses the v1 tables directly, so no schema or DAO change.
+// `quiz_results`. Uses the tables directly. Sync (S15, CONTRACTS 15.5):
+// results get a UUID and are dirty until pushed; reads skip tombstones.
 import 'dart:convert';
 import 'dart:math';
 
@@ -8,6 +9,7 @@ import 'package:drift/drift.dart';
 import '../../domain/quiz/quiz_picker.dart';
 import '../../domain/quiz/quiz_scoring.dart';
 import '../db/app_database.dart';
+import '../db/daos/settings_dao.dart' show newInstallId, stampAfter;
 import '../models/title.dart';
 
 class QuizRepository {
@@ -64,6 +66,8 @@ class QuizRepository {
           wrongIds: jsonEncode(attempt.wrongIds),
           contentVersion: contentVersion,
           takenAt: db.clock(),
+          syncId: Value(newInstallId()),
+          updatedAt: Value(stampAfter(db.clock(), null)),
         ),
       );
 
@@ -73,19 +77,24 @@ class QuizRepository {
     if (id != null) {
       final row =
           await (db.select(db.quizResults)
-                ..where((t) => t.id.equals(id) & t.titleId.equals(titleId)))
+                ..where(
+                  (t) =>
+                      t.id.equals(id) &
+                      t.titleId.equals(titleId) &
+                      t.deleted.not(),
+                ))
               .getSingleOrNull();
       if (row != null) return row;
     }
     return (db.select(db.quizResults)
-          ..where((t) => t.titleId.equals(titleId))
+          ..where((t) => t.titleId.equals(titleId) & t.deleted.not())
           ..orderBy([(t) => OrderingTerm.desc(t.id)])
           ..limit(1))
         .getSingleOrNull();
   }
 
   Stream<List<QuizResultRow>> watchResults() =>
-      db.select(db.quizResults).watch();
+      (db.select(db.quizResults)..where((t) => t.deleted.not())).watch();
 }
 
 extension QuizResultIds on QuizResultRow {

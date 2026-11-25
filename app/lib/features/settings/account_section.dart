@@ -11,6 +11,9 @@ import '../../core/theme/typography.dart';
 import '../../core/widgets/widgets.dart';
 import '../../data/api/api_client.dart' show apiBaseUrl;
 import '../../data/api/api_error.dart';
+import '../../data/providers.dart' show databaseProvider;
+import '../../data/sync/sync_providers.dart';
+import '../../data/sync/sync_service.dart';
 import '../auth/auth_controller.dart';
 import '../auth/auth_messages.dart';
 import '../auth/auth_models.dart';
@@ -65,6 +68,7 @@ class _AccountSectionState extends ConsumerState<AccountSection> {
             label: 'Email',
             value: user.email ?? user.displayName ?? 'Signed in',
           ),
+          const SyncRow(),
           SettingsRow(
             label: 'Sign out',
             showArrow: true,
@@ -230,21 +234,89 @@ Future<bool> _confirm(
   return ok ?? false;
 }
 
-/// Confirms, then signs out (14.5). The router goes to Welcome.
+/// Sign out (14.5, 15.5): unsynced changes are pushed first; if that
+/// fails (offline) the confirm says how many will be lost. Only then the
+/// session ends and this phone's copy is wiped. The router goes to Welcome.
 Future<bool> signOutFlow(BuildContext context, WidgetRef ref) async {
-  final ok = await _confirm(
-    context,
-    title: 'Sign out?',
-    body:
-        'Your study list, ratings, progress and quiz scores are removed '
-        'from this phone. Lessons you have opened stay saved so the app '
-        'still works offline.',
-    keep: 'Stay signed in',
-    go: 'Sign out',
-  );
+  var pending = await unsyncedChanges(ref);
+  if (pending > 0) {
+    await ref.read(syncServiceProvider).flush();
+    pending = await unsyncedChanges(ref);
+  }
+  if (!context.mounted) return false;
+  final ok = pending == 0
+      ? await _confirm(
+          context,
+          title: 'Sign out?',
+          body:
+              'Your study list, ratings, progress and quiz scores are saved '
+              'to your account and removed from this phone. Sign in again '
+              'to get them back.',
+          keep: 'Stay signed in',
+          go: 'Sign out',
+        )
+      : await _confirm(
+          context,
+          title: 'Sign out?',
+          body:
+              '${pending == 1 ? '1 change' : '$pending changes'} not synced '
+              'yet will be lost. Connect to the internet and stay signed '
+              'in to keep ${pending == 1 ? 'it' : 'them'}.',
+          keep: 'Stay signed in',
+          go: 'Sign out anyway',
+        );
   if (!ok) return false;
   await ref.read(authControllerProvider.notifier).signOut();
   return true;
+}
+
+/// "Sync now" with the last-synced time (15.5). Offline only changes the
+/// text: sync never shows an error.
+class SyncRow extends ConsumerStatefulWidget {
+  const SyncRow({super.key});
+
+  @override
+  ConsumerState<SyncRow> createState() => _SyncRowState();
+}
+
+class _SyncRowState extends ConsumerState<SyncRow> {
+  bool _tapped = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final status = ref.watch(syncStatusProvider);
+    final last = ref.watch(lastSyncedAtProvider).value;
+    final now = ref.watch(databaseProvider).clock();
+    final String value;
+    if (status.running) {
+      value = 'Syncing...';
+    } else if (_tapped && status.last == SyncResult.offline) {
+      value = 'Offline. Will sync later';
+    } else if (last == null) {
+      value = 'Not synced yet';
+    } else {
+      value = 'Last synced ${syncedAgo(last, now)}';
+    }
+    return SettingsRow(
+      label: 'Sync now',
+      value: value,
+      onTap: status.running
+          ? null
+          : () {
+              setState(() => _tapped = true);
+              ref.read(syncServiceProvider).flush();
+            },
+    );
+  }
+}
+
+/// "just now", "5 min ago", "3 h ago", "2 days ago".
+String syncedAgo(DateTime at, DateTime now) {
+  final d = now.toUtc().difference(at.toUtc());
+  if (d.inMinutes < 1) return 'just now';
+  if (d.inHours < 1) return '${d.inMinutes} min ago';
+  if (d.inDays < 1) return '${d.inHours} h ago';
+  return d.inDays == 1 ? '1 day ago' : '${d.inDays} days ago';
 }
 
 Future<void> showDeleteAccountDialog(BuildContext context) => showDialog<void>(
@@ -310,11 +382,17 @@ class _DeleteAccountDialogState extends ConsumerState<DeleteAccountDialog> {
       _busy = true;
       _error = null;
     });
+    // The root messenger outlives this dialog and the route change.
+    final messenger = ScaffoldMessenger.of(context);
     try {
+      // Throws, and wipes nothing, unless the server deleted the account.
       await ref
           .read(authControllerProvider.notifier)
           .deleteAccount(password: password);
       if (mounted) Navigator.of(context).pop();
+      messenger.showSnackBar(
+        const SnackBar(content: Text('Your account and data are deleted.')),
+      );
     } catch (e) {
       if (!mounted) return;
       setState(

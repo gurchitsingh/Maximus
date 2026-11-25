@@ -129,6 +129,10 @@ void main() {
     );
     await db.clearMyData();
     expect(await db.select(db.quizSeen).get(), isEmpty);
-    expect(await db.select(db.quizResults).get(), isEmpty);
+    // Results become tombstones until synced (CONTRACTS 15.5).
+    expect(
+      await (db.select(db.quizResults)..where((t) => t.deleted.equals(false))).get(),
+      isEmpty,
+    );
   });
 }

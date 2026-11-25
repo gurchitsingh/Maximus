@@ -17,6 +17,8 @@ analyzer:
     strict-raw-types: true
   exclude:
     - "**/*.g.dart"
+    # drift_dev schema generate output (migration test helpers).
+    - test/generated_migrations/**
     - build/**
     - android/**
 
