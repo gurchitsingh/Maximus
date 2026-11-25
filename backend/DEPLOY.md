@@ -99,7 +99,7 @@ curl -i -X POST https://maximus-api.onrender.com/v1/chat -H "Content-Type: appli
 # 401 or 422, never 500
 ```
 
-Then register a test account from the app, check the verification mail arrives and its link opens, and delete the
+Then register a test account from the app, sign in, use "Forgot password" to check the reset mail arrives and its link opens, and delete the
 account from Settings. In Render Logs there must be no traceback and no `token=` value (they are redacted).
 
 ## 7. Content
@@ -168,7 +168,7 @@ Fixed in this branch (tests in `backend/tests/test_hardening.py`):
   pages keep their own CSP.
 - CORS: off unless `CORS_ORIGINS` is set (the Android app needs none); a `*` is ignored in production; allowed
   request headers are `Authorization`, `Content-Type` and `If-None-Match` instead of everything.
-- Log redaction: uvicorn's access log wrote the `?token=...` of verify, reset and delete links to Render's logs.
+- Log redaction: uvicorn's access log wrote the `?token=...` of reset and delete links to Render's logs.
   The value is now replaced with `[redacted]`. Already true: chat text and passwords are never logged, and the
   DEV MAIL line with an address exists only for `EMAIL_PROVIDER=console`.
 

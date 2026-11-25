@@ -1,5 +1,5 @@
 """Public web pages (CONTRACTS 17): /privacy, the account-deletion flow, and the pages email links open
-(/verify-email, /reset-password). Plain HTML templates from app/templates/, no JavaScript, no app needed.
+(/reset-password). Plain HTML templates from app/templates/, no JavaScript, no app needed.
 
 Links in emails never act on GET (mail scanners open links): each page shows one button that POSTs the token.
 Every page: no caching, no referrer (the URL carries a token), no framing, a CSP with no scripts.
@@ -141,31 +141,6 @@ async def delete_confirm(request: Request, db: Session = Depends(get_db)):
 
 
 # ---------- email links ----------
-
-@web.get("/verify-email")
-def verify_page(token: str = Query("", max_length=200), db: Session = Depends(get_db)):
-    try:
-        service.use_email_token(db, token, "verify", tokens.utcnow(), consume=False)
-    except ApiError:
-        return message(*INVALID_LINK, status=400)
-    return render("Confirm your email", "confirm.html", heading="Confirm your email",
-                  text="Tap the button to confirm this address for your Maximus account.",
-                  action="/verify-email", token=token, button="Confirm my email", button_class="")
-
-
-@web.post("/verify-email")
-async def verify_submit(request: Request, db: Session = Depends(get_db)):
-    try:
-        limits.web_form_ip.check(client_ip(request))
-    except ApiError:
-        return _too_many()
-    fields = await form(request)
-    try:
-        await run_in_threadpool(service.verify_email, db, fields.get("token", ""), tokens.utcnow())
-    except ApiError:
-        return message(*INVALID_LINK, status=400)
-    return message("Email confirmed", "Email confirmed", "Thank you. You can go back to the app.")
-
 
 @web.get("/reset-password")
 def reset_page(token: str = Query("", max_length=200), db: Session = Depends(get_db)):

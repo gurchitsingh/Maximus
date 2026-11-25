@@ -7,7 +7,7 @@ These override anything below that conflicts.
 - **Auth:** sign in with Google and email and password. Tokens stored in secure storage (flutter_secure_storage). New packages to add to CONTRACTS 8.1: google_sign_in, flutter_secure_storage.
 - **Sync layer (offline-first):** the drift database stays the working copy. A sync service pushes and pulls ratings, study list, progress, quiz results, feed state, settings and chat history in the background when online (last-write-wins by updated_at, deletes as tombstones). Add updated_at and a deleted flag to the synced tables via a drift migration.
 - **Navigation:** bottom nav is Home, Library, Feed, Settings. The Study screen becomes the first section of Library. The router redirects to Sign in when signed out.
-- **New features:** Sign in and Create account screens, onboarding in the new order, Fact of the day card (bundled list of about 100 facts, picked by date), account deletion and sign out in Settings, privacy policy link.
+- **New features:** Sign in and Create account screens (email, password, confirm password; no verify-email screen or route, D48), onboarding in the new order, Fact of the day card (bundled list of about 100 facts, picked by date), account deletion and sign out in Settings, privacy policy link.
 - **Posters:** SVG posters (day and evening versions) bundled as assets or served from the backend; decide in the design-delta job.
 - **Already built and kept:** match %, title sheet, reader, quiz, feed, settings, voice sheet, confetti drawn with CustomPainter.
 

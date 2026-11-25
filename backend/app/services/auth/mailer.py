@@ -26,7 +26,7 @@ class Mail:
     to: str
     subject: str
     text: str
-    purpose: str  # verify | reset | reset_google | delete (for logs and tests)
+    purpose: str  # reset | reset_google | delete (for logs and tests)
 
 
 class Mailer(Protocol):
@@ -94,12 +94,6 @@ def deliver(mailer: Mailer, mail: Mail) -> None:
 
 def _link(path: str, token: str) -> str:
     return f"{settings.app_base_url.rstrip('/')}{path}?token={token}"
-
-
-def verify_mail(to: str, token: str) -> Mail:
-    return Mail(to, "Confirm your email for Maximus",
-                "Confirm your email address for Maximus by opening this link (valid for 24 hours):\n\n"
-                f"{_link('/verify-email', token)}\n\nIf you did not create an account, ignore this email.", "verify")
 
 
 def reset_mail(to: str, token: str) -> Mail:

@@ -12,7 +12,7 @@ from app.errors import ApiError
 ISSUER = "maximus"
 ACCESS_TTL_S = 900
 REFRESH_TTL = timedelta(days=60)
-EMAIL_TTL = {"verify": timedelta(hours=24), "reset": timedelta(hours=1), "delete": timedelta(hours=1)}
+EMAIL_TTL = {"reset": timedelta(hours=1), "delete": timedelta(hours=1)}
 SKEW_S = 60
 
 

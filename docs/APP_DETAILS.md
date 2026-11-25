@@ -9,7 +9,7 @@ These override anything below that conflicts.
 "V1" now means a fully working app that serves the aim (study history, scroll facts). Extras come later.
 
 Decided by the user:
-- **Accounts are in V1 and sign-in is required. No guest mode.** Sign in with Google, or with email and password. Real users, so data is stored on our server.
+- **Accounts are in V1 and sign-in is required. No guest mode.** Sign in with Google, or with email and password (no email verification, D48). Real users, so data is stored on our server.
 - **The server stores:** ratings, study list, lesson progress, quiz scores, feed saves and likes, onboarding picks and settings, and chat history.
 - **Offline-first stays.** The phone is the working copy; the server is the backup and syncs in the background. Reading, quizzes and the feed keep working offline.
 - **Study list lives inside Library** (design). Bottom tabs: Home, Library, Feed, Settings. No separate Study tab.
@@ -50,7 +50,7 @@ The final list lives in **TOPICS.md** (single source of truth): 28 topics in fiv
 Later (not launch): War strategy, Psychology, Geography, General knowledge.
 
 ## 5. Sections of the app
-1. **Sign in / Create account**: Google, or email and password. Required before onboarding.
+1. **Sign in / Create account**: Google, or email and password. Create account asks email, password and confirm password and signs the user in at once; there is no email verification (D48). Required before onboarding.
 2. **Library**: Netflix-style rows (Ancient, Revolutions, Wars, India...). The **study list is the first section under the hero**. Each title is a poster with its own title styling and a picture. Tap: detail sheet with short brief, match %, rate control, "Add to study list".
 3. **Match %**: "You'll like this: 87%". Computed on the phone from your picked interests, titles you added, lessons you finished and your ratings. Rough at first; sharper as you rate.
 4. **Rate it**: thumbs up / okay / thumbs down on any title. Feeds match %. (Design: up raises other titles in the group, down lowers them; exact numbers come from CONTRACTS section 6.)

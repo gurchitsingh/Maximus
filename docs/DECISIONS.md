@@ -1,6 +1,6 @@
 # DECISIONS (S3, 2026-11-22)
 
-Non-obvious choices behind `docs/CONTRACTS.md`. Three lines each: the decision, why, and what we gave up. Owner decisions from DESIGN_SPEC section 12 (v3 onboarding, TOPICS.md catalogue, public repo) are not repeated here. **D34 to D45 (24 to 25 Nov 2026) add accounts, sync, Postgres, hosting and the v4 design; they supersede D24 and the "no accounts" rule. Items marked UNCONFIRMED are defaults awaiting the owner (D35, D37, the 30 days in D39, bundling in D42).** Open items are CONTRACTS section 13.
+Non-obvious choices behind `docs/CONTRACTS.md`. Three lines each: the decision, why, and what we gave up. Owner decisions from DESIGN_SPEC section 12 (v3 onboarding, TOPICS.md catalogue, public repo) are not repeated here. **D34 to D48 (24 to 25 Nov 2026) add accounts, sync, Postgres, hosting and the v4 design; they supersede D24 and the "no accounts" rule. Items marked UNCONFIRMED are defaults awaiting the owner (D35, D37, the 30 days in D39, bundling in D42).** Open items are CONTRACTS section 13.
 
 ## D1. Chat replies are whole, not streamed
 - **Decision:** `POST /v1/titles/{id}/chat` returns one JSON reply after the server has the complete answer.
@@ -226,7 +226,7 @@ Non-obvious choices behind `docs/CONTRACTS.md`. Three lines each: the decision, 
 - **Gave up:** Instant first requests (about 15 minutes idle puts it to sleep) and a persistent disk. **Open:** `backend/media/` images cannot live on that disk; the owner must pick object storage (or bundle more art) before the deploy session S22 (CONTRACTS 18, Q9).
 
 ## D45. Google sign-in removes an unverified password (2026-11-25)
-- **Decision:** If an account was created with an email and password and that email was never verified, the first Google sign-in with the same address (Google reports it verified) links the Google identity and removes the password. A verified password account keeps its password when Google is linked (CONTRACTS 14.3).
+- **Decision:** If an account has a password and Google reports the same address as verified, the first Google sign-in links the Google identity and removes the password (CONTRACTS 14.3). Since D48 no password account is ever verified, so this applies to every password account.
 - **Why:** Without this, someone could sign up with an address that is not theirs and keep a working password; when the real owner later signed in with Google the accounts would be linked and the attacker could still sign in. Only the real owner can prove the address through Google.
 - **Gave up:** A person who signed up by email, never verified it, and later uses Google with that address must use "Forgot password" to set a new password before email sign-in works again.
 
@@ -239,3 +239,8 @@ Non-obvious choices behind `docs/CONTRACTS.md`. Three lines each: the decision, 
 - **Decision:** `app/assets/posters/manifest.json` maps each title id to an object `{mode, bg, tint, lettering, lines}`, not a bare mode string. `bg`, `tint`, `lettering` and `lines` are copied from `backend/data/titles`. Where the prototype differs, the catalogue wins.
 - **Why:** The poster fallback tile and the lettering need bg, tint and lines even when the file is missing, and the app should not need the catalogue loaded to draw a poster.
 - **Gave up:** Values live in two places (catalogue and manifest) and can drift; a future check should compare them.
+
+## D48. No email verification; sign-up signs the user in (2026-11-25)
+- **Decision:** Verify-email and resend-verification are removed (routes, web page, mail, `verify` token purpose, resend limiter). Create account asks email, password and confirm password (the match is checked in the app); a valid email and a passing password create the account and return tokens at once. Sign in takes email and password; every wrong credential gives "Wrong email or password". `users.email_verified` stays in the table but is unused and no longer in the `User` JSON. Kept: Google sign-in, forgot and reset password (needs an email provider such as Resend in production), Argon2, rate limits. Supersedes the verification parts of CONTRACTS 14.1 and refines D45.
+- **Why:** The owner wants a simpler sign-up with no mail step.
+- **Gave up:** Proof that an email belongs to its owner. Anyone can register with someone else's address. Mitigations: a Google ID token with a verified email matching a password account takes the account and drops the password (D45); rate limits stay; nothing sensitive is sent to an address, and reset and deletion links go only to the address on file.

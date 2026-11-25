@@ -13,7 +13,7 @@ These override anything below that conflicts.
 - **Chat history is stored** per user per title, kept 5 days by default, rolling per message (D46), deletable by the user. This reverses the v2 rule "log failures, not conversations". Chat text is personal data.
 - **Account deletion:** an authenticated delete endpoint plus a public web page, as Play Store requires. Deleting removes all user rows.
 - **Offline-first sync:** the phone is the working copy. Sync is last-write-wins per record with an updated_at timestamp; deletes are tombstones. Keep it simple.
-- **Security:** rate limits on auth endpoints, password hashing (argon2 or bcrypt), email verification and password reset for email accounts, short-lived access tokens plus refresh tokens, no secrets in the public repo. Run the Cloudflare security-audit skill and Strix before launch.
+- **Security:** rate limits on auth endpoints, password hashing (argon2 or bcrypt), password reset for email accounts (no email verification, D48), short-lived access tokens plus refresh tokens, no secrets in the public repo. Run the Cloudflare security-audit skill and Strix before launch.
 - **Per-install chat caps stay** (20 per install, 200 global per UTC day); add a per-account cap once accounts exist.
 
 ---
@@ -35,7 +35,7 @@ Python + FastAPI, SQLite (dev) / Postgres (prod), SQLAlchemy + Alembic, httpx. H
 (V2) lens_texts: id, title_id, country, period, lens, body, reviewed
 
 ## Data model (users, new in v3)
-- users: id, email (nullable for Google-only), password_hash (nullable), google_sub (nullable), email_verified, created_at, deleted_at
+- users: id, email (nullable for Google-only), password_hash (nullable), google_sub (nullable), email_verified (unused since D48), created_at, deleted_at
 - refresh_tokens: id, user_id, token_hash, expires_at, revoked_at
 - user_ratings, user_study_list, user_progress, user_quiz_results, user_feed_state, user_settings (incl. onboarding picks): each keyed by user_id with updated_at and a deleted flag for sync
 - user_chat_messages: id, user_id, title_id, role, text, created_at (purged after retention)
@@ -51,7 +51,7 @@ Python + FastAPI, SQLite (dev) / Postgres (prod), SQLAlchemy + Alembic, httpx. H
 Note: the list route is /catalogue (not /titles), and quiz and lessons come inside the title payload. CONTRACTS is authoritative.
 
 ## API (/v1) planned for v3 (S17)
-- Auth: sign up, sign in (email), sign in with Google (ID token), refresh, sign out, verify email, forgot and reset password
+- Auth: sign up, sign in (email), sign in with Google (ID token), refresh, sign out, forgot and reset password (no verify email, D48)
 - GET/PUT /v1/me/sync (pull and push of user data since a timestamp), or per-resource endpoints as CONTRACTS defines
 - GET /v1/me/chat/{title_id}, DELETE /v1/me/chat/{title_id}
 - DELETE /v1/me (account deletion) and a public deletion web page

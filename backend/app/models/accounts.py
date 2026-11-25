@@ -18,7 +18,7 @@ class User(Base):
     email: Mapped[str | None] = mapped_column(String(254), unique=True)  # normalised: trimmed, lowercase
     password_hash: Mapped[str | None] = mapped_column(String)
     google_sub: Mapped[str | None] = mapped_column(String(255), unique=True)
-    email_verified: Mapped[bool] = mapped_column(Boolean, default=False)
+    email_verified: Mapped[bool] = mapped_column(Boolean, default=False)  # unused since D48 (no verification)
     display_name: Mapped[str | None] = mapped_column(String(80))
     sync_seq: Mapped[int] = mapped_column(BigInteger, default=0)     # last seq handed out (15.4)
     purged_seq: Mapped[int] = mapped_column(BigInteger, default=0)   # highest seq of a purged tombstone (15.4)
@@ -40,7 +40,7 @@ class EmailToken(Base):
     __tablename__ = "email_tokens"
     id: Mapped[uuid.UUID] = mapped_column(Uuid, primary_key=True, default=uuid.uuid4)
     user_id: Mapped[uuid.UUID] = mapped_column(Uuid, ForeignKey("users.id", ondelete="CASCADE"), index=True)
-    purpose: Mapped[str] = mapped_column(String(16))  # verify | reset | delete
+    purpose: Mapped[str] = mapped_column(String(16))  # reset | delete
     token_hash: Mapped[str] = mapped_column(String(64), unique=True)
     expires_at: Mapped[datetime] = mapped_column(UTCDateTime)
     used_at: Mapped[datetime | None] = mapped_column(UTCDateTime)

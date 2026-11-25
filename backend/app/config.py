@@ -118,7 +118,7 @@ def check_startup(s: Settings) -> None:
         s.jwt_secret = secrets.token_urlsafe(48)
         log.warning("JWT_SECRET is empty: using a random per-process secret (development only)")
     if s.is_production and s.email_provider == "console":
-        log.warning("EMAIL_PROVIDER is console in production: verification, reset and deletion mails are not sent")
+        log.warning("EMAIL_PROVIDER is console in production: reset and deletion mails are not sent")
 
 
 settings = Settings()  # check_startup(settings) runs in app.main, so the ingest CLI can import this without secrets
