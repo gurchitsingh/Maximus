@@ -22,13 +22,13 @@ API_HEADERS = {
     "X-Frame-Options": "DENY",
     "Content-Security-Policy": "default-src 'none'; frame-ancestors 'none'",  # JSON API: nothing to load
 }
-WEB_PATHS = ("/privacy", "/account/", "/verify-email", "/reset-password")  # HTML pages set their own headers
+WEB_PATHS = ("/privacy", "/account/", "/reset-password")  # HTML pages set their own headers
 HSTS = "max-age=31536000; includeSubDomains"
 _TOKEN_QS = re.compile(r"([?&]token=)[^&\s\"]*")
 
 
 class RedactTokens(logging.Filter):
-    """Email links carry a one-time token in the query string (verify, reset, delete). uvicorn's access log
+    """Email links carry a one-time token in the query string (reset, delete). uvicorn's access log
     would write it to Render's logs, so the value is replaced before the record is emitted."""
 
     def filter(self, record: logging.LogRecord) -> bool:

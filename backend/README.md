@@ -23,7 +23,7 @@ Get-ChildItem data\titles\*.json | % { .venv\Scripts\python -m ingest.cli import
 - From the Android emulator the PC is **`http://10.0.2.2:8000`** (use `--host 0.0.0.0` or `127.0.0.1`; both work for the emulator).
 - Re-running `seed-samples` is safe: unchanged titles stay at the same `content_version`, a changed file bumps it.
 - Import one file: `python -m ingest.cli import data/titles/<id>.json`.
-- Dev mail is printed to the server log (`EMAIL_PROVIDER=console`): copy the link to verify an email or reset a
+- Dev mail is printed to the server log (`EMAIL_PROVIDER=console`): copy the link to reset a
   password. With no `JWT_SECRET` in dev, a random one is made per process, so sign-ins end when the server restarts.
 
 ## Content ingest (S11)
@@ -119,11 +119,10 @@ Public: `GET /healthz`, `/v1/catalogue`, `/v1/titles/{id}`, `/v1/feed?title_ids=
 ETag + `If-None-Match` (304) on catalogue, titles, credits, fonts, on-this-day. Errors always use
 `{"error": {"code", "message", "retry_after_s", "details"}}`.
 
-Accounts (no bearer): `POST /v1/auth/signup`, `signin`, `google`, `refresh`, `signout`, `verify-email`,
-`forgot-password`, `reset-password`. Bearer (`Authorization: Bearer <access_token>`): `POST
-/v1/auth/resend-verification`, `GET /v1/me`, `DELETE /v1/me`, `GET`/`POST /v1/me/sync`,
+Accounts (no bearer): `POST /v1/auth/signup`, `signin`, `google`, `refresh`, `signout`,
+`forgot-password`, `reset-password`. Bearer (`Authorization: Bearer <access_token>`): `GET /v1/me`, `DELETE /v1/me`, `GET`/`POST /v1/me/sync`,
 `POST /v1/titles/{id}/chat`, `GET`/`DELETE /v1/me/chat/{title_id}`, `DELETE /v1/me/chat`.
-Web pages (HTML): `/privacy`, `/account/delete`, `/verify-email`, `/reset-password`.
+Web pages (HTML): `/privacy`, `/account/delete`, `/reset-password`.
 
 Production serves only `status: published` titles (and reviewed quiz/facts). `SERVE_DRAFTS=true` serves everything.
 
@@ -193,10 +192,10 @@ Invoke-RestMethod -Method Post -Uri http://127.0.0.1:8000/v1/titles/roman-histor
 - Refresh tokens last 60 days and rotate on every use. Presenting a revoked one revokes every session of that
   user (`token_reused`). A password reset also revokes every session.
 - Google sign-in finds the account by Google id, else links by the verified email, else creates one. Linking to
-  an account whose email was never verified **drops its password**: whoever set it never proved they own the
-  address (pre-hijacking guard).
+  a password account **drops its password**: sign-up does not verify the address (D48), so whoever set it never
+  proved they own it (pre-hijacking guard, D45).
 - Limits (in memory, per process): 10/min per IP on every `/v1/auth/*` call, 5 failed sign-ins per 15 minutes
-  per email, 3 reset or verification mails per hour per email, 1 resend per minute per account.
+  per email, 3 reset mails per hour per email.
 - Mail goes out after the response (a background task), so timing does not show whether an address has an
   account; failures are logged without the address and dropped.
 
@@ -219,7 +218,7 @@ skip a record. 50 000 live records per user (`SYNC_RECORD_QUOTA`). Tombstones ar
   exists, we sent a link" → a one-hour link to `/account/delete/confirm`, which shows a **Delete my account**
   button; only the POST deletes (mail scanners open links). 3 requests per hour per email, 10 per minute per IP.
 - `GET /privacy`: the policy (draft wording, for the owner to review before launch).
-- `/verify-email` and `/reset-password` are the pages the email links open (button or form, then POST).
+- `/reset-password` is the page the email link opens (button or form, then POST).
 - Templates are plain HTML in `app/templates/`; pages carry no scripts, a strict CSP, `Referrer-Policy:
   no-referrer` (the URLs carry tokens) and `Cache-Control: no-store`.
 

@@ -760,13 +760,11 @@ All under `/v1`, JSON, same error shape as 3.5. Auth is `Authorization: Bearer <
 
 | Method | Path | Body | 200 / 201 body | Auth | Notes |
 |---|---|---|---|---|---|
-| POST | `/v1/auth/signup` | `{email, password, display_name?}` | 201 `AuthResult` | none | Email normalised (trim, lowercase). Sends a verification email. Signed in at once, `email_verified: false` |
+| POST | `/v1/auth/signup` | `{email, password, display_name?}` | 201 `AuthResult` | none | Email normalised (trim, lowercase). Signed in at once: returns tokens and sends no email (D48). "Confirm password" is checked by the app only |
 | POST | `/v1/auth/signin` | `{email, password}` | 200 `AuthResult` | none | Same `invalid_credentials` error for unknown email and wrong password |
 | POST | `/v1/auth/google` | `{id_token}` | 200 `AuthResult` | none | Google ID token from `google_sign_in`; creates the account on first use (14.3) |
 | POST | `/v1/auth/refresh` | `{refresh_token}` | 200 `AuthResult` (no `user` change) | none | Rotation: the old refresh token is revoked, a new pair is returned |
 | POST | `/v1/auth/signout` | `{refresh_token}` | 204 | none | Revokes that token. Idempotent: an unknown or revoked token is still 204 |
-| POST | `/v1/auth/verify-email` | `{token}` | 204 | none | Token from the email link. One use |
-| POST | `/v1/auth/resend-verification` | none | 202 | bearer | **Needs `Authorization: Bearer <access token>`**: without it the answer is 401 `unauthorized`, because it resends to the signed-in account's own email (no email in the body). At most 1 per 60 s per account and 3 per hour per email. Already verified: still 202, nothing is sent |
 | POST | `/v1/auth/forgot-password` | `{email}` | 202 always | none | Never reveals whether the email exists. Google-only accounts get an email saying so |
 | POST | `/v1/auth/reset-password` | `{token, new_password}` | 204 | none | One use. Revokes every refresh token of the user |
 | GET | `/v1/me` | none | 200 `User` | bearer | |
@@ -774,7 +772,7 @@ All under `/v1`, JSON, same error shape as 3.5. Auth is `Authorization: Bearer <
 
 ```
 AuthResult = { user: User, access_token: string, refresh_token: string, expires_in: 900 }
-User       = { id: string (uuid), email: string|null, email_verified: bool, display_name: string|null,
+User       = { id: string (uuid), email: string|null, display_name: string|null,
                has_password: bool, has_google: bool, created_at: Z }
 ```
 Email-account sign-up requires `password` 10 to 128 characters; no other composition rule (length beats symbols). Passwords are never logged.
@@ -785,7 +783,6 @@ Email-account sign-up requires `password` 10 to 128 characters; no other composi
 |---|---|---|---|
 | Access | JWT HS256 signed with `JWT_SECRET`; claims `sub` (user id), `iat`, `exp`, `jti`, `iss: "maximus"` | **15 minutes** | App: memory only |
 | Refresh | Opaque, 256 random bits (base64url) | **60 days**, rolling (every refresh issues a new one with a fresh 60 days) | Server: sha256 hash only in `refresh_tokens`. App: `flutter_secure_storage` |
-| Email verification | Opaque, 256 bits | **24 hours**, one use | Server: hash in `email_tokens` |
 | Password reset | Opaque, 256 bits | **1 hour**, one use | Server: hash in `email_tokens` |
 | Account-deletion link | Opaque, 256 bits | **1 hour**, one use | Server: hash in `email_tokens` |
 
@@ -798,7 +795,7 @@ Email-account sign-up requires `password` 10 to 128 characters; no other composi
 
 - App: `google_sign_in` with `serverClientId` = the **web** OAuth client id (`GOOGLE_CLIENT_ID`, not a secret); sends `idToken`.
 - Server: verifies signature against Google's published keys (cached by `Cache-Control`), `aud == GOOGLE_CLIENT_ID`, `iss` is `accounts.google.com` or `https://accounts.google.com`, `exp` in the future, `email_verified == true`.
-- Account rules: found by `google_sub` → sign in. Else found by the verified email → **link** (set `google_sub`; the account keeps its password if it had one, except when the email was never verified: the first Google sign-in with that address then removes the password, so nobody can claim an address that is not theirs in advance, D45). Else create (`email_verified: true`, `password_hash: null`).
+- Account rules: found by `google_sub` → sign in. Else found by the verified email → **link** (set `google_sub` and remove the password if the account had one: sign-up never proves ownership of the address, so Google wins, D45 and D48). Else create (`password_hash: null`).
 - Google sign-in ships first, email and password second **(unconfirmed)**: the endpoints for both exist in S17; S18 may release the email screens one version later.
 
 ### 14.4 Errors and limits
@@ -809,7 +806,7 @@ New codes for the 3.5 table (same body shape; the app shows its own copy keyed b
 |---|---|---|
 | `unauthorized` | 401 | Missing or malformed bearer, or the access token is invalid |
 | `token_expired` | 401 | Access token past `exp`. The app refreshes once and retries |
-| `token_invalid` | 401 | Verify, reset, delete or refresh token unknown, expired or used |
+| `token_invalid` | 401 | Reset, delete or refresh token unknown, expired or used |
 | `token_reused` | 401 | Revoked refresh token presented (all of the user's tokens are now revoked) |
 | `invalid_credentials` | 401 | Wrong email or password |
 | `google_token_invalid` | 401 | Google ID token failed any check in 14.3 |
@@ -818,7 +815,7 @@ New codes for the 3.5 table (same body shape; the app shows its own copy keyed b
 | `reauth_required` | 403 | `DELETE /v1/me` for a Google account with an old access token |
 | `forbidden` | 403 | Valid token, not allowed |
 
-`rate_limited` `details.scope` gains `"account"`. Limits (in memory per process, as 3.1): all `/v1/auth/*` per IP 10 per minute; `signin` also 5 failures per 15 minutes per email (`scope: "account"`, `Retry-After` set); `forgot-password` and `resend-verification` 3 per hour per email (`resend-verification` is also bearer-only, see 14.1). Signed-in `/v1/*` reads stay 120 per minute per IP.
+`rate_limited` `details.scope` gains `"account"`. Limits (in memory per process, as 3.1): all `/v1/auth/*` per IP 10 per minute; `signin` also 5 failures per 15 minutes per email (`scope: "account"`, `Retry-After` set); `forgot-password` 3 per hour per email. Signed-in `/v1/*` reads stay 120 per minute per IP.
 
 ### 14.5 App behaviour
 
@@ -831,7 +828,7 @@ New codes for the 3.5 table (same body shape; the app shows its own copy keyed b
 | First sign-in on a phone | Pull first (15.5), then show onboarding only if the pulled `settings.onboarding_done` is not `true` |
 | Switching accounts | Sign out keeps nothing personal: it wipes every user table (15.5) but keeps `cached_docs` and `cached_titles`, so the next user starts clean and offline content survives |
 | Sign out | `POST /v1/auth/signout`, best effort (offline: clear locally anyway) |
-| Email verification banner | `email_verified: false` shows a dismissible banner in Settings with "Resend". Nothing is blocked while unverified **(unconfirmed)** |
+| Email verification | None (D48): no banner, no verify screen. Settings shows the email only |
 | Env (backend) | `JWT_SECRET`, `GOOGLE_CLIENT_ID`, `EMAIL_FROM`, `EMAIL_PROVIDER_API_KEY` (or `SMTP_*`), `APP_BASE_URL` (used in email links and the web pages), `CHAT_ACCOUNT_DAILY_CAP`, `CHAT_RETENTION_DAYS`. Names only in `.env.example` |
 
 ---
@@ -961,7 +958,7 @@ App: drift table `chat_messages` is a **read-through cache** of the last page pe
 | Pooling | Neon's pooled endpoint is PgBouncer in transaction mode: no server-side prepared statements (`prepare_threshold=None` for psycopg), small pool (`pool_size=5`, `max_overflow=0`, `pool_pre_ping=true`, `pool_recycle=300`). Neon scales to zero, so the first query after idle can take about a second: the API client timeouts must allow it |
 | Migrations | Alembic only, and only the S17 session edits migrations. Run with the host's **direct** (non-pooled) URL (`DATABASE_URL_DIRECT`, fallback `DATABASE_URL`), at deploy time, never from many workers at once |
 | SSL | `sslmode=require` in the URL |
-| New tables | `users` (`id` uuid PK, `email` unique nullable, `password_hash` nullable, `google_sub` unique nullable, `email_verified`, `display_name`, `sync_seq` BIGINT default 0, `created_at`), `refresh_tokens` (`id`, `user_id`, `token_hash` unique, `family_id`, `expires_at`, `revoked_at`, `created_at`), `email_tokens` (`id`, `user_id`, `purpose` `verify`\|`reset`\|`delete`, `token_hash` unique, `expires_at`, `used_at`), `user_records` (15.4), `user_chat_messages` (16). `chat_usage` gets a `user_id` key in place of `install_hash` (the salted install hash stays as an extra abuse signal only if S17 wants it; it is not required) |
+| New tables | `users` (`id` uuid PK, `email` unique nullable, `password_hash` nullable, `google_sub` unique nullable, `email_verified` (unused since D48), `display_name`, `sync_seq` BIGINT default 0, `created_at`), `refresh_tokens` (`id`, `user_id`, `token_hash` unique, `family_id`, `expires_at`, `revoked_at`, `created_at`), `email_tokens` (`id`, `user_id`, `purpose` `reset`\|`delete`, `token_hash` unique, `expires_at`, `used_at`), `user_records` (15.4), `user_chat_messages` (16). `chat_usage` gets a `user_id` key in place of `install_hash` (the salted install hash stays as an extra abuse signal only if S17 wants it; it is not required) |
 | Render free web service | Sleeps after about 15 minutes idle; the first request can take 30 to 60 seconds. App rules: connect timeout 60 s for the first call of a session, a friendly "Waking the server..." state, and never block offline features on it. Disk is ephemeral and wiped on redeploy |
 | **Image storage (open)** | `backend/media/` served at `/media` (Q9) **cannot live on Render's free disk**. Before S22 the owner must pick: object storage (for example Cloudflare R2 or similar), or bundling the poster art in the app (21) and keeping `/media` only for lesson images on object storage. Recorded in DECISIONS D44 as unconfirmed |
 | Secrets | Render's environment settings; never in git (11) |
@@ -990,7 +987,7 @@ Replace the route table of 8.3 with these changes:
 | `deleteAccount` | `/settings/delete-account` | New confirm screen (17) |
 
 Redirect rules (one `redirect` function, evaluated on auth and onboarding state changes): signed out and not on `/`, `/sign-in`, `/sign-up`, `/forgot-password` → `/sign-in`; signed in and on a sign-in route → `/home` or onboarding; signed in and `onboarding_done` false and not on an onboarding route → `/onboarding/theme`. Guess the year and Mystery card stay out of V1 (DESIGN_SPEC 12.2).
-Settings (rows, in order): Profile (name, email, verify banner), Taste, Theme, Text size, Voice, Clear my data, Delete all chats, Sign out, Delete my account, Credits, Privacy policy, Version.
+Settings (rows, in order): Profile (name, email), Taste, Theme, Text size, Voice, Clear my data, Delete all chats, Sign out, Delete my account, Credits, Privacy policy, Version.
 
 ---
 

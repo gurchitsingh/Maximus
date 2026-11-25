@@ -19,7 +19,7 @@ These override anything below that conflicts. Source: Claude Design export (Maxi
 Logo (split-disc mark) animates, about 1.5 s, then Sign in (first run or signed out) or Home.
 
 ## 1b. Sign in and Create account
-Google button, or email and password. Create account asks email and password, then verifies the email. Forgot password. Required before anything else.
+Google button, or email and password. Create account asks email, password and confirm password; if the email is valid, the passwords match and the password rules pass, the account is created and the user is signed in at once (no email verification, D48). Sign in takes email and password; any wrong credential says "Wrong email or password". Forgot password. Required before anything else.
 
 ## 2. Onboarding (first run only, skippable parts)
 1. **Theme and text size:** dark (default) or light, one slider.

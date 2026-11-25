@@ -53,10 +53,6 @@ class RefreshBody(_Body):
     refresh_token: str = Field(max_length=200)
 
 
-class TokenBody(_Body):
-    token: str = Field(max_length=200)
-
-
 class EmailBody(_Body):
     email: str = Field(max_length=320)
 
@@ -80,10 +76,8 @@ def _json(body: dict, status: int = 200) -> JSONResponse:
 
 
 @auth.post("/signup", status_code=201)
-def signup(body: SignUp, bg: BackgroundTasks, db: Session = Depends(get_db), m: mailer.Mailer = Depends(get_mailer)):
-    result, mails = service.signup(db, body.email, body.password, body.display_name, tokens.utcnow())
-    _send(bg, m, mails)
-    return _json(result, 201)
+def signup(body: SignUp, db: Session = Depends(get_db)):
+    return _json(service.signup(db, body.email, body.password, body.display_name, tokens.utcnow()), 201)
 
 
 @auth.post("/signin")
@@ -106,22 +100,6 @@ def refresh(body: RefreshBody, db: Session = Depends(get_db)):
 def signout(body: RefreshBody, db: Session = Depends(get_db)):
     service.signout(db, body.refresh_token, tokens.utcnow())
     return Response(status_code=204)
-
-
-@auth.post("/verify-email", status_code=204)
-def verify_email(body: TokenBody, db: Session = Depends(get_db)):
-    service.verify_email(db, body.token, tokens.utcnow())
-    return Response(status_code=204)
-
-
-@auth.post("/resend-verification", status_code=202)
-def resend_verification(bg: BackgroundTasks, user: User = Depends(current_user), db: Session = Depends(get_db),
-                        m: mailer.Mailer = Depends(get_mailer)):
-    limits.resend_per_account.check(str(user.id))
-    if user.email:
-        limits.mail_per_email.check(user.email)
-    _send(bg, m, service.resend_verification(db, user, tokens.utcnow()))
-    return Response(status_code=202)
 
 
 @auth.post("/forgot-password", status_code=202)

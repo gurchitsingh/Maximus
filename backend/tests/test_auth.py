@@ -44,16 +44,15 @@ def rows(seeded, model):
 
 # ---------- sign up ----------
 
-def test_signup_returns_auth_result_and_sends_verification(client, outbox):
+def test_signup_signs_in_at_once_and_sends_no_mail(client, outbox):
     d = signup(client, email="  Ada@Example.COM ", name="  Ada   Lovelace ")
     assert set(d) == {"user", "access_token", "refresh_token", "expires_in"} and d["expires_in"] == 900
     u = d["user"]
-    assert set(u) == {"id", "email", "email_verified", "display_name", "has_password", "has_google", "created_at"}
-    assert u["email"] == "ada@example.com" and u["email_verified"] is False and u["display_name"] == "Ada Lovelace"
+    assert set(u) == {"id", "email", "display_name", "has_password", "has_google", "created_at"}
+    assert u["email"] == "ada@example.com" and u["display_name"] == "Ada Lovelace"
     assert u["has_password"] is True and u["has_google"] is False and u["created_at"].endswith("Z")
     uuid.UUID(u["id"])
-    mail = outbox.last("verify")
-    assert mail.to == "ada@example.com" and "/verify-email?token=" in mail.text
+    assert outbox.mails == []  # D48: no verification mail
     assert client.get("/v1/me", headers=bearer(d)).json() == u
 
 
@@ -244,45 +243,6 @@ def test_signout_revokes_and_is_idempotent(client, no_ip_limit):
     err(client.post("/v1/auth/refresh", json={"refresh_token": d["refresh_token"]}), 401, "token_reused")
 
 
-# ---------- email verification ----------
-
-def test_verify_email_is_one_use(client, outbox, no_ip_limit):
-    d = signup(client)
-    token = outbox.token("verify")
-    assert client.post("/v1/auth/verify-email", json={"token": token}).status_code == 204
-    assert client.get("/v1/me", headers=bearer(d)).json()["email_verified"] is True
-    err(client.post("/v1/auth/verify-email", json={"token": token}), 401, "token_invalid")
-
-
-def test_verify_token_expires_after_24_hours(client, outbox, at):
-    signup(client)
-    at(24 * 3600 + 1)
-    err(client.post("/v1/auth/verify-email", json={"token": outbox.token("verify")}), 401, "token_invalid")
-
-
-def test_reset_token_cannot_verify_email(client, outbox, no_ip_limit):
-    signup(client)
-    client.post("/v1/auth/forgot-password", json={"email": "ada@example.com"})
-    err(client.post("/v1/auth/verify-email", json={"token": outbox.token("reset")}), 401, "token_invalid")
-
-
-def test_resend_verification(client, outbox, no_ip_limit):
-    d = signup(client)
-    err(client.post("/v1/auth/resend-verification"), 401, "unauthorized")
-    assert client.post("/v1/auth/resend-verification", headers=bearer(d)).status_code == 202
-    assert len([m for m in outbox.mails if m.purpose == "verify"]) == 2
-    r = client.post("/v1/auth/resend-verification", headers=bearer(d))
-    assert err(r, 429, "rate_limited")["details"] == {"scope": "account"}
-
-
-def test_resend_after_verified_sends_nothing(client, outbox, no_ip_limit):
-    d = signup(client)
-    client.post("/v1/auth/verify-email", json={"token": outbox.token("verify")})
-    outbox.mails.clear()
-    assert client.post("/v1/auth/resend-verification", headers=bearer(d)).status_code == 202
-    assert outbox.mails == []
-
-
 # ---------- password reset ----------
 
 def test_forgot_password_never_reveals_the_email(client, outbox, google, no_ip_limit):
@@ -318,7 +278,13 @@ def test_reset_password_flow(client, outbox, seeded, no_ip_limit):
     err(client.post("/v1/auth/signin", json={"email": "ada@example.com", "password": PASSWORD}), 401,
         "invalid_credentials")
     n = client.post("/v1/auth/signin", json={"email": "ada@example.com", "password": "a brand new pass"})
-    assert n.status_code == 200 and n.json()["user"]["email_verified"] is True
+    assert n.status_code == 200
+
+
+def test_verification_routes_are_gone(client, no_ip_limit):
+    d = signup(client)
+    assert client.post("/v1/auth/verify-email", json={"token": "x"}).status_code == 404
+    assert client.post("/v1/auth/resend-verification", headers=bearer(d)).status_code == 404
 
 
 def test_reset_link_expires_after_one_hour(client, outbox, at, no_ip_limit):
@@ -331,9 +297,11 @@ def test_reset_link_expires_after_one_hour(client, outbox, at, no_ip_limit):
 
 def test_email_tokens_stored_as_hashes(client, outbox, seeded):
     signup(client)
-    token = outbox.token("verify")
+    assert rows(seeded, EmailToken) == []  # sign-up stores no token (D48)
+    client.post("/v1/auth/forgot-password", json={"email": "ada@example.com"})
+    token = outbox.token("reset")
     (t,) = rows(seeded, EmailToken)
-    assert t.token_hash == tokens.hash_opaque(token) and t.purpose == "verify"
+    assert t.token_hash == tokens.hash_opaque(token) and t.purpose == "reset"
 
 
 # ---------- Google ----------
@@ -342,7 +310,7 @@ def test_google_creates_account(client, google):
     r = client.post("/v1/auth/google", json={"id_token": google.token(name="Ada L")})
     assert r.status_code == 200
     u = r.json()["user"]
-    assert u["email"] == "ada@example.com" and u["email_verified"] is True and u["has_google"] is True
+    assert u["email"] == "ada@example.com" and u["has_google"] is True
     assert u["has_password"] is False and u["display_name"] == "Ada L"
 
 
@@ -352,17 +320,8 @@ def test_google_signs_in_by_sub_even_if_email_changed(client, google, no_ip_limi
     assert a["user"]["id"] == b["user"]["id"]
 
 
-def test_google_links_verified_email_account_and_keeps_password(client, google, outbox, no_ip_limit):
-    d = signup(client)
-    client.post("/v1/auth/verify-email", json={"token": outbox.token("verify")})
-    g = client.post("/v1/auth/google", json={"id_token": google.token()}).json()
-    assert g["user"]["id"] == d["user"]["id"] and g["user"]["has_password"] and g["user"]["has_google"]
-    assert client.post("/v1/auth/signin", json={"email": "ada@example.com", "password": PASSWORD}).status_code == 200
-    assert client.post("/v1/auth/refresh", json={"refresh_token": d["refresh_token"]}).status_code == 200
-
-
-def test_google_link_drops_an_unverified_password(client, google, no_ip_limit):
-    """Pre-hijack: someone signs up with another person's address; the owner then uses Google."""
+def test_google_link_drops_the_password(client, google, no_ip_limit):
+    """D45 and D48: nobody proves they own an address at sign-up, so Google wins when the owner signs in with it."""
     squatter = signup(client)
     g = client.post("/v1/auth/google", json={"id_token": google.token()}).json()
     assert g["user"]["id"] == squatter["user"]["id"] and g["user"]["has_password"] is False

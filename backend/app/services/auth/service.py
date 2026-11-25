@@ -45,8 +45,7 @@ def clean_name(name) -> str | None:
 
 
 def user_json(u: User) -> dict:
-    return {"id": str(u.id), "email": u.email, "email_verified": bool(u.email_verified),
-            "display_name": u.display_name, "has_password": u.password_hash is not None,
+    return {"id": str(u.id), "email": u.email, "display_name": u.display_name, "has_password": u.password_hash is not None,
             "has_google": u.google_sub is not None, "created_at": z(u.created_at)}
 
 
@@ -78,13 +77,14 @@ def find_by_email(db: Session, email: str) -> User | None:
 
 # ---------- sign up / sign in ----------
 
-def signup(db: Session, email, password, display_name, now: datetime) -> tuple[dict, list[mailer.Mail]]:
+def signup(db: Session, email, password, display_name, now: datetime) -> dict:
+    """No email verification (D48): a valid email and a strong password create the account and sign the user in."""
     email = normalise_email(email)
     passwords.check_strength(password)
     existing = find_by_email(db, email)
     if existing is not None:
         raise _email_taken(existing)
-    user = User(email=email, password_hash=passwords.hash_password(password), email_verified=False,
+    user = User(email=email, password_hash=passwords.hash_password(password),
                 display_name=clean_name(display_name), created_at=now)
     db.add(user)
     try:
@@ -92,8 +92,7 @@ def signup(db: Session, email, password, display_name, now: datetime) -> tuple[d
     except IntegrityError:  # a concurrent sign-up with the same email
         db.rollback()
         raise _email_taken(find_by_email(db, email))
-    token = _email_token(db, user, "verify", now)
-    return _issue(db, user, now), [mailer.verify_mail(email, token)]
+    return _issue(db, user, now)
 
 
 def _email_taken(u: User | None) -> ApiError:
@@ -127,16 +126,16 @@ def google_signin(db: Session, ident: GoogleIdentity, now: datetime) -> dict:
             if user.google_sub is not None:  # that email belongs to another Google identity
                 raise ApiError(409, "email_taken", "An account with this email already exists.",
                                details={"method": "google"})
-            if not user.email_verified and user.password_hash is not None:
-                # Nobody proved they own this address: a password set by someone else must not survive the link
-                # (account pre-hijacking). Google has just proved ownership.
+            if user.password_hash is not None:
+                # Sign-up never proves ownership of the address (D48), so Google wins: a password set by someone
+                # else must not survive the link (account pre-hijacking, D45). Google has just proved ownership.
                 user.password_hash = None
                 revoke_all(db, user.id, now)
-                log.info("google link cleared an unverified password")
-            user.google_sub, user.email_verified = ident.sub, True
+                log.info("google link cleared a password")
+            user.google_sub = ident.sub
             user.display_name = user.display_name or ident.name
         else:
-            user = User(email=ident.email, google_sub=ident.sub, email_verified=True, password_hash=None,
+            user = User(email=ident.email, google_sub=ident.sub, password_hash=None,
                         display_name=ident.name, created_at=now)
             db.add(user)
         try:
@@ -201,19 +200,6 @@ def use_email_token(db: Session, raw, purpose: str, now: datetime, consume: bool
     return row
 
 
-def verify_email(db: Session, raw, now: datetime) -> None:
-    row = use_email_token(db, raw, "verify", now)
-    user = db.get(User, row.user_id)
-    user.email_verified = True
-    db.commit()
-
-
-def resend_verification(db: Session, user: User, now: datetime) -> list[mailer.Mail]:
-    if user.email_verified or not user.email:
-        return []
-    return [mailer.verify_mail(user.email, _email_token(db, user, "verify", now))]
-
-
 def forgot_password(db: Session, email: str, now: datetime) -> list[mailer.Mail]:
     user = find_by_email(db, email)
     if user is None:
@@ -228,7 +214,6 @@ def reset_password(db: Session, raw, new_password, now: datetime) -> None:
     row = use_email_token(db, raw, "reset", now)
     user = db.get(User, row.user_id)
     user.password_hash = passwords.hash_password(new_password)
-    user.email_verified = True  # the reset link proved the address
     db.execute(update(EmailToken).where(EmailToken.user_id == user.id, EmailToken.purpose == "reset",
                                         EmailToken.used_at.is_(None)).values(used_at=now))
     revoke_all(db, user.id, now)

@@ -39,7 +39,6 @@ def fill(client, seeded, d) -> uuid.UUID:
     """Give the account data in every user table."""
     h = bearer(d)
     assert client.post("/v1/me/sync", json={"records": [REC]}, headers=h).status_code == 200
-    client.post("/v1/auth/resend-verification", headers=h)
     uid = uuid.UUID(d["user"]["id"])
     now = datetime.now(timezone.utc)
     with seeded() as db:
@@ -183,8 +182,9 @@ def test_confirm_link_expires_after_one_hour(client, outbox, at, seeded):
 
 def test_other_purpose_tokens_cannot_delete(client, outbox, seeded):
     signup(client)
-    verify = outbox.token("verify")
-    assert client.post("/account/delete/confirm", data={"token": verify}).status_code == 400
+    client.post("/v1/auth/forgot-password", json={"email": "ada@example.com"})
+    reset = outbox.token("reset")
+    assert client.post("/account/delete/confirm", data={"token": reset}).status_code == 400
     assert counts(seeded)["users"] == 1
 
 
@@ -234,15 +234,8 @@ def test_privacy_contact_from_env(client, monkeypatch):
     assert "Write to privacy@example.org." in client.get("/privacy").text
 
 
-def test_verify_link_page_flow(client, outbox):
-    d = signup(client)
-    token = outbox.token("verify")
-    page = client.get("/verify-email", params={"token": token})
-    assert page.status_code == 200 and "Confirm my email" in page.text
-    assert client.get("/v1/me", headers=bearer(d)).json()["email_verified"] is False  # GET did nothing
-    done = client.post("/verify-email", data={"token": token})
-    assert done.status_code == 200 and "Email confirmed" in done.text
-    assert client.get("/v1/me", headers=bearer(d)).json()["email_verified"] is True
+def test_verify_link_page_is_gone(client):
+    assert client.get("/verify-email", params={"token": "x"}).status_code == 404
 
 
 def test_reset_link_page_flow(client, outbox):
