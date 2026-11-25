@@ -76,7 +76,7 @@ class _LibraryScreenState extends ConsumerState<LibraryScreen> {
       children: [
         if (featured != null)
           HeroBanner(
-            art: titleArt(featured, c.image),
+            art: titleArt(featured, c.image, crop: PosterCrop.banner),
             lines: featured.posterLines,
             brief: featured.brief,
             onTap: () => open(featured.id),

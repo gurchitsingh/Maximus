@@ -22,7 +22,7 @@ class TitleSheetBanner extends ConsumerWidget {
     if (c == null || t == null) {
       return ColoredBox(color: context.mx.surfaceRaised);
     }
-    return TitleArt(data: titleArt(t, c.image));
+    return TitleArt(data: titleArt(t, c.image, crop: PosterCrop.banner));
   }
 }
 

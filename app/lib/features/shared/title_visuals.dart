@@ -27,11 +27,17 @@ PosterData posterData(TitleSummary t, Catalogue c) => PosterData(
   bg: hexColor(t.bg),
   tint: hexColor(t.tint),
   imageUrl: imageUrl(c.image(t.posterImageId)),
+  titleId: t.id,
 );
 
 /// Wide art (sheet banner, hero, resume card, thumbs): hero image, else the
 /// poster cropped by its focal point, else the tinted gradient (2.1).
-ArtData titleArt(TitleSummary t, ContentImage? Function(String?) image) {
+/// With [crop], a bundled poster (CONTRACTS 21) wins when the title has one.
+ArtData titleArt(
+  TitleSummary t,
+  ContentImage? Function(String?) image, {
+  PosterCrop? crop,
+}) {
   final img = image(t.heroImageId) ?? image(t.posterImageId);
   return ArtData(
     bg: hexColor(t.bg),
@@ -39,6 +45,8 @@ ArtData titleArt(TitleSummary t, ContentImage? Function(String?) image) {
     imageUrl: imageUrl(img),
     focalX: img?.focalX ?? 0.5,
     focalY: img?.focalY ?? 0.5,
+    titleId: t.id,
+    crop: crop,
   );
 }
 

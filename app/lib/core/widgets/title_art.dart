@@ -6,7 +6,9 @@ import 'package:material_ui/material_ui.dart';
 
 import '../theme/tokens.dart';
 import '../util/image_cache.dart';
+import 'poster_art.dart';
 import 'poster_card.dart';
+import 'poster_image.dart';
 
 @immutable
 class ArtData {
@@ -17,6 +19,8 @@ class ArtData {
     this.focalX = 0.5,
     this.focalY = 0.5,
     this.alt,
+    this.titleId,
+    this.crop,
   });
 
   final Color bg;
@@ -27,6 +31,11 @@ class ArtData {
 
   /// Screen-reader text of the image, when it is content (reader hero).
   final String? alt;
+
+  /// With [crop], a bundled poster for this title replaces the image. Left
+  /// null where the art is a content photo (reader, feed, quiz).
+  final String? titleId;
+  final PosterCrop? crop;
 }
 
 class TitleArt extends StatelessWidget {
@@ -49,6 +58,10 @@ class TitleArt extends StatelessWidget {
             errorWidget: (_, _, _) => fallback,
             fadeInDuration: MxMotion.fade,
           );
+    final crop = data.crop;
+    if (crop != null) {
+      art = PosterImage(titleId: data.titleId, crop: crop, fallback: art);
+    }
     art = ColoredBox(color: data.bg, child: art);
     return data.alt == null
         ? ExcludeSemantics(child: art)
