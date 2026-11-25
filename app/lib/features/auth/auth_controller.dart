@@ -156,7 +156,7 @@ class AuthController extends Notifier<AuthState> {
   Future<void> _endSession() async {
     await ref.read(googleAuthProvider).signOut();
     await ref.read(readAloudProvider.notifier).stop();
-    await ref.read(databaseProvider).clearMyData();
+    await ref.read(databaseProvider).wipeUserData();
     ref.read(themeSettingsProvider.notifier).reset();
     await _tokens.clear();
     state = const SignedOut();

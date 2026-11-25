@@ -20,8 +20,8 @@ void main() {
   });
   tearDown(() => db.close());
 
-  test('schema version 1 and every 5.1 table exists', () async {
-    expect(db.schemaVersion, 1);
+  test('schema version 2 and every 5.1 table exists', () async {
+    expect(db.schemaVersion, 2);
     final names = db.allTables.map((t) => t.actualTableName).toSet();
     expect(names, {
       'settings',
@@ -34,6 +34,7 @@ void main() {
       'feed_state',
       'cached_docs',
       'cached_titles',
+      'sync_state', // v2 (CONTRACTS 15.5)
     });
   });
 
@@ -143,7 +144,9 @@ void main() {
     });
   });
 
-  test('clearMyData empties exactly the personal tables', () async {
+  // V3: sign-out's wipe is the old physical clear; Clear my data now
+  // tombstones (CONTRACTS 15.5, test/data/sync).
+  test('wipeUserData empties exactly the personal tables', () async {
     final dao = db.userStateDao;
     final oldId = await db.settingsDao.read('install_id');
     await db.settingsDao.write('theme', 'light');
@@ -203,7 +206,7 @@ void main() {
     );
     await db.contentCacheDao.putDoc('catalogue', '{}');
 
-    await db.clearMyData();
+    await db.wipeUserData();
 
     for (final t in db.personalTables) {
       final n = await db.select(t).get();

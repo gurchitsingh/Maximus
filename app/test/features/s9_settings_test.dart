@@ -239,8 +239,14 @@ void main() {
         matching: find.text('Clear my data'),
       ),
     );
+    // Cleared rows are tombstones so other devices clear too (15.5).
     expect(
-      await AppHarness.run(tester, () => h.db.select(h.db.studyList).get()),
+      await AppHarness.run(
+        tester,
+        () => (h.db.select(
+          h.db.studyList,
+        )..where((t) => t.deleted.equals(false))).get(),
+      ),
       isEmpty,
     );
     final after = await AppHarness.run(tester, h.db.settingsDao.readAll);

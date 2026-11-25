@@ -4,6 +4,7 @@ import 'package:drift/drift.dart';
 
 import '../app_database.dart';
 import '../../../core/theme/theme_controller.dart';
+import '../../sync/sync_record.dart' show utcMs;
 
 part 'settings_dao.g.dart';
 
@@ -14,7 +15,8 @@ class SettingsDao extends DatabaseAccessor<AppDatabase>
   SettingsDao(super.db);
 
   /// Inserts every missing default, and an install id if there is none.
-  /// Existing values are kept.
+  /// Existing values are kept. Seeded rows are clean with `updated_at` =
+  /// the epoch, so a value the account already has always wins (15.5).
   Future<void> seedDefaults() async {
     await batch((b) {
       b.insertAll(settings, [
@@ -27,6 +29,22 @@ class SettingsDao extends DatabaseAccessor<AppDatabase>
       ], mode: InsertMode.insertOrIgnore);
     });
   }
+
+  /// "Clear my data" (15.5): every synced key back to its default as a
+  /// change (dirty, stamped now) so other devices reset too, and a new
+  /// install id (never synced).
+  Future<void> resetToDefaults() => transaction(() async {
+    for (final e in SettingKeys.defaults.entries) {
+      await _put(e.key, e.value, force: true);
+    }
+    await into(settings).insertOnConflictUpdate(
+      SettingsCompanion.insert(
+        key: SettingKeys.installId,
+        value: newInstallId(),
+        dirty: const Value(false),
+      ),
+    );
+  });
 
   Future<Map<String, String>> readAll() async {
     final rows = await select(settings).get();
@@ -42,9 +60,38 @@ class SettingsDao extends DatabaseAccessor<AppDatabase>
     settings,
   )..where((t) => t.key.equals(key))).getSingleOrNull())?.value;
 
+  /// A local change: stamped now (never earlier than the stored stamp, so
+  /// a clock that went back cannot lose the user's latest choice) and
+  /// dirty, except install_id, which never syncs.
   @override
-  Future<void> write(String key, String value) => into(settings)
-      .insertOnConflictUpdate(SettingsCompanion.insert(key: key, value: value));
+  Future<void> write(String key, String value) => _put(key, value);
+
+  Future<void> _put(String key, String value, {bool force = false}) =>
+      transaction(() async {
+    final old = await (select(
+      settings,
+    )..where((t) => t.key.equals(key))).getSingleOrNull();
+    if (!force && old != null && old.value == value && !old.deleted) {
+      return;
+    }
+    final synced = SettingKeys.synced.contains(key);
+    await into(settings).insertOnConflictUpdate(
+      SettingsCompanion.insert(
+        key: key,
+        value: value,
+        updatedAt: Value(stampAfter(db.clock(), old?.updatedAt)),
+        deleted: const Value(false),
+        dirty: Value(synced),
+      ),
+    );
+  });
+}
+
+/// `now` in UTC milliseconds, but at least 1 ms after [previous].
+DateTime stampAfter(DateTime now, DateTime? previous) {
+  final t = utcMs(now);
+  if (previous == null || t.isAfter(previous)) return t;
+  return utcMs(previous).add(const Duration(milliseconds: 1));
 }
 
 /// UUID v4 from `Random.secure` (CONTRACTS 11), lowercase.

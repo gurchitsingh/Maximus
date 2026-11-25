@@ -150,6 +150,9 @@ void main() {
           lessonIndex: i,
           lastOpenedAt: DateTime.utc(2026, 1, 1, 0, 0, t),
           completedAt: done ? DateTime.utc(2026) : null,
+          updatedAt: DateTime.utc(2026),
+          deleted: false,
+          dirty: false,
         );
     final lessons = TitleDetail.fromJson(
       readJson('../backend/data/samples/roman-history.json'),
@@ -228,6 +231,9 @@ void main() {
             lessonIndex: 1,
             lastOpenedAt: DateTime.utc(2026),
             completedAt: DateTime.utc(2026),
+            updatedAt: DateTime.utc(2026),
+            deleted: false,
+            dirty: false,
           ),
         ],
       );
