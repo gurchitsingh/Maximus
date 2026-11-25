@@ -91,7 +91,7 @@ class _HomeBody extends ConsumerWidget {
                 builder: (context, ref, _) {
                   final p = ref.watch(titleProgressProvider(t.id));
                   return StudyRow(
-                    art: titleArt(t, c.image),
+                    art: titleArt(t, c.image, crop: PosterCrop.square),
                     name: t.name,
                     subtitle: p.label,
                     progress: p.fraction,
@@ -155,7 +155,7 @@ class _ResumeSlot extends ConsumerWidget {
     return Padding(
       padding: const EdgeInsets.fromLTRB(20, 4, 20, 0),
       child: ResumeCard(
-        art: titleArt(t, c.image),
+        art: titleArt(t, c.image, crop: PosterCrop.square),
         titleName: t.name,
         lessonLine: 'Lesson ${lesson.index}: ${lesson.heading}',
         progress: p.fraction,

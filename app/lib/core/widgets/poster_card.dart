@@ -7,6 +7,7 @@ import '../theme/tokens.dart';
 import '../util/image_cache.dart';
 import 'buttons.dart';
 import 'match_badge.dart';
+import 'poster_image.dart';
 import 'title_lettering.dart';
 
 /// What a poster shows. Mirrors the title summary fields it needs.
@@ -18,6 +19,7 @@ class PosterData {
     required this.bg,
     required this.tint,
     this.imageUrl,
+    this.titleId,
   });
 
   final List<String> lines;
@@ -27,6 +29,9 @@ class PosterData {
 
   /// Resolved poster image URL, or null for the gradient fallback.
   final String? imageUrl;
+
+  /// Catalogue id; a bundled poster for it replaces the image and gradient.
+  final String? titleId;
 
   String get semanticLabel => lines.where((l) => l.trim().isNotEmpty).join(' ');
 }
@@ -130,7 +135,8 @@ class PosterCard extends StatelessWidget {
   }
 }
 
-/// Poster background: network art when present, else the tinted gradient.
+/// Poster background: bundled poster art (CONTRACTS 21) when the title has
+/// one, else network art, else the tinted gradient.
 /// Also used for the error fallback of a failed image load.
 class PosterArt extends StatelessWidget {
   const PosterArt({super.key, required this.data});
@@ -140,7 +146,13 @@ class PosterArt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final fallback = TintedGradient(bg: data.bg, tint: data.tint);
-    final url = data.imageUrl;
+    return PosterImage(
+      titleId: data.titleId,
+      fallback: _network(data.imageUrl, fallback),
+    );
+  }
+
+  static Widget _network(String? url, Widget fallback) {
     if (url == null) return fallback;
     return CachedNetworkImage(
       imageUrl: url,

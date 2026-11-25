@@ -53,7 +53,13 @@ class FactOfTheDayCard extends ConsumerWidget {
             ? ExcludeSemantics(
                 child: TintedGradient(bg: c.accentContainer, tint: c.accent),
               )
-            : TitleArt(data: titleArt(title, catalogue!.image)),
+            : TitleArt(
+                data: titleArt(
+                  title,
+                  catalogue!.image,
+                  crop: PosterCrop.square,
+                ),
+              ),
       ),
     );
     final body = Padding(
