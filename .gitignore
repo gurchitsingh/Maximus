@@ -40,3 +40,6 @@ Thumbs.db
 # Backend dev image store and ingest HTTP cache (CONTRACTS 9.2, Q9)
 backend/media/
 backend/.cache/
+
+# Local pg_dump backups (backend/tools/backup.ps1): personal data, never commit
+backend/backups/
