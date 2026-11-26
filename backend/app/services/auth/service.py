@@ -121,7 +121,8 @@ def signin(db: Session, email, password, now: datetime, failures) -> dict:
 
 
 def google_signin(db: Session, ident: GoogleIdentity, now: datetime) -> dict:
-    """14.3: by google_sub; else link by verified email; else create."""
+    """14.3: by google_sub; else link by verified email (password accounts only for Gmail or Workspace, M4); else
+    create."""
     user = db.scalar(select(User).where(User.google_sub == ident.sub))
     if user is None:
         user = find_by_email(db, ident.email)
@@ -130,6 +131,11 @@ def google_signin(db: Session, ident: GoogleIdentity, now: datetime) -> dict:
                 raise ApiError(409, "email_taken", "An account with this email already exists.",
                                details={"method": "google"})
             if user.password_hash is not None:
+                if not ident.owns_email:
+                    # M4: outside Gmail and Workspace, Google does not prove the address is controlled today, so a
+                    # password account is never taken over. The user signs in with the password instead.
+                    raise ApiError(409, "email_taken", "An account with this email already exists.",
+                                   details={"method": "password"})
                 # Sign-up never proves ownership of the address (D48), so Google wins: a password set by someone
                 # else must not survive the link (account pre-hijacking, D45). Google has just proved ownership.
                 user.password_hash = None

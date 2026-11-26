@@ -105,7 +105,7 @@ def test_m2_password_reset_kills_old_access_tokens(client, outbox, at, no_ip_lim
 def test_m2_google_link_kills_the_pre_registered_password_session(client, google, at, no_ip_limit):
     attacker = signup(client)  # D48: anyone can sign up with someone else's address
     at(60)
-    victim = client.post("/v1/auth/google", json={"id_token": google.token()}).json()
+    victim = client.post("/v1/auth/google", json={"id_token": google.token(hd="example.com")}).json()
     assert victim["user"]["has_google"] is True and victim["user"]["has_password"] is False
     err(client.get("/v1/me", headers=bearer(attacker)), 401, "unauthorized")
     err(client.delete("/v1/me", headers=bearer(attacker)), 401, "unauthorized")
@@ -131,6 +131,51 @@ def test_m2_a_user_never_revoked_keeps_working(client, seeded):
     with seeded() as db:
         assert db.get(User, uuid.UUID(d["user"]["id"])).tokens_valid_after is None
     assert client.get("/v1/me", headers=bearer(d)).status_code == 200
+
+
+# ---------- M4: Google takes a password account only where Google owns the address ----------
+
+def test_m4_gmail_address_links_and_drops_the_password(client, google, no_ip_limit):
+    squatter = signup(client, email="ada.l@gmail.com")
+    g = client.post("/v1/auth/google", json={"id_token": google.token(email="ada.l@gmail.com")}).json()
+    assert g["user"]["id"] == squatter["user"]["id"]
+    assert g["user"]["has_google"] is True and g["user"]["has_password"] is False
+
+
+def test_m4_workspace_address_links(client, google, no_ip_limit):
+    squatter = signup(client)
+    g = client.post("/v1/auth/google", json={"id_token": google.token(hd="example.com")}).json()
+    assert g["user"]["id"] == squatter["user"]["id"] and g["user"]["has_password"] is False
+
+
+@pytest.mark.parametrize("hd", [None, "", "   "])
+def test_m4_other_domains_never_take_a_password_account(client, google, seeded, no_ip_limit, hd):
+    """A Google account made long ago with an address its maker no longer controls (a former work address, a
+    lapsed domain) must not take the account of the address's current owner."""
+    owner = signup(client)
+    e = err(client.post("/v1/auth/google", json={"id_token": google.token(hd=hd)}), 409, "email_taken")
+    assert e["details"] == {"method": "password"}
+    with seeded() as db:
+        u = db.get(User, uuid.UUID(owner["user"]["id"]))
+        assert u.password_hash is not None and u.google_sub is None and u.tokens_valid_after is None
+    assert client.get("/v1/me", headers=bearer(owner)).status_code == 200
+    assert client.post("/v1/auth/signin", json={"email": "ada@example.com", "password": PASSWORD}).status_code == 200
+    assert client.post("/v1/auth/refresh", json={"refresh_token": owner["refresh_token"]}).status_code == 200
+
+
+def test_m4_other_domains_still_create_and_sign_in_google_accounts(client, google, no_ip_limit):
+    """Only linking to a password account is restricted: a new address, or a returning Google user, is fine."""
+    first = client.post("/v1/auth/google", json={"id_token": google.token(email="bo@example.org")})
+    assert first.status_code == 200 and first.json()["user"]["has_google"] is True
+    again = client.post("/v1/auth/google", json={"id_token": google.token(email="bo@example.org")})
+    assert again.status_code == 200 and again.json()["user"]["id"] == first.json()["user"]["id"]
+
+
+def test_m4_a_googlemail_lookalike_is_not_gmail(client, google, no_ip_limit):
+    signup(client, email="ada@gmail.com.example.com")
+    e = err(client.post("/v1/auth/google", json={"id_token": google.token(email="ada@gmail.com.example.com")}),
+            409, "email_taken")
+    assert e["details"] == {"method": "password"}
 
 
 # ---------- M1: throwaway accounts cannot drain the global chat cap ----------

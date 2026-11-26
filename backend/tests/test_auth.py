@@ -323,7 +323,7 @@ def test_google_signs_in_by_sub_even_if_email_changed(client, google, no_ip_limi
 def test_google_link_drops_the_password(client, google, no_ip_limit):
     """D45 and D48: nobody proves they own an address at sign-up, so Google wins when the owner signs in with it."""
     squatter = signup(client)
-    g = client.post("/v1/auth/google", json={"id_token": google.token()}).json()
+    g = client.post("/v1/auth/google", json={"id_token": google.token(hd="example.com")}).json()  # Workspace (M4)
     assert g["user"]["id"] == squatter["user"]["id"] and g["user"]["has_password"] is False
     err(client.post("/v1/auth/signin", json={"email": "ada@example.com", "password": PASSWORD}), 401,
         "invalid_credentials")

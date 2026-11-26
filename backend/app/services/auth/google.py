@@ -23,6 +23,14 @@ class GoogleIdentity:
     sub: str
     email: str
     name: str | None
+    hd: str | None = None  # the Google Workspace domain, absent for consumer accounts
+
+    @property
+    def owns_email(self) -> bool:
+        """Google is authoritative for the address only for Gmail and Workspace (`hd`) accounts (SECURITY_AUDIT
+        M4). For any other domain, email_verified only says the address was verified once, when that Google
+        account was made, not that its owner still controls it."""
+        return self.email.endswith("@gmail.com") or bool(self.hd)
 
 
 def invalid(reason: str) -> ApiError:
@@ -99,8 +107,11 @@ class GoogleVerifier:
         if not isinstance(email, str) or "@" not in email:
             raise invalid("email")
         name = claims.get("name")
+        hd = claims.get("hd")
+        hd = hd.strip().lower()[:255] if isinstance(hd, str) else ""
         return GoogleIdentity(sub=str(claims["sub"]), email=email.strip().lower(),
-                              name=name.strip()[:80] if isinstance(name, str) and name.strip() else None)
+                              name=name.strip()[:80] if isinstance(name, str) and name.strip() else None,
+                              hd=hd or None)
 
 
 _default: GoogleVerifier | None = None

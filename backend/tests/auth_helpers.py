@@ -48,10 +48,15 @@ class FakeGoogle:
         self.verifier = GoogleVerifier(GoogleKeys(fetch=fetch))
 
     def token(self, sub="g-123", email="ada@example.com", verified=True, aud=CLIENT_ID,
-              iss="https://accounts.google.com", exp_in=3600, kid="test-kid", name="Ada", key=None, alg="RS256"):
+              iss="https://accounts.google.com", exp_in=3600, kid="test-kid", name="Ada", key=None, alg="RS256",
+              hd=None):
+        """hd: the Workspace domain claim (SECURITY_AUDIT M4: only Gmail or hd addresses may take a password
+        account)."""
         now = int(time.time())
         claims = {"iss": iss, "aud": aud, "sub": sub, "email": email, "email_verified": verified,
                   "iat": now, "exp": now + exp_in, "name": name}
+        if hd is not None:
+            claims["hd"] = hd
         return jwt.encode(claims, key or self.key, algorithm=alg, headers={"kid": kid})
 
 
