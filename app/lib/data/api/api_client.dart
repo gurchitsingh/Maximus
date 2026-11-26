@@ -17,6 +17,18 @@ const apiBaseUrl = String.fromEnvironment(
   defaultValue: 'http://10.0.2.2:8000',
 );
 
+/// Throws when a release build's base URL [url], set by the define [name],
+/// is not https. Debug and profile builds accept anything.
+void requireHttpsInRelease(String name, String url, {required bool isRelease}) {
+  if (!isRelease) return;
+  final uri = Uri.tryParse(url);
+  if (uri != null && uri.scheme == 'https' && uri.host.isNotEmpty) return;
+  throw StateError(
+    '$name must be an https:// URL in a release build, got "$url". '
+    'Build with --dart-define=$name=https://...',
+  );
+}
+
 /// Result of a GET: a body, or "not modified" when the ETag still matches.
 sealed class ApiResult {
   const ApiResult();
