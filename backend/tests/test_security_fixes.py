@@ -178,6 +178,58 @@ def test_m4_a_googlemail_lookalike_is_not_gmail(client, google, no_ip_limit):
     assert e["details"] == {"method": "password"}
 
 
+# ---------- L5: nobody can lock another person out of email sign-in ----------
+
+def _signin_from(client, ip, password="bad bad bad", email="ada@example.com"):
+    return client.post("/v1/auth/signin", json={"email": email, "password": password},
+                       headers={"X-Forwarded-For": ip})
+
+
+def test_l5_failures_from_one_ip_do_not_lock_the_owner_elsewhere(client, monkeypatch, no_ip_limit):
+    monkeypatch.setattr(settings, "trusted_proxy_hops", 1)
+    signup(client)
+    for _ in range(5):
+        err(_signin_from(client, "198.51.100.66"), 401, "invalid_credentials")
+    e = err(_signin_from(client, "198.51.100.66", password=PASSWORD), 429, "rate_limited")
+    assert e["details"] == {"scope": "account"} and 0 < e["retry_after_s"] <= 900
+    assert _signin_from(client, "203.0.113.20", password=PASSWORD).status_code == 200  # the owner, elsewhere
+
+
+def test_l5_the_per_email_cap_stops_guessing_spread_over_many_ips(client, monkeypatch, no_ip_limit):
+    monkeypatch.setattr(settings, "trusted_proxy_hops", 1)
+    monkeypatch.setattr(limits.signin_email_failures, "limit", 12)
+    assert limits.signin_email_failures.window_s == 3600
+    signup(client)
+    for i in range(12):  # 3 IPs, 4 failures each: no (email, ip) pair reaches 5
+        err(_signin_from(client, f"198.51.100.{i % 3}"), 401, "invalid_credentials")
+    e = err(_signin_from(client, "203.0.113.30", password=PASSWORD), 429, "rate_limited")
+    assert e["details"] == {"scope": "account"} and 900 < e["retry_after_s"] <= 3600
+    # another address is not affected
+    err(_signin_from(client, "203.0.113.30", email="bob@example.com"), 401, "invalid_credentials")
+
+
+def test_l5_when_both_limits_are_full_retry_after_is_the_longer_wait(client, monkeypatch, no_ip_limit):
+    monkeypatch.setattr(settings, "trusted_proxy_hops", 1)
+    monkeypatch.setattr(limits.signin_email_failures, "limit", 5)
+    signup(client)
+    for _ in range(5):
+        err(_signin_from(client, "198.51.100.77"), 401, "invalid_credentials")
+    e = err(_signin_from(client, "198.51.100.77", password=PASSWORD), 429, "rate_limited")
+    assert 900 < e["retry_after_s"] <= 3600
+
+
+def test_l5_per_email_cap_is_50_an_hour():
+    assert limits.SIGNIN_EMAIL_HOURLY_FAILURES == 50
+    assert limits.signin_email_failures.limit == 50 and limits.signin_email_failures.window_s == 3600
+
+
+def test_l5_successful_signins_feed_neither_limiter(client, monkeypatch, no_ip_limit):
+    monkeypatch.setattr(limits.signin_email_failures, "limit", 3)
+    signup(client)
+    for _ in range(6):
+        assert _signin_from(client, "203.0.113.40", password=PASSWORD).status_code == 200
+
+
 # ---------- M1: throwaway accounts cannot drain the global chat cap ----------
 
 def test_m1_sixth_signup_from_one_ip_in_a_day_is_limited(client, no_ip_limit):

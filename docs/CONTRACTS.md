@@ -815,7 +815,7 @@ New codes for the 3.5 table (same body shape; the app shows its own copy keyed b
 | `reauth_required` | 403 | `DELETE /v1/me` for a Google account with an old access token |
 | `forbidden` | 403 | Valid token, not allowed |
 
-`rate_limited` `details.scope` gains `"account"`. Limits (in memory per process, as 3.1): all `/v1/auth/*` per IP 10 per minute; `signin` also 5 failures per 15 minutes per email (`scope: "account"`, `Retry-After` set); `forgot-password` 3 per hour per email. Signed-in `/v1/*` reads stay 120 per minute per IP.
+`rate_limited` `details.scope` gains `"account"`. Limits (in memory per process, as 3.1): all `/v1/auth/*` per IP 10 per minute; `signin` also 5 failures per 15 minutes per email and client IP, and 50 failures per hour per email from all IPs (both `scope: "account"`, `Retry-After` set to the longer wait, D58); `forgot-password` 3 per hour per email. Signed-in `/v1/*` reads stay 120 per minute per IP.
 
 ### 14.5 App behaviour
 

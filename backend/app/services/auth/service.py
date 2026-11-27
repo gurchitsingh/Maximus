@@ -103,17 +103,28 @@ def _email_taken(u: User | None) -> ApiError:
     return ApiError(409, "email_taken", "An account with this email already exists.", details=details)
 
 
-def signin(db: Session, email, password, now: datetime, failures) -> dict:
-    """`failures` is the per-email limiter: checked first, fed only on a wrong email or password."""
+def signin(db: Session, email, password, now: datetime, failure_limits) -> dict:
+    """`failure_limits(email)` gives the failure limiters and their keys (limits.signin_keys, L5: per email and
+    IP, plus a looser per email): all are checked first, and fed only on a wrong email or password. When more than
+    one is full, the 429 gives the longest wait, so the client does not retry into another 429."""
     try:
         email = normalise_email(email)
     except ApiError:
         raise ApiError(401, "invalid_credentials", "Wrong email or password.")
-    failures.ensure_open(email)
+    locks = failure_limits(email)
+    full = []
+    for limiter, key in locks:
+        try:
+            limiter.ensure_open(key)
+        except ApiError as e:
+            full.append(e)
+    if full:
+        raise max(full, key=lambda e: e.retry_after_s or 0)
     user = find_by_email(db, email)
     ok = passwords.verify(user.password_hash if user else None, password if isinstance(password, str) else "")
     if not ok or user is None:
-        failures.add(email)
+        for limiter, key in locks:
+            limiter.add(key)
         raise ApiError(401, "invalid_credentials", "Wrong email or password.")
     if passwords.needs_rehash(user.password_hash):
         user.password_hash = passwords.hash_password(password)

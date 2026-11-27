@@ -85,8 +85,10 @@ def signup(body: SignUp, request: Request, db: Session = Depends(get_db)):
 
 
 @auth.post("/signin")
-def signin(body: SignIn, db: Session = Depends(get_db)):
-    return _json(service.signin(db, body.email, body.password, tokens.utcnow(), limits.signin_failures))
+def signin(body: SignIn, request: Request, db: Session = Depends(get_db)):
+    ip = client_ip(request)
+    return _json(service.signin(db, body.email, body.password, tokens.utcnow(),
+                                lambda email: limits.signin_keys(email, ip)))
 
 
 @auth.post("/google")
