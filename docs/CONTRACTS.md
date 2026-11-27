@@ -795,7 +795,7 @@ Email-account sign-up requires `password` 10 to 128 characters; no other composi
 
 - App: `google_sign_in` with `serverClientId` = the **web** OAuth client id (`GOOGLE_CLIENT_ID`, not a secret); sends `idToken`.
 - Server: verifies signature against Google's published keys (cached by `Cache-Control`), `aud == GOOGLE_CLIENT_ID`, `iss` is `accounts.google.com` or `https://accounts.google.com`, `exp` in the future, `email_verified == true`.
-- Account rules: found by `google_sub` → sign in. Else found by the verified email → **link** (set `google_sub` and remove the password if the account had one: sign-up never proves ownership of the address, so Google wins, D45 and D48). Else create (`password_hash: null`).
+- Account rules: found by `google_sub` → sign in. Else found by the verified email: an account with another `google_sub` → 409 `email_taken` with `details: {method: "google"}`; a password account → **link** only when the address is Gmail (`@gmail.com`) or a Google Workspace account (the token has `hd`): set `google_sub`, remove the password and revoke all sessions (sign-up never proves ownership of the address, so Google wins, D45 and D48). For any other domain a password account is never linked: 409 `email_taken` with `details: {method: "password"}`, and the user signs in with the password (SECURITY_AUDIT M4, D60). Else create (`password_hash: null`).
 - Google sign-in ships first, email and password second **(unconfirmed)**: the endpoints for both exist in S17; S18 may release the email screens one version later.
 
 ### 14.4 Errors and limits
@@ -810,7 +810,7 @@ New codes for the 3.5 table (same body shape; the app shows its own copy keyed b
 | `token_reused` | 401 | Revoked refresh token presented (all of the user's tokens are now revoked) |
 | `invalid_credentials` | 401 | Wrong email or password |
 | `google_token_invalid` | 401 | Google ID token failed any check in 14.3 |
-| `email_taken` | 409 | Sign-up with an email that already has a password account. (A Google-only account with that email: sign-up returns this too, with `details: {method: "google"}` so the app can say "Use Google to sign in") |
+| `email_taken` | 409 | Sign-up with an email that already has a password account. (A Google-only account with that email: sign-up returns this too, with `details: {method: "google"}` so the app can say "Use Google to sign in". Google sign-in returns it when 14.3 does not link, with `method` "google" or "password") |
 | `weak_password` | 422 | Password length outside 10..128 (otherwise `validation_error` for other fields) |
 | `reauth_required` | 403 | `DELETE /v1/me` for a Google account with an old access token |
 | `forbidden` | 403 | Valid token, not allowed |
